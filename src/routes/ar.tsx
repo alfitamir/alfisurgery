@@ -262,6 +262,15 @@ function ArabicIndex() {
                   <div className="font-medium group-hover:text-accent transition">للمرضى</div>
                 </div>
               </a>
+              <a href="https://www.linkedin.com/in/alfitamir/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-5 rounded-xl border border-border hover:border-accent transition group" dir="ltr">
+                <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
+                  <Linkedin className="h-5 w-5 text-accent" />
+                </div>
+                <div>
+                  <div className="text-xs tracking-widest text-muted-foreground">LINKEDIN</div>
+                  <div className="font-medium group-hover:text-accent transition">in/alfitamir</div>
+                </div>
+              </a>
               <a href="tel:+966138011910" className="flex items-start gap-4 p-5 rounded-xl border border-border hover:border-accent transition group">
                 <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center shrink-0">
                   <MapPin className="h-5 w-5 text-accent" />
