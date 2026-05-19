@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight } from "lucide-react";
+import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight, Phone, Download } from "lucide-react";
+import portrait from "@/assets/dr-elalfy.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
