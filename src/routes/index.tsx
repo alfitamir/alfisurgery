@@ -86,6 +86,7 @@ function Index() {
             <a href="#about" className="hover:text-foreground transition">About</a>
             <a href="#expertise" className="hover:text-foreground transition">Expertise</a>
             <a href="#services" className="hover:text-foreground transition">Services</a>
+            <Link to="/patients" className="hover:text-foreground transition">Patients</Link>
             <a href="#contact" className="hover:text-foreground transition">Contact</a>
           </nav>
           <div className="flex items-center gap-3">
