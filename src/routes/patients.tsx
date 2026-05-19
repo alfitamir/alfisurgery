@@ -1,0 +1,205 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
+import { Stethoscope, ArrowRight, MessageCircle, ChevronDown, ShieldCheck, Clock, HeartPulse, Languages, AlertTriangle, Globe } from "lucide-react";
+
+export const Route = createFileRoute("/patients")({
+  component: PatientsPage,
+  head: () => ({
+    meta: [
+      { title: "For Patients — Dr. Tamer Elalfy" },
+      { name: "description", content: "A welcome message and FAQs about Dr. Tamer Elalfy's WhatsApp channel for patient education, perioperative guidance, and trustworthy surgical information." },
+      { property: "og:title", content: "For Patients — Dr. Tamer Elalfy" },
+      { property: "og:description", content: "What to expect from the WhatsApp patient channel and how to use it well." },
+      { property: "og:url", content: "/patients" },
+    ],
+    links: [
+      { rel: "canonical", href: "/patients" },
+    ],
+  }),
+});
+
+const expectations = [
+  { icon: HeartPulse, title: "Clear surgical guidance", text: "Plain-language posts on common surgical conditions, treatment options, and recovery." },
+  { icon: ShieldCheck, title: "Trusted information", text: "Evidence-based content written and curated by a consultant surgeon." },
+  { icon: Clock, title: "Perioperative tips", text: "What to do before and after surgery — diet, wound care, activity, red flags." },
+  { icon: Languages, title: "Arabic & English", text: "Content shared in both languages so families can follow along easily." },
+];
+
+const faqs = [
+  {
+    q: "What is the WhatsApp channel for?",
+    a: "It is a one-way educational channel where I share short, practical messages for patients and families: how to prepare for surgery, what recovery looks like, lifestyle advice after bariatric or general surgery, and answers to questions I hear most often in clinic.",
+  },
+  {
+    q: "Will my messages be private if I join?",
+    a: "Yes. WhatsApp channels are broadcast-only — other followers cannot see who you are, your phone number, or your profile. Only you see the posts I publish.",
+  },
+  {
+    q: "Can I get a personal medical consultation through the channel?",
+    a: "No. The channel is for general education, not personalised medical advice. For your own case, please book a clinic appointment or call the clinic directly on +966 13 801 1910.",
+  },
+  {
+    q: "How often will I receive messages?",
+    a: "A few short posts per week — usually a tip, a short video, or a brief explanation of a common surgical topic. I keep volume low so it stays useful, not noisy.",
+  },
+  {
+    q: "What languages are used?",
+    a: "Both Arabic and English. Where a topic matters for safety (e.g., warning signs after surgery), I publish the key points in both languages.",
+  },
+  {
+    q: "What kind of topics do you cover?",
+    a: "Laparoscopic surgery, bariatric (weight-loss) surgery, hernia, gallbladder, thyroid, colorectal and anal conditions, post-operative care, nutrition after bariatric surgery, and patient safety.",
+  },
+  {
+    q: "Is the channel free?",
+    a: "Yes, completely free. There are no products to buy and no sponsored content.",
+  },
+  {
+    q: "How do I leave the channel?",
+    a: "Open the channel inside WhatsApp, tap the channel name at the top, and choose 'Unfollow'. You can rejoin any time using the same link.",
+  },
+];
+
+function PatientsPage() {
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Nav */}
+      <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
+        <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
+          <Link to="/" className="flex items-center gap-2">
+            <div className="h-8 w-8 rounded-md bg-[var(--gradient-accent)] flex items-center justify-center">
+              <Stethoscope className="h-4 w-4 text-accent-foreground" />
+            </div>
+            <span className="font-serif text-lg font-semibold">Dr. Tamer Elalfy</span>
+          </Link>
+          <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
+            <Link to="/" hash="about" className="hover:text-foreground transition">About</Link>
+            <Link to="/" hash="expertise" className="hover:text-foreground transition">Expertise</Link>
+            <Link to="/patients" className="text-foreground font-medium">Patients</Link>
+            <Link to="/" hash="contact" className="hover:text-foreground transition">Contact</Link>
+          </nav>
+          <div className="flex items-center gap-3">
+            <Link to="/ar" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition">
+              <Globe className="h-4 w-4" /> AR
+            </Link>
+            <a href="https://whatsapp.com/channel/0029VbDHjNiKAwEkWMqT5C2P" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:opacity-90 transition">
+              Join channel <ArrowRight className="h-3.5 w-3.5" />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-hero)" }} />
+        <div className="absolute inset-0 -z-10 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, oklch(0.75 0.12 200) 0%, transparent 40%), radial-gradient(circle at 80% 60%, oklch(0.55 0.15 220) 0%, transparent 50%)" }} />
+        <div className="mx-auto max-w-4xl px-6 py-24 md:py-32 text-[oklch(0.985_0.005_240)]">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs tracking-wide backdrop-blur">
+            <MessageCircle className="h-3.5 w-3.5" /> WhatsApp channel for patients
+          </div>
+          <h1 className="mt-6 font-serif text-5xl md:text-6xl font-medium leading-[1.05]">
+            Information you can <span className="italic text-[oklch(0.85_0.08_200)]">actually use</span>.
+          </h1>
+          <p className="mt-6 text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl">
+            A welcoming, evidence-based space for patients and families — from preparing for surgery to recovery and long-term health. Short messages, honest answers, no noise.
+          </p>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a href="https://whatsapp.com/channel/0029VbDHjNiKAwEkWMqT5C2P" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white text-primary px-6 py-3 text-sm font-semibold hover:bg-white/90 transition inline-flex items-center gap-2">
+              <MessageCircle className="h-4 w-4" /> Follow on WhatsApp
+            </a>
+            <Link to="/" hash="contact" className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold hover:bg-white/10 transition">
+              Book a consultation
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Welcome / what to expect */}
+      <section className="mx-auto max-w-6xl px-6 py-24">
+        <div className="grid md:grid-cols-12 gap-12">
+          <div className="md:col-span-4">
+            <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">A note from Dr. Elalfy</div>
+            <h2 className="mt-3 font-serif text-4xl">Welcome.</h2>
+          </div>
+          <div className="md:col-span-8 space-y-5 text-lg text-muted-foreground leading-relaxed">
+            <p>
+              Most patients I meet have the same questions: <em>What is happening to me? What are my options? What does recovery really feel like?</em> The internet rarely gives clear answers — and clinic time is short.
+            </p>
+            <p>
+              This channel exists to fix that. I share the same plain-language explanations I give my own patients in clinic, so you can come to appointments informed, prepared, and confident.
+            </p>
+            <p>
+              It is not a substitute for personal care — but it should make your care better.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-2xl overflow-hidden shadow-[var(--shadow-soft)]">
+          {expectations.map((e) => (
+            <div key={e.title} className="bg-card p-7">
+              <div className="h-10 w-10 rounded-lg bg-[var(--gradient-accent)] flex items-center justify-center text-accent-foreground">
+                <e.icon className="h-5 w-5" />
+              </div>
+              <h3 className="mt-5 font-serif text-lg">{e.title}</h3>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{e.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="bg-secondary/40 border-y border-border">
+        <div className="mx-auto max-w-4xl px-6 py-24">
+          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold text-center">Frequently asked</div>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl text-center">Before you join.</h2>
+
+          <div className="mt-14 space-y-3">
+            {faqs.map((f, i) => (
+              <FaqItem key={f.q} q={f.q} a={f.a} defaultOpen={i === 0} />
+            ))}
+          </div>
+
+          <div className="mt-12 rounded-2xl border border-accent/30 bg-card p-6 flex items-start gap-4">
+            <AlertTriangle className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              <span className="text-foreground font-medium">Medical emergency?</span> Do not use the WhatsApp channel for urgent symptoms. Go to your nearest emergency department or call your local emergency number immediately.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="mx-auto max-w-4xl px-6 py-24 text-center">
+        <h2 className="font-serif text-4xl md:text-5xl">Join the channel.</h2>
+        <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
+          One tap to follow. No spam, no obligation. Leave any time.
+        </p>
+        <a href="https://whatsapp.com/channel/0029VbDHjNiKAwEkWMqT5C2P" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-3.5 text-sm font-semibold hover:opacity-90 transition">
+          <MessageCircle className="h-4 w-4" /> Follow on WhatsApp <ArrowRight className="h-3.5 w-3.5" />
+        </a>
+      </section>
+
+      <footer className="border-t border-border">
+        <div className="mx-auto max-w-6xl px-6 py-10 flex flex-wrap items-center justify-between gap-4 text-sm text-muted-foreground">
+          <div>© {new Date().getFullYear()} Dr. Tamer Rushdy Elalfy, MD</div>
+          <Link to="/" className="hover:text-foreground transition">← Back home</Link>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultOpen?: boolean }) {
+  const [open, setOpen] = useState(defaultOpen);
+  return (
+    <div className="rounded-xl border border-border bg-card overflow-hidden">
+      <button onClick={() => setOpen(!open)} className="w-full flex items-center justify-between gap-4 p-5 text-left hover:bg-secondary/40 transition">
+        <span className="font-serif text-lg">{q}</span>
+        <ChevronDown className={`h-4 w-4 text-muted-foreground transition-transform shrink-0 ${open ? "rotate-180" : ""}`} />
+      </button>
+      {open && (
+        <div className="px-5 pb-5 text-muted-foreground leading-relaxed">{a}</div>
+      )}
+    </div>
+  );
+}
