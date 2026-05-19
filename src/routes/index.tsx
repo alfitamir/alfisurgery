@@ -131,24 +131,74 @@ function Index() {
 
       {/* About */}
       <section id="about" className="mx-auto max-w-6xl px-6 py-24">
-        <div className="grid md:grid-cols-12 gap-12">
+        <div className="grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-4">
-            <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">About</div>
+            <div className="relative">
+              <div className="absolute -inset-3 rounded-2xl bg-[var(--gradient-accent)] opacity-30 blur-xl" />
+              <img src={portrait} alt="Dr. Tamer Rushdy Elalfy" className="relative w-full rounded-2xl object-cover shadow-[var(--shadow-elegant)] aspect-[4/5]" />
+            </div>
+            <div className="mt-6 text-xs uppercase tracking-[0.2em] text-accent font-semibold">About</div>
             <h2 className="mt-3 font-serif text-4xl">A surgeon's perspective.</h2>
           </div>
-          <div className="md:col-span-8 space-y-5 text-lg text-muted-foreground leading-relaxed">
+          <div className="md:col-span-8 space-y-5 text-lg text-muted-foreground leading-relaxed md:pt-2">
             <p>
               I am a Consultant General & Laparoscopic Surgeon with broad experience across elective and emergency surgery, and a strong record in surgical leadership, education, and operating room management.
             </p>
             <p>
-              Currently, I serve as <span className="text-foreground font-medium">Consultant & Head of the General Surgery and Operating Room Department</span> at a tertiary hospital in Saudi Arabia, leading surgical teams, optimizing OR workflows, and upholding the highest standards of patient safety and clinical governance.
+              Currently, I serve as <span className="text-foreground font-medium">Consultant & Head of the General Surgery and Operating Room Department</span> at Mohamed Dossary Hospital in Al Khobar, Saudi Arabia — leading surgical teams, optimizing OR workflows, and upholding the highest standards of patient safety and clinical governance.
             </p>
             <p>
-              My interests span minimally invasive and bariatric surgery, surgical education and mentorship, perioperative patient education, and quality improvement initiatives that strengthen the systems patients depend on.
+              Classified and registered with the Saudi Commission for Health Specialties as a General Surgery Consultant since 2019. My interests span minimally invasive and bariatric surgery, surgical education and mentorship, and quality improvement initiatives.
             </p>
+            <a href="/Dr_Tamer_Elalfy_CV.pdf" download className="inline-flex items-center gap-2 mt-4 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-medium text-foreground hover:border-accent hover:text-accent transition">
+              <Download className="h-4 w-4" /> Download full CV
+            </a>
           </div>
         </div>
       </section>
+
+      {/* Experience */}
+      <section id="experience" className="bg-secondary/40 border-y border-border">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <div className="grid md:grid-cols-12 gap-12">
+            <div className="md:col-span-4">
+              <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Experience</div>
+              <h2 className="mt-3 font-serif text-4xl md:text-5xl">Two decades. One discipline.</h2>
+            </div>
+            <ol className="md:col-span-8 relative border-l border-border ml-2">
+              {timeline.map((t) => (
+                <li key={t.years} className="pl-8 pb-10 relative">
+                  <span className="absolute -left-[7px] top-1.5 h-3.5 w-3.5 rounded-full bg-accent ring-4 ring-background" />
+                  <div className="text-xs uppercase tracking-widest text-accent font-semibold">{t.years}</div>
+                  <div className="mt-1 font-serif text-2xl">{t.role}</div>
+                  <div className="text-muted-foreground">{t.place}</div>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <div className="grid md:grid-cols-12 gap-12 mt-16 pt-16 border-t border-border">
+            <div className="md:col-span-4">
+              <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Education</div>
+              <h2 className="mt-3 font-serif text-4xl">Zagazig University.</h2>
+            </div>
+            <div className="md:col-span-8 divide-y divide-border">
+              {education.map((e) => (
+                <div key={e.title} className="py-5 flex flex-wrap items-baseline justify-between gap-2">
+                  <div>
+                    <div className="font-serif text-xl">{e.title}</div>
+                    <div className="text-sm text-muted-foreground">{e.place}</div>
+                  </div>
+                  <div className="text-sm flex items-center gap-4">
+                    <span className="text-muted-foreground">{e.grade}</span>
+                    <span className="font-serif text-2xl text-accent">{e.year}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Expertise */}
       <section id="expertise" className="bg-secondary/40 border-y border-border">
