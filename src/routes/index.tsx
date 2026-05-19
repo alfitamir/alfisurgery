@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight, Phone, Download, Globe, Youtube, Facebook } from "lucide-react";
+import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight, Phone, Download, Globe, Youtube, Facebook, MessageCircle } from "lucide-react";
 import portrait from "@/assets/dr-elalfy.jpg";
 
 export const Route = createFileRoute("/")({
@@ -320,6 +320,15 @@ function Index() {
                 <div>
                   <div className="text-xs uppercase tracking-widest text-muted-foreground">Facebook</div>
                   <div className="font-medium group-hover:text-accent transition">Dr. Tamer Elalfy</div>
+                </div>
+              </a>
+              <a href="https://whatsapp.com/channel/0029VbDHjNiKAwEkWMqT5C2P" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-5 rounded-xl border border-border hover:border-accent transition group">
+                <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
+                  <MessageCircle className="h-5 w-5 text-accent" />
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">WhatsApp Channel</div>
+                  <div className="font-medium group-hover:text-accent transition">For patients</div>
                 </div>
               </a>
               <div className="flex items-center gap-4 p-5 rounded-xl border border-border">
