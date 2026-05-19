@@ -51,6 +51,19 @@ const services = [
   "Patient education programs that improve outcomes",
 ];
 
+const timeline = [
+  { years: "2018 — Present", role: "Consultant & Head of General Surgery", place: "Mohamed Dossary Hospital, Al Khobar, KSA" },
+  { years: "2014 — 2018", role: "General Surgery Consultant", place: "Zagazig University Hospital, Egypt" },
+  { years: "2009 — 2014", role: "General Surgery Specialist", place: "Zagazig University Hospital, Egypt" },
+  { years: "2005 — 2009", role: "General Surgery Resident", place: "Zagazig University Hospital, Egypt" },
+];
+
+const education = [
+  { year: "2014", title: "MD in General Surgery", place: "Zagazig University", grade: "Very Good" },
+  { year: "2009", title: "Master Degree in General Surgery", place: "Zagazig University", grade: "Very Good" },
+  { year: "2004", title: "Bachelor of Medicine & Surgery (MBBCh)", place: "Zagazig University", grade: "Excellent" },
+];
+
 const skillGroups = [
   { title: "Leadership & Management", icon: Users, items: ["Head of Surgery & OR Management", "OR Workflow Optimization", "Multidisciplinary Team Leadership", "Clinical Governance & Quality Improvement", "Patient Safety & Surgical Audits"] },
   { title: "Teaching & Education", icon: GraduationCap, items: ["CME Lecture Delivery", "Surgical Teaching & Mentorship", "Training Junior Surgeons", "OR & Ward Nursing Education", "Structured Patient Education", "M&M Meetings"] },
