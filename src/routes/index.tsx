@@ -290,13 +290,22 @@ function Index() {
                   <div className="font-medium group-hover:text-accent transition">tamerelalfy@hca.med.sa</div>
                 </div>
               </a>
+              <a href="tel:+966548026853" className="flex items-center gap-4 p-5 rounded-xl border border-border hover:border-accent transition group">
+                <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
+                  <Phone className="h-5 w-5 text-accent" />
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Phone</div>
+                  <div className="font-medium group-hover:text-accent transition">+966 54 802 6853</div>
+                </div>
+              </a>
               <div className="flex items-center gap-4 p-5 rounded-xl border border-border">
                 <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
                   <MapPin className="h-5 w-5 text-accent" />
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-widest text-muted-foreground">Practice</div>
-                  <div className="font-medium">MDH Hospital — Al Khobar, KSA</div>
+                  <div className="font-medium">Mohamed Dossary Hospital — Al Khobar, KSA</div>
                 </div>
               </div>
             </div>
