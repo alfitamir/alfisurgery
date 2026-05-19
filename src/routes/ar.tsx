@@ -262,15 +262,19 @@ function ArabicIndex() {
                   <div className="font-medium group-hover:text-accent transition">للمرضى</div>
                 </div>
               </a>
-              <div className="flex items-center gap-4 p-5 rounded-xl border border-border">
-                <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
+              <a href="tel:+966138011910" className="flex items-start gap-4 p-5 rounded-xl border border-border hover:border-accent transition group">
+                <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center shrink-0">
                   <MapPin className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <div className="text-xs tracking-widest text-muted-foreground">العنوان</div>
-                  <div className="font-medium">مستشفى محمد الدوسري — الخبر، المملكة العربية السعودية</div>
+                  <div className="text-xs tracking-widest text-muted-foreground">العيادة</div>
+                  <div className="font-medium leading-loose">
+                    شارع الرابع، الخبر الجنوبية<br />
+                    الخبر 34621، المملكة العربية السعودية
+                  </div>
+                  <div className="mt-2 text-sm text-accent group-hover:underline" dir="ltr">+966 13 801 1910</div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
