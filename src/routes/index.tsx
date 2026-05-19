@@ -313,6 +313,15 @@ function Index() {
                   <div className="font-medium group-hover:text-accent transition">@alfy_surgery</div>
                 </div>
               </a>
+              <a href="https://www.facebook.com/share/18GMPg3MQw/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-5 rounded-xl border border-border hover:border-accent transition group">
+                <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
+                  <Facebook className="h-5 w-5 text-accent" />
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Facebook</div>
+                  <div className="font-medium group-hover:text-accent transition">Dr. Tamer Elalfy</div>
+                </div>
+              </a>
               <div className="flex items-center gap-4 p-5 rounded-xl border border-border">
                 <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
                   <MapPin className="h-5 w-5 text-accent" />
