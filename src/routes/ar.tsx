@@ -253,6 +253,15 @@ function ArabicIndex() {
                   <div className="font-medium group-hover:text-accent transition">Dr. Tamer Elalfy</div>
                 </div>
               </a>
+              <a href="https://whatsapp.com/channel/0029VbDHjNiKAwEkWMqT5C2P" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-5 rounded-xl border border-border hover:border-accent transition group">
+                <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
+                  <MessageCircle className="h-5 w-5 text-accent" />
+                </div>
+                <div>
+                  <div className="text-xs tracking-widest text-muted-foreground">قناة واتساب</div>
+                  <div className="font-medium group-hover:text-accent transition">للمرضى</div>
+                </div>
+              </a>
               <div className="flex items-center gap-4 p-5 rounded-xl border border-border">
                 <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
                   <MapPin className="h-5 w-5 text-accent" />
