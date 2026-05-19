@@ -331,15 +331,19 @@ function Index() {
                   <div className="font-medium group-hover:text-accent transition">For patients</div>
                 </div>
               </a>
-              <div className="flex items-center gap-4 p-5 rounded-xl border border-border">
-                <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
+              <a href="tel:+966138011910" className="flex items-start gap-4 p-5 rounded-xl border border-border hover:border-accent transition group">
+                <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center shrink-0">
                   <MapPin className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Practice</div>
-                  <div className="font-medium">Mohamed Dossary Hospital — Al Khobar, KSA</div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Clinic</div>
+                  <div className="font-medium leading-relaxed">
+                    4th St, Al Khobar Al Janubiyah<br />
+                    Al Khobar 34621, Saudi Arabia
+                  </div>
+                  <div className="mt-2 text-sm text-accent group-hover:underline" dir="ltr">+966 13 801 1910</div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
