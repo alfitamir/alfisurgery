@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope,
-  HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowLeft, Phone, Download, Globe,
+  HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowLeft, Phone, Download, Globe, Youtube,
 } from "lucide-react";
 import portrait from "@/assets/dr-elalfy.jpg";
 
