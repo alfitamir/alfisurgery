@@ -13,6 +13,7 @@ import { Route as PatientsRouteImport } from './routes/patients'
 import { Route as ArRouteImport } from './routes/ar'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ArPatientsRouteImport } from './routes/ar.patients'
+import { Route as ArMedicalQuestionsRouteImport } from './routes/ar.medical-questions'
 
 const PatientsRoute = PatientsRouteImport.update({
   id: '/patients',
@@ -34,17 +35,24 @@ const ArPatientsRoute = ArPatientsRouteImport.update({
   path: '/patients',
   getParentRoute: () => ArRoute,
 } as any)
+const ArMedicalQuestionsRoute = ArMedicalQuestionsRouteImport.update({
+  id: '/medical-questions',
+  path: '/medical-questions',
+  getParentRoute: () => ArRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/ar': typeof ArRouteWithChildren
   '/patients': typeof PatientsRoute
+  '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/ar': typeof ArRouteWithChildren
   '/patients': typeof PatientsRoute
+  '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
 }
 export interface FileRoutesById {
@@ -52,14 +60,26 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/ar': typeof ArRouteWithChildren
   '/patients': typeof PatientsRoute
+  '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/ar' | '/patients' | '/ar/patients'
+  fullPaths:
+    | '/'
+    | '/ar'
+    | '/patients'
+    | '/ar/medical-questions'
+    | '/ar/patients'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/ar' | '/patients' | '/ar/patients'
-  id: '__root__' | '/' | '/ar' | '/patients' | '/ar/patients'
+  to: '/' | '/ar' | '/patients' | '/ar/medical-questions' | '/ar/patients'
+  id:
+    | '__root__'
+    | '/'
+    | '/ar'
+    | '/patients'
+    | '/ar/medical-questions'
+    | '/ar/patients'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -98,14 +118,23 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArPatientsRouteImport
       parentRoute: typeof ArRoute
     }
+    '/ar/medical-questions': {
+      id: '/ar/medical-questions'
+      path: '/medical-questions'
+      fullPath: '/ar/medical-questions'
+      preLoaderRoute: typeof ArMedicalQuestionsRouteImport
+      parentRoute: typeof ArRoute
+    }
   }
 }
 
 interface ArRouteChildren {
+  ArMedicalQuestionsRoute: typeof ArMedicalQuestionsRoute
   ArPatientsRoute: typeof ArPatientsRoute
 }
 
 const ArRouteChildren: ArRouteChildren = {
+  ArMedicalQuestionsRoute: ArMedicalQuestionsRoute,
   ArPatientsRoute: ArPatientsRoute,
 }
 
@@ -119,3 +148,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
