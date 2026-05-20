@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as PatientsRouteImport } from './routes/patients'
 import { Route as ArRouteImport } from './routes/ar'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ArPatientsRouteImport } from './routes/ar.patients'
 
 const PatientsRoute = PatientsRouteImport.update({
   id: '/patients',
@@ -28,34 +29,42 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ArPatientsRoute = ArPatientsRouteImport.update({
+  id: '/patients',
+  path: '/patients',
+  getParentRoute: () => ArRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/ar': typeof ArRoute
+  '/ar': typeof ArRouteWithChildren
   '/patients': typeof PatientsRoute
+  '/ar/patients': typeof ArPatientsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/ar': typeof ArRoute
+  '/ar': typeof ArRouteWithChildren
   '/patients': typeof PatientsRoute
+  '/ar/patients': typeof ArPatientsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/ar': typeof ArRoute
+  '/ar': typeof ArRouteWithChildren
   '/patients': typeof PatientsRoute
+  '/ar/patients': typeof ArPatientsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/ar' | '/patients'
+  fullPaths: '/' | '/ar' | '/patients' | '/ar/patients'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/ar' | '/patients'
-  id: '__root__' | '/' | '/ar' | '/patients'
+  to: '/' | '/ar' | '/patients' | '/ar/patients'
+  id: '__root__' | '/' | '/ar' | '/patients' | '/ar/patients'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ArRoute: typeof ArRoute
+  ArRoute: typeof ArRouteWithChildren
   PatientsRoute: typeof PatientsRoute
 }
 
@@ -82,14 +91,41 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ar/patients': {
+      id: '/ar/patients'
+      path: '/patients'
+      fullPath: '/ar/patients'
+      preLoaderRoute: typeof ArPatientsRouteImport
+      parentRoute: typeof ArRoute
+    }
   }
 }
 
+interface ArRouteChildren {
+  ArPatientsRoute: typeof ArPatientsRoute
+}
+
+const ArRouteChildren: ArRouteChildren = {
+  ArPatientsRoute: ArPatientsRoute,
+}
+
+const ArRouteWithChildren = ArRoute._addFileChildren(ArRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ArRoute: ArRoute,
+  ArRoute: ArRouteWithChildren,
   PatientsRoute: PatientsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
