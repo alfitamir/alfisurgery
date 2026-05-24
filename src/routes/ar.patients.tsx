@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Stethoscope, ArrowLeft, MessageCircle, ChevronDown, ShieldCheck, Clock, HeartPulse, Languages, AlertTriangle, Globe } from "lucide-react";
+import { Stethoscope, ArrowLeft, MessageCircle, ChevronDown, ShieldCheck, Clock, HeartPulse, Languages, AlertTriangle, Globe, ClipboardList, Activity, Apple, Pill, Bandage, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/ar/patients")({
   component: ArabicPatientsPage,
@@ -29,6 +29,35 @@ const expectations = [
   { icon: ShieldCheck, title: "معلومات موثوقة", text: "محتوى مبني على الأدلة العلمية يكتبه ويراجعه استشاري جراحة." },
   { icon: Clock, title: "نصائح قبل وبعد العملية", text: "ما يجب فعله قبل وبعد الجراحة: التغذية، العناية بالجرح، النشاط، والعلامات التحذيرية." },
   { icon: Languages, title: "بالعربية والإنجليزية", text: "المحتوى متاح باللغتين لتسهيل المتابعة على المرضى وذويهم." },
+];
+
+const preOp = [
+  { icon: CheckCircle2, title: "تأكيد الموعد", text: "تحقّق من التاريخ والوقت واسم المستشفى وفريق الجراح. احضر قبل الموعد بساعة إلى ساعتين حسب التعليمات." },
+  { icon: Pill, title: "مراجعة الأدوية", text: "أخبرنا عن مميعات الدم (الأسبرين، الوارفارين، كلوبيدوغريل، مضادات الالتهاب) وأدوية السكري والمكملات. بعضها يجب إيقافه — لا توقف أي دواء من تلقاء نفسك." },
+  { icon: Apple, title: "الصيام", text: "عادةً يُمنع الطعام لمدة 6–8 ساعات والسوائل الصافية لمدة ساعتين قبل العملية، ما لم يُذكر غير ذلك." },
+  { icon: Bandage, title: "النظافة والبشرة", text: "استحمّ ليلة العملية وصباحها. لا تحلق منطقة العملية بنفسك. أزل طلاء الأظافر والمجوهرات والعدسات اللاصقة." },
+  { icon: ClipboardList, title: "ما تحضره معك", text: "الهوية، بطاقة التأمين، قائمة الأدوية الحالية، النظارة، وملابس فضفاضة مريحة للعودة." },
+  { icon: HeartPulse, title: "تحسين حالتك الصحية", text: "أوقف التدخين في أقرب وقت — حتى أسابيع قليلة تساعد على التئام الجرح. حافظ على شرب الماء والمشي يوميًا قدر الإمكان." },
+];
+
+const postOp = [
+  { icon: Activity, title: "تحرّك مبكرًا وبانتظام", text: "المشي القصير كل 1–2 ساعة أثناء اليقظة يقلل خطر الجلطات والتهابات الصدر. تجنّب رفع الأوزان الثقيلة (أكثر من 5 كجم) لمدة 4–6 أسابيع." },
+  { icon: Bandage, title: "العناية بالجرح", text: "حافظ على الضمادات نظيفة وجافة. يمكن الاستحمام عادةً بعد 48 ساعة ما لم يُذكر غير ذلك. جفّف بالتربيت لا بالفرك أو النقع." },
+  { icon: Pill, title: "الألم والدواء", text: "تناول مسكنات الألم بانتظام في أول 48–72 ساعة بدلًا من الانتظار حتى يشتدّ الألم. أكمل أي مضاد حيوي حتى نهايته." },
+  { icon: Apple, title: "الأكل والشرب", text: "ابدأ برشفات ماء وطعام خفيف. بعد جراحات السمنة اتبع خطة التغذية المتدرجة بدقة. اشرب كمية كافية ليبقى لون البول فاتحًا." },
+  { icon: Clock, title: "الراحة والنوم", text: "نم بوضعية شبه جالس إذا أجريت جراحة بطن أو صدر. معظم المرضى يشعرون بتحسّن ملحوظ خلال 3–5 أيام." },
+  { icon: CheckCircle2, title: "المتابعة", text: "احضر موعد المتابعة حتى لو شعرت بتحسّن — لنطمئن على الالتئام ونزيل الغرز أو الدبابيس إذا لزم." },
+];
+
+const redFlags = [
+  "حرارة أعلى من 38.5 درجة مئوية",
+  "ألم شديد أو متزايد بشكل مفاجئ",
+  "نزيف غزير أو انفتاح الجرح",
+  "احمرار أو تورّم أو خروج صديد من الجرح",
+  "ضيق في التنفس أو ألم بالصدر",
+  "ألم أو تورّم أو احمرار في بطّة الساق",
+  "قيء مستمر أو عدم القدرة على شرب السوائل",
+  "عدم خروج غازات أو براز لأكثر من 3 أيام بعد جراحة البطن",
 ];
 
 const faqs = [
@@ -159,6 +188,86 @@ function ArabicPatientsPage() {
           ))}
         </div>
       </section>
+
+      {/* Pre/Post-Op Education */}
+      <section id="education" className="bg-secondary/30 border-y border-border">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <div className="max-w-2xl">
+            <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">تثقيف المرضى</div>
+            <h2 className="mt-3 text-4xl md:text-5xl">قبل وبعد عمليتك.</h2>
+            <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
+              قائمة عملية بما يجب فعله في الأيام السابقة للعملية، وكيفية التعافي بأمان بعد العودة إلى المنزل. هذه إرشادات عامة؛ فريقك الجراحي سيعطيك تعليمات خاصة بحالتك.
+            </p>
+          </div>
+
+          <div className="mt-14 grid lg:grid-cols-2 gap-6">
+            {/* Pre-op */}
+            <div className="rounded-2xl border border-border bg-card p-8 shadow-[var(--shadow-soft)]">
+              <div className="flex items-center gap-3">
+                <div className="h-11 w-11 rounded-xl bg-[var(--gradient-accent)] flex items-center justify-center text-accent-foreground">
+                  <ClipboardList className="h-5 w-5" />
+                </div>
+                <h3 className="text-2xl">قبل العملية</h3>
+              </div>
+              <p className="mt-4 text-sm text-muted-foreground">في الأيام والساعات السابقة للجراحة.</p>
+
+              <ul className="mt-6 space-y-4">
+                {preOp.map((item) => (
+                  <li key={item.title} className="flex gap-3">
+                    <item.icon className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                    <div>
+                      <div className="font-medium">{item.title}</div>
+                      <div className="text-sm text-muted-foreground leading-relaxed mt-1">{item.text}</div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Post-op */}
+            <div className="rounded-2xl border border-border bg-card p-8 shadow-[var(--shadow-soft)]">
+              <div className="flex items-center gap-3">
+                <div className="h-11 w-11 rounded-xl bg-[var(--gradient-accent)] flex items-center justify-center text-accent-foreground">
+                  <Activity className="h-5 w-5" />
+                </div>
+                <h3 className="text-2xl">بعد العملية</h3>
+              </div>
+              <p className="mt-4 text-sm text-muted-foreground">التعافي في المنزل — الأيام والأسابيع الأولى.</p>
+
+              <ul className="mt-6 space-y-4">
+                {postOp.map((item) => (
+                  <li key={item.title} className="flex gap-3">
+                    <item.icon className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                    <div>
+                      <div className="font-medium">{item.title}</div>
+                      <div className="text-sm text-muted-foreground leading-relaxed mt-1">{item.text}</div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Red flags */}
+          <div className="mt-10 rounded-2xl border border-destructive/30 bg-card p-7">
+            <div className="flex items-center gap-3">
+              <AlertTriangle className="h-5 w-5 text-destructive" />
+              <h3 className="text-xl">متى تتصل بنا فورًا</h3>
+            </div>
+            <p className="mt-3 text-sm text-muted-foreground">اتصل بالعيادة أو توجّه إلى أقرب طوارئ إذا واجهت:</p>
+            <ul className="mt-4 grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-muted-foreground">
+              {redFlags.map((r) => (
+                <li key={r} className="flex gap-2"><span className="text-destructive">•</span>{r}</li>
+              ))}
+            </ul>
+            <a href="tel:+966138011910" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-foreground hover:text-accent transition">
+              اتصل بالعيادة: 1910 801 13 966+ <ArrowLeft className="h-3.5 w-3.5" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+
 
       {/* FAQs */}
       <section className="bg-secondary/40 border-y border-border">
