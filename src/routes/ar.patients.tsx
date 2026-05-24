@@ -189,6 +189,86 @@ function ArabicPatientsPage() {
         </div>
       </section>
 
+      {/* Pre/Post-Op Education */}
+      <section id="education" className="bg-secondary/30 border-y border-border">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <div className="max-w-2xl">
+            <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">تثقيف المرضى</div>
+            <h2 className="mt-3 text-4xl md:text-5xl">قبل وبعد عمليتك.</h2>
+            <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
+              قائمة عملية بما يجب فعله في الأيام السابقة للعملية، وكيفية التعافي بأمان بعد العودة إلى المنزل. هذه إرشادات عامة؛ فريقك الجراحي سيعطيك تعليمات خاصة بحالتك.
+            </p>
+          </div>
+
+          <div className="mt-14 grid lg:grid-cols-2 gap-6">
+            {/* Pre-op */}
+            <div className="rounded-2xl border border-border bg-card p-8 shadow-[var(--shadow-soft)]">
+              <div className="flex items-center gap-3">
+                <div className="h-11 w-11 rounded-xl bg-[var(--gradient-accent)] flex items-center justify-center text-accent-foreground">
+                  <ClipboardList className="h-5 w-5" />
+                </div>
+                <h3 className="text-2xl">قبل العملية</h3>
+              </div>
+              <p className="mt-4 text-sm text-muted-foreground">في الأيام والساعات السابقة للجراحة.</p>
+
+              <ul className="mt-6 space-y-4">
+                {preOp.map((item) => (
+                  <li key={item.title} className="flex gap-3">
+                    <item.icon className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                    <div>
+                      <div className="font-medium">{item.title}</div>
+                      <div className="text-sm text-muted-foreground leading-relaxed mt-1">{item.text}</div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Post-op */}
+            <div className="rounded-2xl border border-border bg-card p-8 shadow-[var(--shadow-soft)]">
+              <div className="flex items-center gap-3">
+                <div className="h-11 w-11 rounded-xl bg-[var(--gradient-accent)] flex items-center justify-center text-accent-foreground">
+                  <Activity className="h-5 w-5" />
+                </div>
+                <h3 className="text-2xl">بعد العملية</h3>
+              </div>
+              <p className="mt-4 text-sm text-muted-foreground">التعافي في المنزل — الأيام والأسابيع الأولى.</p>
+
+              <ul className="mt-6 space-y-4">
+                {postOp.map((item) => (
+                  <li key={item.title} className="flex gap-3">
+                    <item.icon className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                    <div>
+                      <div className="font-medium">{item.title}</div>
+                      <div className="text-sm text-muted-foreground leading-relaxed mt-1">{item.text}</div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Red flags */}
+          <div className="mt-10 rounded-2xl border border-destructive/30 bg-card p-7">
+            <div className="flex items-center gap-3">
+              <AlertTriangle className="h-5 w-5 text-destructive" />
+              <h3 className="text-xl">متى تتصل بنا فورًا</h3>
+            </div>
+            <p className="mt-3 text-sm text-muted-foreground">اتصل بالعيادة أو توجّه إلى أقرب طوارئ إذا واجهت:</p>
+            <ul className="mt-4 grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-muted-foreground">
+              {redFlags.map((r) => (
+                <li key={r} className="flex gap-2"><span className="text-destructive">•</span>{r}</li>
+              ))}
+            </ul>
+            <a href="tel:+966138011910" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-foreground hover:text-accent transition">
+              اتصل بالعيادة: 1910 801 13 966+ <ArrowLeft className="h-3.5 w-3.5" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+
       {/* FAQs */}
       <section className="bg-secondary/40 border-y border-border">
         <div className="mx-auto max-w-4xl px-6 py-24">
