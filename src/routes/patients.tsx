@@ -25,6 +25,35 @@ const expectations = [
   { icon: Languages, title: "Arabic & English", text: "Content shared in both languages so families can follow along easily." },
 ];
 
+const preOp = [
+  { icon: CheckCircle2, title: "Confirm your appointment", text: "Re-check the date, time, hospital, and which surgeon's team you are with. Arrive 1–2 hours early as advised." },
+  { icon: Pill, title: "Review your medications", text: "Tell us about blood thinners (aspirin, warfarin, clopidogrel, NSAIDs), diabetes medicines, and supplements. Some need to be paused — never stop without instruction." },
+  { icon: Apple, title: "Fasting", text: "Usually no food for 6–8 hours and no clear fluids for 2 hours before surgery, unless told otherwise." },
+  { icon: Bandage, title: "Skin & hygiene", text: "Shower the night before and the morning of surgery. Do not shave the surgical site yourself. Remove nail polish, jewellery, and contact lenses." },
+  { icon: ClipboardList, title: "Bring with you", text: "ID, insurance card, list of current medications, eyeglasses, and loose comfortable clothing for going home." },
+  { icon: HeartPulse, title: "Optimise your health", text: "Stop smoking as early as possible — even a few weeks helps wound healing. Stay hydrated and walk daily if you can." },
+];
+
+const postOp = [
+  { icon: Activity, title: "Move early, move often", text: "Short walks every 1–2 hours while awake reduce the risk of blood clots and chest infections. Avoid heavy lifting (>5 kg) for 4–6 weeks." },
+  { icon: Bandage, title: "Wound care", text: "Keep dressings clean and dry. You can usually shower after 48 hours unless told otherwise. Pat dry — do not rub or soak." },
+  { icon: Pill, title: "Pain & medication", text: "Take painkillers on schedule for the first 48–72 hours rather than waiting for pain. Complete any antibiotic course fully." },
+  { icon: Apple, title: "Eating & drinking", text: "Start with sips of water and light food. After bariatric surgery follow the staged diet plan exactly. Drink enough to keep urine pale." },
+  { icon: Clock, title: "Rest & sleep", text: "Sleep slightly propped up if you had abdominal or chest surgery. Most patients feel noticeably better by days 3–5." },
+  { icon: CheckCircle2, title: "Follow-up", text: "Attend your follow-up appointment even if you feel well — it lets us check healing and remove stitches or clips if needed." },
+];
+
+const redFlags = [
+  "Fever above 38.5°C",
+  "Worsening or sudden severe pain",
+  "Heavy bleeding or wound opening",
+  "Redness, swelling, or pus from the wound",
+  "Shortness of breath or chest pain",
+  "Calf pain, swelling, or redness",
+  "Persistent vomiting or inability to keep fluids down",
+  "No bowel movement or gas for 3+ days after abdominal surgery",
+];
+
 const faqs = [
   {
     q: "What is the WhatsApp channel for?",
