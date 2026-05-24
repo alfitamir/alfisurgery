@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Stethoscope, ArrowRight, MessageCircle, ChevronDown, ShieldCheck, Clock, HeartPulse, Languages, AlertTriangle, Globe } from "lucide-react";
+import { Stethoscope, ArrowRight, MessageCircle, ChevronDown, ShieldCheck, Clock, HeartPulse, Languages, AlertTriangle, Globe, ClipboardList, Activity, Apple, Pill, Bandage, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/patients")({
   component: PatientsPage,
