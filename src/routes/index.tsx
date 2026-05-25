@@ -274,6 +274,45 @@ function Index() {
         </div>
       </section>
 
+      {/* YouTube Videos */}
+      <section className="bg-secondary/40 border-y border-border">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <div className="mb-12">
+            <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Patient Education</div>
+            <h2 className="mt-3 font-serif text-4xl md:text-5xl">Watch & Learn.</h2>
+            <p className="mt-4 text-muted-foreground max-w-xl">Short educational videos to help you understand common surgical procedures and what to expect.</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <a
+              href="https://youtu.be/OM66BEr8pnc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block rounded-2xl bg-card border border-border overflow-hidden hover:border-accent transition shadow-[var(--shadow-soft)]"
+            >
+              <div className="relative aspect-video overflow-hidden">
+                <img
+                  src="https://i.ytimg.com/vi/OM66BEr8pnc/maxresdefault.jpg"
+                  alt="Advanced uses of surgical laparoscopy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition">
+                  <div className="h-14 w-14 rounded-full bg-white/90 flex items-center justify-center group-hover:scale-110 transition">
+                    <Youtube className="h-6 w-6 text-red-600 ml-0.5" />
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="text-xs uppercase tracking-widest text-muted-foreground mb-2">3 min · Arabic</div>
+                <h3 className="font-serif text-xl group-hover:text-accent transition">Advanced Uses of Surgical Laparoscopy</h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                  An overview of how minimally invasive laparoscopic surgery is applied across gallbladder, hernia, and other abdominal procedures — and why it matters for faster recovery.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Contact */}
       <section id="contact" className="mx-auto max-w-6xl px-6 py-24">
         <div className="rounded-3xl bg-card border border-border p-10 md:p-16 shadow-[var(--shadow-elegant)] relative overflow-hidden">
