@@ -217,6 +217,9 @@ function ArabicMedicalQuestionsPage() {
         </div>
       </section>
 
+      {/* Symptom Triage */}
+      <SymptomTriage />
+
       {/* Conditions */}
       <section className="mx-auto max-w-4xl px-6 py-16">
         <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold text-center">حسب الحالة</div>
@@ -224,7 +227,9 @@ function ArabicMedicalQuestionsPage() {
 
         <div className="mt-12 space-y-3">
           {conditions.map((c, i) => (
-            <ConditionCard key={c.id} c={c} defaultOpen={i === 0} />
+            <div key={c.id} id={c.id} className="scroll-mt-24">
+              <ConditionCard c={c} defaultOpen={i === 0} />
+            </div>
           ))}
         </div>
       </section>
