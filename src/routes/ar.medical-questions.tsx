@@ -311,3 +311,224 @@ function ConditionCard({ c, defaultOpen = false }: { c: Condition; defaultOpen?:
     </div>
   );
 }
+
+type Question = {
+  id: string;
+  text: string;
+  options: { label: string; next?: string; result?: string; emergency?: boolean }[];
+};
+
+type TriageResult = {
+  conditionId?: string;
+  title: string;
+  message: string;
+  emergency?: boolean;
+  redFlags?: string[];
+};
+
+const questions: Record<string, Question> = {
+  start: {
+    id: "start",
+    text: "ما المنطقة أو العَرَض الرئيسي الذي يزعجك؟",
+    options: [
+      { label: "ألم في أعلى البطن أو تحت الأضلاع اليمنى", next: "gallbladder_q" },
+      { label: "كتلة أو انتفاخ في جدار البطن أو الإربية", next: "hernia_q" },
+      { label: "زيادة في الوزن أو سؤال عن جراحات السمنة", result: "bariatric" },
+      { label: "كتلة أو ألم في الرقبة / مشاكل الغدة الدرقية", next: "thyroid_q" },
+      { label: "نزيف، ألم شرجي، أو تغيّر في عادات التبرز", next: "colorectal_q" },
+      { label: "حرقة، ارتجاع، أو ألم في المعدة", next: "gi_q" },
+    ],
+  },
+  gallbladder_q: {
+    id: "gallbladder_q",
+    text: "هل لديك أي من هذه الأعراض الآن؟",
+    options: [
+      { label: "اصفرار الجلد/العين، حمى ورجفة، أو ألم شديد مستمر لساعات", result: "emergency_gallbladder", emergency: true },
+      { label: "ألم متكرر بعد الأكل الدسم، غثيان أو انتفاخ", result: "gallbladder" },
+      { label: "انزعاج خفيف أحيانًا فقط", result: "gallbladder" },
+    ],
+  },
+  hernia_q: {
+    id: "hernia_q",
+    text: "كيف تتصرف الكتلة عند الضغط أو الاستلقاء؟",
+    options: [
+      { label: "أصبحت مؤلمة جدًا، صلبة، ولا تختفي — مع غثيان أو قيء", result: "emergency_hernia", emergency: true },
+      { label: "تظهر مع الكحة/الوقوف وتختفي عند الاستلقاء", result: "hernia" },
+      { label: "موجودة دائمًا لكن بدون ألم شديد", result: "hernia" },
+    ],
+  },
+  thyroid_q: {
+    id: "thyroid_q",
+    text: "هل ظهرت أي من هذه العلامات؟",
+    options: [
+      { label: "صعوبة شديدة في التنفس أو البلع المفاجئ", result: "emergency_general", emergency: true },
+      { label: "كتلة تتضخم بسرعة، بحّة صوت مستمرة، أو غدد ليمفاوية متضخمة", result: "thyroid" },
+      { label: "تضخم خفيف أو نتائج تحاليل غير طبيعية", result: "thyroid" },
+    ],
+  },
+  colorectal_q: {
+    id: "colorectal_q",
+    text: "ما طبيعة الأعراض؟",
+    options: [
+      { label: "نزيف غزير، دوخة شديدة، أو ألم بطني شديد مع حمى", result: "emergency_general", emergency: true },
+      { label: "نزيف متكرر، تغيّر مستمر بالتبرز، أو فقدان وزن غير مبرر", result: "colorectal" },
+      { label: "بواسير أو ألم شرجي خفيف عرضي", result: "colorectal" },
+    ],
+  },
+  gi_q: {
+    id: "gi_q",
+    text: "هل لديك أي من هذه الأعراض؟",
+    options: [
+      { label: "قيء دموي، براز أسود قطراني، أو ألم شديد مفاجئ", result: "emergency_general", emergency: true },
+      { label: "صعوبة بلع، فقدان وزن، أو أعراض مستمرة رغم العلاج", result: "gi" },
+      { label: "حرقة أو ارتجاع متكرر بعد الأكل", result: "gi" },
+    ],
+  },
+};
+
+const results: Record<string, TriageResult> = {
+  gallbladder: { conditionId: "gallbladder", title: "قسم المرارة وحصواتها", message: "أعراضك تتوافق مع مشاكل المرارة. اقرأ الإرشادات أدناه واحجز موعدًا إن تكررت النوبات." },
+  hernia: { conditionId: "hernia", title: "قسم الفتق", message: "ما تصفه يتوافق مع وجود فتق. كل فتق يحتاج تقييمًا جراحيًا حتى لو كان مؤلمًا قليلاً." },
+  bariatric: { conditionId: "bariatric", title: "قسم جراحات السمنة", message: "اطلع على شروط ومميزات جراحات السمنة، ثم احجز استشارة لتقييم مدى ملاءمتها لك." },
+  thyroid: { conditionId: "thyroid", title: "قسم الغدة الدرقية", message: "تحتاج لتقييم الغدة بتحاليل وموجات صوتية. احجز موعدًا لمناقشة النتائج وخطة العلاج." },
+  colorectal: { conditionId: "colorectal", title: "قسم القولون والشرج", message: "لا تفترض أنه «مجرد بواسير» — أي نزيف أو تغيّر مستمر يستدعي تقييمًا جراحيًا." },
+  gi: { conditionId: "gi", title: "قسم الجهاز الهضمي والارتجاع", message: "كثير من الحالات تتحسن بتعديل نمط الحياة والعلاج الدوائي. احجز موعدًا إن استمرت الأعراض." },
+  emergency_gallbladder: {
+    title: "علامات تحذيرية — توجّه للطوارئ",
+    message: "هذه الأعراض قد تدل على التهاب حاد بالمرارة أو انسداد القنوات المرارية. لا تنتظر، توجّه فورًا لأقرب قسم طوارئ.",
+    emergency: true,
+    redFlags: ["اصفرار الجلد أو العينين", "حمى ورجفة مع ألم البطن", "ألم شديد مستمر لساعات", "قيء متكرر يمنع الشرب"],
+  },
+  emergency_hernia: {
+    title: "علامات تحذيرية — توجّه للطوارئ",
+    message: "احتمال اختناق الفتق وارد. التأخير قد يؤدي لمضاعفات خطيرة. توجّه فورًا لأقرب قسم طوارئ.",
+    emergency: true,
+    redFlags: ["ألم شديد مفاجئ في موضع الفتق", "كتلة صلبة لا تختفي وتغيّر لونها", "غثيان وقيء مع انتفاخ وعدم خروج غازات"],
+  },
+  emergency_general: {
+    title: "علامات تحذيرية — توجّه للطوارئ",
+    message: "ما تصفه يستدعي تقييمًا فوريًا. لا تنتظر موعد العيادة — توجّه لأقرب قسم طوارئ الآن.",
+    emergency: true,
+    redFlags: ["نزيف غزير أو قيء/براز دموي", "ألم شديد ومفاجئ", "صعوبة تنفس أو بلع مفاجئة", "دوخة شديدة أو فقدان وعي"],
+  },
+};
+
+function SymptomTriage() {
+  const [history, setHistory] = useState<string[]>(["start"]);
+  const [resultId, setResultId] = useState<string | null>(null);
+
+  const currentId = history[history.length - 1];
+  const current = questions[currentId];
+  const result = resultId ? results[resultId] : null;
+
+  const select = (opt: Question["options"][number]) => {
+    if (opt.result) setResultId(opt.result);
+    else if (opt.next) setHistory([...history, opt.next]);
+  };
+
+  const back = () => {
+    if (resultId) { setResultId(null); return; }
+    if (history.length > 1) setHistory(history.slice(0, -1));
+  };
+
+  const reset = () => { setHistory(["start"]); setResultId(null); };
+
+  const goToCondition = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  return (
+    <section className="mx-auto max-w-4xl px-6 pt-12">
+      <div className="rounded-3xl border border-border bg-card overflow-hidden shadow-sm">
+        <div className="p-6 md:p-8 border-b border-border bg-secondary/30">
+          <div className="flex items-center gap-3">
+            <div className="h-10 w-10 rounded-xl bg-[var(--gradient-accent)] flex items-center justify-center text-accent-foreground">
+              <HelpCircle className="h-5 w-5" />
+            </div>
+            <div>
+              <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">أسئلة سريعة</div>
+              <h2 className="text-2xl md:text-3xl mt-1">اختر أعراضك ودعنا نوجّهك</h2>
+            </div>
+          </div>
+          <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+            أجب عن سؤال أو سؤالين لنحدد القسم المناسب لك ونُظهر علامات التحذير المهمة. هذا ليس تشخيصًا طبيًا.
+          </p>
+        </div>
+
+        <div className="p-6 md:p-8">
+          {!result && current && (
+            <div>
+              <div className="text-xs text-muted-foreground mb-3">السؤال {history.length} من 2</div>
+              <h3 className="text-xl md:text-2xl mb-5">{current.text}</h3>
+              <div className="space-y-2">
+                {current.options.map((opt, i) => (
+                  <button
+                    key={i}
+                    onClick={() => select(opt)}
+                    className="w-full text-right flex items-center justify-between gap-3 rounded-xl border border-border bg-background px-4 py-3.5 text-sm hover:border-accent hover:bg-secondary/40 transition"
+                  >
+                    <span className="leading-relaxed">{opt.label}</span>
+                    <ArrowLeft className="h-4 w-4 text-muted-foreground shrink-0" />
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {result && (
+            <div className={result.emergency ? "rounded-2xl border-2 border-destructive/40 bg-destructive/5 p-5 md:p-6" : "rounded-2xl border border-accent/30 bg-accent/5 p-5 md:p-6"}>
+              <div className="flex items-center gap-3 mb-3">
+                {result.emergency ? (
+                  <Siren className="h-6 w-6 text-destructive" />
+                ) : (
+                  <CalendarCheck className="h-6 w-6 text-accent" />
+                )}
+                <h3 className="text-xl md:text-2xl">{result.title}</h3>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">{result.message}</p>
+
+              {result.redFlags && (
+                <ul className="mt-4 space-y-1.5 text-sm text-muted-foreground leading-relaxed list-disc pr-5 marker:text-destructive">
+                  {result.redFlags.map((r) => <li key={r}>{r}</li>)}
+                </ul>
+              )}
+
+              <div className="mt-5 flex flex-wrap gap-3">
+                {result.emergency ? (
+                  <a href="tel:997" className="inline-flex items-center gap-2 rounded-full bg-destructive text-destructive-foreground px-5 py-2.5 text-sm font-semibold hover:opacity-90 transition">
+                    <Siren className="h-4 w-4" /> اتصل بالطوارئ 997
+                  </a>
+                ) : (
+                  result.conditionId && (
+                    <button
+                      onClick={() => goToCondition(result.conditionId!)}
+                      className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-semibold hover:opacity-90 transition"
+                    >
+                      اعرض الإرشادات الكاملة <ArrowLeft className="h-4 w-4" />
+                    </button>
+                  )
+                )}
+                <a href="tel:+966138011910" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-semibold hover:border-accent transition">
+                  <Phone className="h-4 w-4" /> احجز موعد بالعيادة
+                </a>
+              </div>
+            </div>
+          )}
+
+          <div className="mt-6 flex items-center justify-between text-sm">
+            <button
+              onClick={back}
+              disabled={!resultId && history.length === 1}
+              className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-foreground disabled:opacity-40 disabled:cursor-not-allowed transition"
+            >
+              <ArrowRight className="h-4 w-4" /> رجوع
+            </button>
+            <button onClick={reset} className="text-muted-foreground hover:text-foreground transition">
+              ابدأ من جديد
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
