@@ -370,11 +370,13 @@ const questions: Record<string, Question> = {
     text: "ما المنطقة أو العَرَض الرئيسي الذي يزعجك؟",
     options: [
       { label: "ألم في أعلى البطن أو تحت الأضلاع اليمنى", next: "gallbladder_q" },
-      { label: "كتلة أو انتفاخ في جدار البطن أو الإربية", next: "hernia_q" },
+      { label: "كتلة أو انتفاخ في جدار البطن أو الإربية", next: "hernia_location_q" },
+      { label: "انتفاخ شديد بالبطن مع توقف الغازات/البراز أو قيء متكرر", next: "obstruction_q" },
       { label: "زيادة في الوزن أو سؤال عن جراحات السمنة", result: "bariatric" },
       { label: "كتلة أو ألم في الرقبة / مشاكل الغدة الدرقية", next: "thyroid_q" },
       { label: "نزيف، ألم شرجي، أو تغيّر في عادات التبرز", next: "colorectal_q" },
       { label: "حرقة، ارتجاع، أو ألم في المعدة", next: "gi_q" },
+      { label: "ثقل أو ألم في كيس الصفن أو دوالي بالخصية", next: "varicocele_q" },
     ],
   },
   gallbladder_q: {
@@ -386,13 +388,59 @@ const questions: Record<string, Question> = {
       { label: "انزعاج خفيف أحيانًا فقط", result: "gallbladder" },
     ],
   },
-  hernia_q: {
-    id: "hernia_q",
-    text: "كيف تتصرف الكتلة عند الضغط أو الاستلقاء؟",
+  hernia_location_q: {
+    id: "hernia_location_q",
+    text: "أين يقع الانتفاخ بالضبط؟",
     options: [
-      { label: "أصبحت مؤلمة جدًا، صلبة، ولا تختفي — مع غثيان أو قيء", result: "emergency_hernia", emergency: true },
+      { label: "في منطقة السرّة (فتق سرّي)", next: "hernia_status_q_umbilical" },
+      { label: "في أصل الفخذ أو كيس الصفن (فتق إربي)", next: "hernia_status_q_inguinal" },
+      { label: "بمكان جرح عملية سابقة (فتق جراحي)", next: "hernia_status_q_incisional" },
+      { label: "لست متأكدًا من الموقع", next: "hernia_status_q_general" },
+    ],
+  },
+  hernia_status_q_umbilical: {
+    id: "hernia_status_q_umbilical",
+    text: "كيف تتصرف الكتلة الآن؟",
+    options: [
+      { label: "مؤلمة جدًا، صلبة، لا تختفي مع غثيان أو قيء", result: "emergency_hernia", emergency: true },
+      { label: "تظهر مع الكحة/الوقوف وتختفي عند الاستلقاء", result: "hernia_umbilical" },
+      { label: "موجودة دائمًا لكن بدون ألم شديد", result: "hernia_umbilical" },
+    ],
+  },
+  hernia_status_q_inguinal: {
+    id: "hernia_status_q_inguinal",
+    text: "كيف تتصرف الكتلة الآن؟",
+    options: [
+      { label: "مؤلمة جدًا، صلبة، لا تختفي مع غثيان أو قيء", result: "emergency_hernia", emergency: true },
+      { label: "تظهر مع الكحة/الوقوف وتختفي عند الاستلقاء", result: "hernia_inguinal" },
+      { label: "موجودة دائمًا لكن بدون ألم شديد", result: "hernia_inguinal" },
+    ],
+  },
+  hernia_status_q_incisional: {
+    id: "hernia_status_q_incisional",
+    text: "كيف تتصرف الكتلة الآن؟",
+    options: [
+      { label: "مؤلمة جدًا، صلبة، لا تختفي مع غثيان أو قيء", result: "emergency_hernia", emergency: true },
+      { label: "تظهر مع الكحة/المجهود وتختفي عند الاستلقاء", result: "hernia_incisional" },
+      { label: "موجودة دائمًا لكن بدون ألم شديد", result: "hernia_incisional" },
+    ],
+  },
+  hernia_status_q_general: {
+    id: "hernia_status_q_general",
+    text: "كيف تتصرف الكتلة الآن؟",
+    options: [
+      { label: "مؤلمة جدًا، صلبة، لا تختفي مع غثيان أو قيء", result: "emergency_hernia", emergency: true },
       { label: "تظهر مع الكحة/الوقوف وتختفي عند الاستلقاء", result: "hernia" },
       { label: "موجودة دائمًا لكن بدون ألم شديد", result: "hernia" },
+    ],
+  },
+  obstruction_q: {
+    id: "obstruction_q",
+    text: "هل تنطبق عليك أي من هذه؟",
+    options: [
+      { label: "توقف تام للغازات والبراز + قيء + ألم بطني شديد", result: "emergency_obstruction", emergency: true },
+      { label: "انتفاخ متزايد وقيء متكرر منذ ساعات", result: "emergency_obstruction", emergency: true },
+      { label: "نوبات انتفاخ وآلام تشنّجية متقطعة بعد عملية سابقة", result: "obstruction" },
     ],
   },
   thyroid_q: {
@@ -409,7 +457,8 @@ const questions: Record<string, Question> = {
     text: "ما طبيعة الأعراض؟",
     options: [
       { label: "نزيف غزير، دوخة شديدة، أو ألم بطني شديد مع حمى", result: "emergency_general", emergency: true },
-      { label: "نزيف متكرر، تغيّر مستمر بالتبرز، أو فقدان وزن غير مبرر", result: "colorectal" },
+      { label: "تغيّر مستمر بالتبرز + فقدان وزن غير مبرر أو فقر دم", result: "colon_tumor" },
+      { label: "نزيف متكرر مع البراز أو تاريخ عائلي لأورام القولون", result: "colon_tumor" },
       { label: "بواسير أو ألم شرجي خفيف عرضي", result: "colorectal" },
     ],
   },
@@ -422,15 +471,30 @@ const questions: Record<string, Question> = {
       { label: "حرقة أو ارتجاع متكرر بعد الأكل", result: "gi" },
     ],
   },
+  varicocele_q: {
+    id: "varicocele_q",
+    text: "كيف تصف الأعراض؟",
+    options: [
+      { label: "ألم مفاجئ وشديد بالخصية + تورّم سريع", result: "emergency_general", emergency: true },
+      { label: "ثقل أو ألم خفيف يزداد مع الوقوف الطويل، أو تأخر إنجاب", result: "varicocele" },
+      { label: "تضخم ملحوظ بأوردة كيس الصفن بدون ألم", result: "varicocele" },
+    ],
+  },
 };
 
 const results: Record<string, TriageResult> = {
   gallbladder: { conditionId: "gallbladder", title: "قسم المرارة وحصواتها", message: "أعراضك تتوافق مع مشاكل المرارة. اقرأ الإرشادات أدناه واحجز موعدًا إن تكررت النوبات." },
   hernia: { conditionId: "hernia", title: "قسم الفتق", message: "ما تصفه يتوافق مع وجود فتق. كل فتق يحتاج تقييمًا جراحيًا حتى لو كان مؤلمًا قليلاً." },
+  hernia_umbilical: { conditionId: "hernia", title: "فتق سُرّي محتمل", message: "الفتق السرّي شائع ويُعالج بإصلاح بسيط — غالبًا بالمنظار مع شبكة. ينصح بالتقييم لتجنّب الاختناق مستقبلًا." },
+  hernia_inguinal: { conditionId: "hernia", title: "فتق إربي محتمل", message: "الفتق الإربي يحتاج إصلاحًا جراحيًا (مفتوحًا أو بالمنظار). الانتظار يزيد خطر الاختناق ويصعّب العملية لاحقًا." },
+  hernia_incisional: { conditionId: "hernia", title: "فتق جراحي (بمكان عملية سابقة)", message: "الفتوق الجراحية تميل للتكبر مع الوقت وتحتاج إصلاحًا متخصصًا، غالبًا باستخدام شبكة. احجز للتقييم وتخطيط العملية." },
+  obstruction: { conditionId: "obstruction", title: "قسم الانسداد المعوي", message: "النوبات المتكررة قد تشير لالتصاقات بعد عمليات سابقة. تحتاج تقييمًا لتفادي حدوث انسداد كامل." },
   bariatric: { conditionId: "bariatric", title: "قسم جراحات السمنة", message: "اطلع على شروط ومميزات جراحات السمنة، ثم احجز استشارة لتقييم مدى ملاءمتها لك." },
   thyroid: { conditionId: "thyroid", title: "قسم الغدة الدرقية", message: "تحتاج لتقييم الغدة بتحاليل وموجات صوتية. احجز موعدًا لمناقشة النتائج وخطة العلاج." },
   colorectal: { conditionId: "colorectal", title: "قسم القولون والشرج", message: "لا تفترض أنه «مجرد بواسير» — أي نزيف أو تغيّر مستمر يستدعي تقييمًا جراحيًا." },
+  colon_tumor: { conditionId: "colorectal", title: "تقييم عاجل — احتمال ورم بالقولون", message: "هذه الأعراض تستوجب فحصًا بالمنظار في أقرب وقت لاستبعاد ورم بالقولون. الاكتشاف المبكر يُنقذ الحياة — لا تؤجل الحجز." },
   gi: { conditionId: "gi", title: "قسم الجهاز الهضمي والارتجاع", message: "كثير من الحالات تتحسن بتعديل نمط الحياة والعلاج الدوائي. احجز موعدًا إن استمرت الأعراض." },
+  varicocele: { conditionId: "varicocele", title: "قسم دوالي الخصية", message: "أعراضك تتوافق مع دوالي الخصية. التقييم بالموجات الصوتية يحدد الدرجة وضرورة التدخل الجراحي." },
   emergency_gallbladder: {
     title: "علامات تحذيرية — توجّه للطوارئ",
     message: "هذه الأعراض قد تدل على التهاب حاد بالمرارة أو انسداد القنوات المرارية. لا تنتظر، توجّه فورًا لأقرب قسم طوارئ.",
@@ -443,6 +507,12 @@ const results: Record<string, TriageResult> = {
     emergency: true,
     redFlags: ["ألم شديد مفاجئ في موضع الفتق", "كتلة صلبة لا تختفي وتغيّر لونها", "غثيان وقيء مع انتفاخ وعدم خروج غازات"],
   },
+  emergency_obstruction: {
+    title: "علامات تحذيرية — اشتباه انسداد معوي",
+    message: "هذه الأعراض تتوافق مع انسداد معوي وهي حالة طارئة. لا تأكل ولا تشرب وتوجّه فورًا لأقرب قسم طوارئ.",
+    emergency: true,
+    redFlags: ["توقف تام للغازات والبراز", "انتفاخ شديد ومتزايد بالبطن", "قيء متكرر — خصوصًا أخضر أو بني", "ألم تشنّجي شديد بموجات"],
+  },
   emergency_general: {
     title: "علامات تحذيرية — توجّه للطوارئ",
     message: "ما تصفه يستدعي تقييمًا فوريًا. لا تنتظر موعد العيادة — توجّه لأقرب قسم طوارئ الآن.",
@@ -450,6 +520,7 @@ const results: Record<string, TriageResult> = {
     redFlags: ["نزيف غزير أو قيء/براز دموي", "ألم شديد ومفاجئ", "صعوبة تنفس أو بلع مفاجئة", "دوخة شديدة أو فقدان وعي"],
   },
 };
+
 
 function SymptomTriage() {
   const [history, setHistory] = useState<string[]>(["start"]);
