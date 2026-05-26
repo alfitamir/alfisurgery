@@ -567,7 +567,7 @@ function SymptomTriage() {
         <div className="p-6 md:p-8">
           {!result && current && (
             <div>
-              <div className="text-xs text-muted-foreground mb-3">السؤال {history.length} من 2</div>
+              <div className="text-xs text-muted-foreground mb-3">السؤال {history.length}</div>
               <h3 className="text-xl md:text-2xl mb-5">{current.text}</h3>
               <div className="space-y-2">
                 {current.options.map((opt, i) => (
