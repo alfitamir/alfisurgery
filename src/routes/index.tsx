@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight, Phone, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin } from "lucide-react";
+import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight, Phone, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin, ExternalLink, BookOpen, Building2, CalendarCheck } from "lucide-react";
 import portrait from "@/assets/dr-elalfy.jpg";
 
 export const Route = createFileRoute("/")({
@@ -310,6 +310,67 @@ function Index() {
               </div>
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* In the Press / Featured */}
+      <section className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mb-12">
+          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Featured & Published</div>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">Around the web.</h2>
+          <p className="mt-4 text-muted-foreground max-w-xl">Selected profiles, booking platforms, and peer-reviewed publications.</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-5">
+          {[
+            {
+              icon: Building2,
+              tag: "Hospital Profile",
+              title: "Mohammad Dossary Hospital",
+              desc: "Official consultant profile — General & Laparoscopic Surgery.",
+              href: "https://mdh.com.sa/doctors/dr-tamer-elalfy/",
+            },
+            {
+              icon: CalendarCheck,
+              tag: "Online Booking",
+              title: "Okadoc — Khobar",
+              desc: "Book appointments online with Dr. Tamer Rushdy Elalfy.",
+              href: "https://www.okadoc.com/en-sa/doctor/general-surgery/khobar/tamer-rushdy-elalfy",
+            },
+            {
+              icon: Linkedin,
+              tag: "Professional",
+              title: "LinkedIn Profile",
+              desc: "Connect for professional networking and collaboration.",
+              href: "https://linkedin.com/in/tamer-elalfy-a47514151",
+            },
+            {
+              icon: BookOpen,
+              tag: "Publication · 2021",
+              title: "Surgery for Complicated Stomal Prolapse: Is the Altemeier Technique an Option?",
+              desc: "Alalfy TR, Orban YA, Algazar M, Farag A. — J. Coloproctol. 41(1), 2021.",
+              href: "https://fi-view.bvsalud.org/lilacs/biblio/?filter=author%3A%22Alalfy%2C+Tamer+R%22",
+            },
+          ].map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
+            >
+              <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
+                <item.icon className="h-5 w-5 text-accent" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">{item.tag}</div>
+                <h3 className="font-serif text-lg leading-snug group-hover:text-accent transition flex items-start gap-2">
+                  <span>{item.title}</span>
+                  <ExternalLink className="h-4 w-4 mt-1 shrink-0 opacity-60" />
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+              </div>
+            </a>
+          ))}
         </div>
       </section>
 

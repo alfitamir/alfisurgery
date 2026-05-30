@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope,
-  HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowLeft, Phone, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin,
+  HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowLeft, Phone, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin, ExternalLink, BookOpen, Building2, CalendarCheck,
 } from "lucide-react";
 import portrait from "@/assets/dr-elalfy.jpg";
 
@@ -240,6 +240,67 @@ function ArabicIndex() {
               </div>
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* في الصحافة / مذكور في */}
+      <section className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mb-12">
+          <div className="text-xs tracking-widest text-accent font-bold">مذكور ومنشور</div>
+          <h2 className="mt-3 text-4xl md:text-5xl">حول الويب.</h2>
+          <p className="mt-4 text-muted-foreground max-w-xl leading-loose">ملفات تعريفية مختارة، منصات حجز، وأبحاث منشورة محكّمة.</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-5">
+          {[
+            {
+              icon: Building2,
+              tag: "ملف المستشفى",
+              title: "مستشفى محمد الدوسري",
+              desc: "الملف الرسمي للاستشاري — الجراحة العامة والمناظير.",
+              href: "https://mdh.com.sa/doctors/dr-tamer-elalfy/",
+            },
+            {
+              icon: CalendarCheck,
+              tag: "الحجز الإلكتروني",
+              title: "أوكادوك — الخبر",
+              desc: "احجز موعدًا إلكترونيًا مع د. تامر رشدي الألفي.",
+              href: "https://www.okadoc.com/en-sa/doctor/general-surgery/khobar/tamer-rushdy-elalfy",
+            },
+            {
+              icon: Linkedin,
+              tag: "مهني",
+              title: "حساب لينكدإن",
+              desc: "للتواصل المهني والتعاون الأكاديمي.",
+              href: "https://linkedin.com/in/tamer-elalfy-a47514151",
+            },
+            {
+              icon: BookOpen,
+              tag: "بحث منشور · 2021",
+              title: "جراحة هبوط الفغرة المعقّد: هل تقنية ألتماير خيار مناسب؟",
+              desc: "Alalfy TR, Orban YA, Algazar M, Farag A. — J. Coloproctol. 41(1), 2021.",
+              href: "https://fi-view.bvsalud.org/lilacs/biblio/?filter=author%3A%22Alalfy%2C+Tamer+R%22",
+            },
+          ].map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
+            >
+              <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
+                <item.icon className="h-5 w-5 text-accent" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="text-xs tracking-widest text-muted-foreground mb-1">{item.tag}</div>
+                <h3 className="text-lg leading-snug group-hover:text-accent transition flex items-start gap-2">
+                  <span>{item.title}</span>
+                  <ExternalLink className="h-4 w-4 mt-1 shrink-0 opacity-60" />
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-loose">{item.desc}</p>
+              </div>
+            </a>
+          ))}
         </div>
       </section>
 
