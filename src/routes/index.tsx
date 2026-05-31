@@ -374,6 +374,69 @@ function Index() {
         </div>
       </section>
 
+      {/* Publications */}
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <div className="mb-12">
+          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Peer-Reviewed Publications</div>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">Selected research.</h2>
+          <p className="mt-4 text-muted-foreground max-w-xl">Original articles, case reports, and reviews in international surgical journals.</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-5">
+          {[
+            {
+              tag: "Case Rep Gastrointest Med · 2018",
+              title: "Colopancreatic Fistula: An Uncommon Complication of Recurrent Acute Pancreatitis",
+              desc: "Case report detailing diagnosis and combined surgical–endoscopic management of colopancreatic fistula.",
+              href: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5892304/",
+            },
+            {
+              tag: "HPB (Oxford) · 2020",
+              title: "Article in HPB — Hepato-Pancreato-Biliary Surgery",
+              desc: "Original article published in HPB, the official journal of the IHPBA and AHPBA.",
+              href: "https://www.hpbonline.org/article/S1365-182X(20)30108-8/fulltext",
+            },
+            {
+              tag: "Medicine (Baltimore) · 2016",
+              title: "Gastrointestinal Fistulas in Acute Pancreatitis",
+              desc: "Clinical study on the incidence, risk factors, and management of GI fistulas complicating acute pancreatitis.",
+              href: "https://journals.lww.com/md-journal/fulltext/2016/04050/gastrointestinal_fistulas_in_acute_pancreatitis.84.aspx",
+            },
+            {
+              tag: "Am J Surg · 1989",
+              title: "Article in The American Journal of Surgery",
+              desc: "Contribution to one of the longest-standing peer-reviewed surgical journals.",
+              href: "https://www.americanjournalofsurgery.com/article/0002-9610(89)90198-0/abstract",
+            },
+            {
+              tag: "J. Coloproctol. · 2021",
+              title: "Surgery for Complicated Stomal Prolapse: Is the Altemeier Technique an Option?",
+              desc: "Alalfy TR, Orban YA, Algazar M, Farag A. — Report of three cases.",
+              href: "https://fi-view.bvsalud.org/lilacs/biblio/?filter=author%3A%22Alalfy%2C+Tamer+R%22",
+            },
+          ].map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
+            >
+              <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
+                <BookOpen className="h-5 w-5 text-accent" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">{item.tag}</div>
+                <h3 className="font-serif text-lg leading-snug group-hover:text-accent transition flex items-start gap-2">
+                  <span>{item.title}</span>
+                  <ExternalLink className="h-4 w-4 mt-1 shrink-0 opacity-60" />
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
       {/* Contact */}
       <section id="contact" className="mx-auto max-w-6xl px-6 py-24">
         <div className="rounded-3xl bg-card border border-border p-10 md:p-16 shadow-[var(--shadow-elegant)] relative overflow-hidden">

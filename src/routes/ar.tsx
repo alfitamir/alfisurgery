@@ -304,6 +304,69 @@ function ArabicIndex() {
         </div>
       </section>
 
+      {/* الأبحاث المنشورة */}
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <div className="mb-12">
+          <div className="text-xs tracking-widest text-accent font-bold">أبحاث محكّمة منشورة</div>
+          <h2 className="mt-3 text-4xl md:text-5xl">مختارات من الأبحاث.</h2>
+          <p className="mt-4 text-muted-foreground max-w-xl leading-loose">مقالات أصلية وتقارير حالات ومراجعات منشورة في دوريات جراحية دولية.</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-5">
+          {[
+            {
+              tag: "Case Rep Gastrointest Med · 2018",
+              title: "الناسور القولوني البنكرياسي: مضاعفة نادرة لالتهاب البنكرياس الحاد المتكرر",
+              desc: "تقرير حالة يستعرض التشخيص والعلاج المشترك جراحيًا وتنظيريًا للناسور القولوني البنكرياسي.",
+              href: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5892304/",
+            },
+            {
+              tag: "HPB (Oxford) · 2020",
+              title: "مقال في مجلة HPB لجراحة الكبد والبنكرياس والقنوات الصفراوية",
+              desc: "مقال أصلي منشور في HPB، المجلة الرسمية للجمعيتين الدوليتين IHPBA و AHPBA.",
+              href: "https://www.hpbonline.org/article/S1365-182X(20)30108-8/fulltext",
+            },
+            {
+              tag: "Medicine (Baltimore) · 2016",
+              title: "النواسير الهضمية في التهاب البنكرياس الحاد",
+              desc: "دراسة سريرية حول معدل حدوث وعوامل الخطر وعلاج النواسير الهضمية المصاحبة لالتهاب البنكرياس الحاد.",
+              href: "https://journals.lww.com/md-journal/fulltext/2016/04050/gastrointestinal_fistulas_in_acute_pancreatitis.84.aspx",
+            },
+            {
+              tag: "Am J Surg · 1989",
+              title: "مقال في المجلة الأمريكية للجراحة",
+              desc: "مساهمة في إحدى أعرق الدوريات الجراحية المحكّمة على مستوى العالم.",
+              href: "https://www.americanjournalofsurgery.com/article/0002-9610(89)90198-0/abstract",
+            },
+            {
+              tag: "J. Coloproctol. · 2021",
+              title: "جراحة هبوط الفغرة المعقّد: هل تقنية ألتماير خيار مناسب؟",
+              desc: "Alalfy TR, Orban YA, Algazar M, Farag A. — تقرير عن ثلاث حالات.",
+              href: "https://fi-view.bvsalud.org/lilacs/biblio/?filter=author%3A%22Alalfy%2C+Tamer+R%22",
+            },
+          ].map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
+            >
+              <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
+                <BookOpen className="h-5 w-5 text-accent" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="text-xs tracking-widest text-muted-foreground mb-1">{item.tag}</div>
+                <h3 className="text-lg leading-snug group-hover:text-accent transition flex items-start gap-2">
+                  <span>{item.title}</span>
+                  <ExternalLink className="h-4 w-4 mt-1 shrink-0 opacity-60" />
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-loose">{item.desc}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
       {/* Contact */}
       <section id="contact" className="mx-auto max-w-6xl px-6 py-24">
         <div className="rounded-3xl bg-card border border-border p-10 md:p-16 shadow-[var(--shadow-elegant)] relative overflow-hidden">
