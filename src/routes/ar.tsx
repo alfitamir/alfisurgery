@@ -5,6 +5,15 @@ import {
 } from "lucide-react";
 import portrait from "@/assets/dr-elalfy.jpg";
 import analConditionsPpt from "@/assets/anal-conditions-ppt.asset.json";
+import parathyroidIllustration from "@/assets/parathyroid-exploration-illustration.asset.json";
+import sboIllustration from "@/assets/sbo-decision-clock-illustration.asset.json";
+import cbdStoneIllustration from "@/assets/retained-cbd-stone-illustration.asset.json";
+import subtotalCholeIllustration from "@/assets/subtotal-cholecystectomy-illustration.asset.json";
+import diverticulitisAlgorithmIllustration from "@/assets/perforated-diverticulitis-algorithm.asset.json";
+import thyroidIllustration from "@/assets/thyroid-rfa-vs-lobectomy-illustration.asset.json";
+import pilonidalIllustration from "@/assets/pilonidal-treatment-shift-illustration.asset.json";
+import consentIllustration from "@/assets/cognitive-framing-consent-illustration.asset.json";
+import ramadanIllustration from "@/assets/ramadan-diverticulitis-illustration.asset.json";
 
 export const Route = createFileRoute("/ar")({
   component: ArabicIndex,
@@ -45,6 +54,75 @@ const services = [
   "التعليم الجراحي ومحاضرات التعليم الطبي المستمر والإرشاد",
   "قيادة غرف العمليات وتحسين الأداء",
   "برامج تثقيف المرضى لتحسين النتائج",
+];
+
+const illustrationCollections = [
+  {
+    title: "للأطباء",
+    subtitle: "رسوم تعليمية للشرح الجراحي، والخوارزميات، والتعليم المهني المتقدم.",
+    items: [
+      {
+        title: "مبادئ استكشاف جارات الدرق",
+        desc: "رسم تعليمي يربط بين حدود التصوير وأهمية الاعتماد على التشريح الجراحي في اتخاذ القرار.",
+        image: parathyroidIllustration.url,
+        alt: "رسم تعليمي عن استكشاف جارات الدرق والتشريح الجراحي للغدة الدرقية",
+      },
+      {
+        title: "ساعة القرار في انسداد الأمعاء",
+        desc: "خريطة زمنية مختصرة للإنعاش، وتحدي الجاستروجرافين، وتوقيت التصعيد للجراحة.",
+        image: sboIllustration.url,
+        alt: "رسم تعليمي يوضح خوارزمية انسداد الأمعاء الدقيقة خلال 24 ساعة",
+      },
+      {
+        title: "إطار التعامل مع الحصاة المتبقية بالقناة الصفراوية",
+        desc: "مادة بصرية تربط تصنيف الخطورة بالخطة العلاجية والإنقاذ بعد الجراحة.",
+        image: cbdStoneIllustration.url,
+        alt: "رسم تعليمي عن الحصوات المتبقية في القناة الصفراوية المشتركة بعد استئصال المرارة",
+      },
+      {
+        title: "خيارات الاستئصال الجزئي للمرارة",
+        desc: "مقارنة بصرية بين الخيار المفتوح والخيار المُعاد التشكيل في المرارة الصعبة.",
+        image: subtotalCholeIllustration.url,
+        alt: "رسم تعليمي يقارن بين خيارات الاستئصال الجزئي للمرارة",
+      },
+      {
+        title: "خوارزمية التهاب الرتوج المنثقب",
+        desc: "مسار علاجي يضع فسيولوجيا المريض في مركز القرار بين هارتمان والمفاغرة الوقائية.",
+        image: diverticulitisAlgorithmIllustration.url,
+        alt: "رسم تعليمي يوضح خوارزمية علاج التهاب الرتوج المنثقب",
+      },
+    ],
+  },
+  {
+    title: "للمرضى",
+    subtitle: "رسوم مبسطة لتوضيح الخيارات العلاجية، والتعافي، واتخاذ القرار المشترك.",
+    items: [
+      {
+        title: "خيارات علاج عقيدات الغدة الدرقية",
+        desc: "شرح بصري مبسط للمقارنة بين التردد الحراري والاستئصال الجراحي ومتى يناسب كل خيار.",
+        image: thyroidIllustration.url,
+        alt: "رسم تعليمي يقارن بين التردد الحراري واستئصال فص الغدة الدرقية",
+      },
+      {
+        title: "تحول علاج الناسور العصعصي",
+        desc: "مقارنة مرئية بين التدخل المحدود والجراحة بالشرائح في الحالات البسيطة والمعقدة.",
+        image: pilonidalIllustration.url,
+        alt: "رسم تعليمي يقارن بين العلاج المحدود والجراحة في الناسور العصعصي",
+      },
+      {
+        title: "كيف تؤثر طريقة الشرح على الموافقة",
+        desc: "رسم يوضح كيف يمكن لصياغة المعلومات أن تحسن الفهم وتدعم اتخاذ القرار مع المريض.",
+        image: consentIllustration.url,
+        alt: "رسم تعليمي عن تأثير طريقة عرض المعلومات في الموافقة الجراحية",
+      },
+      {
+        title: "الرعاية الجراحية خلال رمضان",
+        desc: "قصة بصرية تشرح العرض الطارئ والجراحة بالمنظار والخروج المبكر وخطة استكمال التعافي.",
+        image: ramadanIllustration.url,
+        alt: "رسم تعليمي عن الرعاية الجراحية والتعافي خلال شهر رمضان",
+      },
+    ],
+  },
 ];
 
 function ArabicIndex() {
@@ -368,8 +446,44 @@ function ArabicIndex() {
         </div>
       </section>
 
+      {/* الرسوم التوضيحية التعليمية */}
+      <section className="bg-secondary/40 border-y border-border">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <div className="mb-12">
+            <div className="text-xs tracking-widest text-accent font-bold">رسوم توضيحية تعليمية</div>
+            <h2 className="mt-3 text-4xl md:text-5xl">تعليم بصري للأطباء والمرضى.</h2>
+            <p className="mt-4 text-muted-foreground max-w-2xl leading-loose">معرض مختار من الرسوم الجراحية التوضيحية المستخدمة في المحاضرات المهنية، ومناقشات الحالات، والشرح داخل العيادة، وتثقيف المرضى.</p>
+          </div>
+          <div className="space-y-16">
+            {illustrationCollections.map((group) => (
+              <div key={group.title}>
+                <div className="mb-6 flex items-end justify-between gap-4 flex-wrap">
+                  <div>
+                    <div className="inline-flex rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-accent">{group.title}</div>
+                    <p className="mt-3 text-sm text-muted-foreground leading-loose">{group.subtitle}</p>
+                  </div>
+                </div>
+                <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+                  {group.items.map((item) => (
+                    <article key={item.title} className="overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)]">
+                      <div className="aspect-[16/10] overflow-hidden border-b border-border bg-secondary">
+                        <img src={item.image} alt={item.alt} loading="lazy" className="h-full w-full object-cover" />
+                      </div>
+                      <div className="p-5">
+                        <h3 className="text-xl leading-snug">{item.title}</h3>
+                        <p className="mt-2 text-sm text-muted-foreground leading-loose">{item.desc}</p>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* العروض التقديمية */}
-      <section className="mx-auto max-w-6xl px-6 pb-24">
+      <section className="mx-auto max-w-6xl px-6 pb-24 pt-24">
         <div className="mb-12">
           <div className="text-xs tracking-widest text-accent font-bold">محاضرات وعروض تقديمية</div>
           <h2 className="mt-3 text-4xl md:text-5xl">العروض التقديمية.</h2>
@@ -504,3 +618,4 @@ function ArabicIndex() {
     </div>
   );
 }
+
