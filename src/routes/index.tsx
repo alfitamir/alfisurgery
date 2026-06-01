@@ -2,6 +2,15 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight, Phone, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin, ExternalLink, BookOpen, Building2, CalendarCheck, Presentation } from "lucide-react";
 import portrait from "@/assets/dr-elalfy.jpg";
 import analConditionsPpt from "@/assets/anal-conditions-ppt.asset.json";
+import parathyroidIllustration from "@/assets/parathyroid-exploration-illustration.asset.json";
+import sboIllustration from "@/assets/sbo-decision-clock-illustration.asset.json";
+import cbdStoneIllustration from "@/assets/retained-cbd-stone-illustration.asset.json";
+import subtotalCholeIllustration from "@/assets/subtotal-cholecystectomy-illustration.asset.json";
+import diverticulitisAlgorithmIllustration from "@/assets/perforated-diverticulitis-algorithm.asset.json";
+import thyroidIllustration from "@/assets/thyroid-rfa-vs-lobectomy-illustration.asset.json";
+import pilonidalIllustration from "@/assets/pilonidal-treatment-shift-illustration.asset.json";
+import consentIllustration from "@/assets/cognitive-framing-consent-illustration.asset.json";
+import ramadanIllustration from "@/assets/ramadan-diverticulitis-illustration.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -69,6 +78,75 @@ const skillGroups = [
   { title: "Leadership & Management", icon: Users, items: ["Head of Surgery & OR Management", "OR Workflow Optimization", "Multidisciplinary Team Leadership", "Clinical Governance & Quality Improvement", "Patient Safety & Surgical Audits"] },
   { title: "Teaching & Education", icon: GraduationCap, items: ["CME Lecture Delivery", "Surgical Teaching & Mentorship", "Training Junior Surgeons", "OR & Ward Nursing Education", "Structured Patient Education", "M&M Meetings"] },
   { title: "Professional Core", icon: Award, items: ["Clinical Judgment & Ethics", "High-Pressure Decision Making", "Patient & Family Communication", "Team Building", "Healthcare Systems Improvement"] },
+];
+
+const illustrationCollections = [
+  {
+    title: "For doctors",
+    subtitle: "Operative strategy, algorithms, and postgraduate teaching visuals.",
+    items: [
+      {
+        title: "Parathyroid exploration principles",
+        desc: "A surgical teaching visual contrasting imaging limitations with anatomy-led decision-making.",
+        image: parathyroidIllustration.url,
+        alt: "Educational illustration on parathyroid exploration and endocrine surgical anatomy",
+      },
+      {
+        title: "24-hour SBO decision clock",
+        desc: "A concise algorithm for resuscitation, Gastrografin challenge, and timing of operative escalation.",
+        image: sboIllustration.url,
+        alt: "Educational illustration showing a 24-hour small bowel obstruction decision algorithm",
+      },
+      {
+        title: "Retained CBD stone framework",
+        desc: "A medico-surgical explainer connecting risk stratification with postoperative rescue strategy.",
+        image: cbdStoneIllustration.url,
+        alt: "Educational illustration about retained common bile duct stones after cholecystectomy",
+      },
+      {
+        title: "Subtotal cholecystectomy bailout options",
+        desc: "A side-by-side comparison of fenestrating and reconstituting approaches for the difficult gallbladder.",
+        image: subtotalCholeIllustration.url,
+        alt: "Educational illustration comparing subtotal cholecystectomy bailout options",
+      },
+      {
+        title: "Perforated diverticulitis algorithm",
+        desc: "A physiology-first pathway for Hartmann's procedure, protected anastomosis, and restorative strategy.",
+        image: diverticulitisAlgorithmIllustration.url,
+        alt: "Educational illustration showing an algorithm for management of perforated diverticulitis",
+      },
+    ],
+  },
+  {
+    title: "For patients",
+    subtitle: "Clinic-friendly visuals that simplify options, recovery, and shared decision-making.",
+    items: [
+      {
+        title: "Thyroid nodule treatment choices",
+        desc: "A patient explainer comparing radiofrequency ablation with lobectomy and when each path fits.",
+        image: thyroidIllustration.url,
+        alt: "Educational illustration comparing thyroid radiofrequency ablation and lobectomy",
+      },
+      {
+        title: "Pilonidal disease treatment shift",
+        desc: "A visual comparison between minimally invasive care and flap surgery for complex disease.",
+        image: pilonidalIllustration.url,
+        alt: "Educational illustration comparing minimally invasive pilonidal treatment and flap surgery",
+      },
+      {
+        title: "How framing changes consent",
+        desc: "A communication-focused visual showing how wording affects understanding and shared decisions.",
+        image: consentIllustration.url,
+        alt: "Educational illustration about framing effect in surgical consent",
+      },
+      {
+        title: "Surgical care during Ramadan",
+        desc: "A practical visual story explaining emergency presentation, laparoscopy, discharge, and staged recovery.",
+        image: ramadanIllustration.url,
+        alt: "Educational illustration about surgical management and recovery during Ramadan",
+      },
+    ],
+  },
 ];
 
 function Index() {
@@ -205,7 +283,6 @@ function Index() {
           </div>
         </div>
       </section>
-
 
       {/* Expertise */}
       <section id="expertise" className="bg-secondary/40 border-y border-border">
@@ -438,8 +515,44 @@ function Index() {
         </div>
       </section>
 
+      {/* Educational Illustrations */}
+      <section className="bg-secondary/40 border-y border-border">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <div className="mb-12">
+            <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Educational Illustrations</div>
+            <h2 className="mt-3 font-serif text-4xl md:text-5xl">Visual teaching for doctors and patients.</h2>
+            <p className="mt-4 text-muted-foreground max-w-2xl">A curated gallery of surgical explainer visuals used in CME teaching, case-based discussion, clinic counseling, and patient communication.</p>
+          </div>
+          <div className="space-y-16">
+            {illustrationCollections.map((group) => (
+              <div key={group.title}>
+                <div className="mb-6 flex items-end justify-between gap-4 flex-wrap">
+                  <div>
+                    <div className="inline-flex rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-accent">{group.title}</div>
+                    <p className="mt-3 text-sm text-muted-foreground">{group.subtitle}</p>
+                  </div>
+                </div>
+                <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+                  {group.items.map((item) => (
+                    <article key={item.title} className="overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)]">
+                      <div className="aspect-[16/10] overflow-hidden border-b border-border bg-secondary">
+                        <img src={item.image} alt={item.alt} loading="lazy" className="h-full w-full object-cover" />
+                      </div>
+                      <div className="p-5">
+                        <h3 className="font-serif text-xl leading-snug">{item.title}</h3>
+                        <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Presentations */}
-      <section className="mx-auto max-w-6xl px-6 pb-24">
+      <section className="mx-auto max-w-6xl px-6 pb-24 pt-24">
         <div className="mb-12">
           <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Lectures & Talks</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">Presentations.</h2>
@@ -574,3 +687,4 @@ function Index() {
     </div>
   );
 }
+
