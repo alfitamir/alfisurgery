@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight, Phone, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin, ExternalLink, BookOpen, Building2, CalendarCheck } from "lucide-react";
+import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight, Phone, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin, ExternalLink, BookOpen, Building2, CalendarCheck, Presentation } from "lucide-react";
 import portrait from "@/assets/dr-elalfy.jpg";
+import analConditionsPpt from "@/assets/anal-conditions-ppt.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -431,6 +432,48 @@ function Index() {
                   <ExternalLink className="h-4 w-4 mt-1 shrink-0 opacity-60" />
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      {/* Presentations */}
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <div className="mb-12">
+          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Lectures & Talks</div>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">Presentations.</h2>
+          <p className="mt-4 text-muted-foreground max-w-xl">CME lectures and academic slide decks authored by Dr. Elalfy. Downloadable for colleagues, residents, and patients.</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-5">
+          {[
+            {
+              tag: "Colorectal · CME Lecture",
+              title: "Common Anal Conditions — An Updated Surgical and Nutritional Approach",
+              desc: "A practical overview of hemorrhoids, fissures, fistulas, and pruritus ani — covering modern surgical techniques and the role of nutrition in prevention and recovery.",
+              href: analConditionsPpt.url,
+              file: "PPTX · 5.2 MB",
+            },
+          ].map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
+            >
+              <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
+                <Presentation className="h-5 w-5 text-accent" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">{item.tag}</div>
+                <h3 className="font-serif text-lg leading-snug group-hover:text-accent transition flex items-start gap-2">
+                  <span>{item.title}</span>
+                  <Download className="h-4 w-4 mt-1 shrink-0 opacity-60" />
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                <div className="mt-3 text-xs text-accent font-semibold">{item.file}</div>
               </div>
             </a>
           ))}
