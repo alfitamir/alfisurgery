@@ -60,6 +60,8 @@ const illustrationCollections = [
   {
     title: "للأطباء",
     subtitle: "رسوم تعليمية للشرح الجراحي، والخوارزميات، والتعليم المهني المتقدم.",
+    pdf: "/downloads/illustrations-for-doctors.pdf",
+    pdfMeta: "PDF · 10.3 ميجابايت · 5 رسوم",
     items: [
       {
         title: "مبادئ استكشاف جارات الدرق",
