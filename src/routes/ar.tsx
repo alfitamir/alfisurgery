@@ -466,16 +466,35 @@ function ArabicIndex() {
                     <div className="inline-flex rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-accent">{group.title}</div>
                     <p className="mt-3 text-sm text-muted-foreground leading-loose">{group.subtitle}</p>
                   </div>
+                  <a
+                    href={group.pdf}
+                    download
+                    className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
+                    aria-label={`تحميل ملف PDF للطباعة — ${group.title}`}
+                  >
+                    <Download className="h-4 w-4" />
+                    <span>تحميل ملف PDF للطباعة</span>
+                    <span className="text-xs text-muted-foreground hidden sm:inline">· {group.pdfMeta}</span>
+                  </a>
                 </div>
                 <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
                   {group.items.map((item) => (
-                    <article key={item.title} className="overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)]">
+                    <article key={item.title} className="overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)] flex flex-col">
                       <div className="aspect-[16/10] overflow-hidden border-b border-border bg-secondary">
                         <img src={item.image} alt={item.alt} loading="lazy" className="h-full w-full object-cover" />
                       </div>
-                      <div className="p-5">
+                      <div className="p-5 flex flex-col flex-1">
                         <h3 className="text-xl leading-snug">{item.title}</h3>
                         <p className="mt-2 text-sm text-muted-foreground leading-loose">{item.desc}</p>
+                        <a
+                          href={item.image}
+                          download
+                          className="mt-4 inline-flex items-center gap-2 self-start rounded-full border border-border px-3 py-1.5 text-xs font-medium hover:bg-secondary transition-colors"
+                          aria-label={`تحميل الرسم التعليمي — ${item.title}`}
+                        >
+                          <Download className="h-3.5 w-3.5" />
+                          تحميل الصورة (PNG)
+                        </a>
                       </div>
                     </article>
                   ))}
