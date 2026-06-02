@@ -467,16 +467,51 @@ function ArabicIndex() {
                     <div className="inline-flex rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-accent">{group.title}</div>
                     <p className="mt-3 text-sm text-muted-foreground leading-loose">{group.subtitle}</p>
                   </div>
-                  <a
-                    href={group.pdf}
-                    download
-                    className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
-                    aria-label={`تحميل ملف PDF للطباعة — ${group.title}`}
-                  >
-                    <Download className="h-4 w-4" />
-                    <span>تحميل ملف PDF للطباعة</span>
-                    <span className="text-xs text-muted-foreground hidden sm:inline">· {group.pdfMeta}</span>
-                  </a>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <button
+                          type="button"
+                          className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium hover:bg-secondary transition-colors"
+                          aria-label={`معاينة ملف PDF — ${group.title}`}
+                        >
+                          <Eye className="h-4 w-4" />
+                          <span>معاينة</span>
+                        </button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-5xl w-[95vw] h-[85vh] p-0 gap-0 flex flex-col" dir="rtl">
+                        <DialogHeader className="px-5 py-3 border-b border-border">
+                          <DialogTitle className="text-lg">معاينة — {group.title}</DialogTitle>
+                        </DialogHeader>
+                        <iframe
+                          src={`${group.pdf}#view=FitH`}
+                          title={`معاينة ملف PDF — ${group.title}`}
+                          className="flex-1 w-full bg-secondary"
+                        />
+                        <div className="px-5 py-3 border-t border-border flex items-center justify-between gap-3 flex-wrap">
+                          <span className="text-xs text-muted-foreground">{group.pdfMeta}</span>
+                          <a
+                            href={group.pdf}
+                            download
+                            className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-primary/90 transition-colors"
+                          >
+                            <Download className="h-4 w-4" />
+                            تحميل PDF
+                          </a>
+                        </div>
+                      </DialogContent>
+                    </Dialog>
+                    <a
+                      href={group.pdf}
+                      download
+                      className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
+                      aria-label={`تحميل ملف PDF للطباعة — ${group.title}`}
+                    >
+                      <Download className="h-4 w-4" />
+                      <span>تحميل PDF</span>
+                      <span className="text-xs text-muted-foreground hidden sm:inline">· {group.pdfMeta}</span>
+                    </a>
+                  </div>
                 </div>
                 <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
                   {group.items.map((item) => (
