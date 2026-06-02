@@ -122,6 +122,8 @@ const illustrationCollections = [
   {
     title: "For patients",
     subtitle: "Clinic-friendly visuals that simplify options, recovery, and shared decision-making.",
+    pdf: "/downloads/illustrations-for-patients.pdf",
+    pdfMeta: "PDF · 7.7 MB · 4 illustrations",
     items: [
       {
         title: "Thyroid nodule treatment choices",
