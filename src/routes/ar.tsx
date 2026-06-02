@@ -98,6 +98,8 @@ const illustrationCollections = [
   {
     title: "للمرضى",
     subtitle: "رسوم مبسطة لتوضيح الخيارات العلاجية، والتعافي، واتخاذ القرار المشترك.",
+    pdf: "/downloads/illustrations-for-patients.pdf",
+    pdfMeta: "PDF · 7.7 ميجابايت · 4 رسوم",
     items: [
       {
         title: "خيارات علاج عقيدات الغدة الدرقية",
