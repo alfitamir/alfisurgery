@@ -1,8 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope,
-  HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowLeft, Phone, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin, ExternalLink, BookOpen, Building2, CalendarCheck, Presentation,
+  HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowLeft, Phone, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin, ExternalLink, BookOpen, Building2, CalendarCheck, Presentation, Eye,
 } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import portrait from "@/assets/dr-elalfy.jpg";
 import analConditionsPpt from "@/assets/anal-conditions-ppt.asset.json";
 import parathyroidIllustration from "@/assets/parathyroid-exploration-illustration.asset.json";
