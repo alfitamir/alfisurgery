@@ -84,6 +84,8 @@ const illustrationCollections = [
   {
     title: "For doctors",
     subtitle: "Operative strategy, algorithms, and postgraduate teaching visuals.",
+    pdf: "/downloads/illustrations-for-doctors.pdf",
+    pdfMeta: "PDF · 10.3 MB · 5 illustrations",
     items: [
       {
         title: "Parathyroid exploration principles",
