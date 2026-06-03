@@ -634,6 +634,62 @@ function Index() {
               href: analConditionsPpt.url,
               file: "PPTX · 5.2 MB",
             },
+            {
+              tag: "Bariatric Surgery · Lecture",
+              title: "Laparoscopic Sleeve Gastrectomy — Technique & Patient Selection",
+              desc: "Operative steps, staple-line considerations, leak prevention, and long-term outcomes in sleeve gastrectomy.",
+              href: sleevePpt.url,
+              file: "PPTX · 1.0 MB",
+            },
+            {
+              tag: "HPB · Case Study",
+              title: "Management of CBD Stones — A Clinical Study",
+              desc: "Diagnostic algorithm, ERCP vs laparoscopic CBD exploration, and outcomes from a series of patients with choledocholithiasis.",
+              href: cbdPpt.url,
+              file: "PPT · 1.6 MB",
+            },
+            {
+              tag: "Abdominal Wall · Lecture",
+              title: "Hernias of the Abdominal Wall",
+              desc: "Comprehensive lecture on inguinal, ventral, umbilical, and incisional hernias — anatomy, classification, and repair techniques.",
+              href: herniaPpt.url,
+              file: "PPTX · 10.2 MB",
+            },
+            {
+              tag: "Endocrine · Anatomy",
+              title: "Introduction to the Neck — Surgical Anatomy",
+              desc: "Anatomical foundations for head and neck surgery: fascial layers, triangles, and key neurovascular structures.",
+              href: neckIntroPpt.url,
+              file: "PPT · 2.2 MB",
+            },
+            {
+              tag: "Endocrine · Lecture",
+              title: "Thyroid Gland — Surgical Overview",
+              desc: "Anatomy, physiology, evaluation of thyroid nodules, indications for surgery, and operative approach to thyroidectomy.",
+              href: thyroidPpt.url,
+              file: "PPT · 15.4 MB",
+            },
+            {
+              tag: "Surgical Clerkship · OSCE",
+              title: "Surgical History & Examination — Hernia Case",
+              desc: "Structured approach to history-taking and clinical examination for a patient presenting with an abdominal wall hernia.",
+              href: puhPpt.url,
+              file: "PPTX · 0.2 MB",
+            },
+            {
+              tag: "Burns · Seminar (Part 1)",
+              title: "Burns — Basic Facts and Management Principles (Part 1)",
+              desc: "Epidemiology, pathophysiology, prehospital care, and the four phases of modern burn management.",
+              href: burn1Ppt.url,
+              file: "PPTX · 5.2 MB",
+            },
+            {
+              tag: "Burns · Seminar (Part 2)",
+              title: "Burns — Basic Facts and Management Principles (Part 2)",
+              desc: "Burn center admission criteria, escharotomy, wound care, nutrition, infection control, and rehabilitation.",
+              href: burn2Ppt.url,
+              file: "PPTX · 3.7 MB",
+            },
           ].map((item) => (
             <a
               key={item.href}
