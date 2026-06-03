@@ -6,6 +6,14 @@ import {
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import portrait from "@/assets/dr-elalfy.jpg";
 import analConditionsPpt from "@/assets/anal-conditions-ppt.asset.json";
+import sleevePpt from "@/assets/sleeve-190825155836.pptx.asset.json";
+import puhPpt from "@/assets/puh-140513144027-phpapp01.pptx.asset.json";
+import cbdPpt from "@/assets/managementofcbdstonesastudy-140511193239-phpapp02.ppt.asset.json";
+import herniaPpt from "@/assets/herniaabdwalllecture-100618085852-phpapp02.pptx.asset.json";
+import neckIntroPpt from "@/assets/neckintro-140406192526-phpapp01.ppt.asset.json";
+import thyroidPpt from "@/assets/thyroid-presentation1aim-net-100618084512-phpapp02.ppt.asset.json";
+import burn1Ppt from "@/assets/newmicrosoftofficepowerpointpresentation-100618082020-phpapp01.pptx.asset.json";
+import burn2Ppt from "@/assets/tamer-100618082530-phpapp01.pptx.asset.json";
 import parathyroidIllustration from "@/assets/parathyroid-exploration-illustration.asset.json";
 import sboIllustration from "@/assets/sbo-decision-clock-illustration.asset.json";
 import cbdStoneIllustration from "@/assets/retained-cbd-stone-illustration.asset.json";
@@ -556,6 +564,62 @@ function ArabicIndex() {
               desc: "نظرة عملية على البواسير والشروخ والنواسير والحكة الشرجية — تشمل أحدث التقنيات الجراحية ودور التغذية في الوقاية والتعافي.",
               href: analConditionsPpt.url,
               file: "PPTX · 5.2 ميجابايت",
+            },
+            {
+              tag: "جراحة السمنة · محاضرة",
+              title: "تكميم المعدة بالمنظار — الأسلوب الجراحي واختيار المريض",
+              desc: "خطوات العملية، اعتبارات خط الدبابيس، الوقاية من التسرب، والنتائج بعيدة المدى لتكميم المعدة.",
+              href: sleevePpt.url,
+              file: "PPTX · 1.0 ميجابايت",
+            },
+            {
+              tag: "الكبد والبنكرياس · دراسة سريرية",
+              title: "علاج حصوات القناة الصفراوية المشتركة — دراسة سريرية",
+              desc: "خوارزمية التشخيص، المقارنة بين ERCP واستكشاف القناة الصفراوية بالمنظار، ونتائج سلسلة من الحالات.",
+              href: cbdPpt.url,
+              file: "PPT · 1.6 ميجابايت",
+            },
+            {
+              tag: "جدار البطن · محاضرة",
+              title: "فتوق جدار البطن",
+              desc: "محاضرة شاملة عن الفتوق الإربية والبطنية والسرية والجراحية — التشريح والتصنيف وطرق الإصلاح.",
+              href: herniaPpt.url,
+              file: "PPTX · 10.2 ميجابايت",
+            },
+            {
+              tag: "الغدد الصماء · تشريح",
+              title: "مقدمة في الرقبة — التشريح الجراحي",
+              desc: "الأسس التشريحية لجراحة الرأس والرقبة: الطبقات اللفافية، المثلثات، والتراكيب العصبية الوعائية الأساسية.",
+              href: neckIntroPpt.url,
+              file: "PPT · 2.2 ميجابايت",
+            },
+            {
+              tag: "الغدد الصماء · محاضرة",
+              title: "الغدة الدرقية — نظرة جراحية شاملة",
+              desc: "التشريح والفسيولوجيا، تقييم العقد الدرقية، دواعي الجراحة، والطريقة الجراحية لاستئصال الغدة الدرقية.",
+              href: thyroidPpt.url,
+              file: "PPT · 15.4 ميجابايت",
+            },
+            {
+              tag: "التدريب الجراحي · OSCE",
+              title: "أخذ السيرة المرضية والفحص الجراحي — حالة فتق",
+              desc: "نهج منظم لأخذ السيرة المرضية والفحص السريري لمريض يعاني من فتق في جدار البطن.",
+              href: puhPpt.url,
+              file: "PPTX · 0.2 ميجابايت",
+            },
+            {
+              tag: "الحروق · ندوة (الجزء الأول)",
+              title: "الحروق — الأساسيات ومبادئ العلاج (الجزء الأول)",
+              desc: "علم الأوبئة، الفسيولوجيا المرضية، الرعاية قبل الوصول للمستشفى، والمراحل الأربع لعلاج الحروق الحديث.",
+              href: burn1Ppt.url,
+              file: "PPTX · 5.2 ميجابايت",
+            },
+            {
+              tag: "الحروق · ندوة (الجزء الثاني)",
+              title: "الحروق — الأساسيات ومبادئ العلاج (الجزء الثاني)",
+              desc: "معايير الإدخال لمراكز الحروق، شق الجلد المتفحم، رعاية الجرح، التغذية، مكافحة العدوى، والتأهيل.",
+              href: burn2Ppt.url,
+              file: "PPTX · 3.7 ميجابايت",
             },
           ].map((item) => (
             <a
