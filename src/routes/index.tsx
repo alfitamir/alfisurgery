@@ -691,12 +691,8 @@ function Index() {
               file: "PPTX · 3.7 MB",
             },
           ].map((item) => (
-            <a
+            <div
               key={item.href}
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              download
               className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
             >
               <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
@@ -704,14 +700,26 @@ function Index() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">{item.tag}</div>
-                <h3 className="font-serif text-lg leading-snug group-hover:text-accent transition flex items-start gap-2">
-                  <span>{item.title}</span>
-                  <Download className="h-4 w-4 mt-1 shrink-0 opacity-60" />
+                <h3 className="font-serif text-lg leading-snug group-hover:text-accent transition">
+                  <a href={item.href} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    {item.title}
+                  </a>
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
-                <div className="mt-3 text-xs text-accent font-semibold">{item.file}</div>
+                <div className="mt-4 flex items-center gap-3 flex-wrap">
+                  <span className="text-xs text-accent font-semibold">{item.file}</span>
+                  <a
+                    href={item.href}
+                    download
+                    className="inline-flex items-center gap-1.5 rounded-full bg-primary text-primary-foreground px-3 py-1.5 text-xs font-medium hover:bg-primary/90 transition-colors"
+                    aria-label={`Download ${item.title}`}
+                  >
+                    <Download className="h-3.5 w-3.5" />
+                    Download PPTX
+                  </a>
+                </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </section>
