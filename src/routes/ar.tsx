@@ -6,6 +6,14 @@ import {
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import portrait from "@/assets/dr-elalfy.jpg";
 import analConditionsPpt from "@/assets/anal-conditions-ppt.asset.json";
+import sleevePpt from "@/assets/sleeve-190825155836.pptx.asset.json";
+import puhPpt from "@/assets/puh-140513144027-phpapp01.pptx.asset.json";
+import cbdPpt from "@/assets/managementofcbdstonesastudy-140511193239-phpapp02.ppt.asset.json";
+import herniaPpt from "@/assets/herniaabdwalllecture-100618085852-phpapp02.pptx.asset.json";
+import neckIntroPpt from "@/assets/neckintro-140406192526-phpapp01.ppt.asset.json";
+import thyroidPpt from "@/assets/thyroid-presentation1aim-net-100618084512-phpapp02.ppt.asset.json";
+import burn1Ppt from "@/assets/newmicrosoftofficepowerpointpresentation-100618082020-phpapp01.pptx.asset.json";
+import burn2Ppt from "@/assets/tamer-100618082530-phpapp01.pptx.asset.json";
 import parathyroidIllustration from "@/assets/parathyroid-exploration-illustration.asset.json";
 import sboIllustration from "@/assets/sbo-decision-clock-illustration.asset.json";
 import cbdStoneIllustration from "@/assets/retained-cbd-stone-illustration.asset.json";
