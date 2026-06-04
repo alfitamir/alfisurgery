@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight, Phone, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin, ExternalLink, BookOpen, Building2, CalendarCheck, Presentation, Eye } from "lucide-react";
+import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight, Phone, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin, ExternalLink, BookOpen, Building2, CalendarCheck, Presentation, Eye, FileText } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { patientEducation, educationCategories, formatSize } from "@/data/patient-education";
 import portrait from "@/assets/dr-elalfy.jpg";
 import analConditionsPpt from "@/assets/anal-conditions-ppt.asset.json";
 import sleevePpt from "@/assets/sleeve-190825155836.pptx.asset.json";
@@ -618,8 +619,63 @@ function Index() {
         </div>
       </section>
 
+      {/* Patient Education — diagnosis by diagnosis */}
+      <section className="mx-auto max-w-6xl px-6 pt-24">
+        <div className="mb-12">
+          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Patient Education</div>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">Understand your operation.</h2>
+          <p className="mt-4 text-muted-foreground max-w-2xl">
+            Diagnosis-by-diagnosis patient information sheets used in clinic — what the condition is, why surgery is needed, how the procedure is done, and what to expect during recovery. Free to download and share.
+          </p>
+        </div>
+        <div className="space-y-14">
+          {educationCategories.map((cat) => {
+            const items = patientEducation.filter((e) => e.category === cat);
+            if (!items.length) return null;
+            return (
+              <div key={cat}>
+                <div className="mb-5 flex items-center gap-3">
+                  <div className="inline-flex rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-accent">{cat}</div>
+                  <div className="h-px flex-1 bg-border" />
+                  <div className="text-xs text-muted-foreground">{items.length} {items.length === 1 ? "topic" : "topics"}</div>
+                </div>
+                <div className="grid md:grid-cols-2 gap-5">
+                  {items.map((item) => (
+                    <article key={item.id} className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-soft)] flex flex-col">
+                      <div className="flex items-start gap-3">
+                        <div className="rounded-lg bg-secondary p-2.5 text-accent shrink-0">
+                          <FileText className="h-5 w-5" />
+                        </div>
+                        <div className="min-w-0">
+                          <h3 className="font-serif text-xl leading-snug">{item.title}</h3>
+                          <p className="mt-1 text-xs text-muted-foreground" dir="rtl">{item.titleAr}</p>
+                        </div>
+                      </div>
+                      <p className="mt-4 text-sm text-muted-foreground leading-relaxed">{item.summary}</p>
+                      <div className="mt-5 flex items-center justify-between gap-3 flex-wrap pt-4 border-t border-border">
+                        <span className="text-xs text-muted-foreground">DOCX · {formatSize(item.fileSize)}</span>
+                        <a
+                          href={item.fileUrl}
+                          download={item.fileName}
+                          className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-primary/90 transition-colors"
+                          aria-label={`Download patient education sheet — ${item.title}`}
+                        >
+                          <Download className="h-4 w-4" />
+                          Download
+                        </a>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
       {/* Presentations */}
       <section className="mx-auto max-w-6xl px-6 pb-24 pt-24">
+
         <div className="mb-12">
           <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Lectures & Talks</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">Presentations.</h2>
