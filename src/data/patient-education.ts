@@ -9,6 +9,17 @@ import ingrowingNail from "@/assets/patient-education/ingrowing_nail_wedge_excis
 import inguinalHernia from "@/assets/patient-education/laparoscopic_inguinal_hernia.docx.asset.json";
 import ventralHernia from "@/assets/patient-education/laparoscopic_umbilical_or_ventral_hernia.docx.asset.json";
 
+import abscessPdf from "@/assets/patient-education/abscess_drainaige_under_local_anathesia.pdf.asset.json";
+import appendectomyPdf from "@/assets/patient-education/appendectomy.pdf.asset.json";
+import breastLumpPdf from "@/assets/patient-education/breast_lump.pdf.asset.json";
+import cholecystectomyPdf from "@/assets/patient-education/cholecystectomy.pdf.asset.json";
+import wristGanglionPdf from "@/assets/patient-education/dorsal_wrist_ganglion.pdf.asset.json";
+import fibroadenosisPdf from "@/assets/patient-education/fibroadenosis_breast_education.pdf.asset.json";
+import haemorrhoidsPdf from "@/assets/patient-education/haemorrohoids.pdf.asset.json";
+import ingrowingNailPdf from "@/assets/patient-education/ingrowing_nail_wedge_excision_under_local_anathesia.pdf.asset.json";
+import inguinalHerniaPdf from "@/assets/patient-education/laparoscopic_inguinal_hernia.pdf.asset.json";
+import ventralHerniaPdf from "@/assets/patient-education/laparoscopic_umbilical_or_ventral_hernia.pdf.asset.json";
+
 export type EducationCategory = "Abdominal" | "Breast" | "Anorectal" | "Hernia" | "Minor Procedures";
 export type EducationCategoryAr = "البطن" | "الثدي" | "الشرج والمستقيم" | "الفتق" | "إجراءات صغرى";
 
@@ -23,6 +34,9 @@ export interface PatientEducationEntry {
   fileUrl: string;
   fileName: string;
   fileSize: number;
+  pdfUrl: string;
+  pdfName: string;
+  pdfSize: number;
 }
 
 const mb = (bytes: number) => `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
@@ -42,6 +56,9 @@ export const patientEducation: PatientEducationEntry[] = [
     fileUrl: appendectomy.url,
     fileName: appendectomy.original_filename,
     fileSize: appendectomy.size,
+    pdfUrl: appendectomyPdf.url,
+    pdfName: appendectomyPdf.original_filename,
+    pdfSize: appendectomyPdf.size,
   },
   {
     id: "cholecystectomy",
@@ -56,6 +73,9 @@ export const patientEducation: PatientEducationEntry[] = [
     fileUrl: cholecystectomy.url,
     fileName: cholecystectomy.original_filename,
     fileSize: cholecystectomy.size,
+    pdfUrl: cholecystectomyPdf.url,
+    pdfName: cholecystectomyPdf.original_filename,
+    pdfSize: cholecystectomyPdf.size,
   },
   {
     id: "inguinal-hernia",
@@ -70,6 +90,9 @@ export const patientEducation: PatientEducationEntry[] = [
     fileUrl: inguinalHernia.url,
     fileName: inguinalHernia.original_filename,
     fileSize: inguinalHernia.size,
+    pdfUrl: inguinalHerniaPdf.url,
+    pdfName: inguinalHerniaPdf.original_filename,
+    pdfSize: inguinalHerniaPdf.size,
   },
   {
     id: "ventral-hernia",
@@ -84,6 +107,9 @@ export const patientEducation: PatientEducationEntry[] = [
     fileUrl: ventralHernia.url,
     fileName: ventralHernia.original_filename,
     fileSize: ventralHernia.size,
+    pdfUrl: ventralHerniaPdf.url,
+    pdfName: ventralHerniaPdf.original_filename,
+    pdfSize: ventralHerniaPdf.size,
   },
   {
     id: "haemorrhoidectomy",
@@ -98,6 +124,9 @@ export const patientEducation: PatientEducationEntry[] = [
     fileUrl: haemorrhoids.url,
     fileName: haemorrhoids.original_filename,
     fileSize: haemorrhoids.size,
+    pdfUrl: haemorrhoidsPdf.url,
+    pdfName: haemorrhoidsPdf.original_filename,
+    pdfSize: haemorrhoidsPdf.size,
   },
   {
     id: "breast-lump",
@@ -112,6 +141,9 @@ export const patientEducation: PatientEducationEntry[] = [
     fileUrl: breastLump.url,
     fileName: breastLump.original_filename,
     fileSize: breastLump.size,
+    pdfUrl: breastLumpPdf.url,
+    pdfName: breastLumpPdf.original_filename,
+    pdfSize: breastLumpPdf.size,
   },
   {
     id: "fibroadenosis",
@@ -126,6 +158,9 @@ export const patientEducation: PatientEducationEntry[] = [
     fileUrl: fibroadenosis.url,
     fileName: fibroadenosis.original_filename,
     fileSize: fibroadenosis.size,
+    pdfUrl: fibroadenosisPdf.url,
+    pdfName: fibroadenosisPdf.original_filename,
+    pdfSize: fibroadenosisPdf.size,
   },
   {
     id: "abscess-drainage",
@@ -140,6 +175,9 @@ export const patientEducation: PatientEducationEntry[] = [
     fileUrl: abscess.url,
     fileName: abscess.original_filename,
     fileSize: abscess.size,
+    pdfUrl: abscessPdf.url,
+    pdfName: abscessPdf.original_filename,
+    pdfSize: abscessPdf.size,
   },
   {
     id: "ingrowing-nail",
@@ -154,6 +192,9 @@ export const patientEducation: PatientEducationEntry[] = [
     fileUrl: ingrowingNail.url,
     fileName: ingrowingNail.original_filename,
     fileSize: ingrowingNail.size,
+    pdfUrl: ingrowingNailPdf.url,
+    pdfName: ingrowingNailPdf.original_filename,
+    pdfSize: ingrowingNailPdf.size,
   },
   {
     id: "wrist-ganglion",
@@ -168,6 +209,9 @@ export const patientEducation: PatientEducationEntry[] = [
     fileUrl: wristGanglion.url,
     fileName: wristGanglion.original_filename,
     fileSize: wristGanglion.size,
+    pdfUrl: wristGanglionPdf.url,
+    pdfName: wristGanglionPdf.original_filename,
+    pdfSize: wristGanglionPdf.size,
   },
 ];
 
