@@ -9,6 +9,17 @@ import ingrowingNail from "@/assets/patient-education/ingrowing_nail_wedge_excis
 import inguinalHernia from "@/assets/patient-education/laparoscopic_inguinal_hernia.docx.asset.json";
 import ventralHernia from "@/assets/patient-education/laparoscopic_umbilical_or_ventral_hernia.docx.asset.json";
 
+import abscessPdf from "@/assets/patient-education/abscess_drainaige_under_local_anathesia.pdf.asset.json";
+import appendectomyPdf from "@/assets/patient-education/appendectomy.pdf.asset.json";
+import breastLumpPdf from "@/assets/patient-education/breast_lump.pdf.asset.json";
+import cholecystectomyPdf from "@/assets/patient-education/cholecystectomy.pdf.asset.json";
+import wristGanglionPdf from "@/assets/patient-education/dorsal_wrist_ganglion.pdf.asset.json";
+import fibroadenosisPdf from "@/assets/patient-education/fibroadenosis_breast_education.pdf.asset.json";
+import haemorrhoidsPdf from "@/assets/patient-education/haemorrohoids.pdf.asset.json";
+import ingrowingNailPdf from "@/assets/patient-education/ingrowing_nail_wedge_excision_under_local_anathesia.pdf.asset.json";
+import inguinalHerniaPdf from "@/assets/patient-education/laparoscopic_inguinal_hernia.pdf.asset.json";
+import ventralHerniaPdf from "@/assets/patient-education/laparoscopic_umbilical_or_ventral_hernia.pdf.asset.json";
+
 export type EducationCategory = "Abdominal" | "Breast" | "Anorectal" | "Hernia" | "Minor Procedures";
 export type EducationCategoryAr = "البطن" | "الثدي" | "الشرج والمستقيم" | "الفتق" | "إجراءات صغرى";
 
@@ -23,6 +34,9 @@ export interface PatientEducationEntry {
   fileUrl: string;
   fileName: string;
   fileSize: number;
+  pdfUrl: string;
+  pdfName: string;
+  pdfSize: number;
 }
 
 const mb = (bytes: number) => `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
