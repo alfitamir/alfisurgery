@@ -550,8 +550,63 @@ function ArabicIndex() {
         </div>
       </section>
 
+      {/* تثقيف المرضى — تشخيص بتشخيص */}
+      <section className="mx-auto max-w-6xl px-6 pt-24">
+        <div className="mb-12">
+          <div className="text-xs tracking-widest text-accent font-bold">تثقيف المرضى</div>
+          <h2 className="mt-3 text-4xl md:text-5xl">افهم عمليتك الجراحية.</h2>
+          <p className="mt-4 text-muted-foreground max-w-2xl leading-loose">
+            نشرات تثقيفية للمرضى مرتّبة حسب التشخيص — ما هي الحالة، لماذا تُجرى الجراحة، كيف يتم الإجراء، وما الذي تتوقعه أثناء التعافي. متاحة للتحميل والمشاركة مجانًا.
+          </p>
+        </div>
+        <div className="space-y-14">
+          {educationCategories.map((cat) => {
+            const items = patientEducation.filter((e) => e.category === cat);
+            if (!items.length) return null;
+            return (
+              <div key={cat}>
+                <div className="mb-5 flex items-center gap-3">
+                  <div className="inline-flex rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-accent">{educationCategoriesAr[cat]}</div>
+                  <div className="h-px flex-1 bg-border" />
+                  <div className="text-xs text-muted-foreground">{items.length} موضوع</div>
+                </div>
+                <div className="grid md:grid-cols-2 gap-5">
+                  {items.map((item) => (
+                    <article key={item.id} className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-soft)] flex flex-col">
+                      <div className="flex items-start gap-3">
+                        <div className="rounded-lg bg-secondary p-2.5 text-accent shrink-0">
+                          <FileText className="h-5 w-5" />
+                        </div>
+                        <div className="min-w-0">
+                          <h3 className="text-xl leading-snug">{item.titleAr}</h3>
+                          <p className="mt-1 text-xs text-muted-foreground" dir="ltr">{item.title}</p>
+                        </div>
+                      </div>
+                      <p className="mt-4 text-sm text-muted-foreground leading-loose">{item.summaryAr}</p>
+                      <div className="mt-5 flex items-center justify-between gap-3 flex-wrap pt-4 border-t border-border">
+                        <span className="text-xs text-muted-foreground">DOCX · {formatSize(item.fileSize)}</span>
+                        <a
+                          href={item.fileUrl}
+                          download={item.fileName}
+                          className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-primary/90 transition-colors"
+                          aria-label={`تحميل نشرة تثقيفية — ${item.titleAr}`}
+                        >
+                          <Download className="h-4 w-4" />
+                          تحميل
+                        </a>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
       {/* العروض التقديمية */}
       <section className="mx-auto max-w-6xl px-6 pb-24 pt-24">
+
         <div className="mb-12">
           <div className="text-xs tracking-widest text-accent font-bold">محاضرات وعروض تقديمية</div>
           <h2 className="mt-3 text-4xl md:text-5xl">العروض التقديمية.</h2>
