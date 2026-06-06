@@ -8,6 +8,7 @@ import haemorrhoids from "@/assets/patient-education/haemorrohoids.docx.asset.js
 import ingrowingNail from "@/assets/patient-education/ingrowing_nail_wedge_excision_under_local_anathesia.docx.asset.json";
 import inguinalHernia from "@/assets/patient-education/laparoscopic_inguinal_hernia.docx.asset.json";
 import ventralHernia from "@/assets/patient-education/laparoscopic_umbilical_or_ventral_hernia.docx.asset.json";
+import stomaReversal from "@/assets/patient-education/stoma_reversal_pelvic_floor.docx.asset.json";
 
 import abscessPdf from "@/assets/patient-education/abscess_drainaige_under_local_anathesia.pdf.asset.json";
 import appendectomyPdf from "@/assets/patient-education/appendectomy.pdf.asset.json";
@@ -19,6 +20,7 @@ import haemorrhoidsPdf from "@/assets/patient-education/haemorrohoids.pdf.asset.
 import ingrowingNailPdf from "@/assets/patient-education/ingrowing_nail_wedge_excision_under_local_anathesia.pdf.asset.json";
 import inguinalHerniaPdf from "@/assets/patient-education/laparoscopic_inguinal_hernia.pdf.asset.json";
 import ventralHerniaPdf from "@/assets/patient-education/laparoscopic_umbilical_or_ventral_hernia.pdf.asset.json";
+import stomaReversalPdf from "@/assets/patient-education/stoma_reversal_pelvic_floor.pdf.asset.json";
 
 export type EducationCategory = "Abdominal" | "Breast" | "Anorectal" | "Hernia" | "Minor Procedures";
 export type EducationCategoryAr = "البطن" | "الثدي" | "الشرج والمستقيم" | "الفتق" | "إجراءات صغرى";
