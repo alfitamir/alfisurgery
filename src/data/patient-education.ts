@@ -8,6 +8,7 @@ import haemorrhoids from "@/assets/patient-education/haemorrohoids.docx.asset.js
 import ingrowingNail from "@/assets/patient-education/ingrowing_nail_wedge_excision_under_local_anathesia.docx.asset.json";
 import inguinalHernia from "@/assets/patient-education/laparoscopic_inguinal_hernia.docx.asset.json";
 import ventralHernia from "@/assets/patient-education/laparoscopic_umbilical_or_ventral_hernia.docx.asset.json";
+import stomaReversal from "@/assets/patient-education/stoma_reversal_pelvic_floor.docx.asset.json";
 
 import abscessPdf from "@/assets/patient-education/abscess_drainaige_under_local_anathesia.pdf.asset.json";
 import appendectomyPdf from "@/assets/patient-education/appendectomy.pdf.asset.json";
@@ -19,6 +20,7 @@ import haemorrhoidsPdf from "@/assets/patient-education/haemorrohoids.pdf.asset.
 import ingrowingNailPdf from "@/assets/patient-education/ingrowing_nail_wedge_excision_under_local_anathesia.pdf.asset.json";
 import inguinalHerniaPdf from "@/assets/patient-education/laparoscopic_inguinal_hernia.pdf.asset.json";
 import ventralHerniaPdf from "@/assets/patient-education/laparoscopic_umbilical_or_ventral_hernia.pdf.asset.json";
+import stomaReversalPdf from "@/assets/patient-education/stoma_reversal_pelvic_floor.pdf.asset.json";
 
 export type EducationCategory = "Abdominal" | "Breast" | "Anorectal" | "Hernia" | "Minor Procedures";
 export type EducationCategoryAr = "البطن" | "الثدي" | "الشرج والمستقيم" | "الفتق" | "إجراءات صغرى";
@@ -212,6 +214,23 @@ export const patientEducation: PatientEducationEntry[] = [
     pdfUrl: wristGanglionPdf.url,
     pdfName: wristGanglionPdf.original_filename,
     pdfSize: wristGanglionPdf.size,
+  },
+  {
+    id: "stoma-reversal-pelvic-floor",
+    category: "Anorectal",
+    categoryAr: "الشرج والمستقيم",
+    title: "Stoma Reversal — Pelvic Floor Preparation",
+    titleAr: "تعليمات طبية: تأهيل عضلات الحوض قبل إغلاق الستوما",
+    summary:
+      "Bilingual guide to prepare for stoma (colostomy/ileostomy) reversal: Kegel-style anal sphincter and pelvic floor exercises, daily schedule, post-op expectations, and curated Arabic/English educational resources.",
+    summaryAr:
+      "دليل ثنائي اللغة للتحضير لعملية إغلاق الستوما (إعادة توصيل القولون): تمارين كيجل لعضلات الشرج وقاع الحوض، الجدول اليومي، ما يحدث بعد العملية، ومصادر تثقيفية عربية وإنجليزية موثوقة.",
+    fileUrl: stomaReversal.url,
+    fileName: stomaReversal.original_filename,
+    fileSize: stomaReversal.size,
+    pdfUrl: stomaReversalPdf.url,
+    pdfName: stomaReversalPdf.original_filename,
+    pdfSize: stomaReversalPdf.size,
   },
 ];
 
