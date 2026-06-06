@@ -39,6 +39,12 @@ export interface PatientEducationEntry {
   pdfUrl: string;
   pdfName: string;
   pdfSize: number;
+  checklistPdfUrl?: string;
+  checklistPdfName?: string;
+  checklistPdfSize?: number;
+  checklistDocxUrl?: string;
+  checklistDocxName?: string;
+  checklistDocxSize?: number;
 }
 
 const mb = (bytes: number) => `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
