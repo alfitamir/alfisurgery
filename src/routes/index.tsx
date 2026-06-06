@@ -673,6 +673,17 @@ function Index() {
                             <Download className="h-4 w-4" />
                             DOCX
                           </a>
+                          {item.checklistPdfUrl && (
+                            <a
+                              href={item.checklistPdfUrl}
+                              download={item.checklistPdfName}
+                              className="inline-flex items-center gap-2 rounded-full bg-accent text-accent-foreground px-4 py-2 text-sm font-medium hover:bg-accent/90 transition-colors"
+                              aria-label={`Download printable checklist — ${item.title}`}
+                            >
+                              <Download className="h-4 w-4" />
+                              Checklist PDF
+                            </a>
+                          )}
                         </div>
                       </div>
                     </article>

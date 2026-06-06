@@ -9,6 +9,8 @@ import ingrowingNail from "@/assets/patient-education/ingrowing_nail_wedge_excis
 import inguinalHernia from "@/assets/patient-education/laparoscopic_inguinal_hernia.docx.asset.json";
 import ventralHernia from "@/assets/patient-education/laparoscopic_umbilical_or_ventral_hernia.docx.asset.json";
 import stomaReversal from "@/assets/patient-education/stoma_reversal_pelvic_floor.docx.asset.json";
+import stomaReversalChecklist from "@/assets/patient-education/stoma_reversal_checklist.docx.asset.json";
+import stomaReversalChecklistPdf from "@/assets/patient-education/stoma_reversal_checklist.pdf.asset.json";
 
 import abscessPdf from "@/assets/patient-education/abscess_drainaige_under_local_anathesia.pdf.asset.json";
 import appendectomyPdf from "@/assets/patient-education/appendectomy.pdf.asset.json";
@@ -39,6 +41,12 @@ export interface PatientEducationEntry {
   pdfUrl: string;
   pdfName: string;
   pdfSize: number;
+  checklistPdfUrl?: string;
+  checklistPdfName?: string;
+  checklistPdfSize?: number;
+  checklistDocxUrl?: string;
+  checklistDocxName?: string;
+  checklistDocxSize?: number;
 }
 
 const mb = (bytes: number) => `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
@@ -231,6 +239,12 @@ export const patientEducation: PatientEducationEntry[] = [
     pdfUrl: stomaReversalPdf.url,
     pdfName: stomaReversalPdf.original_filename,
     pdfSize: stomaReversalPdf.size,
+    checklistPdfUrl: stomaReversalChecklistPdf.url,
+    checklistPdfName: stomaReversalChecklistPdf.original_filename,
+    checklistPdfSize: stomaReversalChecklistPdf.size,
+    checklistDocxUrl: stomaReversalChecklist.url,
+    checklistDocxName: stomaReversalChecklist.original_filename,
+    checklistDocxSize: stomaReversalChecklist.size,
   },
 ];
 
