@@ -215,6 +215,23 @@ export const patientEducation: PatientEducationEntry[] = [
     pdfName: wristGanglionPdf.original_filename,
     pdfSize: wristGanglionPdf.size,
   },
+  {
+    id: "stoma-reversal-pelvic-floor",
+    category: "Anorectal",
+    categoryAr: "الشرج والمستقيم",
+    title: "Stoma Reversal — Pelvic Floor Preparation",
+    titleAr: "تعليمات طبية: تأهيل عضلات الحوض قبل إغلاق الستوما",
+    summary:
+      "Bilingual guide to prepare for stoma (colostomy/ileostomy) reversal: Kegel-style anal sphincter and pelvic floor exercises, daily schedule, post-op expectations, and curated Arabic/English educational resources.",
+    summaryAr:
+      "دليل ثنائي اللغة للتحضير لعملية إغلاق الستوما (إعادة توصيل القولون): تمارين كيجل لعضلات الشرج وقاع الحوض، الجدول اليومي، ما يحدث بعد العملية، ومصادر تثقيفية عربية وإنجليزية موثوقة.",
+    fileUrl: stomaReversal.url,
+    fileName: stomaReversal.original_filename,
+    fileSize: stomaReversal.size,
+    pdfUrl: stomaReversalPdf.url,
+    pdfName: stomaReversalPdf.original_filename,
+    pdfSize: stomaReversalPdf.size,
+  },
 ];
 
 export const educationCategories: EducationCategory[] = [
