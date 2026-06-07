@@ -12,6 +12,17 @@ import stomaReversal from "@/assets/patient-education/stoma_reversal_pelvic_floo
 import stomaReversalChecklist from "@/assets/patient-education/stoma_reversal_checklist.docx.asset.json";
 import stomaReversalChecklistPdf from "@/assets/patient-education/stoma_reversal_checklist.pdf.asset.json";
 
+import lipoma from "@/assets/patient-education/lipoma_local_anathesia.docx.asset.json";
+import openVentral from "@/assets/patient-education/Open_Paraumbilical_Ventral_Hernia_Repair.docx.asset.json";
+import pediatricHernia from "@/assets/patient-education/pediatric_hernia.docx.asset.json";
+import perianalAbscess from "@/assets/patient-education/perianal_abscess.docx.asset.json";
+import perianalFistula from "@/assets/patient-education/perianal_fistula.docx.asset.json";
+import pilonidalAbscess from "@/assets/patient-education/pilonidal_abscess.docx.asset.json";
+import pilonidalSinus from "@/assets/patient-education/pilonidal_sinus.docx.asset.json";
+import plastibell from "@/assets/patient-education/plastibell_circumcision.docx.asset.json";
+import openInguinal from "@/assets/patient-education/Surgical_Inguinal_Hernia_Repair_Open_Technique.docx.asset.json";
+import thyroidectomy from "@/assets/patient-education/thyroidectomy.docx.asset.json";
+
 import abscessPdf from "@/assets/patient-education/abscess_drainaige_under_local_anathesia.pdf.asset.json";
 import appendectomyPdf from "@/assets/patient-education/appendectomy.pdf.asset.json";
 import breastLumpPdf from "@/assets/patient-education/breast_lump.pdf.asset.json";
@@ -24,8 +35,19 @@ import inguinalHerniaPdf from "@/assets/patient-education/laparoscopic_inguinal_
 import ventralHerniaPdf from "@/assets/patient-education/laparoscopic_umbilical_or_ventral_hernia.pdf.asset.json";
 import stomaReversalPdf from "@/assets/patient-education/stoma_reversal_pelvic_floor.pdf.asset.json";
 
-export type EducationCategory = "Abdominal" | "Breast" | "Anorectal" | "Hernia" | "Minor Procedures";
-export type EducationCategoryAr = "البطن" | "الثدي" | "الشرج والمستقيم" | "الفتق" | "إجراءات صغرى";
+import lipomaPdf from "@/assets/patient-education/lipoma_local_anathesia.pdf.asset.json";
+import openVentralPdf from "@/assets/patient-education/Open_Paraumbilical_Ventral_Hernia_Repair.pdf.asset.json";
+import pediatricHerniaPdf from "@/assets/patient-education/pediatric_hernia.pdf.asset.json";
+import perianalAbscessPdf from "@/assets/patient-education/perianal_abscess.pdf.asset.json";
+import perianalFistulaPdf from "@/assets/patient-education/perianal_fistula.pdf.asset.json";
+import pilonidalAbscessPdf from "@/assets/patient-education/pilonidal_abscess.pdf.asset.json";
+import pilonidalSinusPdf from "@/assets/patient-education/pilonidal_sinus.pdf.asset.json";
+import plastibellPdf from "@/assets/patient-education/plastibell_circumcision.pdf.asset.json";
+import openInguinalPdf from "@/assets/patient-education/Surgical_Inguinal_Hernia_Repair_Open_Technique.pdf.asset.json";
+import thyroidectomyPdf from "@/assets/patient-education/thyroidectomy.pdf.asset.json";
+
+export type EducationCategory = "Abdominal" | "Breast" | "Anorectal" | "Hernia" | "Minor Procedures" | "Endocrine" | "Pediatric";
+export type EducationCategoryAr = "البطن" | "الثدي" | "الشرج والمستقيم" | "الفتق" | "إجراءات صغرى" | "الغدد الصماء" | "الأطفال";
 
 export interface PatientEducationEntry {
   id: string;
