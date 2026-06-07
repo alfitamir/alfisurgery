@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight, Phone, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin, ExternalLink, BookOpen, Building2, CalendarCheck, Presentation, Eye, FileText } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { patientEducation, educationCategories, formatSize } from "@/data/patient-education";
+import { patientEducation, educationCategories, educationCategoryImages, formatSize } from "@/data/patient-education";
 import portrait from "@/assets/dr-elalfy.jpg";
 import analConditionsPpt from "@/assets/anal-conditions-ppt.asset.json";
 import sleevePpt from "@/assets/sleeve-190825155836.pptx.asset.json";
@@ -634,6 +634,16 @@ function Index() {
             if (!items.length) return null;
             return (
               <div key={cat}>
+                <div className="mb-5 overflow-hidden rounded-2xl border border-border bg-card">
+                  <img
+                    src={educationCategoryImages[cat]}
+                    alt={`${cat} patient education`}
+                    loading="lazy"
+                    width={1280}
+                    height={640}
+                    className="h-40 w-full object-cover md:h-56"
+                  />
+                </div>
                 <div className="mb-5 flex items-center gap-3">
                   <div className="inline-flex rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-accent">{cat}</div>
                   <div className="h-px flex-1 bg-border" />

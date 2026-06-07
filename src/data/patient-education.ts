@@ -459,3 +459,21 @@ export const educationCategoriesAr: Record<EducationCategory, EducationCategoryA
   Pediatric: "الأطفال",
   "Minor Procedures": "إجراءات صغرى",
 };
+
+import categoryAbdominal from "@/assets/patient-education/category-abdominal.jpg";
+import categoryHernia from "@/assets/patient-education/category-hernia.jpg";
+import categoryAnorectal from "@/assets/patient-education/category-anorectal.jpg";
+import categoryBreast from "@/assets/patient-education/category-breast.jpg";
+import categoryEndocrine from "@/assets/patient-education/category-endocrine.jpg";
+import categoryPediatric from "@/assets/patient-education/category-pediatric.jpg";
+import categoryMinor from "@/assets/patient-education/category-minor.jpg";
+
+export const educationCategoryImages: Record<EducationCategory, string> = {
+  Abdominal: categoryAbdominal,
+  Hernia: categoryHernia,
+  Anorectal: categoryAnorectal,
+  Breast: categoryBreast,
+  Endocrine: categoryEndocrine,
+  Pediatric: categoryPediatric,
+  "Minor Procedures": categoryMinor,
+};
