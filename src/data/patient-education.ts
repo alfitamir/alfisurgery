@@ -12,6 +12,17 @@ import stomaReversal from "@/assets/patient-education/stoma_reversal_pelvic_floo
 import stomaReversalChecklist from "@/assets/patient-education/stoma_reversal_checklist.docx.asset.json";
 import stomaReversalChecklistPdf from "@/assets/patient-education/stoma_reversal_checklist.pdf.asset.json";
 
+import lipoma from "@/assets/patient-education/lipoma_local_anathesia.docx.asset.json";
+import openVentral from "@/assets/patient-education/Open_Paraumbilical_Ventral_Hernia_Repair.docx.asset.json";
+import pediatricHernia from "@/assets/patient-education/pediatric_hernia.docx.asset.json";
+import perianalAbscess from "@/assets/patient-education/perianal_abscess.docx.asset.json";
+import perianalFistula from "@/assets/patient-education/perianal_fistula.docx.asset.json";
+import pilonidalAbscess from "@/assets/patient-education/pilonidal_abscess.docx.asset.json";
+import pilonidalSinus from "@/assets/patient-education/pilonidal_sinus.docx.asset.json";
+import plastibell from "@/assets/patient-education/plastibell_circumcision.docx.asset.json";
+import openInguinal from "@/assets/patient-education/Surgical_Inguinal_Hernia_Repair_Open_Technique.docx.asset.json";
+import thyroidectomy from "@/assets/patient-education/thyroidectomy.docx.asset.json";
+
 import abscessPdf from "@/assets/patient-education/abscess_drainaige_under_local_anathesia.pdf.asset.json";
 import appendectomyPdf from "@/assets/patient-education/appendectomy.pdf.asset.json";
 import breastLumpPdf from "@/assets/patient-education/breast_lump.pdf.asset.json";
@@ -24,8 +35,19 @@ import inguinalHerniaPdf from "@/assets/patient-education/laparoscopic_inguinal_
 import ventralHerniaPdf from "@/assets/patient-education/laparoscopic_umbilical_or_ventral_hernia.pdf.asset.json";
 import stomaReversalPdf from "@/assets/patient-education/stoma_reversal_pelvic_floor.pdf.asset.json";
 
-export type EducationCategory = "Abdominal" | "Breast" | "Anorectal" | "Hernia" | "Minor Procedures";
-export type EducationCategoryAr = "البطن" | "الثدي" | "الشرج والمستقيم" | "الفتق" | "إجراءات صغرى";
+import lipomaPdf from "@/assets/patient-education/lipoma_local_anathesia.pdf.asset.json";
+import openVentralPdf from "@/assets/patient-education/Open_Paraumbilical_Ventral_Hernia_Repair.pdf.asset.json";
+import pediatricHerniaPdf from "@/assets/patient-education/pediatric_hernia.pdf.asset.json";
+import perianalAbscessPdf from "@/assets/patient-education/perianal_abscess.pdf.asset.json";
+import perianalFistulaPdf from "@/assets/patient-education/perianal_fistula.pdf.asset.json";
+import pilonidalAbscessPdf from "@/assets/patient-education/pilonidal_abscess.pdf.asset.json";
+import pilonidalSinusPdf from "@/assets/patient-education/pilonidal_sinus.pdf.asset.json";
+import plastibellPdf from "@/assets/patient-education/plastibell_circumcision.pdf.asset.json";
+import openInguinalPdf from "@/assets/patient-education/Surgical_Inguinal_Hernia_Repair_Open_Technique.pdf.asset.json";
+import thyroidectomyPdf from "@/assets/patient-education/thyroidectomy.pdf.asset.json";
+
+export type EducationCategory = "Abdominal" | "Breast" | "Anorectal" | "Hernia" | "Minor Procedures" | "Endocrine" | "Pediatric";
+export type EducationCategoryAr = "البطن" | "الثدي" | "الشرج والمستقيم" | "الفتق" | "إجراءات صغرى" | "الغدد الصماء" | "الأطفال";
 
 export interface PatientEducationEntry {
   id: string;
@@ -246,6 +268,176 @@ export const patientEducation: PatientEducationEntry[] = [
     checklistDocxName: stomaReversalChecklist.original_filename,
     checklistDocxSize: stomaReversalChecklist.size,
   },
+  {
+    id: "open-inguinal-hernia",
+    category: "Hernia",
+    categoryAr: "الفتق",
+    title: "Open Inguinal Hernia Repair (Lichtenstein)",
+    titleAr: "إصلاح الفتق الإربي بالجراحة المفتوحة (ليختنشتاين)",
+    summary:
+      "Open tension-free mesh repair of a groin hernia — indications, anesthesia options, recovery, wound care, and return to activity.",
+    summaryAr:
+      "إصلاح الفتق الإربي بالجراحة المفتوحة باستخدام شبكة دون شدّ — الدواعي، خيارات التخدير، التعافي، العناية بالجرح، والعودة للنشاط.",
+    fileUrl: openInguinal.url,
+    fileName: openInguinal.original_filename,
+    fileSize: openInguinal.size,
+    pdfUrl: openInguinalPdf.url,
+    pdfName: openInguinalPdf.original_filename,
+    pdfSize: openInguinalPdf.size,
+  },
+  {
+    id: "open-ventral-hernia",
+    category: "Hernia",
+    categoryAr: "الفتق",
+    title: "Open Paraumbilical / Ventral Hernia Repair",
+    titleAr: "إصلاح فتق السرة أو الفتق البطني بالجراحة المفتوحة",
+    summary:
+      "Open mesh repair of umbilical and midline ventral hernias — preparation, surgery, hospital stay, wound care, and long-term precautions.",
+    summaryAr:
+      "إصلاح فتق السرة والفتق البطني بالجراحة المفتوحة باستخدام شبكة — التحضير، الجراحة، الإقامة بالمستشفى، العناية بالجرح، والاحتياطات طويلة المدى.",
+    fileUrl: openVentral.url,
+    fileName: openVentral.original_filename,
+    fileSize: openVentral.size,
+    pdfUrl: openVentralPdf.url,
+    pdfName: openVentralPdf.original_filename,
+    pdfSize: openVentralPdf.size,
+  },
+  {
+    id: "pediatric-hernia",
+    category: "Pediatric",
+    categoryAr: "الأطفال",
+    title: "Pediatric Inguinal Hernia Repair",
+    titleAr: "إصلاح الفتق الإربي عند الأطفال",
+    summary:
+      "Day-case herniotomy for infants and children — why early repair matters, anesthesia safety, post-op care, and red flags for parents.",
+    summaryAr:
+      "إصلاح الفتق الإربي عند الرضع والأطفال في يوم واحد — أهمية الإصلاح المبكر، أمان التخدير، العناية بعد العملية، وعلامات الخطر للأهل.",
+    fileUrl: pediatricHernia.url,
+    fileName: pediatricHernia.original_filename,
+    fileSize: pediatricHernia.size,
+    pdfUrl: pediatricHerniaPdf.url,
+    pdfName: pediatricHerniaPdf.original_filename,
+    pdfSize: pediatricHerniaPdf.size,
+  },
+  {
+    id: "plastibell-circumcision",
+    category: "Pediatric",
+    categoryAr: "الأطفال",
+    title: "Plastibell Circumcision",
+    titleAr: "الختان بطريقة البلاستيبل",
+    summary:
+      "Bloodless circumcision using the Plastibell device — how it works, healing timeline, ring separation, and home care for parents.",
+    summaryAr:
+      "الختان بدون نزيف باستخدام جهاز البلاستيبل — طريقة العمل، مراحل الالتئام، سقوط الحلقة، والعناية المنزلية للأهل.",
+    fileUrl: plastibell.url,
+    fileName: plastibell.original_filename,
+    fileSize: plastibell.size,
+    pdfUrl: plastibellPdf.url,
+    pdfName: plastibellPdf.original_filename,
+    pdfSize: plastibellPdf.size,
+  },
+  {
+    id: "perianal-abscess",
+    category: "Anorectal",
+    categoryAr: "الشرج والمستقيم",
+    title: "Perianal Abscess — Incision & Drainage",
+    titleAr: "خراج حول الشرج — الشق والتصريف",
+    summary:
+      "Urgent drainage of a painful perianal abscess — why antibiotics alone are not enough, wound care, sitz baths, and fistula risk.",
+    summaryAr:
+      "تصريج عاجل للخراج المؤلم حول الشرج — لماذا لا تكفي المضادات الحيوية وحدها، العناية بالجرح، المغاطس الدافئة، وخطر تكوّن الناسور.",
+    fileUrl: perianalAbscess.url,
+    fileName: perianalAbscess.original_filename,
+    fileSize: perianalAbscess.size,
+    pdfUrl: perianalAbscessPdf.url,
+    pdfName: perianalAbscessPdf.original_filename,
+    pdfSize: perianalAbscessPdf.size,
+  },
+  {
+    id: "perianal-fistula",
+    category: "Anorectal",
+    categoryAr: "الشرج والمستقيم",
+    title: "Perianal Fistula — Surgical Treatment",
+    titleAr: "ناسور حول الشرج — العلاج الجراحي",
+    summary:
+      "Surgical options for anal fistula (fistulotomy, seton, LIFT) — preserving continence, healing time, and follow-up.",
+    summaryAr:
+      "خيارات جراحية للناسور الشرجي (فتح الناسور، السيتون، تقنية LIFT) — الحفاظ على التحكم، فترة الالتئام، والمتابعة.",
+    fileUrl: perianalFistula.url,
+    fileName: perianalFistula.original_filename,
+    fileSize: perianalFistula.size,
+    pdfUrl: perianalFistulaPdf.url,
+    pdfName: perianalFistulaPdf.original_filename,
+    pdfSize: perianalFistulaPdf.size,
+  },
+  {
+    id: "pilonidal-abscess",
+    category: "Anorectal",
+    categoryAr: "الشرج والمستقيم",
+    title: "Pilonidal Abscess — Incision & Drainage",
+    titleAr: "خراج الناسور الشعري — الشق والتصريف",
+    summary:
+      "Emergency drainage of an infected pilonidal abscess — pain control, dressings, and the plan for definitive surgery later.",
+    summaryAr:
+      "تصريف طارئ لخراج الناسور الشعري الملتهب — السيطرة على الألم، الضمادات، وخطة الجراحة النهائية لاحقًا.",
+    fileUrl: pilonidalAbscess.url,
+    fileName: pilonidalAbscess.original_filename,
+    fileSize: pilonidalAbscess.size,
+    pdfUrl: pilonidalAbscessPdf.url,
+    pdfName: pilonidalAbscessPdf.original_filename,
+    pdfSize: pilonidalAbscessPdf.size,
+  },
+  {
+    id: "pilonidal-sinus",
+    category: "Anorectal",
+    categoryAr: "الشرج والمستقيم",
+    title: "Pilonidal Sinus — Definitive Surgery",
+    titleAr: "الناسور الشعري — الجراحة النهائية",
+    summary:
+      "Excision and flap repair of chronic pilonidal sinus — surgical options, wound care, hair removal, and prevention of recurrence.",
+    summaryAr:
+      "استئصال الناسور الشعري المزمن وإصلاحه بالشريحة — الخيارات الجراحية، العناية بالجرح، إزالة الشعر، والوقاية من التكرار.",
+    fileUrl: pilonidalSinus.url,
+    fileName: pilonidalSinus.original_filename,
+    fileSize: pilonidalSinus.size,
+    pdfUrl: pilonidalSinusPdf.url,
+    pdfName: pilonidalSinusPdf.original_filename,
+    pdfSize: pilonidalSinusPdf.size,
+  },
+  {
+    id: "lipoma-excision",
+    category: "Minor Procedures",
+    categoryAr: "إجراءات صغرى",
+    title: "Lipoma Excision (Local Anesthesia)",
+    titleAr: "استئصال الورم الشحمي تحت التخدير الموضعي",
+    summary:
+      "Office-based removal of a benign lipoma under local anesthesia — what to expect, scar care, and when to seek further evaluation.",
+    summaryAr:
+      "استئصال الورم الشحمي الحميد في العيادة تحت التخدير الموضعي — ما يحدث أثناء العملية، العناية بالندبة، ومتى تطلب تقييمًا إضافيًا.",
+    fileUrl: lipoma.url,
+    fileName: lipoma.original_filename,
+    fileSize: lipoma.size,
+    pdfUrl: lipomaPdf.url,
+    pdfName: lipomaPdf.original_filename,
+    pdfSize: lipomaPdf.size,
+  },
+  {
+    id: "thyroidectomy",
+    category: "Endocrine",
+    categoryAr: "الغدد الصماء",
+    title: "Thyroidectomy",
+    titleAr: "استئصال الغدة الدرقية",
+    summary:
+      "Partial or total removal of the thyroid gland — indications, voice and calcium considerations, scar care, and long-term hormone replacement.",
+    summaryAr:
+      "استئصال جزئي أو كامل للغدة الدرقية — الدواعي، اعتبارات الصوت والكالسيوم، العناية بالندبة، والعلاج الهرموني طويل المدى.",
+    fileUrl: thyroidectomy.url,
+    fileName: thyroidectomy.original_filename,
+    fileSize: thyroidectomy.size,
+    pdfUrl: thyroidectomyPdf.url,
+    pdfName: thyroidectomyPdf.original_filename,
+    pdfSize: thyroidectomyPdf.size,
+  },
 ];
 
 export const educationCategories: EducationCategory[] = [
@@ -253,6 +445,8 @@ export const educationCategories: EducationCategory[] = [
   "Hernia",
   "Anorectal",
   "Breast",
+  "Endocrine",
+  "Pediatric",
   "Minor Procedures",
 ];
 
@@ -261,5 +455,7 @@ export const educationCategoriesAr: Record<EducationCategory, EducationCategoryA
   Hernia: "الفتق",
   Anorectal: "الشرج والمستقيم",
   Breast: "الثدي",
+  Endocrine: "الغدد الصماء",
+  Pediatric: "الأطفال",
   "Minor Procedures": "إجراءات صغرى",
 };
