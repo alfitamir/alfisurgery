@@ -478,20 +478,157 @@ function Index() {
             {
               tag: "Tech Coloproctol · 2024",
               title: "Laparoscopic ventral mesh rectopexy vs perineal stapler resection for external full-thickness rectal prolapse in elderly patients",
-              desc: "Habeeb TAAM, Podda M, Chiaretti M, Kechagias A, Lledó JB, … Rushdy T, et al. Retrospective cohort study showing enhanced outcomes and reduced recurrence rates.",
+              desc: "Habeeb TAAM, Podda M, Chiaretti M, Kechagias A, Lledó JB, … Rushdy T, et al. Retrospective cohort study showing enhanced outcomes and reduced contents rates.",
               href: "https://doi.org/10.1007/s10151-024-02919-1",
+              doi: "10.1007/s10151-024-02919-1",
             },
             {
               tag: "Int J Surg · 2023",
               title: "Intraoperative endomanometric laparoscopic Nissen fundoplication in large sliding hiatus hernia with severe GERD",
               desc: "Habeeb TAAM, Hussain A, Podda M, Aiolfi A, Kryvoruchko IA, … Rushdy T, et al. Retrospective cohort study on improved postoperative outcomes.",
               href: "https://doi.org/10.1097/js9.0000000000000659",
+              doi: "10.1097/js9.0000000000000659",
             },
             {
               tag: "IOSR J Dent Med Sci · 2023",
               title: "Laparoscopic port access techniques and port site complications",
               desc: "Shah AB, Tamer, Ala, Rizwan, Wael, Abdullah, Hatim. Review of access techniques and management of port-related complications.",
               href: "https://doi.org/10.9790/0853-2212066369",
+              doi: "10.9790/0853-2212066369",
+            },
+            {
+              tag: "Zagazig Univ Med J · 2021",
+              title: "Three ports vs conventional five ports laparoscopic sleeve gastrectomy for morbid obesity",
+              desc: "Algazar ME, Abdullah WM, Elalfy TR. Retrospective study comparing operative and short-term outcomes.",
+              href: "https://zumj.journals.ekb.eg/",
+            },
+            {
+              tag: "Zagazig Univ Med J · 2021",
+              title: "Subcutaneous sinusectomy and cystectomy in management of complex pilonidal sinus disease",
+              desc: "Algazar ME, Alshazly MN, Elalfy TR. Tissue-sparing surgical approach for complex pilonidal disease.",
+              href: "https://zumj.journals.ekb.eg/",
+            },
+            {
+              tag: "World J Lap Surg · 2021",
+              title: "Do we still encounter non-appendicitis pathologies during laparoscopic appendectomy?",
+              desc: "Orban YA, Algazar ME, Farag AA, Elalfy className="flex h-5 w-5 items-center justify-center rounded-full bg-accent text-[10px] font-bold text-white">
+                    <span>{i + 1}</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{s}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Patient Education */}
+      <section id="patient-education" className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mb-12 text-center">
+          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Patient Education</div>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">Understanding your care.</h2>
+          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+            Clear, print-ready guides for surgical conditions and procedures.
+            Download in Word or PDF format.
+          </p>
+        </div>
+
+        <div className="space-y-10">
+          {educationCategories.map((cat) => (
+            <div key={cat}>
+              <div className="mb-5 overflow-hidden rounded-2xl">
+                <img
+                  src={educationCategoryImages[cat]}
+                  alt={`${cat} surgery category`}
+                  className="h-40 w-full object-cover md:h-56"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="mb-1 font-serif text-2xl text-foreground">
+                {cat}
+              </h3>
+              <p className="mb-5 text-sm text-muted-foreground">
+                {patientEducationData.filter((e) => e.category === cat).length} topic{patientEducationData.filter((e) => e.category === cat).length > 1 ? "s" : ""}
+              </p>
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {patientEducationData
+                  .filter((e) => e.category === cat)
+                  .map((entry) => (
+                    <div
+                      key={entry.id}
+                      className="group flex flex-col rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-soft)] transition hover:border-accent"
+                    >
+                      <div className="mb-4 flex items-center gap-2">
+                        <FileText className="h-5 w-5 text-accent" />
+                        <span className="text-xs font-semibold uppercase tracking-wider text-accent">
+                          {entry.category}
+                        </span>
+                      </div>
+                      <h4 className="font-serif text-lg leading-snug">
+                        {entry.title}
+                      </h4>
+                      <p className="mt-2 flex-1 text-sm text-muted-foreground leading-relaxed">
+                        {entry.summary}
+                      </p>
+                      <div className="mt-5 flex flex-wrap gap-3">
+                        {entry.docxFile && (
+                          <a
+                            href={entry.docxFile}
+                            download
+                            className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-2 text-sm font-medium text-foreground hover:bg-accent/10 transition"
+                          >
+                            <Download className="h-4 w-4" />
+                            Word
+                          </a>
+                        )}
+                        {entry.pdfFile && (
+                          <a
+                            href={entry.pdfFile}
+                            download
+                            className="inline-flex items-center gap-2 rounded-full bg-accent/10 px-4 py-2 text-sm font-medium text-accent hover:bg-accent/20 transition"
+                          >
+                            <Printer className="h-4 w-4" />
+                            PDF
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Peer-Reviewed Publications */}
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <div className="mb-12">
+          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Peer-Reviewed Publications</div>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">Selected research.</h2>
+          <p className="mt-4 text-muted-foreground max-w-xl">Original articles, case reports, and reviews in international surgical journals.</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-5">
+          {[
+            {
+              tag: "Tech Coloproctol · 2024",
+              title: "Laparoscopic ventral mesh rectopexy vs perineal stapler resection for external full-thickness rectal prolapse in elderly patients",
+              desc: "Habeeb TAAM, Podda M, Chiaretti M, Kechagias A, Lledó JB, … Rushdy T, et al. Retrospective cohort study showing enhanced outcomes and reduced recurrence rates.",
+              href: "https://doi.org/10.1007/s10151-024-02919-1",
+              doi: "10.1007/s10151-024-02919-1",
+            },
+            {
+              tag: "Int J Surg · 2023",
+              title: "Intraoperative endomanometric laparoscopic Nissen fundoplication in large sliding hiatus hernia with severe GERD",
+              desc: "Habeeb TAAM, Hussain A, Podda M, Aiolfi A, Kryvoruchko IA, … Rushdy T, et al. Retrospective cohort study on improved postoperative outcomes.",
+              href: "https://doi.org/10.1097/js9.0000000000000659",
+              doi: "10.1097/js9.0000000000000659",
+            },
+            {
+              tag: "IOSR J Dent Med Sci · 2023",
+              title: "Laparoscopic port access techniques and port site complications",
+              desc: "Shah AB, Tamer, Ala, Rizwan, Wael, Abdullah, Hatim. Review of access techniques and management of port-related complications.",
+              href: "https://doi.org/10.9790/0853-2212066369",
+              doi: "10.9790/0853-2212066369",
             },
             {
               tag: "Zagazig Univ Med J · 2021",
@@ -510,6 +647,7 @@ function Index() {
               title: "Do we still encounter non-appendicitis pathologies during laparoscopic appendectomy?",
               desc: "Orban YA, Algazar ME, Farag AA, Elalfy TR. 14(1), 10–14.",
               href: "https://doi.org/10.5005/jp-journals-10033-1432",
+              doi: "10.5005/jp-journals-10033-1432",
             },
             {
               tag: "J Coloproctol · 2021",
@@ -528,6 +666,7 @@ function Index() {
               title: "Splenectomy for hypersplenism with or without preoperative splenic artery embolisation",
               desc: "Zaitoun MMA, Basha MAA, Raafat A, Rushdy T, Mawla WA. 2:23.",
               href: "https://doi.org/10.1186/s41747-018-0053-6",
+              doi: "10.1186/s41747-018-0053-6",
             },
             {
               tag: "Life Sci J · 2018",
@@ -542,11 +681,8 @@ function Index() {
               href: "https://www.peertechzpublications.com/journals/journal-of-surgery-and-surgical-research",
             },
           ].map((item) => (
-            <a
+            <div
               key={item.href}
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
               className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
             >
               <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
@@ -554,14 +690,32 @@ function Index() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">{item.tag}</div>
-                <h3 className="font-serif text-lg leading-snug group-hover:text-accent transition flex items-start gap-2">
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-serif text-lg leading-snug hover:text-accent transition flex items-start gap-2"
+                >
                   <span>{item.title}</span>
                   <ExternalLink className="h-4 w-4 mt-1 shrink-0 opacity-60" />
-                </h3>
+                </a>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                {item.doi && (
+                  <a
+                    href={`https://doi.org/${item.doi}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 mt-3 text-xs font-medium text-accent hover:underline"
+                  >
+                    <span className="uppercase tracking-wider">DOI</span>
+                    <span className="text-muted-foreground">{item.doi}</span>
+                  </a>
+                )}
               </div>
-            </a>
+            </div>
           ))}
+        </div>
+      </section>
         </div>
       </section>
 
