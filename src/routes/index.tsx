@@ -480,18 +480,21 @@ function Index() {
               title: "Laparoscopic ventral mesh rectopexy vs perineal stapler resection for external full-thickness rectal prolapse in elderly patients",
               desc: "Habeeb TAAM, Podda M, Chiaretti M, Kechagias A, Lledó JB, … Rushdy T, et al. Retrospective cohort study showing enhanced outcomes and reduced recurrence rates.",
               href: "https://doi.org/10.1007/s10151-024-02919-1",
+              doi: "10.1007/s10151-024-02919-1",
             },
             {
               tag: "Int J Surg · 2023",
               title: "Intraoperative endomanometric laparoscopic Nissen fundoplication in large sliding hiatus hernia with severe GERD",
               desc: "Habeeb TAAM, Hussain A, Podda M, Aiolfi A, Kryvoruchko IA, … Rushdy T, et al. Retrospective cohort study on improved postoperative outcomes.",
               href: "https://doi.org/10.1097/js9.0000000000000659",
+              doi: "10.1097/js9.0000000000000659",
             },
             {
               tag: "IOSR J Dent Med Sci · 2023",
               title: "Laparoscopic port access techniques and port site complications",
               desc: "Shah AB, Tamer, Ala, Rizwan, Wael, Abdullah, Hatim. Review of access techniques and management of port-related complications.",
               href: "https://doi.org/10.9790/0853-2212066369",
+              doi: "10.9790/0853-2212066369",
             },
             {
               tag: "Zagazig Univ Med J · 2021",
@@ -510,6 +513,7 @@ function Index() {
               title: "Do we still encounter non-appendicitis pathologies during laparoscopic appendectomy?",
               desc: "Orban YA, Algazar ME, Farag AA, Elalfy TR. 14(1), 10–14.",
               href: "https://doi.org/10.5005/jp-journals-10033-1432",
+              doi: "10.5005/jp-journals-10033-1432",
             },
             {
               tag: "J Coloproctol · 2021",
@@ -528,6 +532,7 @@ function Index() {
               title: "Splenectomy for hypersplenism with or without preoperative splenic artery embolisation",
               desc: "Zaitoun MMA, Basha MAA, Raafat A, Rushdy T, Mawla WA. 2:23.",
               href: "https://doi.org/10.1186/s41747-018-0053-6",
+              doi: "10.1186/s41747-018-0053-6",
             },
             {
               tag: "Life Sci J · 2018",
@@ -542,11 +547,8 @@ function Index() {
               href: "https://www.peertechzpublications.com/journals/journal-of-surgery-and-surgical-research",
             },
           ].map((item) => (
-            <a
+            <div
               key={item.href}
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
               className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
             >
               <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
@@ -554,13 +556,29 @@ function Index() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">{item.tag}</div>
-                <h3 className="font-serif text-lg leading-snug group-hover:text-accent transition flex items-start gap-2">
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-serif text-lg leading-snug hover:text-accent transition flex items-start gap-2"
+                >
                   <span>{item.title}</span>
                   <ExternalLink className="h-4 w-4 mt-1 shrink-0 opacity-60" />
-                </h3>
+                </a>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                {item.doi && (
+                  <a
+                    href={`https://doi.org/${item.doi}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 mt-3 text-xs font-medium text-accent hover:underline"
+                  >
+                    <span className="uppercase tracking-wider">DOI</span>
+                    <span className="text-muted-foreground">{item.doi}</span>
+                  </a>
+                )}
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </section>
