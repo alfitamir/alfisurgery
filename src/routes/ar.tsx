@@ -5,7 +5,8 @@ import {
 } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { patientEducation, educationCategories, educationCategoriesAr, educationCategoryImages, formatSize } from "@/data/patient-education";
-import portrait from "@/assets/dr-elalfy.jpg";
+import portraitAsset from "@/assets/dr-elalfy-main.jpg.asset.json";
+const portrait = portraitAsset.url;
 import analConditionsPpt from "@/assets/anal-conditions-ppt.asset.json";
 import sleevePpt from "@/assets/sleeve-190825155836.pptx.asset.json";
 import puhPpt from "@/assets/puh-140513144027-phpapp01.pptx.asset.json";
