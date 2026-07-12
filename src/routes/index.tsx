@@ -868,8 +868,62 @@ function Index() {
         </div>
       </section>
 
+      {/* Recent Surgery Updates */}
+      <section id="updates" className="bg-secondary/30 border-y border-border">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <div className="max-w-2xl">
+            <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">What's new · 2024–2025</div>
+            <h2 className="mt-3 font-serif text-4xl md:text-5xl">Recent updates in general & laparoscopic surgery.</h2>
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+              A curated snapshot of the last two years — the shifts changing daily practice for surgeons, and the practical changes patients should know before their operation.
+            </p>
+          </div>
+
+          {(["doctors", "patients"] as const).map((audience) => {
+            const items = surgeryUpdates.filter((u) => u.audience === audience);
+            const isDoctors = audience === "doctors";
+            return (
+              <div key={audience} className="mt-14">
+                <div className="flex items-baseline gap-3 mb-6">
+                  <div className={`h-10 w-10 rounded-xl flex items-center justify-center ${isDoctors ? "bg-primary text-primary-foreground" : "bg-accent text-accent-foreground"}`}>
+                    {isDoctors ? <Microscope className="h-5 w-5" /> : <HeartPulse className="h-5 w-5" />}
+                  </div>
+                  <div>
+                    <div className="text-xs uppercase tracking-widest text-muted-foreground">{isDoctors ? "For doctors & trainees" : "For patients & families"}</div>
+                    <h3 className="font-serif text-2xl md:text-3xl">{isDoctors ? "Evidence & guideline updates" : "What this means for you"}</h3>
+                  </div>
+                </div>
+                <div className="grid md:grid-cols-2 gap-5">
+                  {items.map((u) => (
+                    <article key={u.title.en} className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-soft)] flex flex-col">
+                      <div className="flex items-center justify-between text-xs">
+                        <span className="uppercase tracking-widest text-accent font-semibold">{u.tag.en}</span>
+                        <span className="text-muted-foreground">{u.date}</span>
+                      </div>
+                      <h4 className="mt-3 font-serif text-lg leading-snug">{u.title.en}</h4>
+                      <p className="mt-2 text-sm text-muted-foreground leading-relaxed flex-1">{u.summary.en}</p>
+                      <div className="mt-4 flex items-center justify-between gap-3">
+                        <span className="text-xs text-muted-foreground">{u.source.en}</span>
+                        <a href={u.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-semibold text-accent hover:underline">
+                          Read more <ExternalLink className="h-3 w-3" />
+                        </a>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+
+          <p className="mt-10 text-xs text-muted-foreground italic max-w-3xl">
+            Educational summary only — not a substitute for individual medical advice. Guidelines evolve; always confirm with your treating team.
+          </p>
+        </div>
+      </section>
+
       {/* Contact */}
       <section id="contact" className="mx-auto max-w-6xl px-6 py-24">
+
         <div className="rounded-3xl bg-card border border-border p-10 md:p-16 shadow-[var(--shadow-elegant)] relative overflow-hidden">
           <div className="absolute -top-32 -right-32 w-80 h-80 rounded-full opacity-20" style={{ background: "var(--gradient-accent)" }} />
           <div className="relative grid md:grid-cols-2 gap-10 items-center">
