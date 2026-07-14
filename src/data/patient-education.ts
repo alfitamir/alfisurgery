@@ -22,6 +22,8 @@ import pilonidalSinus from "@/assets/patient-education/pilonidal_sinus.docx.asse
 import plastibell from "@/assets/patient-education/plastibell_circumcision.docx.asset.json";
 import openInguinal from "@/assets/patient-education/Surgical_Inguinal_Hernia_Repair_Open_Technique.docx.asset.json";
 import thyroidectomy from "@/assets/patient-education/thyroidectomy.docx.asset.json";
+import hidradenitis from "@/assets/patient-education/hidradenitis_suppurativa.docx.asset.json";
+import hidradenitisPdf from "@/assets/patient-education/hidradenitis_suppurativa.pdf.asset.json";
 
 import abscessPdf from "@/assets/patient-education/abscess_drainaige_under_local_anathesia.pdf.asset.json";
 import appendectomyPdf from "@/assets/patient-education/appendectomy.pdf.asset.json";
@@ -437,6 +439,23 @@ export const patientEducation: PatientEducationEntry[] = [
     pdfUrl: thyroidectomyPdf.url,
     pdfName: thyroidectomyPdf.original_filename,
     pdfSize: thyroidectomyPdf.size,
+  },
+  {
+    id: "hidradenitis-suppurativa",
+    category: "Minor Procedures",
+    categoryAr: "إجراءات صغرى",
+    title: "Hidradenitis Suppurativa (HS) — Patient Guide",
+    titleAr: "دليلك الشامل للفهم والتعايش مع التهاب الغدد العرقية القيحي (HS)",
+    summary:
+      "Comprehensive Arabic guide to living with hidradenitis suppurativa: what the disease is, triggers to avoid (smoking, weight, friction, hormones), medical and surgical options, diet, personal-care routine, and a safe home antiseptic recipe. Not contagious, not caused by poor hygiene.",
+    summaryAr:
+      "دليل عربي شامل للتعايش مع التهاب الغدد العرقية القيحي: ما هو المرض وأين يظهر، الأعراض، المحفزات الواجب تجنبها (التدخين، الوزن، الاحتكاك، الهرمونات)، الخيارات الدوائية والجراحية، النظام الغذائي، روتين العناية الشخصية، ووصفة آمنة للغسول المنزلي بالخل. غير معدي ولا علاقة له بالنظافة.",
+    fileUrl: hidradenitis.url,
+    fileName: hidradenitis.original_filename,
+    fileSize: hidradenitis.size,
+    pdfUrl: hidradenitisPdf.url,
+    pdfName: hidradenitisPdf.original_filename,
+    pdfSize: hidradenitisPdf.size,
   },
 ];
 
