@@ -627,6 +627,16 @@ function ArabicIndex() {
                               قائمة المراجعة PDF
                             </a>
                           )}
+                          {item.articleRoute && (
+                            <Link
+                              to={item.articleRoute}
+                              className="inline-flex items-center gap-2 rounded-full border border-accent text-accent px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
+                              aria-label={`قراءة المقال — ${item.titleAr}`}
+                            >
+                              <FileText className="h-4 w-4" />
+                              قراءة المقال
+                            </Link>
+                          )}
                         </div>
                       </div>
                     </article>
