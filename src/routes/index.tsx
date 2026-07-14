@@ -750,6 +750,16 @@ function Index() {
                               Checklist PDF
                             </a>
                           )}
+                          {item.articleRoute && (
+                            <Link
+                              to={item.articleRoute}
+                              className="inline-flex items-center gap-2 rounded-full border border-accent text-accent px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
+                              aria-label={`Read article — ${item.title}`}
+                            >
+                              <FileText className="h-4 w-4" />
+                              Read article
+                            </Link>
+                          )}
                         </div>
                       </div>
                     </article>
