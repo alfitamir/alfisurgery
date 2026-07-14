@@ -71,6 +71,7 @@ export interface PatientEducationEntry {
   checklistDocxUrl?: string;
   checklistDocxName?: string;
   checklistDocxSize?: number;
+  articleRoute?: string;
 }
 
 const mb = (bytes: number) => `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
