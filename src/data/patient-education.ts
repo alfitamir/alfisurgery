@@ -22,6 +22,8 @@ import pilonidalSinus from "@/assets/patient-education/pilonidal_sinus.docx.asse
 import plastibell from "@/assets/patient-education/plastibell_circumcision.docx.asset.json";
 import openInguinal from "@/assets/patient-education/Surgical_Inguinal_Hernia_Repair_Open_Technique.docx.asset.json";
 import thyroidectomy from "@/assets/patient-education/thyroidectomy.docx.asset.json";
+import hidradenitis from "@/assets/patient-education/hidradenitis_suppurativa.docx.asset.json";
+import hidradenitisPdf from "@/assets/patient-education/hidradenitis_suppurativa.pdf.asset.json";
 
 import abscessPdf from "@/assets/patient-education/abscess_drainaige_under_local_anathesia.pdf.asset.json";
 import appendectomyPdf from "@/assets/patient-education/appendectomy.pdf.asset.json";
