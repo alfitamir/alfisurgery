@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as PatientsRouteImport } from './routes/patients'
 import { Route as ArRouteImport } from './routes/ar'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PatientEducationHidradenitisSuppurativaRouteImport } from './routes/patient-education.hidradenitis-suppurativa'
 import { Route as ArPatientsRouteImport } from './routes/ar.patients'
 import { Route as ArMedicalQuestionsRouteImport } from './routes/ar.medical-questions'
 
@@ -30,6 +31,12 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PatientEducationHidradenitisSuppurativaRoute =
+  PatientEducationHidradenitisSuppurativaRouteImport.update({
+    id: '/patient-education/hidradenitis-suppurativa',
+    path: '/patient-education/hidradenitis-suppurativa',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ArPatientsRoute = ArPatientsRouteImport.update({
   id: '/patients',
   path: '/patients',
@@ -47,6 +54,7 @@ export interface FileRoutesByFullPath {
   '/patients': typeof PatientsRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
+  '/patient-education/hidradenitis-suppurativa': typeof PatientEducationHidradenitisSuppurativaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +62,7 @@ export interface FileRoutesByTo {
   '/patients': typeof PatientsRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
+  '/patient-education/hidradenitis-suppurativa': typeof PatientEducationHidradenitisSuppurativaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,6 +71,7 @@ export interface FileRoutesById {
   '/patients': typeof PatientsRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
+  '/patient-education/hidradenitis-suppurativa': typeof PatientEducationHidradenitisSuppurativaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -71,8 +81,15 @@ export interface FileRouteTypes {
     | '/patients'
     | '/ar/medical-questions'
     | '/ar/patients'
+    | '/patient-education/hidradenitis-suppurativa'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/ar' | '/patients' | '/ar/medical-questions' | '/ar/patients'
+  to:
+    | '/'
+    | '/ar'
+    | '/patients'
+    | '/ar/medical-questions'
+    | '/ar/patients'
+    | '/patient-education/hidradenitis-suppurativa'
   id:
     | '__root__'
     | '/'
@@ -80,12 +97,14 @@ export interface FileRouteTypes {
     | '/patients'
     | '/ar/medical-questions'
     | '/ar/patients'
+    | '/patient-education/hidradenitis-suppurativa'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ArRoute: typeof ArRouteWithChildren
   PatientsRoute: typeof PatientsRoute
+  PatientEducationHidradenitisSuppurativaRoute: typeof PatientEducationHidradenitisSuppurativaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -109,6 +128,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/patient-education/hidradenitis-suppurativa': {
+      id: '/patient-education/hidradenitis-suppurativa'
+      path: '/patient-education/hidradenitis-suppurativa'
+      fullPath: '/patient-education/hidradenitis-suppurativa'
+      preLoaderRoute: typeof PatientEducationHidradenitisSuppurativaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ar/patients': {
@@ -144,6 +170,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ArRoute: ArRouteWithChildren,
   PatientsRoute: PatientsRoute,
+  PatientEducationHidradenitisSuppurativaRoute:
+    PatientEducationHidradenitisSuppurativaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
