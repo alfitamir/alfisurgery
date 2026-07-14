@@ -457,6 +457,7 @@ export const patientEducation: PatientEducationEntry[] = [
     pdfUrl: hidradenitisPdf.url,
     pdfName: hidradenitisPdf.original_filename,
     pdfSize: hidradenitisPdf.size,
+    articleRoute: "/patient-education/hidradenitis-suppurativa",
   },
 ];
 
