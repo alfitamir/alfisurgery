@@ -440,6 +440,23 @@ export const patientEducation: PatientEducationEntry[] = [
     pdfName: thyroidectomyPdf.original_filename,
     pdfSize: thyroidectomyPdf.size,
   },
+  {
+    id: "hidradenitis-suppurativa",
+    category: "Minor Procedures",
+    categoryAr: "إجراءات صغرى",
+    title: "Hidradenitis Suppurativa (HS) — Patient Guide",
+    titleAr: "دليلك الشامل للفهم والتعايش مع التهاب الغدد العرقية القيحي (HS)",
+    summary:
+      "Comprehensive Arabic guide to living with hidradenitis suppurativa: what the disease is, triggers to avoid (smoking, weight, friction, hormones), medical and surgical options, diet, personal-care routine, and a safe home antiseptic recipe. Not contagious, not caused by poor hygiene.",
+    summaryAr:
+      "دليل عربي شامل للتعايش مع التهاب الغدد العرقية القيحي: ما هو المرض وأين يظهر، الأعراض، المحفزات الواجب تجنبها (التدخين، الوزن، الاحتكاك، الهرمونات)، الخيارات الدوائية والجراحية، النظام الغذائي، روتين العناية الشخصية، ووصفة آمنة للغسول المنزلي بالخل. غير معدي ولا علاقة له بالنظافة.",
+    fileUrl: hidradenitis.url,
+    fileName: hidradenitis.original_filename,
+    fileSize: hidradenitis.size,
+    pdfUrl: hidradenitisPdf.url,
+    pdfName: hidradenitisPdf.original_filename,
+    pdfSize: hidradenitisPdf.size,
+  },
 ];
 
 export const educationCategories: EducationCategory[] = [
