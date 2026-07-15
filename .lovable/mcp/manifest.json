@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "sdk_version": "0.22.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "alfi-surgery-mcp",
+      "version": "0.1.0",
+      "title": "Alfi Surgery MCP"
+    },
+    "tools": [
+      {
+        "name": "list_patient_education",
+        "title": "List patient education materials",
+        "description": "List patient education handouts published by Dr Tamer Elalfy's surgical practice. Each entry covers one operation or diagnosis with a bilingual (English/Arabic) summary and downloadable PDF and DOCX handouts. Optionally filter by category.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": [
+                "Abdominal",
+                "Breast",
+                "Anorectal",
+                "Hernia",
+                "Minor Procedures",
+                "Endocrine",
+                "Pediatric"
+              ],
+              "description": "Optional category filter."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_patient_education",
+        "title": "Get a patient education handout",
+        "description": "Return the full bilingual (English/Arabic) summary and downloadable PDF/DOCX links for one patient education handout by its id. Use list_patient_education to discover ids.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "The handout id, e.g. 'appendectomy' or 'hidradenitis-suppurativa'."
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_surgery_updates",
+        "title": "List recent surgery updates",
+        "description": "List curated recent updates in general and laparoscopic surgery published on Dr Tamer Elalfy's site. Each entry is tagged for a 'doctors' or 'patients' audience with a bilingual (English/Arabic) summary and a source link. Optionally filter by audience.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "audience": {
+              "type": "string",
+              "enum": [
+                "doctors",
+                "patients"
+              ],
+              "description": "Optional audience filter."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
