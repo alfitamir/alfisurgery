@@ -210,11 +210,11 @@ function Index() {
           <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/80 leading-relaxed">
             Consultant General & Laparoscopic Surgeon. Head of Surgery and Operating Room Unit at MDH Hospital, Al Khobar — Assistant Professor of General Surgery, Zagazig University, Egypt.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <a href="#expertise" className="rounded-full bg-white text-primary px-6 py-3 text-sm font-semibold hover:bg-white/90 transition">Explore expertise</a>
             <a href="#contact" className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold hover:bg-white/10 transition">Request consultation</a>
           </div>
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/15 pt-6">
+          <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/15 pt-4">
             {[
               { k: "20+", v: "Years in surgery" },
               { k: "6", v: "Subspecialty areas" },
