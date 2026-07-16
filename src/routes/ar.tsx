@@ -192,7 +192,7 @@ function ArabicIndex() {
           <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/80 leading-relaxed">
             استشاري الجراحة العامة والمناظير. رئيس قسم الجراحة وغرف العمليات بمستشفى محمد الدوسري بالخبر — أستاذ مساعد الجراحة العامة بجامعة الزقازيق، مصر.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <a href="#expertise" className="rounded-full bg-white text-primary px-6 py-3 text-sm font-semibold hover:bg-white/90 transition">استكشف التخصصات</a>
             <a href="#contact" className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold hover:bg-white/10 transition">طلب استشارة</a>
           </div>
