@@ -200,7 +200,7 @@ function ArabicIndex() {
       </section>
 
       {/* About */}
-      <section id="about" className="mx-auto max-w-6xl px-6 py-24">
+      <section id="about" className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-4">
             <div className="relative">
