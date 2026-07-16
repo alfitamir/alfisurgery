@@ -197,9 +197,9 @@ function Index() {
 
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-hero)" }} />
-        <div className="absolute inset-0 -z-10 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, oklch(0.75 0.12 200) 0%, transparent 40%), radial-gradient(circle at 80% 60%, oklch(0.55 0.15 220) 0%, transparent 50%)" }} />
-        <div className="mx-auto max-w-6xl px-6 py-24 md:py-36 text-[oklch(0.985_0.005_240)]">
+        <div className="absolute inset-0 z-0" style={{ background: "var(--gradient-hero)" }} />
+        <div className="absolute inset-0 z-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, oklch(0.75 0.12 200) 0%, transparent 40%), radial-gradient(circle at 80% 60%, oklch(0.55 0.15 220) 0%, transparent 50%)" }} />
+        <div className="relative z-10 mx-auto max-w-6xl px-6 py-10 md:py-14 text-[oklch(0.985_0.005_240)]">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs tracking-wide backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-[oklch(0.75_0.15_160)]" />
             Open to professional collaboration
@@ -210,11 +210,11 @@ function Index() {
           <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/80 leading-relaxed">
             Consultant General & Laparoscopic Surgeon. Head of Surgery and Operating Room Unit at MDH Hospital, Al Khobar — Assistant Professor of General Surgery, Zagazig University, Egypt.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <a href="#expertise" className="rounded-full bg-white text-primary px-6 py-3 text-sm font-semibold hover:bg-white/90 transition">Explore expertise</a>
             <a href="#contact" className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold hover:bg-white/10 transition">Request consultation</a>
           </div>
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/15 pt-8">
+          <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/15 pt-4">
             {[
               { k: "20+", v: "Years in surgery" },
               { k: "6", v: "Subspecialty areas" },
@@ -231,7 +231,7 @@ function Index() {
       </section>
 
       {/* About */}
-      <section id="about" className="mx-auto max-w-6xl px-6 py-24">
+      <section id="about" className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-4">
             <div className="relative">
