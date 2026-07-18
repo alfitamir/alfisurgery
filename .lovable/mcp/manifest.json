@@ -97,7 +97,7 @@
       {
         "name": "search_publications",
         "title": "Search peer-reviewed publications",
-        "description": "Search Dr Tamer Elalfy's peer-reviewed publications by free-text query across title, abstract, authors, and journal. Optionally filter by publication year. Returns matching entries with title, abstract, authors, journal, year, and link (DOI when available).",
+        "description": "Search Dr Tamer Elalfy's peer-reviewed publications with optional filters: free-text query, author name, journal name, keywords (all must match across title/abstract/authors/journal), and year range. Returns the total match count plus the (paginated) matching entries with title, abstract, authors, journal, year, and link (DOI when available).",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -108,15 +108,42 @@
           "properties": {
             "query": {
               "type": "string",
-              "description": "Free-text search across title, abstract, authors, and journal. Omit to list all publications."
+              "description": "Free-text search across title, abstract, authors, and journal."
+            },
+            "author": {
+              "type": "string",
+              "description": "Filter by author name substring (case-insensitive), e.g. 'Elalfy'."
+            },
+            "journal": {
+              "type": "string",
+              "description": "Filter by journal name substring (case-insensitive), e.g. 'Coloproctol'."
+            },
+            "keywords": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Keywords that must ALL appear somewhere in title/abstract/authors/journal (case-insensitive AND match)."
             },
             "year": {
               "type": "integer",
-              "description": "Optional exact publication year filter, e.g. 2023."
+              "description": "Exact publication year filter."
+            },
+            "yearFrom": {
+              "type": "integer",
+              "description": "Inclusive lower bound for publication year."
+            },
+            "yearTo": {
+              "type": "integer",
+              "description": "Inclusive upper bound for publication year."
             },
             "limit": {
               "type": "integer",
               "description": "Maximum number of results to return (default 20)."
+            },
+            "offset": {
+              "type": "integer",
+              "description": "Number of results to skip for pagination (default 0)."
             }
           },
           "additionalProperties": false,
