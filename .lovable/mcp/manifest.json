@@ -93,6 +93,36 @@
           "$schema": "http://json-schema.org/draft-07/schema#"
         },
         "outputSchema": null
+      },
+      {
+        "name": "search_publications",
+        "title": "Search peer-reviewed publications",
+        "description": "Search Dr Tamer Elalfy's peer-reviewed publications by free-text query across title, abstract, authors, and journal. Optionally filter by publication year. Returns matching entries with title, abstract, authors, journal, year, and link (DOI when available).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "Free-text search across title, abstract, authors, and journal. Omit to list all publications."
+            },
+            "year": {
+              "type": "integer",
+              "description": "Optional exact publication year filter, e.g. 2023."
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results to return (default 20)."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
       }
     ]
   }
