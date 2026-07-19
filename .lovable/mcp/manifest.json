@@ -97,7 +97,7 @@
       {
         "name": "search_publications",
         "title": "Search peer-reviewed publications",
-        "description": "Search Dr Tamer Elalfy's peer-reviewed publications with optional filters: free-text query, author name, journal name, keywords (all must match across title/abstract/authors/journal), and year range. Returns the total match count plus the (paginated) matching entries with title, abstract, authors, journal, year, and link (DOI when available).",
+        "description": "Search Dr Tamer Elalfy's peer-reviewed publications with optional filters: free-text query, author name, journal name, keywords (with configurable match mode), and year range. Returns the total match count plus the (paginated) matching entries with title, abstract, authors, journal, year, and link (DOI when available).",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -123,7 +123,16 @@
               "items": {
                 "type": "string"
               },
-              "description": "Keywords that must ALL appear somewhere in title/abstract/authors/journal (case-insensitive AND match)."
+              "description": "Keywords to match across title/abstract/authors/journal. Matching behavior controlled by keywordMatch."
+            },
+            "keywordMatch": {
+              "type": "string",
+              "enum": [
+                "substring",
+                "exact",
+                "phrase"
+              ],
+              "description": "How to match `keywords` (default 'substring'): 'substring' = case-insensitive substring AND-match (current behavior); 'exact' = each keyword must match a full whole word (word-boundary, case-insensitive AND-match); 'phrase' = each keyword is treated as an exact whole-word phrase (multi-word phrases match consecutively, case-insensitive AND-match)."
             },
             "year": {
               "type": "integer",

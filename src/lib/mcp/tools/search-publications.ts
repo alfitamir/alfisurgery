@@ -2,11 +2,13 @@ import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
 import { publications } from "@/data/publications";
 
+const escapeRegex = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
 export default defineTool({
   name: "search_publications",
   title: "Search peer-reviewed publications",
   description:
-    "Search Dr Tamer Elalfy's peer-reviewed publications with optional filters: free-text query, author name, journal name, keywords (all must match across title/abstract/authors/journal), and year range. Returns the total match count plus the (paginated) matching entries with title, abstract, authors, journal, year, and link (DOI when available).",
+    "Search Dr Tamer Elalfy's peer-reviewed publications with optional filters: free-text query, author name, journal name, keywords (with configurable match mode), and year range. Returns the total match count plus the (paginated) matching entries with title, abstract, authors, journal, year, and link (DOI when available).",
   inputSchema: {
     query: z
       .string()
@@ -24,7 +26,13 @@ export default defineTool({
       .array(z.string())
       .optional()
       .describe(
-        "Keywords that must ALL appear somewhere in title/abstract/authors/journal (case-insensitive AND match).",
+        "Keywords to match across title/abstract/authors/journal. Matching behavior controlled by keywordMatch.",
+      ),
+    keywordMatch: z
+      .enum(["substring", "exact", "phrase"])
+      .optional()
+      .describe(
+        "How to match `keywords` (default 'substring'): 'substring' = case-insensitive substring AND-match (current behavior); 'exact' = each keyword must match a full whole word (word-boundary, case-insensitive AND-match); 'phrase' = each keyword is treated as an exact whole-word phrase (multi-word phrases match consecutively, case-insensitive AND-match).",
       ),
     year: z.number().int().optional().describe("Exact publication year filter."),
     yearFrom: z.number().int().optional().describe("Inclusive lower bound for publication year."),
@@ -41,13 +49,34 @@ export default defineTool({
       .describe("Number of results to skip for pagination (default 0)."),
   },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
-  handler: ({ query, author, journal, keywords, year, yearFrom, yearTo, limit, offset }) => {
+  handler: ({
+    query,
+    author,
+    journal,
+    keywords,
+    keywordMatch,
+    year,
+    yearFrom,
+    yearTo,
+    limit,
+    offset,
+  }) => {
     const lc = (s: string) => s.toLowerCase();
     const q = query?.trim().toLowerCase() ?? "";
     const terms = q ? q.split(/\s+/).filter(Boolean) : [];
     const kws = (keywords ?? []).map((k) => k.trim().toLowerCase()).filter(Boolean);
+    const mode = keywordMatch ?? "substring";
     const authorQ = author?.trim().toLowerCase();
     const journalQ = journal?.trim().toLowerCase();
+
+    const matchKeyword = (hay: string, kw: string): boolean => {
+      if (mode === "substring") return hay.includes(kw);
+      // 'exact' and 'phrase' both use whole-word boundary matching; multi-word
+      // input is matched as a consecutive phrase (whitespace-normalized).
+      const parts = kw.split(/\s+/).map(escapeRegex);
+      const pattern = `(?:^|\\W)${parts.join("\\s+")}(?=$|\\W)`;
+      return new RegExp(pattern, "i").test(hay);
+    };
 
     const scored = publications
       .filter((p) => {
@@ -57,7 +86,7 @@ export default defineTool({
         if (authorQ && !lc(p.authors).includes(authorQ)) return false;
         if (journalQ && !lc(p.journal).includes(journalQ)) return false;
         const hay = lc(`${p.title} ${p.abstract} ${p.authors} ${p.journal}`);
-        if (kws.length && !kws.every((k) => hay.includes(k))) return false;
+        if (kws.length && !kws.every((k) => matchKeyword(hay, k))) return false;
         return true;
       })
       .map((p) => {
@@ -85,7 +114,7 @@ export default defineTool({
       doiUrl: p.doi ? `https://doi.org/${p.doi}` : undefined,
     }));
 
-    const summary = `Found ${totalMatches} publication(s); returning ${items.length} (offset ${start}).`;
+    const summary = `Found ${totalMatches} publication(s); returning ${items.length} (offset ${start}, keywordMatch '${mode}').`;
     return {
       content: [
         {
@@ -96,7 +125,13 @@ export default defineTool({
               : `${summary}\n\n${JSON.stringify(items, null, 2)}`,
         },
       ],
-      structuredContent: { totalMatches, returned: items.length, offset: start, items },
+      structuredContent: {
+        totalMatches,
+        returned: items.length,
+        offset: start,
+        keywordMatch: mode,
+        items,
+      },
     };
   },
 });
