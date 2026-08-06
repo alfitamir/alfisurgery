@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as PublicationsRouteImport } from './routes/publications'
 import { Route as PatientsRouteImport } from './routes/patients'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as ArRouteImport } from './routes/ar'
@@ -20,6 +21,11 @@ import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } fr
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 
+const PublicationsRoute = PublicationsRouteImport.update({
+  id: '/publications',
+  path: '/publications',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PatientsRoute = PatientsRouteImport.update({
   id: '/patients',
   path: '/patients',
@@ -80,6 +86,7 @@ export interface FileRoutesByFullPath {
   '/ar': typeof ArRouteWithChildren
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
+  '/publications': typeof PublicationsRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
@@ -92,6 +99,7 @@ export interface FileRoutesByTo {
   '/ar': typeof ArRouteWithChildren
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
+  '/publications': typeof PublicationsRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
@@ -105,6 +113,7 @@ export interface FileRoutesById {
   '/ar': typeof ArRouteWithChildren
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
+  '/publications': typeof PublicationsRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
@@ -119,6 +128,7 @@ export interface FileRouteTypes {
     | '/ar'
     | '/mcp'
     | '/patients'
+    | '/publications'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/ar/medical-questions'
@@ -131,6 +141,7 @@ export interface FileRouteTypes {
     | '/ar'
     | '/mcp'
     | '/patients'
+    | '/publications'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/ar/medical-questions'
@@ -143,6 +154,7 @@ export interface FileRouteTypes {
     | '/ar'
     | '/mcp'
     | '/patients'
+    | '/publications'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/ar/medical-questions'
@@ -156,6 +168,7 @@ export interface RootRouteChildren {
   ArRoute: typeof ArRouteWithChildren
   McpRoute: typeof McpRoute
   PatientsRoute: typeof PatientsRoute
+  PublicationsRoute: typeof PublicationsRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   PatientEducationHidradenitisSuppurativaRoute: typeof PatientEducationHidradenitisSuppurativaRoute
@@ -164,6 +177,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/publications': {
+      id: '/publications'
+      path: '/publications'
+      fullPath: '/publications'
+      preLoaderRoute: typeof PublicationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/patients': {
       id: '/patients'
       path: '/patients'
@@ -254,6 +274,7 @@ const rootRouteChildren: RootRouteChildren = {
   ArRoute: ArRouteWithChildren,
   McpRoute: McpRoute,
   PatientsRoute: PatientsRoute,
+  PublicationsRoute: PublicationsRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
