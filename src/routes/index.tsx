@@ -1018,11 +1018,29 @@ function Index() {
       </section>
 
       <footer className="border-t border-border">
-        <div className="mx-auto max-w-6xl px-6 py-10 flex flex-wrap items-center justify-between gap-4 text-sm text-muted-foreground">
+        <div className="mx-auto max-w-6xl px-6 py-10 flex flex-wrap items-center justify-between gap-6 text-sm text-muted-foreground">
           <div>© {new Date().getFullYear()} Dr. Tamer Rushdy Elalfy, MD</div>
           <div>Zagazig University · MDH Hospital, KSA</div>
+          <a
+            href="https://alfisurgery.lovable.app"
+            className="flex items-center gap-3 group"
+            aria-label="Scan or click to open this website"
+          >
+            <img
+              src="/site-qr.svg"
+              alt="QR code linking to Dr. Tamer Elalfy's website"
+              width={88}
+              height={88}
+              loading="lazy"
+              className="h-22 w-22 rounded-md bg-white p-1.5 ring-1 ring-border"
+            />
+            <span className="max-w-[9rem] text-xs leading-snug group-hover:text-foreground transition">
+              Scan to open this page on your phone
+            </span>
+          </a>
         </div>
       </footer>
+
     </div>
   );
 }
