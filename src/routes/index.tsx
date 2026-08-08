@@ -468,6 +468,38 @@ function Index() {
         </div>
       </section>
 
+      {/* ORCID Profile */}
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <div className="mb-12">
+          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Researcher Identity</div>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">ORCID profile.</h2>
+          <p className="mt-4 text-muted-foreground max-w-xl">Verified researcher identifier linking publications and professional contributions.</p>
+        </div>
+        <a
+          href="https://orcid.org/0000-0003-3769-2445"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)] max-w-2xl"
+        >
+          <div className="h-12 w-12 shrink-0 rounded-xl bg-[#A6CE39]/10 flex items-center justify-center group-hover:bg-[#A6CE39]/20 transition">
+            <svg viewBox="0 0 256 256" className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" aria-label="ORCID logo">
+              <circle cx="128" cy="128" r="128" fill="#A6CE39"/>
+              <path d="M86.5 128c0-4.1 3.4-7.5 7.5-7.5s7.5 3.4 7.5 7.5-3.4 7.5-7.5 7.5-7.5-3.4-7.5-7.5zm15 15h-15v30h15v-30z" fill="white"/>
+              <path d="M128 98h28c16.5 0 30 13.5 30 30s-13.5 30-30 30h-28v-60zm15 15v30h13c7.5 0 13.5-6 13.5-13.5s-6-13.5-13.5-13.5h-13z" fill="white"/>
+              <circle cx="128" cy="128" r="96" fill="none" stroke="white" strokeWidth="8"/>
+            </svg>
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">ORCID iD</div>
+            <h3 className="font-serif text-lg leading-snug group-hover:text-accent transition flex items-start gap-2">
+              <span>Tamer Elalfy</span>
+              <ExternalLink className="h-4 w-4 mt-1 shrink-0 opacity-60" />
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground leading-relaxed font-mono">0000-0003-3769-2445</p>
+          </div>
+        </a>
+      </section>
+
       {/* Publications */}
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="mb-12">
