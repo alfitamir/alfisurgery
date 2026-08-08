@@ -501,6 +501,7 @@ function Index() {
       </section>
 
       {/* Publications */}
+      <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="mb-12">
           <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Peer-Reviewed Publications</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">Selected research.</h2>
