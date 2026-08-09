@@ -508,14 +508,17 @@ function ArabicIndex() {
             <p className="mt-4 text-muted-foreground max-w-2xl leading-loose">معرض مختار من الرسوم الجراحية التوضيحية المستخدمة في المحاضرات المهنية، ومناقشات الحالات، والشرح داخل العيادة، وتثقيف المرضى.</p>
           </div>
           <div className="space-y-6">
-            {illustrationCollections.map((group) => {
+            {illustrationCollections.map((group, gi) => {
               const isOpen = !!openGroups[group.title];
+              const panelId = `illustrations-panel-${gi}`;
+              const headingId = `illustrations-heading-${gi}`;
+              const focusRing = "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background";
               return (
                 <Collapsible key={group.title} open={isOpen} onOpenChange={() => toggleGroup(group.title)}>
                   <div className="rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)] overflow-hidden">
                     <div className="flex items-center justify-between gap-4 p-5 flex-wrap">
                       <div className="min-w-0">
-                        <div className="inline-flex rounded-full border border-border bg-secondary px-3 py-1 text-xs font-medium text-accent">{group.title}</div>
+                        <h3 id={headingId} className="inline-flex rounded-full border border-border bg-secondary px-3 py-1 text-xs font-medium text-accent">{group.title}</h3>
                         <p className="mt-2 text-sm text-muted-foreground leading-loose">{group.subtitle}</p>
                       </div>
                       <div className="flex items-center gap-2 flex-wrap">
@@ -523,10 +526,10 @@ function ArabicIndex() {
                           <DialogTrigger asChild>
                             <button
                               type="button"
-                              className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium hover:bg-secondary/80 transition-colors"
+                              className={`inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium hover:bg-secondary/80 transition-colors ${focusRing}`}
                               aria-label={`معاينة ملف PDF — ${group.title}`}
                             >
-                              <Eye className="h-4 w-4" />
+                              <Eye className="h-4 w-4" aria-hidden="true" />
                               <span>معاينة</span>
                             </button>
                           </DialogTrigger>
@@ -544,9 +547,9 @@ function ArabicIndex() {
                               <a
                                 href={group.pdf}
                                 download
-                                className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-primary/90 transition-colors"
+                                className={`inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-primary/90 transition-colors ${focusRing}`}
                               >
-                                <Download className="h-4 w-4" />
+                                <Download className="h-4 w-4" aria-hidden="true" />
                                 تحميل PDF
                               </a>
                             </div>
@@ -555,38 +558,45 @@ function ArabicIndex() {
                         <a
                           href={group.pdf}
                           download
-                          className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
+                          className={`inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors ${focusRing}`}
                           aria-label={`تحميل ملف PDF للطباعة — ${group.title}`}
                         >
-                          <Download className="h-4 w-4" />
+                          <Download className="h-4 w-4" aria-hidden="true" />
                           <span>تحميل PDF</span>
                           <span className="text-xs text-muted-foreground hidden sm:inline">· {group.pdfMeta}</span>
                         </a>
                         <CollapsibleTrigger asChild>
-                          <button type="button" className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium hover:bg-secondary/80 transition-colors">
+                          <button
+                            type="button"
+                            id={`${panelId}-trigger`}
+                            aria-controls={panelId}
+                            aria-expanded={isOpen}
+                            aria-label={`${isOpen ? "إخفاء" : "عرض"} الرسوم التعليمية — ${group.title}`}
+                            className={`inline-flex min-h-11 items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium hover:bg-secondary/80 transition-colors ${focusRing}`}
+                          >
                             <span>{isOpen ? "إخفاء" : "عرض"}</span>
-                            {isOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                            {isOpen ? <ChevronUp className="h-4 w-4" aria-hidden="true" /> : <ChevronDown className="h-4 w-4" aria-hidden="true" />}
                           </button>
                         </CollapsibleTrigger>
                       </div>
                     </div>
-                    <CollapsibleContent>
+                    <CollapsibleContent id={panelId} role="region" aria-labelledby={headingId}>
                       <div className="border-t border-border px-5">
                         <ul className="divide-y divide-border">
                           {group.items.map((item) => (
                             <li key={item.title} className="py-4">
                               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
                                 <div className="min-w-0">
-                                  <h3 className="text-base leading-snug">{item.title}</h3>
+                                  <h4 className="text-base leading-snug">{item.title}</h4>
                                   <p className="mt-1 text-sm text-muted-foreground leading-loose">{item.desc}</p>
                                 </div>
                                 <a
                                   href={item.image}
                                   download
-                                  className="inline-flex items-center gap-1.5 self-start rounded-full border border-border px-3 py-1.5 text-xs font-medium hover:bg-secondary transition-colors shrink-0"
+                                  className={`inline-flex items-center gap-1.5 self-start rounded-full border border-border px-3 py-1.5 text-xs font-medium hover:bg-secondary transition-colors shrink-0 ${focusRing}`}
                                   aria-label={`تحميل الرسم التعليمي — ${item.title}`}
                                 >
-                                  <Download className="h-3.5 w-3.5" />
+                                  <Download className="h-3.5 w-3.5" aria-hidden="true" />
                                   PNG
                                 </a>
                               </div>
