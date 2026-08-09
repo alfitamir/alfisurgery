@@ -169,6 +169,8 @@ const illustrationCollections = [
 ];
 
 function Index() {
+  const [openGroups, setOpenGroups] = useState<Record<string, boolean>>({});
+  const toggleGroup = (title: string) => setOpenGroups((prev) => ({ ...prev, [title]: !prev[title] }));
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Nav */}
