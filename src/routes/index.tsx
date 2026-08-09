@@ -630,84 +630,98 @@ function Index() {
             <h2 className="mt-3 font-serif text-4xl md:text-5xl">Visual teaching for doctors and patients.</h2>
             <p className="mt-4 text-muted-foreground max-w-2xl">A curated gallery of surgical explainer visuals used in CME teaching, case-based discussion, clinic counseling, and patient communication.</p>
           </div>
-          <div className="space-y-16">
-            {illustrationCollections.map((group) => (
-              <div key={group.title}>
-                <div className="mb-6 flex items-end justify-between gap-4 flex-wrap">
-                  <div>
-                    <div className="inline-flex rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-accent">{group.title}</div>
-                    <p className="mt-3 text-sm text-muted-foreground">{group.subtitle}</p>
-                  </div>
-                  <div className="flex items-center gap-2 flex-wrap">
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <button
-                          type="button"
-                          className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium hover:bg-secondary transition-colors"
-                          aria-label={`Preview printable PDF — ${group.title}`}
-                        >
-                          <Eye className="h-4 w-4" />
-                          <span>Preview</span>
-                        </button>
-                      </DialogTrigger>
-                      <DialogContent className="max-w-5xl w-[95vw] h-[85vh] p-0 gap-0 flex flex-col">
-                        <DialogHeader className="px-5 py-3 border-b border-border">
-                          <DialogTitle className="font-serif text-lg">Preview — {group.title}</DialogTitle>
-                        </DialogHeader>
-                        <iframe
-                          src={`${group.pdf}#view=FitH`}
-                          title={`Preview printable PDF — ${group.title}`}
-                          className="flex-1 w-full bg-secondary"
-                        />
-                        <div className="px-5 py-3 border-t border-border flex items-center justify-between gap-3 flex-wrap">
-                          <span className="text-xs text-muted-foreground">{group.pdfMeta}</span>
-                          <a
-                            href={group.pdf}
-                            download
-                            className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-primary/90 transition-colors"
-                          >
-                            <Download className="h-4 w-4" />
-                            Download PDF
-                          </a>
-                        </div>
-                      </DialogContent>
-                    </Dialog>
-                    <a
-                      href={group.pdf}
-                      download
-                      className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
-                      aria-label={`Download printable PDF — ${group.title}`}
-                    >
-                      <Download className="h-4 w-4" />
-                      <span>Download PDF</span>
-                      <span className="text-xs text-muted-foreground hidden sm:inline">· {group.pdfMeta}</span>
-                    </a>
-                  </div>
-                </div>
-                <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-                  {group.items.map((item) => (
-                    <article key={item.title} className="overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)] flex flex-col">
-                      <div className="aspect-[16/10] overflow-hidden border-b border-border bg-secondary">
-                        <img src={item.image} alt={item.alt} loading="lazy" className="h-full w-full object-cover" />
+          <div className="space-y-6">
+            {illustrationCollections.map((group) => {
+              const isOpen = !!openGroups[group.title];
+              return (
+                <Collapsible key={group.title} open={isOpen} onOpenChange={() => toggleGroup(group.title)}>
+                  <div className="rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)] overflow-hidden">
+                    <div className="flex items-center justify-between gap-4 p-5 flex-wrap">
+                      <div className="min-w-0">
+                        <div className="inline-flex rounded-full border border-border bg-secondary px-3 py-1 text-xs font-medium text-accent">{group.title}</div>
+                        <p className="mt-2 text-sm text-muted-foreground">{group.subtitle}</p>
                       </div>
-                      <div className="p-5 flex flex-col flex-1">
-                        <h3 className="font-serif text-xl leading-snug">{item.title}</h3>
-                        <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <Dialog>
+                          <DialogTrigger asChild>
+                            <button
+                              type="button"
+                              className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium hover:bg-secondary/80 transition-colors"
+                              aria-label={`Preview printable PDF — ${group.title}`}
+                            >
+                              <Eye className="h-4 w-4" />
+                              <span>Preview</span>
+                            </button>
+                          </DialogTrigger>
+                          <DialogContent className="max-w-5xl w-[95vw] h-[85vh] p-0 gap-0 flex flex-col">
+                            <DialogHeader className="px-5 py-3 border-b border-border">
+                              <DialogTitle className="font-serif text-lg">Preview — {group.title}</DialogTitle>
+                            </DialogHeader>
+                            <iframe
+                              src={`${group.pdf}#view=FitH`}
+                              title={`Preview printable PDF — ${group.title}`}
+                              className="flex-1 w-full bg-secondary"
+                            />
+                            <div className="px-5 py-3 border-t border-border flex items-center justify-between gap-3 flex-wrap">
+                              <span className="text-xs text-muted-foreground">{group.pdfMeta}</span>
+                              <a
+                                href={group.pdf}
+                                download
+                                className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-primary/90 transition-colors"
+                              >
+                                <Download className="h-4 w-4" />
+                                Download PDF
+                              </a>
+                            </div>
+                          </DialogContent>
+                        </Dialog>
                         <a
-                          href={item.image}
+                          href={group.pdf}
                           download
-                          className="mt-4 inline-flex items-center gap-2 self-start rounded-full border border-border px-3 py-1.5 text-xs font-medium hover:bg-secondary transition-colors"
-                          aria-label={`Download illustration — ${item.title}`}
+                          className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
+                          aria-label={`Download printable PDF — ${group.title}`}
                         >
-                          <Download className="h-3.5 w-3.5" />
-                          Download image (PNG)
+                          <Download className="h-4 w-4" />
+                          <span>Download PDF</span>
+                          <span className="text-xs text-muted-foreground hidden sm:inline">· {group.pdfMeta}</span>
                         </a>
+                        <CollapsibleTrigger asChild>
+                          <button type="button" className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium hover:bg-secondary/80 transition-colors">
+                            <span>{isOpen ? "Hide" : "Show"}</span>
+                            {isOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                          </button>
+                        </CollapsibleTrigger>
                       </div>
-                    </article>
-                  ))}
-                </div>
-              </div>
-            ))}
+                    </div>
+                    <CollapsibleContent>
+                      <div className="border-t border-border px-5">
+                        <ul className="divide-y divide-border">
+                          {group.items.map((item) => (
+                            <li key={item.title} className="py-4">
+                              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
+                                <div className="min-w-0">
+                                  <h3 className="font-serif text-base leading-snug">{item.title}</h3>
+                                  <p className="mt-1 text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                                </div>
+                                <a
+                                  href={item.image}
+                                  download
+                                  className="inline-flex items-center gap-1.5 self-start rounded-full border border-border px-3 py-1.5 text-xs font-medium hover:bg-secondary transition-colors shrink-0"
+                                  aria-label={`Download illustration — ${item.title}`}
+                                >
+                                  <Download className="h-3.5 w-3.5" />
+                                  PNG
+                                </a>
+                              </div>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </CollapsibleContent>
+                  </div>
+                </Collapsible>
+              );
+            })}
           </div>
         </div>
       </section>
