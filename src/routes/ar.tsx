@@ -182,6 +182,40 @@ function ArabicIndex() {
         </div>
       </header>
 
+      {/* أقسام الصفحة */}
+      <nav dir="rtl" aria-label="أقسام الصفحة" className="sticky top-16 z-40 border-b border-border bg-background/90 backdrop-blur-md">
+        <div className="mx-auto max-w-6xl px-6">
+          <ul className="flex gap-1 overflow-x-auto py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {[
+              { id: "about", label: "نبذة" },
+              { id: "expertise", label: "الخبرات" },
+              { id: "services", label: "الخدمات" },
+              { id: "beyond", label: "ما وراء العمليات" },
+              { id: "videos", label: "فيديوهات" },
+              { id: "web", label: "حول الويب" },
+              { id: "orcid", label: "ORCID" },
+              { id: "research", label: "الأبحاث" },
+              { id: "teaching", label: "تعليم بصري" },
+              { id: "education", label: "تثقيف المرضى" },
+              { id: "presentations", label: "العروض التقديمية" },
+              { id: "updates", label: "أحدث المستجدات" },
+              { id: "contact", label: "تواصل" },
+            ].map((t) => (
+              <li key={t.id} className="shrink-0">
+                <a
+                  href={`#${t.id}`}
+                  className="inline-flex items-center rounded-full px-3.5 py-1.5 text-sm text-muted-foreground whitespace-nowrap transition hover:bg-secondary hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                >
+                  {t.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+
+
+
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 z-0" style={{ background: "var(--gradient-hero)" }} />
