@@ -182,14 +182,14 @@ function Index() {
             </div>
             <span className="font-serif text-lg font-semibold">Dr. Tamer Elalfy</span>
           </div>
-          <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
-            <a href="#about" className="hover:text-foreground transition">About</a>
-            <a href="#expertise" className="hover:text-foreground transition">Expertise</a>
-            <a href="#services" className="hover:text-foreground transition">Services</a>
-            <Link to="/patients" className="hover:text-foreground transition">Patients</Link>
-            <a href="#contact" className="hover:text-foreground transition">Contact</a>
-          </nav>
+          {/* Header nav removed from here; all section links now live in the sticky chapter tabs below to avoid duplication. */}
           <div className="flex items-center gap-3">
+            <Link to="/patients" className="hidden md:inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition">
+              Patients
+            </Link>
+            <Link to="/ar" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition">
+              <Globe className="h-4 w-4" /> AR
+            </Link>
             <Link to="/ar" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition">
               <Globe className="h-4 w-4" /> AR
             </Link>
