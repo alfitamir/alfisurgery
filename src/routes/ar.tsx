@@ -182,6 +182,40 @@ function ArabicIndex() {
         </div>
       </header>
 
+      {/* أقسام الصفحة */}
+      <nav dir="rtl" aria-label="أقسام الصفحة" className="sticky top-16 z-40 border-b border-border bg-background/90 backdrop-blur-md">
+        <div className="mx-auto max-w-6xl px-6">
+          <ul className="flex gap-1 overflow-x-auto py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {[
+              { id: "about", label: "نبذة" },
+              { id: "expertise", label: "الخبرات" },
+              { id: "services", label: "الخدمات" },
+              { id: "beyond", label: "ما وراء العمليات" },
+              { id: "videos", label: "فيديوهات" },
+              { id: "web", label: "حول الويب" },
+              { id: "orcid", label: "ORCID" },
+              { id: "research", label: "الأبحاث" },
+              { id: "teaching", label: "تعليم بصري" },
+              { id: "education", label: "تثقيف المرضى" },
+              { id: "presentations", label: "العروض التقديمية" },
+              { id: "updates", label: "أحدث المستجدات" },
+              { id: "contact", label: "تواصل" },
+            ].map((t) => (
+              <li key={t.id} className="shrink-0">
+                <a
+                  href={`#${t.id}`}
+                  className="inline-flex items-center rounded-full px-3.5 py-1.5 text-sm text-muted-foreground whitespace-nowrap transition hover:bg-secondary hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                >
+                  {t.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+
+
+
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 z-0" style={{ background: "var(--gradient-hero)" }} />
@@ -205,7 +239,7 @@ function ArabicIndex() {
       </section>
 
       {/* About */}
-      <section id="about" className="mx-auto max-w-6xl px-6 py-16">
+      <section id="about" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-16">
         <div className="grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-4">
             <div className="relative">
@@ -233,7 +267,7 @@ function ArabicIndex() {
       </section>
 
       {/* Expertise */}
-      <section id="expertise" className="bg-secondary/40 border-y border-border">
+      <section id="expertise" className="scroll-mt-32 bg-secondary/40 border-y border-border">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-12">
             <div className="text-xs tracking-widest text-accent font-bold">التخصصات السريرية</div>
@@ -254,7 +288,7 @@ function ArabicIndex() {
       </section>
 
       {/* Services */}
-      <section id="services" className="mx-auto max-w-6xl px-6 py-24">
+      <section id="services" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
         <div className="grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-5 md:sticky md:top-24">
             <div className="text-xs tracking-widest text-accent font-bold">ما أقدمه</div>
@@ -275,7 +309,7 @@ function ArabicIndex() {
       </section>
 
       {/* Capabilities */}
-      <section className="bg-primary text-primary-foreground">
+      <section id="beyond" className="scroll-mt-32 bg-primary text-primary-foreground">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="text-xs tracking-widest text-[oklch(0.75_0.10_200)] font-bold">القدرات</div>
           <h2 className="mt-3 text-4xl md:text-5xl max-w-2xl">ما وراء غرفة العمليات.</h2>
@@ -305,7 +339,7 @@ function ArabicIndex() {
       </section>
 
       {/* YouTube Videos */}
-      <section className="bg-secondary/40 border-y border-border">
+      <section id="videos" className="scroll-mt-32 bg-secondary/40 border-y border-border">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-12">
             <div className="text-xs tracking-widest text-accent font-bold">تثقيف المرضى</div>
@@ -344,7 +378,7 @@ function ArabicIndex() {
       </section>
 
       {/* في الصحافة / مذكور في */}
-      <section className="mx-auto max-w-6xl px-6 py-24">
+      <section id="web" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
         <div className="mb-12">
           <div className="text-xs tracking-widest text-accent font-bold">مذكور ومنشور</div>
           <h2 className="mt-3 text-4xl md:text-5xl">حول الويب.</h2>
@@ -405,7 +439,7 @@ function ArabicIndex() {
       </section>
 
       {/* ORCID Profile */}
-      <section className="mx-auto max-w-6xl px-6 pb-24">
+      <section id="orcid" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
         <div className="mb-12">
           <div className="text-xs tracking-widest text-accent font-bold">هوية الباحث</div>
           <h2 className="mt-3 text-4xl md:text-5xl">ملف ORCID.</h2>
@@ -437,7 +471,7 @@ function ArabicIndex() {
       </section>
 
       {/* الأبحاث المنشورة */}
-      <section className="mx-auto max-w-6xl px-6 pb-24">
+      <section id="research" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
         <div className="mb-12">
           <div className="text-xs tracking-widest text-accent font-bold">أبحاث محكّمة منشورة</div>
           <h2 className="mt-3 text-4xl md:text-5xl">مختارات من الأبحاث.</h2>
@@ -500,7 +534,7 @@ function ArabicIndex() {
       </section>
 
       {/* الرسوم التوضيحية التعليمية */}
-      <section className="bg-secondary/40 border-y border-border">
+      <section id="teaching" className="scroll-mt-32 bg-secondary/40 border-y border-border">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-12">
             <div className="text-xs tracking-widest text-accent font-bold">رسوم توضيحية تعليمية</div>
@@ -614,7 +648,7 @@ function ArabicIndex() {
       </section>
 
       {/* تثقيف المرضى — تشخيص بتشخيص */}
-      <section className="mx-auto max-w-6xl px-6 pt-24">
+      <section id="education" className="scroll-mt-32 mx-auto max-w-6xl px-6 pt-24">
         <div className="mb-12">
           <div className="text-xs tracking-widest text-accent font-bold">تثقيف المرضى</div>
           <h2 className="mt-3 text-4xl md:text-5xl">افهم عمليتك الجراحية.</h2>
@@ -710,7 +744,7 @@ function ArabicIndex() {
       </section>
 
       {/* العروض التقديمية */}
-      <section className="mx-auto max-w-6xl px-6 pb-24 pt-24">
+      <section id="presentations" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24 pt-24">
 
         <div className="mb-12">
           <div className="text-xs tracking-widest text-accent font-bold">محاضرات وعروض تقديمية</div>
@@ -817,7 +851,7 @@ function ArabicIndex() {
       </section>
 
       {/* المستجدات الجراحية */}
-      <section id="updates" className="bg-secondary/30 border-y border-border">
+      <section id="updates" className="scroll-mt-32 bg-secondary/30 border-y border-border">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="max-w-2xl">
             <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">جديد · 2024–2025</div>
@@ -870,7 +904,7 @@ function ArabicIndex() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="mx-auto max-w-6xl px-6 py-24">
+      <section id="contact" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
 
         <div className="rounded-3xl bg-card border border-border p-10 md:p-16 shadow-[var(--shadow-elegant)] relative overflow-hidden">
           <div className="absolute -top-32 -left-32 w-80 h-80 rounded-full opacity-20" style={{ background: "var(--gradient-accent)" }} />
