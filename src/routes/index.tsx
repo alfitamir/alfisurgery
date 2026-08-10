@@ -236,7 +236,7 @@ function Index() {
       </section>
 
       {/* About */}
-      <section id="about" className="mx-auto max-w-6xl px-6 py-16">
+      <section id="about" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-16">
         <div className="grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-4">
             <div className="relative">
@@ -264,7 +264,7 @@ function Index() {
       </section>
 
       {/* Experience */}
-      <section id="experience" className="bg-secondary/40 border-y border-border">
+      <section id="experience" className="scroll-mt-32 bg-secondary/40 border-y border-border">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="grid md:grid-cols-12 gap-12">
             <div className="md:col-span-4">
@@ -306,7 +306,7 @@ function Index() {
       </section>
 
       {/* Expertise */}
-      <section id="expertise" className="bg-secondary/40 border-y border-border">
+      <section id="expertise" className="scroll-mt-32 bg-secondary/40 border-y border-border">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="flex items-end justify-between flex-wrap gap-4 mb-12">
             <div>
@@ -329,7 +329,7 @@ function Index() {
       </section>
 
       {/* Services */}
-      <section id="services" className="mx-auto max-w-6xl px-6 py-24">
+      <section id="services" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
         <div className="grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-5 md:sticky md:top-24">
             <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">What I Offer</div>
@@ -348,7 +348,7 @@ function Index() {
       </section>
 
       {/* Skills */}
-      <section className="bg-primary text-primary-foreground">
+      <section id="beyond" className="scroll-mt-32 bg-primary text-primary-foreground">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="text-xs uppercase tracking-[0.2em] text-[oklch(0.75_0.10_200)] font-semibold">Capabilities</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl max-w-2xl">Beyond the operating room.</h2>
@@ -374,7 +374,7 @@ function Index() {
       </section>
 
       {/* YouTube Videos */}
-      <section className="bg-secondary/40 border-y border-border">
+      <section id="videos" className="scroll-mt-32 bg-secondary/40 border-y border-border">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-12">
             <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Patient Education</div>
@@ -413,7 +413,7 @@ function Index() {
       </section>
 
       {/* In the Press / Featured */}
-      <section className="mx-auto max-w-6xl px-6 py-24">
+      <section id="web" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
         <div className="mb-12">
           <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Featured & Published</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">Around the web.</h2>
@@ -474,7 +474,7 @@ function Index() {
       </section>
 
       {/* ORCID Profile */}
-      <section className="mx-auto max-w-6xl px-6 pb-24">
+      <section id="orcid" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
         <div className="mb-12">
           <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Researcher Identity</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">ORCID profile.</h2>
@@ -506,7 +506,7 @@ function Index() {
       </section>
 
       {/* Publications */}
-      <section className="mx-auto max-w-6xl px-6 pb-24">
+      <section id="research" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
         <div className="mb-12">
           <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Peer-Reviewed Publications</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">Selected research.</h2>
@@ -623,7 +623,7 @@ function Index() {
       </section>
 
       {/* Educational Illustrations */}
-      <section className="bg-secondary/40 border-y border-border">
+      <section id="teaching" className="scroll-mt-32 bg-secondary/40 border-y border-border">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-12">
             <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Educational Illustrations</div>
@@ -737,7 +737,7 @@ function Index() {
       </section>
 
       {/* Patient Education — diagnosis by diagnosis */}
-      <section className="mx-auto max-w-6xl px-6 pt-24">
+      <section id="education" className="scroll-mt-32 mx-auto max-w-6xl px-6 pt-24">
         <div className="mb-12">
           <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Patient Education</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">Understand your operation.</h2>
@@ -833,7 +833,7 @@ function Index() {
       </section>
 
       {/* Presentations */}
-      <section className="mx-auto max-w-6xl px-6 pb-24 pt-24">
+      <section id="presentations" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24 pt-24">
 
         <div className="mb-12">
           <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Lectures & Talks</div>
@@ -940,7 +940,7 @@ function Index() {
       </section>
 
       {/* Recent Surgery Updates */}
-      <section id="updates" className="bg-secondary/30 border-y border-border">
+      <section id="updates" className="scroll-mt-32 bg-secondary/30 border-y border-border">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="max-w-2xl">
             <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">What's new · 2024–2025</div>
@@ -993,7 +993,7 @@ function Index() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="mx-auto max-w-6xl px-6 py-24">
+      <section id="contact" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
 
         <div className="rounded-3xl bg-card border border-border p-10 md:p-16 shadow-[var(--shadow-elegant)] relative overflow-hidden">
           <div className="absolute -top-32 -right-32 w-80 h-80 rounded-full opacity-20" style={{ background: "var(--gradient-accent)" }} />
