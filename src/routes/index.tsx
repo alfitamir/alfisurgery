@@ -200,6 +200,41 @@ function Index() {
         </div>
       </header>
 
+      {/* Chapter tabs */}
+      <nav aria-label="Page sections" className="sticky top-16 z-40 border-b border-border bg-background/90 backdrop-blur-md">
+        <div className="mx-auto max-w-6xl px-6">
+          <ul className="flex gap-1 overflow-x-auto py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {[
+              { id: "about", label: "About" },
+              { id: "experience", label: "Experience" },
+              { id: "expertise", label: "Expertise" },
+              { id: "services", label: "Services" },
+              { id: "beyond", label: "Beyond the OR" },
+              { id: "videos", label: "Videos" },
+              { id: "web", label: "Around the web" },
+              { id: "orcid", label: "ORCID" },
+              { id: "research", label: "Research" },
+              { id: "teaching", label: "Visual teaching" },
+              { id: "education", label: "Patient education" },
+              { id: "presentations", label: "Presentations" },
+              { id: "updates", label: "Updates" },
+              { id: "contact", label: "Contact" },
+            ].map((t) => (
+              <li key={t.id} className="shrink-0">
+                <a
+                  href={`#${t.id}`}
+                  className="inline-flex items-center rounded-full px-3.5 py-1.5 text-sm text-muted-foreground whitespace-nowrap transition hover:bg-secondary hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                >
+                  {t.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+
+
+
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 z-0" style={{ background: "var(--gradient-hero)" }} />
