@@ -165,12 +165,7 @@ function ArabicIndex() {
             </div>
             <span className="text-lg font-bold">د. تامر الألفي</span>
           </div>
-          <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
-            <a href="#about" className="hover:text-foreground transition">نبذة</a>
-            <a href="#expertise" className="hover:text-foreground transition">التخصصات</a>
-            <a href="#services" className="hover:text-foreground transition">الخدمات</a>
-            <a href="#contact" className="hover:text-foreground transition">تواصل</a>
-          </nav>
+          {/* Navigation links live in the sticky chapter tabs below to avoid duplication with the header. */}
           <div className="flex items-center gap-3">
             <Link to="/" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition">
               <Globe className="h-4 w-4" /> EN
