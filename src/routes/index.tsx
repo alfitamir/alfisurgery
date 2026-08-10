@@ -182,14 +182,11 @@ function Index() {
             </div>
             <span className="font-serif text-lg font-semibold">Dr. Tamer Elalfy</span>
           </div>
-          <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
-            <a href="#about" className="hover:text-foreground transition">About</a>
-            <a href="#expertise" className="hover:text-foreground transition">Expertise</a>
-            <a href="#services" className="hover:text-foreground transition">Services</a>
-            <Link to="/patients" className="hover:text-foreground transition">Patients</Link>
-            <a href="#contact" className="hover:text-foreground transition">Contact</a>
-          </nav>
+          {/* Header nav removed from here; all section links now live in the sticky chapter tabs below to avoid duplication. */}
           <div className="flex items-center gap-3">
+            <Link to="/patients" className="hidden md:inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition">
+              Patients
+            </Link>
             <Link to="/ar" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition">
               <Globe className="h-4 w-4" /> AR
             </Link>
@@ -200,10 +197,10 @@ function Index() {
         </div>
       </header>
 
-      {/* Chapter tabs */}
-      <nav aria-label="Page sections" className="sticky top-16 z-40 border-b border-border bg-background/90 backdrop-blur-md">
+      {/* Chapter tabs — single source of section links; styled with elevated shadow to distinguish it from the header. */}
+      <nav aria-label="Page sections" className="sticky top-16 z-40 border-b border-border bg-background/90 backdrop-blur-md shadow-[0_6px_24px_-6px_rgba(0,0,0,0.12)]">
         <div className="mx-auto max-w-6xl px-6">
-          <ul className="flex gap-1 overflow-x-auto py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <ul className="flex gap-2 overflow-x-auto py-2.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {[
               { id: "about", label: "About" },
               { id: "experience", label: "Experience" },
@@ -223,7 +220,7 @@ function Index() {
               <li key={t.id} className="shrink-0">
                 <a
                   href={`#${t.id}`}
-                  className="inline-flex items-center rounded-full px-3.5 py-1.5 text-sm text-muted-foreground whitespace-nowrap transition hover:bg-secondary hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                  className="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium text-muted-foreground whitespace-nowrap transition hover:bg-primary/10 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
                   {t.label}
                 </a>
