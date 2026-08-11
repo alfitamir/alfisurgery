@@ -160,7 +160,7 @@ function ArabicIndex() {
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-md bg-[var(--gradient-accent)] flex items-center justify-center">
+            <div className="h-8 w-8 rounded-md flex items-center justify-center" style={{ backgroundImage: "var(--gradient-accent)" }}>
               <Stethoscope className="h-4 w-4 text-accent-foreground" />
             </div>
             <span className="text-lg font-bold">د. تامر الألفي</span>
@@ -199,7 +199,7 @@ function ArabicIndex() {
               <li key={t.id} className="shrink-0">
                 <a
                   href={`#${t.id}`}
-                  className="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium text-muted-foreground whitespace-nowrap transition hover:bg-primary/10 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                  className="inline-flex items-center rounded-full border border-transparent px-4 py-2 text-sm font-medium text-muted-foreground whitespace-nowrap transition hover:border-gold/60 hover:bg-gold/15 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
                   {t.label}
                 </a>
@@ -234,17 +234,18 @@ function ArabicIndex() {
       </section>
 
       {/* About */}
-      <section id="about" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-16">
-        <div className="grid md:grid-cols-12 gap-12 items-start">
+      <section id="about" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-20 md:py-24">
+        <div className="text-xs tracking-widest text-accent font-bold">نبذة</div>
+        <h2 className="mt-3 text-4xl md:text-5xl">منظور جرّاح.</h2>
+        <div className="mt-10 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="md:col-span-4">
             <div className="relative">
-              <div className="absolute -inset-3 rounded-2xl bg-[var(--gradient-accent)] opacity-30 blur-xl" />
+              <div className="absolute -inset-3 rounded-2xl opacity-30 blur-xl" style={{ backgroundImage: "var(--gradient-accent)" }} />
               <img src={portrait} alt="د. تامر رشدي الألفي" className="relative w-full rounded-2xl object-cover shadow-[var(--shadow-elegant)] aspect-[4/5]" />
             </div>
-            <div className="mt-6 text-xs tracking-widest text-accent font-bold">نبذة</div>
-            <h2 className="mt-3 text-4xl">منظور جرّاح.</h2>
           </div>
-          <div className="md:col-span-8 space-y-5 text-lg text-muted-foreground leading-loose md:pt-2">
+          <div className="md:col-span-8 space-y-5 text-lg text-muted-foreground leading-loose">
+
             <p>
               استشاري الجراحة العامة والمناظير، أتمتع بخبرة واسعة في الجراحات الاختيارية والطارئة، إضافة إلى سجل قوي في القيادة الجراحية والتعليم وإدارة غرف العمليات.
             </p>
@@ -268,17 +269,21 @@ function ArabicIndex() {
             <div className="text-xs tracking-widest text-accent font-bold">التخصصات السريرية</div>
             <h2 className="mt-3 text-4xl md:text-5xl max-w-xl">عمق في تخصصات الجراحة العامة.</h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden shadow-[var(--shadow-soft)]">
-            {expertise.map((e) => (
-              <div key={e.title} className="bg-card p-8 hover:bg-card/70 transition">
-                <div className="h-11 w-11 rounded-lg bg-[var(--gradient-accent)] flex items-center justify-center text-accent-foreground">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {expertise.map((e, i) => (
+              <div key={e.title} className={`bento-card p-8 group ${i === 0 ? "lg:col-span-2" : ""}`}>
+                <div
+                  className="h-11 w-11 rounded-xl flex items-center justify-center text-accent-foreground"
+                  style={{ backgroundImage: "var(--gradient-accent)" }}
+                >
                   <e.icon className="h-5 w-5" />
                 </div>
-                <h3 className="mt-6 text-xl">{e.title}</h3>
+                <h3 className="mt-6 text-xl group-hover:text-accent transition-colors">{e.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground leading-loose">{e.desc}</p>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
@@ -346,7 +351,7 @@ function ArabicIndex() {
               href="https://youtu.be/OM66BEr8pnc"
               target="_blank"
               rel="noopener noreferrer"
-              className="group block rounded-2xl bg-card border border-border overflow-hidden hover:border-accent transition shadow-[var(--shadow-soft)]"
+              className="group block bento-card overflow-hidden"
             >
               <div className="relative aspect-video overflow-hidden">
                 <img
@@ -415,7 +420,7 @@ function ArabicIndex() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
+              className="group flex gap-5 p-6 bento-card"
             >
               <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
                 <item.icon className="h-5 w-5 text-accent" />
@@ -444,7 +449,7 @@ function ArabicIndex() {
           href="https://orcid.org/0000-0003-3769-2445"
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)] max-w-2xl"
+          className="group flex gap-5 p-6 bento-card max-w-2xl"
         >
           <div className="h-12 w-12 shrink-0 rounded-xl bg-[#A6CE39]/10 flex items-center justify-center group-hover:bg-[#A6CE39]/20 transition">
             <svg viewBox="0 0 256 256" className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" aria-label="ORCID logo">
@@ -510,7 +515,7 @@ function ArabicIndex() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
+              className="group flex gap-5 p-6 bento-card"
             >
               <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
                 <BookOpen className="h-5 w-5 text-accent" />
@@ -544,7 +549,7 @@ function ArabicIndex() {
               const focusRing = "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background";
               return (
                 <Collapsible key={group.title} open={isOpen} onOpenChange={() => toggleGroup(group.title)}>
-                  <div className="rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)] overflow-hidden">
+                  <div className="bento-card overflow-hidden">
                     <div className="flex items-center justify-between gap-4 p-5 flex-wrap">
                       <div className="min-w-0">
                         <h3 id={headingId} className="inline-flex rounded-full border border-border bg-secondary px-3 py-1 text-xs font-medium text-accent">{group.title}</h3>
@@ -674,7 +679,7 @@ function ArabicIndex() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-5">
                   {items.map((item) => (
-                    <article key={item.id} className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-soft)] flex flex-col">
+                    <article key={item.id} className="bento-card p-6 flex flex-col">
                       <div className="flex items-start gap-3">
                         <div className="rounded-lg bg-secondary p-2.5 text-accent shrink-0">
                           <FileText className="h-5 w-5" />
@@ -814,7 +819,7 @@ function ArabicIndex() {
           ].map((item) => (
             <div
               key={item.href}
-              className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
+              className="group flex gap-5 p-6 bento-card"
             >
               <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
                 <Presentation className="h-5 w-5 text-accent" />
@@ -849,7 +854,7 @@ function ArabicIndex() {
       <section id="updates" className="scroll-mt-32 bg-secondary/30 border-y border-border">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="max-w-2xl">
-            <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">جديد · 2024–2025</div>
+            <div className="eyebrow">جديد · 2024–2025</div>
             <h2 className="mt-3 font-serif text-4xl md:text-5xl">أحدث ما تغيّر في الجراحة العامة والمناظير.</h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               ملخّص مختار من آخر عامين — التحوّلات التي تُعيد رسم الممارسة اليومية للجرّاحين، والتغييرات العملية التي يجب أن يعرفها المريض قبل عمليته.
@@ -872,7 +877,7 @@ function ArabicIndex() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-5">
                   {items.map((u) => (
-                    <article key={u.title.ar} className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-soft)] flex flex-col">
+                    <article key={u.title.ar} className="bento-card p-6 flex flex-col">
                       <div className="flex items-center justify-between text-xs">
                         <span className="uppercase tracking-widest text-accent font-semibold">{u.tag.ar}</span>
                         <span className="text-muted-foreground" dir="ltr">{u.date}</span>
