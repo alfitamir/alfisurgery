@@ -268,17 +268,18 @@ function Index() {
       </section>
 
       {/* About */}
-      <section id="about" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-16">
-        <div className="grid md:grid-cols-12 gap-12 items-start">
+      <section id="about" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-20 md:py-24">
+        <div className="eyebrow">About</div>
+        <h2 className="mt-3 font-serif text-4xl md:text-5xl max-w-2xl">A surgeon's perspective.</h2>
+        <div className="mt-10 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="md:col-span-4">
             <div className="relative">
               <div className="absolute -inset-3 rounded-2xl opacity-30 blur-xl" style={{ backgroundImage: "var(--gradient-accent)" }} />
               <img src={portrait} alt="Dr. Tamer Rushdy Elalfy" className="relative w-full rounded-2xl object-cover shadow-[var(--shadow-elegant)] aspect-[4/5]" />
             </div>
-            <div className="mt-6 eyebrow">About</div>
-            <h2 className="mt-3 font-serif text-4xl">A surgeon's perspective.</h2>
           </div>
-          <div className="md:col-span-8 space-y-5 text-lg text-muted-foreground leading-relaxed md:pt-2">
+          <div className="md:col-span-8 space-y-5 text-lg text-muted-foreground leading-relaxed">
+
             <p>
               I am a Consultant General & Laparoscopic Surgeon with broad experience across elective and emergency surgery, and a strong record in surgical leadership, education, and operating room management.
             </p>
