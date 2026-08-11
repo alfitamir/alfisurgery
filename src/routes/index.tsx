@@ -275,7 +275,7 @@ function Index() {
               <div className="absolute -inset-3 rounded-2xl bg-[var(--gradient-accent)] opacity-30 blur-xl" />
               <img src={portrait} alt="Dr. Tamer Rushdy Elalfy" className="relative w-full rounded-2xl object-cover shadow-[var(--shadow-elegant)] aspect-[4/5]" />
             </div>
-            <div className="mt-6 text-xs uppercase tracking-[0.2em] text-accent font-semibold">About</div>
+            <div className="mt-6 eyebrow">About</div>
             <h2 className="mt-3 font-serif text-4xl">A surgeon's perspective.</h2>
           </div>
           <div className="md:col-span-8 space-y-5 text-lg text-muted-foreground leading-relaxed md:pt-2">
@@ -300,7 +300,7 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="grid md:grid-cols-12 gap-12">
             <div className="md:col-span-4">
-              <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Experience</div>
+              <div className="eyebrow">Experience</div>
               <h2 className="mt-3 font-serif text-4xl md:text-5xl">Two decades. One discipline.</h2>
             </div>
             <ol className="md:col-span-8 relative border-l border-border ml-2">
@@ -316,7 +316,7 @@ function Index() {
           </div>
           <div className="grid md:grid-cols-12 gap-12 mt-16 pt-16 border-t border-border">
             <div className="md:col-span-4">
-              <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Education</div>
+              <div className="eyebrow">Education</div>
               <h2 className="mt-3 font-serif text-4xl">Zagazig University.</h2>
             </div>
             <div className="md:col-span-8 divide-y divide-border">
@@ -342,7 +342,7 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="flex items-end justify-between flex-wrap gap-4 mb-12">
             <div>
-              <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Clinical Expertise</div>
+              <div className="eyebrow">Clinical Expertise</div>
               <h2 className="mt-3 font-serif text-4xl md:text-5xl max-w-xl">Subspecialty depth across general surgery.</h2>
             </div>
           </div>
@@ -364,7 +364,7 @@ function Index() {
       <section id="services" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
         <div className="grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-5 md:sticky md:top-24">
-            <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">What I Offer</div>
+            <div className="eyebrow">What I Offer</div>
             <h2 className="mt-3 font-serif text-4xl md:text-5xl">Care, counsel, and capability.</h2>
             <p className="mt-4 text-muted-foreground">Whether you need a surgical opinion, a CME engagement, or leadership advisory — here is how I can help.</p>
           </div>
@@ -409,7 +409,7 @@ function Index() {
       <section id="videos" className="scroll-mt-32 bg-secondary/40 border-y border-border">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-12">
-            <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Patient Education</div>
+            <div className="eyebrow">Patient Education</div>
             <h2 className="mt-3 font-serif text-4xl md:text-5xl">Watch & Learn.</h2>
             <p className="mt-4 text-muted-foreground max-w-xl">Short educational videos to help you understand common surgical procedures and what to expect.</p>
           </div>
@@ -418,7 +418,7 @@ function Index() {
               href="https://youtu.be/OM66BEr8pnc"
               target="_blank"
               rel="noopener noreferrer"
-              className="group block rounded-2xl bg-card border border-border overflow-hidden hover:border-accent transition shadow-[var(--shadow-soft)]"
+              className="group block bento-card overflow-hidden"
             >
               <div className="relative aspect-video overflow-hidden">
                 <img
@@ -447,7 +447,7 @@ function Index() {
       {/* In the Press / Featured */}
       <section id="web" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
         <div className="mb-12">
-          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Featured & Published</div>
+          <div className="eyebrow">Featured & Published</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">Around the web.</h2>
           <p className="mt-4 text-muted-foreground max-w-xl">Selected profiles, booking platforms, and peer-reviewed publications.</p>
         </div>
@@ -487,7 +487,7 @@ function Index() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
+              className="group flex gap-5 p-6 bento-card"
             >
               <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
                 <item.icon className="h-5 w-5 text-accent" />
@@ -508,7 +508,7 @@ function Index() {
       {/* ORCID Profile */}
       <section id="orcid" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
         <div className="mb-12">
-          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Researcher Identity</div>
+          <div className="eyebrow">Researcher Identity</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">ORCID profile.</h2>
           <p className="mt-4 text-muted-foreground max-w-xl">Verified researcher identifier linking publications and professional contributions.</p>
         </div>
@@ -516,7 +516,7 @@ function Index() {
           href="https://orcid.org/0000-0003-3769-2445"
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)] max-w-2xl"
+          className="group flex gap-5 p-6 bento-card max-w-2xl"
         >
           <div className="h-12 w-12 shrink-0 rounded-xl bg-[#A6CE39]/10 flex items-center justify-center group-hover:bg-[#A6CE39]/20 transition">
             <svg viewBox="0 0 256 256" className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" aria-label="ORCID logo">
@@ -540,7 +540,7 @@ function Index() {
       {/* Publications */}
       <section id="research" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
         <div className="mb-12">
-          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Peer-Reviewed Publications</div>
+          <div className="eyebrow">Peer-Reviewed Publications</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">Selected research.</h2>
           <p className="mt-4 text-muted-foreground max-w-xl">Original articles, case reports, and reviews in international surgical journals.</p>
         </div>
@@ -620,7 +620,7 @@ function Index() {
           ].map((item) => (
             <div
               key={item.href}
-              className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
+              className="group flex gap-5 p-6 bento-card"
             >
               <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
                 <BookOpen className="h-5 w-5 text-accent" />
@@ -658,7 +658,7 @@ function Index() {
       <section id="teaching" className="scroll-mt-32 bg-secondary/40 border-y border-border">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-12">
-            <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Educational Illustrations</div>
+            <div className="eyebrow">Educational Illustrations</div>
             <h2 className="mt-3 font-serif text-4xl md:text-5xl">Visual teaching for doctors and patients.</h2>
             <p className="mt-4 text-muted-foreground max-w-2xl">A curated gallery of surgical explainer visuals used in CME teaching, case-based discussion, clinic counseling, and patient communication.</p>
           </div>
@@ -670,7 +670,7 @@ function Index() {
               const focusRing = "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background";
               return (
                 <Collapsible key={group.title} open={isOpen} onOpenChange={() => toggleGroup(group.title)}>
-                  <div className="rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)] overflow-hidden">
+                  <div className="bento-card overflow-hidden">
                     <div className="flex items-center justify-between gap-4 p-5 flex-wrap">
                       <div className="min-w-0">
                         <h3 id={headingId} className="inline-flex rounded-full border border-border bg-secondary px-3 py-1 text-xs font-medium text-accent">{group.title}</h3>
@@ -771,7 +771,7 @@ function Index() {
       {/* Patient Education — diagnosis by diagnosis */}
       <section id="education" className="scroll-mt-32 mx-auto max-w-6xl px-6 pt-24">
         <div className="mb-12">
-          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Patient Education</div>
+          <div className="eyebrow">Patient Education</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">Understand your operation.</h2>
           <p className="mt-4 text-muted-foreground max-w-2xl">
             Diagnosis-by-diagnosis patient information sheets used in clinic — what the condition is, why surgery is needed, how the procedure is done, and what to expect during recovery. Free to download and share.
@@ -800,7 +800,7 @@ function Index() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-5">
                   {items.map((item) => (
-                    <article key={item.id} className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-soft)] flex flex-col">
+                    <article key={item.id} className="bento-card p-6 flex flex-col">
                       <div className="flex items-start gap-3">
                         <div className="rounded-lg bg-secondary p-2.5 text-accent shrink-0">
                           <FileText className="h-5 w-5" />
@@ -868,7 +868,7 @@ function Index() {
       <section id="presentations" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24 pt-24">
 
         <div className="mb-12">
-          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Lectures & Talks</div>
+          <div className="eyebrow">Lectures & Talks</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">Presentations.</h2>
           <p className="mt-4 text-muted-foreground max-w-xl">CME lectures and academic slide decks authored by Dr. Elalfy. Downloadable for colleagues, residents, and patients.</p>
         </div>
@@ -940,7 +940,7 @@ function Index() {
           ].map((item) => (
             <div
               key={item.href}
-              className="group flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-accent transition shadow-[var(--shadow-soft)]"
+              className="group flex gap-5 p-6 bento-card"
             >
               <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
                 <Presentation className="h-5 w-5 text-accent" />
@@ -975,7 +975,7 @@ function Index() {
       <section id="updates" className="scroll-mt-32 bg-secondary/30 border-y border-border">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="max-w-2xl">
-            <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">What's new · 2024–2025</div>
+            <div className="eyebrow">What's new · 2024–2025</div>
             <h2 className="mt-3 font-serif text-4xl md:text-5xl">Recent updates in general & laparoscopic surgery.</h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               A curated snapshot of the last two years — the shifts changing daily practice for surgeons, and the practical changes patients should know before their operation.
@@ -998,7 +998,7 @@ function Index() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-5">
                   {items.map((u) => (
-                    <article key={u.title.en} className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-soft)] flex flex-col">
+                    <article key={u.title.en} className="bento-card p-6 flex flex-col">
                       <div className="flex items-center justify-between text-xs">
                         <span className="uppercase tracking-widest text-accent font-semibold">{u.tag.en}</span>
                         <span className="text-muted-foreground">{u.date}</span>
@@ -1031,7 +1031,7 @@ function Index() {
           <div className="absolute -top-32 -right-32 w-80 h-80 rounded-full opacity-20" style={{ background: "var(--gradient-accent)" }} />
           <div className="relative grid md:grid-cols-2 gap-10 items-center">
             <div>
-              <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Contact</div>
+              <div className="eyebrow">Contact</div>
               <h2 className="mt-3 font-serif text-4xl md:text-5xl">Let's collaborate.</h2>
               <p className="mt-4 text-muted-foreground max-w-md">
                 Open to professional collaboration, CME activities, academic exchange, and healthcare leadership initiatives.
