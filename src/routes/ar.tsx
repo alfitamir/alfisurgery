@@ -234,17 +234,18 @@ function ArabicIndex() {
       </section>
 
       {/* About */}
-      <section id="about" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-16">
-        <div className="grid md:grid-cols-12 gap-12 items-start">
+      <section id="about" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-20 md:py-24">
+        <div className="text-xs tracking-widest text-accent font-bold">نبذة</div>
+        <h2 className="mt-3 text-4xl md:text-5xl">منظور جرّاح.</h2>
+        <div className="mt-10 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="md:col-span-4">
             <div className="relative">
               <div className="absolute -inset-3 rounded-2xl opacity-30 blur-xl" style={{ backgroundImage: "var(--gradient-accent)" }} />
               <img src={portrait} alt="د. تامر رشدي الألفي" className="relative w-full rounded-2xl object-cover shadow-[var(--shadow-elegant)] aspect-[4/5]" />
             </div>
-            <div className="mt-6 text-xs tracking-widest text-accent font-bold">نبذة</div>
-            <h2 className="mt-3 text-4xl">منظور جرّاح.</h2>
           </div>
-          <div className="md:col-span-8 space-y-5 text-lg text-muted-foreground leading-loose md:pt-2">
+          <div className="md:col-span-8 space-y-5 text-lg text-muted-foreground leading-loose">
+
             <p>
               استشاري الجراحة العامة والمناظير، أتمتع بخبرة واسعة في الجراحات الاختيارية والطارئة، إضافة إلى سجل قوي في القيادة الجراحية والتعليم وإدارة غرف العمليات.
             </p>
