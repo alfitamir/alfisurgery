@@ -338,7 +338,7 @@ function Index() {
       </section>
 
       {/* Expertise */}
-      <section id="expertise" className="scroll-mt-32 bg-secondary/40 border-y border-border">
+      <section id="expertise" className="scroll-mt-32">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="flex items-end justify-between flex-wrap gap-4 mb-12">
             <div>
