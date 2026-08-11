@@ -160,7 +160,7 @@ function ArabicIndex() {
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-md bg-[var(--gradient-accent)] flex items-center justify-center">
+            <div className="h-8 w-8 rounded-md flex items-center justify-center" style={{ backgroundImage: "var(--gradient-accent)" }}>
               <Stethoscope className="h-4 w-4 text-accent-foreground" />
             </div>
             <span className="text-lg font-bold">د. تامر الألفي</span>
@@ -199,7 +199,7 @@ function ArabicIndex() {
               <li key={t.id} className="shrink-0">
                 <a
                   href={`#${t.id}`}
-                  className="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium text-muted-foreground whitespace-nowrap transition hover:bg-primary/10 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                  className="inline-flex items-center rounded-full border border-transparent px-4 py-2 text-sm font-medium text-muted-foreground whitespace-nowrap transition hover:border-gold/60 hover:bg-gold/15 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
                   {t.label}
                 </a>
@@ -238,7 +238,7 @@ function ArabicIndex() {
         <div className="grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-4">
             <div className="relative">
-              <div className="absolute -inset-3 rounded-2xl bg-[var(--gradient-accent)] opacity-30 blur-xl" />
+              <div className="absolute -inset-3 rounded-2xl opacity-30 blur-xl" style={{ backgroundImage: "var(--gradient-accent)" }} />
               <img src={portrait} alt="د. تامر رشدي الألفي" className="relative w-full rounded-2xl object-cover shadow-[var(--shadow-elegant)] aspect-[4/5]" />
             </div>
             <div className="mt-6 text-xs tracking-widest text-accent font-bold">نبذة</div>
