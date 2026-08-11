@@ -346,17 +346,24 @@ function Index() {
               <h2 className="mt-3 font-serif text-4xl md:text-5xl max-w-xl">Subspecialty depth across general surgery.</h2>
             </div>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden shadow-[var(--shadow-soft)]">
-            {expertise.map((e) => (
-              <div key={e.title} className="bg-card p-8 hover:bg-card/70 transition group">
-                <div className="h-11 w-11 rounded-lg bg-[var(--gradient-accent)] flex items-center justify-center text-accent-foreground">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {expertise.map((e, i) => (
+              <div
+                key={e.title}
+                className={`bento-card p-8 group ${i === 0 ? "lg:col-span-2 lg:row-span-1" : ""}`}
+              >
+                <div
+                  className="h-11 w-11 rounded-xl flex items-center justify-center text-accent-foreground"
+                  style={{ backgroundImage: "var(--gradient-accent)" }}
+                >
                   <e.icon className="h-5 w-5" />
                 </div>
-                <h3 className="mt-6 font-serif text-xl">{e.title}</h3>
+                <h3 className="mt-6 font-serif text-xl group-hover:text-accent transition-colors">{e.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{e.desc}</p>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
