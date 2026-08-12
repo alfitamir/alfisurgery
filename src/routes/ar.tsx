@@ -414,6 +414,13 @@ function ArabicIndex() {
               href: "https://linkedin.com/in/tamer-elalfy-a47514151",
             },
             {
+              icon: ResearchGateIcon,
+              tag: "بحث",
+              title: "حساب ResearchGate",
+              desc: "تابع منشوراتي واقتباساتي وآخر مستجداتي البحثية.",
+              href: "https://www.researchgate.net/profile/Tamer-Rushdy/unconfirmed",
+            },
+            {
               icon: BookOpen,
               tag: "بحث منشور · 2021",
               title: "جراحة هبوط الفغرة المعقّد: هل تقنية ألتماير خيار مناسب؟",
