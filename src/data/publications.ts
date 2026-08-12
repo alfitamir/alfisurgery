@@ -12,6 +12,20 @@ export interface Publication {
 
 export const publications: Publication[] = [
   {
+    id: "sleeve-adolescents-vs-young-adults-2026",
+    tag: "Obesity Pillars · 2026",
+    year: 2026,
+    journal: "Obesity Pillars",
+    title:
+      "One-year weight loss and metabolic outcomes after laparoscopic sleeve gastrectomy in adolescents compared with young adults: a propensity score-matched cohort study",
+    authors:
+      "Taki-Eldin A, Lotfy A, El-Soudani MSM, Ghaly M, Eltaweel MMM, Ghalwash ET, Elalfy TR, Kandel AM, Abdel Sadek ZM, Ahmed AN.",
+    abstract:
+      "Propensity score-matched TriNetX cohort study (318 matched pairs) showing adolescents (13–17 y) achieve equivalent 1-year BMI and metabolic outcomes after laparoscopic sleeve gastrectomy compared with young adults (18–21 y). Pre-surgical GLP-1 receptor agonist exposure was substantially higher in adolescents, and ~49% of patients had pre-existing vitamin D insufficiency.",
+    url: "https://doi.org/10.1016/j.obpill.2026.100315",
+    doi: "10.1016/j.obpill.2026.100315",
+  },
+  {
     id: "lvmr-vs-perineal-stapler-2024",
     tag: "Tech Coloproctol · 2024",
     year: 2024,

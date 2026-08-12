@@ -555,6 +555,13 @@ function Index() {
         <div className="grid md:grid-cols-2 gap-5">
           {[
             {
+              tag: "Obesity Pillars · 2026",
+              title: "One-year weight loss and metabolic outcomes after laparoscopic sleeve gastrectomy in adolescents compared with young adults: a propensity score-matched cohort study",
+              desc: "Taki-Eldin A, Lotfy A, El-Soudani MSM, Ghaly M, Eltaweel MMM, Ghalwash ET, Elalfy TR, et al. Propensity score-matched TriNetX cohort (318 pairs) showing equivalent 1-year BMI and metabolic outcomes in adolescents vs young adults.",
+              href: "https://doi.org/10.1016/j.obpill.2026.100315",
+              doi: "10.1016/j.obpill.2026.100315",
+            },
+            {
               tag: "Tech Coloproctol · 2024",
               title: "Laparoscopic ventral mesh rectopexy vs perineal stapler resection for external full-thickness rectal prolapse in elderly patients",
               desc: "Habeeb TAAM, Podda M, Chiaretti M, Kechagias A, Lledó JB, … Rushdy T, et al. Retrospective cohort study showing enhanced outcomes and reduced recurrence rates.",
