@@ -489,7 +489,7 @@ function Index() {
               href: "https://linkedin.com/in/tamer-elalfy-a47514151",
             },
             {
-              icon: "ResearchGate",
+              icon: ResearchGateIcon,
               tag: "Research",
               title: "ResearchGate Profile",
               desc: "Follow my publications, citations, and research updates.",
