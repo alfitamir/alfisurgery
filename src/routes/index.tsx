@@ -483,6 +483,13 @@ function Index() {
               href: "https://linkedin.com/in/tamer-elalfy-a47514151",
             },
             {
+              icon: "ResearchGate",
+              tag: "Research",
+              title: "ResearchGate Profile",
+              desc: "Follow my publications, citations, and research updates.",
+              href: "https://www.researchgate.net/profile/Tamer-Rushdy/unconfirmed",
+            },
+            {
               icon: BookOpen,
               tag: "Publication · 2021",
               title: "Surgery for Complicated Stomal Prolapse: Is the Altemeier Technique an Option?",
