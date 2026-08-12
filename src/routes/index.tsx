@@ -66,6 +66,12 @@ const expertise = [
   { icon: ShieldCheck, title: "Acute Care & Trauma", desc: "High-pressure emergency surgical decision-making." },
 ];
 
+const ResearchGateIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-label="ResearchGate logo">
+    <path d="M15.92 23.14c-.66 0-1.19-.52-1.19-1.19V14.9c0-.67.53-1.2 1.2-1.2h.3c1.14 0 1.75-.28 2.28-1.05.38-.55.52-1.26.52-2.17 0-.93-.18-1.6-.62-2.12-.5-.6-1.18-.85-2.2-.85h-.28c-.66 0-1.2-.53-1.2-1.2V0H23v.03c-1.1.07-1.75.63-1.9 1.8-.08.64-.1 1.5-.1 2.86v3.3c0 1.6-.24 2.8-.75 3.75-.9 1.7-2.45 2.4-4.33 2.4zM6.8 0C2.91 0 0 2.78 0 6.7c0 3.6 2.7 6.33 6.25 6.33 1.2 0 2.2-.18 3.06-.55.3-.13.47-.42.47-.76V.84c0-.46-.37-.84-.84-.84H6.8zm-.5 10.2c-2.03 0-3.55-1.55-3.55-3.65 0-2.25 1.48-3.8 3.55-3.8 2.06 0 3.55 1.55 3.55 3.8 0 2.1-1.52 3.65-3.55 3.65z"/>
+  </svg>
+);
+
 const services = [
   "Safe, evidence-based surgical care",
   "Advanced laparoscopic, anal, thyroid, and bariatric procedures",
@@ -481,6 +487,13 @@ function Index() {
               title: "LinkedIn Profile",
               desc: "Connect for professional networking and collaboration.",
               href: "https://linkedin.com/in/tamer-elalfy-a47514151",
+            },
+            {
+              icon: ResearchGateIcon,
+              tag: "Research",
+              title: "ResearchGate Profile",
+              desc: "Follow my publications, citations, and research updates.",
+              href: "https://www.researchgate.net/profile/Tamer-Rushdy/unconfirmed",
             },
             {
               icon: BookOpen,
@@ -1105,6 +1118,15 @@ function Index() {
                 <div>
                   <div className="text-xs uppercase tracking-widest text-muted-foreground">LinkedIn</div>
                   <div className="font-medium group-hover:text-accent transition">in/alfitamir</div>
+                </div>
+              </a>
+              <a href="https://www.researchgate.net/profile/Tamer-Rushdy/unconfirmed" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-5 rounded-xl border border-border hover:border-accent transition group">
+                <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
+                  <ResearchGateIcon className="h-5 w-5 text-accent" />
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">ResearchGate</div>
+                  <div className="font-medium group-hover:text-accent transition">Tamer Rushdy</div>
                 </div>
               </a>
               <a href="tel:+966138011910" className="flex items-start gap-4 p-5 rounded-xl border border-border hover:border-accent transition group">
