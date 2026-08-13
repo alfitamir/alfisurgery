@@ -8,6 +8,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible";
 
 import { patientEducation, educationCategories, educationCategoriesAr, educationCategoryImages, formatSize } from "@/data/patient-education";
+import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
 import { surgeryUpdates } from "@/data/surgery-updates";
 import portraitAsset from "@/assets/dr-elalfy-main.jpg.asset.json";
 const portrait = portraitAsset.url;
