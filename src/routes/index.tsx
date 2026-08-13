@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible";
 
 import { patientEducation, educationCategories, educationCategoryImages, formatSize } from "@/data/patient-education";
+import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
 import { surgeryUpdates } from "@/data/surgery-updates";
 import portraitAsset from "@/assets/dr-elalfy-main.jpg.asset.json";
 const portrait = portraitAsset.url;
@@ -842,6 +843,7 @@ function Index() {
                       <div className="mt-5 flex items-center justify-between gap-3 flex-wrap pt-4 border-t border-border">
                         <span className="text-xs text-muted-foreground">PDF · {formatSize(item.pdfSize)} · DOCX · {formatSize(item.fileSize)}</span>
                         <div className="flex items-center gap-2 flex-wrap">
+                          <EducationSummaryDialog entry={item} image={educationCategoryImages[cat]} />
                           <a
                             href={item.pdfUrl}
                             download={item.pdfName}
