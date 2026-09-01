@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible";
 
 import { patientEducation, educationCategories, educationCategoryImages, formatSize } from "@/data/patient-education";
+import { SectionArt } from "@/components/SectionArt";
 import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
 import { surgeryUpdates } from "@/data/surgery-updates";
 import portraitAsset from "@/assets/dr-elalfy-main.jpg.asset.json";
@@ -304,7 +305,8 @@ function Index() {
       </section>
 
       {/* Experience */}
-      <section id="experience" className="scroll-mt-32 bg-secondary/40 border-y border-border">
+      <section id="experience" className="relative scroll-mt-32 bg-secondary/40 border-y border-border">
+        <SectionArt name="experience" alt="Career timeline illustration" side="right" />
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="grid md:grid-cols-12 gap-12">
             <div className="md:col-span-4">
@@ -346,7 +348,8 @@ function Index() {
       </section>
 
       {/* Expertise */}
-      <section id="expertise" className="scroll-mt-32">
+      <section id="expertise" className="relative scroll-mt-32">
+        <SectionArt name="expertise" alt="Clinical expertise illustration" side="right" />
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="flex items-end justify-between flex-wrap gap-4 mb-12">
             <div>
@@ -376,7 +379,8 @@ function Index() {
       </section>
 
       {/* Services */}
-      <section id="services" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
+      <section id="services" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
+        <SectionArt name="services" alt="Consultation illustration" side="right" />
         <div className="grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-5 md:sticky md:top-24">
             <div className="eyebrow">What I Offer</div>
@@ -395,7 +399,8 @@ function Index() {
       </section>
 
       {/* Skills */}
-      <section id="beyond" className="scroll-mt-32 bg-primary text-primary-foreground">
+      <section id="beyond" className="relative scroll-mt-32 bg-primary text-primary-foreground">
+        <SectionArt name="beyond" alt="Capabilities illustration" side="right" />
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="text-xs uppercase tracking-[0.2em] text-[oklch(0.75_0.10_200)] font-semibold">Capabilities</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl max-w-2xl">Beyond the operating room.</h2>
@@ -421,7 +426,8 @@ function Index() {
       </section>
 
       {/* YouTube Videos */}
-      <section id="videos" className="scroll-mt-32 bg-secondary/40 border-y border-border">
+      <section id="videos" className="relative scroll-mt-32 bg-secondary/40 border-y border-border">
+        <SectionArt name="videos" alt="Video teaching illustration" side="right" />
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-12">
             <div className="eyebrow">Patient Education</div>
@@ -460,7 +466,8 @@ function Index() {
       </section>
 
       {/* In the Press / Featured */}
-      <section id="web" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
+      <section id="web" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
+        <SectionArt name="web" alt="Online presence illustration" side="right" />
         <div className="mb-12">
           <div className="eyebrow">Featured & Published</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">Around the web.</h2>
@@ -528,7 +535,8 @@ function Index() {
       </section>
 
       {/* ORCID Profile */}
-      <section id="orcid" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
+      <section id="orcid" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
+        <SectionArt name="orcid" alt="Researcher identity illustration" side="right" />
         <div className="mb-12">
           <div className="eyebrow">Researcher Identity</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">ORCID profile.</h2>
@@ -560,7 +568,8 @@ function Index() {
       </section>
 
       {/* Publications */}
-      <section id="research" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
+      <section id="research" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
+        <SectionArt name="research" alt="Research publications illustration" side="right" />
         <div className="mb-12">
           <div className="eyebrow">Peer-Reviewed Publications</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">Selected research.</h2>
@@ -684,7 +693,8 @@ function Index() {
       </section>
 
       {/* Educational Illustrations */}
-      <section id="teaching" className="scroll-mt-32 bg-secondary/40 border-y border-border">
+      <section id="teaching" className="relative scroll-mt-32 bg-secondary/40 border-y border-border">
+        <SectionArt name="teaching" alt="Teaching illustrations" side="right" />
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-12">
             <div className="eyebrow">Educational Illustrations</div>
@@ -798,7 +808,8 @@ function Index() {
       </section>
 
       {/* Patient Education — diagnosis by diagnosis */}
-      <section id="education" className="scroll-mt-32 mx-auto max-w-6xl px-6 pt-24">
+      <section id="education" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 pt-24">
+        <SectionArt name="education" alt="Patient education illustration" side="right" />
         <div className="mb-12">
           <div className="eyebrow">Patient Education</div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">Understand your operation.</h2>
@@ -895,7 +906,8 @@ function Index() {
       </section>
 
       {/* Presentations */}
-      <section id="presentations" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24 pt-24">
+      <section id="presentations" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 pb-24 pt-24">
+        <SectionArt name="presentations" alt="Presentations illustration" side="right" />
 
         <div className="mb-12">
           <div className="eyebrow">Lectures & Talks</div>
@@ -1002,7 +1014,8 @@ function Index() {
       </section>
 
       {/* Recent Surgery Updates */}
-      <section id="updates" className="scroll-mt-32 bg-secondary/30 border-y border-border">
+      <section id="updates" className="relative scroll-mt-32 bg-secondary/30 border-y border-border">
+        <SectionArt name="updates" alt="Surgical updates illustration" side="right" />
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="max-w-2xl">
             <div className="eyebrow">What's new · 2024–2025</div>
@@ -1055,7 +1068,8 @@ function Index() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
+      <section id="contact" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
+        <SectionArt name="contact" alt="Contact illustration" side="right" />
 
         <div className="rounded-3xl bg-card border border-border p-10 md:p-16 shadow-[var(--shadow-elegant)] relative overflow-hidden">
           <div className="absolute -top-32 -right-32 w-80 h-80 rounded-full opacity-20" style={{ background: "var(--gradient-accent)" }} />

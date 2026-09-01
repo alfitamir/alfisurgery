@@ -8,6 +8,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible";
 
 import { patientEducation, educationCategories, educationCategoriesAr, educationCategoryImages, formatSize } from "@/data/patient-education";
+import { SectionArt } from "@/components/SectionArt";
 import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
 import { surgeryUpdates } from "@/data/surgery-updates";
 import portraitAsset from "@/assets/dr-elalfy-main.jpg.asset.json";
@@ -270,7 +271,8 @@ function ArabicIndex() {
       </section>
 
       {/* Expertise */}
-      <section id="expertise" className="scroll-mt-32 bg-secondary/40 border-y border-border">
+      <section id="expertise" className="relative scroll-mt-32 bg-secondary/40 border-y border-border">
+        <SectionArt name="expertise" alt="توضيح الخبرات الإكلينيكية" side="left" />
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-12">
             <div className="text-xs tracking-widest text-accent font-bold">التخصصات السريرية</div>
@@ -295,7 +297,8 @@ function ArabicIndex() {
       </section>
 
       {/* Services */}
-      <section id="services" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
+      <section id="services" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
+        <SectionArt name="services" alt="توضيح الاستشارات" side="left" />
         <div className="grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-5 md:sticky md:top-24">
             <div className="text-xs tracking-widest text-accent font-bold">ما أقدمه</div>
@@ -316,7 +319,8 @@ function ArabicIndex() {
       </section>
 
       {/* Capabilities */}
-      <section id="beyond" className="scroll-mt-32 bg-primary text-primary-foreground">
+      <section id="beyond" className="relative scroll-mt-32 bg-primary text-primary-foreground">
+        <SectionArt name="beyond" alt="توضيح المهارات" side="left" />
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="text-xs tracking-widest text-[oklch(0.75_0.10_200)] font-bold">القدرات</div>
           <h2 className="mt-3 text-4xl md:text-5xl max-w-2xl">ما وراء غرفة العمليات.</h2>
@@ -346,7 +350,8 @@ function ArabicIndex() {
       </section>
 
       {/* YouTube Videos */}
-      <section id="videos" className="scroll-mt-32 bg-secondary/40 border-y border-border">
+      <section id="videos" className="relative scroll-mt-32 bg-secondary/40 border-y border-border">
+        <SectionArt name="videos" alt="توضيح الفيديوهات" side="left" />
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-12">
             <div className="text-xs tracking-widest text-accent font-bold">تثقيف المرضى</div>
@@ -385,7 +390,8 @@ function ArabicIndex() {
       </section>
 
       {/* في الصحافة / مذكور في */}
-      <section id="web" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
+      <section id="web" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
+        <SectionArt name="web" alt="توضيح التواجد الإلكتروني" side="left" />
         <div className="mb-12">
           <div className="text-xs tracking-widest text-accent font-bold">مذكور ومنشور</div>
           <h2 className="mt-3 text-4xl md:text-5xl">حول الويب.</h2>
@@ -453,7 +459,8 @@ function ArabicIndex() {
       </section>
 
       {/* ORCID Profile */}
-      <section id="orcid" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
+      <section id="orcid" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
+        <SectionArt name="orcid" alt="توضيح هوية الباحث" side="left" />
         <div className="mb-12">
           <div className="text-xs tracking-widest text-accent font-bold">هوية الباحث</div>
           <h2 className="mt-3 text-4xl md:text-5xl">ملف ORCID.</h2>
@@ -485,7 +492,8 @@ function ArabicIndex() {
       </section>
 
       {/* الأبحاث المنشورة */}
-      <section id="research" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
+      <section id="research" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 pb-24">
+        <SectionArt name="research" alt="توضيح الأبحاث" side="left" />
         <div className="mb-12">
           <div className="text-xs tracking-widest text-accent font-bold">أبحاث محكّمة منشورة</div>
           <h2 className="mt-3 text-4xl md:text-5xl">مختارات من الأبحاث.</h2>
@@ -548,7 +556,8 @@ function ArabicIndex() {
       </section>
 
       {/* الرسوم التوضيحية التعليمية */}
-      <section id="teaching" className="scroll-mt-32 bg-secondary/40 border-y border-border">
+      <section id="teaching" className="relative scroll-mt-32 bg-secondary/40 border-y border-border">
+        <SectionArt name="teaching" alt="توضيح المواد التعليمية" side="left" />
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-12">
             <div className="text-xs tracking-widest text-accent font-bold">رسوم توضيحية تعليمية</div>
@@ -662,7 +671,8 @@ function ArabicIndex() {
       </section>
 
       {/* تثقيف المرضى — تشخيص بتشخيص */}
-      <section id="education" className="scroll-mt-32 mx-auto max-w-6xl px-6 pt-24">
+      <section id="education" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 pt-24">
+        <SectionArt name="education" alt="توضيح تثقيف المرضى" side="left" />
         <div className="mb-12">
           <div className="text-xs tracking-widest text-accent font-bold">تثقيف المرضى</div>
           <h2 className="mt-3 text-4xl md:text-5xl">افهم عمليتك الجراحية.</h2>
@@ -759,7 +769,8 @@ function ArabicIndex() {
       </section>
 
       {/* العروض التقديمية */}
-      <section id="presentations" className="scroll-mt-32 mx-auto max-w-6xl px-6 pb-24 pt-24">
+      <section id="presentations" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 pb-24 pt-24">
+        <SectionArt name="presentations" alt="توضيح العروض التقديمية" side="left" />
 
         <div className="mb-12">
           <div className="text-xs tracking-widest text-accent font-bold">محاضرات وعروض تقديمية</div>
@@ -866,7 +877,8 @@ function ArabicIndex() {
       </section>
 
       {/* المستجدات الجراحية */}
-      <section id="updates" className="scroll-mt-32 bg-secondary/30 border-y border-border">
+      <section id="updates" className="relative scroll-mt-32 bg-secondary/30 border-y border-border">
+        <SectionArt name="updates" alt="توضيح المستجدات الجراحية" side="left" />
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="max-w-2xl">
             <div className="eyebrow">جديد · 2024–2025</div>
@@ -919,7 +931,8 @@ function ArabicIndex() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
+      <section id="contact" className="relative scroll-mt-32 mx-auto max-w-6xl px-6 py-24">
+        <SectionArt name="contact" alt="توضيح التواصل" side="left" />
 
         <div className="rounded-3xl bg-card border border-border p-10 md:p-16 shadow-[var(--shadow-elegant)] relative overflow-hidden">
           <div className="absolute -top-32 -left-32 w-80 h-80 rounded-full opacity-20" style={{ background: "var(--gradient-accent)" }} />
