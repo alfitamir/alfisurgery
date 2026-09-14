@@ -1,15 +1,16 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
-import { Stethoscope, ArrowLeft, MessageCircle, ChevronDown, ShieldCheck, Clock, HeartPulse, Languages, AlertTriangle, Globe, ClipboardList, Activity, Apple, Pill, Bandage, CheckCircle2 } from "lucide-react";
+import { createFileRoute } from "@tanstack/react-router";
+import { PatientEducationSite } from "@/components/PatientEducationSite";
 
 export const Route = createFileRoute("/ar/patients")({
   component: ArabicPatientsPage,
   head: () => ({
     meta: [
-      { title: "للمرضى — د. تامر الألفي" },
-      { name: "description", content: "رسالة ترحيب وأسئلة شائعة حول قناة واتساب للمرضى التي يقدمها د. تامر الألفي للتثقيف الجراحي والإرشاد قبل وبعد العمليات." },
-      { property: "og:title", content: "للمرضى — د. تامر الألفي" },
-      { property: "og:description", content: "ماذا تتوقع من قناة واتساب للمرضى وكيف تستفيد منها." },
+      { title: "افهم عمليتك | دليل المريض الجراحي" },
+      { name: "description", content: "دليل مصور ثنائي اللغة للمرضى: اختر عمليتك، استعد بأمان، تعافَ بثقة، وتعرّف على علامات التحذير." },
+      { property: "og:title", content: "افهم عمليتك | دليل المريض الجراحي" },
+      { property: "og:description", content: "رحلة مصورة وهادئة من الاستعداد للعملية حتى التعافي مع أدلة خاصة بكل عملية." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { property: "og:url", content: "/ar/patients" },
       { httpEquiv: "content-language", content: "ar" },
     ],
@@ -96,7 +97,8 @@ const faqs = [
 ];
 
 function ArabicPatientsPage() {
-  return (
+  return <PatientEducationSite lang="ar" />;
+  /* return (
     <div dir="rtl" lang="ar" className="min-h-screen bg-background text-foreground" style={{ fontFamily: "'Tajawal', system-ui, sans-serif" }}>
       <style>{`
         [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4 {
@@ -308,7 +310,7 @@ function ArabicPatientsPage() {
         </div>
       </footer>
     </div>
-  );
+  ); */
 }
 
 function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultOpen?: boolean }) {
