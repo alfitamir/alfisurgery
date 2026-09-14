@@ -34,6 +34,12 @@
   --color-ivory: var(--ivory);
   --color-gold: var(--gold);
   --color-gold-foreground: var(--gold-foreground);
+  --color-patient-deep: var(--patient-deep);
+  --color-patient-blue: var(--patient-blue);
+  --color-patient-mist: var(--patient-mist);
+  --color-patient-apricot: var(--patient-apricot);
+  --color-patient-canvas: var(--patient-canvas);
+  --color-patient-ink: var(--patient-ink);
 }
 
 :root {
@@ -67,6 +73,25 @@
   --gradient-gold: linear-gradient(135deg, oklch(0.80 0.11 88), oklch(0.70 0.12 80));
   --shadow-elegant: 0 24px 70px -24px oklch(0.30 0.07 163 / 0.35);
   --shadow-soft: 0 10px 34px -14px oklch(0.30 0.07 163 / 0.18);
+  --patient-deep: #2A6F97;
+  --patient-blue: #61A5C2;
+  --patient-mist: #A9D6E5;
+  --patient-apricot: #F4A261;
+  --patient-canvas: #FAFBFC;
+  --patient-ink: oklch(0.31 0.04 245);
+  --shadow-patient: 0 18px 45px -24px color-mix(in oklab, var(--patient-deep) 45%, transparent);
+}
+
+.patient-site h1,
+.patient-site h2,
+.patient-site h3,
+.patient-site h4 { letter-spacing: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .patient-site *, .patient-site *::before, .patient-site *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @layer base {

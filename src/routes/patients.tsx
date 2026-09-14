@@ -1,23 +1,23 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
-import { Stethoscope, ArrowRight, MessageCircle, ChevronDown, ShieldCheck, Clock, HeartPulse, Languages, AlertTriangle, Globe, ClipboardList, Activity, Apple, Pill, Bandage, CheckCircle2 } from "lucide-react";
+import { createFileRoute } from "@tanstack/react-router";
+import { PatientEducationSite } from "@/components/PatientEducationSite";
 
 export const Route = createFileRoute("/patients")({
   component: PatientsPage,
   head: () => ({
     meta: [
-      { title: "For Patients — Dr. Tamer Elalfy" },
-      { name: "description", content: "A welcome message and FAQs about Dr. Tamer Elalfy's WhatsApp channel for patient education, perioperative guidance, and trustworthy surgical information." },
-      { property: "og:title", content: "For Patients — Dr. Tamer Elalfy" },
-      { property: "og:description", content: "What to expect from the WhatsApp patient channel and how to use it well." },
+      { title: "Understand Your Operation | Patient Guide" },
+      { name: "description", content: "Illustrated, bilingual guidance for surgical patients: choose your operation, prepare safely, recover confidently, and know urgent warning signs." },
+      { property: "og:title", content: "Understand Your Operation | Patient Guide" },
+      { property: "og:description", content: "A calm, illustrated journey through surgery preparation, recovery, and operation-specific patient guides." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { property: "og:url", content: "/patients" },
     ],
-    links: [
-      { rel: "canonical", href: "/patients" },
-    ],
+    links: [{ rel: "canonical", href: "/patients" }, { rel: "alternate", hrefLang: "ar", href: "/ar/patients" } as any],
   }),
 });
 
+/* legacy patient-channel copy retained in project history */
 const expectations = [
   { icon: HeartPulse, title: "Clear surgical guidance", text: "Plain-language posts on common surgical conditions, treatment options, and recovery." },
   { icon: ShieldCheck, title: "Trusted information", text: "Evidence-based content written and curated by a consultant surgeon." },
@@ -90,7 +90,8 @@ const faqs = [
 ];
 
 function PatientsPage() {
-  return (
+  return <PatientEducationSite lang="en" />;
+  /* return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Nav */}
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
@@ -295,7 +296,7 @@ function PatientsPage() {
         </div>
       </footer>
     </div>
-  );
+  ); */
 }
 
 function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultOpen?: boolean }) {
