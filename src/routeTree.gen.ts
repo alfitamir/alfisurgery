@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as PublicationsRouteImport } from './routes/publications'
 import { Route as PatientsRouteImport } from './routes/patients'
 import { Route as McpRouteImport } from './routes/mcp'
+import { Route as ArRouteImport } from './routes/ar'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ArIndexRouteImport } from './routes/ar.index'
 import { Route as PatientEducationHidradenitisSuppurativaRouteImport } from './routes/patient-education.hidradenitis-suppurativa'
@@ -36,15 +37,20 @@ const McpRoute = McpRouteImport.update({
   path: '/mcp',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ArRoute = ArRouteImport.update({
+  id: '/ar',
+  path: '/ar',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ArIndexRoute = ArIndexRouteImport.update({
-  id: '/ar/',
-  path: '/ar/',
-  getParentRoute: () => rootRouteImport,
+  id: '/',
+  path: '/',
+  getParentRoute: () => ArRoute,
 } as any)
 const PatientEducationHidradenitisSuppurativaRoute =
   PatientEducationHidradenitisSuppurativaRouteImport.update({
@@ -53,14 +59,14 @@ const PatientEducationHidradenitisSuppurativaRoute =
     getParentRoute: () => rootRouteImport,
   } as any)
 const ArPatientsRoute = ArPatientsRouteImport.update({
-  id: '/ar/patients',
-  path: '/ar/patients',
-  getParentRoute: () => rootRouteImport,
+  id: '/patients',
+  path: '/patients',
+  getParentRoute: () => ArRoute,
 } as any)
 const ArMedicalQuestionsRoute = ArMedicalQuestionsRouteImport.update({
-  id: '/ar/medical-questions',
-  path: '/ar/medical-questions',
-  getParentRoute: () => rootRouteImport,
+  id: '/medical-questions',
+  path: '/medical-questions',
+  getParentRoute: () => ArRoute,
 } as any)
 const Char91DotwellKnownChar93OauthProtectedResourceRoute =
   Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
@@ -83,6 +89,7 @@ const Char91DotmcpChar93InvokeToolToolRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ar': typeof ArRouteWithChildren
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
   '/publications': typeof PublicationsRoute
@@ -110,6 +117,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/ar': typeof ArRouteWithChildren
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
   '/publications': typeof PublicationsRoute
@@ -125,6 +133,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/ar'
     | '/mcp'
     | '/patients'
     | '/publications'
@@ -151,6 +160,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/ar'
     | '/mcp'
     | '/patients'
     | '/publications'
@@ -165,15 +175,13 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ArRoute: typeof ArRouteWithChildren
   McpRoute: typeof McpRoute
   PatientsRoute: typeof PatientsRoute
   PublicationsRoute: typeof PublicationsRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
-  ArMedicalQuestionsRoute: typeof ArMedicalQuestionsRoute
-  ArPatientsRoute: typeof ArPatientsRoute
   PatientEducationHidradenitisSuppurativaRoute: typeof PatientEducationHidradenitisSuppurativaRoute
-  ArIndexRoute: typeof ArIndexRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 
@@ -200,6 +208,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof McpRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ar': {
+      id: '/ar'
+      path: '/ar'
+      fullPath: '/ar'
+      preLoaderRoute: typeof ArRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -209,10 +224,10 @@ declare module '@tanstack/react-router' {
     }
     '/ar/': {
       id: '/ar/'
-      path: '/ar'
+      path: '/'
       fullPath: '/ar/'
       preLoaderRoute: typeof ArIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof ArRoute
     }
     '/patient-education/hidradenitis-suppurativa': {
       id: '/patient-education/hidradenitis-suppurativa'
@@ -223,17 +238,17 @@ declare module '@tanstack/react-router' {
     }
     '/ar/patients': {
       id: '/ar/patients'
-      path: '/ar/patients'
+      path: '/patients'
       fullPath: '/ar/patients'
       preLoaderRoute: typeof ArPatientsRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof ArRoute
     }
     '/ar/medical-questions': {
       id: '/ar/medical-questions'
-      path: '/ar/medical-questions'
+      path: '/medical-questions'
       fullPath: '/ar/medical-questions'
       preLoaderRoute: typeof ArMedicalQuestionsRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof ArRoute
     }
     '/.well-known/oauth-protected-resource': {
       id: '/.well-known/oauth-protected-resource'
@@ -259,19 +274,31 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface ArRouteChildren {
+  ArMedicalQuestionsRoute: typeof ArMedicalQuestionsRoute
+  ArPatientsRoute: typeof ArPatientsRoute
+  ArIndexRoute: typeof ArIndexRoute
+}
+
+const ArRouteChildren: ArRouteChildren = {
+  ArMedicalQuestionsRoute: ArMedicalQuestionsRoute,
+  ArPatientsRoute: ArPatientsRoute,
+  ArIndexRoute: ArIndexRoute,
+}
+
+const ArRouteWithChildren = ArRoute._addFileChildren(ArRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ArRoute: ArRouteWithChildren,
   McpRoute: McpRoute,
   PatientsRoute: PatientsRoute,
   PublicationsRoute: PublicationsRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
-  ArMedicalQuestionsRoute: ArMedicalQuestionsRoute,
-  ArPatientsRoute: ArPatientsRoute,
   PatientEducationHidradenitisSuppurativaRoute:
     PatientEducationHidradenitisSuppurativaRoute,
-  ArIndexRoute: ArIndexRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
 }
 export const routeTree = rootRouteImport
