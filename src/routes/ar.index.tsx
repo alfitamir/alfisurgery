@@ -32,7 +32,7 @@ import pilonidalIllustration from "@/assets/pilonidal-treatment-shift-illustrati
 import consentIllustration from "@/assets/cognitive-framing-consent-illustration.asset.json";
 import ramadanIllustration from "@/assets/ramadan-diverticulitis-illustration.asset.json";
 
-export const Route = createFileRoute("/ar")({
+export const Route = createFileRoute("/ar/")({
   component: ArabicIndex,
   head: () => ({
     meta: [
