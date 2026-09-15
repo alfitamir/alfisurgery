@@ -14,6 +14,7 @@ import { Route as PatientsRouteImport } from './routes/patients'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as ArRouteImport } from './routes/ar'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ArIndexRouteImport } from './routes/ar.index'
 import { Route as PatientEducationHidradenitisSuppurativaRouteImport } from './routes/patient-education.hidradenitis-suppurativa'
 import { Route as ArPatientsRouteImport } from './routes/ar.patients'
 import { Route as ArMedicalQuestionsRouteImport } from './routes/ar.medical-questions'
@@ -45,6 +46,11 @@ const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
+} as any)
+const ArIndexRoute = ArIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ArRoute,
 } as any)
 const PatientEducationHidradenitisSuppurativaRoute =
   PatientEducationHidradenitisSuppurativaRouteImport.update({
@@ -92,11 +98,11 @@ export interface FileRoutesByFullPath {
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
   '/patient-education/hidradenitis-suppurativa': typeof PatientEducationHidradenitisSuppurativaRoute
+  '/ar/': typeof ArIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/ar': typeof ArRouteWithChildren
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
   '/publications': typeof PublicationsRoute
@@ -105,6 +111,7 @@ export interface FileRoutesByTo {
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
   '/patient-education/hidradenitis-suppurativa': typeof PatientEducationHidradenitisSuppurativaRoute
+  '/ar': typeof ArIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 export interface FileRoutesById {
@@ -119,6 +126,7 @@ export interface FileRoutesById {
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
   '/patient-education/hidradenitis-suppurativa': typeof PatientEducationHidradenitisSuppurativaRoute
+  '/ar/': typeof ArIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 export interface FileRouteTypes {
@@ -134,11 +142,11 @@ export interface FileRouteTypes {
     | '/ar/medical-questions'
     | '/ar/patients'
     | '/patient-education/hidradenitis-suppurativa'
+    | '/ar/'
     | '/.mcp/invoke-tool/$tool'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/ar'
     | '/mcp'
     | '/patients'
     | '/publications'
@@ -147,6 +155,7 @@ export interface FileRouteTypes {
     | '/ar/medical-questions'
     | '/ar/patients'
     | '/patient-education/hidradenitis-suppurativa'
+    | '/ar'
     | '/.mcp/invoke-tool/$tool'
   id:
     | '__root__'
@@ -160,6 +169,7 @@ export interface FileRouteTypes {
     | '/ar/medical-questions'
     | '/ar/patients'
     | '/patient-education/hidradenitis-suppurativa'
+    | '/ar/'
     | '/.mcp/invoke-tool/$tool'
   fileRoutesById: FileRoutesById
 }
@@ -212,6 +222,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ar/': {
+      id: '/ar/'
+      path: '/'
+      fullPath: '/ar/'
+      preLoaderRoute: typeof ArIndexRouteImport
+      parentRoute: typeof ArRoute
+    }
     '/patient-education/hidradenitis-suppurativa': {
       id: '/patient-education/hidradenitis-suppurativa'
       path: '/patient-education/hidradenitis-suppurativa'
@@ -260,11 +277,13 @@ declare module '@tanstack/react-router' {
 interface ArRouteChildren {
   ArMedicalQuestionsRoute: typeof ArMedicalQuestionsRoute
   ArPatientsRoute: typeof ArPatientsRoute
+  ArIndexRoute: typeof ArIndexRoute
 }
 
 const ArRouteChildren: ArRouteChildren = {
   ArMedicalQuestionsRoute: ArMedicalQuestionsRoute,
   ArPatientsRoute: ArPatientsRoute,
+  ArIndexRoute: ArIndexRoute,
 }
 
 const ArRouteWithChildren = ArRoute._addFileChildren(ArRouteChildren)
