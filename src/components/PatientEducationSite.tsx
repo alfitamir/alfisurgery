@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
+import { InstallAppButton } from "@/components/InstallAppButton";
 import {
   educationCategories,
   educationCategoriesAr,
@@ -154,9 +155,12 @@ export function PatientEducationSite({ lang }: { lang: Language }) {
           <nav aria-label={ar ? "أقسام دليل المريض" : "Patient guide sections"} className="hidden items-center gap-6 text-sm font-medium lg:flex">
             <a href="#operations">{t.nav[0]}</a><a href="#prepare">{t.nav[1]}</a><a href="#recovery">{t.nav[2]}</a><a href="#urgent">{t.nav[3]}</a>
           </nav>
-          <Button asChild variant="outline" className="rounded-full border-patient-mist bg-card text-patient-deep">
-            <Link to={ar ? "/patients" : "/ar/patients"}><Globe />{ar ? "English" : "العربية"}</Link>
-          </Button>
+          <div className="flex items-center gap-2">
+            <InstallAppButton ar={ar} />
+            <Button asChild variant="outline" size="sm" className="rounded-full border-patient-mist bg-card text-patient-deep">
+              <Link to={ar ? "/patients" : "/ar/patients"}><Globe />{ar ? "English" : "العربية"}</Link>
+            </Button>
+          </div>
         </div>
       </header>
 
