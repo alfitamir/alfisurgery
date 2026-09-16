@@ -28,6 +28,7 @@ import {
   patientEducation,
   type EducationCategory,
 } from "@/data/patient-education";
+import { educationSummaries } from "@/data/patient-education-summaries";
 import heroIllustration from "@/assets/patient-journey-hero.jpg";
 import prepareIllustration from "@/assets/patient-journey-prepare.jpg";
 import recoverIllustration from "@/assets/patient-journey-recover.jpg";
@@ -97,20 +98,20 @@ const copy = {
     heroLabel: "إرشاد واضح للمرضى وذويهم",
     title: "رحلتك الجراحية، بشرح مبسّط.",
     subtitle: "افهم عمليتك الجراحية",
-    intro: "اختر عمليتك واتبع مسارًا مصورًا وهادئًا من الاستعداد حتى التعافي، مع إرشادات جاهزة للطباعة والاحتفاظ.",
+    intro: "أدلة د. تامر الألفي لفهم التشخيص والعملية والعناية بعد الخروج: جراحات البطن والفتق والشرج والمستقيم والثدي والغدد الصماء والأطفال والإجراءات الصغرى.",
     start: "ابحث عن عمليتي",
     prepare: "استعد للعملية",
     phaseOne: "الخطوة ٠١",
-    prepareText: "خطوات بسيطة قبل الوصول إلى المستشفى تجعل يوم العملية أكثر أمانًا وهدوءًا.",
+    prepareText: "تعرّف في دليل عمليتك على سبب الإجراء وطريقته والتخدير والإقامة المتوقعة. تختلف الاستعدادات حسب العملية وحالتك الصحية؛ التزم بتعليمات فريقك بشأن الصيام والأدوية.",
     recovery: "تعافَ بثقة",
     phaseTwo: "الخطوة ٠٢",
-    recoveryText: "اعرف ما هو طبيعي في المنزل، وكيف تعتني بنفسك، ومتى تطلب المساعدة.",
+    recoveryText: "تتضمن نشرات العمليات إرشادات التغذية والعناية بالجرح والحركة والعودة للنشاط. بعد استئصال المرارة يُنصح بتجنب الوجبات الدسمة لمدة ٢–٣ أسابيع، وبعد إصلاح الفتق تختلف قيود رفع الأثقال حسب نوع الإصلاح وتعليمات الجراح.",
     urgent: "تعرّف على علامات التحذير",
     phaseThree: "مهم",
-    urgentText: "اتصل بالعيادة أو توجّه إلى أقرب قسم طوارئ عندما تشعر أن شيئًا غير طبيعي.",
+    urgentText: "راجع علامات التحذير الخاصة بعمليتك: اصفرار العين أو البول الداكن بعد استئصال المرارة، وعدم القدرة على التبول بعد جراحة البواسير، من الأعراض التي تستدعي التقييم. عند ضيق التنفس أو ألم الصدر أو النزيف الغزير، اطلب المساعدة الطارئة فورًا ولا تنتظر رد العيادة.",
     browseLabel: "مكتبة العمليات",
     browseTitle: "اختر عمليتك.",
-    browseText: "ابحث باسم العملية أو اختر الفئة. يتضمن كل دليل ملخصًا بصريًا سريعًا ونشرة جاهزة للطباعة.",
+    browseText: "معلومات عن التشخيص والعلاج والتعافي من نشرات التثقيف الخاصة بكل حالة، مع الملخصات المصوّرة وملفات الطباعة وقائمة الاستعداد لإغلاق الفغرة.",
     search: `ابحث في ${patientEducation.length} دليلًا جراحيًا…`,
     all: "كل الأدلة",
     noResults: "لا يوجد دليل مطابق. جرّب كلمة أو فئة أخرى.",
@@ -219,7 +220,17 @@ export function PatientEducationSite({ lang }: { lang: Language }) {
                     <div className="flex flex-1 flex-col p-5">
                       <div className="text-xs font-bold uppercase text-patient-blue">{ar ? item.categoryAr : item.category}</div>
                       <h3 className="mt-2 text-xl leading-snug text-patient-deep">{ar ? item.titleAr : item.title}</h3>
-                      <p className="mt-3 line-clamp-4 text-sm leading-relaxed text-patient-ink/70">{ar ? item.summaryAr : item.summary}</p>
+                      <p className="mt-3 text-sm leading-relaxed text-patient-ink/70">{ar ? item.summaryAr : item.summary}</p>
+                      {ar && educationSummaries[item.id]?.length > 0 && (
+                        <dl className="my-5 space-y-3 border-t border-patient-mist pt-4">
+                          {educationSummaries[item.id].map((point, index) => (
+                            <div key={index}>
+                              <dt className="text-sm font-semibold text-patient-deep">{point.labelAr}</dt>
+                              <dd className="mt-1 text-sm leading-relaxed text-patient-ink/70">{point.textAr}</dd>
+                            </div>
+                          ))}
+                        </dl>
+                      )}
                       <div className="mt-auto flex flex-wrap gap-2 border-t border-patient-mist pt-5">
                         <EducationSummaryDialog entry={item} image={educationCategoryImages[item.category]} lang={lang} />
                         <Button asChild size="sm" className="rounded-full bg-patient-deep text-primary-foreground"><a href={item.pdfUrl} download={item.pdfName}><Download />{t.print}</a></Button>
