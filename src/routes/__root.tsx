@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
@@ -8,6 +9,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 
+import { registerPatientAppServiceWorker } from "@/lib/pwa";
 import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
@@ -79,6 +81,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Alfi Surgery provides expert general and laparoscopic surgical care, consultation, and patient education by Dr Tamer Elalfy consultant of surgery." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "theme-color", content: "#2A6F97" },
+      { name: "apple-mobile-web-app-capable", content: "yes" },
+      { name: "apple-mobile-web-app-status-bar-style", content: "default" },
+      { name: "apple-mobile-web-app-title", content: "دليل المريض" },
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Lovable App" },
       { name: "twitter:description", content: "Alfi Surgery provides expert general and laparoscopic surgical care, consultation, and patient education by Dr Tamer Elalfy consultant of surgery." },
@@ -96,6 +102,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
+      { rel: "manifest", href: "/manifest.webmanifest" },
+      { rel: "apple-touch-icon", href: "/app-icon-192.png" },
     ],
   }),
   shellComponent: RootShell,
@@ -120,6 +128,11 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+
+  useEffect(() => {
+    registerPatientAppServiceWorker();
+  }, []);
+
 
   return (
     <QueryClientProvider client={queryClient}>
