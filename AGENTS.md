@@ -1,0 +1,2 @@
+- Keep patient education articles as dedicated TanStack routes and link to them from the patient guide; this preserves direct access and offline caching through the existing patient app.
+- Review uploaded medical advice for safety before publication rather than reproducing potentially harmful restrictive plans as universal instructions; patient guidance must defer to the treating clinical team.
