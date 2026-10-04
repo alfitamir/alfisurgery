@@ -33,6 +33,7 @@ import { educationSummaries } from "@/data/patient-education-summaries";
 import heroIllustration from "@/assets/patient-journey-hero.jpg";
 import prepareIllustration from "@/assets/patient-journey-prepare.jpg";
 import recoverIllustration from "@/assets/patient-journey-recover.jpg";
+import plateauIllustration from "@/assets/sleeve-plateau-guide.jpg";
 
 type Language = "en" | "ar";
 
