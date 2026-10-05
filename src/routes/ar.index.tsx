@@ -429,6 +429,13 @@ function ArabicIndex() {
             },
             {
               icon: BookOpen,
+              tag: "مدونة",
+              title: "مقالاتي على ووردبريس",
+              desc: "اقرأ منشوراتي على مدونة ووردبريس.",
+              href: "https://tkmem.wordpress.com/author/alfitamir2/",
+            },
+            {
+              icon: BookOpen,
               tag: "بحث منشور · 2021",
               title: "جراحة هبوط الفغرة المعقّد: هل تقنية ألتماير خيار مناسب؟",
               desc: "Alalfy TR, Orban YA, Algazar M, Farag A. — J. Coloproctol. 41(1), 2021.",
