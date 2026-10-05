@@ -9,39 +9,24 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as ArRouteImport } from './routes/ar'
-import { Route as ArticlesRouteImport } from './routes/articles'
-import { Route as McpRouteImport } from './routes/mcp'
-import { Route as PatientsRouteImport } from './routes/patients'
 import { Route as PublicationsRouteImport } from './routes/publications'
-import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
-import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as PatientsRouteImport } from './routes/patients'
+import { Route as McpRouteImport } from './routes/mcp'
+import { Route as ArticlesRouteImport } from './routes/articles'
+import { Route as ArRouteImport } from './routes/ar'
+import { Route as IndexRouteImport } from './routes/index'
 import { Route as ArIndexRouteImport } from './routes/ar.index'
-import { Route as ArMedicalQuestionsRouteImport } from './routes/ar.medical-questions'
-import { Route as ArPatientsRouteImport } from './routes/ar.patients'
-import { Route as PatientEducationHidradenitisSuppurativaRouteImport } from './routes/patient-education.hidradenitis-suppurativa'
 import { Route as PatientEducationWeightPlateauAfterSleeveRouteImport } from './routes/patient-education.weight-plateau-after-sleeve'
+import { Route as PatientEducationHidradenitisSuppurativaRouteImport } from './routes/patient-education.hidradenitis-suppurativa'
+import { Route as ArPatientsRouteImport } from './routes/ar.patients'
+import { Route as ArMedicalQuestionsRouteImport } from './routes/ar.medical-questions'
+import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArRoute = ArRouteImport.update({
-  id: '/ar',
-  path: '/ar',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArticlesRoute = ArticlesRouteImport.update({
-  id: '/articles',
-  path: '/articles',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const McpRoute = McpRouteImport.update({
-  id: '/mcp',
-  path: '/mcp',
+const PublicationsRoute = PublicationsRouteImport.update({
+  id: '/publications',
+  path: '/publications',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PatientsRoute = PatientsRouteImport.update({
@@ -49,26 +34,46 @@ const PatientsRoute = PatientsRouteImport.update({
   path: '/patients',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PublicationsRoute = PublicationsRouteImport.update({
-  id: '/publications',
-  path: '/publications',
+const McpRoute = McpRouteImport.update({
+  id: '/mcp',
+  path: '/mcp',
   getParentRoute: () => rootRouteImport,
 } as any)
-const Char91DotmcpChar93ListToolsRoute =
-  Char91DotmcpChar93ListToolsRouteImport.update({
-    id: '/.mcp/list-tools',
-    path: '/.mcp/list-tools',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const Char91DotwellKnownChar93OauthProtectedResourceRoute =
-  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
-    id: '/.well-known/oauth-protected-resource',
-    path: '/.well-known/oauth-protected-resource',
-    getParentRoute: () => rootRouteImport,
-  } as any)
+const ArticlesRoute = ArticlesRouteImport.update({
+  id: '/articles',
+  path: '/articles',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArRoute = ArRouteImport.update({
+  id: '/ar',
+  path: '/ar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ArIndexRoute = ArIndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => ArRoute,
+} as any)
+const PatientEducationWeightPlateauAfterSleeveRoute =
+  PatientEducationWeightPlateauAfterSleeveRouteImport.update({
+    id: '/patient-education/weight-plateau-after-sleeve',
+    path: '/patient-education/weight-plateau-after-sleeve',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PatientEducationHidradenitisSuppurativaRoute =
+  PatientEducationHidradenitisSuppurativaRouteImport.update({
+    id: '/patient-education/hidradenitis-suppurativa',
+    path: '/patient-education/hidradenitis-suppurativa',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ArPatientsRoute = ArPatientsRouteImport.update({
+  id: '/patients',
+  path: '/patients',
   getParentRoute: () => ArRoute,
 } as any)
 const ArMedicalQuestionsRoute = ArMedicalQuestionsRouteImport.update({
@@ -76,21 +81,16 @@ const ArMedicalQuestionsRoute = ArMedicalQuestionsRouteImport.update({
   path: '/medical-questions',
   getParentRoute: () => ArRoute,
 } as any)
-const ArPatientsRoute = ArPatientsRouteImport.update({
-  id: '/patients',
-  path: '/patients',
-  getParentRoute: () => ArRoute,
-} as any)
-const PatientEducationHidradenitisSuppurativaRoute =
-  PatientEducationHidradenitisSuppurativaRouteImport.update({
-    id: '/patient-education/hidradenitis-suppurativa',
-    path: '/patient-education/hidradenitis-suppurativa',
+const Char91DotwellKnownChar93OauthProtectedResourceRoute =
+  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
+    id: '/.well-known/oauth-protected-resource',
+    path: '/.well-known/oauth-protected-resource',
     getParentRoute: () => rootRouteImport,
   } as any)
-const PatientEducationWeightPlateauAfterSleeveRoute =
-  PatientEducationWeightPlateauAfterSleeveRouteImport.update({
-    id: '/patient-education/weight-plateau-after-sleeve',
-    path: '/patient-education/weight-plateau-after-sleeve',
+const Char91DotmcpChar93ListToolsRoute =
+  Char91DotmcpChar93ListToolsRouteImport.update({
+    id: '/.mcp/list-tools',
+    path: '/.mcp/list-tools',
     getParentRoute: () => rootRouteImport,
   } as any)
 const Char91DotmcpChar93InvokeToolToolRoute =
@@ -214,32 +214,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ar': {
-      id: '/ar'
-      path: '/ar'
-      fullPath: '/ar'
-      preLoaderRoute: typeof ArRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/articles': {
-      id: '/articles'
-      path: '/articles'
-      fullPath: '/articles'
-      preLoaderRoute: typeof ArticlesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/mcp': {
-      id: '/mcp'
-      path: '/mcp'
-      fullPath: '/mcp'
-      preLoaderRoute: typeof McpRouteImport
+    '/publications': {
+      id: '/publications'
+      path: '/publications'
+      fullPath: '/publications'
+      preLoaderRoute: typeof PublicationsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/patients': {
@@ -249,25 +228,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PatientsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/publications': {
-      id: '/publications'
-      path: '/publications'
-      fullPath: '/publications'
-      preLoaderRoute: typeof PublicationsRouteImport
+    '/mcp': {
+      id: '/mcp'
+      path: '/mcp'
+      fullPath: '/mcp'
+      preLoaderRoute: typeof McpRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.mcp/list-tools': {
-      id: '/.mcp/list-tools'
-      path: '/.mcp/list-tools'
-      fullPath: '/.mcp/list-tools'
-      preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
+    '/articles': {
+      id: '/articles'
+      path: '/articles'
+      fullPath: '/articles'
+      preLoaderRoute: typeof ArticlesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.well-known/oauth-protected-resource': {
-      id: '/.well-known/oauth-protected-resource'
-      path: '/.well-known/oauth-protected-resource'
-      fullPath: '/.well-known/oauth-protected-resource'
-      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+    '/ar': {
+      id: '/ar'
+      path: '/ar'
+      fullPath: '/ar'
+      preLoaderRoute: typeof ArRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ar/': {
@@ -277,19 +263,12 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArIndexRouteImport
       parentRoute: typeof ArRoute
     }
-    '/ar/medical-questions': {
-      id: '/ar/medical-questions'
-      path: '/medical-questions'
-      fullPath: '/ar/medical-questions'
-      preLoaderRoute: typeof ArMedicalQuestionsRouteImport
-      parentRoute: typeof ArRoute
-    }
-    '/ar/patients': {
-      id: '/ar/patients'
-      path: '/patients'
-      fullPath: '/ar/patients'
-      preLoaderRoute: typeof ArPatientsRouteImport
-      parentRoute: typeof ArRoute
+    '/patient-education/weight-plateau-after-sleeve': {
+      id: '/patient-education/weight-plateau-after-sleeve'
+      path: '/patient-education/weight-plateau-after-sleeve'
+      fullPath: '/patient-education/weight-plateau-after-sleeve'
+      preLoaderRoute: typeof PatientEducationWeightPlateauAfterSleeveRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/patient-education/hidradenitis-suppurativa': {
       id: '/patient-education/hidradenitis-suppurativa'
@@ -298,11 +277,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PatientEducationHidradenitisSuppurativaRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/patient-education/weight-plateau-after-sleeve': {
-      id: '/patient-education/weight-plateau-after-sleeve'
-      path: '/patient-education/weight-plateau-after-sleeve'
-      fullPath: '/patient-education/weight-plateau-after-sleeve'
-      preLoaderRoute: typeof PatientEducationWeightPlateauAfterSleeveRouteImport
+    '/ar/patients': {
+      id: '/ar/patients'
+      path: '/patients'
+      fullPath: '/ar/patients'
+      preLoaderRoute: typeof ArPatientsRouteImport
+      parentRoute: typeof ArRoute
+    }
+    '/ar/medical-questions': {
+      id: '/ar/medical-questions'
+      path: '/medical-questions'
+      fullPath: '/ar/medical-questions'
+      preLoaderRoute: typeof ArMedicalQuestionsRouteImport
+      parentRoute: typeof ArRoute
+    }
+    '/.well-known/oauth-protected-resource': {
+      id: '/.well-known/oauth-protected-resource'
+      path: '/.well-known/oauth-protected-resource'
+      fullPath: '/.well-known/oauth-protected-resource'
+      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.mcp/list-tools': {
+      id: '/.mcp/list-tools'
+      path: '/.mcp/list-tools'
+      fullPath: '/.mcp/list-tools'
+      preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.mcp/invoke-tool/$tool': {
