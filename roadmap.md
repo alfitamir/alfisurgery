@@ -1,3 +1,3 @@
 - [x] Add an Arabic article about weight plateau after sleeve gastrectomy, illustrated with two new images.
-- [ ] Link the article from the patient guide and verify it renders on mobile.
-- [ ] Add the supplied WordPress author link to the English and Arabic site pages.
+- [x] Link the article from the patient guide and verify it renders on mobile.
+- [x] Add the supplied WordPress author link to the English and Arabic site pages.

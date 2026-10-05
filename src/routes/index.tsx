@@ -505,6 +505,13 @@ function Index() {
             },
             {
               icon: BookOpen,
+              tag: "Blog",
+              title: "My WordPress Articles",
+              desc: "Read my posts on WordPress.",
+              href: "https://tkmem.wordpress.com/author/alfitamir2/",
+            },
+            {
+              icon: BookOpen,
               tag: "Publication · 2021",
               title: "Surgery for Complicated Stomal Prolapse: Is the Altemeier Technique an Option?",
               desc: "Alalfy TR, Orban YA, Algazar M, Farag A. — J. Coloproctol. 41(1), 2021.",
