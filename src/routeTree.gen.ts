@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ArRouteImport } from './routes/ar'
+import { Route as ArticlesRouteImport } from './routes/articles'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as PatientsRouteImport } from './routes/patients'
 import { Route as PublicationsRouteImport } from './routes/publications'
@@ -31,6 +32,11 @@ const IndexRoute = IndexRouteImport.update({
 const ArRoute = ArRouteImport.update({
   id: '/ar',
   path: '/ar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArticlesRoute = ArticlesRouteImport.update({
+  id: '/articles',
+  path: '/articles',
   getParentRoute: () => rootRouteImport,
 } as any)
 const McpRoute = McpRouteImport.update({
@@ -97,6 +103,7 @@ const Char91DotmcpChar93InvokeToolToolRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/ar': typeof ArRouteWithChildren
+  '/articles': typeof ArticlesRoute
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
   '/publications': typeof PublicationsRoute
@@ -111,6 +118,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/articles': typeof ArticlesRoute
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
   '/publications': typeof PublicationsRoute
@@ -127,6 +135,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/ar': typeof ArRouteWithChildren
+  '/articles': typeof ArticlesRoute
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
   '/publications': typeof PublicationsRoute
@@ -144,6 +153,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/ar'
+    | '/articles'
     | '/mcp'
     | '/patients'
     | '/publications'
@@ -158,6 +168,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/articles'
     | '/mcp'
     | '/patients'
     | '/publications'
@@ -173,6 +184,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/ar'
+    | '/articles'
     | '/mcp'
     | '/patients'
     | '/publications'
@@ -189,6 +201,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ArRoute: typeof ArRouteWithChildren
+  ArticlesRoute: typeof ArticlesRoute
   McpRoute: typeof McpRoute
   PatientsRoute: typeof PatientsRoute
   PublicationsRoute: typeof PublicationsRoute
@@ -213,6 +226,13 @@ declare module '@tanstack/react-router' {
       path: '/ar'
       fullPath: '/ar'
       preLoaderRoute: typeof ArRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/articles': {
+      id: '/articles'
+      path: '/articles'
+      fullPath: '/articles'
+      preLoaderRoute: typeof ArticlesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mcp': {
@@ -312,6 +332,7 @@ const ArRouteWithChildren = ArRoute._addFileChildren(ArRouteChildren)
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ArRoute: ArRouteWithChildren,
+  ArticlesRoute: ArticlesRoute,
   McpRoute: McpRoute,
   PatientsRoute: PatientsRoute,
   PublicationsRoute: PublicationsRoute,

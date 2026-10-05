@@ -506,9 +506,9 @@ function Index() {
             {
               icon: BookOpen,
               tag: "Blog",
-              title: "My WordPress Articles",
-              desc: "Read my posts on WordPress.",
-              href: "https://tkmem.wordpress.com/author/alfitamir2/",
+              title: "My Articles — Read Them Here",
+              desc: "41 patient-education articles from my WordPress blog, now readable directly on this site.",
+              href: "/articles",
             },
             {
               icon: BookOpen,
@@ -521,8 +521,7 @@ function Index() {
             <a
               key={item.href}
               href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="group flex gap-5 p-6 bento-card"
             >
               <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">

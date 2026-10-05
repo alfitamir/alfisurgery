@@ -430,9 +430,9 @@ function ArabicIndex() {
             {
               icon: BookOpen,
               tag: "مدونة",
-              title: "مقالاتي على ووردبريس",
-              desc: "اقرأ منشوراتي على مدونة ووردبريس.",
-              href: "https://tkmem.wordpress.com/author/alfitamir2/",
+              title: "مقالاتي — اقرأها هنا",
+              desc: "41 مقالًا توعويًا من مدونتي، متاحة الآن للقراءة مباشرة داخل الموقع.",
+              href: "/articles",
             },
             {
               icon: BookOpen,
@@ -445,8 +445,7 @@ function ArabicIndex() {
             <a
               key={item.href}
               href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="group flex gap-5 p-6 bento-card"
             >
               <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
