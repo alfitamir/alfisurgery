@@ -506,9 +506,9 @@ function Index() {
             {
               icon: BookOpen,
               tag: "Blog",
-              title: "My WordPress Articles",
-              desc: "Read my posts on WordPress.",
-              href: "https://tkmem.wordpress.com/author/alfitamir2/",
+              title: "My Articles — Read Them Here",
+              desc: "41 patient-education articles from my WordPress blog, now readable directly on this site.",
+              href: "/articles",
             },
             {
               icon: BookOpen,

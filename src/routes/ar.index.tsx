@@ -430,9 +430,9 @@ function ArabicIndex() {
             {
               icon: BookOpen,
               tag: "مدونة",
-              title: "مقالاتي على ووردبريس",
-              desc: "اقرأ منشوراتي على مدونة ووردبريس.",
-              href: "https://tkmem.wordpress.com/author/alfitamir2/",
+              title: "مقالاتي — اقرأها هنا",
+              desc: "41 مقالًا توعويًا من مدونتي، متاحة الآن للقراءة مباشرة داخل الموقع.",
+              href: "/articles",
             },
             {
               icon: BookOpen,

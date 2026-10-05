@@ -139,3 +139,23 @@
     transform: translateY(-2px);
   }
 }
+
+/* Blog article body (imported WordPress content) */
+.blog-content p { margin-block: 0.75rem; }
+.blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4 {
+  font-weight: 700;
+  color: var(--patient-deep);
+  margin-block: 1rem 0.5rem;
+}
+.blog-content ul, .blog-content ol { padding-inline-start: 1.5rem; margin-block: 0.75rem; }
+.blog-content ul { list-style: disc; }
+.blog-content ol { list-style: decimal; }
+.blog-content li { margin-block: 0.25rem; }
+.blog-content a { color: var(--patient-deep); text-decoration: underline; }
+.blog-content img { max-width: 100%; height: auto; border-radius: 0.5rem; margin-block: 1rem; }
+.blog-content blockquote {
+  border-inline-start: 4px solid var(--patient-apricot);
+  padding-inline-start: 1rem;
+  margin-block: 1rem;
+  color: var(--patient-ink);
+}
