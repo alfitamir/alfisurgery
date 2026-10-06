@@ -2,3 +2,6 @@
 - [x] Link the article from the patient guide and verify it renders on mobile.
 - [x] Add the supplied WordPress author link to the English and Arabic site pages.
 - [x] Copy all 41 WordPress blog articles into the site at /articles with search and expandable reading, linked from both homepages.
+- [ ] Give every imported article a full reading page and verify complete text.
+- [ ] Add a prominent articles section to both homepages and link it from the patient guide.
+- [ ] Verify article search, direct links, and phone and desktop layouts.

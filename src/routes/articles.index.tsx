@@ -1,0 +1,71 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useMemo, useState } from "react";
+import { ArrowLeft, ArrowRight, BookOpen, Search } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { articlePreviews, articleText } from "@/lib/blog";
+import illustration from "@/assets/sleeve-plateau-habits.jpg";
+
+export const Route = createFileRoute("/articles/")({
+  component: ArticlesPage,
+  head: () => ({ meta: [
+    { title: "مقالات طبية مبسطة | د. تامر الألفي" },
+    { name: "description", content: "مكتبة مقالات د. تامر الألفي الكاملة عن الجراحة والتكميم والتغذية والتعافي، مع البحث والقراءة المباشرة." },
+    { property: "og:title", content: "مقالات طبية مبسطة | د. تامر الألفي" },
+    { property: "og:description", content: "41 مقالًا من أرشيف مدونة د. تامر الألفي بنصوصها الكاملة." },
+    { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
+  ] }),
+});
+
+const categories = ["الكل", "المرارة والجراحة", "التغذية والوزن", "التكميم والمتابعة"];
+const normalize = (text: string) => text.toLocaleLowerCase().replace(/[أإآ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه").replace(/[\u064B-\u065F\u0640]/g, "");
+
+function ArticlesPage() {
+  const [query, setQuery] = useState("");
+  const [category, setCategory] = useState("الكل");
+  const filtered = useMemo(() => articlePreviews.filter((a) =>
+    (category === "الكل" || a.category === category) && normalize(`${a.title} ${articleText(a.content)}`).includes(normalize(query.trim()))
+  ), [query, category]);
+  return (
+    <div dir="rtl" lang="ar" className="patient-site min-h-screen bg-patient-canvas text-patient-ink">
+      <header className="border-b border-patient-mist bg-card">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-4">
+          <Link to="/ar" className="font-semibold text-patient-deep">د. تامر الألفي</Link>
+          <div className="flex gap-2"><Button asChild variant="outline" size="sm"><Link to="/ar/patients">دليل المرضى<ArrowRight /></Link></Button><Button asChild variant="ghost" size="sm"><Link to="/">الرئيسية</Link></Button></div>
+        </div>
+      </header>
+      <main>
+        <section className="border-b border-patient-mist bg-patient-mist/20">
+          <div className="mx-auto max-w-6xl px-5 py-10 md:py-14">
+            <p className="flex items-center gap-2 text-sm font-semibold text-patient-deep"><BookOpen className="size-5" />من مدونة د. تامر الألفي</p>
+            <h1 className="mt-4 text-3xl font-bold leading-relaxed text-patient-deep md:text-5xl">مقالات طبية مبسطة</h1>
+            <p className="mt-4 max-w-2xl text-lg leading-loose">{articlePreviews.length} مقالًا عن الجراحة والتكميم والتغذية والتعافي.</p>
+          </div>
+        </section>
+        <section className="mx-auto max-w-6xl px-5 py-8 md:py-12" aria-label="مكتبة المقالات">
+          <div className="relative max-w-3xl">
+            <Search className="absolute start-4 top-1/2 size-5 -translate-y-1/2 text-patient-deep" />
+            <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="ابحث في المقالات…" aria-label="ابحث في المقالات" className="h-12 w-full rounded-lg border border-patient-mist bg-card pe-4 ps-12 outline-none focus-visible:ring-2 focus-visible:ring-patient-blue" />
+          </div>
+          <div className="mt-5 flex flex-wrap gap-2" role="group" aria-label="موضوع المقال">
+            {categories.map((c) => <Button key={c} variant={category === c ? "default" : "outline"} onClick={() => setCategory(c)} aria-pressed={category === c}>{c}</Button>)}
+          </div>
+          <p aria-live="polite" className="mt-5 text-sm text-patient-ink/70">{filtered.length} مقالًا</p>
+          {!filtered.length && <p className="py-16 text-center">لا توجد مقالات مطابقة لبحثك.</p>}
+          <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {filtered.map((a) => <article key={a.id} className="flex flex-col overflow-hidden rounded-lg border border-patient-mist bg-card">
+              {a.id === 198 && <img src={illustration} alt="عادات صحية بعد التكميم" width={1536} height={1024} className="h-44 w-full object-cover" />}
+              <div className="flex flex-1 flex-col p-5">
+                <p className="text-xs font-semibold text-patient-deep">{a.category}</p>
+                <h2 className="mt-3 text-xl font-bold leading-relaxed text-patient-deep"><Link to="/articles/$articleId" params={{ articleId: String(a.id) }} className="hover:underline">{a.title}</Link></h2>
+                <time dateTime={a.date} className="mt-3 text-xs text-patient-ink/60">{new Date(a.date).toLocaleDateString("ar-EG", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })}</time>
+                <p className="mt-4 line-clamp-3 text-sm leading-loose text-patient-ink/80">{a.excerpt}…</p>
+                <Button asChild variant="link" className="mt-auto h-auto justify-start px-0 pt-5 text-patient-deep"><Link to="/articles/$articleId" params={{ articleId: String(a.id) }}>اقرأ المقال كاملًا<ArrowLeft /></Link></Button>
+              </div>
+            </article>)}
+          </div>
+          <p className="mt-10 border-t border-patient-mist pt-6 text-sm leading-loose text-patient-ink/70">مقالات أرشيفية للتثقيف العام، ولا تغني عن استشارة الفريق الطبي المتابع لحالتك. تختلف تعليمات العلاج والغذاء حسب حالتك وتاريخ العملية.</p>
+        </section>
+      </main>
+    </div>
+  );
+}
