@@ -4,7 +4,7 @@ import { ArrowRight, ChevronDown, ExternalLink, Newspaper, Search } from "lucide
 import { Button } from "@/components/ui/button";
 import { blogArticles } from "@/data/blog-articles";
 
-export const Route = createFileRoute("/articles")({
+export const Route = createFileRoute("/articles/")({
   component: ArticlesPage,
   head: () => ({
     meta: [
