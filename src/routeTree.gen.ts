@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ArRouteImport } from './routes/ar'
+import { Route as ArticlesRouteImport } from './routes/articles'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as PatientsRouteImport } from './routes/patients'
 import { Route as PublicationsRouteImport } from './routes/publications'
@@ -20,6 +21,7 @@ import { Route as ArIndexRouteImport } from './routes/ar.index'
 import { Route as ArMedicalQuestionsRouteImport } from './routes/ar.medical-questions'
 import { Route as ArPatientsRouteImport } from './routes/ar.patients'
 import { Route as ArticlesIndexRouteImport } from './routes/articles.index'
+import { Route as ArticlesArticleIdRouteImport } from './routes/articles.$articleId'
 import { Route as PatientEducationHidradenitisSuppurativaRouteImport } from './routes/patient-education.hidradenitis-suppurativa'
 import { Route as PatientEducationWeightPlateauAfterSleeveRouteImport } from './routes/patient-education.weight-plateau-after-sleeve'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
@@ -32,6 +34,11 @@ const IndexRoute = IndexRouteImport.update({
 const ArRoute = ArRouteImport.update({
   id: '/ar',
   path: '/ar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArticlesRoute = ArticlesRouteImport.update({
+  id: '/articles',
+  path: '/articles',
   getParentRoute: () => rootRouteImport,
 } as any)
 const McpRoute = McpRouteImport.update({
@@ -77,9 +84,14 @@ const ArPatientsRoute = ArPatientsRouteImport.update({
   getParentRoute: () => ArRoute,
 } as any)
 const ArticlesIndexRoute = ArticlesIndexRouteImport.update({
-  id: '/articles/',
-  path: '/articles/',
-  getParentRoute: () => rootRouteImport,
+  id: '/',
+  path: '/',
+  getParentRoute: () => ArticlesRoute,
+} as any)
+const ArticlesArticleIdRoute = ArticlesArticleIdRouteImport.update({
+  id: '/$articleId',
+  path: '/$articleId',
+  getParentRoute: () => ArticlesRoute,
 } as any)
 const PatientEducationHidradenitisSuppurativaRoute =
   PatientEducationHidradenitisSuppurativaRouteImport.update({
@@ -103,6 +115,7 @@ const Char91DotmcpChar93InvokeToolToolRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/ar': typeof ArRouteWithChildren
+  '/articles': typeof ArticlesRouteWithChildren
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
   '/publications': typeof PublicationsRoute
@@ -110,6 +123,7 @@ export interface FileRoutesByFullPath {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
+  '/articles/$articleId': typeof ArticlesArticleIdRoute
   '/patient-education/hidradenitis-suppurativa': typeof PatientEducationHidradenitisSuppurativaRoute
   '/patient-education/weight-plateau-after-sleeve': typeof PatientEducationWeightPlateauAfterSleeveRoute
   '/ar/': typeof ArIndexRoute
@@ -125,6 +139,7 @@ export interface FileRoutesByTo {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
+  '/articles/$articleId': typeof ArticlesArticleIdRoute
   '/patient-education/hidradenitis-suppurativa': typeof PatientEducationHidradenitisSuppurativaRoute
   '/patient-education/weight-plateau-after-sleeve': typeof PatientEducationWeightPlateauAfterSleeveRoute
   '/ar': typeof ArIndexRoute
@@ -135,6 +150,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/ar': typeof ArRouteWithChildren
+  '/articles': typeof ArticlesRouteWithChildren
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
   '/publications': typeof PublicationsRoute
@@ -142,6 +158,7 @@ export interface FileRoutesById {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
+  '/articles/$articleId': typeof ArticlesArticleIdRoute
   '/patient-education/hidradenitis-suppurativa': typeof PatientEducationHidradenitisSuppurativaRoute
   '/patient-education/weight-plateau-after-sleeve': typeof PatientEducationWeightPlateauAfterSleeveRoute
   '/ar/': typeof ArIndexRoute
@@ -153,6 +170,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/ar'
+    | '/articles'
     | '/mcp'
     | '/patients'
     | '/publications'
@@ -160,6 +178,7 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/ar/medical-questions'
     | '/ar/patients'
+    | '/articles/$articleId'
     | '/patient-education/hidradenitis-suppurativa'
     | '/patient-education/weight-plateau-after-sleeve'
     | '/ar/'
@@ -175,6 +194,7 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/ar/medical-questions'
     | '/ar/patients'
+    | '/articles/$articleId'
     | '/patient-education/hidradenitis-suppurativa'
     | '/patient-education/weight-plateau-after-sleeve'
     | '/ar'
@@ -184,6 +204,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/ar'
+    | '/articles'
     | '/mcp'
     | '/patients'
     | '/publications'
@@ -191,6 +212,7 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/ar/medical-questions'
     | '/ar/patients'
+    | '/articles/$articleId'
     | '/patient-education/hidradenitis-suppurativa'
     | '/patient-education/weight-plateau-after-sleeve'
     | '/ar/'
@@ -201,6 +223,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ArRoute: typeof ArRouteWithChildren
+  ArticlesRoute: typeof ArticlesRouteWithChildren
   McpRoute: typeof McpRoute
   PatientsRoute: typeof PatientsRoute
   PublicationsRoute: typeof PublicationsRoute
@@ -208,7 +231,6 @@ export interface RootRouteChildren {
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   PatientEducationHidradenitisSuppurativaRoute: typeof PatientEducationHidradenitisSuppurativaRoute
   PatientEducationWeightPlateauAfterSleeveRoute: typeof PatientEducationWeightPlateauAfterSleeveRoute
-  ArticlesIndexRoute: typeof ArticlesIndexRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 
@@ -226,6 +248,13 @@ declare module '@tanstack/react-router' {
       path: '/ar'
       fullPath: '/ar'
       preLoaderRoute: typeof ArRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/articles': {
+      id: '/articles'
+      path: '/articles'
+      fullPath: '/articles'
+      preLoaderRoute: typeof ArticlesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mcp': {
@@ -286,10 +315,17 @@ declare module '@tanstack/react-router' {
     }
     '/articles/': {
       id: '/articles/'
-      path: '/articles'
+      path: '/'
       fullPath: '/articles/'
       preLoaderRoute: typeof ArticlesIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof ArticlesRoute
+    }
+    '/articles/$articleId': {
+      id: '/articles/$articleId'
+      path: '/$articleId'
+      fullPath: '/articles/$articleId'
+      preLoaderRoute: typeof ArticlesArticleIdRouteImport
+      parentRoute: typeof ArticlesRoute
     }
     '/patient-education/hidradenitis-suppurativa': {
       id: '/patient-education/hidradenitis-suppurativa'
@@ -329,9 +365,24 @@ const ArRouteChildren: ArRouteChildren = {
 
 const ArRouteWithChildren = ArRoute._addFileChildren(ArRouteChildren)
 
+interface ArticlesRouteChildren {
+  ArticlesArticleIdRoute: typeof ArticlesArticleIdRoute
+  ArticlesIndexRoute: typeof ArticlesIndexRoute
+}
+
+const ArticlesRouteChildren: ArticlesRouteChildren = {
+  ArticlesArticleIdRoute: ArticlesArticleIdRoute,
+  ArticlesIndexRoute: ArticlesIndexRoute,
+}
+
+const ArticlesRouteWithChildren = ArticlesRoute._addFileChildren(
+  ArticlesRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ArRoute: ArRouteWithChildren,
+  ArticlesRoute: ArticlesRouteWithChildren,
   McpRoute: McpRoute,
   PatientsRoute: PatientsRoute,
   PublicationsRoute: PublicationsRoute,
@@ -342,7 +393,6 @@ const rootRouteChildren: RootRouteChildren = {
     PatientEducationHidradenitisSuppurativaRoute,
   PatientEducationWeightPlateauAfterSleeveRoute:
     PatientEducationWeightPlateauAfterSleeveRoute,
-  ArticlesIndexRoute: ArticlesIndexRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
 }
 export const routeTree = rootRouteImport
