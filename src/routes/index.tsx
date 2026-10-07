@@ -520,6 +520,13 @@ function Index() {
               href: "/articles",
             },
             {
+              icon: Youtube,
+              tag: "Video",
+              title: "YouTube Channel",
+              desc: "Surgical explanations and patient-education videos, in Arabic and English.",
+              href: "https://www.youtube.com/@alfy_surgery",
+            },
+            {
               icon: BookOpen,
               tag: "Publication · 2021",
               title: "Surgery for Complicated Stomal Prolapse: Is the Altemeier Technique an Option?",
@@ -1115,7 +1122,7 @@ function Index() {
                   <div className="font-medium group-hover:text-accent transition">+966 54 802 6853</div>
                 </div>
               </a>
-              <a href="https://youtube.com/@alfy_surgery" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-5 rounded-xl border border-border hover:border-accent transition group">
+              <a href="https://www.youtube.com/@alfy_surgery" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-5 rounded-xl border border-border hover:border-accent transition group">
                 <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
                   <Youtube className="h-5 w-5 text-accent" />
                 </div>
