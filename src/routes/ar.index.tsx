@@ -10,6 +10,7 @@ import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/component
 import { patientEducation, educationCategories, educationCategoriesAr, educationCategoryImages, formatSize } from "@/data/patient-education";
 import { SectionArt } from "@/components/SectionArt";
 import { ArticlesSection } from "@/components/ArticlesSection";
+import { VideosSection } from "@/components/VideosSection";
 import { Button } from "@/components/ui/button";
 import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
 import { surgeryUpdates } from "@/data/surgery-updates";
@@ -250,6 +251,7 @@ function ArabicIndex() {
 
       {/* About */}
       <ArticlesSection ar />
+      <VideosSection ar />
 
       <section id="about" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-20 md:py-24">
         <div className="text-xs tracking-widest text-accent font-bold">نبذة</div>
