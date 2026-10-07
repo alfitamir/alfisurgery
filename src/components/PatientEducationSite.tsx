@@ -21,6 +21,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
 import { InstallAppButton } from "@/components/InstallAppButton";
+import { ArticlesSection } from "@/components/ArticlesSection";
 import {
   educationCategories,
   educationCategoriesAr,
@@ -157,6 +158,7 @@ export function PatientEducationSite({ lang }: { lang: Language }) {
             <a href="#operations">{t.nav[0]}</a><a href="#prepare">{t.nav[1]}</a><a href="#recovery">{t.nav[2]}</a><a href="#urgent">{t.nav[3]}</a>
           </nav>
           <div className="flex items-center gap-2">
+            <Button asChild variant="link" size="sm"><Link to="/articles">{ar ? "المقالات" : "Articles"}</Link></Button>
             <InstallAppButton ar={ar} />
             <Button asChild variant="outline" size="sm" className="rounded-full border-patient-mist bg-card text-patient-deep">
               <Link to={ar ? "/patients" : "/ar/patients"}><Globe />{ar ? "English" : "العربية"}</Link>
@@ -261,6 +263,7 @@ export function PatientEducationSite({ lang }: { lang: Language }) {
           </div>
         </section>
       </main>
+      <ArticlesSection ar={ar} />
 
       <footer className="bg-patient-deep text-primary-foreground">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-10 md:flex-row md:items-center md:justify-between md:px-8">
