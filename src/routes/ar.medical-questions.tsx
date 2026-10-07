@@ -11,6 +11,8 @@ export const Route = createFileRoute("/ar/medical-questions")({
       { property: "og:title", content: "الأسئلة الطبية — د. تامر الألفي" },
       { property: "og:description", content: "إجابات مبسطة عن أكثر الأسئلة الجراحية شيوعًا، ومتى يجب زيارة العيادة." },
       { property: "og:url", content: "/ar/medical-questions" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { httpEquiv: "content-language", content: "ar" },
     ],
     links: [
