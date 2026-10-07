@@ -6,6 +6,8 @@ import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/component
 
 import { patientEducation, educationCategories, educationCategoryImages, formatSize } from "@/data/patient-education";
 import { SectionArt } from "@/components/SectionArt";
+import { ArticlesSection } from "@/components/ArticlesSection";
+import { Button } from "@/components/ui/button";
 import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
 import { surgeryUpdates } from "@/data/surgery-updates";
 import portraitAsset from "@/assets/dr-elalfy-main.jpg.asset.json";
@@ -38,6 +40,10 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Dr. Tamer Rushdy Elalfy, MD" },
       { property: "og:description", content: "Consultant General & Laparoscopic Surgeon. Bariatric, colorectal, thyroid, and upper GI surgery." },
       { property: "og:url", content: "/" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: portrait },
+      { name: "twitter:image", content: portrait },
     ],
     links: [
       { rel: "canonical", href: "/" },
@@ -192,6 +198,7 @@ function Index() {
           </div>
           {/* Header nav removed from here; all section links now live in the sticky chapter tabs below to avoid duplication. */}
           <div className="flex items-center gap-3">
+            <Button asChild variant="link" size="sm"><Link to="/articles">Articles</Link></Button>
             <Link to="/patients" className="hidden md:inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition">
               Patients
             </Link>
@@ -276,6 +283,8 @@ function Index() {
       </section>
 
       {/* About */}
+      <ArticlesSection />
+
       <section id="about" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-20 md:py-24">
         <div className="eyebrow">About</div>
         <h2 className="mt-3 font-serif text-4xl md:text-5xl max-w-2xl">A surgeon's perspective.</h2>

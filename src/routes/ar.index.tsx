@@ -9,6 +9,8 @@ import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/component
 
 import { patientEducation, educationCategories, educationCategoriesAr, educationCategoryImages, formatSize } from "@/data/patient-education";
 import { SectionArt } from "@/components/SectionArt";
+import { ArticlesSection } from "@/components/ArticlesSection";
+import { Button } from "@/components/ui/button";
 import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
 import { surgeryUpdates } from "@/data/surgery-updates";
 import portraitAsset from "@/assets/dr-elalfy-main.jpg.asset.json";
@@ -41,6 +43,10 @@ export const Route = createFileRoute("/ar/")({
       { property: "og:title", content: "د. تامر رشدي الألفي" },
       { property: "og:description", content: "استشاري الجراحة العامة والمناظير — جراحة السمنة والقولون والغدة الدرقية والجهاز الهضمي العلوي." },
       { property: "og:url", content: "/ar" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: portrait },
+      { name: "twitter:image", content: portrait },
       { httpEquiv: "content-language", content: "ar" },
     ],
     links: [
@@ -175,6 +181,7 @@ function ArabicIndex() {
           </div>
           {/* Navigation links live in the sticky chapter tabs below to avoid duplication with the header. */}
           <div className="flex items-center gap-3">
+            <Button asChild variant="link" size="sm"><Link to="/articles">المقالات</Link></Button>
             <Link to="/" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition">
               <Globe className="h-4 w-4" /> EN
             </Link>
@@ -242,6 +249,8 @@ function ArabicIndex() {
       </section>
 
       {/* About */}
+      <ArticlesSection ar />
+
       <section id="about" className="scroll-mt-32 mx-auto max-w-6xl px-6 py-20 md:py-24">
         <div className="text-xs tracking-widest text-accent font-bold">نبذة</div>
         <h2 className="mt-3 text-4xl md:text-5xl">منظور جرّاح.</h2>
