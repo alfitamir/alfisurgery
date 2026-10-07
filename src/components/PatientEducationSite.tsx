@@ -17,6 +17,7 @@ import {
   Pill,
   Search,
   Stethoscope,
+  Youtube,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
@@ -94,6 +95,7 @@ const copy = {
     note: "These guides support — but never replace — advice from your own surgical team.",
     call: "Call clinic",
     whatsapp: "Patient channel",
+    youtube: "Videos on YouTube",
   },
   ar: {
     home: "موقع الطبيب",
@@ -127,6 +129,7 @@ const copy = {
     note: "هذه الأدلة تساعدك، لكنها لا تحل محل تعليمات فريقك الجراحي.",
     call: "اتصل بالعيادة",
     whatsapp: "قناة المرضى",
+    youtube: "فيديوهات على يوتيوب",
   },
 } as const;
 
@@ -271,6 +274,7 @@ export function PatientEducationSite({ lang }: { lang: Language }) {
           <div className="flex flex-wrap gap-3">
             <Button asChild variant="secondary" className="rounded-full"><a href="tel:+966138011910"><Stethoscope />{t.call}</a></Button>
             <Button asChild className="rounded-full bg-patient-apricot text-patient-deep hover:bg-patient-apricot/90"><a href="https://whatsapp.com/channel/0029VbDHjNiKAwEkWMqT5C2P" target="_blank" rel="noopener noreferrer"><MessageCircle />{t.whatsapp}</a></Button>
+            <Button asChild variant="ghost" className="rounded-full bg-primary-foreground text-patient-deep hover:bg-primary-foreground/90 hover:text-patient-deep"><a href="https://www.youtube.com/@alfy_surgery" target="_blank" rel="noopener noreferrer"><Youtube />{t.youtube}</a></Button>
             <Button asChild variant="ghost" className="rounded-full text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"><Link to={ar ? "/ar" : "/"}><Home />{t.home}</Link></Button>
           </div>
         </div>

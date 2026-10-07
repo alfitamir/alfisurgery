@@ -444,6 +444,13 @@ function ArabicIndex() {
               href: "/articles",
             },
             {
+              icon: Youtube,
+              tag: "فيديوهات",
+              title: "قناة يوتيوب",
+              desc: "شرح مبسّط للعمليات ونصائح للمرضى بالعربية والإنجليزية.",
+              href: "https://www.youtube.com/@alfy_surgery",
+            },
+            {
               icon: BookOpen,
               tag: "بحث منشور · 2021",
               title: "جراحة هبوط الفغرة المعقّد: هل تقنية ألتماير خيار مناسب؟",
@@ -978,7 +985,7 @@ function ArabicIndex() {
                   <div className="font-medium group-hover:text-accent transition">+966 54 802 6853</div>
                 </div>
               </a>
-              <a href="https://youtube.com/@alfy_surgery" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-5 rounded-xl border border-border hover:border-accent transition group" dir="ltr">
+              <a href="https://www.youtube.com/@alfy_surgery" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-5 rounded-xl border border-border hover:border-accent transition group" dir="ltr">
                 <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
                   <Youtube className="h-5 w-5 text-accent" />
                 </div>

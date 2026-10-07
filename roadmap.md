@@ -5,3 +5,4 @@
 - [x] Give every imported article a full reading page and verify complete text.
 - [x] Add a prominent articles section to both homepages and link it from the patient guide.
 - [x] Verify article search, direct links, and phone and desktop layouts.
+- [x] Link the YouTube channel @alfy_surgery on both homepages, both patient guides, and the contact strips.
