@@ -23,6 +23,7 @@ import { Button } from "@/components/ui/button";
 import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
 import { InstallAppButton } from "@/components/InstallAppButton";
 import { ArticlesSection } from "@/components/ArticlesSection";
+import { VideosSection } from "@/components/VideosSection";
 import {
   educationCategories,
   educationCategoriesAr,
@@ -267,6 +268,7 @@ export function PatientEducationSite({ lang }: { lang: Language }) {
         </section>
       </main>
       <ArticlesSection ar={ar} />
+      <VideosSection ar={ar} />
 
       <footer className="bg-patient-deep text-primary-foreground">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-10 md:flex-row md:items-center md:justify-between md:px-8">
