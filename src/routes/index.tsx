@@ -681,7 +681,7 @@ function Index() {
             },
           ].map((item) => (
             <div
-              key={item.href}
+              key={`${item.href}-${item.tag}`}
               className="group flex gap-5 p-6 bento-card"
             >
               <div className="h-12 w-12 shrink-0 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-accent/10 transition">
