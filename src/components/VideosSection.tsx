@@ -66,7 +66,7 @@ export function VideosSection({ ar = false }: { ar?: boolean }) {
   const [showAll, setShowAll] = useState(false);
   const visible = showAll ? videos : videos.slice(0, INITIAL_COUNT);
   return (
-    <section id="videos" dir={ar ? "rtl" : "ltr"} className="mx-auto max-w-6xl px-4 py-16">
+    <section id="videos-list" dir={ar ? "rtl" : "ltr"} className="mx-auto max-w-6xl px-4 py-16">
       <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">YouTube</p>
