@@ -557,7 +557,7 @@ function ArabicIndex() {
             },
           ].map((item) => (
             <a
-              key={`${item.href}-${item.tag}`}
+              key={`${item.href}-${item.title}`}
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
