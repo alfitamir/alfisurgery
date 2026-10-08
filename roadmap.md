@@ -6,3 +6,4 @@
 - [x] Add a prominent articles section to both homepages and link it from the patient guide.
 - [x] Verify article search, direct links, and phone and desktop layouts.
 - [x] Link the YouTube channel @alfy_surgery on both homepages, both patient guides, and the contact strips.
+- [x] Add more Arabic videos from the channel (27 total in the videos section, 9 shown initially with a Show more toggle).
