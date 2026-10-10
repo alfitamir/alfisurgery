@@ -7,3 +7,4 @@
 - [x] Verify article search, direct links, and phone and desktop layouts.
 - [x] Link the YouTube channel @alfy_surgery on both homepages, both patient guides, and the contact strips.
 - [x] Add more Arabic videos from the channel (27 total in the videos section, 9 shown initially with a Show more toggle).
+- [x] Add topic category filters for the videos (obesity surgery / laparoscopic surgery / colon & hemorrhoids) with counts, on both homepages and both patient guides.
