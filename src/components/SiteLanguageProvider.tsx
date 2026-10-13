@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { useRouterState } from "@tanstack/react-router";
-import { Globe } from "lucide-react";
+import { Globe, Share2 } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { normalizeText, siteLanguages, translatedText, type SiteLanguage, type TranslationDictionary } from "@/lib/site-language";
 
@@ -25,12 +25,34 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
   const chosen = siteLanguages.find((item) => item.code === language) ?? siteLanguages[0];
 
   useEffect(() => {
-    let stored: string | null = null;
-    try { stored = localStorage.getItem(storageKey); } catch { /* private browsing */ }
+    let stored: string | null = new URLSearchParams(window.location.search).get("lang");
+    if (stored && siteLanguages.some((item) => item.code === stored)) {
+      try { localStorage.setItem(storageKey, stored); } catch { /* optional */ }
+    } else {
+      try { stored = localStorage.getItem(storageKey); } catch { /* private browsing */ }
+    }
     const found = siteLanguages.find((item) => item.code === stored);
     setLanguage(found?.code ?? (pathname.startsWith("/ar") || pathname.startsWith("/articles") ? "ar" : "en"));
     setReady(true);
   }, []);
+
+  // Keep the address bar shareable: translated languages carry ?lang=xx.
+  useEffect(() => {
+    if (!ready) return;
+    const url = new URL(window.location.href);
+    if (translated) url.searchParams.set("lang", language); else url.searchParams.delete("lang");
+    if (url.href !== window.location.href) window.history.replaceState(window.history.state, "", url.href);
+  }, [ready, language, translated, pathname]);
+
+  const [copied, setCopied] = useState(false);
+  const shareLink = async () => {
+    const url = window.location.href;
+    try {
+      if (navigator.share) { await navigator.share({ title: document.title, url }); return; }
+      await navigator.clipboard.writeText(url);
+      setCopied(true); setTimeout(() => setCopied(false), 2000);
+    } catch { /* cancelled */ }
+  };
 
   useEffect(() => {
     if (!ready) return;
@@ -117,10 +139,15 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
     <div data-no-translate className="site-language-bar border-b border-border bg-card text-card-foreground" dir="ltr">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-2">
         <span className="text-sm font-semibold">Alfi Surgery</span>
+        <div className="flex items-center gap-2">
         <Select value={language} onValueChange={selectLanguage}>
           <SelectTrigger aria-label="Website language" className="w-40 bg-background"><Globe className="size-4 shrink-0" /><SelectValue /></SelectTrigger>
           <SelectContent className="z-[100]" data-no-translate>{siteLanguages.map((item) => <SelectItem key={item.code} value={item.code}><span lang={item.code} dir={item.dir}>{item.name}</span></SelectItem>)}</SelectContent>
         </Select>
+        <button type="button" onClick={shareLink} aria-label="Share this page in the selected language" className="inline-flex h-9 items-center gap-1.5 rounded-md border border-input bg-background px-3 text-sm font-medium hover:bg-accent">
+          <Share2 className="size-4" />{copied ? "Copied" : "Share"}
+        </button>
+        </div>
         {translated && <p lang={language} dir={chosen.dir} role="status" className="w-full text-xs leading-relaxed text-muted-foreground">{loading ? "…" : failed ? "Translation unavailable. Please try another language." : dictionary[normalizeText(notice)] ?? notice}</p>}
       </div>
     </div>
