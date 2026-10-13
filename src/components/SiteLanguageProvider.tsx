@@ -19,7 +19,7 @@ const loaders = {
 export function SiteLanguageProvider({ children }: { children: React.ReactNode }) {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
   const searchLanguage = useRouterState({ select: (state) => state.location.search.lang });
-  const navigate = useNavigate();
+  const navigate = useNavigate({ from: "/" });
   const [language, setLanguage] = useState<SiteLanguage>("en");
   const [dictionary, setDictionary] = useState<TranslationDictionary>({});
   const [loading, setLoading] = useState(false);
