@@ -11,6 +11,7 @@ import {
 } from "@tanstack/react-router";
 
 import { registerPatientAppServiceWorker } from "@/lib/pwa";
+import { SiteLanguageProvider } from "@/components/SiteLanguageProvider";
 import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
@@ -94,7 +95,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap",
       },
       {
         rel: "stylesheet",
@@ -134,7 +135,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <SiteLanguageProvider><Outlet /></SiteLanguageProvider>
     </QueryClientProvider>
   );
 }

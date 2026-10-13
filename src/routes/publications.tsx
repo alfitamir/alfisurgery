@@ -6,6 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useSiteLanguage } from "@/components/SiteLanguageProvider";
+import { translatedSearchText } from "@/lib/site-language";
 import {
   Select,
   SelectContent,
@@ -45,6 +47,7 @@ const years = Array.from(new Set(publications.map((p) => p.year))).sort((a, b) =
 const journals = Array.from(new Set(publications.map((p) => p.journal))).sort();
 
 function PublicationsSearchPage() {
+  const { dictionary } = useSiteLanguage();
   const [query, setQuery] = useState("");
   const [author, setAuthor] = useState("");
   const [journal, setJournal] = useState("all");
@@ -77,12 +80,12 @@ function PublicationsSearchPage() {
         if (to && p.year > to) return false;
         if (authorQ && !lc(p.authors).includes(authorQ)) return false;
         if (journal !== "all" && p.journal !== journal) return false;
-        const hay = lc(`${p.title} ${p.abstract} ${p.authors} ${p.journal}`);
+        const hay = lc(`${p.title} ${p.abstract} ${p.authors} ${p.journal} ${translatedSearchText(p.title, dictionary)} ${translatedSearchText(p.abstract, dictionary)}`);
         if (kws.length && !kws.every((k) => matchKeyword(hay, k))) return false;
         return true;
       })
       .map((p) => {
-        const hay = lc(`${p.title} ${p.abstract} ${p.authors} ${p.journal}`);
+        const hay = lc(`${p.title} ${p.abstract} ${p.authors} ${p.journal} ${translatedSearchText(p.title, dictionary)} ${translatedSearchText(p.abstract, dictionary)}`);
         const score = terms.length
           ? terms.reduce((s, t) => s + (hay.includes(t) ? 1 : 0), 0)
           : 1;
@@ -97,7 +100,7 @@ function PublicationsSearchPage() {
     });
 
     return scored.map((r) => r.p);
-  }, [query, author, journal, keywords, keywordMatch, yearFrom, yearTo, sort]);
+  }, [query, author, journal, keywords, keywordMatch, yearFrom, yearTo, sort, dictionary]);
 
   const reset = () => {
     setQuery("");

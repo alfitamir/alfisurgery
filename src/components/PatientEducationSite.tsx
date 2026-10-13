@@ -24,6 +24,8 @@ import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
 import { InstallAppButton } from "@/components/InstallAppButton";
 import { ArticlesSection } from "@/components/ArticlesSection";
 import { VideosSection } from "@/components/VideosSection";
+import { useSiteLanguage } from "@/components/SiteLanguageProvider";
+import { translatedSearchText } from "@/lib/site-language";
 import {
   educationCategories,
   educationCategoriesAr,
@@ -135,6 +137,7 @@ const copy = {
 } as const;
 
 export function PatientEducationSite({ lang }: { lang: Language }) {
+  const { dictionary } = useSiteLanguage();
   const ar = lang === "ar";
   const t = copy[lang];
   const [query, setQuery] = useState("");
@@ -143,11 +146,11 @@ export function PatientEducationSite({ lang }: { lang: Language }) {
     const needle = query.trim().toLocaleLowerCase();
     return patientEducation.filter((item) => {
       const categoryMatches = category === "all" || item.category === category;
-      const searchMatches = !needle || [item.title, item.titleAr, item.summary, item.summaryAr]
+      const searchMatches = !needle || [item.title, item.titleAr, item.summary, item.summaryAr, translatedSearchText(item.title, dictionary), translatedSearchText(item.titleAr, dictionary), translatedSearchText(item.summary, dictionary)]
         .join(" ").toLocaleLowerCase().includes(needle);
       return categoryMatches && searchMatches;
     });
-  }, [category, query]);
+  }, [category, query, dictionary]);
   const Arrow = ar ? ArrowLeft : ArrowRight;
 
   return (
@@ -164,9 +167,6 @@ export function PatientEducationSite({ lang }: { lang: Language }) {
           <div className="flex items-center gap-2">
             <Button asChild variant="link" size="sm"><Link to="/articles">{ar ? "المقالات" : "Articles"}</Link></Button>
             <InstallAppButton ar={ar} />
-            <Button asChild variant="outline" size="sm" className="rounded-full border-patient-mist bg-card text-patient-deep">
-              <Link to={ar ? "/patients" : "/ar/patients"}><Globe />{ar ? "English" : "العربية"}</Link>
-            </Button>
           </div>
         </div>
       </header>
