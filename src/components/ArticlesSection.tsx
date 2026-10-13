@@ -8,7 +8,9 @@ import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 export function ArticlesSection({ ar = false }: { ar?: boolean }) {
   const { language } = useSiteLanguage();
   const Arrow = ar ? ArrowLeft : ArrowRight;
-  const featured = [228, 198, 88].flatMap((id) => articlePreviews.filter((a) => a.id === id));
+  const available = articlePreviews.filter((article) => article.language === language);
+  const featured = [228, 198, 88].flatMap((id) => available.filter((a) => a.id === id));
+  if (!available.length) return null;
   return (
     <section aria-labelledby={`articles-heading-${ar ? "ar" : "en"}`} className="border-y border-border bg-secondary/50">
       <div className="mx-auto max-w-6xl px-5 py-12 md:px-6 md:py-16">
@@ -16,7 +18,7 @@ export function ArticlesSection({ ar = false }: { ar?: boolean }) {
           <div>
             <p className="flex items-center gap-2 text-sm font-semibold text-accent"><BookOpen className="size-5" />{ar ? "بقلم د. تامر الألفي" : "From Dr. Tamer Elalfy's journal"}</p>
             <h2 id={`articles-heading-${ar ? "ar" : "en"}`} className="mt-3 text-3xl font-bold leading-relaxed md:text-4xl">{ar ? "مقالات طبية مبسطة" : "Medical articles"}</h2>
-            <p className="mt-3 max-w-2xl text-muted-foreground">{ar ? `${articlePreviews.length} مقالًا عن الجراحة والتكميم والتغذية والتعافي.` : `${articlePreviews.length} original Arabic articles on surgery, sleeve gastrectomy, nutrition and recovery.`}</p>
+            <p className="mt-3 max-w-2xl text-muted-foreground">{available.length} مقالًا عن الجراحة والتكميم والتغذية والتعافي.</p>
           </div>
           <Button asChild size="lg"><Link to="/articles">{ar ? "جميع المقالات" : "Browse all articles"}<Arrow /></Link></Button>
         </div>

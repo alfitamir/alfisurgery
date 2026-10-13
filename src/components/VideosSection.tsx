@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Play, Youtube } from "lucide-react";
+import { useSiteLanguage } from "@/components/SiteLanguageProvider";
+import { languageContentCopy } from "@/lib/site-language";
 
 type Category = "obesity" | "laparoscopy" | "colon";
 
-const videos: { id: string; ar: string; en: string; cat: Category }[] = [
+const arabicVideos: { id: string; ar: string; en: string; cat: Category }[] = [
   { id: "wp8Zn9DBP6M", ar: "ما يجب أن تعلمه قبل عملية استئصال المرارة بالمنظار", en: "Before laparoscopic gallbladder surgery — full guide", cat: "laparoscopy" },
   { id: "gQc0F0gxhVI", ar: "جراحات الجهاز الهضمي المتقدمة بالمنظار", en: "Advanced laparoscopic GI surgery", cat: "laparoscopy" },
   { id: "FZ8-P39OKxg", ar: "جراحة الفتق بالمنظار", en: "Laparoscopic hernia repair", cat: "laparoscopy" },
@@ -32,6 +34,8 @@ const videos: { id: string; ar: string; en: string; cat: Category }[] = [
   { id: "8425Jq_zuW0", ar: "ارتجاع المريء والتكميم", en: "Acid reflux and sleeve surgery", cat: "obesity" },
   { id: "hTQ_P05D2Ws", ar: "الأمراض النفسية والإدمان — هل يمنعان التكميم؟", en: "Mental health, addiction and sleeve surgery", cat: "obesity" },
 ];
+
+const videos = arabicVideos.map((video) => ({ ...video, language: "ar" as const }));
 
 const categories: { key: Category | "all"; ar: string; en: string }[] = [
   { key: "all", ar: "كل الفيديوهات", en: "All videos" },
@@ -72,11 +76,14 @@ function Video({ id, title }: { id: string; title: string }) {
 }
 
 export function VideosSection({ ar = false }: { ar?: boolean }) {
+  const { language } = useSiteLanguage();
   const [cat, setCat] = useState<Category | "all">("all");
   const [showAll, setShowAll] = useState(false);
 
-  const filtered = cat === "all" ? videos : videos.filter((v) => v.cat === cat);
+  const available = videos.filter((video) => video.language === language);
+  const filtered = cat === "all" ? available : available.filter((v) => v.cat === cat);
   const visible = showAll ? filtered : filtered.slice(0, INITIAL_COUNT);
+  if (!available.length) return <section data-no-translate lang={language} id="videos-list" className="mx-auto max-w-6xl px-5 py-16"><p role="status" className="text-muted-foreground">{languageContentCopy[language].noVideos}</p></section>;
 
   return (
     <section id="videos-list" dir={ar ? "rtl" : "ltr"} className="mx-auto max-w-6xl px-4 py-16">
@@ -94,7 +101,7 @@ export function VideosSection({ ar = false }: { ar?: boolean }) {
       <div className="mb-8 flex flex-wrap gap-2" role="group" aria-label={ar ? "تصنيفات الفيديوهات" : "Video categories"}>
         {categories.map((c) => {
           const active = cat === c.key;
-          const count = c.key === "all" ? videos.length : videos.filter((v) => v.cat === c.key).length;
+          const count = c.key === "all" ? available.length : available.filter((v) => v.cat === c.key).length;
           return (
             <button
               key={c.key}

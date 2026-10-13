@@ -32,6 +32,7 @@ export function articleCategory(title: string) {
 
 export const articlePreviews = blogArticles.map((article) => ({
   ...article,
+  language: "ar" as const,
   excerpt: articleText(article.content).slice(0, 160),
   category: articleCategory(article.title),
 }));

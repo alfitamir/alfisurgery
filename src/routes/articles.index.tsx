@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { articlePreviews, articleText } from "@/lib/blog";
 import illustration from "@/assets/sleeve-plateau-habits.jpg";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
-import { translatedSearchText } from "@/lib/site-language";
+import { languageContentCopy, translatedSearchText } from "@/lib/site-language";
 
 export const Route = createFileRoute("/articles/")({
   component: ArticlesPage,
@@ -22,12 +22,13 @@ const categories = ["الكل", "المرارة والجراحة", "التغذي
 const normalize = (text: string) => text.toLocaleLowerCase().replace(/[أإآ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه").replace(/[\u064B-\u065F\u0640]/g, "");
 
 function ArticlesPage() {
-  const { dictionary } = useSiteLanguage();
+  const { language, dictionary } = useSiteLanguage();
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("الكل");
   const filtered = useMemo(() => articlePreviews.filter((a) =>
-    (category === "الكل" || a.category === category) && normalize(`${a.title} ${articleText(a.content)} ${translatedSearchText(a.title, dictionary)} ${Object.keys(dictionary).filter((key) => articleText(a.content).includes(key)).map((key) => dictionary[key]).join(" ")}`).includes(normalize(query.trim()))
-  ), [query, category, dictionary]);
+    a.language === language && (category === "الكل" || a.category === category) && normalize(`${a.title} ${articleText(a.content)} ${translatedSearchText(a.title, dictionary)} ${Object.keys(dictionary).filter((key) => articleText(a.content).includes(key)).map((key) => dictionary[key]).join(" ")}`).includes(normalize(query.trim()))
+  ), [query, category, dictionary, language]);
+  if (!articlePreviews.some((article) => article.language === language)) return <main data-no-translate lang={language} className="mx-auto min-h-[50vh] max-w-6xl px-5 py-12"><h1 className="text-3xl font-bold">{languageContentCopy[language].articles}</h1><p role="status" className="mt-6 text-muted-foreground">{languageContentCopy[language].noArticles}</p></main>;
   return (
     <div dir="rtl" lang="ar" className="patient-site min-h-screen bg-patient-canvas text-patient-ink">
       <header className="border-b border-patient-mist bg-card">
