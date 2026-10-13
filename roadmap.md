@@ -10,3 +10,6 @@
 - [x] Add topic category filters for the videos (obesity surgery / laparoscopic surgery / colon & hemorrhoids) with counts, on both homepages and both patient guides.
 - [x] Add whole-website Urdu, Hindi, Bengali, and Filipino language selection and complete bundled translations.
 - [x] Verify translated medical pages, navigation, filters, persistence, and right-to-left Urdu layout.
+- [ ] Reorganize the website into clear doctor, research, teaching, and patient destinations with shared navigation.
+- [ ] Apply a calm professional design and explicit six-language identity while preserving complete content and shareable links.
+- [ ] Verify navigation, patient search, language sharing, and layouts on desktop and phones.
