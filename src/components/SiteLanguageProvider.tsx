@@ -51,6 +51,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
     const skip = "script,style,noscript,code,pre,[data-no-translate],input,textarea";
     const direction = chosen.dir;
     document.documentElement.lang = translated ? language : (pathname.startsWith("/ar") || pathname.startsWith("/articles") ? "ar" : "en");
+    document.documentElement.dir = translated ? direction : (pathname.startsWith("/ar") || pathname.startsWith("/articles") ? "rtl" : "ltr");
     document.documentElement.dataset.siteLanguage = translated ? language : "";
 
     const transform = () => {
@@ -76,7 +77,8 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
           if (!attributes) { attributes = new Map(); originalAttributes.set(element, attributes); }
           if (!attributes.has(attribute)) attributes.set(attribute, value);
           const source = attributes.get(attribute) ?? value;
-          const output = !translated ? source : attribute === "dir" ? direction : attribute === "lang" ? language : translatedText(source, dictionary);
+          const technicalText = /^[\s\d+().,–\-:/@\w]+$/.test(element.textContent ?? "") && /[\d@]/.test(element.textContent ?? "");
+          const output = !translated ? source : attribute === "dir" ? (technicalText ? "ltr" : direction) : attribute === "lang" ? language : translatedText(source, dictionary);
           if (value !== output) element.setAttribute(attribute, output);
         }
       });
