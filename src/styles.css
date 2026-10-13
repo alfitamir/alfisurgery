@@ -43,10 +43,10 @@
 }
 
 :root {
-  --radius: 0.75rem;
+  --radius: 0.5rem;
   /* Emerald Prestige */
-  --background: oklch(0.985 0.008 110);
-  --foreground: oklch(0.24 0.045 160);
+  --background: oklch(0.985 0.002 240);
+  --foreground: oklch(0.27 0.015 240);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.24 0.045 160);
   --popover: oklch(1 0 0);
@@ -56,7 +56,7 @@
   --secondary: oklch(0.955 0.018 150);
   --secondary-foreground: oklch(0.30 0.06 163);
   --muted: oklch(0.962 0.012 140);
-  --muted-foreground: oklch(0.50 0.03 160);
+  --muted-foreground: oklch(0.47 0.016 240);
   --accent: oklch(0.48 0.10 165);
   --accent-foreground: oklch(0.985 0.01 110);
   --destructive: oklch(0.577 0.245 27.325);
@@ -73,11 +73,11 @@
   --gradient-gold: linear-gradient(135deg, oklch(0.80 0.11 88), oklch(0.70 0.12 80));
   --shadow-elegant: 0 24px 70px -24px oklch(0.30 0.07 163 / 0.35);
   --shadow-soft: 0 10px 34px -14px oklch(0.30 0.07 163 / 0.18);
-  --patient-deep: #2A6F97;
-  --patient-blue: #61A5C2;
-  --patient-mist: #A9D6E5;
-  --patient-apricot: #F4A261;
-  --patient-canvas: #FAFBFC;
+  --patient-deep: oklch(0.38 0.065 175);
+  --patient-blue: oklch(0.49 0.07 240);
+  --patient-mist: oklch(0.92 0.012 200);
+  --patient-apricot: oklch(0.82 0.08 80);
+  --patient-canvas: oklch(0.985 0.002 240);
   --patient-ink: oklch(0.31 0.04 245);
   --shadow-patient: 0 18px 45px -24px color-mix(in oklab, var(--patient-deep) 45%, transparent);
 }
@@ -102,8 +102,7 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
-  h1, h2, h3, h4 { font-family: var(--font-serif); letter-spacing: -0.015em; line-height: 1.18; }
-  h1 { letter-spacing: -0.03em; }
+  h1, h2, h3, h4 { font-family: var(--font-sans); letter-spacing: 0; line-height: 1.3; }
   section > * { scroll-margin-top: 8rem; }
   ::selection { background: var(--gold); color: var(--gold-foreground); }
 }
@@ -115,7 +114,7 @@
   gap: 0.5rem;
   font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.16em;
+  letter-spacing: 0;
   text-transform: uppercase;
   color: var(--accent);
   &::before {
@@ -128,10 +127,10 @@
 }
 
 @utility bento-card {
-  border-radius: 1.25rem;
+  border-radius: 0.5rem;
   border: 1px solid var(--border);
   background: var(--card);
-  box-shadow: var(--shadow-soft);
+  box-shadow: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
   &:hover {
     border-color: color-mix(in oklab, var(--accent) 45%, transparent);
@@ -170,7 +169,8 @@
   .blog-content img { max-height: 18cm; object-fit: contain; }
 }
 
-html[data-site-language="ur"] { --font-localized: "Noto Naskh Arabic", system-ui, sans-serif; }
+html[data-site-language="en"] { --font-localized: "IBM Plex Sans", system-ui, sans-serif; }
+html[data-site-language="ar"], html[data-site-language="ur"] { --font-localized: "Noto Naskh Arabic", system-ui, sans-serif; }
 html[data-site-language="hi"] { --font-localized: "Noto Sans Devanagari", system-ui, sans-serif; }
 html[data-site-language="bn"] { --font-localized: "Noto Sans Bengali", system-ui, sans-serif; }
 html[data-site-language="tl"] { --font-localized: "IBM Plex Sans", system-ui, sans-serif; }
@@ -180,3 +180,29 @@ html[data-site-language]:not([data-site-language=""]) body :is(h1,h2,h3,h4,p,spa
   letter-spacing: 0;
 }
 html[data-site-language]:not([data-site-language=""]) :is(h1,h2,h3,h4) { line-height: 1.4; overflow-wrap: anywhere; }
+
+.site-page-content > :is(div,main) > header { display: none; }
+.site-page-content .patient-site > footer { display: none; }
+.organized-content > section { padding-block: 3rem; }
+.organized-content > section > .mx-auto { padding-block: 1rem; }
+.organized-content .font-serif { font-family: var(--font-sans); }
+.organized-content h2 { font-size: 2rem; }
+.organized-content :is(.mb-12,.mt-14) { margin-block: 2rem; }
+.organized-content :is(.bento-card,article) { box-shadow: none; }
+.organized-content .bento-card:hover { transform: none; }
+.site-page-content .patient-site :is(article,figure) { border-radius: 0.5rem; border-width: 1px; box-shadow: none; }
+.site-page-content .patient-site #urgent { border-radius: 0; border-width: 0; border-inline-start-width: 4px; box-shadow: none; }
+.site-page-content .patient-site main > section:first-child { padding-block: 2.5rem; }
+.site-page-content .patient-site main > section:first-child h1 { font-size: 2.5rem; }
+.site-page-content .patient-site main > section:first-child > div:last-child { border-radius: 0.5rem; border-width: 0; box-shadow: none; }
+.site-page-content .patient-site main > section[aria-label] { padding-block: 2rem; }
+.site-page-content .patient-site #operations { padding-block: 3rem; }
+@media (max-width: 767px) {
+  .home-introduction .home-portrait { max-width: 15rem; }
+  .home-introduction h1 { font-size: 2rem; }
+  .site-main-navigation { scroll-margin-top: 0; }
+  .organized-content h2 { font-size: 1.65rem; }
+  .organized-content .p-8 { padding: 1.25rem; }
+  .site-page-content .patient-site main > section:first-child h1 { font-size: 2rem; }
+}
+@media print { .site-main-navigation, body > footer { display: none !important; } }

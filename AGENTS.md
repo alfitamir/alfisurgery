@@ -3,3 +3,6 @@
 - Use /articles as an Outlet layout, its index as the searchable archive, and $articleId as full reading pages sharing local imported content; this preserves stable links and offline page caching without duplicating articles.
 - Share the article showcase between both homepages and use imported image asset pointers for blog media; this keeps previews consistent and removes dependence on WordPress image hosting.
 - Keep added site languages in bundled dictionaries behind a root language provider, preserving source text nodes and original URLs; this supports existing content, dynamic dialogs, and offline reading without duplicating medical articles.
+- Mount audience-based navigation and the footer in the root shell, and keep profile, research, teaching, updates, videos, and contact as dedicated destinations; this reduces homepage overload without losing source content.
+- Validate and retain the optional language search parameter in the root router; this makes all six language editions shareable across navigation.
+- Use native-language navigation dictionaries outside DOM translation; this keeps language identity and menu labels reliable during loading.

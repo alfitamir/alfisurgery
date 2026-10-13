@@ -7,11 +7,14 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  retainSearchParams,
   type ErrorComponentProps,
 } from "@tanstack/react-router";
 
 import { registerPatientAppServiceWorker } from "@/lib/pwa";
 import { SiteLanguageProvider } from "@/components/SiteLanguageProvider";
+import { SiteNavigation, SiteFooter } from "@/components/SiteNavigation";
+import { siteLanguages } from "@/lib/site-language";
 import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
@@ -72,6 +75,8 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
+  validateSearch: (search: Record<string, unknown>): { lang?: string } => ({ lang: typeof search.lang === "string" && siteLanguages.some((l) => l.code === search.lang) ? search.lang : undefined }),
+  search: { middlewares: [retainSearchParams(["lang"])] },
   head: () => ({
     meta: [
       { charSet: "utf-8" },
@@ -135,7 +140,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <SiteLanguageProvider><Outlet /></SiteLanguageProvider>
+      <SiteLanguageProvider><SiteNavigation /><div className="site-page-content"><Outlet /></div><SiteFooter /></SiteLanguageProvider>
     </QueryClientProvider>
   );
 }

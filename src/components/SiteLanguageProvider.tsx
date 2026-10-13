@@ -1,8 +1,10 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
-import { useRouterState } from "@tanstack/react-router";
+import { useRouterState, useNavigate } from "@tanstack/react-router";
 import { Globe, Share2 } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { normalizeText, siteLanguages, translatedText, type SiteLanguage, type TranslationDictionary } from "@/lib/site-language";
+import { navigationCopy } from "@/data/site-navigation";
+import { Button } from "@/components/ui/button";
 
 const LanguageContext = createContext({ language: "en" as SiteLanguage, dictionary: {} as TranslationDictionary });
 export const useSiteLanguage = () => useContext(LanguageContext);
@@ -16,6 +18,8 @@ const loaders = {
 
 export function SiteLanguageProvider({ children }: { children: React.ReactNode }) {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
+  const searchLanguage = useRouterState({ select: (state) => state.location.search.lang });
+  const navigate = useNavigate();
   const [language, setLanguage] = useState<SiteLanguage>("en");
   const [dictionary, setDictionary] = useState<TranslationDictionary>({});
   const [loading, setLoading] = useState(false);
@@ -34,15 +38,13 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
     const found = siteLanguages.find((item) => item.code === stored);
     setLanguage(found?.code ?? (pathname.startsWith("/ar") || pathname.startsWith("/articles") ? "ar" : "en"));
     setReady(true);
-  }, []);
+  }, [pathname, searchLanguage]);
 
-  // Keep the address bar shareable: translated languages carry ?lang=xx.
+  // Every language is explicit in the URL and retained by root search middleware.
   useEffect(() => {
     if (!ready) return;
-    const url = new URL(window.location.href);
-    if (translated) url.searchParams.set("lang", language); else url.searchParams.delete("lang");
-    if (url.href !== window.location.href) window.history.replaceState(window.history.state, "", url.href);
-  }, [ready, language, translated, pathname]);
+    if (searchLanguage !== language) void navigate({ search: (previous) => ({ ...previous, lang: language }), replace: true, resetScroll: false });
+  }, [ready, language, searchLanguage, navigate]);
 
   const [copied, setCopied] = useState(false);
   const shareLink = async () => {
@@ -72,9 +74,9 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
     const originalAttributes = new Map<Element, Map<string, string>>();
     const skip = "script,style,noscript,code,pre,[data-no-translate],input,textarea";
     const direction = chosen.dir;
-    document.documentElement.lang = translated ? language : (pathname.startsWith("/ar") || pathname.startsWith("/articles") ? "ar" : "en");
-    document.documentElement.dir = translated ? direction : (pathname.startsWith("/ar") || pathname.startsWith("/articles") ? "rtl" : "ltr");
-    document.documentElement.dataset.siteLanguage = translated ? language : "";
+    document.documentElement.lang = language;
+    document.documentElement.dir = direction;
+    document.documentElement.dataset.siteLanguage = language;
 
     const transform = () => {
       observer.disconnect();
@@ -129,24 +131,23 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
     if (found.code === "en" || found.code === "ar") {
       const pairs: Record<string, [string, string]> = { "/": ["/", "/ar"], "/ar": ["/", "/ar"], "/patients": ["/patients", "/ar/patients"], "/ar/patients": ["/patients", "/ar/patients"] };
       const pair = pairs[pathname.replace(/\/$/, "") || "/"];
-      if (pair) { window.location.assign(pair[found.code === "ar" ? 1 : 0]); return; }
+      if (pair) { window.location.assign(`${pair[found.code === "ar" ? 1 : 0]}?lang=${found.code}`); return; }
     }
     setLanguage(found.code);
+    void navigate({ search: (previous) => ({ ...previous, lang: found.code }), replace: true, resetScroll: false });
   };
   const notice = "Auto-translated text. Confirm medical instructions with your treating team. Videos and downloads remain in their original languages.";
 
   return <LanguageContext.Provider value={value}>
-    <div data-no-translate className="site-language-bar border-b border-border bg-card text-card-foreground" dir="ltr">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-2">
-        <span className="text-sm font-semibold">Alfi Surgery</span>
+    <div data-no-translate lang={language} className="site-language-bar border-b border-border bg-secondary text-secondary-foreground" dir={chosen.dir}>
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-2 md:px-8">
+        <span className="text-xs font-semibold">Alfi Surgery <span className="mx-2 text-muted-foreground">/</span>{navigationCopy[language].version}</span>
         <div className="flex items-center gap-2">
         <Select value={language} onValueChange={selectLanguage}>
           <SelectTrigger aria-label="Website language" className="w-40 bg-background"><Globe className="size-4 shrink-0" /><SelectValue /></SelectTrigger>
           <SelectContent className="z-[100]" data-no-translate>{siteLanguages.map((item) => <SelectItem key={item.code} value={item.code}><span lang={item.code} dir={item.dir}>{item.name}</span></SelectItem>)}</SelectContent>
         </Select>
-        <button type="button" onClick={shareLink} aria-label="Share this page in the selected language" className="inline-flex h-9 items-center gap-1.5 rounded-md border border-input bg-background px-3 text-sm font-medium hover:bg-accent">
-          <Share2 className="size-4" />{copied ? "Copied" : "Share"}
-        </button>
+        <Button variant="outline" size="sm" onClick={shareLink} aria-label={navigationCopy[language].share}><Share2 className="size-4" />{copied ? navigationCopy[language].copied : navigationCopy[language].share}</Button>
         </div>
         {translated && <p lang={language} dir={chosen.dir} role="status" className="w-full text-xs leading-relaxed text-muted-foreground">{loading ? "…" : failed ? "Translation unavailable. Please try another language." : dictionary[normalizeText(notice)] ?? notice}</p>}
       </div>
