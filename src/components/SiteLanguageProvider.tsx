@@ -5,6 +5,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { normalizeText, siteLanguages, translatedText, type SiteLanguage, type TranslationDictionary } from "@/lib/site-language";
 import { navigationCopy } from "@/data/site-navigation";
 import { Button } from "@/components/ui/button";
+import arabicUi from "@/data/locales/ar-ui.json";
 
 const LanguageContext = createContext({ language: "en" as SiteLanguage, dictionary: {} as TranslationDictionary });
 export const useSiteLanguage = () => useContext(LanguageContext);
@@ -63,7 +64,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
     if (!ready) return;
     let cancelled = false;
     setFailed(false);
-    if (language === "en" || language === "ar") { setDictionary({}); setLoading(false); return; }
+    if (language === "en" || language === "ar") { setDictionary(language === "ar" ? arabicUi : {}); setLoading(false); return; }
     setLoading(true);
     void loaders[language]().then((result) => {
       if (!cancelled) { setDictionary(result.default); setLoading(false); }
@@ -89,7 +90,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
         if (node instanceof Text && !node.parentElement?.closest(skip)) {
           const previous = originalText.get(node);
           const source = previous && node.data === previous.output ? previous.source : node.data;
-          const output = translated ? translatedText(source, dictionary) : source;
+          const output = translated || language === "ar" ? translatedText(source, dictionary) : source;
           originalText.set(node, { source, output });
           if (node.data !== output) node.data = output;
         }
@@ -105,7 +106,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
           if (!attributes.has(attribute)) attributes.set(attribute, value);
           const source = attributes.get(attribute) ?? value;
           const technicalText = /^[\s\d+().,–\-:/@\w]+$/.test(element.textContent ?? "") && /[\d@]/.test(element.textContent ?? "");
-          const output = !translated ? source : attribute === "dir" ? (technicalText ? "ltr" : direction) : attribute === "lang" ? language : translatedText(source, dictionary);
+          const output = !translated && language !== "ar" ? source : attribute === "dir" ? (technicalText ? "ltr" : direction) : attribute === "lang" ? language : translatedText(source, dictionary);
           if (value !== output) element.setAttribute(attribute, output);
         }
       });
@@ -144,16 +145,16 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
 
   return <LanguageContext.Provider value={value}>
     <div data-no-translate lang={language} className="site-language-bar border-b border-border bg-secondary text-secondary-foreground" dir={chosen.dir}>
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-2 md:px-8">
-        <span className="text-xs font-semibold">Alfi Surgery <span className="mx-2 text-muted-foreground">/</span>{navigationCopy[language].version}</span>
-        <div className="flex items-center gap-2">
+      <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-2 px-5 py-2 sm:flex sm:flex-wrap sm:justify-between md:px-8">
+        <span className="col-span-2 min-w-0 text-xs font-semibold sm:col-auto">Alfi Surgery <span className="mx-2 text-muted-foreground">/</span>{navigationCopy[language].version}</span>
+        <div className="col-span-2 flex min-w-0 items-center gap-2 sm:col-auto">
         <Select value={language} onValueChange={selectLanguage}>
           <SelectTrigger aria-label="Website language" className="w-40 bg-background"><Globe className="size-4 shrink-0" /><SelectValue /></SelectTrigger>
           <SelectContent className="z-[100]" data-no-translate>{siteLanguages.map((item) => <SelectItem key={item.code} value={item.code}><span lang={item.code} dir={item.dir}>{item.name}</span></SelectItem>)}</SelectContent>
         </Select>
         <Button variant="outline" size="sm" onClick={shareLink} aria-label={navigationCopy[language].share}><Share2 className="size-4" />{copied ? navigationCopy[language].copied : navigationCopy[language].share}</Button>
         </div>
-        {translated && <p lang={language} dir={chosen.dir} role="status" className="w-full text-xs leading-relaxed text-muted-foreground">{loading ? "…" : failed ? "Translation unavailable. Please try another language." : dictionary[normalizeText(notice)] ?? notice}</p>}
+        {translated && <p lang={language} dir={chosen.dir} role="status" className="col-span-2 min-w-0 w-full text-xs leading-relaxed text-muted-foreground">{loading ? "…" : failed ? "Translation unavailable. Please try another language." : dictionary[normalizeText(notice)] ?? notice}</p>}
       </div>
     </div>
     {children}

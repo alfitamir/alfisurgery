@@ -180,8 +180,9 @@ html[data-site-language]:not([data-site-language=""]) body :is(h1,h2,h3,h4,p,spa
   letter-spacing: 0;
 }
 html[data-site-language]:not([data-site-language=""]) :is(h1,h2,h3,h4) { line-height: 1.4; overflow-wrap: anywhere; }
+html[data-site-language] body .font-mono { font-family: var(--font-mono) !important; }
 
-.site-page-content > :is(div,main) > header { display: none; }
+.site-page-content > div.patient-site > header { display: none; }
 .site-page-content .patient-site > footer { display: none; }
 .organized-content > section { padding-block: 3rem; }
 .organized-content > section > img[aria-hidden="true"] { display: none; }
@@ -190,6 +191,14 @@ html[data-site-language]:not([data-site-language=""]) :is(h1,h2,h3,h4) { line-he
 .organized-content h2 { font-size: 2rem; }
 .organized-content :is(.mb-12,.mt-14) { margin-block: 2rem; }
 .organized-content :is(.bento-card,article) { box-shadow: none; }
+.organized-content .grid { grid-template-columns: minmax(0, 1fr); }
+.organized-content .grid > *, .organized-content .bento-card { min-width: 0; overflow-wrap: anywhere; }
+@media (min-width: 768px) {
+  .organized-content .grid.md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .organized-content .grid.md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .organized-content .grid.md\:grid-cols-12 { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) { .organized-content .grid.lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .organized-content .bento-card:hover { transform: none; }
 .site-page-content .patient-site :is(article,figure) { border-radius: 0.5rem; border-width: 1px; box-shadow: none; }
 .site-page-content .patient-site #urgent { border-radius: 0; border-width: 0; border-inline-start-width: 4px; box-shadow: none; }
@@ -198,6 +207,8 @@ html[data-site-language]:not([data-site-language=""]) :is(h1,h2,h3,h4) { line-he
 .site-page-content .patient-site main > section:first-child > div:last-child { border-radius: 0.5rem; border-width: 0; box-shadow: none; }
 .site-page-content .patient-site main > section[aria-label] { padding-block: 2rem; }
 .site-page-content .patient-site #operations { padding-block: 3rem; }
+.site-page-content [id] { scroll-margin-top: 6.5rem; }
+.site-main-navigation a { white-space: normal; height: auto; min-height: 2.5rem; }
 @media (max-width: 767px) {
   .home-introduction .home-portrait { max-width: 15rem; }
   .home-introduction h1 { font-size: 2rem; }
