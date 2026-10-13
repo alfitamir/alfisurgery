@@ -37,9 +37,9 @@ export function articleEdition(article: typeof blogArticles[number], language: S
     const boundary = article.content.indexOf('<p class="MsoNormal wp-block-paragraph"><strong>استئصال المرارة بالمنظار');
     if (boundary >= 0) return { ...article, language, title: language === "en" ? "Laparoscopic cholecystectomy: before and after surgery" : article.title, content: language === "en" ? article.content.slice(0, boundary) : article.content.slice(boundary) };
   }
-  return language === "ar" ? { ...article, language } : undefined;
-  }
   if (article.id === 228 && language !== "ar" && language !== "en") return { ...article, language, ...translatedArticleEditions[language] };
+  return language === "ar" ? { ...article, language } : undefined;
+}
 
 export function articlesForLanguage(language: SiteLanguage) {
   return blogArticles.flatMap((article) => {
