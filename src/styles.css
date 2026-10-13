@@ -191,6 +191,12 @@ html[data-site-language] body .font-mono { font-family: var(--font-mono) !import
 .organized-content h2 { font-size: 2rem; }
 .organized-content :is(.mb-12,.mt-14) { margin-block: 2rem; }
 .organized-content :is(.bento-card,article) { box-shadow: none; }
+.organized-content .grid { grid-template-columns: minmax(0, 1fr); }
+.organized-content .grid > *, .organized-content .bento-card { min-width: 0; overflow-wrap: anywhere; }
+@media (min-width: 768px) {
+  .organized-content .grid.md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .organized-content .grid.md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 .organized-content .bento-card:hover { transform: none; }
 .site-page-content .patient-site :is(article,figure) { border-radius: 0.5rem; border-width: 1px; box-shadow: none; }
 .site-page-content .patient-site #urgent { border-radius: 0; border-width: 0; border-inline-start-width: 4px; box-shadow: none; }
