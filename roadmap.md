@@ -13,4 +13,4 @@
 - [x] Reorganize the website into clear doctor, research, teaching, and patient destinations with shared navigation.
 - [x] Apply a calm professional design and explicit six-language identity while preserving complete content and shareable links.
 - [x] Verify navigation, patient search, language sharing, and layouts on desktop and phones.
-- [ ] Audit and fix navigation, language clarity, and layout regressions on mobile and desktop.
+- [x] Audit and fix navigation, language clarity, and layout regressions on mobile and desktop.
