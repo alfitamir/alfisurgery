@@ -14,3 +14,5 @@
 - [x] Apply a calm professional design and explicit six-language identity while preserving complete content and shareable links.
 - [x] Verify navigation, patient search, language sharing, and layouts on desktop and phones.
 - [x] Audit and fix navigation, language clarity, and layout regressions on mobile and desktop.
+- [ ] Filter articles and videos by the selected language and put Arabic first in the language menu.
+- [ ] Publish the navigation and language improvements after verification.
