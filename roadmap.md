@@ -15,4 +15,4 @@
 - [x] Verify navigation, patient search, language sharing, and layouts on desktop and phones.
 - [x] Audit and fix navigation, language clarity, and layout regressions on mobile and desktop.
 - [x] Filter articles and videos by the selected language and put Arabic first in the language menu.
-- [ ] Publish the navigation and language improvements after verification.
+- [x] Request publication of the verified navigation and language improvements.
