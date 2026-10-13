@@ -43,7 +43,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
   // Every language is explicit in the URL and retained by root search middleware.
   useEffect(() => {
     if (!ready) return;
-    if (searchLanguage !== language) void navigate({ search: (previous) => ({ ...previous, lang: language }), replace: true, resetScroll: false });
+    if (!searchLanguage) void navigate({ search: (previous) => ({ ...previous, lang: language }), replace: true, resetScroll: false });
   }, [ready, language, searchLanguage, navigate]);
 
   const [copied, setCopied] = useState(false);
