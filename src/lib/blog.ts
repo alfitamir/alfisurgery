@@ -4,6 +4,7 @@ import image1 from "@/assets/blog/image-1.jpg.asset.json";
 import image2 from "@/assets/blog/image-2.jpg.asset.json";
 import image3 from "@/assets/blog/image-3.gif.asset.json";
 import type { SiteLanguage } from "@/lib/site-language";
+import { translatedArticleEditions } from "@/data/translated-articles";
 
 const importedImages: Record<string, string> = {
   "https://tkmem.wordpress.com/wp-content/uploads/2019/01/download-6.jpg": image0.url,
@@ -37,7 +38,8 @@ export function articleEdition(article: typeof blogArticles[number], language: S
     if (boundary >= 0) return { ...article, language, title: language === "en" ? "Laparoscopic cholecystectomy: before and after surgery" : article.title, content: language === "en" ? article.content.slice(0, boundary) : article.content.slice(boundary) };
   }
   return language === "ar" ? { ...article, language } : undefined;
-}
+  }
+  if (article.id === 228 && language !== "ar" && language !== "en") return { ...article, language, ...translatedArticleEditions[language] };
 
 export function articlesForLanguage(language: SiteLanguage) {
   return blogArticles.flatMap((article) => {
