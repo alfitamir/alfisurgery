@@ -136,8 +136,9 @@ const copy = {
   },
 } as const;
 
-export function PatientEducationSite({ lang }: { lang: Language }) {
-  const { dictionary } = useSiteLanguage();
+export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }) {
+  const { dictionary, language } = useSiteLanguage();
+  const lang: Language = language === "ar" ? "ar" : language === "en" ? "en" : routeLanguage;
   const ar = lang === "ar";
   const t = copy[lang];
   const [query, setQuery] = useState("");
@@ -172,6 +173,7 @@ export function PatientEducationSite({ lang }: { lang: Language }) {
       </header>
 
       <main>
+        <nav aria-label={ar ? "أقسام دليل المريض" : "Patient guide sections"} className="mx-auto flex max-w-7xl flex-wrap items-center gap-2 border-b border-border px-5 py-3"><Button asChild variant="ghost" size="sm"><a href="#operations">{t.nav[0]}</a></Button><Button asChild variant="ghost" size="sm"><a href="#prepare">{t.nav[1]}</a></Button><Button asChild variant="ghost" size="sm"><a href="#recovery">{t.nav[2]}</a></Button><Button asChild variant="ghost" size="sm"><a href="#urgent">{t.nav[3]}</a></Button><InstallAppButton ar={ar} /></nav>
         <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-10 md:px-8 md:py-16 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="relative z-10">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-patient-mist bg-card px-4 py-2 text-xs font-semibold text-patient-deep">
@@ -267,6 +269,7 @@ export function PatientEducationSite({ lang }: { lang: Language }) {
           </div>
         </section>
       </main>
+      <nav aria-label={ar ? "أقسام دليل المريض" : "Patient guide sections"} className="mx-auto flex max-w-7xl flex-wrap items-center gap-3 border-t border-border px-5 py-5"><Button asChild variant="outline"><a href="#operations">{t.nav[0]}</a></Button><Button asChild variant="outline"><a href="#prepare">{t.nav[1]}</a></Button><Button asChild variant="outline"><a href="#recovery">{t.nav[2]}</a></Button><Button asChild variant="outline"><a href="#urgent">{t.nav[3]}</a></Button><InstallAppButton ar={ar} /></nav>
       <ArticlesSection ar={ar} />
       <VideosSection ar={ar} />
 

@@ -12,9 +12,15 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ArRouteImport } from './routes/ar'
 import { Route as ArticlesRouteImport } from './routes/articles'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as PatientsRouteImport } from './routes/patients'
+import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as PublicationsRouteImport } from './routes/publications'
+import { Route as ResearchRouteImport } from './routes/research'
+import { Route as TeachingRouteImport } from './routes/teaching'
+import { Route as UpdatesRouteImport } from './routes/updates'
+import { Route as VideosRouteImport } from './routes/videos'
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
 import { Route as ArIndexRouteImport } from './routes/ar.index'
@@ -41,6 +47,11 @@ const ArticlesRoute = ArticlesRouteImport.update({
   path: '/articles',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const McpRoute = McpRouteImport.update({
   id: '/mcp',
   path: '/mcp',
@@ -51,9 +62,34 @@ const PatientsRoute = PatientsRouteImport.update({
   path: '/patients',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProfileRoute = ProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PublicationsRoute = PublicationsRouteImport.update({
   id: '/publications',
   path: '/publications',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResearchRoute = ResearchRouteImport.update({
+  id: '/research',
+  path: '/research',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TeachingRoute = TeachingRouteImport.update({
+  id: '/teaching',
+  path: '/teaching',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UpdatesRoute = UpdatesRouteImport.update({
+  id: '/updates',
+  path: '/updates',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VideosRoute = VideosRouteImport.update({
+  id: '/videos',
+  path: '/videos',
   getParentRoute: () => rootRouteImport,
 } as any)
 const Char91DotmcpChar93ListToolsRoute =
@@ -116,9 +152,15 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/ar': typeof ArRouteWithChildren
   '/articles': typeof ArticlesRouteWithChildren
+  '/contact': typeof ContactRoute
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
+  '/profile': typeof ProfileRoute
   '/publications': typeof PublicationsRoute
+  '/research': typeof ResearchRoute
+  '/teaching': typeof TeachingRoute
+  '/updates': typeof UpdatesRoute
+  '/videos': typeof VideosRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
@@ -132,9 +174,15 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
+  '/profile': typeof ProfileRoute
   '/publications': typeof PublicationsRoute
+  '/research': typeof ResearchRoute
+  '/teaching': typeof TeachingRoute
+  '/updates': typeof UpdatesRoute
+  '/videos': typeof VideosRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
@@ -151,9 +199,15 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/ar': typeof ArRouteWithChildren
   '/articles': typeof ArticlesRouteWithChildren
+  '/contact': typeof ContactRoute
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
+  '/profile': typeof ProfileRoute
   '/publications': typeof PublicationsRoute
+  '/research': typeof ResearchRoute
+  '/teaching': typeof TeachingRoute
+  '/updates': typeof UpdatesRoute
+  '/videos': typeof VideosRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
@@ -171,9 +225,15 @@ export interface FileRouteTypes {
     | '/'
     | '/ar'
     | '/articles'
+    | '/contact'
     | '/mcp'
     | '/patients'
+    | '/profile'
     | '/publications'
+    | '/research'
+    | '/teaching'
+    | '/updates'
+    | '/videos'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/ar/medical-questions'
@@ -187,9 +247,15 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/contact'
     | '/mcp'
     | '/patients'
+    | '/profile'
     | '/publications'
+    | '/research'
+    | '/teaching'
+    | '/updates'
+    | '/videos'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/ar/medical-questions'
@@ -205,9 +271,15 @@ export interface FileRouteTypes {
     | '/'
     | '/ar'
     | '/articles'
+    | '/contact'
     | '/mcp'
     | '/patients'
+    | '/profile'
     | '/publications'
+    | '/research'
+    | '/teaching'
+    | '/updates'
+    | '/videos'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/ar/medical-questions'
@@ -224,9 +296,15 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ArRoute: typeof ArRouteWithChildren
   ArticlesRoute: typeof ArticlesRouteWithChildren
+  ContactRoute: typeof ContactRoute
   McpRoute: typeof McpRoute
   PatientsRoute: typeof PatientsRoute
+  ProfileRoute: typeof ProfileRoute
   PublicationsRoute: typeof PublicationsRoute
+  ResearchRoute: typeof ResearchRoute
+  TeachingRoute: typeof TeachingRoute
+  UpdatesRoute: typeof UpdatesRoute
+  VideosRoute: typeof VideosRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   PatientEducationHidradenitisSuppurativaRoute: typeof PatientEducationHidradenitisSuppurativaRoute
@@ -257,6 +335,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArticlesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/mcp': {
       id: '/mcp'
       path: '/mcp'
@@ -271,11 +356,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PatientsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/profile': {
+      id: '/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof ProfileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/publications': {
       id: '/publications'
       path: '/publications'
       fullPath: '/publications'
       preLoaderRoute: typeof PublicationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/research': {
+      id: '/research'
+      path: '/research'
+      fullPath: '/research'
+      preLoaderRoute: typeof ResearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/teaching': {
+      id: '/teaching'
+      path: '/teaching'
+      fullPath: '/teaching'
+      preLoaderRoute: typeof TeachingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/updates': {
+      id: '/updates'
+      path: '/updates'
+      fullPath: '/updates'
+      preLoaderRoute: typeof UpdatesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/videos': {
+      id: '/videos'
+      path: '/videos'
+      fullPath: '/videos'
+      preLoaderRoute: typeof VideosRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.mcp/list-tools': {
@@ -383,9 +503,15 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ArRoute: ArRouteWithChildren,
   ArticlesRoute: ArticlesRouteWithChildren,
+  ContactRoute: ContactRoute,
   McpRoute: McpRoute,
   PatientsRoute: PatientsRoute,
+  ProfileRoute: ProfileRoute,
   PublicationsRoute: PublicationsRoute,
+  ResearchRoute: ResearchRoute,
+  TeachingRoute: TeachingRoute,
+  UpdatesRoute: UpdatesRoute,
+  VideosRoute: VideosRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,

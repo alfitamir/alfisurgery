@@ -3,8 +3,10 @@ import { ArrowLeft, ArrowRight, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { articlePreviews } from "@/lib/blog";
 import articleIllustration from "@/assets/sleeve-plateau-habits.jpg";
+import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 
 export function ArticlesSection({ ar = false }: { ar?: boolean }) {
+  const { language } = useSiteLanguage();
   const Arrow = ar ? ArrowLeft : ArrowRight;
   const featured = [228, 198, 88].flatMap((id) => articlePreviews.filter((a) => a.id === id));
   return (
@@ -20,7 +22,7 @@ export function ArticlesSection({ ar = false }: { ar?: boolean }) {
         </div>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
           {featured.map((article, index) => (
-            <article key={article.id} dir="rtl" lang="ar" className="flex flex-col overflow-hidden rounded-lg border border-border bg-card">
+            <article key={article.id} dir={language === "en" || ar ? "rtl" : undefined} lang={language === "en" || ar ? "ar" : undefined} className="flex flex-col overflow-hidden rounded-lg border border-border bg-card">
               {index === 1 ? <img src={articleIllustration} alt="عادات التغذية والحركة بعد التكميم" loading="lazy" className="h-40 w-full object-cover" width={1536} height={1024} /> : <div className="flex h-40 items-center justify-between gap-4 bg-secondary px-6 text-accent"><BookOpen className="size-12" strokeWidth={1.2} /><span className="max-w-40 text-xl font-semibold">{article.category}</span></div>}
               <div className="flex flex-1 flex-col p-5">
                 <p className="text-xs font-semibold text-accent">{article.category}</p>
