@@ -19,7 +19,7 @@ const loaders = {
 export function SiteLanguageProvider({ children }: { children: React.ReactNode }) {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
   const searchLanguage = useRouterState({ select: (state) => state.location.search.lang });
-  const navigate = useNavigate({ from: "/" });
+  const navigate = useNavigate();
   const [language, setLanguage] = useState<SiteLanguage>("en");
   const [dictionary, setDictionary] = useState<TranslationDictionary>({});
   const [loading, setLoading] = useState(false);
@@ -43,7 +43,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
   // Every language is explicit in the URL and retained by root search middleware.
   useEffect(() => {
     if (!ready) return;
-    if (!searchLanguage) void navigate({ search: (previous) => ({ ...previous, lang: language }), replace: true, resetScroll: false });
+    if (!searchLanguage) void navigate({ to: ".", search: (previous) => ({ ...previous, lang: language }), replace: true, resetScroll: false });
   }, [ready, language, searchLanguage, navigate]);
 
   const [copied, setCopied] = useState(false);
@@ -134,7 +134,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
       if (pair) { window.location.assign(`${pair[found.code === "ar" ? 1 : 0]}?lang=${found.code}`); return; }
     }
     setLanguage(found.code);
-    void navigate({ search: (previous) => ({ ...previous, lang: found.code }), replace: true, resetScroll: false });
+    void navigate({ to: ".", search: (previous) => ({ ...previous, lang: found.code }), replace: true, resetScroll: false });
   };
   const notice = "Auto-translated text. Confirm medical instructions with your treating team. Videos and downloads remain in their original languages.";
 
