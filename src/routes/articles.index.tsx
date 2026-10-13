@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { ArrowLeft, ArrowRight, BookOpen, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { articlePreviews, articleText } from "@/lib/blog";
+import { articlesForLanguage, articleText } from "@/lib/blog";
 import illustration from "@/assets/sleeve-plateau-habits.jpg";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { languageContentCopy, translatedSearchText } from "@/lib/site-language";
@@ -25,10 +25,11 @@ function ArticlesPage() {
   const { language, dictionary } = useSiteLanguage();
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("الكل");
-  const filtered = useMemo(() => articlePreviews.filter((a) =>
-    a.language === language && (category === "الكل" || a.category === category) && normalize(`${a.title} ${articleText(a.content)} ${translatedSearchText(a.title, dictionary)} ${Object.keys(dictionary).filter((key) => articleText(a.content).includes(key)).map((key) => dictionary[key]).join(" ")}`).includes(normalize(query.trim()))
+  const available = useMemo(() => articlesForLanguage(language), [language]);
+  const filtered = useMemo(() => available.filter((a) =>
+    (category === "الكل" || a.category === category) && normalize(`${a.title} ${articleText(a.content)} ${translatedSearchText(a.title, dictionary)} ${Object.keys(dictionary).filter((key) => articleText(a.content).includes(key)).map((key) => dictionary[key]).join(" ")}`).includes(normalize(query.trim()))
   ), [query, category, dictionary, language]);
-  if (!articlePreviews.some((article) => article.language === language)) return <main data-no-translate lang={language} className="mx-auto min-h-[50vh] max-w-6xl px-5 py-12"><h1 className="text-3xl font-bold">{languageContentCopy[language].articles}</h1><p role="status" className="mt-6 text-muted-foreground">{languageContentCopy[language].noArticles}</p></main>;
+  if (language !== "ar") return <main data-no-translate lang={language} className="mx-auto min-h-[50vh] max-w-6xl px-5 py-12"><h1 className="text-3xl font-bold">{languageContentCopy[language].articles}</h1>{!available.length ? <p role="status" className="mt-6 text-muted-foreground">{languageContentCopy[language].noArticles}</p> : <><div className="relative mt-6 max-w-3xl"><Search className="absolute start-4 top-1/2 size-5 -translate-y-1/2 text-primary" /><input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search articles…" aria-label="Search articles" className="h-12 w-full rounded-lg border border-border bg-card pe-4 ps-12 focus-visible:ring-2 focus-visible:ring-ring" /></div><p aria-live="polite" className="mt-5 text-sm text-muted-foreground">{filtered.length} articles</p><div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">{filtered.map((a) => <article key={a.id} className="rounded-lg border border-border bg-card p-5"><p className="text-xs font-semibold text-primary">Gallbladder surgery</p><h2 className="mt-3 text-xl font-bold"><Link to="/articles/$articleId" params={{ articleId: String(a.id) }}>{a.title}</Link></h2><p className="mt-4 line-clamp-3 text-sm leading-loose text-muted-foreground">{a.excerpt}…</p><Button asChild variant="link" className="mt-5 px-0"><Link to="/articles/$articleId" params={{ articleId: String(a.id) }}>Read full article<ArrowRight /></Link></Button></article>)}</div>{!filtered.length && <p className="py-12 text-muted-foreground">No articles matched your search.</p>}</>}</main>;
   return (
     <div dir="rtl" lang="ar" className="patient-site min-h-screen bg-patient-canvas text-patient-ink">
       <header className="border-b border-patient-mist bg-card">
@@ -42,7 +43,7 @@ function ArticlesPage() {
           <div className="mx-auto max-w-6xl px-5 py-10 md:py-14">
             <p className="flex items-center gap-2 text-sm font-semibold text-patient-deep"><BookOpen className="size-5" />من مدونة د. تامر الألفي</p>
             <h1 className="mt-4 text-3xl font-bold leading-relaxed text-patient-deep md:text-5xl">مقالات طبية مبسطة</h1>
-            <p className="mt-4 max-w-2xl text-lg leading-loose">{articlePreviews.length} مقالًا عن الجراحة والتكميم والتغذية والتعافي.</p>
+            <p className="mt-4 max-w-2xl text-lg leading-loose">{available.length} مقالًا عن الجراحة والتكميم والتغذية والتعافي.</p>
           </div>
         </section>
         <section className="mx-auto max-w-6xl px-5 py-8 md:py-12" aria-label="مكتبة المقالات">

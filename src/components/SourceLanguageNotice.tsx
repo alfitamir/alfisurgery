@@ -14,7 +14,7 @@ const originalArabic = {
 export function SourceLanguageNotice() {
   const { language } = useSiteLanguage();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const sourceArabic = pathname.startsWith("/articles/") || pathname === "/ar/medical-questions" || pathname === "/patient-education/weight-plateau-after-sleeve";
+  const sourceArabic = (pathname.startsWith("/articles/") && pathname !== "/articles/228") || pathname === "/ar/medical-questions" || pathname === "/patient-education/weight-plateau-after-sleeve";
   if (!sourceArabic || language !== "en") return null;
   return <aside data-no-translate lang={language} className="border-b border-border bg-secondary"><div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-3"><p className="min-w-0 text-sm text-muted-foreground">{originalArabic[language]}</p><Button asChild variant="outline" size="sm"><Link to="/patients" search={(previous) => ({ ...previous, lang: language })}>{navigationCopy[language].patients}</Link></Button></div></aside>;
 }

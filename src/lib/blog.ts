@@ -3,6 +3,7 @@ import image0 from "@/assets/blog/image-0.jpg.asset.json";
 import image1 from "@/assets/blog/image-1.jpg.asset.json";
 import image2 from "@/assets/blog/image-2.jpg.asset.json";
 import image3 from "@/assets/blog/image-3.gif.asset.json";
+import type { SiteLanguage } from "@/lib/site-language";
 
 const importedImages: Record<string, string> = {
   "https://tkmem.wordpress.com/wp-content/uploads/2019/01/download-6.jpg": image0.url,
@@ -30,9 +31,19 @@ export function articleCategory(title: string) {
   return "التكميم والمتابعة";
 }
 
-export const articlePreviews = blogArticles.map((article) => ({
-  ...article,
-  language: "ar" as const,
-  excerpt: articleText(article.content).slice(0, 160),
-  category: articleCategory(article.title),
-}));
+export function articleEdition(article: typeof blogArticles[number], language: SiteLanguage) {
+  if (article.id === 228 && (language === "ar" || language === "en")) {
+    const boundary = article.content.indexOf('<p class="MsoNormal wp-block-paragraph"><strong>استئصال المرارة بالمنظار');
+    if (boundary >= 0) return { ...article, language, title: language === "en" ? "Laparoscopic cholecystectomy: before and after surgery" : article.title, content: language === "en" ? article.content.slice(0, boundary) : article.content.slice(boundary) };
+  }
+  return language === "ar" ? { ...article, language } : undefined;
+}
+
+export function articlesForLanguage(language: SiteLanguage) {
+  return blogArticles.flatMap((article) => {
+    const edition = articleEdition(article, language);
+    return edition ? [{ ...edition, excerpt: articleText(edition.content).slice(0, 160), category: articleCategory(article.title) }] : [];
+  });
+}
+
+export const articlePreviews = articlesForLanguage("ar");
