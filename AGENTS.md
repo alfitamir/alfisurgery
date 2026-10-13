@@ -7,3 +7,4 @@
 - Validate and retain the optional language search parameter in the root router; this makes all six language editions shareable across navigation.
 - Use native-language navigation dictionaries outside DOM translation; this keeps language identity and menu labels reliable during loading.
 - Keep original-language reading clearly labelled when its language differs from the selected interface, and scope legacy-header hiding to patient-site wrappers; this prevents misleading language identity and hidden content headings.
+- Filter article and video listings by explicit source-language metadata, not translated titles; retain direct reading URLs so existing links and offline pages remain accessible.

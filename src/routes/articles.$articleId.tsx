@@ -2,7 +2,8 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, ExternalLink, Printer, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { blogArticles } from "@/data/blog-articles";
-import { articleBody, articleCategory, articleText } from "@/lib/blog";
+import { articleBody, articleCategory, articleText, articleEdition, articlesForLanguage } from "@/lib/blog";
+import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 
 export const Route = createFileRoute("/articles/$articleId")({
   loader: ({ params }) => {
@@ -29,8 +30,11 @@ function ArticleNotFound() {
 }
 
 function FullArticlePage() {
-  const { article } = Route.useLoaderData();
-  const related = blogArticles.filter((a) => a.id !== article.id && articleCategory(a.title) === articleCategory(article.title)).slice(0, 3);
+  const { article: source } = Route.useLoaderData();
+  const { language } = useSiteLanguage();
+  const article = articleEdition(source, language) ?? articleEdition(source, "ar") ?? source;
+  const related = articlesForLanguage(language).filter((a) => a.id !== article.id && a.category === articleCategory(source.title)).slice(0, 3);
+  if (language === "en" && source.id === 228) return <main data-no-translate lang="en" dir="ltr" className="mx-auto max-w-3xl px-5 py-10 md:py-14"><article><p className="text-sm font-semibold text-primary">Gallbladder surgery</p><h1 className="mt-4 text-3xl font-bold leading-relaxed md:text-4xl">{article.title}</h1><div className="mt-5 flex flex-wrap items-center justify-between gap-4 border-b border-border pb-6 text-sm text-muted-foreground"><span>Dr. Tamer Elalfy · <time dateTime={article.date}>{new Date(article.date).toLocaleDateString("en-GB", {year:"numeric",month:"long",day:"numeric",timeZone:"UTC"})}</time></span><Button variant="outline" size="sm" onClick={() => window.print()} className="article-no-print"><Printer />Print article</Button></div><aside className="my-6 border-s-4 border-primary bg-secondary p-4 text-sm leading-loose">This archived article is for general education, not personal treatment. Recommendations may change. Follow your treating team's instructions; do not start or stop medicines, diets or fasting based on this article. Seek urgent assessment for chest pain, breathlessness, worsening severe pain or persistent vomiting.</aside><div className="blog-content break-words text-lg leading-loose" dangerouslySetInnerHTML={{ __html: articleBody(article.content) }} /></article><Button asChild variant="outline" className="article-no-print mt-8"><Link to="/articles">All articles<ArrowRight /></Link></Button></main>;
   return (
     <div dir="rtl" lang="ar" className="patient-site min-h-screen bg-patient-canvas text-patient-ink">
       <header className="article-no-print border-b border-patient-mist bg-card">
@@ -56,11 +60,11 @@ function FullArticlePage() {
             <a href={article.source} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-patient-deep hover:underline">المقال الأصلي على ووردبريس<ExternalLink className="size-4" /></a>
           </div>
         </article>
-        <section className="article-no-print mt-12 border-t border-patient-mist pt-8">
+        {related.length > 0 && <section className="article-no-print mt-12 border-t border-patient-mist pt-8">
           <h2 className="text-2xl font-bold text-patient-deep">مقالات ذات صلة</h2>
           <ul className="mt-4 divide-y divide-patient-mist">{related.map((a) => <li key={a.id} className="py-4"><Link to="/articles/$articleId" params={{ articleId: String(a.id) }} className="font-semibold leading-loose text-patient-deep hover:underline">{a.title}</Link></li>)}</ul>
           <Button asChild variant="outline" className="mt-6"><Link to="/ar/patients">دليل المرضى<ArrowRight /></Link></Button>
-        </section>
+        </section>}
       </main>
     </div>
   );

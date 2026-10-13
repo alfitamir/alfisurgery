@@ -211,7 +211,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
 
         <section id="operations" className="border-y border-patient-mist bg-card py-20">
           <div className="mx-auto max-w-7xl px-4 md:px-8">
-            <div className="mb-14 grid items-center gap-6 border-b border-patient-mist pb-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
+            {language === "ar" && <div className="mb-14 grid items-center gap-6 border-b border-patient-mist pb-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
               <img src={plateauIllustration} alt={ar ? "مريضة تتحدث مع اختصاصية التغذية بعد جراحة التكميم" : "A patient talking with a dietitian after sleeve surgery"} loading="lazy" width={1408} height={912} className="aspect-[16/9] w-full rounded-md object-cover" />
               <div>
                 <p className="text-sm font-bold text-patient-blue">{ar ? "مقال مهم · بعد عملية التكميم" : "Important · After sleeve surgery"}</p>
@@ -219,7 +219,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
                 <p className="mt-3 leading-relaxed text-patient-ink/75">{ar ? "خطوات آمنة لمراجعة التغذية والنشاط، ومتى تطلب المشورة الطبية." : "Practical steps for nutrition, activity and knowing when to seek advice. Article in Arabic."}</p>
                 <Button asChild className="mt-5 bg-patient-deep text-primary-foreground hover:bg-patient-blue"><Link to="/patient-education/weight-plateau-after-sleeve">{ar ? "اقرأ المقال" : "Read article"}<Arrow /></Link></Button>
               </div>
-            </div>
+            </div>}
             <div className="mx-auto max-w-3xl text-center">
               <div className="text-xs font-bold uppercase text-patient-blue">{t.browseLabel}</div>
               <h2 className="mt-3 text-4xl text-patient-deep md:text-5xl">{t.browseTitle}</h2>
@@ -258,7 +258,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
                         <Button asChild size="sm" className="rounded-full bg-patient-deep text-primary-foreground"><a href={item.pdfUrl} download={item.pdfName}><Download />{t.print}</a></Button>
                         <Button asChild size="sm" variant="outline" className="rounded-full border-patient-mist"><a href={item.fileUrl} download={item.fileName}><FileText />{t.edit}</a></Button>
                         {item.checklistPdfUrl && <Button asChild size="sm" variant="secondary" className="rounded-full"><a href={item.checklistPdfUrl} download={item.checklistPdfName}><ClipboardCheck />{t.checklist}</a></Button>}
-                        {item.articleRoute && <Button asChild size="sm" variant="link"><Link to={item.articleRoute}>{t.article}<Arrow /></Link></Button>}
+                        {language === "ar" && item.articleRoute && <Button asChild size="sm" variant="link"><Link to={item.articleRoute}>{t.article}<Arrow /></Link></Button>}
                       </div>
                       <div className="mt-3 text-xs text-patient-ink/50">PDF · {formatSize(item.pdfSize)}</div>
                     </div>

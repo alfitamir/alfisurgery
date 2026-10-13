@@ -1,6 +1,6 @@
 export const siteLanguages = [
-  { code: "en", name: "English", dir: "ltr" },
   { code: "ar", name: "العربية", dir: "rtl" },
+  { code: "en", name: "English", dir: "ltr" },
   { code: "ur", name: "اردو", dir: "rtl" },
   { code: "hi", name: "हिन्दी", dir: "ltr" },
   { code: "bn", name: "বাংলা", dir: "ltr" },
@@ -9,6 +9,14 @@ export const siteLanguages = [
 
 export type SiteLanguage = typeof siteLanguages[number]["code"];
 export type TranslationDictionary = Record<string, string>;
+export const languageContentCopy: Record<SiteLanguage, { articles: string; noArticles: string; noVideos: string }> = {
+  ar: { articles: "مقالات طبية مبسطة", noArticles: "لا توجد مقالات باللغة العربية حاليًا.", noVideos: "لا توجد فيديوهات باللغة العربية حاليًا." },
+  en: { articles: "Medical articles", noArticles: "No articles written in English are available yet.", noVideos: "No videos in English are available yet." },
+  ur: { articles: "طبی مضامین", noArticles: "فی الحال اردو میں لکھے گئے مضامین دستیاب نہیں ہیں۔", noVideos: "فی الحال اردو زبان میں ویڈیوز دستیاب نہیں ہیں۔" },
+  hi: { articles: "चिकित्सा लेख", noArticles: "अभी हिन्दी में लिखे गए लेख उपलब्ध नहीं हैं।", noVideos: "अभी हिन्दी भाषा में वीडियो उपलब्ध नहीं हैं।" },
+  bn: { articles: "চিকিৎসা বিষয়ক নিবন্ধ", noArticles: "এখনও বাংলায় লেখা নিবন্ধ পাওয়া যায়নি।", noVideos: "এখনও বাংলা ভাষায় ভিডিও পাওয়া যায়নি।" },
+  tl: { articles: "Mga artikulong medikal", noArticles: "Wala pang mga artikulong nakasulat sa Filipino.", noVideos: "Wala pang mga video sa Filipino." },
+};
 export const normalizeText = (text: string) => text.replace(/\s+/g, " ").trim();
 const translationCache = new WeakMap<TranslationDictionary, Map<string, string>>();
 
