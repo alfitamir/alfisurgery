@@ -43,7 +43,11 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
   // Every language is explicit in the URL and retained by root search middleware.
   useEffect(() => {
     if (!ready) return;
-    if (!searchLanguage) void navigate({ to: ".", search: (previous) => ({ ...previous, lang: language }), replace: true, resetScroll: false });
+    if (!searchLanguage) {
+      const url = new URL(window.location.href);
+      url.searchParams.set("lang", language);
+      window.history.replaceState(window.history.state, "", url.href);
+    }
   }, [ready, language, searchLanguage, navigate]);
 
   const [copied, setCopied] = useState(false);
@@ -133,8 +137,9 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
       const pair = pairs[pathname.replace(/\/$/, "") || "/"];
       if (pair) { window.location.assign(`${pair[found.code === "ar" ? 1 : 0]}?lang=${found.code}`); return; }
     }
-    setLanguage(found.code);
-    void navigate({ to: ".", search: (previous) => ({ ...previous, lang: found.code }), replace: true, resetScroll: false });
+    const url = new URL(window.location.href);
+    url.searchParams.set("lang", found.code);
+    window.location.assign(url.href);
   };
   const notice = "Auto-translated text. Confirm medical instructions with your treating team. Videos and downloads remain in their original languages.";
 
