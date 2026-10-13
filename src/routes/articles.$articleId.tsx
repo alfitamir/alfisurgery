@@ -45,7 +45,7 @@ function FullArticlePage() {
       </header>
       <main className="mx-auto max-w-3xl px-5 py-10 md:py-14">
         <article>
-          <p className="text-sm font-semibold text-patient-deep">{articleCategory(article.title)}</p>
+          <p className="text-sm font-semibold text-patient-deep">{articleCategory(source.title)}</p>
           <h1 className="mt-4 break-words text-3xl font-bold leading-relaxed text-patient-deep md:text-4xl">{article.title}</h1>
           <div className="mt-5 flex flex-wrap items-center justify-between gap-4 border-b border-patient-mist pb-6 text-sm text-patient-ink/70">
             <span>د. تامر الألفي · <time dateTime={article.date}>{new Date(article.date).toLocaleDateString("ar-EG", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })}</time></span>
