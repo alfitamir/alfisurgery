@@ -9,7 +9,7 @@ export const siteLanguages = [
 
 export type SiteLanguage = typeof siteLanguages[number]["code"];
 // The video library is Arabic only, so these editions temporarily hide the videos destination.
-const languagesWithoutVideos = new Set<SiteLanguage>(["ur", "hi", "bn", "tl"]);
+const languagesWithoutVideos = new Set<SiteLanguage>(["en", "ur", "hi", "bn", "tl"]);
 export const showsVideos = (language: SiteLanguage) => !languagesWithoutVideos.has(language);
 export type TranslationDictionary = Record<string, string>;
 export const languageContentCopy: Record<SiteLanguage, { articles: string; noArticles: string; noVideos: string }> = {
