@@ -180,6 +180,7 @@ html[data-site-language]:not([data-site-language=""]) body :is(h1,h2,h3,h4,p,spa
   letter-spacing: 0;
 }
 html[data-site-language]:not([data-site-language=""]) :is(h1,h2,h3,h4) { line-height: 1.4; overflow-wrap: anywhere; }
+html[data-site-language] body .font-mono { font-family: var(--font-mono) !important; }
 
 .site-page-content > div.patient-site > header { display: none; }
 .site-page-content .patient-site > footer { display: none; }

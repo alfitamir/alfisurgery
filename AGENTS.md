@@ -6,3 +6,4 @@
 - Mount audience-based navigation and the footer in the root shell, and keep profile, research, teaching, updates, videos, and contact as dedicated destinations; this reduces homepage overload without losing source content.
 - Validate and retain the optional language search parameter in the root router; this makes all six language editions shareable across navigation.
 - Use native-language navigation dictionaries outside DOM translation; this keeps language identity and menu labels reliable during loading.
+- Keep original-language reading clearly labelled when its language differs from the selected interface, and scope legacy-header hiding to patient-site wrappers; this prevents misleading language identity and hidden content headings.

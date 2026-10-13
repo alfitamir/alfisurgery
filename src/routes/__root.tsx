@@ -15,6 +15,7 @@ import { registerPatientAppServiceWorker } from "@/lib/pwa";
 import { SiteLanguageProvider } from "@/components/SiteLanguageProvider";
 import { SiteNavigation, SiteFooter } from "@/components/SiteNavigation";
 import { siteLanguages } from "@/lib/site-language";
+import { SourceLanguageNotice } from "@/components/SourceLanguageNotice";
 import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
@@ -140,7 +141,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <SiteLanguageProvider><SiteNavigation /><div className="site-page-content"><Outlet /></div><SiteFooter /></SiteLanguageProvider>
+      <SiteLanguageProvider><SiteNavigation /><SourceLanguageNotice /><div className="site-page-content"><Outlet /></div><SiteFooter /></SiteLanguageProvider>
     </QueryClientProvider>
   );
 }

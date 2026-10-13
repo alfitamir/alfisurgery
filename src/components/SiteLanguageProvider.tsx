@@ -5,6 +5,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { normalizeText, siteLanguages, translatedText, type SiteLanguage, type TranslationDictionary } from "@/lib/site-language";
 import { navigationCopy } from "@/data/site-navigation";
 import { Button } from "@/components/ui/button";
+import arabicUi from "@/data/locales/ar-ui.json";
 
 const LanguageContext = createContext({ language: "en" as SiteLanguage, dictionary: {} as TranslationDictionary });
 export const useSiteLanguage = () => useContext(LanguageContext);
@@ -63,7 +64,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
     if (!ready) return;
     let cancelled = false;
     setFailed(false);
-    if (language === "en" || language === "ar") { setDictionary({}); setLoading(false); return; }
+    if (language === "en" || language === "ar") { setDictionary(language === "ar" ? arabicUi : {}); setLoading(false); return; }
     setLoading(true);
     void loaders[language]().then((result) => {
       if (!cancelled) { setDictionary(result.default); setLoading(false); }
@@ -89,7 +90,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
         if (node instanceof Text && !node.parentElement?.closest(skip)) {
           const previous = originalText.get(node);
           const source = previous && node.data === previous.output ? previous.source : node.data;
-          const output = translated ? translatedText(source, dictionary) : source;
+          const output = translated || language === "ar" ? translatedText(source, dictionary) : source;
           originalText.set(node, { source, output });
           if (node.data !== output) node.data = output;
         }
@@ -105,7 +106,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
           if (!attributes.has(attribute)) attributes.set(attribute, value);
           const source = attributes.get(attribute) ?? value;
           const technicalText = /^[\s\d+().,–\-:/@\w]+$/.test(element.textContent ?? "") && /[\d@]/.test(element.textContent ?? "");
-          const output = !translated ? source : attribute === "dir" ? (technicalText ? "ltr" : direction) : attribute === "lang" ? language : translatedText(source, dictionary);
+          const output = !translated && language !== "ar" ? source : attribute === "dir" ? (technicalText ? "ltr" : direction) : attribute === "lang" ? language : translatedText(source, dictionary);
           if (value !== output) element.setAttribute(attribute, output);
         }
       });
