@@ -1,0 +1,129 @@
+import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { useRouterState } from "@tanstack/react-router";
+import { Globe } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { normalizeText, siteLanguages, translatedText, type SiteLanguage, type TranslationDictionary } from "@/lib/site-language";
+
+const LanguageContext = createContext({ language: "en" as SiteLanguage, dictionary: {} as TranslationDictionary });
+export const useSiteLanguage = () => useContext(LanguageContext);
+const storageKey = "alfi-site-language";
+const loaders = {
+  ur: () => import("@/data/locales/ur.json"),
+  hi: () => import("@/data/locales/hi.json"),
+  bn: () => import("@/data/locales/bn.json"),
+  tl: () => import("@/data/locales/tl.json"),
+};
+
+export function SiteLanguageProvider({ children }: { children: React.ReactNode }) {
+  const pathname = useRouterState({ select: (state) => state.location.pathname });
+  const [language, setLanguage] = useState<SiteLanguage>("en");
+  const [dictionary, setDictionary] = useState<TranslationDictionary>({});
+  const [loading, setLoading] = useState(false);
+  const [failed, setFailed] = useState(false);
+  const [ready, setReady] = useState(false);
+  const translated = language !== "en" && language !== "ar";
+  const chosen = siteLanguages.find((item) => item.code === language) ?? siteLanguages[0];
+
+  useEffect(() => {
+    let stored: string | null = null;
+    try { stored = localStorage.getItem(storageKey); } catch { /* private browsing */ }
+    const found = siteLanguages.find((item) => item.code === stored);
+    setLanguage(found?.code ?? (pathname.startsWith("/ar") || pathname.startsWith("/articles") ? "ar" : "en"));
+    setReady(true);
+  }, []);
+
+  useEffect(() => {
+    if (!ready) return;
+    let cancelled = false;
+    setFailed(false);
+    if (language === "en" || language === "ar") { setDictionary({}); setLoading(false); return; }
+    setLoading(true);
+    void loaders[language]().then((result) => {
+      if (!cancelled) { setDictionary(result.default); setLoading(false); }
+    }).catch(() => { if (!cancelled) { setFailed(true); setLoading(false); } });
+    return () => { cancelled = true; };
+  }, [language, ready]);
+
+  useEffect(() => {
+    if (!ready || loading) return;
+    const originalText = new WeakMap<Text, { source: string; output: string }>();
+    const originalAttributes = new Map<Element, Map<string, string>>();
+    const skip = "script,style,noscript,code,pre,[data-no-translate],input,textarea";
+    const direction = chosen.dir;
+    document.documentElement.lang = translated ? language : (pathname.startsWith("/ar") || pathname.startsWith("/articles") ? "ar" : "en");
+    document.documentElement.dir = translated ? direction : (pathname.startsWith("/ar") || pathname.startsWith("/articles") ? "rtl" : "ltr");
+    document.documentElement.dataset.siteLanguage = translated ? language : "";
+
+    const transform = () => {
+      observer.disconnect();
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      let node = walker.nextNode();
+      while (node) {
+        if (node instanceof Text && !node.parentElement?.closest(skip)) {
+          const previous = originalText.get(node);
+          const source = previous && node.data === previous.output ? previous.source : node.data;
+          const output = translated ? translatedText(source, dictionary) : source;
+          originalText.set(node, { source, output });
+          if (node.data !== output) node.data = output;
+        }
+        node = walker.nextNode();
+      }
+      document.body.querySelectorAll("[placeholder],[aria-label],[alt],[title],[dir],[lang]").forEach((element) => {
+        if (element.closest("[data-no-translate]")) return;
+        for (const attribute of ["placeholder", "aria-label", "alt", "title", "dir", "lang"]) {
+          const value = element.getAttribute(attribute);
+          if (value === null) continue;
+          let attributes = originalAttributes.get(element);
+          if (!attributes) { attributes = new Map(); originalAttributes.set(element, attributes); }
+          if (!attributes.has(attribute)) attributes.set(attribute, value);
+          const source = attributes.get(attribute) ?? value;
+          const technicalText = /^[\s\d+().,–\-:/@\w]+$/.test(element.textContent ?? "") && /[\d@]/.test(element.textContent ?? "");
+          const output = !translated ? source : attribute === "dir" ? (technicalText ? "ltr" : direction) : attribute === "lang" ? language : translatedText(source, dictionary);
+          if (value !== output) element.setAttribute(attribute, output);
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true, characterData: true });
+    };
+    let frame = 0;
+    const observer = new MutationObserver(() => { cancelAnimationFrame(frame); frame = requestAnimationFrame(transform); });
+    transform();
+    return () => {
+      observer.disconnect(); cancelAnimationFrame(frame);
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      let node = walker.nextNode();
+      while (node) {
+        if (node instanceof Text) { const previous = originalText.get(node); if (previous && node.data === previous.output) node.data = previous.source; }
+        node = walker.nextNode();
+      }
+      originalAttributes.forEach((attributes, element) => { if (element.isConnected) attributes.forEach((value, key) => element.setAttribute(key, value)); });
+    };
+  }, [dictionary, loading, ready, pathname, language, chosen.dir, translated]);
+
+  const value = useMemo(() => ({ language, dictionary }), [language, dictionary]);
+  const selectLanguage = (next: string) => {
+    const found = siteLanguages.find((item) => item.code === next);
+    if (!found) return;
+    try { localStorage.setItem(storageKey, found.code); } catch { /* optional preference */ }
+    if (found.code === "en" || found.code === "ar") {
+      const pairs: Record<string, [string, string]> = { "/": ["/", "/ar"], "/ar": ["/", "/ar"], "/patients": ["/patients", "/ar/patients"], "/ar/patients": ["/patients", "/ar/patients"] };
+      const pair = pairs[pathname.replace(/\/$/, "") || "/"];
+      if (pair) { window.location.assign(pair[found.code === "ar" ? 1 : 0]); return; }
+    }
+    setLanguage(found.code);
+  };
+  const notice = "Auto-translated text. Confirm medical instructions with your treating team. Videos and downloads remain in their original languages.";
+
+  return <LanguageContext.Provider value={value}>
+    <div data-no-translate className="site-language-bar border-b border-border bg-card text-card-foreground" dir="ltr">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-2">
+        <span className="text-sm font-semibold">Alfi Surgery</span>
+        <Select value={language} onValueChange={selectLanguage}>
+          <SelectTrigger aria-label="Website language" className="w-40 bg-background"><Globe className="size-4 shrink-0" /><SelectValue /></SelectTrigger>
+          <SelectContent className="z-[100]" data-no-translate>{siteLanguages.map((item) => <SelectItem key={item.code} value={item.code}><span lang={item.code} dir={item.dir}>{item.name}</span></SelectItem>)}</SelectContent>
+        </Select>
+        {translated && <p lang={language} dir={chosen.dir} role="status" className="w-full text-xs leading-relaxed text-muted-foreground">{loading ? "…" : failed ? "Translation unavailable. Please try another language." : dictionary[normalizeText(notice)] ?? notice}</p>}
+      </div>
+    </div>
+    {children}
+  </LanguageContext.Provider>;
+}

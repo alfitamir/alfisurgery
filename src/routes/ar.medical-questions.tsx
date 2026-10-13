@@ -174,9 +174,6 @@ function ArabicMedicalQuestionsPage() {
             <Link to="/ar" hash="contact" className="hover:text-foreground transition">تواصل</Link>
           </nav>
           <div className="flex items-center gap-3">
-            <Link to="/" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition">
-              <Globe className="h-4 w-4" /> EN
-            </Link>
             <a href="tel:+966138011910" className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:opacity-90 transition">
               احجز موعد <ArrowLeft className="h-3.5 w-3.5" />
             </a>
