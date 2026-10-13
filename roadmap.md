@@ -16,3 +16,5 @@
 - [x] Audit and fix navigation, language clarity, and layout regressions on mobile and desktop.
 - [x] Filter articles and videos by the selected language and put Arabic first in the language menu.
 - [x] Request publication of the verified navigation and language improvements.
+- [x] Hide the videos destination in the Urdu, Hindi, Bengali, and Filipino editions and send its direct URL to that edition's home.
+

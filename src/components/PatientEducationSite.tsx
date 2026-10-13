@@ -25,7 +25,7 @@ import { InstallAppButton } from "@/components/InstallAppButton";
 import { ArticlesSection } from "@/components/ArticlesSection";
 import { VideosSection } from "@/components/VideosSection";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
-import { translatedSearchText } from "@/lib/site-language";
+import { showsVideos, translatedSearchText } from "@/lib/site-language";
 import {
   educationCategories,
   educationCategoriesAr,
@@ -271,7 +271,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
       </main>
       <nav aria-label={ar ? "أقسام دليل المريض" : "Patient guide sections"} className="mx-auto flex max-w-7xl flex-wrap items-center gap-3 border-t border-border px-5 py-5"><Button asChild variant="outline"><a href="#operations">{t.nav[0]}</a></Button><Button asChild variant="outline"><a href="#prepare">{t.nav[1]}</a></Button><Button asChild variant="outline"><a href="#recovery">{t.nav[2]}</a></Button><Button asChild variant="outline"><a href="#urgent">{t.nav[3]}</a></Button><InstallAppButton ar={ar} /></nav>
       <ArticlesSection ar={ar} />
-      <VideosSection ar={ar} />
+      {showsVideos(language) && <VideosSection ar={ar} />}
 
       <footer className="bg-patient-deep text-primary-foreground">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-10 md:flex-row md:items-center md:justify-between md:px-8">

@@ -4,7 +4,7 @@ import { ArrowRight, BookOpen, Menu, Microscope, Stethoscope, X } from "lucide-r
 import { Button } from "@/components/ui/button";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { navigationCopy } from "@/data/site-navigation";
-import { siteLanguages } from "@/lib/site-language";
+import { showsVideos, siteLanguages } from "@/lib/site-language";
 
 export function SiteNavigation() {
   const { language } = useSiteLanguage();
@@ -21,12 +21,13 @@ export function SiteNavigation() {
   }, [open]);
   const home = language === "ar" ? "/ar" : "/";
   const patients = language === "ar" ? "/ar/patients" : "/patients";
-  const items = [
+  const allItems = [
     { to: home, label: t.home }, { to: "/profile", label: t.profile },
     { to: "/research", label: t.research }, { to: patients, label: t.patients },
     { to: "/articles", label: t.articles }, { to: "/videos", label: t.videos },
     { to: "/contact", label: t.contact },
   ] as const;
+  const items = showsVideos(language) ? allItems : allItems.filter((item) => item.to !== "/videos");
   const active = (to: string) => to === "/" || to === "/ar" ? pathname === to || pathname === `${to}/` : pathname.startsWith(to);
   return <header data-no-translate dir={chosen.dir} lang={language} className="site-main-navigation sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur-md">
     <div className="mx-auto grid min-h-20 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:flex sm:justify-between md:px-8">
