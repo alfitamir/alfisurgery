@@ -8,3 +8,5 @@
 - Use native-language navigation dictionaries outside DOM translation; this keeps language identity and menu labels reliable during loading.
 - Keep original-language reading clearly labelled when its language differs from the selected interface, and scope legacy-header hiding to patient-site wrappers; this prevents misleading language identity and hidden content headings.
 - Filter article and video listings by explicit source-language metadata, not translated titles; retain direct reading URLs so existing links and offline pages remain accessible.
+- Hide a destination from an edition's menus and pages when that edition has no content of its own, and send its direct URL to that edition's home instead of an empty page; this keeps a temporary gap out of the navigation without breaking an old link.
+
