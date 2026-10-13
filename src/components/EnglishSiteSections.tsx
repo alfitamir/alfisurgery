@@ -6,8 +6,6 @@ import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/component
 
 import { patientEducation, educationCategories, educationCategoryImages, formatSize } from "@/data/patient-education";
 import { SectionArt } from "@/components/SectionArt";
-import { ArticlesSection } from "@/components/ArticlesSection";
-import { VideosSection } from "@/components/VideosSection";
 import { Button } from "@/components/ui/button";
 import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
 import { surgeryUpdates } from "@/data/surgery-updates";

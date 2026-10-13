@@ -184,6 +184,7 @@ html[data-site-language]:not([data-site-language=""]) :is(h1,h2,h3,h4) { line-he
 .site-page-content > :is(div,main) > header { display: none; }
 .site-page-content .patient-site > footer { display: none; }
 .organized-content > section { padding-block: 3rem; }
+.organized-content > section > img[aria-hidden="true"] { display: none; }
 .organized-content > section > .mx-auto { padding-block: 1rem; }
 .organized-content .font-serif { font-family: var(--font-sans); }
 .organized-content h2 { font-size: 2rem; }

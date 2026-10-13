@@ -136,8 +136,9 @@ const copy = {
   },
 } as const;
 
-export function PatientEducationSite({ lang }: { lang: Language }) {
-  const { dictionary } = useSiteLanguage();
+export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }) {
+  const { dictionary, language } = useSiteLanguage();
+  const lang: Language = language === "ar" ? "ar" : language === "en" ? "en" : routeLanguage;
   const ar = lang === "ar";
   const t = copy[lang];
   const [query, setQuery] = useState("");
@@ -267,6 +268,7 @@ export function PatientEducationSite({ lang }: { lang: Language }) {
           </div>
         </section>
       </main>
+      <nav aria-label={ar ? "أقسام دليل المريض" : "Patient guide sections"} className="mx-auto flex max-w-7xl flex-wrap items-center gap-3 border-t border-border px-5 py-5"><Button asChild variant="outline"><a href="#operations">{t.nav[0]}</a></Button><Button asChild variant="outline"><a href="#prepare">{t.nav[1]}</a></Button><Button asChild variant="outline"><a href="#recovery">{t.nav[2]}</a></Button><Button asChild variant="outline"><a href="#urgent">{t.nav[3]}</a></Button><InstallAppButton ar={ar} /></nav>
       <ArticlesSection ar={ar} />
       <VideosSection ar={ar} />
 
