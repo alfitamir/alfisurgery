@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
-import { useRouterState, useNavigate } from "@tanstack/react-router";
+import { useRouterState } from "@tanstack/react-router";
 import { Globe, Share2 } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { normalizeText, siteLanguages, translatedText, type SiteLanguage, type TranslationDictionary } from "@/lib/site-language";
@@ -19,7 +19,6 @@ const loaders = {
 export function SiteLanguageProvider({ children }: { children: React.ReactNode }) {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
   const searchLanguage = useRouterState({ select: (state) => state.location.search.lang });
-  const navigate = useNavigate();
   const [language, setLanguage] = useState<SiteLanguage>("en");
   const [dictionary, setDictionary] = useState<TranslationDictionary>({});
   const [loading, setLoading] = useState(false);
@@ -48,7 +47,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
       url.searchParams.set("lang", language);
       window.history.replaceState(window.history.state, "", url.href);
     }
-  }, [ready, language, searchLanguage, navigate]);
+  }, [ready, language, searchLanguage]);
 
   const [copied, setCopied] = useState(false);
   const shareLink = async () => {
