@@ -261,7 +261,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
         </section>
 
       </main>
-      <nav aria-label={ar ? "أقسام دليل المريض" : "Patient guide sections"} className="mx-auto flex max-w-7xl flex-wrap items-center gap-3 border-t border-border px-5 py-5"><Button asChild variant="outline"><a href="#operations">{t.nav[0]}</a></Button><Button asChild variant="outline"><a href="#prepare">{t.nav[1]}</a></Button><Button asChild variant="outline"><a href="#recovery">{t.nav[2]}</a></Button><Button asChild variant="outline"><a href="#urgent">{t.nav[3]}</a></Button><InstallAppButton ar={ar} /></nav>
+      <nav aria-label={ar ? "أقسام دليل المريض" : "Patient guide sections"} className="mx-auto grid max-w-7xl grid-cols-2 gap-3 border-t border-border px-5 py-5 sm:flex sm:items-center"><Button asChild variant="outline" className="h-auto min-h-11 w-full justify-center px-3 sm:w-auto sm:flex-1"><a href="#operations">{t.nav[0]}</a></Button><Button asChild variant="outline" className="h-auto min-h-11 w-full justify-center px-3 sm:w-auto sm:flex-1"><a href="#prepare">{t.nav[1]}</a></Button><Button asChild variant="outline" className="h-auto min-h-11 w-full justify-center px-3 sm:w-auto sm:flex-1"><a href="#recovery">{t.nav[2]}</a></Button><Button asChild variant="outline" className="h-auto min-h-11 w-full justify-center px-3 sm:w-auto sm:flex-1"><a href="#urgent">{t.nav[3]}</a></Button><div className="col-span-2 flex justify-center sm:col-span-1 sm:flex-1"><InstallAppButton ar={ar} /></div></nav>
       <ArticlesSection ar={ar} />
       {showsVideos(language) && <VideosSection ar={ar} />}
 
