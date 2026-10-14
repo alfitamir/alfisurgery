@@ -1,12 +1,25 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { useRouterState } from "@tanstack/react-router";
-import { Check, Languages, Share2 } from "lucide-react";
+import { Check, Share2 } from "lucide-react";
 import { normalizeText, siteLanguages, translatedText, type SiteLanguage, type TranslationDictionary } from "@/lib/site-language";
 import { navigationCopy } from "@/data/site-navigation";
 import { Button } from "@/components/ui/button";
 import arabicUi from "@/data/locales/ar-ui.json";
 
-const LanguageContext = createContext({ language: "en" as SiteLanguage, dictionary: {} as TranslationDictionary });
+type LanguageContextValue = {
+  language: SiteLanguage;
+  dictionary: TranslationDictionary;
+  selectLanguage: (next: string) => void;
+  languageMenu: React.ReactNode;
+};
+
+const LanguageContext = createContext<LanguageContextValue>({
+  language: "en",
+  dictionary: {},
+  selectLanguage: () => {},
+  languageMenu: null,
+});
+
 export const useSiteLanguage = () => useContext(LanguageContext);
 const storageKey = "alfi-site-language";
 const loaders = {
@@ -51,7 +64,6 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
   }, [ready, language, searchLanguage]);
 
   const [copied, setCopied] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
   const shareLink = async () => {
     const url = window.location.href;
     try {
@@ -128,7 +140,6 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
     };
   }, [dictionary, loading, ready, pathname, language, chosen.dir, translated]);
 
-  const value = useMemo(() => ({ language, dictionary }), [language, dictionary]);
   const selectLanguage = (next: string) => {
     const found = siteLanguages.find((item) => item.code === next);
     if (!found) return;
@@ -162,7 +173,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
             key={item.code}
             type="button"
             aria-current={active ? "true" : undefined}
-            onClick={() => { selectLanguage(item.code); setMenuOpen(false); }}
+            onClick={() => selectLanguage(item.code)}
             className={`flex items-center gap-3 rounded-xl px-3 py-2 text-start text-sm font-medium transition-colors ${active ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}
           >
             <img src={flags[item.code].src} alt={flags[item.code].label} width={28} height={28} className="size-7 shrink-0 rounded-full border border-border object-cover" />
@@ -173,6 +184,8 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
       })}
     </nav>
   );
+
+  const value = useMemo(() => ({ language, dictionary, selectLanguage, languageMenu }), [language, dictionary, pathname]);
 
   return <LanguageContext.Provider value={value}>
     <div data-no-translate lang={language} className="site-language-bar border-b border-border bg-secondary text-secondary-foreground" dir={chosen.dir}>
@@ -192,12 +205,5 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
       <p className="mb-2 px-3 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Language</p>
       {languageMenu}
     </aside>
-    <div data-no-translate className="fixed bottom-4 start-4 z-40 md:hidden" dir="ltr">
-      {menuOpen && <div className="mb-2 w-48 rounded-2xl border border-border bg-card p-2 shadow-lg">{languageMenu}</div>}
-      <Button variant="default" size="sm" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-label="Choose language" className="gap-2 rounded-full shadow-lg">
-        <Languages className="size-4" aria-hidden />
-        <span lang={chosen.code} dir={chosen.dir}>{chosen.name}</span>
-      </Button>
-    </div>
   </LanguageContext.Provider>;
 }
