@@ -46,7 +46,7 @@ const contactLinks = [
   { href: "https://mdh.com.sa/doctors/dr-tamer-elalfy/", label: "Mohammad Dossary Hospital", icon: Building2 },
   { href: "tel:+966548026853", label: "+966 54 802 6853", icon: Phone },
   { href: "tel:+966138011910", label: "+966 13 801 1910", icon: Phone },
-  { href: "https://whatsapp.com/channel/0029VbDHjNiKAwEkWMqT5C2P", label: "WhatsApp", icon: MessageCircle },
+  { href: "https://wa.me/966548026853", label: "WhatsApp", icon: MessageCircle },
   { href: "mailto:tamerelalfy@hca.med.sa", label: "tamerelalfy@hca.med.sa", icon: Mail },
   { href: "https://www.youtube.com/@alfy_surgery", label: "YouTube @alfy_surgery", icon: Youtube },
   { href: "https://www.linkedin.com/in/alfitamir/", label: "LinkedIn", icon: Linkedin },
