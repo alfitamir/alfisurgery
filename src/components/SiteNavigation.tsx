@@ -31,20 +31,20 @@ export function SiteNavigation() {
   ] as const;
   const active = (to: string) => to === "/" || to === "/ar" ? pathname === to || pathname === `${to}/` : pathname.startsWith(to);
   return <header data-no-translate dir={chosen.dir} lang={language} className="site-main-navigation sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur-md">
-    <div className="mx-auto grid min-h-20 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3 sm:flex sm:justify-between md:px-8 ltr:max-md:pr-16">
-      <Link to={home} className="flex min-w-0 items-center gap-3 ltr:max-md:pr-16 rtl:max-md:pr-16" onClick={() => setOpen(false)}>
+    <div className="mx-auto grid min-h-20 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-5 py-3 sm:flex sm:justify-between md:px-8 max-md:px-4">
+      <Link to={home} className="flex min-w-0 items-center gap-2" onClick={() => setOpen(false)}>
         <img src={portrait.url} alt={t.name} width={44} height={44} className="size-11 shrink-0 rounded-md object-cover object-top max-md:size-9" />
         <span className="min-w-0"><span className="block text-base font-bold md:text-lg max-md:text-sm">{t.name}</span><span className="mt-1 block text-xs text-muted-foreground max-md:text-[10px]">{t.role}</span></span>
       </Link>
       <nav className="hidden items-center gap-1 xl:flex" aria-label={t.menu}>{items.map((item) => <Button key={item.to} asChild variant="ghost" className={active(item.to) ? "bg-secondary text-primary" : "text-muted-foreground"}><Link to={item.to} aria-current={active(item.to) ? "page" : undefined}>{item.label}</Link></Button>)}</nav>
-      <Button variant="outline" size="icon" className="shrink-0 xl:hidden" aria-label={open ? t.close : t.menu} aria-expanded={open} aria-controls="site-mobile-menu" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button>
-    </div>
-    <div className="absolute top-5 z-10 hidden max-md:block max-md:right-4">
-      <div className="relative">
-        {langOpen && <div className="absolute right-0 top-full z-50 mt-2 w-52 rounded-2xl border border-border bg-card p-2 shadow-xl">{languageMenu}</div>}
-        <Button variant="outline" size="icon" onClick={() => setLangOpen((value) => !value)} aria-expanded={langOpen} aria-label="Choose language" className="rounded-full">
-          <Languages className="size-5" aria-hidden />
-        </Button>
+      <div className="flex shrink-0 items-center gap-2 rtl:flex-row-reverse">
+        <Button variant="outline" size="icon" className="shrink-0 xl:hidden max-md:h-9 max-md:w-9" aria-label={open ? t.close : t.menu} aria-expanded={open} aria-controls="site-mobile-menu" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button>
+        <div className="relative hidden max-md:block">
+          {langOpen && <div className="absolute right-0 top-full z-50 mt-2 w-52 rounded-2xl border border-border bg-card p-2 shadow-xl">{languageMenu}</div>}
+          <Button variant="outline" size="icon" onClick={() => setLangOpen((value) => !value)} aria-expanded={langOpen} aria-label="Choose language" className="rounded-full max-md:h-9 max-md:w-9">
+            <Languages className="size-5" aria-hidden />
+          </Button>
+        </div>
       </div>
     </div>
     {open && <nav id="site-mobile-menu" aria-label={t.menu} className="max-h-[70vh] overflow-y-auto border-t border-border px-5 py-4 xl:hidden">{items.map((item) => <Button key={item.to} asChild variant="ghost" className={`mb-1 flex h-11 w-full justify-start ${active(item.to) ? "bg-secondary text-primary" : ""}`}><Link to={item.to} onClick={() => setOpen(false)}>{item.label}</Link></Button>)}</nav>}
