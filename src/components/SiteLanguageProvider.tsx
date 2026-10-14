@@ -143,18 +143,60 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
   };
   const notice = "Auto-translated text. Confirm medical instructions with your treating team. Videos and downloads remain in their original languages.";
 
+  const flags: Record<SiteLanguage, { src: string; label: string }> = {
+    ar: { src: "https://flagcdn.com/sa.svg", label: "Saudi Arabia" },
+    en: { src: "https://flagcdn.com/gb.svg", label: "United Kingdom" },
+    ur: { src: "https://flagcdn.com/pk.svg", label: "Pakistan" },
+    hi: { src: "https://flagcdn.com/in.svg", label: "India" },
+    bn: { src: "https://flagcdn.com/bd.svg", label: "Bangladesh" },
+    tl: { src: "https://flagcdn.com/ph.svg", label: "Philippines" },
+    ta: { src: "https://flagcdn.com/in.svg", label: "India" },
+  };
+  const languageMenu = (
+    <nav aria-label="Website language" className="flex flex-col gap-1">
+      {siteLanguages.map((item) => {
+        const active = item.code === language;
+        return (
+          <button
+            key={item.code}
+            type="button"
+            aria-current={active ? "true" : undefined}
+            onClick={() => { selectLanguage(item.code); setMenuOpen(false); }}
+            className={`flex items-center gap-3 rounded-xl px-3 py-2 text-start text-sm font-medium transition-colors ${active ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}
+          >
+            <img src={flags[item.code].src} alt={flags[item.code].label} width={28} height={28} className="size-7 shrink-0 rounded-full border border-border object-cover" />
+            <span lang={item.code} dir={item.dir} className="min-w-0 flex-1 truncate">{item.name}</span>
+            {active && <Check className="size-4 shrink-0" aria-hidden />}
+          </button>
+        );
+      })}
+    </nav>
+  );
+
   return <LanguageContext.Provider value={value}>
     <div data-no-translate lang={language} className="site-language-bar border-b border-border bg-secondary text-secondary-foreground" dir={chosen.dir}>
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-2 px-5 py-2 sm:flex sm:flex-wrap sm:justify-between md:px-8">
         <span className="col-span-2 min-w-0 text-xs font-semibold sm:col-auto">Alfi Surgery <span className="mx-2 text-muted-foreground">/</span>{navigationCopy[language].version}</span>
         <div className="col-span-2 flex min-w-0 flex-wrap items-center gap-2 sm:col-auto">
         <span className="flex shrink-0 items-center gap-1 text-lg leading-none" aria-label="Saudi Arabia and Egypt"><img src="https://flagcdn.com/sa.svg" alt="Saudi Arabia" width={30} height={20} className="h-5 w-auto rounded-sm border border-border" /><img src="https://flagcdn.com/eg.svg" alt="Egypt" width={30} height={20} className="h-5 w-auto rounded-sm border border-border" /></span>
-        <nav aria-label="Website language" className="flex min-w-0 flex-wrap items-center gap-1">{siteLanguages.map((item) => <Button key={item.code} size="sm" variant={item.code === language ? "default" : "outline"} aria-current={item.code === language ? "true" : undefined} onClick={() => selectLanguage(item.code)} className="h-8 px-2.5"><span lang={item.code} dir={item.dir}>{item.name}</span></Button>)}</nav>
         <Button variant="outline" size="sm" onClick={shareLink} aria-label={navigationCopy[language].share}><Share2 className="size-4" />{copied ? navigationCopy[language].copied : navigationCopy[language].share}</Button>
         </div>
         {translated && <p lang={language} dir={chosen.dir} role="status" className="col-span-2 min-w-0 w-full text-xs leading-relaxed text-muted-foreground">{loading ? "…" : failed ? "Translation unavailable. Please try another language." : dictionary[normalizeText(notice)] ?? notice}</p>}
       </div>
     </div>
-    {children}
+    <div data-no-translate className="md:ps-52">
+      {children}
+    </div>
+    <aside data-no-translate className="fixed inset-y-0 start-0 z-40 hidden w-52 flex-col justify-center border-e border-border bg-card/95 p-3 backdrop-blur md:flex" dir="ltr">
+      <p className="mb-2 px-3 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Language</p>
+      {languageMenu}
+    </aside>
+    <div data-no-translate className="fixed bottom-4 start-4 z-40 md:hidden" dir="ltr">
+      {menuOpen && <div className="mb-2 w-48 rounded-2xl border border-border bg-card p-2 shadow-lg">{languageMenu}</div>}
+      <Button variant="default" size="sm" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-label="Choose language" className="gap-2 rounded-full shadow-lg">
+        <Languages className="size-4" aria-hidden />
+        <span lang={chosen.code} dir={chosen.dir}>{chosen.name}</span>
+      </Button>
+    </div>
   </LanguageContext.Provider>;
 }
