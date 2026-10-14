@@ -37,7 +37,16 @@ export function SiteNavigation() {
         <span className="min-w-0"><span className="block text-base font-bold md:text-lg">{t.name}</span><span className="mt-1 block text-xs text-muted-foreground">{t.role}</span></span>
       </Link>
       <nav className="hidden items-center gap-1 xl:flex" aria-label={t.menu}>{items.map((item) => <Button key={item.to} asChild variant="ghost" className={active(item.to) ? "bg-secondary text-primary" : "text-muted-foreground"}><Link to={item.to} aria-current={active(item.to) ? "page" : undefined}>{item.label}</Link></Button>)}</nav>
-      <Button variant="outline" size="icon" className="shrink-0 xl:hidden" aria-label={open ? t.close : t.menu} aria-expanded={open} aria-controls="site-mobile-menu" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button>
+      <div className="flex shrink-0 items-center gap-2">
+        <div className="relative md:hidden">
+          {langOpen && <div className="absolute end-0 top-full z-50 mt-2 w-52 rounded-2xl border border-border bg-card p-2 shadow-xl">{languageMenu}</div>}
+          <Button variant="outline" size="sm" onClick={() => setLangOpen((value) => !value)} aria-expanded={langOpen} aria-label="Choose language" className="gap-2 rounded-full">
+            <Languages className="size-4 shrink-0" aria-hidden />
+            <span lang={chosen.code} dir={chosen.dir} className="max-w-24 truncate">{chosen.name}</span>
+          </Button>
+        </div>
+        <Button variant="outline" size="icon" className="shrink-0 xl:hidden" aria-label={open ? t.close : t.menu} aria-expanded={open} aria-controls="site-mobile-menu" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button>
+      </div>
     </div>
     {open && <nav id="site-mobile-menu" aria-label={t.menu} className="max-h-[70vh] overflow-y-auto border-t border-border px-5 py-4 xl:hidden">{items.map((item) => <Button key={item.to} asChild variant="ghost" className={`mb-1 flex h-11 w-full justify-start ${active(item.to) ? "bg-secondary text-primary" : ""}`}><Link to={item.to} onClick={() => setOpen(false)}>{item.label}</Link></Button>)}</nav>}
   </header>;
