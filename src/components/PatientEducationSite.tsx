@@ -268,7 +268,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
           <div><div className="font-serif text-xl">{ar ? "رحلتك الجراحية" : "Your Surgery Journey"}</div><p className="mt-2 max-w-xl text-sm opacity-80">{t.note}</p></div>
           <div className="flex flex-wrap gap-3">
             <Button asChild variant="secondary" className="rounded-full"><a href="tel:+966138011910"><Stethoscope />{t.call}</a></Button>
-            <Button asChild className="rounded-full bg-patient-apricot text-patient-deep hover:bg-patient-apricot/90"><a href="https://whatsapp.com/channel/0029VbDHjNiKAwEkWMqT5C2P" target="_blank" rel="noopener noreferrer"><MessageCircle />{t.whatsapp}</a></Button>
+            <Button asChild className="rounded-full bg-patient-apricot text-patient-deep hover:bg-patient-apricot/90"><a href="https://wa.me/966548026853" target="_blank" rel="noopener noreferrer"><MessageCircle />{t.whatsapp}</a></Button>
             {showsVideos(language) && <Button asChild variant="ghost" className="rounded-full bg-primary-foreground text-patient-deep hover:bg-primary-foreground/90 hover:text-patient-deep"><a href="https://www.youtube.com/@alfy_surgery" target="_blank" rel="noopener noreferrer"><Youtube />{t.youtube}</a></Button>}
             <Button asChild variant="ghost" className="rounded-full text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"><Link to={ar ? "/ar" : "/"}><Home />{t.home}</Link></Button>
           </div>
