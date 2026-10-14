@@ -9,4 +9,6 @@
 - Keep original-language reading clearly labelled when its language differs from the selected interface, and scope legacy-header hiding to patient-site wrappers; this prevents misleading language identity and hidden content headings.
 - Filter article and video listings by explicit source-language metadata, not translated titles; retain direct reading URLs so existing links and offline pages remain accessible.
 - Hide a destination from an edition's menus and pages when that edition has no content of its own, and send its direct URL to that edition's home instead of an empty page; this keeps a temporary gap out of the navigation without breaking an old link.
+- Render the shared patient education experience on both homepage routes and patient aliases; this keeps all language editions synchronized.
+- Use /guides/$guideId for print-friendly operation reading pages with shared localized guidance, and explicitly label unchanged source downloads; this preserves language-specific reading without misrepresenting handout translations.
 

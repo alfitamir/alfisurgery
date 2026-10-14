@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SiteHome } from "@/components/SiteHome";
-import portrait from "@/assets/dr-elalfy-main.jpg.asset.json";
-export const Route = createFileRoute("/ar/")({ component: SiteHome, head: () => ({ meta: [
-{title: "د. تامر الألفي | الجراحة والأبحاث وتثقيف المريض"}, {name: "description", content: "تعرّف على د. تامر الألفي وأبحاثه وابحث عن أدلة العمليات والمقالات والفيديوهات."}, {property: "og:title", content: "د. تامر الألفي | الجراحة والأبحاث وتثقيف المريض"}, {property: "og:description", content: "تعرّف على د. تامر الألفي وأبحاثه وابحث عن أدلة العمليات والمقالات والفيديوهات."}, {property: "og:type", content: "website"}, {name: "twitter:card", content: "summary_large_image"}, {property: "og:image", content: portrait.url}, {name: "twitter:image", content: portrait.url}
+import { PatientEducationSite } from "@/components/PatientEducationSite";
+export const Route = createFileRoute("/ar/")({ component: () => <PatientEducationSite lang="ar" />, head: () => ({ meta: [
+{title: "تثقيف المريض | د. تامر الألفي"}, {name: "description", content: "اختر دليل عمليتك وتعرّف على الاستعداد للجراحة والتعافي وعلامات التحذير مع د. تامر الألفي."}, {property: "og:title", content: "تثقيف المريض | د. تامر الألفي"}, {property: "og:description", content: "أدلة العمليات والتحضير والتعافي الآمن للمرضى وذويهم بست لغات."}, {property: "og:type", content: "website"}, {name: "twitter:card", content: "summary_large_image"}
 ] }) });
