@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PatientEducationSite } from "@/components/PatientEducationSite";
-export const Route = createFileRoute("/")({ component: () => <PatientEducationSite lang="en" />, head: () => ({ meta: [
-{title: "Patient education | Dr. Tamer Elalfy"}, {name: "description", content: "Find your operation guide, prepare for surgery and learn about recovery in six languages with Dr. Tamer Elalfy."}, {property: "og:title", content: "Patient education | Dr. Tamer Elalfy"}, {property: "og:description", content: "Operation guides, preparation, recovery and warning signs for patients and families."}, {property: "og:type", content: "website"}, {name: "twitter:card", content: "summary_large_image"}
+import { ThreeSectionHome } from "@/components/ThreeSectionHome";
+export const Route = createFileRoute("/")({ component: ThreeSectionHome, head: () => ({ meta: [
+{title: "Dr. Tamer Elalfy | Doctor, patient education & contact"}, {name: "description", content: "Explore Dr. Tamer Elalfy's education, experience and publications, patient disease and operation guides, or clinic contact details in six languages."}, {property: "og:title", content: "Dr. Tamer Elalfy | Doctor, patient education & contact"}, {property: "og:description", content: "Three sections: meet the doctor and medical teaching, understand your disease and operation, and contact the clinic."}, {property: "og:type", content: "website"}, {name: "twitter:card", content: "summary_large_image"}
 ] }) });

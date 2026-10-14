@@ -26,7 +26,7 @@ function GuidePage() {
   if (!guide) return <main className="mx-auto max-w-3xl px-5 py-12"><h1>Guide not found</h1><Button asChild variant="link"><Link to="/">{navigationCopy[language].home}</Link></Button></main>;
   const title = language === "ar" ? guide.titleAr : translatedText(guide.title, dictionary);
   return <main data-no-translate lang={language} dir={siteLanguages.find((l) => l.code === language)?.dir} className="guide-reading mx-auto max-w-3xl px-5 py-8 md:py-12">
-    <div className="guide-actions flex flex-wrap justify-between gap-3"><Button asChild variant="ghost"><Link to="/"><ArrowLeft className="rtl:rotate-180"/>{t.title}</Link></Button><Button variant="outline" onClick={() => window.print()}><Printer/>{t.print}</Button></div>
+    <div className="guide-actions flex flex-wrap justify-between gap-3"><Button asChild variant="ghost"><Link to={language === "ar" ? "/ar/patients" : "/patients"}><ArrowLeft className="rtl:rotate-180"/>{t.title}</Link></Button><Button variant="outline" onClick={() => window.print()}><Printer/>{t.print}</Button></div>
     <p className="mt-8 text-sm font-semibold text-primary">{language === "ar" ? guide.categoryAr : translatedText(guide.category, dictionary)}</p>
     <h1 className="mt-3 text-3xl font-bold leading-snug md:text-4xl">{title}</h1>
     <p className="mt-4 text-sm text-muted-foreground">{navigationCopy[language].name}</p>

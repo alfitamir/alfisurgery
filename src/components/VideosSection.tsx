@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Play, Youtube } from "lucide-react";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { languageContentCopy } from "@/lib/site-language";
+import { Button } from "@/components/ui/button";
+import { sectionCopy } from "@/data/section-copy";
 
 type Category = "obesity" | "laparoscopy" | "colon";
 
@@ -48,29 +50,31 @@ const INITIAL_COUNT = 9;
 
 function Video({ id, title }: { id: string; title: string }) {
   const [play, setPlay] = useState(false);
+  const { language } = useSiteLanguage();
+  const captionLanguage = language === "tl" ? "fil" : language;
   return (
     <figure className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
       <div className="relative aspect-video bg-muted">
         {play ? (
           <iframe
             className="absolute inset-0 h-full w-full"
-            src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`}
+            src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&cc_load_policy=1&cc_lang_pref=${captionLanguage}&hl=${captionLanguage}`}
             title={title}
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
         ) : (
-          <button type="button" onClick={() => setPlay(true)} className="group absolute inset-0" aria-label={title}>
+           <Button type="button" variant="ghost" onClick={() => setPlay(true)} className="group absolute inset-0 h-full w-full p-0" aria-label={title}>
             <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" className="h-full w-full object-cover" />
             <span className="absolute inset-0 grid place-items-center">
               <span className="grid h-14 w-14 place-items-center rounded-full bg-primary text-primary-foreground shadow-lg transition group-hover:scale-110">
                 <Play className="h-6 w-6 fill-current" />
               </span>
             </span>
-          </button>
+           </Button>
         )}
       </div>
-      <figcaption className="p-4 text-sm font-medium text-card-foreground">{title}</figcaption>
+       <figcaption className="p-4 text-sm font-medium text-card-foreground">{title}<span data-no-translate lang={language} className="mt-2 block text-xs text-muted-foreground">{sectionCopy[language].original}</span></figcaption>
     </figure>
   );
 }
@@ -80,13 +84,14 @@ export function VideosSection({ ar = false }: { ar?: boolean }) {
   const [cat, setCat] = useState<Category | "all">("all");
   const [showAll, setShowAll] = useState(false);
 
-  const available = videos.filter((video) => video.language === language);
+   const available = videos;
   const filtered = cat === "all" ? available : available.filter((v) => v.cat === cat);
   const visible = showAll ? filtered : filtered.slice(0, INITIAL_COUNT);
   if (!available.length) return <section data-no-translate lang={language} id="videos-list" className="mx-auto max-w-6xl px-5 py-16"><p role="status" className="text-muted-foreground">{languageContentCopy[language].noVideos}</p></section>;
 
   return (
-    <section id="videos-list" dir={ar ? "rtl" : "ltr"} className="mx-auto max-w-6xl px-4 py-16">
+     <section id="videos-list" className="mx-auto max-w-6xl px-4 py-16">
+       {language !== "ar" && <p data-no-translate lang={language} className="mb-6 border-s-4 border-primary bg-secondary p-4 text-sm leading-relaxed text-secondary-foreground">{sectionCopy[language].captions}</p>}
       <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">YouTube</p>
@@ -103,7 +108,7 @@ export function VideosSection({ ar = false }: { ar?: boolean }) {
           const active = cat === c.key;
           const count = c.key === "all" ? available.length : available.filter((v) => v.cat === c.key).length;
           return (
-            <button
+             <Button
               key={c.key}
               type="button"
               onClick={() => {
@@ -122,7 +127,7 @@ export function VideosSection({ ar = false }: { ar?: boolean }) {
               <span className={"ms-1.5 text-xs " + (active ? "text-primary-foreground/80" : "text-muted-foreground")}>
                 {count}
               </span>
-            </button>
+             </Button>
           );
         })}
       </div>
@@ -137,7 +142,7 @@ export function VideosSection({ ar = false }: { ar?: boolean }) {
 
       {filtered.length > INITIAL_COUNT && (
         <div className="mt-8 text-center">
-          <button
+           <Button
             type="button"
             onClick={() => setShowAll((s) => !s)}
             aria-expanded={showAll}
@@ -146,7 +151,7 @@ export function VideosSection({ ar = false }: { ar?: boolean }) {
             {showAll
               ? (ar ? "عرض أقل" : "Show less")
               : (ar ? `عرض المزيد (${filtered.length - INITIAL_COUNT} فيديو)` : `Show more (${filtered.length - INITIAL_COUNT} videos)`)}
-          </button>
+           </Button>
         </div>
       )}
     </section>
