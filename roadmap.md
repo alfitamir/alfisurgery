@@ -27,4 +27,5 @@
 - [x] Provide specialty-organized video access with accurate caption availability labels and verify all six editions.
 - [x] Request publication of the three-section homepage and translated patient guides.
 - [x] Add a complete Tamil website edition with translated patient guides and verify navigation and language coverage.
+- [ ] Arrange qualified Tamil-speaking clinical review of the website text and all 22 guides; reviewer credentials, availability, fee and engagement need confirmation.
 
