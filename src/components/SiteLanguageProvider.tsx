@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { useRouterState } from "@tanstack/react-router";
-import { Share2 } from "lucide-react";
+import { Check, Languages, Share2 } from "lucide-react";
 import { normalizeText, siteLanguages, translatedText, type SiteLanguage, type TranslationDictionary } from "@/lib/site-language";
 import { navigationCopy } from "@/data/site-navigation";
 import { Button } from "@/components/ui/button";
@@ -51,6 +51,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
   }, [ready, language, searchLanguage]);
 
   const [copied, setCopied] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const shareLink = async () => {
     const url = window.location.href;
     try {
