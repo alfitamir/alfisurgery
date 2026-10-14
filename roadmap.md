@@ -29,4 +29,5 @@
 - [x] Add a complete Tamil website edition with translated patient guides and verify navigation and language coverage.
 - [ ] Arrange qualified Tamil-speaking clinical review of the website text and all 22 guides; reviewer credentials, availability, fee and engagement need confirmation.
 - [x] Add disease-by-disease diet and lifestyle risk-reduction guidance in all seven languages, linked from patient education, and verify reading and navigation.
+- [x] Point the printed QR codes, outreach list, and page address tags at alfisurgery.com instead of the Lovable address.
 
