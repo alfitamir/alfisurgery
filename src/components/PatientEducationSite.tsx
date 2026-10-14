@@ -34,7 +34,6 @@ import {
   patientEducation,
   type EducationCategory,
 } from "@/data/patient-education";
-import { educationSummaries } from "@/data/patient-education-summaries";
 import portrait from "@/assets/dr-elalfy-main.jpg.asset.json";
 import { navigationCopy } from "@/data/site-navigation";
 import { patientGuideCopy } from "@/data/patient-guide-copy";
@@ -140,7 +139,7 @@ const copy = {
 
 export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }) {
   const { dictionary, language } = useSiteLanguage();
-  const lang: Language = language === "ar" ? "ar" : language === "en" ? "en" : routeLanguage;
+  const lang: Language = language === "ar" ? "ar" : "en";
   const ar = language === "ar";
   const native = navigationCopy[language];
   const guideCopy = patientGuideCopy[language];
@@ -188,15 +187,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
 
         <section id="operations" className="border-y border-patient-mist bg-card py-20">
           <div className="mx-auto max-w-7xl px-4 md:px-8">
-            {false && language === "ar" && <div className="mb-14 grid items-center gap-6 border-b border-patient-mist pb-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
-              <img src={plateauIllustration} alt={ar ? "مريضة تتحدث مع اختصاصية التغذية بعد جراحة التكميم" : "A patient talking with a dietitian after sleeve surgery"} loading="lazy" width={1408} height={912} className="aspect-[16/9] w-full rounded-md object-cover" />
-              <div>
-                <p className="text-sm font-bold text-patient-blue">{ar ? "مقال مهم · بعد عملية التكميم" : "Important · After sleeve surgery"}</p>
-                <h2 className="mt-3 text-2xl font-bold leading-relaxed text-patient-deep md:text-3xl">{ar ? "هام بعد عملية التكميم: عند ثبات الوزن ماذا أفعل؟" : "Weight plateau after sleeve surgery: what should I do?"}</h2>
-                <p className="mt-3 leading-relaxed text-patient-ink/75">{ar ? "خطوات آمنة لمراجعة التغذية والنشاط، ومتى تطلب المشورة الطبية." : "Practical steps for nutrition, activity and knowing when to seek advice. Article in Arabic."}</p>
-                <Button asChild className="mt-5 bg-patient-deep text-primary-foreground hover:bg-patient-blue"><Link to="/patient-education/weight-plateau-after-sleeve">{ar ? "اقرأ المقال" : "Read article"}<Arrow /></Link></Button>
-              </div>
-            </div>}
+
             <div className="mx-auto max-w-3xl text-center">
               <div className="text-xs font-bold uppercase text-patient-blue">{t.browseLabel}</div>
               <h2 className="mt-3 text-4xl text-patient-deep md:text-5xl">{t.browseTitle}</h2>
@@ -237,6 +228,17 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
               </div>
             ) : <div className="mx-auto mt-12 max-w-xl rounded-2xl border border-patient-mist bg-patient-canvas p-8 text-center text-patient-ink/70">{t.noResults}</div>}
           </div>
+        </section>
+        <section className="mx-auto max-w-7xl px-5 py-6 md:px-8">
+            {language === "ar" && <div className="mb-14 grid items-center gap-6 border-b border-patient-mist pb-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
+              <img src={plateauIllustration} alt={ar ? "مريضة تتحدث مع اختصاصية التغذية بعد جراحة التكميم" : "A patient talking with a dietitian after sleeve surgery"} loading="lazy" width={1408} height={912} className="aspect-[16/9] w-full rounded-md object-cover" />
+              <div>
+                <p className="text-sm font-bold text-patient-blue">{ar ? "مقال مهم · بعد عملية التكميم" : "Important · After sleeve surgery"}</p>
+                <h2 className="mt-3 text-2xl font-bold leading-relaxed text-patient-deep md:text-3xl">{ar ? "هام بعد عملية التكميم: عند ثبات الوزن ماذا أفعل؟" : "Weight plateau after sleeve surgery: what should I do?"}</h2>
+                <p className="mt-3 leading-relaxed text-patient-ink/75">{ar ? "خطوات آمنة لمراجعة التغذية والنشاط، ومتى تطلب المشورة الطبية." : "Practical steps for nutrition, activity and knowing when to seek advice. Article in Arabic."}</p>
+                <Button asChild className="mt-5 bg-patient-deep text-primary-foreground hover:bg-patient-blue"><Link to="/patient-education/weight-plateau-after-sleeve">{ar ? "اقرأ المقال" : "Read article"}<Arrow /></Link></Button>
+              </div>
+            </div>}
         </section>
         <section aria-label={ar ? "خطوات رحلة الجراحة" : "Surgery journey steps"} className="relative mx-auto max-w-6xl space-y-20 overflow-hidden px-4 py-16 md:px-8">
           <div className="pointer-events-none absolute inset-y-24 left-1/2 hidden w-px -translate-x-1/2 border-l-2 border-dashed border-patient-mist lg:block" />
