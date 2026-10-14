@@ -32,19 +32,18 @@ export function SiteNavigation() {
   const active = (to: string) => to === "/" || to === "/ar" ? pathname === to || pathname === `${to}/` : pathname.startsWith(to);
   return <header data-no-translate dir={chosen.dir} lang={language} className="site-main-navigation sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur-md">
     <div className="mx-auto grid min-h-20 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3 sm:flex sm:justify-between md:px-8">
-      <Link to={home} className="flex min-w-0 items-center gap-3 ltr:max-md:pr-40 rtl:max-md:pr-28" onClick={() => setOpen(false)}>
+      <Link to={home} className="flex min-w-0 items-center gap-3 ltr:max-md:pr-20 rtl:max-md:pr-16" onClick={() => setOpen(false)}>
         <img src={portrait.url} alt={t.name} width={44} height={44} className="size-11 shrink-0 rounded-md object-cover object-top" />
         <span className="min-w-0"><span className="block text-base font-bold md:text-lg">{t.name}</span><span className="mt-1 block text-xs text-muted-foreground">{t.role}</span></span>
       </Link>
       <nav className="hidden items-center gap-1 xl:flex" aria-label={t.menu}>{items.map((item) => <Button key={item.to} asChild variant="ghost" className={active(item.to) ? "bg-secondary text-primary" : "text-muted-foreground"}><Link to={item.to} aria-current={active(item.to) ? "page" : undefined}>{item.label}</Link></Button>)}</nav>
       <Button variant="outline" size="icon" className="shrink-0 xl:hidden" aria-label={open ? t.close : t.menu} aria-expanded={open} aria-controls="site-mobile-menu" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button>
     </div>
-    <div className="absolute top-5 z-10 hidden max-md:block ltr:max-md:right-16 rtl:max-md:right-4">
+    <div className="absolute top-5 z-10 hidden max-md:block ltr:max-md:right-14 rtl:max-md:right-4">
       <div className="relative">
         {langOpen && <div className="absolute right-0 top-full z-50 mt-2 w-52 rounded-2xl border border-border bg-card p-2 shadow-xl">{languageMenu}</div>}
-        <Button variant="outline" size="sm" onClick={() => setLangOpen((value) => !value)} aria-expanded={langOpen} aria-label="Choose language" className="gap-2 rounded-full">
-          <Languages className="size-4 shrink-0" aria-hidden />
-          <span lang={chosen.code} dir={chosen.dir} className="max-w-24 truncate max-[380px]:hidden">{chosen.name}</span>
+        <Button variant="outline" size="icon" onClick={() => setLangOpen((value) => !value)} aria-expanded={langOpen} aria-label="Choose language" className="rounded-full">
+          <Languages className="size-5" aria-hidden />
         </Button>
       </div>
     </div>
