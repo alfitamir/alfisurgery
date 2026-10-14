@@ -4,7 +4,7 @@
 - Share the article showcase between both homepages and use imported image asset pointers for blog media; this keeps previews consistent and removes dependence on WordPress image hosting.
 - Keep added site languages in bundled dictionaries behind a root language provider, preserving source text nodes and original URLs; this supports existing content, dynamic dialogs, and offline reading without duplicating medical articles.
 - Mount audience-based navigation and the footer in the root shell, and keep profile, research, teaching, updates, videos, and contact as dedicated destinations; this reduces homepage overload without losing source content.
-- Validate and retain the optional language search parameter in the root router; this makes all six language editions shareable across navigation.
+- Validate and retain the optional language search parameter in the root router; this makes all language editions shareable across navigation.
 - Use native-language navigation dictionaries outside DOM translation; this keeps language identity and menu labels reliable during loading.
 - Keep original-language reading clearly labelled when its language differs from the selected interface, and scope legacy-header hiding to patient-site wrappers; this prevents misleading language identity and hidden content headings.
 - Filter articles by explicit source-language metadata; label original video audio and conditional caption support in every edition, preserving direct reading URLs for offline access.
@@ -14,3 +14,4 @@
 - Request YouTube captions using the selected language but explicitly describe availability and medical limitations; player preferences cannot guarantee translated subtitles.
 - Use /guides/$guideId for print-friendly operation reading pages with shared localized guidance, and explicitly label unchanged source downloads; this preserves language-specific reading without misrepresenting handout translations.
 
+- Bundle Tamil translations with the same shared language provider and typed native navigation dictionaries; this keeps direct links, offline reading, and language identity consistent.
