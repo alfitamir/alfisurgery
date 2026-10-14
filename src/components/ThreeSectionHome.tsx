@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, HeartPulse, Stethoscope } from "lucide-react";
+import { ArrowRight, BookOpen, HeartPulse, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { navigationCopy } from "@/data/site-navigation";
@@ -11,14 +11,24 @@ export function ThreeSectionHome() {
   const { language } = useSiteLanguage();
   const t = navigationCopy[language];
   const s = sectionCopy[language];
+  const patients = language === "ar" ? "/ar/patients" : "/patients";
   const sections = [
     { to: "/profile", title: s.doctor, description: s.doctorText, image: portrait.url, icon: Stethoscope },
-    { to: language === "ar" ? "/ar/patients" : "/patients", title: s.patient, description: s.patientText, image: patientImage, icon: HeartPulse },
+    { to: patients, title: s.patient, description: s.patientText, image: patientImage, icon: HeartPulse },
   ] as const;
   return <main data-no-translate lang={language} className="mx-auto max-w-7xl px-5 py-8 md:px-8 md:py-12">
-    <div className="flex items-center gap-5 border-b border-border pb-8">
-      <img src={portrait.url} alt={t.name} width={180} height={210} className="h-32 w-24 shrink-0 rounded-md object-cover object-top md:h-40 md:w-32" />
-      <div className="min-w-0"><p className="text-sm font-semibold text-primary">{t.welcome}</p><h1 className="mt-3 text-3xl font-bold md:text-4xl">{t.name}</h1><p className="mt-3 text-sm text-muted-foreground md:text-base">{t.role}</p></div>
+    <div className="border-b border-border pb-8">
+      <h1 className="text-3xl font-bold md:text-4xl">{t.welcome}</h1>
+      <p className="mt-3 text-sm text-muted-foreground md:text-base">{t.intro}</p>
+      <div className="mt-6 rounded-md border border-primary/25 bg-secondary/60 p-5">
+        <div className="flex items-start gap-3">
+          <BookOpen className="mt-0.5 size-5 shrink-0 text-primary" />
+          <div className="min-w-0">
+            <p className="font-semibold leading-relaxed">{t.guidesNotice}</p>
+            <Button asChild variant="outline" className="mt-4 h-auto min-h-11"><Link to={patients}>{t.operations}<ArrowRight className="rtl:rotate-180" /></Link></Button>
+          </div>
+        </div>
+      </div>
     </div>
     <div className="mt-8 grid gap-6 md:grid-cols-2" aria-label={t.menu}>
       {sections.map((section, index) => <section key={section.to} className="flex min-w-0 flex-col overflow-hidden rounded-md border border-border bg-card">
