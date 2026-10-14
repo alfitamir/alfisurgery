@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Building2, Facebook, GraduationCap, Linkedin, Mail, MapPin, Menu, MessageCircle, Microscope, Phone, X, Youtube } from "lucide-react";
+import { Building2, Facebook, GraduationCap, Languages, Linkedin, Mail, MapPin, Menu, MessageCircle, Microscope, Phone, X, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { navigationCopy } from "@/data/site-navigation";
@@ -9,18 +9,19 @@ import { sectionCopy } from "@/data/section-copy";
 import portrait from "@/assets/dr-elalfy-main.jpg.asset.json";
 
 export function SiteNavigation() {
-  const { language } = useSiteLanguage();
+  const { language, languageMenu } = useSiteLanguage();
   const t = navigationCopy[language];
   const chosen = siteLanguages.find((l) => l.code === language) ?? siteLanguages[0];
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const [open, setOpen] = useState(false);
-  useEffect(() => { setOpen(false); }, [pathname]);
+  const [langOpen, setLangOpen] = useState(false);
+  useEffect(() => { setOpen(false); setLangOpen(false); }, [pathname]);
   useEffect(() => {
-    if (!open) return;
-    const close = (event: KeyboardEvent) => { if (event.key === "Escape") setOpen(false); };
+    if (!open && !langOpen) return;
+    const close = (event: KeyboardEvent) => { if (event.key === "Escape") { setOpen(false); setLangOpen(false); } };
     window.addEventListener("keydown", close);
     return () => window.removeEventListener("keydown", close);
-  }, [open]);
+  }, [open, langOpen]);
   const home = language === "ar" ? "/ar" : "/";
   const patients = language === "ar" ? "/ar/patients" : "/patients";
   const sections = sectionCopy[language];
