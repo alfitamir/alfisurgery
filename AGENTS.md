@@ -16,3 +16,4 @@
 
 - Bundle Tamil translations with the same shared language provider and typed native navigation dictionaries; this keeps direct links, offline reading, and language identity consistent.
 - Keep disease-by-disease risk-reduction guidance in a shared typed seven-language content module on /prevention, linked from both patient page aliases; this preserves language identity, direct reading access and clinical safety limits without DOM translation.
+- Place the phone language control with physical right offsets inside the sticky header while the tablet and desktop sidebar stays as it is; this keeps the control reachable at the top-right in both reading directions instead of mirroring it to the left.
