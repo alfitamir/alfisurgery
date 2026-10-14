@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { navigationCopy } from "@/data/site-navigation";
 import { showsVideos, siteLanguages } from "@/lib/site-language";
+import portrait from "@/assets/dr-elalfy-main.jpg.asset.json";
 
 export function SiteNavigation() {
   const { language } = useSiteLanguage();
@@ -32,7 +33,7 @@ export function SiteNavigation() {
   return <header data-no-translate dir={chosen.dir} lang={language} className="site-main-navigation sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur-md">
     <div className="mx-auto grid min-h-20 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:flex sm:justify-between md:px-8">
       <Link to={home} className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
-        <span className="grid size-11 shrink-0 place-items-center rounded-md bg-primary text-primary-foreground"><Stethoscope className="size-6" /></span>
+        <img src={portrait.url} alt={t.name} width={44} height={44} className="size-11 shrink-0 rounded-md object-cover object-top" />
         <span className="min-w-0"><span className="block text-base font-bold md:text-lg">{t.name}</span><span className="mt-1 block text-xs text-muted-foreground">{t.role}</span></span>
       </Link>
       <nav className="hidden items-center gap-1 xl:flex" aria-label={t.menu}>{items.map((item) => <Button key={item.to} asChild variant="ghost" className={active(item.to) ? "bg-secondary text-primary" : "text-muted-foreground"}><Link to={item.to} aria-current={active(item.to) ? "page" : undefined}>{item.label}</Link></Button>)}<details className="relative"><summary className="cursor-pointer px-3 py-2 text-sm text-primary">{t.teaching}</summary><div className="absolute end-0 top-full z-50 min-w-48 border border-border bg-card p-2"><Button asChild variant="ghost" className="w-full justify-start"><Link to="/teaching">{t.teaching}</Link></Button><Button asChild variant="ghost" className="w-full justify-start"><Link to="/updates">{t.updates}</Link></Button></div></details></nav>

@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SiteHome } from "@/components/SiteHome";
-import portrait from "@/assets/dr-elalfy-main.jpg.asset.json";
-export const Route = createFileRoute("/")({ component: SiteHome, head: () => ({ meta: [
-{title: "Dr. Tamer Elalfy | Surgical care, research & patient education"}, {name: "description", content: "Explore Dr. Tamer Elalfy’s experience, surgical research and patient guides."}, {property: "og:title", content: "Dr. Tamer Elalfy | Surgical care, research & patient education"}, {property: "og:description", content: "Explore Dr. Tamer Elalfy’s experience, surgical research and patient guides."}, {property: "og:type", content: "website"}, {name: "twitter:card", content: "summary_large_image"}, {property: "og:image", content: portrait.url}, {name: "twitter:image", content: portrait.url}
+import { PatientEducationSite } from "@/components/PatientEducationSite";
+export const Route = createFileRoute("/")({ component: () => <PatientEducationSite lang="en" />, head: () => ({ meta: [
+{title: "Patient education | Dr. Tamer Elalfy"}, {name: "description", content: "Find your operation guide, prepare for surgery and learn about recovery in six languages with Dr. Tamer Elalfy."}, {property: "og:title", content: "Patient education | Dr. Tamer Elalfy"}, {property: "og:description", content: "Operation guides, preparation, recovery and warning signs for patients and families."}, {property: "og:type", content: "website"}, {name: "twitter:card", content: "summary_large_image"}
 ] }) });

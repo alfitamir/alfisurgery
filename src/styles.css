@@ -218,3 +218,14 @@ html[data-site-language] body .font-mono { font-family: var(--font-mono) !import
   .site-page-content .patient-site main > section:first-child h1 { font-size: 2rem; }
 }
 @media print { .site-main-navigation, body > footer { display: none !important; } }
+.patient-site article { min-width: 0; overflow-wrap: anywhere; }
+.patient-site #operations article h3 { min-height: 3.5rem; }
+.patient-site #operations article p { flex-grow: 1; }
+.patient-site #operations article a { white-space: normal; height: auto; min-height: 2rem; }
+.guide-reading { overflow-wrap: anywhere; }
+@media print {
+  .site-language-bar, .site-main-navigation, .guide-actions, .site-page-content + footer { display: none !important; }
+  .guide-reading { max-width: none; padding: 0; }
+  .guide-reading img { display: none; }
+  .guide-reading section, .guide-reading dl > div { break-inside: avoid; }
+}
