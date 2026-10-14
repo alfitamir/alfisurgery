@@ -19,4 +19,7 @@
 - [x] Hide the videos destination in the Urdu, Hindi, Bengali, and Filipino editions and send its direct URL to that edition's home.
 - [x] Hide the videos destination in the English edition the same way.
 - [x] Request publication of all website changes.
+- [ ] Make patient education the homepage in all six editions, with the doctor's own photo and a compact searchable guide library.
+- [ ] Ensure every operation guide can be read in the selected language and clearly label original-language downloads.
+- [ ] Check guide translations, medical safety notes, search, and phone/desktop layouts.
 
