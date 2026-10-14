@@ -31,7 +31,7 @@ export function SiteNavigation() {
   ] as const;
   const active = (to: string) => to === "/" || to === "/ar" ? pathname === to || pathname === `${to}/` : pathname.startsWith(to);
   return <header data-no-translate dir={chosen.dir} lang={language} className="site-main-navigation sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur-md">
-    <div className="mx-auto grid min-h-20 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-5 py-3 sm:flex sm:justify-between md:px-8 max-md:px-4 rtl:max-md:grid-cols-[auto_minmax(0,1fr)] rtl:max-md:flex-row-reverse">
+    <div className="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-3 px-5 py-3 md:px-8 max-md:px-4 rtl:max-md:flex-row-reverse">
       <Link to={home} className="flex min-w-0 items-center gap-2" onClick={() => setOpen(false)}>
         <img src={portrait.url} alt={t.name} width={44} height={44} className="size-11 shrink-0 rounded-md object-cover object-top max-md:size-9" />
         <span className="min-w-0"><span className="block text-base font-bold md:text-lg max-md:text-sm">{t.name}</span><span className="mt-1 block text-xs text-muted-foreground max-md:text-[10px]">{t.role}</span></span>
