@@ -7,8 +7,10 @@
 - Validate and retain the optional language search parameter in the root router; this makes all six language editions shareable across navigation.
 - Use native-language navigation dictionaries outside DOM translation; this keeps language identity and menu labels reliable during loading.
 - Keep original-language reading clearly labelled when its language differs from the selected interface, and scope legacy-header hiding to patient-site wrappers; this prevents misleading language identity and hidden content headings.
-- Filter article and video listings by explicit source-language metadata, not translated titles; retain direct reading URLs so existing links and offline pages remain accessible.
+- Filter articles by explicit source-language metadata; label original video audio and conditional caption support in every edition, preserving direct reading URLs for offline access.
 - Hide a destination from an edition's menus and pages when that edition has no content of its own, and send its direct URL to that edition's home instead of an empty page; this keeps a temporary gap out of the navigation without breaking an old link.
-- Render the shared patient education experience on both homepage routes and patient aliases; this keeps all language editions synchronized.
+- Render a shared three-entry introduction on both homepage routes, keep the patient library on patient aliases, and use three matching primary navigation destinations; this keeps language editions synchronized without homepage overload.
+- Keep doctor research, publications and teaching links inside the profile destination and specialty-filtered videos inside patient education; this preserves the three-section hierarchy without removing existing URLs.
+- Request YouTube captions using the selected language but explicitly describe availability and medical limitations; player preferences cannot guarantee translated subtitles.
 - Use /guides/$guideId for print-friendly operation reading pages with shared localized guidance, and explicitly label unchanged source downloads; this preserves language-specific reading without misrepresenting handout translations.
 
