@@ -175,6 +175,7 @@ html[data-site-language="hi"] { --font-localized: "Noto Sans Devanagari", system
 html[data-site-language="bn"] { --font-localized: "Noto Sans Bengali", system-ui, sans-serif; }
 html[data-site-language="tl"] { --font-localized: "IBM Plex Sans", system-ui, sans-serif; }
 html[data-site-language="ta"] { --font-localized: "Noto Sans Tamil", system-ui, sans-serif; }
+html[data-site-language="ta"] .site-page-content :is(a,button) { white-space: normal; max-width: 100%; height: auto; min-height: 2.25rem; overflow-wrap: anywhere; }
 html[data-site-language]:not([data-site-language=""]) body,
 html[data-site-language]:not([data-site-language=""]) body :is(h1,h2,h3,h4,p,span,a,button,input,div,li,dt,dd) {
   font-family: var(--font-localized) !important;
