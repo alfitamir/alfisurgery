@@ -22,8 +22,9 @@
 - [x] Make patient education the homepage in all six editions, with the doctor's own photo and a compact searchable guide library.
 - [x] Add translated online guidance for all 22 operations and clearly label unchanged original-language downloads.
 - [x] Check guide dictionary coverage, medical safety notes, search, and phone/desktop layouts.
-- [ ] Obtain native-speaking medical review of Urdu, Hindi, Bengali and Filipino translations; waiting for qualified reviewers supplied by the doctor.
+- [ ] Obtain native-speaking medical review of Tamil, Urdu, Hindi, Bengali and Filipino translations; waiting for qualified reviewers supplied by the doctor.
 - [x] Organize all six homepages and primary navigation into doctor, patient education, and contact sections, retaining inside pages.
 - [x] Provide specialty-organized video access with accurate caption availability labels and verify all six editions.
 - [x] Request publication of the three-section homepage and translated patient guides.
+- [x] Add a complete Tamil website edition with translated patient guides and verify navigation and language coverage.
 
