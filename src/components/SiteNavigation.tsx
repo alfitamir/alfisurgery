@@ -32,7 +32,7 @@ export function SiteNavigation() {
   const active = (to: string) => to === "/" || to === "/ar" ? pathname === to || pathname === `${to}/` : pathname.startsWith(to);
   return <header data-no-translate dir={chosen.dir} lang={language} className="site-main-navigation sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur-md">
     <div className="mx-auto grid min-h-20 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:flex sm:justify-between md:px-8">
-      <Link to={home} className="flex min-w-0 items-center gap-3 max-md:pr-40" onClick={() => setOpen(false)}>
+      <Link to={home} className="flex min-w-0 items-center gap-3 max-md:pr-40 max-[380px]:pr-28" onClick={() => setOpen(false)}>
         <img src={portrait.url} alt={t.name} width={44} height={44} className="size-11 shrink-0 rounded-md object-cover object-top" />
         <span className="min-w-0"><span className="block text-base font-bold md:text-lg">{t.name}</span><span className="mt-1 block text-xs text-muted-foreground">{t.role}</span></span>
       </Link>
@@ -45,7 +45,7 @@ export function SiteNavigation() {
         {langOpen && <div className="absolute end-0 top-full z-50 mt-2 w-52 rounded-2xl border border-border bg-card p-2 shadow-xl">{languageMenu}</div>}
         <Button variant="outline" size="sm" onClick={() => setLangOpen((value) => !value)} aria-expanded={langOpen} aria-label="Choose language" className="gap-2 rounded-full">
           <Languages className="size-4 shrink-0" aria-hidden />
-          <span lang={chosen.code} dir={chosen.dir} className="max-w-24 truncate">{chosen.name}</span>
+          <span lang={chosen.code} dir={chosen.dir} className="max-w-24 truncate max-[380px]:hidden">{chosen.name}</span>
         </Button>
       </div>
     </div>
