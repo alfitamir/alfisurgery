@@ -5,6 +5,7 @@ export const siteLanguages = [
   { code: "hi", name: "हिन्दी", dir: "ltr" },
   { code: "bn", name: "বাংলা", dir: "ltr" },
   { code: "tl", name: "Filipino", dir: "ltr" },
+  { code: "ta", name: "தமிழ்", dir: "ltr" },
 ] as const;
 
 export type SiteLanguage = typeof siteLanguages[number]["code"];
@@ -12,6 +13,7 @@ export type SiteLanguage = typeof siteLanguages[number]["code"];
 export const showsVideos = (_language: SiteLanguage) => true;
 export type TranslationDictionary = Record<string, string>;
 export const languageContentCopy: Record<SiteLanguage, { articles: string; noArticles: string; noVideos: string }> = {
+  ta: { articles: "மருத்துவக் கட்டுரைகள்", noArticles: "தமிழில் எழுதப்பட்ட கட்டுரைகள் தற்போது இல்லை.", noVideos: "தமிழில் வீடியோக்கள் தற்போது இல்லை." },
   ar: { articles: "مقالات طبية مبسطة", noArticles: "لا توجد مقالات باللغة العربية حاليًا.", noVideos: "لا توجد فيديوهات باللغة العربية حاليًا." },
   en: { articles: "Medical articles", noArticles: "No articles written in English are available yet.", noVideos: "No videos in English are available yet." },
   ur: { articles: "طبی مضامین", noArticles: "فی الحال اردو میں لکھے گئے مضامین دستیاب نہیں ہیں۔", noVideos: "فی الحال اردو زبان میں ویڈیوز دستیاب نہیں ہیں۔" },

@@ -4,6 +4,7 @@ import { navigationCopy } from "@/data/site-navigation";
 import { Button } from "@/components/ui/button";
 
 const originalArabic = {
+  ta: "அசல் உள்ளடக்கம் அரபு மொழியில் உள்ளது. கட்டுரைகள் மற்றும் மருத்துவக் கேள்விகளின் அசல் அரபு உரை பாதுகாக்கப்படுகிறது.",
   en: "Original Arabic content. The article text and medical questions are preserved in Arabic.",
   ar: "المحتوى الأصلي باللغة العربية.",
   ur: "اصل مواد عربی زبان میں ہے۔ مضامین اور طبی سوالات کا اصل عربی متن محفوظ ہے۔",

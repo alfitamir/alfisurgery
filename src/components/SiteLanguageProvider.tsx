@@ -10,6 +10,7 @@ const LanguageContext = createContext({ language: "en" as SiteLanguage, dictiona
 export const useSiteLanguage = () => useContext(LanguageContext);
 const storageKey = "alfi-site-language";
 const loaders = {
+  ta: () => import("@/data/locales/ta.json"),
   ur: () => import("@/data/locales/ur.json"),
   hi: () => import("@/data/locales/hi.json"),
   bn: () => import("@/data/locales/bn.json"),
