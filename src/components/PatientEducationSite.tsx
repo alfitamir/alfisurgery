@@ -24,6 +24,7 @@ import { EducationSummaryDialog } from "@/components/EducationSummaryDialog";
 import { InstallAppButton } from "@/components/InstallAppButton";
 import { ArticlesSection } from "@/components/ArticlesSection";
 import { VideosSection } from "@/components/VideosSection";
+import { PreventionEntry } from "@/components/PreventionContent";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { showsVideos, siteLanguages, translatedSearchText } from "@/lib/site-language";
 import {
@@ -185,6 +186,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
         </section>
 
 
+        <PreventionEntry />
         <section id="operations" className="border-y border-patient-mist bg-card py-20">
           <div className="mx-auto max-w-7xl px-4 md:px-8">
 
