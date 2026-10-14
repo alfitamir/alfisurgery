@@ -662,7 +662,7 @@ export function ArabicSiteSections({ group }: { group: "profile" | "research" | 
                   <MessageCircle className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <div className="text-xs tracking-widest text-muted-foreground">قناة واتساب</div>
+                  <div className="text-xs tracking-widest text-muted-foreground">واتساب</div>
                   <div className="font-medium group-hover:text-accent transition">للمرضى</div>
                 </div>
               </a>

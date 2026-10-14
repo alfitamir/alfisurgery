@@ -779,7 +779,7 @@ export function EnglishSiteSections({ group }: { group: "profile" | "research" |
                   <MessageCircle className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">WhatsApp Channel</div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">WhatsApp</div>
                   <div className="font-medium group-hover:text-accent transition">For patients</div>
                 </div>
               </a>

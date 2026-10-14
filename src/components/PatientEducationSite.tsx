@@ -98,7 +98,7 @@ const copy = {
     topics: "guides",
     note: "These guides support — but never replace — advice from your own surgical team.",
     call: "Call clinic",
-    whatsapp: "Patient channel",
+    whatsapp: "Message on WhatsApp",
     youtube: "Videos on YouTube",
   },
   ar: {
@@ -132,7 +132,7 @@ const copy = {
     topics: "أدلة",
     note: "هذه الأدلة تساعدك، لكنها لا تحل محل تعليمات فريقك الجراحي.",
     call: "اتصل بالعيادة",
-    whatsapp: "قناة المرضى",
+    whatsapp: "مراسلة واتساب",
     youtube: "فيديوهات على يوتيوب",
   },
 } as const;
