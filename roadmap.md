@@ -25,5 +25,5 @@
 - [ ] Obtain native-speaking medical review of Urdu, Hindi, Bengali and Filipino translations; waiting for qualified reviewers supplied by the doctor.
 - [x] Organize all six homepages and primary navigation into doctor, patient education, and contact sections, retaining inside pages.
 - [x] Provide specialty-organized video access with accurate caption availability labels and verify all six editions.
-- [ ] Publish the three-section homepage and translated patient guides.
+- [x] Request publication of the three-section homepage and translated patient guides.
 
