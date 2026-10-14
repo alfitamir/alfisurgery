@@ -19,6 +19,7 @@ import { Route as PreventionRouteImport } from './routes/prevention'
 import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as PublicationsRouteImport } from './routes/publications'
 import { Route as ResearchRouteImport } from './routes/research'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TeachingRouteImport } from './routes/teaching'
 import { Route as UpdatesRouteImport } from './routes/updates'
 import { Route as VideosRouteImport } from './routes/videos'
@@ -82,6 +83,11 @@ const PublicationsRoute = PublicationsRouteImport.update({
 const ResearchRoute = ResearchRouteImport.update({
   id: '/research',
   path: '/research',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TeachingRoute = TeachingRouteImport.update({
@@ -171,6 +177,7 @@ export interface FileRoutesByFullPath {
   '/profile': typeof ProfileRoute
   '/publications': typeof PublicationsRoute
   '/research': typeof ResearchRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/teaching': typeof TeachingRoute
   '/updates': typeof UpdatesRoute
   '/videos': typeof VideosRoute
@@ -195,6 +202,7 @@ export interface FileRoutesByTo {
   '/profile': typeof ProfileRoute
   '/publications': typeof PublicationsRoute
   '/research': typeof ResearchRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/teaching': typeof TeachingRoute
   '/updates': typeof UpdatesRoute
   '/videos': typeof VideosRoute
@@ -222,6 +230,7 @@ export interface FileRoutesById {
   '/profile': typeof ProfileRoute
   '/publications': typeof PublicationsRoute
   '/research': typeof ResearchRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/teaching': typeof TeachingRoute
   '/updates': typeof UpdatesRoute
   '/videos': typeof VideosRoute
@@ -250,6 +259,7 @@ export interface FileRouteTypes {
     | '/profile'
     | '/publications'
     | '/research'
+    | '/sitemap.xml'
     | '/teaching'
     | '/updates'
     | '/videos'
@@ -274,6 +284,7 @@ export interface FileRouteTypes {
     | '/profile'
     | '/publications'
     | '/research'
+    | '/sitemap.xml'
     | '/teaching'
     | '/updates'
     | '/videos'
@@ -300,6 +311,7 @@ export interface FileRouteTypes {
     | '/profile'
     | '/publications'
     | '/research'
+    | '/sitemap.xml'
     | '/teaching'
     | '/updates'
     | '/videos'
@@ -327,6 +339,7 @@ export interface RootRouteChildren {
   ProfileRoute: typeof ProfileRoute
   PublicationsRoute: typeof PublicationsRoute
   ResearchRoute: typeof ResearchRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TeachingRoute: typeof TeachingRoute
   UpdatesRoute: typeof UpdatesRoute
   VideosRoute: typeof VideosRoute
@@ -408,6 +421,13 @@ declare module '@tanstack/react-router' {
       path: '/research'
       fullPath: '/research'
       preLoaderRoute: typeof ResearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/teaching': {
@@ -550,6 +570,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProfileRoute: ProfileRoute,
   PublicationsRoute: PublicationsRoute,
   ResearchRoute: ResearchRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   TeachingRoute: TeachingRoute,
   UpdatesRoute: UpdatesRoute,
   VideosRoute: VideosRoute,
