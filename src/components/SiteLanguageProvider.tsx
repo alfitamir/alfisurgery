@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { useRouterState } from "@tanstack/react-router";
-import { Globe, Share2 } from "lucide-react";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Share2 } from "lucide-react";
 import { normalizeText, siteLanguages, translatedText, type SiteLanguage, type TranslationDictionary } from "@/lib/site-language";
 import { navigationCopy } from "@/data/site-navigation";
 import { Button } from "@/components/ui/button";
@@ -147,11 +146,9 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
     <div data-no-translate lang={language} className="site-language-bar border-b border-border bg-secondary text-secondary-foreground" dir={chosen.dir}>
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-2 px-5 py-2 sm:flex sm:flex-wrap sm:justify-between md:px-8">
         <span className="col-span-2 min-w-0 text-xs font-semibold sm:col-auto">Alfi Surgery <span className="mx-2 text-muted-foreground">/</span>{navigationCopy[language].version}</span>
-        <div className="col-span-2 flex min-w-0 items-center gap-2 sm:col-auto">
-        <Select value={language} onValueChange={selectLanguage}>
-          <SelectTrigger aria-label="Website language" className="w-40 bg-background"><Globe className="size-4 shrink-0" /><SelectValue /></SelectTrigger>
-          <SelectContent className="z-[100]" data-no-translate>{siteLanguages.map((item) => <SelectItem key={item.code} value={item.code}><span lang={item.code} dir={item.dir}>{item.name}</span></SelectItem>)}</SelectContent>
-        </Select>
+        <div className="col-span-2 flex min-w-0 flex-wrap items-center gap-2 sm:col-auto">
+        <span className="flex shrink-0 items-center gap-1 text-lg leading-none" aria-label="Saudi Arabia and Egypt"><span role="img" aria-label="Saudi Arabia">🇸🇦</span><span role="img" aria-label="Egypt">🇪🇬</span></span>
+        <nav aria-label="Website language" className="flex min-w-0 flex-wrap items-center gap-1">{siteLanguages.map((item) => <Button key={item.code} size="sm" variant={item.code === language ? "default" : "outline"} aria-current={item.code === language ? "true" : undefined} onClick={() => selectLanguage(item.code)} className="h-8 px-2.5"><span lang={item.code} dir={item.dir}>{item.name}</span></Button>)}</nav>
         <Button variant="outline" size="sm" onClick={shareLink} aria-label={navigationCopy[language].share}><Share2 className="size-4" />{copied ? navigationCopy[language].copied : navigationCopy[language].share}</Button>
         </div>
         {translated && <p lang={language} dir={chosen.dir} role="status" className="col-span-2 min-w-0 w-full text-xs leading-relaxed text-muted-foreground">{loading ? "…" : failed ? "Translation unavailable. Please try another language." : dictionary[normalizeText(notice)] ?? notice}</p>}
