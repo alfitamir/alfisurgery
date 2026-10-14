@@ -26,4 +26,5 @@
 - [x] Organize all six homepages and primary navigation into doctor, patient education, and contact sections, retaining inside pages.
 - [x] Provide specialty-organized video access with accurate caption availability labels and verify all six editions.
 - [x] Request publication of the three-section homepage and translated patient guides.
+- [ ] Add a complete Tamil website edition with translated patient guides and verify navigation and language coverage.
 
