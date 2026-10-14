@@ -28,6 +28,7 @@ import { Route as ArMedicalQuestionsRouteImport } from './routes/ar.medical-ques
 import { Route as ArPatientsRouteImport } from './routes/ar.patients'
 import { Route as ArticlesIndexRouteImport } from './routes/articles.index'
 import { Route as ArticlesArticleIdRouteImport } from './routes/articles.$articleId'
+import { Route as GuidesGuideIdRouteImport } from './routes/guides.$guideId'
 import { Route as PatientEducationHidradenitisSuppurativaRouteImport } from './routes/patient-education.hidradenitis-suppurativa'
 import { Route as PatientEducationWeightPlateauAfterSleeveRouteImport } from './routes/patient-education.weight-plateau-after-sleeve'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
@@ -129,6 +130,11 @@ const ArticlesArticleIdRoute = ArticlesArticleIdRouteImport.update({
   path: '/$articleId',
   getParentRoute: () => ArticlesRoute,
 } as any)
+const GuidesGuideIdRoute = GuidesGuideIdRouteImport.update({
+  id: '/guides/$guideId',
+  path: '/guides/$guideId',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PatientEducationHidradenitisSuppurativaRoute =
   PatientEducationHidradenitisSuppurativaRouteImport.update({
     id: '/patient-education/hidradenitis-suppurativa',
@@ -166,6 +172,7 @@ export interface FileRoutesByFullPath {
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
   '/articles/$articleId': typeof ArticlesArticleIdRoute
+  '/guides/$guideId': typeof GuidesGuideIdRoute
   '/patient-education/hidradenitis-suppurativa': typeof PatientEducationHidradenitisSuppurativaRoute
   '/patient-education/weight-plateau-after-sleeve': typeof PatientEducationWeightPlateauAfterSleeveRoute
   '/ar/': typeof ArIndexRoute
@@ -188,6 +195,7 @@ export interface FileRoutesByTo {
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
   '/articles/$articleId': typeof ArticlesArticleIdRoute
+  '/guides/$guideId': typeof GuidesGuideIdRoute
   '/patient-education/hidradenitis-suppurativa': typeof PatientEducationHidradenitisSuppurativaRoute
   '/patient-education/weight-plateau-after-sleeve': typeof PatientEducationWeightPlateauAfterSleeveRoute
   '/ar': typeof ArIndexRoute
@@ -213,6 +221,7 @@ export interface FileRoutesById {
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
   '/articles/$articleId': typeof ArticlesArticleIdRoute
+  '/guides/$guideId': typeof GuidesGuideIdRoute
   '/patient-education/hidradenitis-suppurativa': typeof PatientEducationHidradenitisSuppurativaRoute
   '/patient-education/weight-plateau-after-sleeve': typeof PatientEducationWeightPlateauAfterSleeveRoute
   '/ar/': typeof ArIndexRoute
@@ -239,6 +248,7 @@ export interface FileRouteTypes {
     | '/ar/medical-questions'
     | '/ar/patients'
     | '/articles/$articleId'
+    | '/guides/$guideId'
     | '/patient-education/hidradenitis-suppurativa'
     | '/patient-education/weight-plateau-after-sleeve'
     | '/ar/'
@@ -261,6 +271,7 @@ export interface FileRouteTypes {
     | '/ar/medical-questions'
     | '/ar/patients'
     | '/articles/$articleId'
+    | '/guides/$guideId'
     | '/patient-education/hidradenitis-suppurativa'
     | '/patient-education/weight-plateau-after-sleeve'
     | '/ar'
@@ -285,6 +296,7 @@ export interface FileRouteTypes {
     | '/ar/medical-questions'
     | '/ar/patients'
     | '/articles/$articleId'
+    | '/guides/$guideId'
     | '/patient-education/hidradenitis-suppurativa'
     | '/patient-education/weight-plateau-after-sleeve'
     | '/ar/'
@@ -307,6 +319,7 @@ export interface RootRouteChildren {
   VideosRoute: typeof VideosRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  GuidesGuideIdRoute: typeof GuidesGuideIdRoute
   PatientEducationHidradenitisSuppurativaRoute: typeof PatientEducationHidradenitisSuppurativaRoute
   PatientEducationWeightPlateauAfterSleeveRoute: typeof PatientEducationWeightPlateauAfterSleeveRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
@@ -447,6 +460,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArticlesArticleIdRouteImport
       parentRoute: typeof ArticlesRoute
     }
+    '/guides/$guideId': {
+      id: '/guides/$guideId'
+      path: '/guides/$guideId'
+      fullPath: '/guides/$guideId'
+      preLoaderRoute: typeof GuidesGuideIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/patient-education/hidradenitis-suppurativa': {
       id: '/patient-education/hidradenitis-suppurativa'
       path: '/patient-education/hidradenitis-suppurativa'
@@ -515,6 +535,7 @@ const rootRouteChildren: RootRouteChildren = {
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
+  GuidesGuideIdRoute: GuidesGuideIdRoute,
   PatientEducationHidradenitisSuppurativaRoute:
     PatientEducationHidradenitisSuppurativaRoute,
   PatientEducationWeightPlateauAfterSleeveRoute:
