@@ -15,3 +15,4 @@
 - Use /guides/$guideId for print-friendly operation reading pages with shared localized guidance, and explicitly label unchanged source downloads; this preserves language-specific reading without misrepresenting handout translations.
 
 - Bundle Tamil translations with the same shared language provider and typed native navigation dictionaries; this keeps direct links, offline reading, and language identity consistent.
+- Keep disease-by-disease risk-reduction guidance in a shared typed seven-language content module on /prevention, linked from both patient page aliases; this preserves language identity, direct reading access and clinical safety limits without DOM translation.
