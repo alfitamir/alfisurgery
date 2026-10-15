@@ -17,14 +17,18 @@ export function VisitCounter() {
     let cancelled = false;
     const run = async () => {
       let value: number | null = null;
+      const today = new Date().toISOString().slice(0, 10);
       try {
-        const stored = sessionStorage.getItem(countedKey);
-        if (stored) value = Number(stored) || null;
-        if (!value) {
+        const stored = localStorage.getItem(countedKey);
+        if (stored === today) {
+          // Already counted today: just read the running total.
+          const { data, error } = await supabase.rpc("get_site_visits");
+          if (!error && typeof data === "number") value = data;
+        } else {
           const { data, error } = await supabase.rpc("increment_site_visits");
           if (!error && typeof data === "number") {
             value = data;
-            sessionStorage.setItem(countedKey, String(data));
+            localStorage.setItem(countedKey, today);
           }
         }
       } catch { /* offline or private browsing */ }
