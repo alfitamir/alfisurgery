@@ -6,7 +6,7 @@ import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { navigationCopy } from "@/data/site-navigation";
 import { patientEducation } from "@/data/patient-education";
 import { preventionCopy } from "@/data/prevention";
-import { translatedText, type SiteLanguage } from "@/lib/site-language";
+import { translatedText, showsVideos, type SiteLanguage } from "@/lib/site-language";
 
 // Native labels remain reliable even while the larger reading dictionary loads.
 const labels: Record<SiteLanguage, string[]> = {
@@ -19,7 +19,7 @@ const labels: Record<SiteLanguage, string[]> = {
   ta: ["அறுவைச் சிகிச்சை வழிகாட்டிகள்", "எச்சரிக்கை அறிகுறிகள்", "அனுபவம்", "சிறப்புப் பிரிவுகள்", "அறுவைச் சிகிச்சை சேவைகள்", "அறுவைச் சிகிச்சைக்கு அப்பால்", "வெளியீடுகள்", "விரிவுரைகள் மற்றும் விளக்கக்காட்சிகள்", "கிளினிக் மற்றும் இருப்பிடம்", "தொழில்முறை சேனல்கள்"],
 };
 
-type Destination = "/patients" | "/ar/patients" | "/prevention" | "/articles" | "/videos" | "/profile" | "/research" | "/publications" | "/teaching" | "/updates" | "/contact";
+type Destination = "/patients" | "/ar/patients" | "/prevention" | "/articles" | "/videos" | "/profile" | "/research" | "/publications" | "/teaching" | "/updates" | "/contact" | "/patient-education/weight-plateau-after-sleeve" | "/patient-education/hidradenitis-suppurativa";
 type Entry = { label: string; to: Destination; hash?: string };
 
 export function HomeSectionMenus() {
@@ -34,8 +34,11 @@ export function HomeSectionMenus() {
     { label: l[1], to: patients, hash: "urgent" },
     { label: preventionCopy[language].title, to: "/prevention" },
     { label: t.articles, to: "/articles" },
-    ...(language === "ar" ? [{ label: t.videos, to: "/videos" as const },
-      { label: "ثبات الوزن بعد التكميم", to: patients, hash: "operations" }] : []),
+    ...(showsVideos(language) ? [{ label: t.videos, to: "/videos" as const }] : []),
+    ...(language === "ar" ? [
+      { label: "ثبات الوزن بعد التكميم", to: "/patient-education/weight-plateau-after-sleeve" as const },
+      { label: "التهاب الغدد العرقية القيحي", to: "/patient-education/hidradenitis-suppurativa" as const },
+    ] : []),
   ];
   const doctorItems: Entry[] = [
     { label: t.profile, to: "/profile", hash: "about" },
