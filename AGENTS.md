@@ -9,7 +9,7 @@
 - Keep original-language reading clearly labelled when its language differs from the selected interface, and scope legacy-header hiding to patient-site wrappers; this prevents misleading language identity and hidden content headings.
 - Filter articles by explicit source-language metadata; label original video audio and conditional caption support in every edition, preserving direct reading URLs for offline access.
 - Hide a destination from an edition's menus and pages when that edition has no content of its own, and send its direct URL to that edition's home instead of an empty page; this keeps a temporary gap out of the navigation without breaking an old link.
-- Render a shared three-entry introduction on both homepage routes, keep the patient library on patient aliases, and use three matching primary navigation destinations; this keeps language editions synchronized without homepage overload.
+- Render both homepages through a shared patient-first introduction, preparation/recovery/warning links and compact profile area using a typed native-language dictionary; this prevents duplicated entry points and keeps every edition synchronized.
 - Keep doctor research, publications and teaching links inside the profile destination and specialty-filtered videos inside patient education; this preserves the three-section hierarchy without removing existing URLs.
 - Request YouTube captions using the selected language but explicitly describe availability and medical limitations; player preferences cannot guarantee translated subtitles.
 - Use /guides/$guideId for print-friendly operation reading pages with shared localized guidance, and explicitly label unchanged source downloads; this preserves language-specific reading without misrepresenting handout translations.
@@ -17,3 +17,4 @@
 - Bundle Tamil translations with the same shared language provider and typed native navigation dictionaries; this keeps direct links, offline reading, and language identity consistent.
 - Keep disease-by-disease risk-reduction guidance in a shared typed seven-language content module on /prevention, linked from both patient page aliases; this preserves language identity, direct reading access and clinical safety limits without DOM translation.
 - Place the phone language control with physical right offsets inside the sticky header while the tablet and desktop sidebar stays as it is; this keeps the control reachable at the top-right in both reading directions instead of mirroring it to the left.
+- Reserve physical left space for the fixed tablet/desktop language sidebar in both reading directions; logical padding would move the clearance to the wrong side in RTL editions.

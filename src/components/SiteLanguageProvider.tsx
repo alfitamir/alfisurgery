@@ -198,10 +198,10 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
         {translated && <p lang={language} dir={chosen.dir} role="status" className="col-span-2 min-w-0 w-full text-xs leading-relaxed text-muted-foreground">{loading ? "…" : failed ? "Translation unavailable. Please try another language." : dictionary[normalizeText(notice)] ?? notice}</p>}
       </div>
     </div>
-    <div data-no-translate className="md:ps-52">
+    <div data-no-translate className="min-w-0 md:pl-52">
       {children}
     </div>
-    <aside data-no-translate className="fixed inset-y-0 start-0 z-40 hidden w-52 flex-col justify-center border-e border-border bg-card/95 p-3 backdrop-blur md:flex" dir="ltr">
+    <aside data-no-translate className="fixed inset-y-0 left-0 z-40 hidden w-52 flex-col justify-center border-r border-border bg-card/95 p-3 backdrop-blur md:flex" dir="ltr">
       <p className="mb-2 px-3 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Language</p>
       {languageMenu}
     </aside>
