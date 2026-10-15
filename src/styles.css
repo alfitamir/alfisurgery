@@ -48,34 +48,34 @@
   --background: oklch(0.985 0.002 240);
   --foreground: oklch(0.27 0.015 240);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.24 0.045 160);
+  --card-foreground: oklch(0.24 0.06 255);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.24 0.045 160);
-  --primary: oklch(0.34 0.075 163);
-  --primary-foreground: oklch(0.975 0.015 100);
-  --secondary: oklch(0.955 0.018 150);
-  --secondary-foreground: oklch(0.30 0.06 163);
-  --muted: oklch(0.962 0.012 140);
+  --popover-foreground: oklch(0.24 0.06 255);
+  --primary: oklch(0.42 0.14 258);
+  --primary-foreground: oklch(0.99 0.005 250);
+  --secondary: oklch(0.955 0.02 250);
+  --secondary-foreground: oklch(0.32 0.1 258);
+  --muted: oklch(0.965 0.01 250);
   --muted-foreground: oklch(0.47 0.016 240);
-  --accent: oklch(0.48 0.10 165);
+  --accent: oklch(0.55 0.15 250);
   --accent-foreground: oklch(0.985 0.01 110);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.90 0.018 150);
-  --input: oklch(0.92 0.016 150);
-  --ring: oklch(0.48 0.10 165);
-  --teal: oklch(0.48 0.10 165);
+  --border: oklch(0.91 0.02 250);
+  --input: oklch(0.92 0.02 250);
+  --ring: oklch(0.55 0.15 250);
+  --teal: oklch(0.55 0.15 250);
   --ivory: oklch(0.97 0.018 95);
   --gold: oklch(0.75 0.11 86);
   --gold-foreground: oklch(0.26 0.05 90);
-  --gradient-hero: linear-gradient(135deg, oklch(0.26 0.06 163) 0%, oklch(0.34 0.08 165) 55%, oklch(0.44 0.09 170) 100%);
-  --gradient-accent: linear-gradient(135deg, oklch(0.48 0.10 165), oklch(0.60 0.09 168));
+  --gradient-hero: linear-gradient(135deg, oklch(0.22 0.08 262) 0%, oklch(0.30 0.12 258) 55%, oklch(0.40 0.14 252) 100%);
+  --gradient-accent: linear-gradient(135deg, oklch(0.45 0.15 258), oklch(0.60 0.14 245));
   --gradient-gold: linear-gradient(135deg, oklch(0.80 0.11 88), oklch(0.70 0.12 80));
-  --shadow-elegant: 0 24px 70px -24px oklch(0.30 0.07 163 / 0.35);
-  --shadow-soft: 0 10px 34px -14px oklch(0.30 0.07 163 / 0.18);
-  --patient-deep: oklch(0.38 0.065 175);
+  --shadow-elegant: 0 24px 70px -24px oklch(0.30 0.1 258 / 0.35);
+  --shadow-soft: 0 10px 34px -14px oklch(0.30 0.1 258 / 0.18);
+  --patient-deep: oklch(0.32 0.11 258);
   --patient-blue: oklch(0.49 0.07 240);
-  --patient-mist: oklch(0.92 0.012 200);
+  --patient-mist: oklch(0.93 0.025 250);
   --patient-apricot: oklch(0.82 0.08 80);
   --patient-canvas: oklch(0.985 0.002 240);
   --patient-ink: oklch(0.31 0.04 245);
@@ -251,3 +251,12 @@ html[data-site-language] body .font-mono { font-family: var(--font-mono) !import
   .home-refresh *, .home-refresh *::before, .home-refresh *::after { animation: none !important; transition: none !important; }
   .home-step:hover { transform: none; }
 }
+
+/* Navy surgeon hero */
+.home-navy { background: var(--gradient-hero); color: var(--primary-foreground); }
+.home-navy-dots { background-image: radial-gradient(color-mix(in oklab, var(--primary-foreground) 18%, transparent) 1.2px, transparent 1.4px); background-size: 18px 18px; mask-image: linear-gradient(90deg, transparent, black 60%); }
+[dir="rtl"] .home-navy-dots { mask-image: linear-gradient(270deg, transparent, black 60%); }
+.home-navy-panel { background: color-mix(in oklab, var(--primary) 55%, transparent); backdrop-filter: blur(4px); }
+.home-portrait-fade { mask-image: linear-gradient(to top, transparent 0%, black 30%); }
+.home-tile { transition: transform .25s ease, box-shadow .25s ease; }
+.home-tile:hover { transform: translateY(-4px); box-shadow: var(--shadow-elegant); }
