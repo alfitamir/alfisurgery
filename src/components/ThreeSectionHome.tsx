@@ -6,6 +6,7 @@ import { navigationCopy } from "@/data/site-navigation";
 import { sectionCopy } from "@/data/section-copy";
 import { homeCopy } from "@/data/home-copy";
 import portrait from "@/assets/dr-elalfy-main.jpg.asset.json";
+import heroPortrait from "@/assets/dr-elalfy-hero.jpg";
 
 export function ThreeSectionHome() {
   const { language } = useSiteLanguage();
@@ -28,7 +29,7 @@ export function ThreeSectionHome() {
           <p className="mt-4 max-w-lg text-base leading-loose opacity-90 md:text-lg">{h.intro}</p>
           <Button asChild size="lg" variant="secondary" className="mt-6 h-auto min-h-12 max-w-full gap-3 whitespace-normal py-3 text-start"><Link to={patients} hash="operations"><Search className="shrink-0" /><span className="min-w-0">{t.operations}</span><ArrowRight className="shrink-0 rtl:rotate-180" /></Link></Button>
         </div>
-        <img src={portrait.url} alt={t.name} width={520} height={600} fetchPriority="high" className="home-enter home-portrait-fade mx-auto aspect-[6/7] w-full max-w-sm rounded-t-md object-cover object-top md:max-w-md" />
+        <img src={heroPortrait} alt={t.name} width={520} height={600} fetchPriority="high" className="home-enter home-portrait-fade mx-auto aspect-[6/7] w-full max-w-sm rounded-t-md object-cover object-[70%_top] md:max-w-md" />
       </div>
     </section>
     <section aria-labelledby="home-journey" className="mx-auto max-w-6xl px-5 py-8 md:px-8 md:py-10">
