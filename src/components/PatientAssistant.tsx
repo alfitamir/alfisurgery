@@ -168,7 +168,9 @@ export function PatientAssistant() {
                       {message.parts.map((part, index) => {
                         if (part.type !== "text") return null;
                         return message.role === "assistant" ? (
-                          <MessageResponse key={index}>{part.text}</MessageResponse>
+<MessageResponse key={index} linkSafety={{ enabled: false }}>
+                            {part.text}
+                          </MessageResponse>
                         ) : (
                           <span key={index}>{part.text}</span>
                         );
