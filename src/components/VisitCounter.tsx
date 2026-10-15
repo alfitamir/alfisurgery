@@ -4,7 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { navigationCopy } from "@/data/site-navigation";
 
-const countedKey = "alfi-visit-counted";
+const countedKey = "alfi-visit-counted-date";
 
 export function VisitCounter() {
   const { language } = useSiteLanguage();
