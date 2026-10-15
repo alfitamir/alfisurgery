@@ -16,7 +16,7 @@ export function ThreeSectionHome() {
   const patients = language === "ar" ? "/ar/patients" : "/patients";
   const steps = [
     { id: "prepare", title: t.prepare, icon: ClipboardCheck, tone: "text-primary bg-secondary" },
-    { id: "recover", title: t.recover, icon: HeartPulse, tone: "text-patient-blue bg-patient-mist" },
+    { id: "recovery", title: t.recover, icon: HeartPulse, tone: "text-patient-blue bg-patient-mist" },
     { id: "urgent", title: h.urgent, icon: ShieldAlert, tone: "text-destructive bg-destructive/10" },
   ];
   return <main data-no-translate lang={language} className="home-refresh">
@@ -25,7 +25,7 @@ export function ThreeSectionHome() {
       <div className="home-cover-veil absolute inset-0 -z-10" />
       <div className="mx-auto flex min-h-[440px] max-w-6xl items-center px-5 py-12 md:px-8 lg:min-h-[470px]">
         <div className="home-enter min-w-0 max-w-xl lg:max-w-[55%]">
-          <p className="flex items-center gap-2 text-sm font-semibold text-primary"><Stethoscope className="size-4 shrink-0" />Alfi Surgery</p>
+          <p className="flex items-center gap-2 text-sm font-semibold text-primary"><Stethoscope className="size-4 shrink-0" />{t.patients}</p>
           <h1 className="mt-5 text-3xl font-bold leading-relaxed text-patient-ink sm:text-4xl lg:text-5xl">{h.title}</h1>
           <p className="mt-5 max-w-lg text-base leading-loose text-foreground md:text-lg">{h.intro}</p>
           <Button asChild size="lg" className="mt-7 h-auto min-h-12 max-w-full gap-3 whitespace-normal py-3 text-start"><Link to={patients} hash="operations"><Search className="shrink-0" /><span className="min-w-0">{t.operations}</span><ArrowRight className="shrink-0 rtl:rotate-180" /></Link></Button>
