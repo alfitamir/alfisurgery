@@ -100,6 +100,26 @@ export const publications: Publication[] = [
     ]
   },
   {
+    "id": "laparoscopic-port-access-techniques-and-port-sit-2023",
+    "tag": "IOSR Journal of Dental and Medical Sciences · 2023",
+    "year": 2023,
+    "journal": "IOSR Journal of Dental and Medical Sciences",
+    "title": "Laparoscopic port access techniques and port site complications",
+    "titleAr": "تقنيات الوصول إلى منافذ المنظار ومضاعفات مواضع الفتحات",
+    "authors": "Shah AB, Tamer, Ala, Rizwan, Wael, Abdullah, Hatim",
+    "abstract": "مراجعة لتقنيات إدخال منافذ المنظار الجراحي، والتعرف على مضاعفات مواضع الفتحات والوقاية منها وعلاجها.",
+    "category": "Laparoscopy & Safety",
+    "citation": "IOSR Journal of Dental and Medical Sciences. 2023; 22(12): 63–69. | DOI: 10.9790/0853-2212066369",
+    "url": "https://doi.org/10.9790/0853-2212066369",
+    "doi": "10.9790/0853-2212066369",
+    "links": [
+      {
+        "label": "DOI Link",
+        "url": "https://doi.org/10.9790/0853-2212066369"
+      }
+    ]
+  },
+  {
     "id": "three-ports-versus-conventional-five-ports-laparos-2024",
     "tag": "Zagazig University Medical Journal · 2024",
     "year": 2024,
