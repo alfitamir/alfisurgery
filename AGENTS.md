@@ -18,3 +18,4 @@
 - Keep disease-by-disease risk-reduction guidance in a shared typed seven-language content module on /prevention, linked from both patient page aliases; this preserves language identity, direct reading access and clinical safety limits without DOM translation.
 - Place the phone language control with physical right offsets inside the sticky header while the tablet and desktop sidebar stays as it is; this keeps the control reachable at the top-right in both reading directions instead of mirroring it to the left.
 - Reserve physical left space for the fixed tablet/desktop language sidebar in both reading directions; logical padding would move the clearance to the wrong side in RTL editions.
+- Resolve the patient assistant's response language per latest question and include explicit supported ?lang codes in guide links; this prevents the interface language or prior turns from selecting the wrong reading edition.
