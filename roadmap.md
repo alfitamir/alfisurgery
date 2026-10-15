@@ -32,3 +32,4 @@
 - [x] Point the printed QR codes, outreach list, and page address tags at alfisurgery.com instead of the Lovable address.
 
 - [x] Add a Gemini-powered patient Q&A assistant (one chat, no saved history) answering in the visitor's language from the 22 operation guides, with safety disclaimers; verified in English and Arabic.
+- [x] Refresh both homepages with one introduction, guide journey, subtle motion and language-sidebar clearance; verify all seven languages.

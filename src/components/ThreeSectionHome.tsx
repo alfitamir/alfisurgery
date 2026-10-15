@@ -1,9 +1,10 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, BookOpen, HeartPulse, Stethoscope } from "lucide-react";
+import { ArrowRight, ClipboardCheck, HeartPulse, Search, ShieldAlert, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { navigationCopy } from "@/data/site-navigation";
 import { sectionCopy } from "@/data/section-copy";
+import { homeCopy } from "@/data/home-copy";
 import portrait from "@/assets/dr-elalfy-main.jpg.asset.json";
 import patientImage from "@/assets/patient-journey-hero.jpg";
 
@@ -11,30 +12,38 @@ export function ThreeSectionHome() {
   const { language } = useSiteLanguage();
   const t = navigationCopy[language];
   const s = sectionCopy[language];
+  const h = homeCopy[language];
   const patients = language === "ar" ? "/ar/patients" : "/patients";
-  const sections = [
-    { to: "/profile", title: s.doctor, description: s.doctorText, image: portrait.url, icon: Stethoscope },
-    { to: patients, title: s.patient, description: s.patientText, image: patientImage, icon: HeartPulse },
-  ] as const;
-  return <main data-no-translate lang={language} className="mx-auto max-w-7xl px-5 py-8 md:px-8 md:py-12">
-    <div className="border-b border-border pb-8">
-      <h1 className="text-3xl font-bold md:text-4xl">{t.welcome}</h1>
-      <p className="mt-3 text-sm text-muted-foreground md:text-base">{t.intro}</p>
-      <div className="mt-6 rounded-md border border-primary/25 bg-secondary/60 p-5">
-        <div className="flex items-start gap-3">
-          <BookOpen className="mt-0.5 size-5 shrink-0 text-primary" />
-          <div className="min-w-0">
-            <p className="font-semibold leading-relaxed">{t.guidesNotice}</p>
-            <Button asChild variant="outline" className="mt-4 h-auto min-h-11"><Link to={patients}>{t.operations}<ArrowRight className="rtl:rotate-180" /></Link></Button>
-          </div>
+  const steps = [
+    { id: "prepare", title: t.prepare, icon: ClipboardCheck, tone: "text-primary bg-secondary" },
+    { id: "recovery", title: t.recover, icon: HeartPulse, tone: "text-patient-blue bg-patient-mist" },
+    { id: "urgent", title: h.urgent, icon: ShieldAlert, tone: "text-destructive bg-destructive/10" },
+  ];
+  return <main data-no-translate lang={language} className="home-refresh">
+    <section className="home-cover relative isolate overflow-hidden border-b border-border bg-patient-mist">
+      <img src={patientImage} alt="" aria-hidden width={1536} height={1024} className="home-cover-image absolute inset-0 -z-20 h-full w-full object-cover" fetchPriority="high" />
+      <div className="home-cover-veil absolute inset-0 -z-10" />
+      <div className="mx-auto flex min-h-[440px] max-w-6xl items-center px-5 py-12 md:px-8 lg:min-h-[470px]">
+        <div className="home-enter min-w-0 max-w-xl lg:max-w-[55%]">
+          <p className="flex items-center gap-2 text-sm font-semibold text-primary"><Stethoscope className="size-4 shrink-0" />{t.patients}</p>
+          <h1 className="mt-5 text-3xl font-bold leading-relaxed text-patient-ink sm:text-4xl lg:text-5xl">{h.title}</h1>
+          <p className="mt-5 max-w-lg text-base leading-loose text-foreground md:text-lg">{h.intro}</p>
+          <Button asChild size="lg" className="mt-7 h-auto min-h-12 max-w-full gap-3 whitespace-normal py-3 text-start"><Link to={patients} hash="operations"><Search className="shrink-0" /><span className="min-w-0">{t.operations}</span><ArrowRight className="shrink-0 rtl:rotate-180" /></Link></Button>
         </div>
       </div>
-    </div>
-    <div className="mt-8 grid gap-6 md:grid-cols-2" aria-label={t.menu}>
-      {sections.map((section, index) => <section key={section.to} className="flex min-w-0 flex-col overflow-hidden rounded-md border border-border bg-card">
-        <Link to={section.to} aria-label={section.title}><img src={section.image} alt={section.title} className={`h-44 w-full object-cover ${index === 0 ? "object-[center_25%]" : ""}`} /></Link>
-        <div className="flex flex-1 flex-col p-5"><div className="flex items-center justify-between"><section.icon className="size-5 text-primary" /><span className="text-xs text-muted-foreground">0{index + 1}</span></div><h2 className="mt-4 text-2xl font-bold">{section.title}</h2><p className="mb-6 mt-3 text-sm leading-relaxed text-muted-foreground">{section.description}</p><Button asChild variant="outline" className="mt-auto h-auto min-h-11 justify-between whitespace-normal text-start"><Link to={section.to}>{s.enter}<ArrowRight className="rtl:rotate-180" /></Link></Button></div>
-      </section>)}
-    </div>
+    </section>
+    <section aria-labelledby="home-journey" className="mx-auto max-w-6xl px-5 py-8 md:px-8 md:py-10">
+      <h2 id="home-journey" className="text-xl font-bold md:text-2xl">{h.journey}</h2>
+      <nav aria-label={h.journey} className="home-journey mt-5 grid gap-3 sm:grid-cols-3">
+        {steps.map((step, index) => <Button key={step.id} asChild variant="ghost" className="home-step home-enter h-auto min-h-24 justify-start rounded-md border border-border bg-card px-4 py-5 text-start"><Link to={patients} hash={step.id} className="grid grid-cols-[auto_minmax(0,1fr)_auto] gap-3"><span className={`grid size-10 shrink-0 place-items-center rounded-full ${step.tone}`}><step.icon className="size-5" /></span><span className="min-w-0 whitespace-normal"><span className="mb-1 block text-xs font-normal text-muted-foreground">0{index + 1}</span><span className="text-base font-semibold">{step.title}</span></span><ArrowRight className="size-4 shrink-0 text-muted-foreground rtl:rotate-180" /></Link></Button>)}
+      </nav>
+      <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{t.warning}</p>
+    </section>
+    <section className="border-t border-border bg-secondary/40">
+      <div className="home-enter mx-auto grid max-w-6xl grid-cols-[88px_minmax(0,1fr)] items-center gap-5 px-5 py-8 sm:grid-cols-[140px_minmax(0,1fr)] md:gap-8 md:px-8 md:py-10">
+        <img src={portrait.url} alt={t.name} width={140} height={160} loading="lazy" className="aspect-[7/8] w-full rounded-md object-cover object-top" />
+        <div className="min-w-0"><h2 className="text-xl font-bold md:text-2xl">{s.doctor}</h2><p className="mt-3 text-sm leading-loose text-muted-foreground">{s.doctorText}</p><Button asChild variant="link" className="mt-3 h-auto max-w-full justify-start whitespace-normal px-0 text-start"><Link to="/profile">{s.enter}<ArrowRight className="shrink-0 rtl:rotate-180" /></Link></Button></div>
+      </div>
+    </section>
   </main>;
 }
