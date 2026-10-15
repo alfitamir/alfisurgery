@@ -56,7 +56,7 @@ export function VisitCounter() {
 
   return (
     <div data-no-translate className="visit-counter border-t border-border/60">
-      <div className="mx-auto flex max-w-7xl items-center justify-center gap-2.5 px-5 py-4 text-xs text-muted-foreground">
+      <div className="mx-auto flex max-w-7xl items-center justify-center gap-2.5 px-5 pb-20 pt-4 text-xs text-muted-foreground md:pb-4">
         <Eye className="size-3.5 text-primary/70" aria-hidden />
         <span>{t.visits}</span>
         <span dir="ltr" role="status" className="font-semibold tabular-nums text-foreground">{count === null ? "…" : formatted}</span>
