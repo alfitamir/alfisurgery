@@ -37,6 +37,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      get_site_visits: { Args: never; Returns: number }
       increment_site_visits: { Args: never; Returns: number }
     }
     Enums: {
