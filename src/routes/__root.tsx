@@ -141,7 +141,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <SiteLanguageProvider><SiteNavigation /><SourceLanguageNotice /><div className="site-page-content"><Outlet /></div><SiteFooter /></SiteLanguageProvider>
+      <SiteLanguageProvider><SiteNavigation /><SourceLanguageNotice /><div className="site-page-content"><Outlet /></div><SiteFooter /><PatientAssistant /></SiteLanguageProvider>
     </QueryClientProvider>
   );
 }
