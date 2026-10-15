@@ -25,6 +25,7 @@ import { Route as UpdatesRouteImport } from './routes/updates'
 import { Route as VideosRouteImport } from './routes/videos'
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as ArIndexRouteImport } from './routes/ar.index'
 import { Route as ArMedicalQuestionsRouteImport } from './routes/ar.medical-questions'
 import { Route as ArPatientsRouteImport } from './routes/ar.patients'
@@ -117,6 +118,11 @@ const Char91DotwellKnownChar93OauthProtectedResourceRoute =
     path: '/.well-known/oauth-protected-resource',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ApiChatRoute = ApiChatRouteImport.update({
+  id: '/api/chat',
+  path: '/api/chat',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ArIndexRoute = ArIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -183,6 +189,7 @@ export interface FileRoutesByFullPath {
   '/videos': typeof VideosRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  '/api/chat': typeof ApiChatRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
   '/articles/$articleId': typeof ArticlesArticleIdRoute
@@ -208,6 +215,7 @@ export interface FileRoutesByTo {
   '/videos': typeof VideosRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  '/api/chat': typeof ApiChatRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
   '/articles/$articleId': typeof ArticlesArticleIdRoute
@@ -236,6 +244,7 @@ export interface FileRoutesById {
   '/videos': typeof VideosRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  '/api/chat': typeof ApiChatRoute
   '/ar/medical-questions': typeof ArMedicalQuestionsRoute
   '/ar/patients': typeof ArPatientsRoute
   '/articles/$articleId': typeof ArticlesArticleIdRoute
@@ -265,6 +274,7 @@ export interface FileRouteTypes {
     | '/videos'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
+    | '/api/chat'
     | '/ar/medical-questions'
     | '/ar/patients'
     | '/articles/$articleId'
@@ -290,6 +300,7 @@ export interface FileRouteTypes {
     | '/videos'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
+    | '/api/chat'
     | '/ar/medical-questions'
     | '/ar/patients'
     | '/articles/$articleId'
@@ -317,6 +328,7 @@ export interface FileRouteTypes {
     | '/videos'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
+    | '/api/chat'
     | '/ar/medical-questions'
     | '/ar/patients'
     | '/articles/$articleId'
@@ -345,6 +357,7 @@ export interface RootRouteChildren {
   VideosRoute: typeof VideosRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  ApiChatRoute: typeof ApiChatRoute
   GuidesGuideIdRoute: typeof GuidesGuideIdRoute
   PatientEducationHidradenitisSuppurativaRoute: typeof PatientEducationHidradenitisSuppurativaRoute
   PatientEducationWeightPlateauAfterSleeveRoute: typeof PatientEducationWeightPlateauAfterSleeveRoute
@@ -465,6 +478,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/chat': {
+      id: '/api/chat'
+      path: '/api/chat'
+      fullPath: '/api/chat'
+      preLoaderRoute: typeof ApiChatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ar/': {
       id: '/ar/'
       path: '/'
@@ -577,6 +597,7 @@ const rootRouteChildren: RootRouteChildren = {
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
+  ApiChatRoute: ApiChatRoute,
   GuidesGuideIdRoute: GuidesGuideIdRoute,
   PatientEducationHidradenitisSuppurativaRoute:
     PatientEducationHidradenitisSuppurativaRoute,

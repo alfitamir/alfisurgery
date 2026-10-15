@@ -31,3 +31,4 @@
 - [x] Add disease-by-disease diet and lifestyle risk-reduction guidance in all seven languages, linked from patient education, and verify reading and navigation.
 - [x] Point the printed QR codes, outreach list, and page address tags at alfisurgery.com instead of the Lovable address.
 
+- [x] Add a Gemini-powered patient Q&A assistant (one chat, no saved history) answering in the visitor's language from the 22 operation guides, with safety disclaimers; verified in English and Arabic.
