@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight, Phone, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin, ExternalLink, BookOpen, Building2, CalendarCheck, Presentation, Eye, FileText, ChevronDown, ChevronUp } from "lucide-react";
+import { Stethoscope, Activity, GraduationCap, ShieldCheck, Users, Microscope, HeartPulse, ClipboardList, Mail, MapPin, Award, ArrowRight, Download, Globe, Youtube, Facebook, MessageCircle, Linkedin, ExternalLink, BookOpen, Building2, CalendarCheck, Presentation, Eye, FileText, ChevronDown, ChevronUp } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible";
 
@@ -745,15 +745,6 @@ export function EnglishSiteSections({ group }: { group: "profile" | "research" |
                 <div>
                   <div className="text-xs uppercase tracking-widest text-muted-foreground">Email</div>
                   <div className="font-medium group-hover:text-accent transition">tamerelalfy@hca.med.sa</div>
-                </div>
-              </a>
-              <a href="tel:+966548026853" className="flex items-center gap-4 p-5 rounded-xl border border-border hover:border-accent transition group">
-                <div className="h-11 w-11 rounded-lg bg-secondary flex items-center justify-center">
-                  <Phone className="h-5 w-5 text-accent" />
-                </div>
-                <div>
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Phone</div>
-                  <div className="font-medium group-hover:text-accent transition">+966 54 802 6853</div>
                 </div>
               </a>
               <a href="https://www.youtube.com/@alfy_surgery" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-5 rounded-xl border border-border hover:border-accent transition group">
