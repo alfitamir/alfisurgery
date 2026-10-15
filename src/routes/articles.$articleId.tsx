@@ -1,7 +1,9 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, ExternalLink, Printer, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { blogArticles } from "@/data/blog-articles";
+import { blogArticles as importedArticles } from "@/data/blog-articles";
+import { newArabicArticles } from "@/data/new-arabic-articles";
+const blogArticles = [...newArabicArticles, ...importedArticles];
 import { articleBody, articleCategory, articleText, articleEdition, articlesForLanguage } from "@/lib/blog";
 import { patientGuideCopy } from "@/data/patient-guide-copy";
 import { translatedText } from "@/lib/site-language";
