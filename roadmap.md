@@ -34,3 +34,4 @@
 - [x] Add a Gemini-powered patient Q&A assistant (one chat, no saved history) answering in the visitor's language from the 22 operation guides, with safety disclaimers; verified in English and Arabic.
 - [x] Refresh both homepages with one introduction, guide journey, subtle motion and language-sidebar clearance; verify all seven languages.
 - [x] Update all website images depicting women to modest hijab attire and verify the displayed images.
+- [x] Add homepage section and subsection dropdowns with translated navigation and verify links on desktop and phone.
