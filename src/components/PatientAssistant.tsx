@@ -164,7 +164,7 @@ export function PatientAssistant() {
               ) : (
                 messages.map((message) => (
                   <Message key={message.id} from={message.role}>
-                    <MessageContent>
+                    <MessageContent dir="auto">
                       {message.parts.map((part, index) => {
                         if (part.type !== "text") return null;
                         return message.role === "assistant" ? (
