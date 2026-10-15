@@ -13,7 +13,7 @@ export const Route = createFileRoute("/articles/")({
     { title: "مقالات طبية مبسطة | د. تامر الألفي" },
     { name: "description", content: "مكتبة مقالات د. تامر الألفي الكاملة عن الجراحة والتكميم والتغذية والتعافي، مع البحث والقراءة المباشرة." },
     { property: "og:title", content: "مقالات طبية مبسطة | د. تامر الألفي" },
-    { property: "og:description", content: "41 مقالًا من أرشيف مدونة د. تامر الألفي بنصوصها الكاملة." },
+    { property: "og:description", content: "مقالات د. تامر الألفي التثقيفية وأرشيف مدونته بنصوصها الكاملة، مع البحث والقراءة المباشرة." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
   ] }),
 });
@@ -68,7 +68,7 @@ function ArticlesPage() {
               </div>
             </article>)}
           </div>
-          <p className="mt-10 border-t border-patient-mist pt-6 text-sm leading-loose text-patient-ink/70">مقالات أرشيفية للتثقيف العام، ولا تغني عن استشارة الفريق الطبي المتابع لحالتك. تختلف تعليمات العلاج والغذاء حسب حالتك وتاريخ العملية.</p>
+          <p className="mt-10 border-t border-patient-mist pt-6 text-sm leading-loose text-patient-ink/70">مقالات للتثقيف العام، ولا تغني عن استشارة الفريق الطبي المتابع لحالتك. تختلف تعليمات العلاج والغذاء حسب حالتك وتاريخ العملية.</p>
         </section>
       </main>
     </div>

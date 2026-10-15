@@ -58,7 +58,7 @@ function FullArticlePage() {
           </div>
           <aside className="my-6 flex items-start gap-3 border-s-4 border-patient-apricot bg-patient-mist/20 p-4 text-sm leading-loose">
             <ShieldCheck className="mt-1 size-5 shrink-0 text-patient-deep" />
-            <p>هذا نص من أرشيف المدونة بتاريخ نشره، وليس وصفة علاجية شخصية. قد تتغير التوصيات مع الوقت؛ لا تبدأ أو توقف دواءً أو حميةً أو صيامًا اعتمادًا عليه، واتبع تعليمات الفريق الطبي المتابع لحالتك. عند ألم الصدر أو ضيق التنفس أو ألم شديد متزايد أو قيء مستمر، اطلب تقييمًا عاجلًا ولا تؤخره لتجربة نصائح المقال.</p>
+            <p>{source.source.includes("wordpress") ? "هذا نص من أرشيف المدونة بتاريخ نشره، وليس وصفة علاجية شخصية. قد تتغير التوصيات مع الوقت؛ لا تبدأ أو توقف دواءً أو حميةً أو صيامًا اعتمادًا عليه، واتبع تعليمات الفريق الطبي المتابع لحالتك. عند ألم الصدر أو ضيق التنفس أو ألم شديد متزايد أو قيء مستمر، اطلب تقييمًا عاجلًا ولا تؤخره لتجربة نصائح المقال." : "معلومات تثقيفية عامة كُتبت لهذا الموقع بتاريخ نشره، وليست وصفة علاجية شخصية. قد تتغير التوصيات مع الوقت؛ لا تبدأ أو توقف دواءً أو حميةً أو صيامًا اعتمادًا عليه، واتبع تعليمات الفريق الطبي المتابع لحالتك. عند ألم الصدر أو ضيق التنفس أو ألم شديد متزايد أو قيء مستمر، اطلب تقييمًا عاجلًا ولا تؤخره لتجربة نصائح المقال."}</p>
           </aside>
           <div dir="auto" className="blog-content break-words text-lg leading-loose text-patient-ink" dangerouslySetInnerHTML={{ __html: articleBody(article.content) }} />
           <div className="article-no-print mt-10 border-t border-patient-mist pt-6">
