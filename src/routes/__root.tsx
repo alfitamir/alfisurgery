@@ -85,6 +85,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Alfi Surgery — Dr. Tamer Elalfy" },
       { name: "description", content: "Alfi Surgery provides expert general and laparoscopic surgical care, consultation, and patient education by Dr Tamer Elalfy consultant of surgery." },
+      { name: "google-site-verification", content: "sp6Lc5241mHE-nEjfJOz0FS4r7Xpas4kcXLGETYuNXQ" },
       { name: "author", content: "Dr. Tamer Elalfy" },
       { property: "og:title", content: "Alfi Surgery — Dr. Tamer Elalfy" },
       { property: "og:description", content: "Alfi Surgery provides expert general and laparoscopic surgical care, consultation, and patient education by Dr Tamer Elalfy consultant of surgery." },
