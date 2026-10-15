@@ -14,6 +14,7 @@ import {
 import { registerPatientAppServiceWorker } from "@/lib/pwa";
 import { SiteLanguageProvider } from "@/components/SiteLanguageProvider";
 import { SiteNavigation, SiteFooter } from "@/components/SiteNavigation";
+import { PatientAssistant } from "@/components/PatientAssistant";
 import { siteLanguages } from "@/lib/site-language";
 import { SourceLanguageNotice } from "@/components/SourceLanguageNotice";
 import appCss from "../styles.css?url";
