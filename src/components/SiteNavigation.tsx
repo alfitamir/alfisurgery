@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Building2, Facebook, GraduationCap, Languages, Linkedin, Mail, MapPin, Menu, MessageCircle, Microscope, Phone, X, Youtube } from "lucide-react";
+import { Building2, Facebook, GraduationCap, Languages, Linkedin, Mail, MapPin, Menu, MessageCircle, Microscope, X, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { navigationCopy } from "@/data/site-navigation";
@@ -53,7 +53,6 @@ export function SiteNavigation() {
 
 const contactLinks = [
   { href: "https://mdh.com.sa/doctors/dr-tamer-elalfy/", label: "Mohammad Dossary Hospital", icon: Building2 },
-  { href: "tel:+966548026853", label: "+966 54 802 6853", icon: Phone },
   { href: "tel:+966138011910", label: "+966 13 801 1910", icon: Phone },
   { href: "https://wa.me/966548026853", label: "WhatsApp", icon: MessageCircle },
   { href: "mailto:tamerelalfy@hca.med.sa", label: "tamerelalfy@hca.med.sa", icon: Mail },
