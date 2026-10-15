@@ -7,6 +7,7 @@ import { sectionCopy } from "@/data/section-copy";
 import { homeCopy } from "@/data/home-copy";
 import portrait from "@/assets/dr-elalfy-main.jpg.asset.json";
 import heroPortrait from "@/assets/dr-elalfy-hero.jpg";
+import { HomeSectionMenus } from "@/components/HomeSectionMenus";
 
 export function ThreeSectionHome() {
   const { language } = useSiteLanguage();
@@ -20,6 +21,7 @@ export function ThreeSectionHome() {
     { id: "urgent", title: h.urgent, icon: ShieldAlert, tone: "text-destructive bg-destructive/10" },
   ];
   return <main data-no-translate lang={language} className="home-refresh">
+    <HomeSectionMenus />
     <section className="home-navy relative isolate overflow-hidden">
       <div className="home-navy-dots absolute inset-0 -z-10" aria-hidden />
       <div className="mx-auto grid max-w-6xl items-end gap-6 px-5 pt-10 md:grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)] md:px-8 md:pt-14">
