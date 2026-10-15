@@ -278,8 +278,9 @@ function PublicationsSearchPage() {
                 <div className="flex flex-wrap items-center gap-2">
                   <Badge variant="secondary">{p.year}</Badge>
                   <span className="text-sm text-muted-foreground">{p.journal}</span>
+                  {p.category && <Badge variant="outline">{p.category}</Badge>}
                 </div>
-                <h2 className="mt-2 text-lg font-semibold leading-snug">
+                <h2 className="mt-2 text-lg font-semibold leading-snug" dir="ltr">
                   <a
                     href={p.url}
                     target="_blank"
@@ -289,27 +290,26 @@ function PublicationsSearchPage() {
                     {p.title}
                   </a>
                 </h2>
-                <p className="mt-1 text-sm text-muted-foreground">{p.authors}</p>
-                <p className="mt-3 text-sm leading-relaxed">{p.abstract}</p>
+                {p.titleAr && (
+                  <p className="mt-1 font-medium leading-snug text-primary" dir="rtl" lang="ar">
+                    {p.titleAr}
+                  </p>
+                )}
+                <p className="mt-2 text-sm text-muted-foreground" dir="ltr">{p.authors}</p>
+                {p.citation && <p className="mt-1 text-xs text-muted-foreground" dir="ltr">{p.citation}</p>}
+                <p className="mt-3 text-sm leading-relaxed" dir="auto">{p.abstract}</p>
                 <div className="mt-4 flex flex-wrap items-center gap-4 text-sm">
-                  <a
-                    href={p.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 font-medium text-primary hover:underline"
-                  >
-                    View article <ExternalLink className="h-3.5 w-3.5" />
-                  </a>
-                  {p.doi && (
+                  {(p.links?.length ? p.links : [{ label: "View article", url: p.url }]).map((l) => (
                     <a
-                      href={`https://doi.org/${p.doi}`}
+                      key={l.url}
+                      href={l.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-muted-foreground hover:underline"
+                      className="inline-flex items-center gap-1.5 font-medium text-primary hover:underline"
                     >
-                      DOI: {p.doi}
+                      {l.label} <ExternalLink className="h-3.5 w-3.5" />
                     </a>
-                  )}
+                  ))}
                 </div>
               </article>
             ))
