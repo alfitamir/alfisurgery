@@ -7,14 +7,29 @@ import { patientEducation, educationCategoryImages } from "@/data/patient-educat
 import { patientGuideCopy } from "@/data/patient-guide-copy";
 import { navigationCopy } from "@/data/site-navigation";
 import { translatedText, siteLanguages } from "@/lib/site-language";
+import { guideSeoAr } from "@/data/guide-seo";
 
 export const Route = createFileRoute("/guides/$guideId")({
   component: GuidePage,
-  head: ({ params }) => {
+  head: ({ params, match }) => {
     const guide = patientEducation.find((g) => g.id === params.guideId);
-    const title = `${guide?.title ?? "Operation guide"} | Dr. Tamer Elalfy`;
-    const description = guide?.summary ?? "Patient guidance from Dr. Tamer Elalfy.";
-    return { meta: [{ title }, { name: "description", content: description }, { property: "og:title", content: title }, { property: "og:description", content: description }, { property: "og:type", content: "article" }, { name: "twitter:card", content: "summary_large_image" }] };
+    const lang = (match.search as { lang?: string }).lang;
+    const ar = lang === "ar";
+    const title = ar
+      ? `${guideSeoAr[params.guideId] ?? guide?.titleAr ?? "دليل العملية"} | د. تامر الألفي`
+      : `${guide?.title ?? "Operation guide"} | Dr. Tamer Elalfy`;
+    const description = (ar ? guide?.summaryAr : guide?.summary) ?? "Patient guidance from Dr. Tamer Elalfy.";
+    const base = `https://alfisurgery.com/guides/${params.guideId}`;
+    const url = lang && lang !== "en" ? `${base}?lang=${lang}` : base;
+    return {
+      meta: [{ title }, { name: "description", content: description }, { property: "og:title", content: title }, { property: "og:description", content: description }, { property: "og:type", content: "article" }, { property: "og:url", content: url }, { property: "og:locale", content: ar ? "ar_SA" : "en_US" }, { name: "twitter:card", content: "summary_large_image" }],
+      links: [
+        { rel: "canonical", href: url },
+        ...siteLanguages.map((l) => ({ rel: "alternate", hrefLang: l.code, href: l.code === "en" ? base : `${base}?lang=${l.code}` })),
+        { rel: "alternate", hrefLang: "x-default", href: base },
+      ],
+      scripts: guide ? [{ type: "application/ld+json", children: JSON.stringify({ "@context": "https://schema.org", "@type": "MedicalWebPage", name: title, description, url, inLanguage: lang ?? "en", about: { "@type": "MedicalProcedure", name: guide.title, alternateName: guide.titleAr }, author: { "@type": "Physician", name: "Dr. Tamer Elalfy", url: "https://alfisurgery.com/profile" }, audience: { "@type": "Patient" } }) }] : [],
+    };
   },
 });
 
