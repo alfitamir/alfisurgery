@@ -5,17 +5,19 @@ export const Route = createFileRoute("/ar/patients")({
   component: ArabicPatientsPage,
   head: () => ({
     meta: [
-      { title: "افهم عمليتك | دليل المريض الجراحي" },
-      { name: "description", content: "دليل مصور ثنائي اللغة للمرضى: اختر عمليتك، استعد بأمان، تعافَ بثقة، وتعرّف على علامات التحذير." },
-      { property: "og:title", content: "افهم عمليتك | دليل المريض الجراحي" },
-      { property: "og:description", content: "رحلة مصورة وهادئة من الاستعداد للعملية حتى التعافي مع أدلة خاصة بكل عملية." },
+      { title: "أدلة العمليات الجراحية: المرارة والفتق والبواسير والناسور | د. تامر الألفي" },
+      { name: "description", content: "أدلة مبسطة لعملية المرارة، الفتق، البواسير، الناسور الشرجي والعصعصي، الغدة الدرقية وغيرها: الاستعداد، التعافي، وعلامات التحذير." },
+      { property: "og:title", content: "أدلة العمليات الجراحية | د. تامر الألفي" },
+      { property: "og:description", content: "رحلة واضحة من الاستعداد للعملية حتى التعافي مع دليل خاص لكل عملية." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://alfisurgery.com/ar/patients" },
+      { property: "og:locale", content: "ar_SA" },
       { name: "twitter:card", content: "summary" },
-      { httpEquiv: "content-language", content: "ar" },
     ],
     links: [
-      { rel: "canonical", href: "/ar/patients" },
-      { rel: "alternate", hrefLang: "en", href: "/patients" },
+      { rel: "canonical", href: "https://alfisurgery.com/ar/patients" },
+      { rel: "alternate", hrefLang: "ar", href: "https://alfisurgery.com/ar/patients" },
+      { rel: "alternate", hrefLang: "en", href: "https://alfisurgery.com/patients" },
     ],
   }),
 });

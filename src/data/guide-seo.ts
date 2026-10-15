@@ -1,0 +1,20 @@
+// Arabic search phrases people use in Saudi Arabia and Egypt (Semrush, Oct 2026), used in page titles.
+export const guideSeoAr: Record<string, string> = {
+  appendectomy: "عملية الزائدة الدودية: التحضير والتعافي وعلامات الخطر",
+  cholecystectomy: "عملية المرارة بالمنظار: التحضير وما بعد العملية",
+  "inguinal-hernia": "عملية الفتق الإربي بالمنظار: التحضير والتعافي",
+  "ventral-hernia": "عملية فتق السرة بالمنظار: التحضير والتعافي",
+  haemorrhoidectomy: "عملية البواسير: التحضير والتعافي وعلامات الخطر",
+  "breast-lump": "ورم الثدي واستئصال الكتلة: دليل المريضة",
+  "perianal-abscess": "الخراج الشرجي: التصريف والتعافي",
+  "perianal-fistula": "الناسور الشرجي: العملية والتعافي",
+  "pilonidal-sinus": "الناسور العصعصي: العملية والعناية بالجرح",
+  "pilonidal-abscess": "خراج الناسور العصعصي: التصريف والتعافي",
+  thyroidectomy: "عملية الغدة الدرقية: التحضير والتعافي",
+  "plastibell-circumcision": "ختان الأطفال بالحلقة (بلاستيبل): دليل الأهل",
+  "pediatric-hernia": "فتق الأطفال: العملية والتعافي",
+  "open-inguinal-hernia": "عملية الفتق الإربي الجراحية المفتوحة",
+  "open-ventral-hernia": "عملية فتق السرة المفتوحة: التحضير والتعافي",
+  "ingrowing-nail": "الظفر الغارز: عملية الاستئصال تحت مخدر موضعي",
+  "lipoma-excision": "استئصال الورم الشحمي تحت مخدر موضعي",
+};
