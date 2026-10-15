@@ -1,4 +1,6 @@
-import { blogArticles } from "@/data/blog-articles";
+import { blogArticles as importedArticles } from "@/data/blog-articles";
+import { newArabicArticles } from "@/data/new-arabic-articles";
+const blogArticles = [...newArabicArticles, ...importedArticles];
 import image0 from "@/assets/blog/image-0.jpg.asset.json";
 import image1 from "@/assets/blog/image-1.jpg.asset.json";
 import image2 from "@/assets/blog/image-2.jpg.asset.json";
@@ -27,6 +29,7 @@ export function articleBody(html: string) {
 }
 
 export function articleCategory(title: string) {
+  if (/ناسور|بواسير|فتق/.test(title)) return "الجراحة العامة";
   if (/مرار/.test(title)) return "المرارة والجراحة";
   if (/وزن|ثبات|الثبات|بروتين|غذائي|تأكل|السمنه|السمنة/.test(title)) return "التغذية والوزن";
   return "التكميم والمتابعة";

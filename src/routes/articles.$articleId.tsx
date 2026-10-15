@@ -1,7 +1,9 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, ExternalLink, Printer, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { blogArticles } from "@/data/blog-articles";
+import { blogArticles as importedArticles } from "@/data/blog-articles";
+import { newArabicArticles } from "@/data/new-arabic-articles";
+const blogArticles = [...newArabicArticles, ...importedArticles];
 import { articleBody, articleCategory, articleText, articleEdition, articlesForLanguage } from "@/lib/blog";
 import { patientGuideCopy } from "@/data/patient-guide-copy";
 import { translatedText } from "@/lib/site-language";
@@ -60,7 +62,7 @@ function FullArticlePage() {
           </aside>
           <div dir="auto" className="blog-content break-words text-lg leading-loose text-patient-ink" dangerouslySetInnerHTML={{ __html: articleBody(article.content) }} />
           <div className="article-no-print mt-10 border-t border-patient-mist pt-6">
-            <a href={article.source} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-patient-deep hover:underline">المقال الأصلي على ووردبريس<ExternalLink className="size-4" /></a>
+            {article.source.includes("wordpress") && <a href={article.source} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-patient-deep hover:underline">المقال الأصلي على ووردبريس<ExternalLink className="size-4" /></a>}
           </div>
         </article>
         {related.length > 0 && <section className="article-no-print mt-12 border-t border-patient-mist pt-8">
