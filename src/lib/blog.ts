@@ -29,6 +29,7 @@ export function articleBody(html: string) {
 }
 
 export function articleCategory(title: string) {
+  if (/ناسور|بواسير|فتق/.test(title)) return "الجراحة العامة";
   if (/مرار/.test(title)) return "المرارة والجراحة";
   if (/وزن|ثبات|الثبات|بروتين|غذائي|تأكل|السمنه|السمنة/.test(title)) return "التغذية والوزن";
   return "التكميم والمتابعة";
