@@ -126,8 +126,8 @@ export const surgeryUpdates: SurgeryUpdate[] = [
       ar: "أدوية GLP-1 والصيام قبل التخدير: إرشادات ASA",
     },
     summary: {
-      en: "The 2023–2024 ASA advisory recommends holding daily GLP-1 agonists the day of surgery and weekly formulations one week before, or verifying gastric emptying with ultrasound to reduce aspiration risk.",
-      ar: "توصي إرشادات ASA 2023–2024 بإيقاف مشتقات GLP-1 اليومية يوم العملية والأسبوعية قبل أسبوع، أو التأكد من إفراغ المعدة بالموجات فوق الصوتية لتقليل خطر الشفط.",
+      en: "Current multi-society guidance allows most patients to continue GLP-1 agonists before elective surgery, with individualised aspiration precautions such as a 24-hour liquid diet. The surgeon and anaesthetist must know beforehand, as fasting instructions vary and may be adjusted.",
+      ar: "تسمح الإرشادات الحالية لمعظم المرضى بالاستمرار على أدوية GLP-1 قبل الجراحة المخططة، مع احتياطات فردية لتقليل خطر الشفط مثل الاكتفاء بالسوائل 24 ساعة. ويجب إبلاغ الجرّاح وطبيب التخدير مسبقًا، لأن تعليمات الصيام تختلف وقد تُعدَّل.",
     },
     source: { en: "American Society of Anesthesiologists, 2024", ar: "الجمعية الأمريكية للتخدير 2024" },
     url: "https://www.asahq.org/",
@@ -188,8 +188,8 @@ export const surgeryUpdates: SurgeryUpdate[] = [
       ar: "إذا كنت تأخذ أوزمبيك أو ويجوفي، أخبر فريقك الجراحي مبكرًا",
     },
     summary: {
-      en: "These medicines slow stomach emptying and can cause food to stay in the stomach even after long fasting. Your team may ask you to stop the injection days before surgery to reduce the risk of vomiting during anaesthesia.",
-      ar: "هذه الأدوية تُبطئ إفراغ المعدة وقد يبقى الطعام بها رغم الصيام لساعات طويلة. قد يطلب منك الفريق إيقاف الحقنة قبل العملية بأيام لتقليل خطر الترجيع أثناء التخدير.",
+      en: "These medicines slow stomach emptying. Do not stop them on your own: most people can continue them. Tell your surgeon and anaesthetist before surgery, because your fasting instructions differ and may be adjusted, for example liquids only the day before.",
+      ar: "هذه الأدوية تُبطئ إفراغ المعدة. لا توقفها من تلقاء نفسك، فمعظم المرضى يمكنهم الاستمرار عليها. أخبر طبيبك وطبيب التخدير قبل العملية، لأن تعليمات الصيام تختلف في حالتك وقد تُعدَّل، مثل الاكتفاء بالسوائل في اليوم السابق.",
     },
     source: { en: "American Society of Anesthesiologists, 2024", ar: "الجمعية الأمريكية للتخدير 2024" },
     url: "https://www.asahq.org/madeforthismoment/preparing-for-surgery/prep/patients-taking-glp-1-medications",
