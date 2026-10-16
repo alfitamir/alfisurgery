@@ -11,7 +11,7 @@ export const Route = createFileRoute("/posts")({
   component: PostsPage,
   head: () => ({ meta: [
     { title: "Dr. Tamer Elalfy's surgical update posts | Alfi Surgery" },
-    { name: "description", content: "Full posts and images by Dr. Tamer Elalfy on the latest surgical updates, dated and updated weekly." },
+    { name: "description", content: "Full posts and images by Dr. Tamer Elalfy on the latest surgical updates, refreshed weekly." },
     { property: "og:title", content: "Dr. Tamer Elalfy's surgical update posts" },
     { property: "og:description", content: "Full surgical update posts with images, updated weekly." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
@@ -29,9 +29,7 @@ function PostCard({ post }: { post: Post }) {
   return <article className="overflow-hidden rounded-md border border-border bg-card">
     {post.image_url && <img src={post.image_url} alt="" loading="lazy" className="w-full object-cover" />}
     <div className="p-5">
-      <time dateTime={post.posted_at} className="text-sm font-semibold text-primary">{new Date(post.posted_at).toLocaleDateString(language, { dateStyle: "long" })}</time>
-      <p className="mt-1 text-xs text-muted-foreground">{tr && !orig ? c.translated : c.original}</p>
-      <p dir="auto" className="mt-3 whitespace-pre-line leading-loose">{text}</p>
+      <p dir="auto" className="whitespace-pre-line leading-loose">{text}</p>
       {tr && <Button variant="link" className="px-0" onClick={() => setOrig(!orig)}>{orig ? c.showTranslation : c.showOriginal}</Button>}
     </div>
   </article>;
