@@ -4,7 +4,7 @@ import { articlesForLanguage } from "@/lib/blog";
 import { siteLanguages } from "@/lib/site-language";
 
 const BASE_URL = "https://alfisurgery.com";
-const pages = ["/", "/profile", "/patients", "/prevention", "/articles", "/research", "/publications", "/teaching", "/updates", "/contact", "/patient-education/hidradenitis-suppurativa", "/patient-education/weight-plateau-after-sleeve"];
+const pages = ["/", "/profile", "/patients", "/prevention", "/posts", "/articles", "/research", "/publications", "/teaching", "/updates", "/contact", "/patient-education/hidradenitis-suppurativa", "/patient-education/weight-plateau-after-sleeve"];
 const arabicOnly = ["/ar", "/ar/patients", "/ar/medical-questions"];
 
 export const Route = createFileRoute("/sitemap.xml")({
