@@ -29,9 +29,7 @@ function PostCard({ post }: { post: Post }) {
   return <article className="overflow-hidden rounded-md border border-border bg-card">
     {post.image_url && <img src={post.image_url} alt="" loading="lazy" className="w-full object-cover" />}
     <div className="p-5">
-      <time dateTime={post.posted_at} className="text-sm font-semibold text-primary">{new Date(post.posted_at).toLocaleDateString(language, { dateStyle: "long" })}</time>
-      <p className="mt-1 text-xs text-muted-foreground">{tr && !orig ? c.translated : c.original}</p>
-      <p dir="auto" className="mt-3 whitespace-pre-line leading-loose">{text}</p>
+      <p dir="auto" className="whitespace-pre-line leading-loose">{text}</p>
       {tr && <Button variant="link" className="px-0" onClick={() => setOrig(!orig)}>{orig ? c.showTranslation : c.showOriginal}</Button>}
     </div>
   </article>;
