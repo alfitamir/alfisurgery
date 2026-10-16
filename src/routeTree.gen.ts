@@ -36,6 +36,8 @@ import { Route as GuidesGuideIdRouteImport } from './routes/guides.$guideId'
 import { Route as PatientEducationHidradenitisSuppurativaRouteImport } from './routes/patient-education.hidradenitis-suppurativa'
 import { Route as PatientEducationWeightPlateauAfterSleeveRouteImport } from './routes/patient-education.weight-plateau-after-sleeve'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
+import { Route as ApiPublicSyncPostsRouteImport } from './routes/api/public/sync-posts'
+import { Route as ApiPublicPostImageIdRouteImport } from './routes/api/public/post-image.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -177,6 +179,16 @@ const Char91DotmcpChar93InvokeToolToolRoute =
     path: '/.mcp/invoke-tool/$tool',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ApiPublicSyncPostsRoute = ApiPublicSyncPostsRouteImport.update({
+  id: '/api/public/sync-posts',
+  path: '/api/public/sync-posts',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicPostImageIdRoute = ApiPublicPostImageIdRouteImport.update({
+  id: '/api/public/post-image/$id',
+  path: '/api/public/post-image/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -206,6 +218,8 @@ export interface FileRoutesByFullPath {
   '/ar/': typeof ArIndexRoute
   '/articles/': typeof ArticlesIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
+  '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
+  '/api/public/post-image/$id': typeof ApiPublicPostImageIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -233,6 +247,8 @@ export interface FileRoutesByTo {
   '/ar': typeof ArIndexRoute
   '/articles': typeof ArticlesIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
+  '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
+  '/api/public/post-image/$id': typeof ApiPublicPostImageIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -263,6 +279,8 @@ export interface FileRoutesById {
   '/ar/': typeof ArIndexRoute
   '/articles/': typeof ArticlesIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
+  '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
+  '/api/public/post-image/$id': typeof ApiPublicPostImageIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -294,6 +312,8 @@ export interface FileRouteTypes {
     | '/ar/'
     | '/articles/'
     | '/.mcp/invoke-tool/$tool'
+    | '/api/public/sync-posts'
+    | '/api/public/post-image/$id'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -321,6 +341,8 @@ export interface FileRouteTypes {
     | '/ar'
     | '/articles'
     | '/.mcp/invoke-tool/$tool'
+    | '/api/public/sync-posts'
+    | '/api/public/post-image/$id'
   id:
     | '__root__'
     | '/'
@@ -350,6 +372,8 @@ export interface FileRouteTypes {
     | '/ar/'
     | '/articles/'
     | '/.mcp/invoke-tool/$tool'
+    | '/api/public/sync-posts'
+    | '/api/public/post-image/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -375,6 +399,8 @@ export interface RootRouteChildren {
   PatientEducationHidradenitisSuppurativaRoute: typeof PatientEducationHidradenitisSuppurativaRoute
   PatientEducationWeightPlateauAfterSleeveRoute: typeof PatientEducationWeightPlateauAfterSleeveRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
+  ApiPublicSyncPostsRoute: typeof ApiPublicSyncPostsRoute
+  ApiPublicPostImageIdRoute: typeof ApiPublicPostImageIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -568,6 +594,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char91DotmcpChar93InvokeToolToolRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/sync-posts': {
+      id: '/api/public/sync-posts'
+      path: '/api/public/sync-posts'
+      fullPath: '/api/public/sync-posts'
+      preLoaderRoute: typeof ApiPublicSyncPostsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/post-image/$id': {
+      id: '/api/public/post-image/$id'
+      path: '/api/public/post-image/$id'
+      fullPath: '/api/public/post-image/$id'
+      preLoaderRoute: typeof ApiPublicPostImageIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -625,6 +665,8 @@ const rootRouteChildren: RootRouteChildren = {
   PatientEducationWeightPlateauAfterSleeveRoute:
     PatientEducationWeightPlateauAfterSleeveRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
+  ApiPublicSyncPostsRoute: ApiPublicSyncPostsRoute,
+  ApiPublicPostImageIdRoute: ApiPublicPostImageIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
