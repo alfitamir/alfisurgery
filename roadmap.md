@@ -43,3 +43,5 @@
 - [ ] Weekly auto-sync from "Post Sequence Planner" — needs a read-only posts feed added in that project
 - [ ] Admin page to delete comments (deletions can be done on request meanwhile)
 - [ ] Add collected past web reviews (source field ready)
+- [x] Weekly sync job on this site (Fridays) + image storage
+- [ ] Shared feed key (user skipped the form) + feed endpoint in Post Sequence Planner
