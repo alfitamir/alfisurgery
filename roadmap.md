@@ -35,3 +35,11 @@
 - [x] Refresh both homepages with one introduction, guide journey, subtle motion and language-sidebar clearance; verify all seven languages.
 - [x] Update all website images depicting women to modest hijab attire and verify the displayed images.
 - [x] Add homepage section and subsection dropdowns with translated navigation and verify links on desktop and phone.
+
+## LinkedIn posts + patient comments (Oct 2026)
+- [x] /posts page (full posts, images, dates, "Updated weekly", translations) + homepage card
+- [x] Patient impressions on homepage (nickname + comment, public immediately)
+- [ ] Import old posts — waiting for user's LinkedIn data export file
+- [ ] Weekly auto-sync from "Post Sequence Planner" — needs a read-only posts feed added in that project
+- [ ] Admin page to delete comments (deletions can be done on request meanwhile)
+- [ ] Add collected past web reviews (source field ready)
