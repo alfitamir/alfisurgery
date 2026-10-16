@@ -15,6 +15,7 @@ import { Route as ArticlesRouteImport } from './routes/articles'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as PatientsRouteImport } from './routes/patients'
+import { Route as PostsRouteImport } from './routes/posts'
 import { Route as PreventionRouteImport } from './routes/prevention'
 import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as PublicationsRouteImport } from './routes/publications'
@@ -64,6 +65,11 @@ const McpRoute = McpRouteImport.update({
 const PatientsRoute = PatientsRouteImport.update({
   id: '/patients',
   path: '/patients',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PostsRoute = PostsRouteImport.update({
+  id: '/posts',
+  path: '/posts',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PreventionRoute = PreventionRouteImport.update({
@@ -179,6 +185,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
+  '/posts': typeof PostsRoute
   '/prevention': typeof PreventionRoute
   '/profile': typeof ProfileRoute
   '/publications': typeof PublicationsRoute
@@ -205,6 +212,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
+  '/posts': typeof PostsRoute
   '/prevention': typeof PreventionRoute
   '/profile': typeof ProfileRoute
   '/publications': typeof PublicationsRoute
@@ -234,6 +242,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
+  '/posts': typeof PostsRoute
   '/prevention': typeof PreventionRoute
   '/profile': typeof ProfileRoute
   '/publications': typeof PublicationsRoute
@@ -264,6 +273,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/mcp'
     | '/patients'
+    | '/posts'
     | '/prevention'
     | '/profile'
     | '/publications'
@@ -290,6 +300,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/mcp'
     | '/patients'
+    | '/posts'
     | '/prevention'
     | '/profile'
     | '/publications'
@@ -318,6 +329,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/mcp'
     | '/patients'
+    | '/posts'
     | '/prevention'
     | '/profile'
     | '/publications'
@@ -347,6 +359,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   McpRoute: typeof McpRoute
   PatientsRoute: typeof PatientsRoute
+  PostsRoute: typeof PostsRoute
   PreventionRoute: typeof PreventionRoute
   ProfileRoute: typeof ProfileRoute
   PublicationsRoute: typeof PublicationsRoute
@@ -406,6 +419,13 @@ declare module '@tanstack/react-router' {
       path: '/patients'
       fullPath: '/patients'
       preLoaderRoute: typeof PatientsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/posts': {
+      id: '/posts'
+      path: '/posts'
+      fullPath: '/posts'
+      preLoaderRoute: typeof PostsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/prevention': {
@@ -586,6 +606,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   McpRoute: McpRoute,
   PatientsRoute: PatientsRoute,
+  PostsRoute: PostsRoute,
   PreventionRoute: PreventionRoute,
   ProfileRoute: ProfileRoute,
   PublicationsRoute: PublicationsRoute,
