@@ -62,7 +62,6 @@ function ArticlesPage() {
               <div className="flex flex-1 flex-col p-5">
                 <p className="text-xs font-semibold text-patient-deep">{a.category}</p>
                 <h2 className="mt-3 text-xl font-bold leading-relaxed text-patient-deep"><Link to="/articles/$articleId" params={{ articleId: String(a.id) }} className="hover:underline">{a.title}</Link></h2>
-                <time dateTime={a.date} className="mt-3 text-xs text-patient-ink/60">{new Date(a.date).toLocaleDateString("ar-EG", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })}</time>
                 <p className="mt-4 line-clamp-3 text-sm leading-loose text-patient-ink/80">{a.excerpt}…</p>
                 <Button asChild variant="link" className="mt-auto h-auto justify-start px-0 pt-5 text-patient-deep"><Link to="/articles/$articleId" params={{ articleId: String(a.id) }}>اقرأ المقال كاملًا<ArrowLeft /></Link></Button>
               </div>
