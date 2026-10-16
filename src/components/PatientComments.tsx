@@ -19,7 +19,7 @@ export function PatientComments() {
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
   const { data = [] } = useQuery({
     queryKey: ["patient-comments"],
-    queryFn: async () => (await supabase.from("patient_comments").select("id,nickname,body,created_at").order("created_at", { ascending: false }).limit(50)).data ?? [],
+    queryFn: async () => (await supabase.from("patient_comments").select("id,nickname,body,created_at,source").order("created_at", { ascending: false }).limit(50)).data ?? [],
   });
 
   async function submit(e: React.FormEvent) {
@@ -51,6 +51,7 @@ export function PatientComments() {
       {data.map((x) => <li key={x.id} className="rounded-md border border-border bg-card p-4">
         <div className="flex justify-between gap-2 text-sm"><strong dir="auto">{x.nickname}</strong><time className="text-muted-foreground" dateTime={x.created_at}>{new Date(x.created_at).toLocaleDateString(language)}</time></div>
         <p dir="auto" className="mt-2 whitespace-pre-line text-sm leading-relaxed">{x.body}</p>
+        {x.source !== "site" && <p dir="auto" className="mt-2 text-xs text-muted-foreground">{x.source}</p>}
       </li>)}
     </ul>
   </section>;
