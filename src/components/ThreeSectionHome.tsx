@@ -8,12 +8,16 @@ import { homeCopy } from "@/data/home-copy";
 import portrait from "@/assets/dr-elalfy-main.jpg.asset.json";
 import heroPortrait from "@/assets/dr-elalfy-hero.jpg";
 import { HomeSectionMenus } from "@/components/HomeSectionMenus";
+import { Newspaper } from "lucide-react";
+import { PatientComments } from "@/components/PatientComments";
+import { postsCommentsCopy } from "@/data/posts-comments-copy";
 
 export function ThreeSectionHome() {
   const { language } = useSiteLanguage();
   const t = navigationCopy[language];
   const s = sectionCopy[language];
   const h = homeCopy[language];
+  const pc = postsCommentsCopy[language];
   const patients = language === "ar" ? "/ar/patients" : "/patients";
   const steps = [
     { id: "prepare", title: t.prepare, icon: ClipboardCheck, tone: "text-primary bg-secondary" },
@@ -40,7 +44,13 @@ export function ThreeSectionHome() {
         {steps.map((step, index) => <Button key={step.id} asChild variant="ghost" className="home-step home-tile home-enter h-auto min-h-24 justify-start rounded-md border border-border bg-card px-4 py-5 text-start"><Link to={patients} hash={step.id} className="grid grid-cols-[auto_minmax(0,1fr)_auto] gap-3"><span className={`grid size-10 shrink-0 place-items-center rounded-full ${step.tone}`}><step.icon className="size-5" /></span><span className="min-w-0 whitespace-normal"><span className="mb-1 block text-xs font-normal text-muted-foreground">0{index + 1}</span><span className="text-base font-semibold">{step.title}</span></span><ArrowRight className="size-4 shrink-0 text-muted-foreground rtl:rotate-180" /></Link></Button>)}
       </nav>
       <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{t.warning}</p>
+      <Link to="/posts" search={{ lang: language } as never} className="home-tile mt-6 flex items-center gap-4 rounded-md border border-border bg-card p-5">
+        <span className="grid size-12 shrink-0 place-items-center rounded-full bg-secondary text-primary"><Newspaper className="size-6" /></span>
+        <span className="min-w-0 flex-1"><span className="block text-lg font-semibold">{pc.postsTitle}</span><span className="mt-1 inline-block rounded-full bg-primary px-2 py-0.5 text-xs font-semibold text-primary-foreground">{pc.weekly}</span></span>
+        <ArrowRight className="size-5 shrink-0 text-muted-foreground rtl:rotate-180" />
+      </Link>
     </section>
+    <PatientComments />
     <section className="border-t border-border bg-secondary/40">
       <div className="home-enter mx-auto grid max-w-6xl grid-cols-[88px_minmax(0,1fr)] items-center gap-5 px-5 py-8 sm:grid-cols-[140px_minmax(0,1fr)] md:gap-8 md:px-8 md:py-10">
         <img src={portrait.url} alt={t.name} width={140} height={160} loading="lazy" className="aspect-[7/8] w-full rounded-md object-cover object-top" />
