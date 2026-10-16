@@ -68,7 +68,7 @@ export const Route = createFileRoute("/api/public/sync-posts")({
           if (img.ok) {
             const path = `planner/${p.id}.png`;
             const up = await supabaseAdmin.storage.from("doctor-posts").upload(path, await img.arrayBuffer(), { contentType: img.headers.get("content-type") ?? "image/png", upsert: true });
-            if (!up.error) image = supabaseAdmin.storage.from("doctor-posts").getPublicUrl(path).data.publicUrl;
+            if (!up.error) image = `/api/public/post-image/${p.id}`;
           }
         }
         const text = p.body.replace(/^#\s+/m, "");
