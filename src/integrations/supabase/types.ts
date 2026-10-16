@@ -14,6 +14,69 @@ export type Database = {
   }
   public: {
     Tables: {
+      doctor_posts: {
+        Row: {
+          created_at: string
+          external_id: string
+          id: string
+          image_url: string | null
+          original_lang: string
+          original_text: string
+          posted_at: string
+          source: string
+          translations: Json
+        }
+        Insert: {
+          created_at?: string
+          external_id: string
+          id?: string
+          image_url?: string | null
+          original_lang?: string
+          original_text: string
+          posted_at?: string
+          source?: string
+          translations?: Json
+        }
+        Update: {
+          created_at?: string
+          external_id?: string
+          id?: string
+          image_url?: string | null
+          original_lang?: string
+          original_text?: string
+          posted_at?: string
+          source?: string
+          translations?: Json
+        }
+        Relationships: []
+      }
+      patient_comments: {
+        Row: {
+          body: string
+          created_at: string
+          hidden: boolean
+          id: string
+          nickname: string
+          source: string
+        }
+        Insert: {
+          body: string
+          created_at?: string
+          hidden?: boolean
+          id?: string
+          nickname: string
+          source?: string
+        }
+        Update: {
+          body?: string
+          created_at?: string
+          hidden?: boolean
+          id?: string
+          nickname?: string
+          source?: string
+        }
+        Relationships: []
+      }
       site_stats: {
         Row: {
           key: string
