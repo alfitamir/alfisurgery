@@ -11,7 +11,7 @@ export const Route = createFileRoute("/posts")({
   component: PostsPage,
   head: () => ({ meta: [
     { title: "Dr. Tamer Elalfy's surgical update posts | Alfi Surgery" },
-    { name: "description", content: "Full posts and images by Dr. Tamer Elalfy on the latest surgical updates, dated and updated weekly." },
+    { name: "description", content: "Full posts and images by Dr. Tamer Elalfy on the latest surgical updates, refreshed weekly." },
     { property: "og:title", content: "Dr. Tamer Elalfy's surgical update posts" },
     { property: "og:description", content: "Full surgical update posts with images, updated weekly." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
