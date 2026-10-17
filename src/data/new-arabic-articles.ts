@@ -1,10 +1,12 @@
 import type { BlogArticle } from "@/data/blog-articles";
+import { gallstoneAlternativesArticle } from "@/data/gallstone-alternatives-article";
 
 // Search-targeted Arabic patient articles (Oct 2026). Awaiting Dr. Elalfy's medical review.
 const note = `<p><em>معلومات تثقيفية عامة لا تغني عن الكشف الطبي. تعليمات طبيبك والفريق المعالج لحالتك لها الأولوية دائمًا.</em></p>`;
 const urgent = (signs: string) => `<h2>متى تذهب إلى الطوارئ فورًا؟</h2><ul>${signs}</ul>`;
 
 export const newArabicArticles: BlogArticle[] = [
+  gallstoneAlternativesArticle,
   {
     id: 9001,
     date: "2026-10-15",
