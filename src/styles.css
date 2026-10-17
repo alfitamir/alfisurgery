@@ -81,6 +81,14 @@
   --patient-ink: oklch(0.31 0.04 245);
   --shadow-patient: 0 18px 45px -24px color-mix(in oklab, var(--patient-deep) 45%, transparent);
   --home-veil: linear-gradient(90deg, var(--background) 0%, color-mix(in oklab, var(--background) 97%, transparent) 30%, color-mix(in oklab, var(--background) 85%, transparent) 48%, transparent 78%);
+  --daily-mint-surface: oklch(0.96 0.035 165);
+  --daily-mint-ink: oklch(0.36 0.085 165);
+  --daily-rose-surface: oklch(0.96 0.025 10);
+  --daily-rose-ink: oklch(0.40 0.12 10);
+  --daily-sky-surface: oklch(0.96 0.03 235);
+  --daily-sky-ink: oklch(0.38 0.09 235);
+  --daily-gold-surface: oklch(0.96 0.045 90);
+  --daily-gold-ink: oklch(0.39 0.075 80);
 }
 
 .patient-site h1,
@@ -260,3 +268,11 @@ html[data-site-language] body .font-mono { font-family: var(--font-mono) !import
 .home-portrait-fade { mask-image: linear-gradient(to top, transparent 0%, black 30%); }
 .home-tile { transition: transform .25s ease, box-shadow .25s ease; }
 .home-tile:hover { transform: translateY(-4px); box-shadow: var(--shadow-elegant); }
+
+.daily-article { --daily-surface: var(--daily-mint-surface); --daily-ink: var(--daily-mint-ink); background: var(--daily-surface); color: var(--daily-ink); border-color: color-mix(in oklab, var(--daily-ink) 20%, var(--daily-surface)); }
+.daily-article[data-tone="1"] { --daily-surface: var(--daily-rose-surface); --daily-ink: var(--daily-rose-ink); }
+.daily-article[data-tone="2"] { --daily-surface: var(--daily-sky-surface); --daily-ink: var(--daily-sky-ink); }
+.daily-article[data-tone="3"] { --daily-surface: var(--daily-gold-surface); --daily-ink: var(--daily-gold-ink); }
+.daily-article-icon { background: var(--daily-ink); color: var(--daily-surface); }
+.daily-article-link { background: transparent; border-color: color-mix(in oklab, var(--daily-ink) 35%, transparent); color: var(--daily-ink); }
+.daily-article-link:hover { background: var(--daily-ink); color: var(--daily-surface); }

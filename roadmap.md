@@ -1,3 +1,4 @@
+- [x] Add a colorful daily article spotlight to both homepages, rotating existing language-matched articles each Riyadh day; test selection and reading links without publishing.
 - [x] Add an evidence-checked Arabic article about alternatives to gallstone surgery, with contextual success rates, sources, and links from patient reading and the homepage; verify without publishing.
 - [x] Add an Arabic article about weight plateau after sleeve gastrectomy, illustrated with two new images.
 - [x] Link the article from the patient guide and verify it renders on mobile.
