@@ -21,3 +21,4 @@
 - Reserve physical left space for the fixed tablet/desktop language sidebar in both reading directions; logical padding would move the clearance to the wrong side in RTL editions.
 - Resolve the patient assistant's response language per latest question and include explicit supported ?lang codes in guide links; this prevents the interface language or prior turns from selecting the wrong reading edition.
 - Share homepage section dropdowns between language editions and link to existing page anchors and guide routes with explicit language search; this keeps the directory complete without duplicating site content.
+- Select the homepage daily article from the existing language-matched collection with a shared Riyadh-calendar-day selector and bundled localized labels; this keeps both homepages synchronized without creating or duplicating medical content.
