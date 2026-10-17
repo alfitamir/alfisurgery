@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, ClipboardCheck, HeartPulse, Search, ShieldAlert, Stethoscope } from "lucide-react";
+import { ArrowRight, BookOpen, ClipboardCheck, HeartPulse, Search, ShieldAlert, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { navigationCopy } from "@/data/site-navigation";
@@ -44,6 +44,7 @@ export function ThreeSectionHome() {
         {steps.map((step, index) => <Button key={step.id} asChild variant="ghost" className="home-step home-tile home-enter h-auto min-h-24 justify-start rounded-md border border-border bg-card px-4 py-5 text-start"><Link to={patients} hash={step.id} className="grid grid-cols-[auto_minmax(0,1fr)_auto] gap-3"><span className={`grid size-10 shrink-0 place-items-center rounded-full ${step.tone}`}><step.icon className="size-5" /></span><span className="min-w-0 whitespace-normal"><span className="mb-1 block text-xs font-normal text-muted-foreground">0{index + 1}</span><span className="text-base font-semibold">{step.title}</span></span><ArrowRight className="size-4 shrink-0 text-muted-foreground rtl:rotate-180" /></Link></Button>)}
       </nav>
       <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{t.warning}</p>
+      {language === "ar" && <div className="mt-6 border-y border-border py-5"><p className="flex items-center gap-2 text-sm font-semibold text-primary"><BookOpen className="size-5" />من مكتبة المقالات</p><h3 className="mt-2 text-xl font-bold leading-relaxed">علاج حصوات المرارة بدون جراحة: البدائل ونسب النجاح وحدودها</h3><p className="mt-2 text-sm leading-loose text-muted-foreground">متى تصلح المتابعة؟ وما حدود الإذابة الدوائية والتفتيت ومنظار القنوات؟</p><Button asChild variant="link" className="mt-2 h-auto whitespace-normal px-0 text-start"><Link to="/articles/$articleId" params={{ articleId: "9005" }} search={{ lang: "ar" }}>اقرأ المقال<ArrowRight className="shrink-0 rtl:rotate-180" /></Link></Button></div>}
       <Link to="/posts" search={{ lang: language } as never} className="home-tile mt-6 flex items-center gap-4 rounded-md border border-border bg-card p-5">
         <span className="grid size-12 shrink-0 place-items-center rounded-full bg-secondary text-primary"><Newspaper className="size-6" /></span>
         <span className="min-w-0 flex-1"><span className="block text-lg font-semibold">{pc.postsTitle}</span><span className="mt-1 inline-block rounded-full bg-primary px-2 py-0.5 text-xs font-semibold text-primary-foreground">{pc.weekly}</span></span>
