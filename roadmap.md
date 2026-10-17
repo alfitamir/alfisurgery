@@ -1,3 +1,4 @@
+- [ ] Add an evidence-checked Arabic article about alternatives to gallstone surgery, with contextual success rates, sources, and links from patient reading and the homepage; verify without publishing.
 - [x] Add an Arabic article about weight plateau after sleeve gastrectomy, illustrated with two new images.
 - [x] Link the article from the patient guide and verify it renders on mobile.
 - [x] Add the supplied WordPress author link to the English and Arabic site pages.
