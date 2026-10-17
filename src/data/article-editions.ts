@@ -78,5 +78,74 @@ export const articleEditions: Record<number, Partial<Record<SiteLanguage, Articl
 <li><a href="https://pure.amsterdamumc.nl/ws/portalfiles/portal/156172927/Restrictive-strategy-vs-usual-care-for-cholecystectomy-in-patients-with-abdominal-pain-and-gallstones.pdf" target="_blank" rel="noopener noreferrer">SECURE, JAMA Surgery, 2024: five-year follow-up of patient selection for cholecystectomy.</a></li>
 </ol>`,
     },
+    },
+  },
+  9004: {
+    en: {
+      title: "What should you eat after gallbladder surgery? An eating guide for the first weeks",
+      content: `
+<p><em>General educational information, not a substitute for medical assessment. Your doctor's and treating team's instructions always come first.</em></p>
+<h2>Do I need a special diet for life?</h2><p>No. After the gallbladder is removed, the liver still produces bile — but it flows directly into the intestine. Most patients return to normal eating within a few weeks, and the purpose of a gradual approach is to reduce temporary bloating and diarrhoea.</p>
+<h2>Day one</h2><ul><li>Light fluids first, then light food as instructed by your treating team.</li><li>If you feel nauseous, take small repeated sips.</li></ul>
+<h2>The first and second week</h2><ul><li>Small frequent meals instead of two large ones.</li><li>Choose: rice, bread, oats, grilled or boiled chicken and fish, boiled eggs, low-fat yoghurt, cooked vegetables, bananas and apples.</li><li>Reduce: fried foods, fast food, fatty meats, sauces and cream, heavy sweets, and very spicy food.</li><li>Drink enough water.</li></ul>
+<h2>After that</h2><p>Add foods gradually, one at a time, and notice what causes you discomfort. Increasing fibre gradually helps if you have diarrhoea after fatty meals. If diarrhoea persists for more than a few weeks, see your doctor — there are treatments that help.</p>
+<h2>Seek urgent care immediately if you have:</h2><ul><li>Yellowing of the eyes or skin, or very dark urine.</li><li>Severe, worsening abdominal pain, or fever with shivering.</li><li>Persistent vomiting that stops you from drinking fluids.</li></ul>
+<p>More reading: <a href="/guides/cholecystectomy?lang=en">Laparoscopic cholecystectomy guide</a>.</p>`,
+    },
+    ur: {
+      title: "پتّہ نکالنے کے آپریشن کے بعد کیا کھائیں؟ پہلے ہفتوں کے لیے خوراک کی رہنمائی",
+      content: `
+<p><em>عام معلوماتی تحریر، طبی معائنے کا متبادل نہیں۔ آپ کے ڈاکٹر اور معالج ٹیم کی ہدایات ہمیشہ مقدم ہیں۔</em></p>
+<h2>کیا مجھے عمر بھر خاص خوراک کی ضرورت ہے؟</h2><p>نہیں۔ پتّہ نکالنے کے بعد بھی جگر صفرا بناتا رہتا ہے، مگر وہ سیدھا آنت میں جاتا ہے۔ زیادہ تر مریض چند ہفتوں میں معمول کی خوراک پر واپس آ جاتے ہیں، اور بتدریج خوراک کا مقصد عارضی اپھارہ اور دست کو کم کرنا ہے۔</p>
+<h2>پہلا دن</h2><ul><li>معالج ٹیم کی ہدایت پر پہلے ہلکے مشروبات، پھر ہلکی خوراک۔</li><li>اگر متلی محسوس ہو تو تھوڑے تھوڑے گھونٹ بار بار لیں۔</li></ul>
+<h2>پہلا اور دوسرا ہفتہ</h2><ul><li>دو بڑے کھانوں کی بجائے تھوڑے مگر بار بار کھائیں۔</li><li>چنیں: چاول، روٹی، جئی، گرل یا اُبلی مرغی اور مچھلی، اُبلے انڈے، کم چکنائی والا دہی، پکی سبزیاں، کیلا اور سیب۔</li><li>کم کریں: تلے ہوئے کھانے، فاسٹ فوڈ، چکنائی والا گوشت، چٹنیاں اور کریم، بھاری میٹھے، اور بہت تیز مصالحہ۔</li><li>کافی پانی پییں۔</li></ul>
+<h2>اس کے بعد</h2><p>کھانے بتدریج ایک ایک کر کے شامل کریں اور نوٹ کریں کہ کس چیز سے تکلیف ہوتی ہے۔ چکنائی والے کھانے کے بعد دست ہو تو فائبر بتدریج بڑھانا مددگار ہے۔ اگر دست چند ہفتوں سے زیادہ رہے تو ڈاکٹر سے ملیں — کچھ علاج مدد کرتے ہیں۔</p>
+<h2>متى تذهب إلى الطوارئ فورًا؟</h2><ul><li>آنکھوں یا جلد کا پیلا ہونا، یا بہت گہرا پیشاب۔</li><li>پیٹ میں شدید بڑھتا درد، یا بخار کے ساتھ کپکپی۔</li><li>مسلسل قے جس سے آپ سیال نہ پی سکیں۔</li></ul>
+<p>مزید پڑھیں: <a href="/guides/cholecystectomy?lang=ur">لیپروسکوپک پتّہ نکالنے کی رہنمائی</a>۔</p>`,
+    },
+    hi: {
+      title: "पित्ताशय की सर्जरी के बाद क्या खाएँ? पहले हफ़्तों के लिए खान-पान की मार्गदर्शिका",
+      content: `
+<p><em>सामान्य शैक्षिक जानकारी, चिकित्सकीय जाँच का विकल्प नहीं। आपके डॉक्टर और उपचार टीम के निर्देश हमेशा पहले।</em></p>
+<h2>क्या मुझे जीवनभर विशेष आहार की ज़रूरत है?</h2><p>नहीं। पित्ताशय निकलने के बाद भी लिवर पित्त बनाता रहता है, पर वह सीधे आँत में जाता है। अधिकतर मरीज़ कुछ हफ़्तों में सामान्य भोजन पर लौट आते हैं, और धीरे-धीरे बदलाव का उद्देश्य अस्थायी पेट फूलना और दस्त कम करना है।</p>
+<h2>पहला दिन</h2><ul><li>उपचार टीम के निर्देश पर पहले हल्के तरल, फिर हल्का भोजन।</li><li>उल्टी जैसा लगे तो छोटे-छोटे घूँट बार-बार लें।</li></ul>
+<h2>पहला और दूसरा सप्ताह</h2><ul><li>दो बड़े भोजन की जगह छोटे-छोटे भोजन बार-बार।</li><li>चुनें: चावल, रोटी, जई, ग्रिल या उबली चिकन और मछली, उबले अंडे, कम वसा वाला दही, पकी सब्जियाँ, केला और सेब।</li><li>कम करें: तला भोजन, फ़ास्ट फ़ूड, वसायुक्त मांस, सॉस और क्रीम, भारी मिठाइयाँ, बहुत तेज़ मसालेदार खाना।</li><li>पर्याप्त पानी पिएँ।</li></ul>
+<h2>इसके बाद</h2><p>भोजन धीरे-धीरे एक-एक कर जोड़ें और देखें किस चीज़ से तकलीफ़ होती है। वसायुक्त भोजन के बाद दस्त हो तो फ़ाइबर धीरे-धीरे बढ़ाना मदद करता है। दस्त कुछ हफ़्तों से अधिक रहे तो डॉक्टर से मिलें — कुछ उपचार मदद करते हैं।</p>
+<h2>तुरंत आपातकालीन सहायता लें यदि आपको हो:</h2><ul><li>आँखों या त्वचा का पीला होना, या बहुत गाढ़ा पेशाब।</li><li>पेट में तेज़ बढ़ता दर्द, या ठंड लगकर बुखार।</li><li>लगातार उल्टी जिससे आप तरल न पी सकें।</li></ul>
+<p>और पढ़ें: <a href="/guides/cholecystectomy?lang=hi">लैप्रोस्कोपिक पित्ताशय ऑपरेशन की मार्गदर्शिका</a>।</p>`,
+    },
+    bn: {
+      title: "পিত্তথলির অস্ত্রোপচারের পরে কী খাবেন? প্রথম কয়েক সপ্তাহের খাদ্যনির্দেশিকা",
+      content: `
+<p><em>সাধারণ শিক্ষামূলক তথ্য, চিকিৎসা পরীক্ষার বিকল্প নয়। আপনার ডাক্তার ও চিকিৎসা দলের নির্দেশই সর্বদা অগ্রাধিকার।</em></p>
+<h2>সারা জীবনের জন্য কি বিশেষ খাদ্য দরকার?</h2><p>না। পিত্তথলি অপসারণের পরও লিভার পিত্তরস তৈরি করে, তবে তা সরাসরি অন্ত্রে যায়। বেশিরভাগ রোগী কয়েক সপ্তাহে স্বাভাবিক খাবারে ফেরেন; ধীরে ধীরে অভ্যস্ত হওয়ার লক্ষ্য সাময়িক পেট ফাঁপা ও ডায়রিয়া কমানো।</p>
+<h2>প্রথম দিন</h2><ul><li>চিকিৎসা দলের নির্দেশে প্রথমে হালকা তরল, তারপর হালকা খাবার।</li><li>বমি ভাব হলে অল্প অল্প চুমুক বারবার নিন।</li></ul>
+<h2>প্রথম ও দ্বিতীয় সপ্তাহ</h2><ul><li>দুটি বড় খাবারের বদলে অল্প অল্প করে বারবার খান।</li><li>বেছে নিন: ভাত, রুটি, ওটস, গ্রিল বা সেদ্ধ মুরগি ও মাছ, সেদ্ধ ডিম, কম চর্বির দই, রান্না সবজি, কলা ও আপেল।</li><li>কমান: ভাজাপোড়া, ফাস্ট ফুড, চর্বিযুক্ত মাংস, সস ও ক্রিম, ভারী মিষ্টি, এবং খুব ঝাল খাবার।</li><li>পর্যাপ্ত পানি পান করুন।</li></ul>
+<h2>এরপর</h2><p>খাবার ধীরে ধীরে এক এক করে যোগ করুন এবং দেখুন কোনটি অস্বস্তি দেয়। চর্বিযুক্ত খাবারের পরে ডায়রিয়া থাকলে আঁশ ধীরে ধীরে বাড়ানো সাহায্য করে। ডায়রিয়া কয়েক সপ্তাহের বেশি চললে ডাক্তারকে দেখান — কিছু চিকিৎসা সাহায্য করে।</p>
+<h2>অবিলম্বে জরুরি চিকিৎসা নিন যদি থাকে:</h2><ul><li>চোখ বা ত্বক হলুদ হয়ে যাওয়া, বা প্রস্রাব খুব গাঢ় হওয়া।</li><li>পেটে তীব্র বাড়তে থাকা ব্যথা, বা কাঁপুনিসহ জ্বর।</li><li>ক্রমাগত বমি যাতে তরল পান করতে পারেন না।</li></ul>
+<p>আরও পড়ুন: <a href="/guides/cholecystectomy?lang=bn">ল্যাপারোস্কোপিক পিত্তথলি অপারেশনের নির্দেশিকা</a>।</p>`,
+    },
+    tl: {
+      title: "Ano ang dapat kainin pagkatapos ng operasyon sa apdo? Gabay sa pagkain sa unang mga linggo",
+      content: `
+<p><em>Pangkalahatang impormasyong pang-edukasyon, hindi kapalit ng medikal na pagsusuri. Ang payo ng doktor at pangkat medikal ang laging una.</em></p>
+<h2>Kailangan ko ba ng espesyal na diyeta habang buhay?</h2><p>Hindi. Pagkatapos tanggalin ang apdo, patuloy pa ring gumagawa ng bile ang atay, ngunit dumadaloy ito nang diretso sa bituka. Karamihan ng pasyente ay bumabalik sa normal na pagkain sa loob ng ilang linggo, at ang unti-unting pagbabago ay para mabawasan ang pansamantalang kabag at pagtatae.</p>
+<h2>Unang araw</h2><ul><li>Magaan na likido muna, pagkatapos magaan na pagkain ayon sa tagubilin ng pangkat.</li><li>Kung nasusuka, uminom ng maliliit na sips nang paulit-ulit.</li></ul>
+<h2>Unang at ikalawang linggo</h2><ul><li>Maliliit ngunit madalas na pagkain sa halip na dalawang malaking kain.</li><li>Piliin: kanin, tinapay, oats, inihaw o nilagang manok at isda, nilagang itlog, low-fat yogurt, lutong gulay, saging at mansanas.</li><li>Bawasan: pritong pagkain, fast food, matabang karne, sarsa at cream, mabibigat na matamis, at sobrang maanghang.</li><li>Uminom ng sapat na tubig.</li></ul>
+<h2>Pagkatapos</h2><p>Idagdag ang mga pagkain nang paisa-isa at pansinin kung ano ang sumasama ang loob mo. Nakakatulong ang unti-unting pagdagdag ng fiber kung may pagtatae pagkatapos ng matabang pagkain. Kung lumampas sa ilang linggo ang pagtatae, magpatingin sa doktor — may mga gamot na nakakatulong.</p>
+<h2>Humingi agad ng emerhensiyang pangangalaga kung may:</h2><ul><li>Paninilaw ng mata o balat, o sobrang dilim na ihi.</li><li>Matinding lumalalang sakit ng tiyan, o lagnat na may panginginig.</li><li>Tuloy-tuloy na pagsusuka na hindi ka makainom ng likido.</li></ul>
+<p>Basahin din: <a href="/guides/cholecystectomy?lang=tl">Gabay sa laparoscopic cholecystectomy</a>.</p>`,
+    },
+    ta: {
+      title: "பித்தப்பை அறுவைச் சிகிச்சைக்குப் பிறகு எதைச் சாப்பிட வேண்டும்? முதல் வாரங்களுக்கான உணவு வழிகாட்டி",
+      content: `
+<p><em>இது பொது தகவல்; மருத்துவ பரிசோதனைக்கு மாற்று அல்ல. உங்கள் மருத்துவர் மற்றும் சிகிச்சைக் குழுவின் அறிவுரையே எப்போதும் முன்னுரிமை.</em></p>
+<h2>வாழ்நாள் முழுவதும் சிறப்பு உணவு தேவையா?</h2><p>இல்லை. பித்தப்பை நீக்கப்பட்ட பிறகும் கல்லீரல் பித்தநீரைத் தயாரிக்கிறது, ஆனால் அது நேரடியாகக் குடலுக்குச் செல்கிறது. பெரும்பாலானோர் சில வாரங்களில் இயல்பான உணவுக்குத் திரும்புகிறார்கள்; படிப்படியான மாற்றத்தின் நோக்கம் தற்காலிக வயிற்று உப்புசம் மற்றும் வயிற்றுப்போக்கைக் குறைப்பது.</p>
+<h2>முதல் நாள்</h2><ul><li>சிகிச்சைக் குழுவின் அறிவுரைப்படி முதலில் இலகுவான திரவங்கள், பிறகு இலகுவான உணவு.</li><li>குமட்டல் இருந்தால் சிறிய மிடறுகளாக அடிக்கடி குடியுங்கள்.</li></ul>
+<h2>முதல் மற்றும் இரண்டாம் வாரம்</h2><ul><li>இரண்டு பெரிய உணவுகளுக்குப் பதிலாக சிறிய உணவுகளை அடிக்கடி எடுத்துக் கொள்ளுங்கள்.</li><li>தேர்வு செய்யுங்கள்: சாதம், ரொட்டி, ஓட்ஸ், கிரில் அல்லது வேகவைத்த கோழி மற்றும் மீன், வேகவைத்த முட்டை, குறைந்த கொழுப்பு தயிர், சமைத்த காய்கறிகள், வாழைப்பழம் மற்றும் ஆப்பிள்.</li><li>குறையுங்கள்: பொரித்த உணவு, துரித உணவு, கொழுப்புள்ள இறைச்சி, சாஸ் மற்றும் கிரீம், கனமான இனிப்புகள், மிகக் காரமான உணவு.</li><li>போதுமான தண்ணீர் குடியுங்கள்.</li></ul>
+<h2>அதன் பிறகு</h2><p>உணவுகளை படிப்படியாக ஒவ்வொன்றாகச் சேர்த்து, எது அசௌகரியம் தருகிறது என்பதைக் கவனியுங்கள். கொழுப்பு உணவுக்குப் பின் வயிற்றுப்போக்கு இருந்தால் நார்ச்சத்தை படிப்படியாக அதிகரிப்பது உதவும். வயிற்றுப்போக்கு சில வாரங்களுக்கு மேல் நீடித்தால் மருத்துவரைப் பாருங்கள் — சில சிகிச்சைகள் உதவுகின்றன.</p>
+<h2>உடனடியாக அவசர சிகிச்சை பெறுங்கள்:</h2><ul><li>கண் அல்லது தோல் மஞ்சளாதல், அல்லது மிகக் கருத்த சிறுநீர்.</li><li>வயிற்றில் கடுமையான அதிகரிக்கும் வலி, அல்லது குளிருடன் காய்ச்சல்.</li><li>திரவம் குடிக்க முடியாத தொடர் வாந்தி.</li></ul>
+<p>மேலும் படிக்க: <a href="/guides/cholecystectomy?lang=ta">லேபரோஸ்கோப்பிக் பித்தப்பை அறுவைச் சிகிச்சை வழிகாட்டி</a>.</p>`,
+    },
   },
 };
