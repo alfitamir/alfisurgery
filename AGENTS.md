@@ -1,6 +1,7 @@
 - Keep patient education articles as dedicated TanStack routes and link to them from the patient guide; this preserves direct access and offline caching through the existing patient app.
 - Review uploaded medical advice for safety before publication rather than reproducing potentially harmful restrictive plans as universal instructions; patient guidance must defer to the treating clinical team.
 - Use /articles as an Outlet layout, its index as the searchable archive, and $articleId as full reading pages sharing local imported content; this preserves stable links and offline page caching without duplicating articles.
+- Store evidence-heavy new articles in individual typed data modules registered in the shared article collection; this keeps citations and clinical qualifications together across archive, homepage and guide links.
 - Share the article showcase between both homepages and use imported image asset pointers for blog media; this keeps previews consistent and removes dependence on WordPress image hosting.
 - Keep added site languages in bundled dictionaries behind a root language provider, preserving source text nodes and original URLs; this supports existing content, dynamic dialogs, and offline reading without duplicating medical articles.
 - Mount audience-based navigation and the footer in the root shell, and keep profile, research, teaching, updates, videos, and contact as dedicated destinations; this reduces homepage overload without losing source content.
