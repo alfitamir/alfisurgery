@@ -38,6 +38,14 @@
 - [x] Update all website images depicting women to modest hijab attire and verify the displayed images.
 - [x] Add homepage section and subsection dropdowns with translated navigation and verify links on desktop and phone.
 
+## Retrospective seven-language medical article review
+- [x] Repair the article-editions syntax error and remove the Arabic heading from the Urdu diet edition.
+- [ ] Complete and cross-check six translations of the pilonidal, haemorrhoid and hernia articles (9001–9003).
+- [ ] Complete five missing translations of gallstone alternatives (9005); only English exists so far.
+- [ ] Complete missing editions of the 41 imported articles, 20 surgical updates, 13 research summaries and two dedicated patient articles; verify patient-guide summary coverage.
+- [ ] Obtain the doctor's clinical approval and qualified native-speaking medical review; never mark generated translations as human-reviewed.
+- [ ] Publish only after explicit instruction; current translation work stays in preview.
+
 ## LinkedIn posts + patient comments (Oct 2026)
 - [x] /posts page (full posts, images, dates, "Updated weekly", translations) + homepage card
 - [x] Patient impressions on homepage (nickname + comment, public immediately)
