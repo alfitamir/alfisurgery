@@ -1,9 +1,8 @@
 import type { SiteLanguage } from "@/lib/site-language";
 
 // Curated editions of the site-authored articles for the site languages.
-// Arabic remains the original; English and the five dictionary languages mirror
-// the source figures, warnings and citation links exactly. Each edition defers
-// to the treating team and carries the same review-status note as the source.
+// Arabic remains the original. Availability is explicit per article and language;
+// a stored translation is not evidence of qualified native-speaking medical review.
 
 export interface ArticleEdition {
   title: string;
@@ -78,7 +77,6 @@ export const articleEditions: Record<number, Partial<Record<SiteLanguage, Articl
 <li><a href="https://pure.amsterdamumc.nl/ws/portalfiles/portal/156172927/Restrictive-strategy-vs-usual-care-for-cholecystectomy-in-patients-with-abdominal-pain-and-gallstones.pdf" target="_blank" rel="noopener noreferrer">SECURE, JAMA Surgery, 2024: five-year follow-up of patient selection for cholecystectomy.</a></li>
 </ol>`,
     },
-    },
   },
   9004: {
     en: {
@@ -100,7 +98,7 @@ export const articleEditions: Record<number, Partial<Record<SiteLanguage, Articl
 <h2>پہلا دن</h2><ul><li>معالج ٹیم کی ہدایت پر پہلے ہلکے مشروبات، پھر ہلکی خوراک۔</li><li>اگر متلی محسوس ہو تو تھوڑے تھوڑے گھونٹ بار بار لیں۔</li></ul>
 <h2>پہلا اور دوسرا ہفتہ</h2><ul><li>دو بڑے کھانوں کی بجائے تھوڑے مگر بار بار کھائیں۔</li><li>چنیں: چاول، روٹی، جئی، گرل یا اُبلی مرغی اور مچھلی، اُبلے انڈے، کم چکنائی والا دہی، پکی سبزیاں، کیلا اور سیب۔</li><li>کم کریں: تلے ہوئے کھانے، فاسٹ فوڈ، چکنائی والا گوشت، چٹنیاں اور کریم، بھاری میٹھے، اور بہت تیز مصالحہ۔</li><li>کافی پانی پییں۔</li></ul>
 <h2>اس کے بعد</h2><p>کھانے بتدریج ایک ایک کر کے شامل کریں اور نوٹ کریں کہ کس چیز سے تکلیف ہوتی ہے۔ چکنائی والے کھانے کے بعد دست ہو تو فائبر بتدریج بڑھانا مددگار ہے۔ اگر دست چند ہفتوں سے زیادہ رہے تو ڈاکٹر سے ملیں — کچھ علاج مدد کرتے ہیں۔</p>
-<h2>متى تذهب إلى الطوارئ فورًا؟</h2><ul><li>آنکھوں یا جلد کا پیلا ہونا، یا بہت گہرا پیشاب۔</li><li>پیٹ میں شدید بڑھتا درد، یا بخار کے ساتھ کپکپی۔</li><li>مسلسل قے جس سے آپ سیال نہ پی سکیں۔</li></ul>
+<h2>فوراً ہنگامی طبی مدد کب لیں؟</h2><ul><li>آنکھوں یا جلد کا پیلا ہونا، یا بہت گہرا پیشاب۔</li><li>پیٹ میں شدید بڑھتا درد، یا بخار کے ساتھ کپکپی۔</li><li>مسلسل قے جس سے آپ سیال نہ پی سکیں۔</li></ul>
 <p>مزید پڑھیں: <a href="/guides/cholecystectomy?lang=ur">لیپروسکوپک پتّہ نکالنے کی رہنمائی</a>۔</p>`,
     },
     hi: {
