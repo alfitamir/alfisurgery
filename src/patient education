@@ -1,0 +1,1391 @@
+export interface SurgicalGuide {
+  filename: string;
+  title: string;
+  category: string;
+  languages: string[];
+  author: string;
+  hospital: string;
+}
+
+export const surgicalGuides: SurgicalGuide[] = [
+  {
+    "filename": "1_1_Hemorrhoids_Fissures_Pregnancy_Postpartum.docx",
+    "title": "1 1 Hemorrhoids Fissures Pregnancy Postpartum",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_1_Rectal_Bleeding_Hemorrhoids_Fissure_or_Worse.docx",
+    "title": "1 1 Rectal Bleeding Hemorrhoids Fissure or Worse",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_2_Anal_Skin_Tags_vs_Hemorrhoids_vs_Condyloma.docx",
+    "title": "1 2 Anal Skin Tags vs Hemorrhoids vs Condyloma",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_2_Laser_Hemorrhoidoplasty_vs_Traditional_Hemorrhoidectomy.docx",
+    "title": "1 2 Laser Hemorrhoidoplasty vs Traditional Hemorrhoidectomy",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_3_Acute_vs_Chronic_Anal_Fissures_and_LIS.docx",
+    "title": "1 3 Acute vs Chronic Anal Fissures and LIS",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_3_Chronic_Anal_Itching_Pruritus_Ani.docx",
+    "title": "1 3 Chronic Anal Itching Pruritus Ani",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_4_Full_Thickness_Rectal_Prolapse_vs_Grade4_Hemorrhoids.docx",
+    "title": "1 4 Full Thickness Rectal Prolapse vs Grade4 Hemorrhoids",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_4_Thrombosed_External_Hemorrhoids_Management.docx",
+    "title": "1 4 Thrombosed External Hemorrhoids Management",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_5_Dangers_of_Black_Ointment_Herbal_Pastes_Abscess.docx",
+    "title": "1 5 Dangers of Black Ointment Herbal Pastes Abscess",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_5_Perianal_Abscess_vs_Anal_Fistula.docx",
+    "title": "1 5 Perianal Abscess vs Anal Fistula",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_6_Complex_Anal_Fistula_Repairs_LIFT_VAAFT_FiLaC_Setons.docx",
+    "title": "1 6 Complex Anal Fistula Repairs LIFT VAAFT FiLaC Setons",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_6_Postoperative_Anal_Stenosis_Anoplasty.docx",
+    "title": "1 6 Postoperative Anal Stenosis Anoplasty",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_7_Outpatient_Rubber_Band_Ligation_Sclerotherapy.docx",
+    "title": "1 7 Outpatient Rubber Band Ligation Sclerotherapy",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_7_Surviving_First_Week_After_Hemorrhoid_or_Fistula_Surgery.docx",
+    "title": "1 7 Surviving First Week After Hemorrhoid or Fistula Surgery",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "1_Anorectal_Cultural_and_Clinical_Guide.docx",
+    "title": "1 Anorectal Cultural and Clinical Guide",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "2_1_Pilonidal_Sinus_Marriage_Fertility_Spine_Myths.docx",
+    "title": "2 1 Pilonidal Sinus Marriage Fertility Spine Myths",
+    "category": "Pilonidal Sinus Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "2_1_Tailbone_Pain_and_Pilonidal_Cyst_Diagnosis.docx",
+    "title": "2 1 Tailbone Pain and Pilonidal Cyst Diagnosis",
+    "category": "Pilonidal Sinus Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "2_2_Laser_Pilonidal_SiLaC_EPSiT_vs_Excision.docx",
+    "title": "2 2 Laser Pilonidal SiLaC EPSiT vs Excision",
+    "category": "Pilonidal Sinus Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "2_2_Umbilical_Pilonidal_Sinus_Navel_Hair_Cyst.docx",
+    "title": "2 2 Umbilical Pilonidal Sinus Navel Hair Cyst",
+    "category": "Pilonidal Sinus Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "2_3_Open_Packing_vs_Closed_Flap_Karydakis_Limberg.docx",
+    "title": "2 3 Open Packing vs Closed Flap Karydakis Limberg",
+    "category": "Pilonidal Sinus Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "2_3_Prayer_Postures_Sujood_Wudu_Pilonidal_Surgery.docx",
+    "title": "2 3 Prayer Postures Sujood Wudu Pilonidal Surgery",
+    "category": "Pilonidal Sinus Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "2_4_Pilonidal_Recurrence_Prevention_and_Laser_Hair_Removal.docx",
+    "title": "2 4 Pilonidal Recurrence Prevention and Laser Hair Removal",
+    "category": "Pilonidal Sinus Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "2_4_VAC_Negative_Pressure_Pilonidal_Wounds.docx",
+    "title": "2 4 VAC Negative Pressure Pilonidal Wounds",
+    "category": "Pilonidal Sinus Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "2_5_Crystallized_Phenol_Fibrin_Glue_Ablation.docx",
+    "title": "2 5 Crystallized Phenol Fibrin Glue Ablation",
+    "category": "Pilonidal Sinus Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "2_5_Sitting_Exercise_and_Return_to_Work_Pilonidal.docx",
+    "title": "2 5 Sitting Exercise and Return to Work Pilonidal",
+    "category": "Pilonidal Sinus Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "2_Pilonidal_Cultural_and_Clinical_Guide.docx",
+    "title": "2 Pilonidal Cultural and Clinical Guide",
+    "category": "Pilonidal Sinus Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "2_Pilonidal_Sinus_Surgery_Complete_Patient_Guide.docx",
+    "title": "2 Pilonidal Sinus Surgery Complete Patient Guide",
+    "category": "Pilonidal Sinus Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "3_1_Biliary_Colic_vs_Acute_Cholecystitis_ER_Guide.docx",
+    "title": "3 1 Biliary Colic vs Acute Cholecystitis ER Guide",
+    "category": "Biliary Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "3_1_Fasting_Ramadan_Gallstones_PostCholecystectomy.docx",
+    "title": "3 1 Fasting Ramadan Gallstones PostCholecystectomy",
+    "category": "Biliary Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "3_2_Silent_Gallstones_Watchful_Waiting_vs_Surgery.docx",
+    "title": "3 2 Silent Gallstones Watchful Waiting vs Surgery",
+    "category": "Biliary Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "3_2_Tiny_Gallstones_Biliary_Sludge_Pancreatitis_Risks.docx",
+    "title": "3 2 Tiny Gallstones Biliary Sludge Pancreatitis Risks",
+    "category": "Biliary Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "3_3_Life_Without_Gallbladder_PostOp_Diet_and_Diarrhea.docx",
+    "title": "3 3 Life Without Gallbladder PostOp Diet and Diarrhea",
+    "category": "Biliary Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "3_3_Olive_Oil_Lemon_Gallstone_Flush_Debunked.docx",
+    "title": "3 3 Olive Oil Lemon Gallstone Flush Debunked",
+    "category": "Biliary Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "3_4_Gallstone_Pancreatitis_Jaundice_and_ERCP.docx",
+    "title": "3 4 Gallstone Pancreatitis Jaundice and ERCP",
+    "category": "Biliary Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "3_4_Gallstones_After_Sleeve_Gastrectomy_GLP1_Ursofalk.docx",
+    "title": "3 4 Gallstones After Sleeve Gastrectomy GLP1 Ursofalk",
+    "category": "Biliary Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "3_5_Combined_Cholecystectomy_Umbilical_Hernia_Repair.docx",
+    "title": "3 5 Combined Cholecystectomy Umbilical Hernia Repair",
+    "category": "Biliary Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "3_5_Gallbladder_Polyps_Surveillance_vs_Surgery.docx",
+    "title": "3 5 Gallbladder Polyps Surveillance vs Surgery",
+    "category": "Biliary Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "3_6_Yellow_Navel_Discharge_Swelling_PostLap.docx",
+    "title": "3 6 Yellow Navel Discharge Swelling PostLap",
+    "category": "Biliary Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "3_Biliary_Gallbladder_and_Bile_Duct_Surgery_Guide.docx",
+    "title": "3 Biliary Gallbladder and Bile Duct Surgery Guide",
+    "category": "Biliary Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "3_Biliary_Ramadan_and_Folk_Remedies_Guide.docx",
+    "title": "3 Biliary Ramadan and Folk Remedies Guide",
+    "category": "Biliary Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_1_Hernia_Incarceration_Strangulation_Risks.docx",
+    "title": "4 1 Hernia Incarceration Strangulation Risks",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_1_Pseudo_Appendicitis_Mesenteric_Adenitis_Ovarian_Cysts.docx",
+    "title": "4 1 Pseudo Appendicitis Mesenteric Adenitis Ovarian Cysts",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_2_The_Truth_About_Hernia_Mesh_Safety_and_Myths.docx",
+    "title": "4 2 The Truth About Hernia Mesh Safety and Myths",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_2_Umbilical_Hernia_Pregnancy_Planning_Timeline.docx",
+    "title": "4 2 Umbilical Hernia Pregnancy Planning Timeline",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_3_Laparoscopic_Robotic_Open_Hernia_Repair_Comparison.docx",
+    "title": "4 3 Laparoscopic Robotic Open Hernia Repair Comparison",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_3_Sports_Hernia_Athletic_Pubalgia_Football.docx",
+    "title": "4 3 Sports Hernia Athletic Pubalgia Football",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_4_Diastasis_Recti_vs_Umbilical_Hernia.docx",
+    "title": "4 4 Diastasis Recti vs Umbilical Hernia",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_4_Hydatid_Cysts_Liver_Echinococcosis.docx",
+    "title": "4 4 Hydatid Cysts Liver Echinococcosis",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_5_Appendicitis_Symptoms_and_Laparoscopic_Recovery.docx",
+    "title": "4 5 Appendicitis Symptoms and Laparoscopic Recovery",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_5_HPylori_Peptic_Ulcer_Perforation_Emergency.docx",
+    "title": "4 5 HPylori Peptic Ulcer Perforation Emergency",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_6_Acid_Reflux_Surgery_Nissen_Fundoplication_Hiatal_Hernia.docx",
+    "title": "4 6 Acid Reflux Surgery Nissen Fundoplication Hiatal Hernia",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_6_Acute_Mesenteric_Ischemia_Bowel_Infarction.docx",
+    "title": "4 6 Acute Mesenteric Ischemia Bowel Infarction",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_7_Adhesions_and_Small_Bowel_Obstruction.docx",
+    "title": "4 7 Adhesions and Small Bowel Obstruction",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_Abdominal_Hernia_Regional_Topics_Guide.docx",
+    "title": "4 Abdominal Hernia Regional Topics Guide",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "4_Abdominal_and_Hernia_Surgery_Complete_Guide.docx",
+    "title": "4 Abdominal and Hernia Surgery Complete Guide",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "5_1_Thyroid_Nodule_TIRADS_and_FNA_Biopsy.docx",
+    "title": "5 1 Thyroid Nodule TIRADS and FNA Biopsy",
+    "category": "Endocrine Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "5_1_Tingling_Lips_Fingers_Hypocalcemia_PostThyroidectomy.docx",
+    "title": "5 1 Tingling Lips Fingers Hypocalcemia PostThyroidectomy",
+    "category": "Endocrine Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "5_2_Retrosternal_Plunging_Goiter_Nighttime_Choking.docx",
+    "title": "5 2 Retrosternal Plunging Goiter Nighttime Choking",
+    "category": "Endocrine Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "5_2_Thyroid_Lobectomy_vs_Total_Thyroidectomy_Levothyroxine.docx",
+    "title": "5 2 Thyroid Lobectomy vs Total Thyroidectomy Levothyroxine",
+    "category": "Endocrine Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "5_3_Protecting_Voice_Thyroid_Surgery_IONM_Monitoring.docx",
+    "title": "5 3 Protecting Voice Thyroid Surgery IONM Monitoring",
+    "category": "Endocrine Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "5_3_Thermal_Ablation_RFA_Microwave_Thyroid_Nodules.docx",
+    "title": "5 3 Thermal Ablation RFA Microwave Thyroid Nodules",
+    "category": "Endocrine Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "5_4_Scarless_TOETVA_and_Cosmetic_Thyroid_Incisions.docx",
+    "title": "5 4 Scarless TOETVA and Cosmetic Thyroid Incisions",
+    "category": "Endocrine Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "5_4_Thyroidectomy_Fertility_Weight_Hair_Loss_Myths.docx",
+    "title": "5 4 Thyroidectomy Fertility Weight Hair Loss Myths",
+    "category": "Endocrine Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "5_5_High_Calcium_Hyperparathyroidism_Parathyroidectomy.docx",
+    "title": "5 5 High Calcium Hyperparathyroidism Parathyroidectomy",
+    "category": "Endocrine Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "5_5_Thyroglossal_Duct_Branchial_Cleft_Cysts_Sistrunk.docx",
+    "title": "5 5 Thyroglossal Duct Branchial Cleft Cysts Sistrunk",
+    "category": "Endocrine Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "5_6_Adrenal_Incidentalomas_and_Laparoscopic_Adrenalectomy.docx",
+    "title": "5 6 Adrenal Incidentalomas and Laparoscopic Adrenalectomy",
+    "category": "Endocrine Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "5_Endocrine_Surgery_Thyroid_Parathyroid_Adrenal_Guide.docx",
+    "title": "5 Endocrine Surgery Thyroid Parathyroid Adrenal Guide",
+    "category": "Endocrine Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "5_Endocrine_Thyroid_Myths_and_Calcium_Guide.docx",
+    "title": "5 Endocrine Thyroid Myths and Calcium Guide",
+    "category": "Endocrine Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_1_Breast_Pain_Mastalgia_vs_Cancer.docx",
+    "title": "6 1 Breast Pain Mastalgia vs Cancer",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_1_Lactational_Breast_Abscess_Milk_Fistula_Nursing.docx",
+    "title": "6 1 Lactational Breast Abscess Milk Fistula Nursing",
+    "category": "Coloproctology & Anorectal Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_2_Accessory_Axillary_Breast_Tissue_Polymastia.docx",
+    "title": "6 2 Accessory Axillary Breast Tissue Polymastia",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_2_Fibroadenomas_and_Breast_Cysts_Management.docx",
+    "title": "6 2 Fibroadenomas and Breast Cysts Management",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_3_Idiopathic_Granulomatous_Mastitis_IGM_Diagnosis.docx",
+    "title": "6 3 Idiopathic Granulomatous Mastitis IGM Diagnosis",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_3_Understanding_BIRADS_Score_and_Core_Biopsy.docx",
+    "title": "6 3 Understanding BIRADS Score and Core Biopsy",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_4_Oncoplastic_Breast_Conserving_Surgery_vs_Mastectomy.docx",
+    "title": "6 4 Oncoplastic Breast Conserving Surgery vs Mastectomy",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_4_Sudden_Nipple_Inversion_vs_Congenital_Tethering.docx",
+    "title": "6 4 Sudden Nipple Inversion vs Congenital Tethering",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_5_Hidradenitis_Suppurativa_Axilla_Inframammary.docx",
+    "title": "6 5 Hidradenitis Suppurativa Axilla Inframammary",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_5_Sentinel_Lymph_Node_Biopsy_and_Lymphedema.docx",
+    "title": "6 5 Sentinel Lymph Node Biopsy and Lymphedema",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_6_Nipple_Discharge_and_Intraductal_Papilloma.docx",
+    "title": "6 6 Nipple Discharge and Intraductal Papilloma",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_7_Gynecomastia_Surgery_in_Men.docx",
+    "title": "6 7 Gynecomastia Surgery in Men",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_Breast_Lactation_and_Regional_Pathologies_Guide.docx",
+    "title": "6 Breast Lactation and Regional Pathologies Guide",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "6_Breast_Surgery_Benign_and_Malignant_Complete_Guide.docx",
+    "title": "6 Breast Surgery Benign and Malignant Complete Guide",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "7_1_Rib_Fractures_Spirometry_and_SSRF_Plating.docx",
+    "title": "7 1 Rib Fractures Spirometry and SSRF Plating",
+    "category": "Trauma & Acute Care Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "7_1_Sewing_Needle_Glass_Date_Palm_Thorn_Extraction.docx",
+    "title": "7 1 Sewing Needle Glass Date Palm Thorn Extraction",
+    "category": "Trauma & Acute Care Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "7_2_Blunt_Abdominal_Trauma_Silent_Internal_Bleeding.docx",
+    "title": "7 2 Blunt Abdominal Trauma Silent Internal Bleeding",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "7_2_Living_Without_Spleen_PostSplenectomy_Vaccines.docx",
+    "title": "7 2 Living Without Spleen PostSplenectomy Vaccines",
+    "category": "Trauma & Acute Care Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "7_3_Damage_Control_Laparotomy_ICU_Families_Guide.docx",
+    "title": "7 3 Damage Control Laparotomy ICU Families Guide",
+    "category": "Trauma & Acute Care Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "7_3_Traumatic_Diaphragmatic_Rupture_Hernia.docx",
+    "title": "7 3 Traumatic Diaphragmatic Rupture Hernia",
+    "category": "Abdominal & Hernia Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "7_4_Acute_Compartment_Syndrome_Fasciotomy_Emergency.docx",
+    "title": "7 4 Acute Compartment Syndrome Fasciotomy Emergency",
+    "category": "Trauma & Acute Care Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "7_4_Chest_Tubes_Pneumothorax_Hemothorax_Guide.docx",
+    "title": "7 4 Chest Tubes Pneumothorax Hemothorax Guide",
+    "category": "Trauma & Acute Care Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "7_5_Animal_Bites_Stray_Cat_Dog_Wound_Debridement.docx",
+    "title": "7 5 Animal Bites Stray Cat Dog Wound Debridement",
+    "category": "Trauma & Acute Care Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "7_5_Skin_Grafts_Burns_and_Traumatic_Wound_Care.docx",
+    "title": "7 5 Skin Grafts Burns and Traumatic Wound Care",
+    "category": "Trauma & Acute Care Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "7_Trauma_Acute_Care_Foreign_Bodies_and_Bites_Guide.docx",
+    "title": "7 Trauma Acute Care Foreign Bodies and Bites Guide",
+    "category": "Trauma & Acute Care Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "7_Trauma_and_Acute_Care_Surgery_Patient_Guide.docx",
+    "title": "7 Trauma and Acute Care Surgery Patient Guide",
+    "category": "Trauma & Acute Care Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_1_How_to_Read_Ultrasound_CT_Reports.docx",
+    "title": "8 1 How to Read Ultrasound CT Reports",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_1_Ingrown_Toenail_Partial_Matrixectomy_vs_Avulsion.docx",
+    "title": "8 1 Ingrown Toenail Partial Matrixectomy vs Avulsion",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_2_Post_Laparoscopic_CO2_Shoulder_Pain_Relief.docx",
+    "title": "8 2 Post Laparoscopic CO2 Shoulder Pain Relief",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_2_Wrist_Foot_Ganglion_Cysts_Joint_Stalk_Excision.docx",
+    "title": "8 2 Wrist Foot Ganglion Cysts Joint Stalk Excision",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_3_Diabetic_Foot_Infections_Limb_Salvage_Debridement.docx",
+    "title": "8 3 Diabetic Foot Infections Limb Salvage Debridement",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_3_Lipomas_vs_Sebaceous_Epidermoid_Cysts.docx",
+    "title": "8 3 Lipomas vs Sebaceous Epidermoid Cysts",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_4_Enhanced_Recovery_After_Surgery_ERAS_Protocol.docx",
+    "title": "8 4 Enhanced Recovery After Surgery ERAS Protocol",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_4_Enlarged_Lymph_Nodes_Neck_Axilla_Groin_Biopsy.docx",
+    "title": "8 4 Enlarged Lymph Nodes Neck Axilla Groin Biopsy",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_5_Primary_Hyperhidrosis_Thoracoscopic_Sympathectomy.docx",
+    "title": "8 5 Primary Hyperhidrosis Thoracoscopic Sympathectomy",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_5_Stitches_Staples_Glue_and_Showering_Timeline.docx",
+    "title": "8 5 Stitches Staples Glue and Showering Timeline",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_6_Keloids_Hypertrophic_Scars_Steroid_Silicone.docx",
+    "title": "8 6 Keloids Hypertrophic Scars Steroid Silicone",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_7_Surgical_Risks_Traditional_Heat_Cautery_Kaiy.docx",
+    "title": "8 7 Surgical Risks Traditional Heat Cautery Kaiy",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_General_and_Perioperative_Care_Patient_Guide.docx",
+    "title": "8 General and Perioperative Care Patient Guide",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "8_Minor_Surgery_Ingrown_Nail_Diabetic_Foot_Cautery_Guide.docx",
+    "title": "8 Minor Surgery Ingrown Nail Diabetic Foot Cautery Guide",
+    "category": "General & Minor Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "Diverticular_Disease_and_Colon_Resection.docx",
+    "title": "Diverticular Disease and Colon Resection",
+    "category": "General Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "Living_with_Bariatric_Surgery.docx",
+    "title": "Living with Bariatric Surgery",
+    "category": "General Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "Navigating_a_Breast_Lump_Evaluation.docx",
+    "title": "Navigating a Breast Lump Evaluation",
+    "category": "Breast Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "Preparing_for_Surgery_PreOp_Optimization.docx",
+    "title": "Preparing for Surgery PreOp Optimization",
+    "category": "General Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "Preventing_Blood_Clots_After_Surgery.docx",
+    "title": "Preventing Blood Clots After Surgery",
+    "category": "General Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "Understanding_Anesthesia.docx",
+    "title": "Understanding Anesthesia",
+    "category": "General Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  },
+  {
+    "filename": "Weight_Loss_Surgery_Options.docx",
+    "title": "Weight Loss Surgery Options",
+    "category": "General Surgery",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "hospital": "Mohammad Dossary Hospital – Alkhobar",
+    "author": "Dr. Tamer Rushdy Elalfy",
+    "platform": "AlfiSurgery"
+  }
+];
