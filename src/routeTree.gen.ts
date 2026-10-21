@@ -10,8 +10,10 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as ArRouteImport } from './routes/ar'
 import { Route as ArticlesRouteImport } from './routes/articles'
+import { Route as AuthRouteImport } from './routes/auth'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as PatientsRouteImport } from './routes/patients'
@@ -36,12 +38,17 @@ import { Route as GuidesGuideIdRouteImport } from './routes/guides.$guideId'
 import { Route as PatientEducationHidradenitisSuppurativaRouteImport } from './routes/patient-education.hidradenitis-suppurativa'
 import { Route as PatientEducationWeightPlateauAfterSleeveRouteImport } from './routes/patient-education.weight-plateau-after-sleeve'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
+import { Route as AuthenticatedAdminArticlesRouteImport } from './routes/_authenticated/admin.articles'
 import { Route as ApiPublicSyncPostsRouteImport } from './routes/api/public/sync-posts'
 import { Route as ApiPublicPostImageIdRouteImport } from './routes/api/public/post-image.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
+  id: '/_authenticated',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ArRoute = ArRouteImport.update({
@@ -52,6 +59,11 @@ const ArRoute = ArRouteImport.update({
 const ArticlesRoute = ArticlesRouteImport.update({
   id: '/articles',
   path: '/articles',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthRoute = AuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -179,6 +191,12 @@ const Char91DotmcpChar93InvokeToolToolRoute =
     path: '/.mcp/invoke-tool/$tool',
     getParentRoute: () => rootRouteImport,
   } as any)
+const AuthenticatedAdminArticlesRoute =
+  AuthenticatedAdminArticlesRouteImport.update({
+    id: '/admin/articles',
+    path: '/admin/articles',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 const ApiPublicSyncPostsRoute = ApiPublicSyncPostsRouteImport.update({
   id: '/api/public/sync-posts',
   path: '/api/public/sync-posts',
@@ -194,6 +212,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/ar': typeof ArRouteWithChildren
   '/articles': typeof ArticlesRouteWithChildren
+  '/auth': typeof AuthRoute
   '/contact': typeof ContactRoute
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
@@ -218,11 +237,13 @@ export interface FileRoutesByFullPath {
   '/ar/': typeof ArIndexRoute
   '/articles/': typeof ArticlesIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
+  '/admin/articles': typeof AuthenticatedAdminArticlesRoute
   '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
   '/api/public/post-image/$id': typeof ApiPublicPostImageIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/auth': typeof AuthRoute
   '/contact': typeof ContactRoute
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
@@ -247,14 +268,17 @@ export interface FileRoutesByTo {
   '/ar': typeof ArIndexRoute
   '/articles': typeof ArticlesIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
+  '/admin/articles': typeof AuthenticatedAdminArticlesRoute
   '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
   '/api/public/post-image/$id': typeof ApiPublicPostImageIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
   '/ar': typeof ArRouteWithChildren
   '/articles': typeof ArticlesRouteWithChildren
+  '/auth': typeof AuthRoute
   '/contact': typeof ContactRoute
   '/mcp': typeof McpRoute
   '/patients': typeof PatientsRoute
@@ -279,6 +303,7 @@ export interface FileRoutesById {
   '/ar/': typeof ArIndexRoute
   '/articles/': typeof ArticlesIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
+  '/_authenticated/admin/articles': typeof AuthenticatedAdminArticlesRoute
   '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
   '/api/public/post-image/$id': typeof ApiPublicPostImageIdRoute
 }
@@ -288,6 +313,7 @@ export interface FileRouteTypes {
     | '/'
     | '/ar'
     | '/articles'
+    | '/auth'
     | '/contact'
     | '/mcp'
     | '/patients'
@@ -312,11 +338,13 @@ export interface FileRouteTypes {
     | '/ar/'
     | '/articles/'
     | '/.mcp/invoke-tool/$tool'
+    | '/admin/articles'
     | '/api/public/sync-posts'
     | '/api/public/post-image/$id'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/auth'
     | '/contact'
     | '/mcp'
     | '/patients'
@@ -341,13 +369,16 @@ export interface FileRouteTypes {
     | '/ar'
     | '/articles'
     | '/.mcp/invoke-tool/$tool'
+    | '/admin/articles'
     | '/api/public/sync-posts'
     | '/api/public/post-image/$id'
   id:
     | '__root__'
     | '/'
+    | '/_authenticated'
     | '/ar'
     | '/articles'
+    | '/auth'
     | '/contact'
     | '/mcp'
     | '/patients'
@@ -372,14 +403,17 @@ export interface FileRouteTypes {
     | '/ar/'
     | '/articles/'
     | '/.mcp/invoke-tool/$tool'
+    | '/_authenticated/admin/articles'
     | '/api/public/sync-posts'
     | '/api/public/post-image/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
   ArRoute: typeof ArRouteWithChildren
   ArticlesRoute: typeof ArticlesRouteWithChildren
+  AuthRoute: typeof AuthRoute
   ContactRoute: typeof ContactRoute
   McpRoute: typeof McpRoute
   PatientsRoute: typeof PatientsRoute
@@ -412,6 +446,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated': {
+      id: '/_authenticated'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof AuthenticatedRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ar': {
       id: '/ar'
       path: '/ar'
@@ -424,6 +465,13 @@ declare module '@tanstack/react-router' {
       path: '/articles'
       fullPath: '/articles'
       preLoaderRoute: typeof ArticlesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -594,6 +642,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char91DotmcpChar93InvokeToolToolRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated/admin/articles': {
+      id: '/_authenticated/admin/articles'
+      path: '/admin/articles'
+      fullPath: '/admin/articles'
+      preLoaderRoute: typeof AuthenticatedAdminArticlesRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
     '/api/public/sync-posts': {
       id: '/api/public/sync-posts'
       path: '/api/public/sync-posts'
@@ -610,6 +665,17 @@ declare module '@tanstack/react-router' {
     }
   }
 }
+
+interface AuthenticatedRouteRouteChildren {
+  AuthenticatedAdminArticlesRoute: typeof AuthenticatedAdminArticlesRoute
+}
+
+const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
+  AuthenticatedAdminArticlesRoute: AuthenticatedAdminArticlesRoute,
+}
+
+const AuthenticatedRouteRouteWithChildren =
+  AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
 
 interface ArRouteChildren {
   ArMedicalQuestionsRoute: typeof ArMedicalQuestionsRoute
@@ -641,8 +707,10 @@ const ArticlesRouteWithChildren = ArticlesRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
   ArRoute: ArRouteWithChildren,
   ArticlesRoute: ArticlesRouteWithChildren,
+  AuthRoute: AuthRoute,
   ContactRoute: ContactRoute,
   McpRoute: McpRoute,
   PatientsRoute: PatientsRoute,
