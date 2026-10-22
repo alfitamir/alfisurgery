@@ -89,7 +89,7 @@ export const deleteSiteArticle = createServerFn({ method: "POST" })
     return { ok: true };
   });
 
-/* ---------- Gemini (the doctor's own Google account) ---------- */
+/* ---------- Gemini Pro through Lovable AI ---------- */
 
 const htmlRules = "Return JSON with \"title\" (plain text) and \"content\" (HTML body only). Allowed tags: h2, h3, p, ul, ol, li, strong, em, a, blockquote, table, thead, tbody, tr, th, td. No scripts, styles, images, markdown or code fences. Never include phone numbers.";
 const medicalRules = "You write patient education for Dr. Tamer Elalfy, consultant general and laparoscopic surgeon (Al Khobar, Saudi Arabia). Be accurate and consistent with current international guidelines (e.g. NICE, ACS, SAGES, ASMBS, EASL, ERAS). Explain simply for patients. Never diagnose, never prescribe doses, never promise results; qualify success rates by patient selection, outcome and follow-up length. Always say the treating team's instructions take priority, and include a short section on warning signs that need urgent care. Do not invent studies, numbers or references: if you are not certain a source exists, leave it out.";
@@ -103,9 +103,8 @@ export const geminiWrite = createServerFn({ method: "POST" })
   ]).parse(input))
   .handler(async ({ data, context }) => {
     await assertAdmin(context.supabase, context.userId);
-    const apiKey = process.env["GEMINI_API_KEY"];
-    if (!apiKey) throw new Error("لم يُربط مفتاح Gemini بعد. أضف مفتاحك من Google AI Studio أولًا.");
-    const model = process.env["GEMINI_MODEL"];
+    const apiKey = process.env["LOVABLE_API_KEY"];
+    if (!apiKey) throw new Error("خدمة الذكاء الاصطناعي غير مهيأة بعد.");
     let system: string;
     let prompt: string;
     if (data.mode === "draft") {
@@ -118,6 +117,6 @@ export const geminiWrite = createServerFn({ method: "POST" })
       system = `${medicalRules}\nEdit the article as the doctor asks, keeping it in ${languageNamesEnglish[data.language]}. Change only what the instruction requires and keep everything else. ${htmlRules}`;
       prompt = `Instruction from the doctor:\n${data.instruction}\n\nCurrent title:\n${data.title}\n\nCurrent HTML content:\n${data.content}`;
     }
-    const result = await generateWithGemini(apiKey, model, system, prompt);
+    const result = await generateWithGemini(apiKey, system, prompt);
     return { title: result.title, content: sanitizeArticleHtml(result.content), model: result.model };
   });
