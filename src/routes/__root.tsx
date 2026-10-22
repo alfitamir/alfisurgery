@@ -17,6 +17,7 @@ import { SiteNavigation, SiteFooter } from "@/components/SiteNavigation";
 import { PatientAssistant } from "@/components/PatientAssistant";
 import { siteLanguages } from "@/lib/site-language";
 import { SourceLanguageNotice } from "@/components/SourceLanguageNotice";
+import { supabase } from "@/integrations/supabase/client";
 import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
@@ -135,10 +136,21 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const router = useRouter();
 
   useEffect(() => {
     registerPatientAppServiceWorker();
   }, []);
+
+  useEffect(() => {
+    const { data } = supabase.auth.onAuthStateChange((event) => {
+      if (event !== "SIGNED_IN" && event !== "SIGNED_OUT" && event !== "USER_UPDATED") return;
+      router.invalidate();
+      if (event !== "SIGNED_OUT") queryClient.invalidateQueries();
+    });
+    return () => data.subscription.unsubscribe();
+  }, [router, queryClient]);
+
 
 
   return (
