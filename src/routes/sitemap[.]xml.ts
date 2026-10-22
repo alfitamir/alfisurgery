@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { patientEducation } from "@/data/patient-education";
 import { articlesForLanguage } from "@/lib/blog";
 import { siteLanguages } from "@/lib/site-language";
+import { publicSupabase } from "@/lib/gemini.server";
+import { toSiteArticleRow } from "@/lib/site-articles";
 
 const BASE_URL = "https://alfisurgery.com";
 const pages = ["/", "/profile", "/patients", "/prevention", "/posts", "/articles", "/research", "/publications", "/teaching", "/updates", "/contact", "/patient-education/hidradenitis-suppurativa", "/patient-education/weight-plateau-after-sleeve"];
@@ -12,11 +14,15 @@ export const Route = createFileRoute("/sitemap.xml")({
     handlers: {
       GET: async () => {
         const urls = new Set<string>(arabicOnly);
+        const db = publicSupabase(process.env["SUPABASE_URL"]!, process.env["SUPABASE_PUBLISHABLE_KEY"]!);
+        const { data: rows } = await db.from("site_articles").select("id, source_lang, category, status, editions, published_at, updated_at").eq("status", "published");
+        const siteRows = (rows ?? []).map(toSiteArticleRow);
         const guides = patientEducation.map((g) => `/guides/${g.id}`);
         for (const lang of siteLanguages) {
           const q = lang.code === "en" ? "" : `?lang=${lang.code}`;
           for (const p of [...pages, ...guides]) urls.add(p + q);
           for (const a of articlesForLanguage(lang.code)) urls.add(`/articles/${a.id}${q}`);
+          for (const r of siteRows) if (r.editions[lang.code]) urls.add(`/articles/${r.id}${q}`);
         }
         const esc = (s: string) => s.replace(/&/g, "&amp;");
         const body = [...urls].map((u) => `<url><loc>${esc(BASE_URL + u)}</loc></url>`).join("");
