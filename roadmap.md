@@ -55,3 +55,9 @@
 - [ ] Add collected past web reviews (source field ready)
 - [x] Weekly sync job on this site (Fridays) + image storage
 - [ ] Shared feed key (user skipped the form) + feed endpoint in Post Sequence Planner
+
+## Gemini article admin (Oct 2026)
+- [x] Admin-only article page (/admin/articles) with Google sign-in; first account to sign in becomes the site admin.
+- [x] Draft, revise and translate articles into all seven languages with the doctor's own Gemini key; publish/unpublish/delete; new articles appear in the library, reading pages and sitemap.
+- [ ] Doctor adds his Google AI Studio key and signs in once to claim admin — waiting on the doctor.
+- [ ] Split the homepage vertically into "Meet the doctor" and "Know your disease & operation" columns (no arrows, distinct heading colours, contact below; keep language control, daily article, reviews and assistant) — next after the Gemini setup is confirmed.
