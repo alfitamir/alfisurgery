@@ -6,23 +6,33 @@ import { newArabicArticles } from "@/data/new-arabic-articles";
 const blogArticles = [...newArabicArticles, ...importedArticles];
 import { articleBody, articleCategory, articleText, articleEdition, articlesForLanguage } from "@/lib/blog";
 import { patientGuideCopy } from "@/data/patient-guide-copy";
-import { translatedText } from "@/lib/site-language";
+import { languageContentCopy, translatedText } from "@/lib/site-language";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
+import { getPublishedSiteArticle } from "@/lib/site-articles.functions";
+import { isRtl, type SiteArticleRow } from "@/lib/site-articles";
+import { sanitizeArticleHtml } from "@/lib/article-html";
+
+type LocalArticle = typeof blogArticles[number];
 
 export const Route = createFileRoute("/articles/$articleId")({
-  loader: ({ params }) => {
+  loader: async ({ params }): Promise<{ article: LocalArticle; siteArticle: null } | { article: null; siteArticle: SiteArticleRow }> => {
     const article = blogArticles.find((a) => String(a.id) === params.articleId);
-    if (!article) throw notFound();
-    return { article };
+    if (article) return { article, siteArticle: null };
+    const id = Number(params.articleId);
+    if (!Number.isInteger(id) || id < 10001) throw notFound();
+    const siteArticle = await getPublishedSiteArticle({ data: { id } }).catch(() => null);
+    if (!siteArticle) throw notFound();
+    return { article: null, siteArticle };
   },
   head: ({ loaderData }) => {
-    const title = loaderData ? `${loaderData.article.title} | د. تامر الألفي` : "المقال غير موجود | د. تامر الألفي";
-    const description = loaderData ? articleText(loaderData.article.content).slice(0, 180) : "تعذر العثور على هذا المقال في مكتبة د. تامر الألفي.";
+    const source = loaderData?.article ?? (loaderData?.siteArticle ? loaderData.siteArticle.editions[loaderData.siteArticle.source_lang] : undefined);
+    const title = source ? `${source.title} | د. تامر الألفي` : "المقال غير موجود | د. تامر الألفي";
+    const description = source ? articleText(source.content).slice(0, 180) : "تعذر العثور على هذا المقال في مكتبة د. تامر الألفي.";
     return { meta: [
       { title }, { name: "description", content: description },
       { property: "og:title", content: title }, { property: "og:description", content: description },
       { property: "og:type", content: "article" }, { name: "twitter:card", content: "summary" },
-      ...(!loaderData ? [{ name: "robots", content: "noindex" }] : []),
+      ...(!source ? [{ name: "robots", content: "noindex" }] : []),
     ] };
   },
   component: FullArticlePage,
@@ -34,7 +44,30 @@ function ArticleNotFound() {
 }
 
 function FullArticlePage() {
-  const { article: source } = Route.useLoaderData();
+  const data = Route.useLoaderData();
+  return data.siteArticle ? <SiteArticlePage row={data.siteArticle} /> : <LocalArticlePage source={data.article} />;
+}
+
+function SiteArticlePage({ row }: { row: SiteArticleRow }) {
+  const { language, dictionary } = useSiteLanguage();
+  const shown = row.editions[language] ? language : row.source_lang;
+  const edition = row.editions[shown]!;
+  return <main data-no-translate lang={shown} dir={isRtl(shown) ? "rtl" : "ltr"} className="mx-auto max-w-3xl px-5 py-10 md:py-14">
+    <article>
+      {row.category && shown === "ar" && <p className="text-sm font-semibold text-primary">{row.category}</p>}
+      <h1 className="mt-4 break-words text-3xl font-bold leading-relaxed md:text-4xl">{edition.title}</h1>
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-4 border-b border-border pb-6 text-sm text-muted-foreground">
+        <span>{isRtl(shown) && shown === "ar" ? "د. تامر الألفي" : "Dr. Tamer Elalfy"}</span>
+        <Button variant="outline" size="sm" onClick={() => window.print()} className="article-no-print"><Printer />{translatedText("Print article", dictionary)}</Button>
+      </div>
+      <aside className="my-6 flex items-start gap-3 border-s-4 border-primary bg-secondary p-4 text-sm leading-loose"><ShieldCheck className="mt-1 size-5 shrink-0 text-primary" /><p>{patientGuideCopy[shown].safety}</p></aside>
+      <div className="blog-content break-words text-lg leading-loose" dangerouslySetInnerHTML={{ __html: sanitizeArticleHtml(edition.content) }} />
+    </article>
+    <Button asChild variant="outline" className="article-no-print mt-8"><Link to="/articles">{languageContentCopy[language].articles}<ArrowRight className={isRtl(shown) ? "" : "rotate-180"} /></Link></Button>
+  </main>;
+}
+
+function LocalArticlePage({ source }: { source: LocalArticle }) {
   const { language, dictionary } = useSiteLanguage();
   const article = articleEdition(source, language) ?? articleEdition(source, "ar") ?? source;
   const related = articlesForLanguage(language).filter((a) => a.id !== article.id && a.category === articleCategory(source.title)).slice(0, 3);
