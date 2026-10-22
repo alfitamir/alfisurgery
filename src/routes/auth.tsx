@@ -43,7 +43,7 @@ function AuthPage() {
     <div className="rounded-md border border-border bg-card p-6 md:p-8">
       <LockKeyhole className="size-8 text-primary" />
       <h1 className="mt-4 text-2xl font-bold">دخول إدارة المقالات</h1>
-      <p className="mt-3 text-sm leading-loose text-muted-foreground">هذه الصفحة خاصة بالدكتور لإضافة المقالات وتعديلها وترجمتها بحساب Gemini الخاص به.</p>
+      <p className="mt-3 text-sm leading-loose text-muted-foreground">هذه الصفحة خاصة بالدكتور لإضافة المقالات وتعديلها وترجمتها بمساعدة Gemini.</p>
       <Button onClick={signIn} disabled={busy} size="lg" className="mt-6 w-full">{busy ? <Loader2 className="animate-spin" /> : null}الدخول بحساب Google</Button>
       {error && <p role="alert" className="mt-4 text-sm text-destructive">{error}</p>}
     </div>

@@ -104,7 +104,7 @@ function AdminArticlesPage() {
   const writeDraft = () => run("draft", async () => {
     const result = await geminiFn({ data: { mode: "draft", language: draft.source_lang, topic, notes } });
     setEdition(draft.source_lang, { title: result.title, content: result.content }); setActive(draft.source_lang);
-    setMessage({ kind: "ok", text: `كتب Gemini (${result.model}) مسودة بـ${languageName(draft.source_lang)}. راجعها طبيًا ثم احفظ.` });
+    setMessage({ kind: "ok", text: `كتب Gemini مسودة بـ${languageName(draft.source_lang)}. راجعها طبيًا ثم احفظ.` });
   });
 
   const revise = () => run("revise", async () => {
@@ -144,7 +144,7 @@ function AdminArticlesPage() {
 
   return <main dir="rtl" lang="ar" className="mx-auto max-w-7xl px-4 py-8 md:px-8">
     <header className="flex flex-wrap items-center justify-between gap-4 border-b border-border pb-5">
-      <div><h1 className="text-2xl font-bold md:text-3xl">إدارة المقالات</h1><p className="mt-1 text-sm text-muted-foreground">{status.data.email} · الكتابة والترجمة عبر حساب Gemini الخاص بك</p></div>
+      <div><h1 className="text-2xl font-bold md:text-3xl">إدارة المقالات</h1><p className="mt-1 text-sm text-muted-foreground">{status.data.email} · الكتابة والترجمة عبر Gemini</p></div>
       <div className="flex flex-wrap gap-2"><Button onClick={() => open(newDraft())} disabled={anyBusy}><FilePlus2 />مقال جديد</Button><Button variant="outline" onClick={signOut}><LogOut />خروج</Button></div>
     </header>
 
