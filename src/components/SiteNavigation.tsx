@@ -51,7 +51,7 @@ export function SiteNavigation() {
   </header>;
 }
 
-const contactLinks = [
+export const contactLinks = [
   { href: "https://mdh.com.sa/doctors/dr-tamer-elalfy/", label: "Mohammad Dossary Hospital", icon: Building2 },
   { href: "tel:+966138011910", label: "+966 13 801 1910", icon: Phone },
   { href: "https://wa.me/966548026853", label: "WhatsApp", icon: MessageCircle },

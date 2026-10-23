@@ -40,6 +40,10 @@
   --color-patient-apricot: var(--patient-apricot);
   --color-patient-canvas: var(--patient-canvas);
   --color-patient-ink: var(--patient-ink);
+  --color-home-doctor: var(--home-doctor);
+  --color-home-doctor-surface: var(--home-doctor-surface);
+  --color-home-patient: var(--home-patient);
+  --color-home-patient-surface: var(--home-patient-surface);
 }
 
 :root {
@@ -89,6 +93,10 @@
   --daily-sky-ink: oklch(0.38 0.09 235);
   --daily-gold-surface: oklch(0.96 0.045 90);
   --daily-gold-ink: oklch(0.39 0.075 80);
+  --home-doctor: oklch(0.30 0.11 260);
+  --home-doctor-surface: oklch(0.965 0.03 88);
+  --home-patient: oklch(0.42 0.09 180);
+  --home-patient-surface: oklch(0.965 0.03 180);
 }
 
 .patient-site h1,

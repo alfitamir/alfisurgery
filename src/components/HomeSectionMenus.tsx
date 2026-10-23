@@ -9,7 +9,7 @@ import { preventionCopy } from "@/data/prevention";
 import { translatedText, showsVideos, type SiteLanguage } from "@/lib/site-language";
 
 // Native labels remain reliable even while the larger reading dictionary loads.
-const labels: Record<SiteLanguage, string[]> = {
+export const homeMenuLabels: Record<SiteLanguage, string[]> = {
   en: ["Operation guides", "Warning signs", "Experience", "Specialties", "Surgical services", "Beyond surgery", "Publications", "Lectures & presentations", "Clinic & location", "Professional channels"],
   ar: ["أدلة العمليات", "علامات الخطر", "الخبرة", "التخصصات", "الخدمات الجراحية", "خارج الجراحة", "الأبحاث المنشورة", "المحاضرات والعروض", "العيادة والموقع", "القنوات المهنية"],
   ur: ["آپریشن کے رہنما", "خطرے کی علامات", "تجربہ", "تخصصات", "جراحی خدمات", "جراحی کے علاوہ", "شائع شدہ تحقیق", "لیکچرز اور پیشکشیں", "کلینک اور مقام", "پیشہ ورانہ ذرائع"],
@@ -25,7 +25,7 @@ type Entry = { label: string; to: Destination; hash?: string };
 export function HomeSectionMenus() {
   const { language, dictionary } = useSiteLanguage();
   const t = navigationCopy[language];
-  const l = labels[language];
+  const l = homeMenuLabels[language];
   const patients = language === "ar" ? "/ar/patients" : "/patients";
   const patientItems: Entry[] = [
     { label: t.patients, to: patients },
