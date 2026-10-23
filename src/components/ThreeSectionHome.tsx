@@ -53,7 +53,6 @@ export function ThreeSectionHome() {
   const label = (text: string) => (language === "ta" ? translatedText(text, dictionary) : text);
 
   return <main data-no-translate lang={language} className="home-refresh">
-    <HomeSectionMenus />
     <DailyArticle />
 
     <div className="mx-auto grid max-w-6xl gap-6 px-5 py-8 md:grid-cols-2 md:px-8 md:py-10">

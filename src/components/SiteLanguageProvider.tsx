@@ -193,7 +193,6 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
         <span className="col-span-2 min-w-0 text-xs font-semibold sm:col-auto">Alfi Surgery <span className="mx-2 text-muted-foreground">/</span>{navigationCopy[language].version}</span>
         <div className="col-span-2 flex min-w-0 flex-wrap items-center gap-2 sm:col-auto">
         <span className="flex shrink-0 items-center gap-1 text-lg leading-none" aria-label="Saudi Arabia and Egypt"><img src="https://flagcdn.com/sa.svg" alt="Saudi Arabia" width={30} height={20} className="h-5 w-auto rounded-sm border border-border" /><img src="https://flagcdn.com/eg.svg" alt="Egypt" width={30} height={20} className="h-5 w-auto rounded-sm border border-border" /></span>
-        <Button variant="outline" size="sm" onClick={shareLink} aria-label={navigationCopy[language].share}><Share2 className="size-4" />{copied ? navigationCopy[language].copied : navigationCopy[language].share}</Button>
         </div>
         {translated && <p lang={language} dir={chosen.dir} role="status" className="col-span-2 min-w-0 w-full text-xs leading-relaxed text-muted-foreground">{loading ? "…" : failed ? "Translation unavailable. Please try another language." : dictionary[normalizeText(notice)] ?? notice}</p>}
       </div>

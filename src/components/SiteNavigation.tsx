@@ -38,7 +38,6 @@ export function SiteNavigation() {
       </Link>
       <nav className="hidden items-center gap-1 xl:flex" aria-label={t.menu}>{items.map((item) => <Button key={item.to} asChild variant="ghost" className={active(item.to) ? "bg-secondary text-primary" : "text-muted-foreground"}><Link to={item.to} aria-current={active(item.to) ? "page" : undefined}>{item.label}</Link></Button>)}</nav>
       <div className="flex shrink-0 items-center gap-2 rtl:flex-row-reverse">
-        <Button variant="outline" size="icon" className="shrink-0 xl:hidden max-md:h-9 max-md:w-9" aria-label={open ? t.close : t.menu} aria-expanded={open} aria-controls="site-mobile-menu" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button>
         <div className="relative hidden max-md:block">
           {langOpen && <div className="absolute right-0 top-full z-50 mt-2 w-52 rounded-2xl border border-border bg-card p-2 shadow-xl">{languageMenu}</div>}
           <Button variant="outline" size="icon" onClick={() => setLangOpen((value) => !value)} aria-expanded={langOpen} aria-label="Choose language" className="rounded-full max-md:h-9 max-md:w-9">
