@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Building2, Facebook, GraduationCap, Languages, Linkedin, Mail, MapPin, Menu, MessageCircle, Microscope, Phone, X, Youtube } from "lucide-react";
+import { Building2, Facebook, GraduationCap, Languages, Linkedin, Lock, Mail, MapPin, Menu, MessageCircle, Microscope, Phone, X, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { navigationCopy } from "@/data/site-navigation";
