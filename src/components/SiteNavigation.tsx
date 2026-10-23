@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Building2, Facebook, GraduationCap, Languages, Linkedin, Mail, MapPin, Menu, MessageCircle, Microscope, Phone, X, Youtube } from "lucide-react";
+import { Building2, Facebook, GraduationCap, Languages, Linkedin, Lock, Mail, MapPin, Menu, MessageCircle, Microscope, Phone, X, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { navigationCopy } from "@/data/site-navigation";
@@ -51,7 +51,7 @@ export function SiteNavigation() {
   </header>;
 }
 
-const contactLinks = [
+export const contactLinks = [
   { href: "https://mdh.com.sa/doctors/dr-tamer-elalfy/", label: "Mohammad Dossary Hospital", icon: Building2 },
   { href: "tel:+966138011910", label: "+966 13 801 1910", icon: Phone },
   { href: "https://wa.me/966548026853", label: "WhatsApp", icon: MessageCircle },
@@ -66,7 +66,7 @@ const contactLinks = [
 
 export function SiteFooter() {
   const { language, dictionary } = useSiteLanguage(); const t = navigationCopy[language]; const s = sectionCopy[language];
-  return <footer data-no-translate lang={language} className="border-t border-border bg-card"><div className="mx-auto grid max-w-7xl gap-8 px-5 py-10 pb-24 md:grid-cols-[1fr_2fr] md:px-8">
+  return <footer data-no-translate lang={language} className="relative border-t border-border bg-card"><Link to="/admin/articles" rel="nofollow" aria-label="Site admin" title="Site admin" className="absolute bottom-3 left-3 grid size-7 place-items-center rounded-full text-muted-foreground/50 hover:text-primary"><Lock className="size-3.5" /></Link><div className="mx-auto grid max-w-7xl gap-8 px-5 py-10 pb-24 md:grid-cols-[1fr_2fr] md:px-8">
     <div><p className="font-bold">{t.name}</p><p className="mt-1 text-sm text-muted-foreground">{t.role}</p><p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t.location}</p><nav className="mt-4 flex flex-col items-start gap-2 text-sm"><Link to="/profile">{s.doctor}</Link><Link to={language === "ar" ? "/ar/patients" : "/patients"}>{s.patient}</Link></nav><p className="mt-4 text-xs leading-relaxed text-muted-foreground">{t.warning}</p><p className="mt-3 text-xs text-muted-foreground">© {new Date().getFullYear()} Alfi Surgery · {t.version}</p></div>
     <div><p className="font-semibold">{s.contact}</p><ul className="mt-4 grid gap-3 text-sm sm:grid-cols-2">{contactLinks.map((link) => <li key={link.href}><a href={link.href} target={link.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" dir="ltr" className="flex items-start gap-2 rounded-md p-1 text-foreground hover:text-primary"><link.icon className="mt-0.5 size-4 shrink-0 text-primary" /><span className="min-w-0 break-words">{language === "ta" ? translatedText(link.label, dictionary) : link.label}</span></a></li>)}</ul></div>
   </div>
