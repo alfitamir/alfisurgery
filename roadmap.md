@@ -60,4 +60,5 @@
 - [x] Admin-only article page (/admin/articles) with Google sign-in; first account to sign in becomes the site admin.
 - [x] Draft, revise and translate articles into all seven languages with Gemini Pro through Lovable AI; publish/unpublish/delete; new articles appear in the library, reading pages and sitemap.
 - [ ] Doctor signs in once at /admin/articles to claim the admin account — waiting on the doctor.
-- [ ] Split the homepage vertically into "Meet the doctor" and "Know your disease & operation" columns (no arrows, distinct heading colours, contact below; keep language control, daily article, reviews and assistant) — next after the Gemini setup is confirmed.
+- [x] Split the homepage vertically into "Meet the doctor" and "Know your disease & operation" columns (no arrows, distinct heading colours, contact below; keep language control, daily article, reviews and assistant).
+- [x] Add a discreet lock icon in the footer that opens the admin article page.

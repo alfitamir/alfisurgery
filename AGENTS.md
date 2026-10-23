@@ -10,7 +10,7 @@
 - Keep original-language reading clearly labelled when its language differs from the selected interface, and scope legacy-header hiding to patient-site wrappers; this prevents misleading language identity and hidden content headings.
 - Filter articles by explicit source-language metadata; label original video audio and conditional caption support in every edition, preserving direct reading URLs for offline access.
 - Hide a destination from an edition's menus and pages when that edition has no content of its own, and send its direct URL to that edition's home instead of an empty page; this keeps a temporary gap out of the navigation without breaking an old link.
-- Render both homepages through a shared patient-first introduction, preparation/recovery/warning links and compact profile area using a typed native-language dictionary; this prevents duplicated entry points and keeps every edition synchronized.
+- Render both homepages through one shared two-column layout (doctor column, patient disease/operation column, then reviews and contact) built from existing typed native-language dictionaries; this keeps every edition synchronized without duplicating entry points.
 - Keep doctor research, publications and teaching links inside the profile destination and specialty-filtered videos inside patient education; this preserves the three-section hierarchy without removing existing URLs.
 - Request YouTube captions using the selected language but explicitly describe availability and medical limitations; player preferences cannot guarantee translated subtitles.
 - Use /guides/$guideId for print-friendly operation reading pages with shared localized guidance, and explicitly label unchanged source downloads; this preserves language-specific reading without misrepresenting handout translations.
@@ -24,3 +24,5 @@
 - Select the homepage daily article from the existing language-matched collection with a shared Riyadh-calendar-day selector and bundled localized labels; this keeps both homepages synchronized without creating or duplicating medical content.
 - Keep doctor-written articles in the site_articles table (ids from 10001, one title/content edition per site language) managed only from the admin-role page; public archive, reading pages and sitemap read published rows through the publishable client so new articles need no code change.
 - Route article drafting, revision and translation through admin-only server functions that call Gemini through Lovable AI and sanitize returned HTML; this keeps AI keys server-side and blocks active content on public pages.
+
+- Reach the admin area only through an unobtrusive nofollow footer icon or its direct URL; admin access is enforced by role checks, not by hiding the link.
