@@ -62,3 +62,6 @@
 - [ ] Doctor signs in once at /admin/articles to claim the admin account — waiting on the doctor.
 - [x] Split the homepage vertically into "Meet the doctor" and "Know your disease & operation" columns (no arrows, distinct heading colours, contact below; keep language control, daily article, reviews and assistant).
 - [x] Add a discreet lock icon in the footer that opens the admin article page.
+
+- [x] Add a "My books" homepage section (seven-language labels) with /books, a book contents page and chapter reading pages; start with "Common Anal Conditions" V2.
+- [ ] Translate "Common Anal Conditions" into the six other site languages — waiting on the doctor to decide (very large professional text; needs specialist medical review per language).

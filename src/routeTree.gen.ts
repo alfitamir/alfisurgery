@@ -34,12 +34,15 @@ import { Route as ArMedicalQuestionsRouteImport } from './routes/ar.medical-ques
 import { Route as ArPatientsRouteImport } from './routes/ar.patients'
 import { Route as ArticlesIndexRouteImport } from './routes/articles.index'
 import { Route as ArticlesArticleIdRouteImport } from './routes/articles.$articleId'
+import { Route as BooksIndexRouteImport } from './routes/books.index'
 import { Route as GuidesGuideIdRouteImport } from './routes/guides.$guideId'
 import { Route as PatientEducationHidradenitisSuppurativaRouteImport } from './routes/patient-education.hidradenitis-suppurativa'
 import { Route as PatientEducationWeightPlateauAfterSleeveRouteImport } from './routes/patient-education.weight-plateau-after-sleeve'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 import { Route as AuthenticatedAdminArticlesRouteImport } from './routes/_authenticated/admin.articles'
 import { Route as ApiPublicSyncPostsRouteImport } from './routes/api/public/sync-posts'
+import { Route as BooksBookIdIndexRouteImport } from './routes/books.$bookId.index'
+import { Route as BooksBookIdChapterIdRouteImport } from './routes/books.$bookId.$chapterId'
 import { Route as ApiPublicPostImageIdRouteImport } from './routes/api/public/post-image.$id'
 
 const IndexRoute = IndexRouteImport.update({
@@ -168,6 +171,11 @@ const ArticlesArticleIdRoute = ArticlesArticleIdRouteImport.update({
   path: '/$articleId',
   getParentRoute: () => ArticlesRoute,
 } as any)
+const BooksIndexRoute = BooksIndexRouteImport.update({
+  id: '/books/',
+  path: '/books/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GuidesGuideIdRoute = GuidesGuideIdRouteImport.update({
   id: '/guides/$guideId',
   path: '/guides/$guideId',
@@ -200,6 +208,16 @@ const AuthenticatedAdminArticlesRoute =
 const ApiPublicSyncPostsRoute = ApiPublicSyncPostsRouteImport.update({
   id: '/api/public/sync-posts',
   path: '/api/public/sync-posts',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BooksBookIdIndexRoute = BooksBookIdIndexRouteImport.update({
+  id: '/books/$bookId/',
+  path: '/books/$bookId/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BooksBookIdChapterIdRoute = BooksBookIdChapterIdRouteImport.update({
+  id: '/books/$bookId/$chapterId',
+  path: '/books/$bookId/$chapterId',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiPublicPostImageIdRoute = ApiPublicPostImageIdRouteImport.update({
@@ -236,9 +254,12 @@ export interface FileRoutesByFullPath {
   '/patient-education/weight-plateau-after-sleeve': typeof PatientEducationWeightPlateauAfterSleeveRoute
   '/ar/': typeof ArIndexRoute
   '/articles/': typeof ArticlesIndexRoute
+  '/books/': typeof BooksIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/admin/articles': typeof AuthenticatedAdminArticlesRoute
   '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
+  '/books/$bookId/$chapterId': typeof BooksBookIdChapterIdRoute
+  '/books/$bookId/': typeof BooksBookIdIndexRoute
   '/api/public/post-image/$id': typeof ApiPublicPostImageIdRoute
 }
 export interface FileRoutesByTo {
@@ -267,9 +288,12 @@ export interface FileRoutesByTo {
   '/patient-education/weight-plateau-after-sleeve': typeof PatientEducationWeightPlateauAfterSleeveRoute
   '/ar': typeof ArIndexRoute
   '/articles': typeof ArticlesIndexRoute
+  '/books': typeof BooksIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/admin/articles': typeof AuthenticatedAdminArticlesRoute
   '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
+  '/books/$bookId/$chapterId': typeof BooksBookIdChapterIdRoute
+  '/books/$bookId': typeof BooksBookIdIndexRoute
   '/api/public/post-image/$id': typeof ApiPublicPostImageIdRoute
 }
 export interface FileRoutesById {
@@ -302,9 +326,12 @@ export interface FileRoutesById {
   '/patient-education/weight-plateau-after-sleeve': typeof PatientEducationWeightPlateauAfterSleeveRoute
   '/ar/': typeof ArIndexRoute
   '/articles/': typeof ArticlesIndexRoute
+  '/books/': typeof BooksIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/_authenticated/admin/articles': typeof AuthenticatedAdminArticlesRoute
   '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
+  '/books/$bookId/$chapterId': typeof BooksBookIdChapterIdRoute
+  '/books/$bookId/': typeof BooksBookIdIndexRoute
   '/api/public/post-image/$id': typeof ApiPublicPostImageIdRoute
 }
 export interface FileRouteTypes {
@@ -337,9 +364,12 @@ export interface FileRouteTypes {
     | '/patient-education/weight-plateau-after-sleeve'
     | '/ar/'
     | '/articles/'
+    | '/books/'
     | '/.mcp/invoke-tool/$tool'
     | '/admin/articles'
     | '/api/public/sync-posts'
+    | '/books/$bookId/$chapterId'
+    | '/books/$bookId/'
     | '/api/public/post-image/$id'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -368,9 +398,12 @@ export interface FileRouteTypes {
     | '/patient-education/weight-plateau-after-sleeve'
     | '/ar'
     | '/articles'
+    | '/books'
     | '/.mcp/invoke-tool/$tool'
     | '/admin/articles'
     | '/api/public/sync-posts'
+    | '/books/$bookId/$chapterId'
+    | '/books/$bookId'
     | '/api/public/post-image/$id'
   id:
     | '__root__'
@@ -402,9 +435,12 @@ export interface FileRouteTypes {
     | '/patient-education/weight-plateau-after-sleeve'
     | '/ar/'
     | '/articles/'
+    | '/books/'
     | '/.mcp/invoke-tool/$tool'
     | '/_authenticated/admin/articles'
     | '/api/public/sync-posts'
+    | '/books/$bookId/$chapterId'
+    | '/books/$bookId/'
     | '/api/public/post-image/$id'
   fileRoutesById: FileRoutesById
 }
@@ -432,8 +468,11 @@ export interface RootRouteChildren {
   GuidesGuideIdRoute: typeof GuidesGuideIdRoute
   PatientEducationHidradenitisSuppurativaRoute: typeof PatientEducationHidradenitisSuppurativaRoute
   PatientEducationWeightPlateauAfterSleeveRoute: typeof PatientEducationWeightPlateauAfterSleeveRoute
+  BooksIndexRoute: typeof BooksIndexRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
   ApiPublicSyncPostsRoute: typeof ApiPublicSyncPostsRoute
+  BooksBookIdChapterIdRoute: typeof BooksBookIdChapterIdRoute
+  BooksBookIdIndexRoute: typeof BooksBookIdIndexRoute
   ApiPublicPostImageIdRoute: typeof ApiPublicPostImageIdRoute
 }
 
@@ -614,6 +653,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArticlesArticleIdRouteImport
       parentRoute: typeof ArticlesRoute
     }
+    '/books/': {
+      id: '/books/'
+      path: '/books'
+      fullPath: '/books/'
+      preLoaderRoute: typeof BooksIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/guides/$guideId': {
       id: '/guides/$guideId'
       path: '/guides/$guideId'
@@ -654,6 +700,20 @@ declare module '@tanstack/react-router' {
       path: '/api/public/sync-posts'
       fullPath: '/api/public/sync-posts'
       preLoaderRoute: typeof ApiPublicSyncPostsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/books/$bookId/': {
+      id: '/books/$bookId/'
+      path: '/books/$bookId'
+      fullPath: '/books/$bookId/'
+      preLoaderRoute: typeof BooksBookIdIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/books/$bookId/$chapterId': {
+      id: '/books/$bookId/$chapterId'
+      path: '/books/$bookId/$chapterId'
+      fullPath: '/books/$bookId/$chapterId'
+      preLoaderRoute: typeof BooksBookIdChapterIdRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/public/post-image/$id': {
@@ -732,8 +792,11 @@ const rootRouteChildren: RootRouteChildren = {
     PatientEducationHidradenitisSuppurativaRoute,
   PatientEducationWeightPlateauAfterSleeveRoute:
     PatientEducationWeightPlateauAfterSleeveRoute,
+  BooksIndexRoute: BooksIndexRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
   ApiPublicSyncPostsRoute: ApiPublicSyncPostsRoute,
+  BooksBookIdChapterIdRoute: BooksBookIdChapterIdRoute,
+  BooksBookIdIndexRoute: BooksBookIdIndexRoute,
   ApiPublicPostImageIdRoute: ApiPublicPostImageIdRoute,
 }
 export const routeTree = rootRouteImport

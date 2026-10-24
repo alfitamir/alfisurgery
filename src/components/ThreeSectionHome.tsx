@@ -12,6 +12,7 @@ import heroPortrait from "@/assets/dr-elalfy-hero.jpg";
 import { HomeSectionMenus, homeMenuLabels } from "@/components/HomeSectionMenus";
 import { PatientComments } from "@/components/PatientComments";
 import { DailyArticle } from "@/components/DailyArticle";
+import { BooksShowcase } from "@/components/BooksShowcase";
 import { contactLinks } from "@/components/SiteNavigation";
 
 type Destination = "/patients" | "/ar/patients" | "/prevention" | "/articles" | "/videos" | "/profile" | "/research" | "/publications" | "/teaching" | "/updates" | "/posts" | "/contact";
@@ -77,6 +78,8 @@ export function ThreeSectionHome() {
         <p className="mt-4 text-xs leading-relaxed text-muted-foreground">{t.warning}</p>
       </section>
     </div>
+
+    <BooksShowcase />
 
     <PatientComments />
 
