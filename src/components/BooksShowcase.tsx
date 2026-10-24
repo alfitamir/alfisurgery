@@ -50,7 +50,7 @@ export function BooksShowcase() {
     <div className="rounded-md border border-border border-t-4 border-t-gold bg-card p-5 md:p-6">
       <h2 id="home-books" className="flex items-center gap-2 text-2xl font-bold text-home-doctor md:text-3xl"><Library className="size-6 shrink-0 text-gold" />{c.title}</h2>
       <p className="mt-3 text-sm leading-loose text-muted-foreground">{c.intro}</p>
-      <div className="mt-5 grid gap-4 lg:grid-cols-2">{books.map((book) => <BookCard key={book.id} book={book} />)}</div>
+      <div className="mt-5 grid gap-4">{books.map((book) => <BookCard key={book.id} book={book} />)}</div>
     </div>
   </section>;
 }
