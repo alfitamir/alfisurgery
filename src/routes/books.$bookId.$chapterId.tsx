@@ -55,7 +55,7 @@ function ChapterPage() {
     </div>
     {language !== "en" && <p data-no-translate lang={language} className="guide-actions mt-4 rounded-md border border-border bg-secondary/60 p-3 text-sm leading-relaxed">{c.notice}</p>}
 
-    <article lang="en-GB" dir="ltr" className="mt-6 text-start">
+    <article data-no-translate lang="en-GB" dir="ltr" className="mt-6 text-start">
       <p className="text-xs font-semibold uppercase tracking-wider text-gold-foreground">{book.title} · Version 2.0</p>
       <h1 className="mt-2 text-3xl font-bold leading-tight text-home-doctor md:text-4xl">{chapter.title}</h1>
       <p className="mt-2 text-xs text-muted-foreground">{book.author} · {c.minutes(readingMinutes(chapter.words))}</p>
