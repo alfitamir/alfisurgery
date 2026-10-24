@@ -43,7 +43,7 @@ function BookPage() {
   return <main data-no-translate lang={language} className="mx-auto max-w-5xl px-5 py-10 md:px-8 md:py-14">
     <nav className="text-sm"><Link to="/books" search={{ lang: language }} className="text-primary underline-offset-4 hover:underline">{c.allBooks}</Link></nav>
     <header className="mt-6 grid gap-8 md:grid-cols-[220px_minmax(0,1fr)] md:items-start">
-      <div className="mx-auto w-48 md:w-full"><BookCover book={book} /></div>
+      <div className="mx-auto w-48 md:w-full"><BookCover book={book} large /></div>
       <div className="min-w-0">
         <h1 lang="en" dir="ltr" className="text-start text-3xl font-bold leading-tight text-home-doctor md:text-4xl">{book.title}</h1>
         <p lang="en" dir="ltr" className="mt-2 text-start text-lg text-muted-foreground">{book.subtitle}</p>

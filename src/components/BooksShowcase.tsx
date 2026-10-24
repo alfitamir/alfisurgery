@@ -6,16 +6,16 @@ import { booksCopy } from "@/data/books-copy";
 import { books, bookCounts, type Book } from "@/data/books";
 
 /** Typeset cover drawn from the book's own details (no generated text in images). */
-export function BookCover({ book, className = "" }: { book: Book; className?: string }) {
+export function BookCover({ book, className = "", large = false }: { book: Book; className?: string; large?: boolean }) {
   return <div lang="en" dir="ltr" className={`book-cover relative flex aspect-[3/4] flex-col justify-between overflow-hidden rounded-md p-4 text-start ${className}`}>
     <span className="book-cover-spine" aria-hidden />
     <div>
       <p className="text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-gold">Version 2.0 · {book.year}</p>
-      <p className="mt-3 font-serif text-lg font-bold leading-tight sm:text-xl">{book.title}</p>
-      <span className="mt-3 block h-0.5 w-10 bg-gold" aria-hidden />
-      <p className="mt-3 text-[0.65rem] leading-snug opacity-85">{book.subtitle}</p>
+      <p className={`mt-2 font-serif font-bold leading-tight ${large ? "text-2xl" : "text-base"}`}>{book.title}</p>
+      <span className="mt-2 block h-0.5 w-10 bg-gold" aria-hidden />
+      <p className={`mt-2 leading-snug opacity-85 ${large ? "text-xs" : "text-[0.6rem]"}`}>{book.subtitle}</p>
     </div>
-    <p className="text-[0.65rem] font-semibold leading-snug">{book.author}</p>
+    <p className={`font-semibold leading-snug ${large ? "text-xs" : "text-[0.6rem]"}`}>{book.author}</p>
   </div>;
 }
 
