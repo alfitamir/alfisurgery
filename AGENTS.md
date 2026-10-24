@@ -26,3 +26,4 @@
 - Route article drafting, revision and translation through admin-only server functions that call Gemini through Lovable AI and sanitize returned HTML; this keeps AI keys server-side and blocks active content on public pages.
 
 - Reach the admin area only through an unobtrusive nofollow footer icon or its direct URL; admin access is enforced by role checks, not by hiding the link.
+- Keep the doctor's books as typed metadata in src/data/books with one markdown file per chapter under src/content/books/<bookId>, loaded lazily on /books/$bookId/$chapterId; this keeps the homepage light and gives every chapter a stable, printable, indexable URL.
