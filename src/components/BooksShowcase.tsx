@@ -10,7 +10,7 @@ export function BookCover({ book, className = "", large = false }: { book: Book;
   return <div lang="en" dir="ltr" className={`book-cover relative flex aspect-[3/4] flex-col justify-between overflow-hidden rounded-md p-4 text-start ${className}`}>
     <span className="book-cover-spine" aria-hidden />
     <div>
-      <p className="text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-gold">Version 2.0 · {book.year}</p>
+      <p className="text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-gold">{book.coverLabel} · {book.year}</p>
       <p className={`mt-2 font-serif font-bold leading-tight ${large ? "text-2xl" : "text-base"}`}>{book.title}</p>
       <span className="mt-2 block h-0.5 w-10 bg-gold" aria-hidden />
       <p className={`mt-2 leading-snug opacity-85 ${large ? "text-xs" : "text-[0.6rem]"}`}>{book.subtitle}</p>
@@ -31,7 +31,7 @@ export function BookCard({ book }: { book: Book }) {
       <ul className="mt-3 flex flex-wrap gap-2 text-xs">
         <li className="flex items-center gap-1 rounded-full bg-home-doctor-surface px-2.5 py-1 text-home-doctor"><Stethoscope className="size-3.5" />{c.audience}</li>
         <li className="flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1"><Globe2 className="size-3.5" />{c.originalLanguage}</li>
-        <li className="flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1"><Unlock className="size-3.5" />{c.openAccess}</li>
+        {book.openAccess ? <li className="flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1"><Unlock className="size-3.5" />{c.openAccess}</li> : <li className="flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1"><BookOpenText className="size-3.5" />{c.freeToRead}</li>}
       </ul>
       <p className="mt-3 text-sm leading-loose text-muted-foreground">{c.descriptions[book.id]}</p>
       <p className="mt-2 text-xs text-muted-foreground">{c.counts(counts.chapters, counts.appendices)}</p>
