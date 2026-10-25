@@ -16,7 +16,7 @@ export const Route = createFileRoute("/books/$bookId/")({
     const book = findBook(params.bookId);
     if (!book) return { meta: [{ title: "Book not found | Alfi Surgery" }, { name: "robots", content: "noindex" }] };
     const title = `${book.title}: ${book.subtitle} | Dr. Tamer Elalfy`;
-    const description = `${book.edition}. Free open-access handbook by ${book.author} for emergency physicians, GPs, medical specialists and nurses.`;
+    const description = `${book.edition}. ${book.summary}`;
     return {
       meta: [
         { title }, { name: "description", content: description },
@@ -51,13 +51,14 @@ function BookPage() {
         <ul className="mt-4 flex flex-wrap gap-2 text-xs">
           <li className="flex items-center gap-1 rounded-full bg-home-doctor-surface px-2.5 py-1 text-home-doctor"><Stethoscope className="size-3.5" />{c.audience}</li>
           <li className="flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1"><Globe2 className="size-3.5" />{c.originalLanguage}</li>
-          <li className="flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1"><Unlock className="size-3.5" />{c.openAccess}</li>
+          {book.openAccess ? <li className="flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1"><Unlock className="size-3.5" />{c.openAccess}</li> : <li className="flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1"><BookOpenText className="size-3.5" />{c.freeToRead}</li>}
         </ul>
         <p className="mt-4 text-sm leading-loose text-muted-foreground">{c.descriptions[book.id]}</p>
         <p className="mt-3 rounded-md border border-border bg-secondary/60 p-3 text-sm leading-relaxed">{c.notice}</p>
         <dl className="mt-4 grid gap-1 text-sm text-muted-foreground">
-          <div className="flex flex-wrap gap-2"><dt className="font-semibold text-foreground">DOI</dt><dd dir="ltr"><a href={`https://doi.org/${book.doi}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-primary underline-offset-4 hover:underline">{book.doi}<ExternalLink className="size-3" /></a></dd></div>
-          <div className="flex flex-wrap gap-2"><dt className="font-semibold text-foreground">{c.licence}</dt><dd dir="ltr"><a href={book.licence.url} target="_blank" rel="noopener noreferrer" className="text-primary underline-offset-4 hover:underline">{book.licence.name}</a></dd></div>
+          {book.doi && <div className="flex flex-wrap gap-2"><dt className="font-semibold text-foreground">DOI</dt><dd dir="ltr"><a href={`https://doi.org/${book.doi}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-primary underline-offset-4 hover:underline">{book.doi}<ExternalLink className="size-3" /></a></dd></div>}
+          {book.licence && <div className="flex flex-wrap gap-2"><dt className="font-semibold text-foreground">{c.licence}</dt><dd dir="ltr"><a href={book.licence.url} target="_blank" rel="noopener noreferrer" className="text-primary underline-offset-4 hover:underline">{book.licence.name}</a></dd></div>}
+          {book.copyright && <div lang="en" dir="ltr" className="text-start">{book.copyright}</div>}
         </dl>
         <Button asChild size="lg" className="mt-6"><Link to="/books/$bookId/$chapterId" params={{ bookId: book.id, chapterId: book.startChapter }} search={{ lang: language }}><BookOpenText />{c.read}</Link></Button>
       </div>

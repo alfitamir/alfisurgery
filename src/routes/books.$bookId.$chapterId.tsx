@@ -21,7 +21,7 @@ export const Route = createFileRoute("/books/$bookId/$chapterId")({
     const chapter = book?.chapters.find((c) => c.id === params.chapterId);
     if (!book || !chapter) return { meta: [{ title: "Chapter not found | Alfi Surgery" }, { name: "robots", content: "noindex" }] };
     const title = `${chapter.title} | ${book.title} — Dr. Tamer Elalfy`;
-    const description = `${chapter.title}. From “${book.title}: ${book.subtitle}”, a free open-access handbook for doctors and nurses by ${book.author}.`;
+    const description = `${chapter.title}. From “${book.title}: ${book.subtitle}”, by ${book.author}. ${book.summary}`;
     return {
       meta: [
         { title }, { name: "description", content: description.slice(0, 300) },
@@ -56,7 +56,7 @@ function ChapterPage() {
     {language !== "en" && <p data-no-translate lang={language} className="guide-actions mt-4 rounded-md border border-border bg-secondary/60 p-3 text-sm leading-relaxed">{c.notice}</p>}
 
     <article data-no-translate lang="en-GB" dir="ltr" className="mt-6 text-start">
-      <p className="text-xs font-semibold uppercase tracking-wider text-gold-foreground">{book.title} · Version 2.0</p>
+      <p className="text-xs font-semibold uppercase tracking-wider text-gold-foreground">{book.title} · {book.coverLabel}</p>
       <h1 className="mt-2 text-3xl font-bold leading-tight text-home-doctor md:text-4xl">{chapter.title}</h1>
       <p className="mt-2 text-xs text-muted-foreground">{book.author} · <span lang={language} dir="auto">{c.minutes(readingMinutes(chapter.words))}</span></p>
 
