@@ -28,7 +28,7 @@ export type BooksCopy = {
 export const booksCopy: Record<SiteLanguage, BooksCopy> = {
   ar: {
     title: "كتبي",
-    intro: "كتب سريرية مفتوحة الوصول للأطباء وطاقم التمريض، تُقرأ مجانًا على هذا الموقع.",
+    intro: "كتب سريرية للأطباء وطاقم التمريض، تُقرأ مجانًا على هذا الموقع.",
     audience: "للمختصين في الرعاية الصحية",
     originalLanguage: "الكتاب باللغة الإنجليزية",
     notice: "هذا الكتاب متاح حاليًا بنسخته الإنجليزية الأصلية فقط. وهو موجّه للمختصين في الرعاية الصحية؛ وعلى المرضى اتباع تعليمات الفريق المعالج.",
@@ -54,7 +54,7 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
   },
   en: {
     title: "My books",
-    intro: "Open-access clinical handbooks for doctors and nurses — free to read on this site.",
+    intro: "Clinical books for doctors and nurses — free to read on this site.",
     audience: "For healthcare professionals",
     originalLanguage: "Written in English",
     notice: "Written for healthcare professionals. Patients should follow the advice of their treating team.",
@@ -80,7 +80,7 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
   },
   ur: {
     title: "میری کتابیں",
-    intro: "ڈاکٹروں اور نرسوں کے لیے کھلی رسائی والی طبی رہنما کتابیں — اس سائٹ پر مفت پڑھیں۔",
+    intro: "ڈاکٹروں اور نرسوں کے لیے طبی کتابیں — اس سائٹ پر مفت پڑھیں۔",
     audience: "طبی ماہرین کے لیے",
     originalLanguage: "یہ کتاب انگریزی میں ہے",
     notice: "یہ کتاب فی الحال صرف اپنے اصل انگریزی ایڈیشن میں دستیاب ہے۔ یہ طبی ماہرین کے لیے لکھی گئی ہے؛ مریض اپنی علاج کرنے والی ٹیم کی ہدایات پر عمل کریں۔",
@@ -106,7 +106,7 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
   },
   hi: {
     title: "मेरी पुस्तकें",
-    intro: "डॉक्टरों और नर्सों के लिए ओपन-एक्सेस क्लिनिकल पुस्तिकाएँ — इस साइट पर निःशुल्क पढ़ें।",
+    intro: "डॉक्टरों और नर्सों के लिए क्लिनिकल पुस्तकें — इस साइट पर निःशुल्क पढ़ें।",
     audience: "स्वास्थ्य पेशेवरों के लिए",
     originalLanguage: "यह पुस्तक अंग्रेज़ी में है",
     notice: "यह पुस्तक अभी केवल अपने मूल अंग्रेज़ी संस्करण में उपलब्ध है। यह स्वास्थ्य पेशेवरों के लिए लिखी गई है; मरीज़ अपनी उपचार टीम की सलाह का पालन करें।",
@@ -132,7 +132,7 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
   },
   bn: {
     title: "আমার বইসমূহ",
-    intro: "চিকিৎসক ও নার্সদের জন্য উন্মুক্ত-প্রবেশাধিকার ক্লিনিক্যাল হ্যান্ডবুক — এই সাইটে বিনামূল্যে পড়ুন।",
+    intro: "চিকিৎসক ও নার্সদের জন্য ক্লিনিক্যাল বই — এই সাইটে বিনামূল্যে পড়ুন।",
     audience: "স্বাস্থ্যসেবা পেশাজীবীদের জন্য",
     originalLanguage: "বইটি ইংরেজিতে লেখা",
     notice: "বইটি বর্তমানে কেবল মূল ইংরেজি সংস্করণে পাওয়া যায়। এটি স্বাস্থ্যসেবা পেশাজীবীদের জন্য লেখা; রোগীরা তাঁদের চিকিৎসক দলের পরামর্শ মেনে চলবেন।",
@@ -158,7 +158,7 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
   },
   tl: {
     title: "Aking mga aklat",
-    intro: "Mga open-access na klinikal na handbook para sa mga doktor at nars — libreng basahin sa site na ito.",
+    intro: "Mga klinikal na aklat para sa mga doktor at nars — libreng basahin sa site na ito.",
     audience: "Para sa mga propesyonal sa kalusugan",
     originalLanguage: "Nakasulat sa Ingles",
     notice: "Sa ngayon, ang aklat na ito ay makukuha lamang sa orihinal nitong edisyong Ingles. Isinulat ito para sa mga propesyonal sa kalusugan; dapat sundin ng mga pasyente ang payo ng kanilang gumagamot na koponan.",
@@ -184,7 +184,7 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
   },
   ta: {
     title: "எனது நூல்கள்",
-    intro: "மருத்துவர்கள் மற்றும் செவிலியர்களுக்கான திறந்த அணுகல் மருத்துவக் கையேடுகள் — இந்தத் தளத்தில் இலவசமாகப் படிக்கலாம்.",
+    intro: "மருத்துவர்கள் மற்றும் செவிலியர்களுக்கான மருத்துவ நூல்கள் — இந்தத் தளத்தில் இலவசமாகப் படிக்கலாம்.",
     audience: "சுகாதாரத் தொழில் வல்லுநர்களுக்கு",
     originalLanguage: "இந்நூல் ஆங்கிலத்தில் உள்ளது",
     notice: "இந்நூல் தற்போது அதன் மூல ஆங்கிலப் பதிப்பில் மட்டுமே கிடைக்கிறது. இது சுகாதாரத் தொழில் வல்லுநர்களுக்காக எழுதப்பட்டது; நோயாளிகள் தங்களுக்குச் சிகிச்சை அளிக்கும் மருத்துவக் குழுவின் அறிவுரையைப் பின்பற்ற வேண்டும்.",

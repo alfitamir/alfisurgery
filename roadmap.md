@@ -64,4 +64,4 @@
 - [x] Add a discreet lock icon in the footer that opens the admin article page.
 
 - [x] Add a "My books" homepage section (seven-language labels) with /books, a book contents page and chapter reading pages; start with "Common Anal Conditions" V2.
-- [ ] Translate "Common Anal Conditions" into the six other site languages — waiting on the doctor to decide (very large professional text; needs specialist medical review per language).
+- [ ] Translate "Common Anal Conditions" and "From Clinic to Recovery" into the six other site languages — waiting on the doctor to decide (very large professional text; needs specialist medical review per language).

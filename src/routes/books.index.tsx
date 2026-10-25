@@ -9,9 +9,9 @@ export const Route = createFileRoute("/books/")({
   head: () => ({
     meta: [
       { title: "Books by Dr. Tamer Elalfy | Alfi Surgery" },
-      { name: "description", content: "Open-access clinical handbooks by consultant general surgeon Dr. Tamer Elalfy, free to read online for doctors and nurses." },
+      { name: "description", content: "Clinical books by consultant general surgeon Dr. Tamer Elalfy, free to read online for doctors and nurses." },
       { property: "og:title", content: "Books by Dr. Tamer Elalfy | Alfi Surgery" },
-      { property: "og:description", content: "Open-access clinical handbooks for doctors and nurses, free to read online." },
+      { property: "og:description", content: "Clinical books for doctors and nurses, free to read online." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
