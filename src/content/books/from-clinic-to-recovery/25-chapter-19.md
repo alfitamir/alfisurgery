@@ -23,10 +23,10 @@ Lung complications, such as pneumonia, collapse of parts of the lung, and breath
 </tbody>
 </table>
 
-**Table 19.1.** *Lung disease and surgery at a glance.*
+**Table 19.1.** _Lung disease and surgery at a glance._
 
 | **At a glance**                |                                                                                                                                                           |
-|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Highest-risk patients**      | Older age, low oxygen levels, recent chest infection, anemia, smoking, COPD, poorly controlled asthma, and sleep apnea                                    |
 | **Highest-risk operations**    | Upper abdominal and chest operations, operations longer than 2 hours, and emergencies                                                                     |
 | **Before surgery**             | Stop smoking; optimize inhalers; bring CPAP; delay elective surgery after a recent chest infection                                                        |
@@ -39,9 +39,9 @@ Lung complications, such as pneumonia, collapse of parts of the lung, and breath
 
 The ARISCAT score identifies the main predictors of postoperative pulmonary complications: older age, low preoperative oxygen saturation, a respiratory infection in the previous month, anemia, an upper abdominal or chest incision, an operation lasting more than 2 hours, and emergency surgery [1]. Smoking, COPD, asthma, and sleep apnea add to the risk. Figure 19.1 links each risk factor to an action that patients and teams can take.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 19.1.** Risk factors for lung complications after surgery, and what helps.*
+_**Figure 19.1.** Risk factors for lung complications after surgery, and what helps._
 
 <table>
 <colgroup>
@@ -68,10 +68,10 @@ For patients with COPD, check symptoms, recent exacerbations, oxygen saturation,
 
 Obstructive sleep apnea is common in surgical patients, especially those with obesity, and is often undiagnosed. It increases the risk of airway difficulty during anesthesia and of breathing problems after surgery, particularly with opioids and sedatives. Screen all adults with the STOP-Bang questionnaire (Table 19.2); a score of 5 or more, or 3 or more with certain features, indicates a high likelihood of moderate to severe sleep apnea [5]. Patients with known sleep apnea should bring their CPAP machine and use it in hospital. Patients with suspected but undiagnosed sleep apnea can usually proceed with surgery, with precautions, unless they have uncontrolled related conditions such as heart failure or very low oxygen levels [6].
 
-**Table 19.2.** *The STOP-Bang screening questionnaire for obstructive sleep apnea.*
+**Table 19.2.** _The STOP-Bang screening questionnaire for obstructive sleep apnea._
 
 | **Letter** | **Question**                                               | **Score 1 point if yes** |
-|------------|------------------------------------------------------------|--------------------------|
+| ---------- | ---------------------------------------------------------- | ------------------------ |
 | **S**      | Snoring: do you snore loudly?                              | Yes                      |
 | **T**      | Tired: do you often feel tired or sleepy during the day?   | Yes                      |
 | **O**      | Observed: has anyone seen you stop breathing during sleep? | Yes                      |
@@ -122,9 +122,9 @@ Smoking increases wound and lung complications, and stopping before surgery redu
 
 A simple bundle called I COUGH (incentive breathing, coughing, oral care, understanding, getting out of bed, and head of bed elevation) reduced postoperative pneumonia when introduced as a hospital-wide program [9] (Figure 19.2). Incentive spirometry used alone has not been shown to prevent lung complications after abdominal surgery [10], so it should be part of the bundle, not a replacement for walking and good pain control.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 19.2.** The I COUGH steps for protecting the lungs after surgery, for use with patients.*
+_**Figure 19.2.** The I COUGH steps for protecting the lungs after surgery, for use with patients._
 
 **STEP 3 Questions patients ask**
 
@@ -160,10 +160,10 @@ For a planned operation, it is usually safer to wait until you have fully recove
 
 ## 19.8 Additional risks
 
-**Table 19.3.** *Additional risks for patients with lung disease or sleep apnea. Square brackets mark figures to replace with unit data.*
+**Table 19.3.** _Additional risks for patients with lung disease or sleep apnea. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                                              | **Typical frequency**                                                | **Example wording**                                           |
-|----------------------|-----------------------------------------------------------------------|----------------------------------------------------------------------|---------------------------------------------------------------|
+| **Band**             | **Risk**                                                              | **Typical frequency**                                              | **Example wording**                                           |
+| -------------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------- |
 | **Common**           | Shortness of breath or low oxygen needing extra oxygen for a few days | [unit data]                                                        | “You may need oxygen for a few days.”                         |
 | **Less common**      | Chest infection after surgery                                         | Higher with COPD, smoking, and upper abdominal surgery [unit data] | “A chest infection is more likely because of your lungs.”     |
 | **Less common**      | Asthma or COPD flare                                                  | [unit data]                                                        | “Your breathing may get worse for a while; we will treat it.” |
@@ -191,7 +191,7 @@ For a planned operation, it is usually safer to wait until you have fully recove
 
 ## 19.10 Warning signs
 
-**Table 19.4.** *Green, amber, and red warning signs for lung problems after surgery.*
+**Table 19.4.** _Green, amber, and red warning signs for lung problems after surgery._
 
 <table>
 <colgroup>
@@ -251,7 +251,7 @@ For a planned operation, it is usually safer to wait until you have fully recove
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -280,7 +280,7 @@ For a planned operation, it is usually safer to wait until you have fully recove
 
 **After your operation: I COUGH**
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
 - Take 10 slow, deep breaths every hour while you are awake.
 
@@ -307,7 +307,7 @@ For a planned operation, it is usually safer to wait until you have fully recove
 **Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                | **What to do**                                           |
-|-----------|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | **GREEN** | Mild cough and slight breathlessness that improve each day                                                                         | This is normal. Keep doing I COUGH.                      |
 | **AMBER** | Yellow or green phlegm; temperature of 38 °C or more; needing your reliever more than usual                                        | Call us or your doctor today.                            |
 | **RED**   | Breathless at rest or getting worse; chest pain; coughing blood; blue lips; confusion; an asthma attack your inhaler does not help | Call an ambulance or go to the emergency department now. |
@@ -348,4 +348,4 @@ For a planned operation, it is usually safer to wait until you have fully recove
 
 10\. do Nascimento Junior P, Módolo NSP, Andrade S, et al. Incentive spirometry for prevention of postoperative pulmonary complications in upper abdominal surgery. Cochrane Database Syst Rev. 2014;(2):CD006058.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
