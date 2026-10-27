@@ -41,8 +41,13 @@ export const Route = createFileRoute("/ar/medical-questions")({
       { httpEquiv: "content-language", content: "ar" },
     ],
     links: [
-      { rel: "canonical", href: "/ar/medical-questions" },
-      { rel: "alternate", hrefLang: "ar", href: "/ar/medical-questions" },
+      { rel: "canonical", href: "https://alfisurgery.com/ar/medical-questions" },
+      { rel: "alternate", hrefLang: "ar", href: "https://alfisurgery.com/ar/medical-questions" },
+      {
+        rel: "alternate",
+        hrefLang: "x-default",
+        href: "https://alfisurgery.com/ar/medical-questions",
+      },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {

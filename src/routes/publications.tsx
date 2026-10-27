@@ -35,7 +35,7 @@ export const Route = createFileRoute("/publications")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/publications" }],
+    links: [{ rel: "canonical", href: "https://alfisurgery.com/publications" }],
   }),
 });
 

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { preventionCopy, preventionDiseases } from "@/data/prevention";
 import { siteLanguages } from "@/lib/site-language";
-import lifestyleImage from "@/assets/patient-journey-recover.jpg";
+import lifestyleImage from "@/assets/patient-journey-recover.webp";
 
 const sources = [
   {

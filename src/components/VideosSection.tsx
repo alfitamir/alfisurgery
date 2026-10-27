@@ -326,7 +326,7 @@ export function VideosSection({ ar = false }: { ar?: boolean }) {
             type="button"
             onClick={() => setShowAll((s) => !s)}
             aria-expanded={showAll}
-            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-2 text-sm font-medium text-foreground hover:bg-muted"
+            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90"
           >
             {showAll
               ? ar

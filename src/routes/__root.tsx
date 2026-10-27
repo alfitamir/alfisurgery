@@ -8,6 +8,7 @@ import {
   HeadContent,
   Scripts,
   retainSearchParams,
+  useRouterState,
   type ErrorComponentProps,
 } from "@tanstack/react-router";
 
@@ -138,8 +139,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: React.ReactNode }) {
+  const pathname = useRouterState({ select: (state) => state.location.pathname });
+  const searchLanguage = useRouterState({ select: (state) => state.location.search.lang });
+  const language = siteLanguages.some((item) => item.code === searchLanguage)
+    ? searchLanguage!
+    : pathname.startsWith("/ar")
+      ? "ar"
+      : "en";
   return (
-    <html lang="en">
+    <html lang={language} dir={language === "ar" ? "rtl" : "ltr"}>
       <head>
         <HeadContent />
       </head>

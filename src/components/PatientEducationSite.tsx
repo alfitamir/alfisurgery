@@ -38,12 +38,12 @@ import {
   patientEducation,
   type EducationCategory,
 } from "@/data/patient-education";
-import portrait from "@/assets/dr-elalfy-main.jpg.asset.json";
+import portrait from "@/assets/dr-elalfy-main.webp";
 import { navigationCopy } from "@/data/site-navigation";
 import { patientGuideCopy } from "@/data/patient-guide-copy";
-import prepareIllustration from "@/assets/patient-journey-prepare.jpg";
-import recoverIllustration from "@/assets/patient-journey-recover.jpg";
-import plateauIllustration from "@/assets/sleeve-plateau-guide.jpg";
+import prepareIllustration from "@/assets/patient-journey-prepare.webp";
+import recoverIllustration from "@/assets/patient-journey-recover.webp";
+import plateauIllustration from "@/assets/sleeve-plateau-guide.webp";
 
 type Language = "en" | "ar";
 
@@ -263,7 +263,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
           <div data-no-translate lang={language} className="flex items-center gap-5 md:gap-8">
             <Link to="/profile" className="shrink-0">
               <img
-                src={portrait.url}
+                src={portrait}
                 alt={native.name}
                 width={180}
                 height={210}
@@ -414,7 +414,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
                           </Button>
                         )}
                       </div>
-                      <div className="mt-3 text-xs text-patient-ink/50">
+                      <div className="mt-3 text-xs text-patient-ink/70">
                         PDF · {formatSize(item.pdfSize)}
                       </div>
                     </div>

@@ -15,7 +15,7 @@ import { navigationCopy } from "@/data/site-navigation";
 import { showsVideos } from "@/lib/site-language";
 import { ArticlesSection } from "@/components/ArticlesSection";
 import portrait from "@/assets/dr-elalfy-main.jpg.asset.json";
-import patientImage from "@/assets/patient-journey-hero.jpg";
+import patientImage from "@/assets/patient-journey-hero.webp";
 import researchImage from "@/assets/sections/research.jpg";
 
 const journeyIcons = [CheckCircle2, ClipboardCheck, HeartPulse, ShieldCheck] as const;
