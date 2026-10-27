@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { articlesForLanguage } from "@/lib/blog";
-import articleIllustration from "@/assets/sleeve-plateau-habits.jpg";
+import articleIllustration from "@/assets/sleeve-plateau-habits.webp";
 import { translatedText } from "@/lib/site-language";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 
@@ -22,7 +22,7 @@ export function ArticlesSection({ ar = false }: { ar?: boolean }) {
       <div className="mx-auto max-w-6xl px-5 py-12 md:px-6 md:py-16">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <p className="flex items-center gap-2 text-sm font-semibold text-accent">
+            <p className="flex items-center gap-2 text-sm font-semibold text-foreground">
               <BookOpen className="size-5" />
               {ar ? "بقلم د. تامر الألفي" : "From Dr. Tamer Elalfy's journal"}
             </p>
@@ -64,7 +64,7 @@ export function ArticlesSection({ ar = false }: { ar?: boolean }) {
                   height={1024}
                 />
               ) : (
-                <div className="flex h-40 items-center justify-between gap-4 bg-secondary px-6 text-accent">
+                <div className="flex h-40 items-center justify-between gap-4 bg-secondary px-6 text-foreground">
                   <BookOpen className="size-12" strokeWidth={1.2} />
                   <span className="max-w-40 text-xl font-semibold">
                     {ar ? article.category : translatedText("Gallbladder surgery", dictionary)}
@@ -72,7 +72,7 @@ export function ArticlesSection({ ar = false }: { ar?: boolean }) {
                 </div>
               )}
               <div className="flex flex-1 flex-col p-5">
-                <p className="text-xs font-semibold text-accent">
+                <p className="text-xs font-semibold text-foreground">
                   {ar ? article.category : translatedText("Gallbladder surgery", dictionary)}
                 </p>
                 <h3 className="mt-3 text-xl font-bold leading-relaxed">
