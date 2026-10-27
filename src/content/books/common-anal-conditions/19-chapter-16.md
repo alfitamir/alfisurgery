@@ -1,13 +1,13 @@
 # Chapter 16 — The Safety Net — Red Flags, Drug Pitfalls, and the Triage Matrix
 
-*Purpose: a patient’s own explanation — “it’s just my usual piles” — never replaces an examination, a medication review, or a colonoscopy when red flags are present.*
+_Purpose: a patient’s own explanation — “it’s just my usual piles” — never replaces an examination, a medication review, or a colonoscopy when red flags are present._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 16**
 >
 > - **Chapter colour palette:** Slate Blue (#1E3A8A) header bar, Ice Blue (#EFF6FF) panels, traffic-light triage columns.
 > - **Hero graphic:** A three-column hospital triage board (🟢 manage in clinic or ER · 🟡 refer routine or urgent · 🔴 call surgery now) beside a six-drug cross-specialty danger matrix.
 > - **Icon set:** Traffic light, colonoscope, pill bottle with warning triangle, iron tablet, siren.
-> - **Bedside aphorism banner:** *“Red flags override the patient’s self-diagnosis. Iron-deficiency anaemia is never “just haemorrhoids” until the bowel has been cleared.”*
+> - **Bedside aphorism banner:** _“Red flags override the patient’s self-diagnosis. Iron-deficiency anaemia is never “just haemorrhoids” until the bowel has been cleared.”_
 
 ## 1. Colonoscopy Red Flags — Summary
 
@@ -15,33 +15,33 @@ Haemorrhoids and colorectal cancer frequently coexist. Full details are in Chapt
 
 **Table 16.1 — When the colon must be examined before blaming haemorrhoids**
 
-| Red flag | Trigger | Why |
-|---|---|---|
-| Age | At or above the national screening start age without up-to-date screening | Neoplasia risk rises with age (USPSTF 2021) |
-| Iron-deficiency anaemia | Any man, postmenopausal woman, or unexplained in a premenopausal woman | Bidirectional endoscopy is standard (BSG 2021) |
-| Constitutional or bowel-habit change | Weight loss; persistent change in frequency or consistency; tenesmus; dark blood mixed with stool | Classic features of colorectal cancer or IBD |
-| Family or personal history | First-degree relative with colorectal cancer, Lynch syndrome, polyposis, IBD, or prior advanced adenoma | Lower threshold, earlier colonoscopy |
-| Persistent bleeding or positive FIT | Bleeding persisting after 4–6 weeks of treatment; FIT ≥ 10 µg Hb/g | The source may not be anal (NICE DG56) |
+| Red flag                             | Trigger                                                                                                 | Why                                            |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| Age                                  | At or above the national screening start age without up-to-date screening                               | Neoplasia risk rises with age (USPSTF 2021)    |
+| Iron-deficiency anaemia              | Any man, postmenopausal woman, or unexplained in a premenopausal woman                                  | Bidirectional endoscopy is standard (BSG 2021) |
+| Constitutional or bowel-habit change | Weight loss; persistent change in frequency or consistency; tenesmus; dark blood mixed with stool       | Classic features of colorectal cancer or IBD   |
+| Family or personal history           | First-degree relative with colorectal cancer, Lynch syndrome, polyposis, IBD, or prior advanced adenoma | Lower threshold, earlier colonoscopy           |
+| Persistent bleeding or positive FIT  | Bleeding persisting after 4–6 weeks of treatment; FIT ≥ 10 µg Hb/g                                      | The source may not be anal (NICE DG56)         |
 
 ## 2. Cross-Specialty Medication Pitfalls
 
 **Table 16.2 — Six high-alert medication traps (full details in Appendix B)**
 
-| Drug class | Pitfall | Prevention rule |
-|---|---|---|
-| Topical GTN + PDE5 inhibitors (sildenafil, vardenafil, tadalafil, avanafil) or riociguat | Profound hypotension, syncope, myocardial ischaemia | 🔴 No PDE5 inhibitor within 24 h (sildenafil, vardenafil) or 48 h (tadalafil) of GTN; prefer topical diltiazem or nifedipine (ASCRS 2023) |
-| SGLT2 inhibitors (empagliflozin, dapagliflozin, canagliflozin, ertugliflozin) | Fournier’s gangrene (FDA 2018 warning); euglycaemic ketoacidosis | 🔴 Stop immediately if perineal infection is suspected and check ketones; stop 3 days (ertugliflozin 4 days) before elective surgery per labelling |
-| Anticoagulants and antiplatelets | Delayed bleeding (typically days 5–10) after banding or haemorrhoidectomy | 🟡 Agree a peri-procedural plan with the prescriber [L]; IRC or sclerotherapy if anticoagulation cannot stop; IRC preferred in significant coagulopathy (AGA 2026) |
-| Opioids | Hard stool, fissure, urinary retention, impaction | 🟡 Multimodal analgesia; laxative from day 1 with every regular opioid |
-| Topical corticosteroids | Atrophy, dermatitis, infection, masking of cancer | 🟡 No more than 2 weeks at a time (AGA 2026) |
-| NSAIDs | Bleeding with antithrombotics; AKI; may aggravate IBD; avoid from 20 weeks of pregnancy | 🟢 Good opioid-sparing analgesia in healthy adults; avoid in CKD, peptic ulcer, therapeutic anticoagulation, and late pregnancy |
+| Drug class                                                                               | Pitfall                                                                                 | Prevention rule                                                                                                                                                    |
+| ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Topical GTN + PDE5 inhibitors (sildenafil, vardenafil, tadalafil, avanafil) or riociguat | Profound hypotension, syncope, myocardial ischaemia                                     | 🔴 No PDE5 inhibitor within 24 h (sildenafil, vardenafil) or 48 h (tadalafil) of GTN; prefer topical diltiazem or nifedipine (ASCRS 2023)                          |
+| SGLT2 inhibitors (empagliflozin, dapagliflozin, canagliflozin, ertugliflozin)            | Fournier’s gangrene (FDA 2018 warning); euglycaemic ketoacidosis                        | 🔴 Stop immediately if perineal infection is suspected and check ketones; stop 3 days (ertugliflozin 4 days) before elective surgery per labelling                 |
+| Anticoagulants and antiplatelets                                                         | Delayed bleeding (typically days 5–10) after banding or haemorrhoidectomy               | 🟡 Agree a peri-procedural plan with the prescriber [L]; IRC or sclerotherapy if anticoagulation cannot stop; IRC preferred in significant coagulopathy (AGA 2026) |
+| Opioids                                                                                  | Hard stool, fissure, urinary retention, impaction                                       | 🟡 Multimodal analgesia; laxative from day 1 with every regular opioid                                                                                             |
+| Topical corticosteroids                                                                  | Atrophy, dermatitis, infection, masking of cancer                                       | 🟡 No more than 2 weeks at a time (AGA 2026)                                                                                                                       |
+| NSAIDs                                                                                   | Bleeding with antithrombotics; AKI; may aggravate IBD; avoid from 20 weeks of pregnancy | 🟢 Good opioid-sparing analgesia in healthy adults; avoid in CKD, peptic ulcer, therapeutic anticoagulation, and late pregnancy                                    |
 
 ## 3. The Three-Column Triage Matrix
 
 **Table 16.3 — Manage, refer, or call surgery now**
 
-| 🟢 Manage in clinic or ER | 🟡 Refer (routine to urgent) | 🔴 Emergency — call surgery now |
-|---|---|---|
+| 🟢 Manage in clinic or ER                                                                                                                                                                                                                                         | 🟡 Refer (routine to urgent)                                                                                                                                                                                                                                                                                                                                    | 🔴 Emergency — call surgery now                                                                                                                                                                                                                                                                                                                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | • Grade I–II haemorrhoids without red flags<br>• Acute typical midline fissure<br>• Settling thrombosed external haemorrhoid (> 72 h)<br>• Uncomplicated pruritus ani<br>• Simple impaction without peritonism<br>• Treated STI proctitis with follow-up arranged | • Haemorrhoids failing 4–6 weeks of conservative care<br>• Grade III–IV or BPRST III<br>• Chronic fissure failing 6–8 weeks of therapy<br>• Atypical fissure or non-healing lesion (urgent biopsy)<br>• Fistula-in-ano<br>• Bleeding with any red flag or positive FIT<br>• Suspected perianal Crohn’s disease<br>• Faecal incontinence after conservative care | • Perianal, ischioanal, intersphincteric, or supralevator abscess<br>• Suspected Fournier’s gangrene<br>• Post-banding pelvic sepsis triad<br>• Bleeding > 1 pad/hour, shock index > 1, or instability<br>• Urinary retention after a procedure<br>• Strangulated haemorrhoids, gangrenous prolapse, perforated foreign body<br>• Suspected cauda equina, stercoral perforation, neutropenic enterocolitis |
 
 **Algorithm 16.1 — The safety net**
@@ -99,11 +99,11 @@ STEP 4 -> GREEN: evidence-based clinic or ER management
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 EMERGENCY | Any Step 1 feature in Algorithm 16.1 | Call surgery now |
-| 🟡 URGENT | Any Step 2 red flag | Colonoscopy or biopsy pathway |
-| 🟢 ROUTINE | Failure of conservative care without red flags | Surgical or specialist clinic |
+| Urgency      | Clinical trigger                               | Who and how fast              |
+| ------------ | ---------------------------------------------- | ----------------------------- |
+| 🔴 EMERGENCY | Any Step 1 feature in Algorithm 16.1           | Call surgery now              |
+| 🟡 URGENT    | Any Step 2 red flag                            | Colonoscopy or biopsy pathway |
+| 🟢 ROUTINE   | Failure of conservative care without red flags | Surgical or specialist clinic |
 
 ## The Patient in Front of You — Chapter 16 Mini-Case
 
