@@ -23,10 +23,10 @@ Diabetes is common among surgical patients, especially in the Gulf, and it affec
 </tbody>
 </table>
 
-**Table 18.1.** *Diabetes and surgery at a glance.*
+**Table 18.1.** _Diabetes and surgery at a glance._
 
 | **At a glance**                   |                                                                                                                                      |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | **Before elective surgery**       | HbA1c below about 8 to 8.5 percent where possible, without delaying urgent or cancer surgery                                         |
 | **Glucose target around surgery** | About 100 to 180 mg/dL (5.6 to 10 mmol/L)                                                                                            |
 | **SGLT2 inhibitors**              | Stop 3 to 4 days before (US guidance) or the day before and day of surgery (UK guidance); restart only when eating normally          |
@@ -57,22 +57,22 @@ High blood glucose around surgery increases wound infection and other complicati
 
 Table 18.2 summarizes the usual approach for each class of medicine. Guidance differs between countries and is updated often; for example, the American Diabetes Association advises stopping SGLT2 inhibitors 3 to 4 days before surgery [1], while a 2025 UK consensus advises omitting them the day before and the day of the procedure [3]. Each hospital should adopt one protocol, and each patient should receive a written, personal plan (Figure 18.1).
 
-**Table 18.2.** *Usual approach to diabetes medicines around surgery. Always follow the hospital protocol.*
+**Table 18.2.** _Usual approach to diabetes medicines around surgery. Always follow the hospital protocol._
 
-| **Medicine**                                                     | **Before surgery**                                                                                             | **After surgery**                                                                                       |
-|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| **Metformin**                                                    | Usually omitted on the day of surgery, according to protocol; longer if contrast or kidney concerns            | Restart when eating and drinking, if kidney function is normal                                          |
-| **Sulfonylureas (for example, gliclazide)**                      | Omit on the day of surgery: risk of low glucose while fasting                                                  | Restart when eating normally                                                                            |
-| **DPP-4 inhibitors (for example, sitagliptin)**                  | Often continued; follow protocol                                                                               | Continue when eating                                                                                    |
-| **SGLT2 inhibitors (for example, empagliflozin, dapagliflozin)** | Stop 3 to 4 days before (4 for ertugliflozin) [1], or the day before and day of surgery [3]                | Restart only when eating and drinking normally; after major surgery, not until ketones are normal [4] |
-| **GLP-1 and GIP/GLP-1 injections**                               | See Chapters 2 and 23                                                                                          | See Chapter 23                                                                                          |
-| **Long-acting (basal) insulin**                                  | Usually continued at a reduced dose, often about 75 to 80 percent the night before or morning of surgery [1] | Continue; adjust with glucose readings                                                                  |
-| **Intermediate (NPH) or premixed insulin**                       | Usually about half the usual morning dose, according to protocol                                               | Return to usual doses as eating resumes                                                                 |
-| **Insulin pump**                                                 | Continue basal rate for short procedures, with an agreed plan; never stop without an alternative               | Resume usual settings when eating                                                                       |
+| **Medicine**                                                     | **Before surgery**                                                                                           | **After surgery**                                                                                     |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| **Metformin**                                                    | Usually omitted on the day of surgery, according to protocol; longer if contrast or kidney concerns          | Restart when eating and drinking, if kidney function is normal                                        |
+| **Sulfonylureas (for example, gliclazide)**                      | Omit on the day of surgery: risk of low glucose while fasting                                                | Restart when eating normally                                                                          |
+| **DPP-4 inhibitors (for example, sitagliptin)**                  | Often continued; follow protocol                                                                             | Continue when eating                                                                                  |
+| **SGLT2 inhibitors (for example, empagliflozin, dapagliflozin)** | Stop 3 to 4 days before (4 for ertugliflozin) [1], or the day before and day of surgery [3]                  | Restart only when eating and drinking normally; after major surgery, not until ketones are normal [4] |
+| **GLP-1 and GIP/GLP-1 injections**                               | See Chapters 2 and 23                                                                                        | See Chapter 23                                                                                        |
+| **Long-acting (basal) insulin**                                  | Usually continued at a reduced dose, often about 75 to 80 percent the night before or morning of surgery [1] | Continue; adjust with glucose readings                                                                |
+| **Intermediate (NPH) or premixed insulin**                       | Usually about half the usual morning dose, according to protocol                                             | Return to usual doses as eating resumes                                                               |
+| **Insulin pump**                                                 | Continue basal rate for short procedures, with an agreed plan; never stop without an alternative             | Resume usual settings when eating                                                                     |
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 18.1.** A typical timeline for diabetes medicines around planned surgery.*
+_**Figure 18.1.** A typical timeline for diabetes medicines around planned surgery._
 
 ## 18.3 SGLT2 inhibitors and euglycemic ketoacidosis
 
@@ -114,23 +114,23 @@ Hypoglycemia, a glucose below about 70 mg/dL (4 mmol/L), is most likely in patie
 
 - **Discharge.** Give a written plan for restarting each medicine, sick-day rules, and who to call.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 18.2.** Sick-day rules after surgery, for use with patients.*
+_**Figure 18.2.** Sick-day rules after surgery, for use with patients._
 
 ## 18.6 Ramadan and surgery
 
 Planned surgery is best timed outside Ramadan for people with diabetes when possible. After surgery, recovery, irregular eating, and changes to medicines increase the risks of fasting, and patients should not fast until they have recovered and their diabetes is stable. The International Diabetes Federation and Diabetes and Ramadan International Alliance guidelines provide a framework for assessing risk and adjusting medicines for fasting; patients who wish to fast after recovery should have an individual plan with their diabetes team [5].
 
-**Table 18.3.** *Ramadan, diabetes, and surgery.*
+**Table 18.3.** _Ramadan, diabetes, and surgery._
 
 | **Situation**                       | **Usual advice**                                                                              |
-|-------------------------------------|-----------------------------------------------------------------------------------------------|
+| ----------------------------------- | --------------------------------------------------------------------------------------------- |
 | **Planned surgery**                 | Schedule outside Ramadan if possible                                                          |
 | **Recovering from surgery**         | Do not fast until recovered, eating normally, and glucose stable                              |
 | **Taking an SGLT2 inhibitor**       | Higher risk of dehydration and ketoacidosis when fasting; agree a plan with the diabetes team |
 | **Taking insulin or sulfonylureas** | Doses usually need changing for fasting; plan before Ramadan                                  |
-| **Wishing to fast after recovery**  | Individual risk assessment and medicine plan with the diabetes team [5]                     |
+| **Wishing to fast after recovery**  | Individual risk assessment and medicine plan with the diabetes team [5]                       |
 
 **STEP 3 Questions patients ask**
 
@@ -170,11 +170,11 @@ For short operations, many people keep their pump on its basal rate with an agre
 
 ## 18.7 Additional risks with diabetes
 
-**Table 18.4.** *Additional risks for people with diabetes having surgery. Square brackets mark figures to replace with unit data.*
+**Table 18.4.** _Additional risks for people with diabetes having surgery. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                                                    | **Typical frequency**                                | **Example wording**                                                                    |
-|----------------------|-----------------------------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------------------------------------|
-| **Common**           | High glucose after surgery                                                  | Many patients                                        | “Your sugar will probably be higher for a few days.”                                   |
+| **Band**             | **Risk**                                                                    | **Typical frequency**                              | **Example wording**                                                                    |
+| -------------------- | --------------------------------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| **Common**           | High glucose after surgery                                                  | Many patients                                      | “Your sugar will probably be higher for a few days.”                                   |
 | **Less common**      | Wound infection or slow healing                                             | Higher than in people without diabetes [unit data] | “Diabetes raises the chance of a wound infection.”                                     |
 | **Less common**      | Low glucose while fasting                                                   | [unit data]                                        | “We check often to catch low sugar early.”                                             |
 | **Rare but serious** | Ketoacidosis, including with normal glucose on SGLT2 inhibitors             | [unit data]                                        | “Rarely, an acid build-up can make you very unwell. This is why we stop some tablets.” |
@@ -202,7 +202,7 @@ For short operations, many people keep their pump on its basal rate with an agre
 
 ## 18.9 Warning signs
 
-**Table 18.5.** *Green, amber, and red warning signs for people with diabetes after surgery.*
+**Table 18.5.** _Green, amber, and red warning signs for people with diabetes after surgery._
 
 <table>
 <colgroup>
@@ -261,7 +261,7 @@ For short operations, many people keep their pump on its basal rate with an agre
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Complete the personal medicine plan with the patient, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Complete the personal medicine plan with the patient, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -283,7 +283,7 @@ Date: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Arrive at: \_\_\_\_\_\_\_\_\_
 **My medicine plan**
 
 | **Medicine and dose** | **Days before** | **Day before** | **Morning of surgery** | **Restart** |
-|-----------------------|-----------------|----------------|------------------------|-------------|
+| --------------------- | --------------- | -------------- | ---------------------- | ----------- |
 |                       |                 |                |                        |             |
 |                       |                 |                |                        |             |
 |                       |                 |                |                        |             |
@@ -318,7 +318,7 @@ Date: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Arrive at: \_\_\_\_\_\_\_\_\_
 
 **If you are unwell: sick-day rules**
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
 **Ramadan**
 
@@ -329,7 +329,7 @@ Date: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Arrive at: \_\_\_\_\_\_\_\_\_
 **Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                     | **What to do**                                                                     |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | **GREEN** | Sugar a little higher than usual for a few days                                                                                         | Keep checking and follow your plan.                                                |
 | **AMBER** | Sugar above 250 mg/dL (14 mmol/L) twice; frequent low sugar; a red or leaking wound                                                     | Call us or your diabetes team today.                                               |
 | **RED**   | Vomiting, tummy pain, fast breathing, or drowsiness, even with a normal sugar; high ketones; low sugar that will not come up; confusion | Go to the emergency department now. Say you have diabetes and show your medicines. |
@@ -360,4 +360,4 @@ Date: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Arrive at: \_\_\_\_\_\_\_\_\_
 
 5\. Hassanein M, Afandi B, Yakoob Ahmedani M, et al. Diabetes and Ramadan: practical guidelines 2021. Diabetes Res Clin Pract. 2022;185:109185.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._

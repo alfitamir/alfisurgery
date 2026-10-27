@@ -23,10 +23,10 @@ Blood thinners are among the medicines most often involved in surgical errors: s
 </tbody>
 </table>
 
-**Table 22.1.** *Blood thinners and surgery at a glance.*
+**Table 22.1.** _Blood thinners and surgery at a glance._
 
 | **At a glance**                      |                                                                                                                  |
-|--------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
 | **Minimal-bleeding procedures**      | Skin surgery, dental work, and cataract surgery: blood thinners are usually continued                            |
 | **Warfarin**                         | Usually stopped 5 days before; check INR before surgery; restart within 12 to 24 hours if bleeding is controlled |
 | **Apixaban, rivaroxaban, edoxaban**  | Usually stopped 1 day before (low or moderate bleeding risk) or 2 days before (high risk); no bridging           |
@@ -40,9 +40,9 @@ Blood thinners are among the medicines most often involved in surgical errors: s
 
 Every plan balances the bleeding risk of the procedure against the clotting risk of the patient (Figure 22.1) [1]. Minimal-bleeding procedures, such as skin surgery, dental work, and cataract surgery, can usually be performed without stopping blood thinners. For most other procedures, the medicine is paused for a set time and restarted when bleeding is controlled. Bridging with short-acting heparin injections is reserved for patients at very high clotting risk, such as those with a mechanical mitral valve or a stroke or clot within the previous three months. In patients with atrial fibrillation, bridging during warfarin interruption did not reduce strokes or clots but doubled major bleeding in a large trial [2].
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 22.1.** Balancing bleeding and clotting risk when planning blood thinners around surgery.*
+_**Figure 22.1.** Balancing bleeding and clotting risk when planning blood thinners around surgery._
 
 <table>
 <colgroup>
@@ -65,17 +65,17 @@ Warfarin is usually stopped 5 days before surgery, with the INR checked the day 
 
 Apixaban, rivaroxaban, edoxaban, and dabigatran act quickly and wear off within days, so bridging is not needed. In the PAUSE study, a standardized plan without bridging, based on the bleeding risk of the procedure and kidney function, was associated with low rates of bleeding and stroke [3]. Table 22.2 summarizes the usual timings, and Figure 22.2 shows an example calendar that can be adapted for each patient.
 
-**Table 22.2.** *Usual timing for interrupting direct oral anticoagulants, based on the PAUSE study and the 2022 ACCP guideline.*
+**Table 22.2.** _Usual timing for interrupting direct oral anticoagulants, based on the PAUSE study and the 2022 ACCP guideline._
 
 | **Medicine**                            | **Low or moderate bleeding risk** | **High bleeding risk**     | **Restart**                                           |
-|-----------------------------------------|-----------------------------------|----------------------------|-------------------------------------------------------|
+| --------------------------------------- | --------------------------------- | -------------------------- | ----------------------------------------------------- |
 | **Apixaban, rivaroxaban, edoxaban**     | Omit 1 day before surgery         | Omit 2 days before surgery | 1 day after (low risk); 2 to 3 days after (high risk) |
 | **Dabigatran, kidney function normal**  | Omit 1 day before                 | Omit 2 days before         | As above                                              |
 | **Dabigatran, reduced kidney function** | Omit 2 days before                | Omit 4 days before         | As above                                              |
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 22.2.** An example calendar for pausing a direct oral anticoagulant, for use with patients.*
+_**Figure 22.2.** An example calendar for pausing a direct oral anticoagulant, for use with patients._
 
 ## 22.4 Antiplatelet medicines
 
@@ -151,10 +151,10 @@ Often yes, with your doses re-timed and, for warfarin, more blood tests. Not whi
 
 ## 22.7 Additional risks
 
-**Table 22.3.** *Additional risks for patients taking blood thinners. Square brackets mark figures to replace with unit data.*
+**Table 22.3.** _Additional risks for patients taking blood thinners. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                                | **Typical frequency**                               | **Example wording**                                                       |
-|----------------------|---------------------------------------------------------|-----------------------------------------------------|---------------------------------------------------------------------------|
+| **Band**             | **Risk**                                                | **Typical frequency**                             | **Example wording**                                                       |
+| -------------------- | ------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------------- |
 | **Less common**      | Bleeding needing transfusion or another procedure       | Depends on the operation and medicine [unit data] | “Your blood thinner increases bleeding, which is why we pause it.”        |
 | **Less common**      | Wound hematoma                                          | [unit data]                                       | “A collection of blood under the wound may need draining.”                |
 | **Rare but serious** | Stroke or clot while the medicine is paused             | [unit data]                                       | “Pausing your blood thinner slightly increases clot risk for a few days.” |
@@ -181,7 +181,7 @@ Often yes, with your doses re-timed and, for warfarin, more blood tests. Not whi
 
 ## 22.9 Warning signs
 
-**Table 22.4.** *Green, amber, and red warning signs for patients taking blood thinners.*
+**Table 22.4.** _Green, amber, and red warning signs for patients taking blood thinners._
 
 <table>
 <colgroup>
@@ -242,7 +242,7 @@ Often yes, with your doses re-timed and, for warfarin, more blood tests. Not whi
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Complete the plan with dates, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Complete the plan with dates, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -260,7 +260,7 @@ Often yes, with your doses re-timed and, for warfarin, more blood tests. Not whi
 **My blood thinner plan**
 
 |                              | **Details**                                              |
-|------------------------------|----------------------------------------------------------|
+| ---------------------------- | -------------------------------------------------------- |
 | **My blood thinner(s)**      |                                                          |
 | **Why I take it**            |                                                          |
 | **Operation date**           |                                                          |
@@ -296,7 +296,7 @@ Often yes, with your doses re-timed and, for warfarin, more blood tests. Not whi
 **Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                   | **What to do**                                           |
-|-----------|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | **GREEN** | Small bruises; slight oozing on the first day                                                                                         | This is normal. Restart on your planned date.            |
 | **AMBER** | A wound that keeps oozing; a growing swelling; nosebleeds; bleeding gums; blood in your urine                                         | Call us today.                                           |
 | **RED**   | Heavy bleeding that will not stop; black stools or vomiting blood; sudden weakness or speech problems; chest pain; a hot, swollen leg | Call an ambulance or go to the emergency department now. |
@@ -327,4 +327,4 @@ Often yes, with your doses re-timed and, for warfarin, more blood tests. Not whi
 
 5\. Horlocker TT, Vandermeuelen E, Kopp SL, et al. Regional anesthesia in the patient receiving antithrombotic or thrombolytic therapy: American Society of Regional Anesthesia and Pain Medicine evidence-based guidelines (fourth edition). Reg Anesth Pain Med. 2018;43(3):263-309.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._

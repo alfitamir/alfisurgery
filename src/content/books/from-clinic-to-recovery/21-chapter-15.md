@@ -23,10 +23,10 @@ Removal of lumps and skin lesions, treatment of ingrowing toenails, and drainage
 </tbody>
 </table>
 
-**Table 15.1.** *Common minor procedures at a glance.*
+**Table 15.1.** _Common minor procedures at a glance._
 
 | **Condition**                   | **Usual treatment**                                       | **Key counseling points**                       |
-|---------------------------------|-----------------------------------------------------------|-------------------------------------------------|
+| ------------------------------- | --------------------------------------------------------- | ----------------------------------------------- |
 | **Lipoma**                      | Excision if symptomatic, growing, or for cosmetic reasons | Benign; check red flags; may recur              |
 | **Epidermoid (sebaceous) cyst** | Excision when not inflamed; drainage first if infected    | Recurs if the wall is left behind               |
 | **Skin lesion**                 | Excision biopsy or referral, depending on suspicion       | The laboratory result decides further treatment |
@@ -43,9 +43,9 @@ The consent discussion for a minor procedure covers the same ground as for a lar
 
 Most subcutaneous lumps are lipomas or cysts, but a soft tissue sarcoma can look similar. An unexplained lump that is increasing in size should be imaged with urgent ultrasound, and features suggesting sarcoma need referral to a specialist service [1]. Lumps larger than 5 cm, deep to the muscle layer, growing, painful, or recurring after removal should not be shelled out in a minor procedures list (Figure 15.1). Pigmented lesions that are changing, irregular, bleeding, or new in an adult should be referred to dermatology or removed completely with a narrow margin; they should never be shaved or partly removed.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 15.1.** Red flags for lumps and skin lesions before a minor procedure.*
+_**Figure 15.1.** Red flags for lumps and skin lesions before a minor procedure._
 
 ## 15.3 Lipomas, cysts, and skin lesions
 
@@ -110,10 +110,10 @@ Incision and drainage is the main treatment for a skin abscess. Antibiotics are 
 
 Most wounds can be kept dry for 24 to 48 hours and then washed normally. Stitch removal depends on the site (Table 15.2). Scars are red and may be raised for some months before fading (Figure 15.2). Silicone gel or sheeting is recommended to help prevent abnormal scarring in patients at risk [5]. Keloids, raised scars that grow beyond the wound, are more common on the chest, shoulders, and earlobes and in people with darker skin; ask about previous keloids before operating on these sites.
 
-**Table 15.2.** *Typical stitch removal times by site.*
+**Table 15.2.** _Typical stitch removal times by site._
 
 | **Site**                       | **Stitches usually removed after** | **Notes**                                                 |
-|--------------------------------|------------------------------------|-----------------------------------------------------------|
+| ------------------------------ | ---------------------------------- | --------------------------------------------------------- |
 | **Face**                       | 5 to 7 days                        | Fine stitches; protect from the sun                       |
 | **Scalp and neck**             | 7 to 10 days                       |                                                           |
 | **Chest, back, and shoulders** | 10 to 14 days                      | Highest risk of wide or keloid scars                      |
@@ -121,9 +121,9 @@ Most wounds can be kept dry for 24 to 48 hours and then washed normally. Stitch 
 | **Hands and feet**             | 10 to 14 days                      | Elevate to reduce swelling                                |
 | **Toenail after phenol**       | No stitches                        | Daily soaks and dressings for 2 to 4 weeks while it heals |
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 15.2.** How a scar heals and how to look after it, for use with patients.*
+_**Figure 15.2.** How a scar heals and how to look after it, for use with patients._
 
 **STEP 3 Questions patients ask**
 
@@ -167,12 +167,12 @@ It might, especially on the chest, shoulders, or earlobes. Tell us before the pr
 
 ## 15.9 Material risks
 
-**Table 15.3.** *Material risks of minor procedures. Square brackets mark figures to replace with unit data.*
+**Table 15.3.** _Material risks of minor procedures. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                                                                                      | **Typical frequency**                                                   | **Example wording**                                                       |
-|----------------------|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| **Common**           | A scar, sometimes wider or more visible than expected                                                         | All patients                                                            | “Every cut leaves a scar.”                                                |
-| **Common**           | Bruising and swelling                                                                                         | Many patients                                                           | “Bruising is common and fades in 1 to 2 weeks.”                           |
+| **Band**             | **Risk**                                                                                                      | **Typical frequency**                                                 | **Example wording**                                                       |
+| -------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| **Common**           | A scar, sometimes wider or more visible than expected                                                         | All patients                                                          | “Every cut leaves a scar.”                                                |
+| **Common**           | Bruising and swelling                                                                                         | Many patients                                                         | “Bruising is common and fades in 1 to 2 weeks.”                           |
 | **Less common**      | Wound infection                                                                                               | [unit data]                                                           | “A few wounds become infected and need antibiotics.”                      |
 | **Less common**      | Recurrence of a cyst, lipoma, or ingrowing nail                                                               | [unit data]                                                           | “Sometimes the problem comes back.”                                       |
 | **Less common**      | Keloid or thick scar                                                                                          | More common in darker skin and on the chest and shoulders [unit data] | “Some people form thick, raised scars.”                                   |
@@ -201,7 +201,7 @@ It might, especially on the chest, shoulders, or earlobes. Tell us before the pr
 
 ## 15.11 Warning signs
 
-**Table 15.4.** *Green, amber, and red warning signs after a minor procedure.*
+**Table 15.4.** _Green, amber, and red warning signs after a minor procedure._
 
 <table>
 <colgroup>
@@ -263,7 +263,7 @@ It might, especially on the chest, shoulders, or earlobes. Tell us before the pr
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Tick the procedure, fill in the stitch removal date, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Tick the procedure, fill in the stitch removal date, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -319,7 +319,7 @@ It might, especially on the chest, shoulders, or earlobes. Tell us before the pr
 **4. Getting back to normal**
 
 | **Activity**              | **Usually from**                                              |
-|---------------------------|---------------------------------------------------------------|
+| ------------------------- | ------------------------------------------------------------- |
 | **Work or school**        | The same or next day                                          |
 | **Driving**               | The same day after small procedures; later after foot surgery |
 | **Exercise and swimming** | When the wound has healed, usually 1 to 2 weeks               |
@@ -332,7 +332,7 @@ It might, especially on the chest, shoulders, or earlobes. Tell us before the pr
 **6. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                         | **What to do**                             |
-|-----------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | **GREEN** | Mild soreness; bruising; a little redness at the edge of the wound                                                                          | This is normal. Keep following this guide. |
 | **AMBER** | Spreading redness, warmth, or pus; temperature of 38 °C or more; wound opening; thick, growing scar                                         | Call us today.                             |
 | **RED**   | Bleeding that does not stop after 15 minutes of firm pressure; spreading redness with fever; a toe or finger that turns pale, blue, or cold | Go to the emergency department now.        |
@@ -363,4 +363,4 @@ It might, especially on the chest, shoulders, or earlobes. Tell us before the pr
 
 5\. Gold MH, McGuire M, Mustoe TA, et al. Updated international clinical recommendations on scar management: part 2, algorithms for scar prevention and treatment. Dermatol Surg. 2014;40(8):825-831.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._

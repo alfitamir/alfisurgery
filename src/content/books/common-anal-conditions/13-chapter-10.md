@@ -1,29 +1,29 @@
 # Chapter 10 — Faecal Incontinence, Constipation, and Pelvic-Floor Disorders
 
-*Purpose: incontinence and constipation are common, under-reported, and often treatable — ask, exclude the dangerous causes, then treat in steps before anyone considers surgery.*
+_Purpose: incontinence and constipation are common, under-reported, and often treatable — ask, exclude the dangerous causes, then treat in steps before anyone considers surgery._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 10**
 >
 > - **Chapter colour palette:** Plum (#86198F) header bar, Lilac Mist (#FDF4FF) panels, Aubergine (#4A044E) text.
 > - **Hero graphic:** A “continence balance”: stool consistency, sphincters, rectal reservoir and sensation, nerves, and toilet access on one side; leakage on the other. Beneath it, a Bristol stool chart strip and a diagram of dyssynergia (puborectalis squeezing instead of relaxing during a push).
 > - **Icon set:** Bristol chart, balance scale, pelvic-floor muscle sling, biofeedback screen, pill bottle with magnifier (medication review), toilet with footstool, red spine (cauda equina).
-> - **Bedside aphorism banner:** *“Ask about leakage — patients rarely volunteer it. Firm stool and a trained pelvic floor fix more incontinence than surgery.”*
+> - **Bedside aphorism banner:** _“Ask about leakage — patients rarely volunteer it. Firm stool and a trained pelvic floor fix more incontinence than surgery.”_
 
 ## 1. Types of Faecal Incontinence
 
 **Table 10.1 — Faecal incontinence patterns**
 
-| Type | What the patient describes | Usual mechanism |
-|---|---|---|
-| Passive | Leakage without awareness | Internal sphincter weakness or scarring (prior sphincterotomy, anal stretch, haemorrhoidectomy), reduced sensation, neuropathy |
-| Urge | Sudden urgency; cannot reach the toilet | External sphincter or puborectalis injury (often obstetric), reduced rectal capacity (proctitis, radiation, after rectal resection), loose stool |
-| Mixed | Both of the above | Combined sphincter and stool problems — common in older women |
-| Overflow | Watery leakage, often with constipation | Faecal impaction (Chapter 06) |
-| Post-defecation seepage | Soiling after opening bowels despite wiping | Incomplete evacuation, rectocele, prolapse, large tags |
-| Post-obstetric | Onset after vaginal delivery, especially instrumental | Obstetric anal sphincter injury (OASIS) ± pudendal neuropathy |
-| Post-surgical or post-radiation | Onset after anal or rectal surgery or pelvic radiotherapy | Sphincter division; low anterior resection syndrome; radiation proctitis |
-| Neurological | Associated with spinal or neurological disease | Spinal cord injury, multiple sclerosis, diabetic neuropathy, **cauda equina syndrome** (emergency) |
-| Functional | Leakage because of immobility, dementia, or poor toilet access | Environment and cognition — toileting plans, not surgery |
+| Type                            | What the patient describes                                     | Usual mechanism                                                                                                                                  |
+| ------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Passive                         | Leakage without awareness                                      | Internal sphincter weakness or scarring (prior sphincterotomy, anal stretch, haemorrhoidectomy), reduced sensation, neuropathy                   |
+| Urge                            | Sudden urgency; cannot reach the toilet                        | External sphincter or puborectalis injury (often obstetric), reduced rectal capacity (proctitis, radiation, after rectal resection), loose stool |
+| Mixed                           | Both of the above                                              | Combined sphincter and stool problems — common in older women                                                                                    |
+| Overflow                        | Watery leakage, often with constipation                        | Faecal impaction (Chapter 06)                                                                                                                    |
+| Post-defecation seepage         | Soiling after opening bowels despite wiping                    | Incomplete evacuation, rectocele, prolapse, large tags                                                                                           |
+| Post-obstetric                  | Onset after vaginal delivery, especially instrumental          | Obstetric anal sphincter injury (OASIS) ± pudendal neuropathy                                                                                    |
+| Post-surgical or post-radiation | Onset after anal or rectal surgery or pelvic radiotherapy      | Sphincter division; low anterior resection syndrome; radiation proctitis                                                                         |
+| Neurological                    | Associated with spinal or neurological disease                 | Spinal cord injury, multiple sclerosis, diabetic neuropathy, **cauda equina syndrome** (emergency)                                               |
+| Functional                      | Leakage because of immobility, dementia, or poor toilet access | Environment and cognition — toileting plans, not surgery                                                                                         |
 
 ## 2. Assessment
 
@@ -41,36 +41,36 @@
 
 **Table 10.2 — Medication contributors**
 
-| Effect | Common culprits | Action |
-|---|---|---|
-| Loose stool, urgency, leakage | Metformin; antibiotics (and *C. difficile*); magnesium-containing antacids; laxative overuse; SSRIs; colchicine; orlistat (oily seepage); GLP-1 receptor agonists; mycophenolate; olmesartan (rare sprue-like enteropathy) | Review indication; consider dose change, modified-release metformin, or alternatives with the prescriber; test for *C. difficile* when appropriate |
-| Constipation and impaction (→ overflow) | Opioids; anticholinergics (oxybutynin, tricyclics, antihistamines); antipsychotics — **clozapine** (FDA 2020 warning of serious bowel complications); iron; calcium; aluminium antacids; verapamil; ondansetron | Deprescribe where possible; prescribe a laxative with every regular opioid; monitor bowel habit closely on clozapine |
+| Effect                                  | Common culprits                                                                                                                                                                                                            | Action                                                                                                                                             |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Loose stool, urgency, leakage           | Metformin; antibiotics (and _C. difficile_); magnesium-containing antacids; laxative overuse; SSRIs; colchicine; orlistat (oily seepage); GLP-1 receptor agonists; mycophenolate; olmesartan (rare sprue-like enteropathy) | Review indication; consider dose change, modified-release metformin, or alternatives with the prescriber; test for _C. difficile_ when appropriate |
+| Constipation and impaction (→ overflow) | Opioids; anticholinergics (oxybutynin, tricyclics, antihistamines); antipsychotics — **clozapine** (FDA 2020 warning of serious bowel complications); iron; calcium; aluminium antacids; verapamil; ondansetron            | Deprescribe where possible; prescribe a laxative with every regular opioid; monitor bowel habit closely on clozapine                               |
 
 ## 4. Stepped Conservative Management of Faecal Incontinence
 
 **Table 10.3 — Conservative measures**
 
-| Measure | How | Evidence |
-|---|---|---|
-| Normalise stool consistency | Fibre (psyllium) titration to form stool; **loperamide** for loose stool (start 2 mg, titrate; can be taken before outings) **once impaction and infection are excluded**; treat bile-acid diarrhoea if suspected | ASCRS 2023; ACG 2021 [S] |
-| Bowel habit training | Regular timed toilet visits (for example after meals); scheduled toileting in care homes | [C] |
-| Pelvic-floor muscle training and biofeedback | Supervised by a pelvic-floor physiotherapist or continence nurse; first-line when simple measures fail | ACG 2021 [S] |
-| Skin protection | Gentle cleansing with water or pH-balanced cleanser, pat dry; barrier cream (zinc oxide or dimethicone); avoid fragranced wipes | [C] |
-| Containment | Pads; anal plugs for selected patients | [C] |
-| Specialist options (after physiology) | Sphincteroplasty for an external sphincter defect (results often deteriorate over time), sacral neuromodulation, and other procedures | ASCRS 2023 |
+| Measure                                      | How                                                                                                                                                                                                               | Evidence                 |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| Normalise stool consistency                  | Fibre (psyllium) titration to form stool; **loperamide** for loose stool (start 2 mg, titrate; can be taken before outings) **once impaction and infection are excluded**; treat bile-acid diarrhoea if suspected | ASCRS 2023; ACG 2021 [S] |
+| Bowel habit training                         | Regular timed toilet visits (for example after meals); scheduled toileting in care homes                                                                                                                          | [C]                      |
+| Pelvic-floor muscle training and biofeedback | Supervised by a pelvic-floor physiotherapist or continence nurse; first-line when simple measures fail                                                                                                            | ACG 2021 [S]             |
+| Skin protection                              | Gentle cleansing with water or pH-balanced cleanser, pat dry; barrier cream (zinc oxide or dimethicone); avoid fragranced wipes                                                                                   | [C]                      |
+| Containment                                  | Pads; anal plugs for selected patients                                                                                                                                                                            | [C]                      |
+| Specialist options (after physiology)        | Sphincteroplasty for an external sphincter defect (results often deteriorate over time), sacral neuromodulation, and other procedures                                                                             | ASCRS 2023               |
 
 ## 5. When to Request Specialist Tests
 
 **Table 10.4 — Tests and their indications**
 
-| Test | Request when |
-|---|---|
+| Test                                            | Request when                                                                                                        |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Anorectal manometry with balloon expulsion test | Constipation with suspected dyssynergia; incontinence not responding to conservative care; before sphincter surgery |
-| Endoanal ultrasound | Suspected sphincter defect (OASIS, prior anal surgery, trauma) |
-| Defecography (MR or barium) | Obstructed defecation with suspected rectocele, intussusception, or prolapse not seen clinically |
-| Colonic transit study | Refractory constipation after dyssynergia has been excluded |
-| Colonoscopy | Alarm features (Chapter 08) |
-| MRI spine | Neurological symptoms or signs; **emergency** if cauda equina is suspected |
+| Endoanal ultrasound                             | Suspected sphincter defect (OASIS, prior anal surgery, trauma)                                                      |
+| Defecography (MR or barium)                     | Obstructed defecation with suspected rectocele, intussusception, or prolapse not seen clinically                    |
+| Colonic transit study                           | Refractory constipation after dyssynergia has been excluded                                                         |
+| Colonoscopy                                     | Alarm features (Chapter 08)                                                                                         |
+| MRI spine                                       | Neurological symptoms or signs; **emergency** if cauda equina is suspected                                          |
 
 ## 6. Chronic Constipation and Obstructed Defecation
 
@@ -128,33 +128,33 @@
 
 **Table 10.5 — Continence referral template**
 
-| Field | Record |
-|---|---|
-| Main problem | Incontinence / constipation / obstructed defecation / prolapse |
+| Field                          | Record                                                                                                                    |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| Main problem                   | Incontinence / constipation / obstructed defecation / prolapse                                                            |
 | Incontinence type and severity | Passive, urge, mixed, seepage; gas, liquid, solid; episodes per week; pads per day; validated score (Wexner or St Mark’s) |
-| Stool pattern | Bristol type; frequency; urgency; straining; digitation or splinting |
-| Duration and onset | Including relation to childbirth, surgery, radiotherapy, or new medication |
-| Obstetric history | Vaginal deliveries, instrumental delivery, known third- or fourth-degree tear |
-| Surgical and radiation history | Sphincterotomy, haemorrhoidectomy, fistula surgery, rectal resection, pelvic radiotherapy |
-| Neurological history | Diabetes, spinal disease, multiple sclerosis, Parkinson’s disease; red-flag screen negative or positive |
-| Medications | Including opioids, anticholinergics, metformin, clozapine, laxatives, and antidiarrhoeals |
-| Examination | Perineum, sensation, resting tone, squeeze, push manoeuvre, prolapse, rectocele, impaction |
-| Treatment so far | Fibre, loperamide, laxatives, physiotherapy or biofeedback — duration and response |
-| Investigations | Bloods, colonoscopy (date and result) |
-| Question for the specialist | For example: “Sphincter defect? Suitable for biofeedback or surgery?” |
+| Stool pattern                  | Bristol type; frequency; urgency; straining; digitation or splinting                                                      |
+| Duration and onset             | Including relation to childbirth, surgery, radiotherapy, or new medication                                                |
+| Obstetric history              | Vaginal deliveries, instrumental delivery, known third- or fourth-degree tear                                             |
+| Surgical and radiation history | Sphincterotomy, haemorrhoidectomy, fistula surgery, rectal resection, pelvic radiotherapy                                 |
+| Neurological history           | Diabetes, spinal disease, multiple sclerosis, Parkinson’s disease; red-flag screen negative or positive                   |
+| Medications                    | Including opioids, anticholinergics, metformin, clozapine, laxatives, and antidiarrhoeals                                 |
+| Examination                    | Perineum, sensation, resting tone, squeeze, push manoeuvre, prolapse, rectocele, impaction                                |
+| Treatment so far               | Fibre, loperamide, laxatives, physiotherapy or biofeedback — duration and response                                        |
+| Investigations                 | Bloods, colonoscopy (date and result)                                                                                     |
+| Question for the specialist    | For example: “Sphincter defect? Suitable for biofeedback or surgery?”                                                     |
 
 ## 9. Dangerous Mimics
 
 **Table 10.6 — Continence and constipation mimics**
 
-| Presentation | Hidden cause | Clue |
-|---|---|---|
-| “Diarrhoea” and leakage in an older patient | Overflow from impaction | Hard stool on DRE; opioids; immobility |
-| New faecal incontinence | Cauda equina syndrome | Back pain, saddle numbness, urinary retention, reduced anal tone |
-| Urgency, tenesmus, incomplete evacuation | Rectal cancer or proctitis | Bleeding, mucus, mass, weight loss |
-| “Haemorrhoids that come out” | Full-thickness rectal prolapse | Concentric folds; lax tone |
-| Rectal “ulcer” on endoscopy | SRUS versus cancer | Biopsy required |
-| Severe constipation on clozapine | Clozapine-induced hypomotility | Abdominal pain, distension, vomiting — potentially fatal ileus |
+| Presentation                                | Hidden cause                   | Clue                                                             |
+| ------------------------------------------- | ------------------------------ | ---------------------------------------------------------------- |
+| “Diarrhoea” and leakage in an older patient | Overflow from impaction        | Hard stool on DRE; opioids; immobility                           |
+| New faecal incontinence                     | Cauda equina syndrome          | Back pain, saddle numbness, urinary retention, reduced anal tone |
+| Urgency, tenesmus, incomplete evacuation    | Rectal cancer or proctitis     | Bleeding, mucus, mass, weight loss                               |
+| “Haemorrhoids that come out”                | Full-thickness rectal prolapse | Concentric folds; lax tone                                       |
+| Rectal “ulcer” on endoscopy                 | SRUS versus cancer             | Biopsy required                                                  |
+| Severe constipation on clozapine            | Clozapine-induced hypomotility | Abdominal pain, distension, vomiting — potentially fatal ileus   |
 
 ## 10. Role-Targeted Action Boxes
 
@@ -178,7 +178,7 @@
 
 > **💊 CROSS-SPECIALTY PRESCRIBING TRAP**
 >
-> - **Loperamide** in overflow, *C. difficile*, or dysentery can be dangerous — examine and test first.
+> - **Loperamide** in overflow, _C. difficile_, or dysentery can be dangerous — examine and test first.
 > - **Stimulant laxatives in suspected bowel obstruction** can cause perforation.
 > - **Magnesium-containing laxatives in renal impairment** risk hypermagnesaemia; **sodium phosphate enemas** in high-risk patients (Chapter 06).
 > - **Anticholinergic burden in older adults** worsens constipation and cognition.
@@ -197,12 +197,12 @@
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 EMERGENCY | Suspected cauda equina syndrome; bowel obstruction or perforation; severe constipation with abdominal pain on clozapine | Emergency MRI and spinal team; on-call surgeon |
-| 🔴 SAME-DAY | Impaction with vomiting or distension; combined acute urinary and faecal retention | Medical or surgical review the same day |
-| 🟡 URGENT | Alarm features (Chapter 08); new postpartum incontinence after OASIS | Colon evaluation; perineal or specialist clinic within weeks |
-| 🟢 ROUTINE | Chronic incontinence or constipation not improving after steps 1–2; suspected dyssynergia; rectal prolapse without incarceration | Colorectal or pelvic-floor service |
+| Urgency      | Clinical trigger                                                                                                                 | Who and how fast                                             |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| 🔴 EMERGENCY | Suspected cauda equina syndrome; bowel obstruction or perforation; severe constipation with abdominal pain on clozapine          | Emergency MRI and spinal team; on-call surgeon               |
+| 🔴 SAME-DAY  | Impaction with vomiting or distension; combined acute urinary and faecal retention                                               | Medical or surgical review the same day                      |
+| 🟡 URGENT    | Alarm features (Chapter 08); new postpartum incontinence after OASIS                                                             | Colon evaluation; perineal or specialist clinic within weeks |
+| 🟢 ROUTINE   | Chronic incontinence or constipation not improving after steps 1–2; suspected dyssynergia; rectal prolapse without incarceration | Colorectal or pelvic-floor service                           |
 
 ## The Patient in Front of You — Chapter 10 Mini-Case
 

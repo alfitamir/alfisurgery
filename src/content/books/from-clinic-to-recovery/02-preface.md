@@ -10,6 +10,6 @@ Part I sets out the foundations: how to run a consultation and obtain valid cons
 
 The book is written in plain English for clinicians who work in busy outpatient clinics and wards. It draws on international surgical guidance and on the daily realities of a hospital in the Arabian Gulf, where families are closely involved in care and where questions about fasting, prayer, travel, and modesty are a normal part of counseling. Questions like these arise, in different forms, in every setting. I hope this book helps readers anywhere to explain surgery clearly, to answer patients’ questions with confidence, and to send every patient home safe and informed.
 
-*Tamer Rushdy Elalfy*
+_Tamer Rushdy Elalfy_
 
-*Al Khobar, 2026*
+_Al Khobar, 2026_

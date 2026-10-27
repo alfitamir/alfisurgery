@@ -2,7 +2,6 @@
 
 Copyright © 2026 Tamer Rushdy Elalfy. All rights reserved.
 
-
 The patient education guides and the personal instruction card in this book may be photocopied for use with patients in clinical practice.
 
 ### Medical disclaimer

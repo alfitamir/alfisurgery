@@ -91,9 +91,7 @@ export default defineTool({
       })
       .map((p) => {
         const hay = lc(`${p.title} ${p.abstract} ${p.authors} ${p.journal}`);
-        const score = terms.length
-          ? terms.reduce((s, t) => s + (hay.includes(t) ? 1 : 0), 0)
-          : 1;
+        const score = terms.length ? terms.reduce((s, t) => s + (hay.includes(t) ? 1 : 0), 0) : 1;
         return { p, score };
       })
       .filter((r) => r.score > 0)

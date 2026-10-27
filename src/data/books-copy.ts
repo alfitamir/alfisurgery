@@ -31,7 +31,8 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
     intro: "كتب سريرية للأطباء وطاقم التمريض، تُقرأ مجانًا على هذا الموقع.",
     audience: "للمختصين في الرعاية الصحية",
     originalLanguage: "الكتاب باللغة الإنجليزية",
-    notice: "هذا الكتاب متاح حاليًا بنسخته الإنجليزية الأصلية فقط. وهو موجّه للمختصين في الرعاية الصحية؛ وعلى المرضى اتباع تعليمات الفريق المعالج.",
+    notice:
+      "هذا الكتاب متاح حاليًا بنسخته الإنجليزية الأصلية فقط. وهو موجّه للمختصين في الرعاية الصحية؛ وعلى المرضى اتباع تعليمات الفريق المعالج.",
     openAccess: "مفتوح الوصول · مجاني",
     freeToRead: "مجاني للقراءة على الموقع",
     read: "اقرأ الكتاب",
@@ -48,8 +49,10 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
     minutes: (n) => `${n} دقيقة قراءة`,
     counts: (c, a) => `${c} فصلًا · ${a} ملاحق`,
     descriptions: {
-      "common-anal-conditions": "دليل عملي قائم على خوارزميات القرار حول البواسير والشرخ والخراج والناسور ونزيف المستقيم وعلامات الخطر والإحالة الآمنة، موجّه لأطباء الطوارئ وطب الأسرة والتخصصات غير الجراحية وطاقم التمريض.",
-      "from-clinic-to-recovery": "دليل عملي للجراحين والأطباء المقيمين وطاقم التمريض حول الاستشارة الجراحية والموافقة المستنيرة والتعافي المعزز، مع أدلة للمرضى لعمليات الجراحة العامة الشائعة.",
+      "common-anal-conditions":
+        "دليل عملي قائم على خوارزميات القرار حول البواسير والشرخ والخراج والناسور ونزيف المستقيم وعلامات الخطر والإحالة الآمنة، موجّه لأطباء الطوارئ وطب الأسرة والتخصصات غير الجراحية وطاقم التمريض.",
+      "from-clinic-to-recovery":
+        "دليل عملي للجراحين والأطباء المقيمين وطاقم التمريض حول الاستشارة الجراحية والموافقة المستنيرة والتعافي المعزز، مع أدلة للمرضى لعمليات الجراحة العامة الشائعة.",
     },
   },
   en: {
@@ -57,7 +60,8 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
     intro: "Clinical books for doctors and nurses — free to read on this site.",
     audience: "For healthcare professionals",
     originalLanguage: "Written in English",
-    notice: "Written for healthcare professionals. Patients should follow the advice of their treating team.",
+    notice:
+      "Written for healthcare professionals. Patients should follow the advice of their treating team.",
     openAccess: "Open access · Free",
     freeToRead: "Free to read on this site",
     read: "Read the book",
@@ -74,8 +78,10 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
     minutes: (n) => `${n} min read`,
     counts: (c, a) => `${c} chapters · ${a} appendices`,
     descriptions: {
-      "common-anal-conditions": "A practical, algorithm-based handbook on haemorrhoids, fissures, abscesses and fistulas, rectal bleeding, red flags and safe referral — written for emergency physicians, GPs, medical specialists and nurses.",
-      "from-clinic-to-recovery": "A practical guide for surgeons, residents and nurses on the surgical consultation, informed consent and enhanced recovery, with patient guides for common general surgery operations.",
+      "common-anal-conditions":
+        "A practical, algorithm-based handbook on haemorrhoids, fissures, abscesses and fistulas, rectal bleeding, red flags and safe referral — written for emergency physicians, GPs, medical specialists and nurses.",
+      "from-clinic-to-recovery":
+        "A practical guide for surgeons, residents and nurses on the surgical consultation, informed consent and enhanced recovery, with patient guides for common general surgery operations.",
     },
   },
   ur: {
@@ -83,7 +89,8 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
     intro: "ڈاکٹروں اور نرسوں کے لیے طبی کتابیں — اس سائٹ پر مفت پڑھیں۔",
     audience: "طبی ماہرین کے لیے",
     originalLanguage: "یہ کتاب انگریزی میں ہے",
-    notice: "یہ کتاب فی الحال صرف اپنے اصل انگریزی ایڈیشن میں دستیاب ہے۔ یہ طبی ماہرین کے لیے لکھی گئی ہے؛ مریض اپنی علاج کرنے والی ٹیم کی ہدایات پر عمل کریں۔",
+    notice:
+      "یہ کتاب فی الحال صرف اپنے اصل انگریزی ایڈیشن میں دستیاب ہے۔ یہ طبی ماہرین کے لیے لکھی گئی ہے؛ مریض اپنی علاج کرنے والی ٹیم کی ہدایات پر عمل کریں۔",
     openAccess: "کھلی رسائی · مفت",
     freeToRead: "اس سائٹ پر مفت پڑھیں",
     read: "کتاب پڑھیں",
@@ -100,8 +107,10 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
     minutes: (n) => `${n} منٹ مطالعہ`,
     counts: (c, a) => `${c} ابواب · ${a} ضمیمے`,
     descriptions: {
-      "common-anal-conditions": "بواسیر، فشر، پھوڑے اور بھگندر، مقعد سے خون آنا، خطرے کی علامات اور محفوظ ریفرل پر الگورتھم پر مبنی عملی رہنما کتاب — ایمرجنسی ڈاکٹروں، فیملی ڈاکٹروں، غیر جراحی ماہرین اور نرسوں کے لیے۔",
-      "from-clinic-to-recovery": "سرجنوں، ریزیڈنٹ ڈاکٹروں اور نرسوں کے لیے سرجیکل مشاورت، باخبر رضامندی اور بہتر صحت یابی پر عملی رہنما، عام جنرل سرجری آپریشنز کے لیے مریضوں کی رہنمائی کے ساتھ۔",
+      "common-anal-conditions":
+        "بواسیر، فشر، پھوڑے اور بھگندر، مقعد سے خون آنا، خطرے کی علامات اور محفوظ ریفرل پر الگورتھم پر مبنی عملی رہنما کتاب — ایمرجنسی ڈاکٹروں، فیملی ڈاکٹروں، غیر جراحی ماہرین اور نرسوں کے لیے۔",
+      "from-clinic-to-recovery":
+        "سرجنوں، ریزیڈنٹ ڈاکٹروں اور نرسوں کے لیے سرجیکل مشاورت، باخبر رضامندی اور بہتر صحت یابی پر عملی رہنما، عام جنرل سرجری آپریشنز کے لیے مریضوں کی رہنمائی کے ساتھ۔",
     },
   },
   hi: {
@@ -109,7 +118,8 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
     intro: "डॉक्टरों और नर्सों के लिए क्लिनिकल पुस्तकें — इस साइट पर निःशुल्क पढ़ें।",
     audience: "स्वास्थ्य पेशेवरों के लिए",
     originalLanguage: "यह पुस्तक अंग्रेज़ी में है",
-    notice: "यह पुस्तक अभी केवल अपने मूल अंग्रेज़ी संस्करण में उपलब्ध है। यह स्वास्थ्य पेशेवरों के लिए लिखी गई है; मरीज़ अपनी उपचार टीम की सलाह का पालन करें।",
+    notice:
+      "यह पुस्तक अभी केवल अपने मूल अंग्रेज़ी संस्करण में उपलब्ध है। यह स्वास्थ्य पेशेवरों के लिए लिखी गई है; मरीज़ अपनी उपचार टीम की सलाह का पालन करें।",
     openAccess: "ओपन एक्सेस · निःशुल्क",
     freeToRead: "इस साइट पर निःशुल्क पढ़ें",
     read: "पुस्तक पढ़ें",
@@ -126,8 +136,10 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
     minutes: (n) => `${n} मिनट का पाठ`,
     counts: (c, a) => `${c} अध्याय · ${a} परिशिष्ट`,
     descriptions: {
-      "common-anal-conditions": "बवासीर, फ़िशर, फोड़ा और भगंदर, मलाशय से रक्तस्राव, ख़तरे के संकेत और सुरक्षित रेफ़रल पर एल्गोरिदम-आधारित व्यावहारिक पुस्तिका — आपातकालीन चिकित्सकों, पारिवारिक चिकित्सकों, गैर-शल्य विशेषज्ञों और नर्सों के लिए।",
-      "from-clinic-to-recovery": "सर्जनों, रेज़िडेंट डॉक्टरों और नर्सों के लिए सर्जिकल परामर्श, सूचित सहमति और बेहतर रिकवरी पर व्यावहारिक मार्गदर्शिका, सामान्य जनरल सर्जरी ऑपरेशनों के लिए मरीज़ गाइड सहित।",
+      "common-anal-conditions":
+        "बवासीर, फ़िशर, फोड़ा और भगंदर, मलाशय से रक्तस्राव, ख़तरे के संकेत और सुरक्षित रेफ़रल पर एल्गोरिदम-आधारित व्यावहारिक पुस्तिका — आपातकालीन चिकित्सकों, पारिवारिक चिकित्सकों, गैर-शल्य विशेषज्ञों और नर्सों के लिए।",
+      "from-clinic-to-recovery":
+        "सर्जनों, रेज़िडेंट डॉक्टरों और नर्सों के लिए सर्जिकल परामर्श, सूचित सहमति और बेहतर रिकवरी पर व्यावहारिक मार्गदर्शिका, सामान्य जनरल सर्जरी ऑपरेशनों के लिए मरीज़ गाइड सहित।",
     },
   },
   bn: {
@@ -135,7 +147,8 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
     intro: "চিকিৎসক ও নার্সদের জন্য ক্লিনিক্যাল বই — এই সাইটে বিনামূল্যে পড়ুন।",
     audience: "স্বাস্থ্যসেবা পেশাজীবীদের জন্য",
     originalLanguage: "বইটি ইংরেজিতে লেখা",
-    notice: "বইটি বর্তমানে কেবল মূল ইংরেজি সংস্করণে পাওয়া যায়। এটি স্বাস্থ্যসেবা পেশাজীবীদের জন্য লেখা; রোগীরা তাঁদের চিকিৎসক দলের পরামর্শ মেনে চলবেন।",
+    notice:
+      "বইটি বর্তমানে কেবল মূল ইংরেজি সংস্করণে পাওয়া যায়। এটি স্বাস্থ্যসেবা পেশাজীবীদের জন্য লেখা; রোগীরা তাঁদের চিকিৎসক দলের পরামর্শ মেনে চলবেন।",
     openAccess: "উন্মুক্ত প্রবেশাধিকার · বিনামূল্যে",
     freeToRead: "এই সাইটে বিনামূল্যে পড়ুন",
     read: "বইটি পড়ুন",
@@ -152,8 +165,10 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
     minutes: (n) => `${n} মিনিটের পাঠ`,
     counts: (c, a) => `${c}টি অধ্যায় · ${a}টি পরিশিষ্ট`,
     descriptions: {
-      "common-anal-conditions": "অর্শ, ফিশার, ফোড়া ও ভগন্দর, মলদ্বার দিয়ে রক্তপাত, বিপদসংকেত ও নিরাপদ রেফারাল নিয়ে অ্যালগরিদমভিত্তিক ব্যবহারিক হ্যান্ডবুক — জরুরি বিভাগের চিকিৎসক, পারিবারিক চিকিৎসক, অ-শল্য বিশেষজ্ঞ ও নার্সদের জন্য।",
-      "from-clinic-to-recovery": "সার্জন, রেসিডেন্ট চিকিৎসক ও নার্সদের জন্য অস্ত্রোপচার-পূর্ব পরামর্শ, অবহিত সম্মতি ও উন্নত আরোগ্য বিষয়ে ব্যবহারিক নির্দেশিকা, সাধারণ জেনারেল সার্জারির রোগী-নির্দেশিকাসহ।",
+      "common-anal-conditions":
+        "অর্শ, ফিশার, ফোড়া ও ভগন্দর, মলদ্বার দিয়ে রক্তপাত, বিপদসংকেত ও নিরাপদ রেফারাল নিয়ে অ্যালগরিদমভিত্তিক ব্যবহারিক হ্যান্ডবুক — জরুরি বিভাগের চিকিৎসক, পারিবারিক চিকিৎসক, অ-শল্য বিশেষজ্ঞ ও নার্সদের জন্য।",
+      "from-clinic-to-recovery":
+        "সার্জন, রেসিডেন্ট চিকিৎসক ও নার্সদের জন্য অস্ত্রোপচার-পূর্ব পরামর্শ, অবহিত সম্মতি ও উন্নত আরোগ্য বিষয়ে ব্যবহারিক নির্দেশিকা, সাধারণ জেনারেল সার্জারির রোগী-নির্দেশিকাসহ।",
     },
   },
   tl: {
@@ -161,7 +176,8 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
     intro: "Mga klinikal na aklat para sa mga doktor at nars — libreng basahin sa site na ito.",
     audience: "Para sa mga propesyonal sa kalusugan",
     originalLanguage: "Nakasulat sa Ingles",
-    notice: "Sa ngayon, ang aklat na ito ay makukuha lamang sa orihinal nitong edisyong Ingles. Isinulat ito para sa mga propesyonal sa kalusugan; dapat sundin ng mga pasyente ang payo ng kanilang gumagamot na koponan.",
+    notice:
+      "Sa ngayon, ang aklat na ito ay makukuha lamang sa orihinal nitong edisyong Ingles. Isinulat ito para sa mga propesyonal sa kalusugan; dapat sundin ng mga pasyente ang payo ng kanilang gumagamot na koponan.",
     openAccess: "Open access · Libre",
     freeToRead: "Libreng basahin sa site na ito",
     read: "Basahin ang aklat",
@@ -178,16 +194,20 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
     minutes: (n) => `${n} minutong pagbasa`,
     counts: (c, a) => `${c} kabanata · ${a} apendiks`,
     descriptions: {
-      "common-anal-conditions": "Isang praktikal na handbook na batay sa algorithm tungkol sa almoranas, fissure, abscess at fistula, pagdurugo mula sa tumbong, mga babalang palatandaan at ligtas na pag-refer — para sa mga doktor sa emergency, GP, medical specialist at nars.",
-      "from-clinic-to-recovery": "Praktikal na gabay para sa mga siruhano, residente at nars tungkol sa konsultasyong pang-operasyon, may-kaalamang pahintulot at pinahusay na paggaling, kasama ang mga gabay ng pasyente para sa karaniwang operasyon sa general surgery.",
+      "common-anal-conditions":
+        "Isang praktikal na handbook na batay sa algorithm tungkol sa almoranas, fissure, abscess at fistula, pagdurugo mula sa tumbong, mga babalang palatandaan at ligtas na pag-refer — para sa mga doktor sa emergency, GP, medical specialist at nars.",
+      "from-clinic-to-recovery":
+        "Praktikal na gabay para sa mga siruhano, residente at nars tungkol sa konsultasyong pang-operasyon, may-kaalamang pahintulot at pinahusay na paggaling, kasama ang mga gabay ng pasyente para sa karaniwang operasyon sa general surgery.",
     },
   },
   ta: {
     title: "எனது நூல்கள்",
-    intro: "மருத்துவர்கள் மற்றும் செவிலியர்களுக்கான மருத்துவ நூல்கள் — இந்தத் தளத்தில் இலவசமாகப் படிக்கலாம்.",
+    intro:
+      "மருத்துவர்கள் மற்றும் செவிலியர்களுக்கான மருத்துவ நூல்கள் — இந்தத் தளத்தில் இலவசமாகப் படிக்கலாம்.",
     audience: "சுகாதாரத் தொழில் வல்லுநர்களுக்கு",
     originalLanguage: "இந்நூல் ஆங்கிலத்தில் உள்ளது",
-    notice: "இந்நூல் தற்போது அதன் மூல ஆங்கிலப் பதிப்பில் மட்டுமே கிடைக்கிறது. இது சுகாதாரத் தொழில் வல்லுநர்களுக்காக எழுதப்பட்டது; நோயாளிகள் தங்களுக்குச் சிகிச்சை அளிக்கும் மருத்துவக் குழுவின் அறிவுரையைப் பின்பற்ற வேண்டும்.",
+    notice:
+      "இந்நூல் தற்போது அதன் மூல ஆங்கிலப் பதிப்பில் மட்டுமே கிடைக்கிறது. இது சுகாதாரத் தொழில் வல்லுநர்களுக்காக எழுதப்பட்டது; நோயாளிகள் தங்களுக்குச் சிகிச்சை அளிக்கும் மருத்துவக் குழுவின் அறிவுரையைப் பின்பற்ற வேண்டும்.",
     openAccess: "திறந்த அணுகல் · இலவசம்",
     freeToRead: "இத்தளத்தில் இலவசமாகப் படிக்கலாம்",
     read: "நூலைப் படிக்கவும்",
@@ -204,8 +224,10 @@ export const booksCopy: Record<SiteLanguage, BooksCopy> = {
     minutes: (n) => `${n} நிமிட வாசிப்பு`,
     counts: (c, a) => `${c} அத்தியாயங்கள் · ${a} பின்னிணைப்புகள்`,
     descriptions: {
-      "common-anal-conditions": "மூலம், குதப் பிளவு, சீழ்க்கட்டி மற்றும் பவுத்திரம், மலக்குடல் இரத்தப்போக்கு, அபாய அறிகுறிகள் மற்றும் பாதுகாப்பான பரிந்துரை குறித்த அல்காரிதம் அடிப்படையிலான நடைமுறைக் கையேடு — அவசர சிகிச்சை மருத்துவர்கள், குடும்ப மருத்துவர்கள், அறுவை அல்லாத சிறப்பு மருத்துவர்கள் மற்றும் செவிலியர்களுக்கு.",
-      "from-clinic-to-recovery": "அறுவை சிகிச்சை நிபுணர்கள், பயிற்சி மருத்துவர்கள் மற்றும் செவிலியர்களுக்கான அறுவை ஆலோசனை, தகவலறிந்த ஒப்புதல் மற்றும் மேம்பட்ட மீட்சி குறித்த நடைமுறை வழிகாட்டி; பொதுவான பொது அறுவை சிகிச்சைகளுக்கான நோயாளி வழிகாட்டிகளுடன்.",
+      "common-anal-conditions":
+        "மூலம், குதப் பிளவு, சீழ்க்கட்டி மற்றும் பவுத்திரம், மலக்குடல் இரத்தப்போக்கு, அபாய அறிகுறிகள் மற்றும் பாதுகாப்பான பரிந்துரை குறித்த அல்காரிதம் அடிப்படையிலான நடைமுறைக் கையேடு — அவசர சிகிச்சை மருத்துவர்கள், குடும்ப மருத்துவர்கள், அறுவை அல்லாத சிறப்பு மருத்துவர்கள் மற்றும் செவிலியர்களுக்கு.",
+      "from-clinic-to-recovery":
+        "அறுவை சிகிச்சை நிபுணர்கள், பயிற்சி மருத்துவர்கள் மற்றும் செவிலியர்களுக்கான அறுவை ஆலோசனை, தகவலறிந்த ஒப்புதல் மற்றும் மேம்பட்ட மீட்சி குறித்த நடைமுறை வழிகாட்டி; பொதுவான பொது அறுவை சிகிச்சைகளுக்கான நோயாளி வழிகாட்டிகளுடன்.",
     },
   },
 };

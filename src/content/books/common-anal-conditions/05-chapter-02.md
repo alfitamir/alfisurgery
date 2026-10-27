@@ -1,29 +1,29 @@
 # Chapter 02 — Before You Assume Haemorrhoids — The Differential and the Look-Alikes
 
-*Purpose: patients call every anorectal symptom “piles” — this chapter gives you a 60-second method to confirm the diagnosis before you write the prescription.*
+_Purpose: patients call every anorectal symptom “piles” — this chapter gives you a 60-second method to confirm the diagnosis before you write the prescription._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 02**
 >
 > - **Chapter colour palette:** Deep Indigo (#312E81) header bar, Lavender-Ice (#EEF2FF) panels, crimson and emerald comparison badges.
 > - **Hero graphic:** Two split-screen panels: (1) thrombosed external haemorrhoid (tense, bluish, discrete, afebrile patient) versus perianal abscess (red, warm, indurated, febrile patient); (2) full-thickness rectal prolapse with concentric rings versus prolapsed internal haemorrhoids with radial grooves.
 > - **Icon set:** Magnifying glass (look first), thermometer (fever = pus until proven otherwise), target (concentric rings), flower (radial grooves), sugar packet (osmotic reduction), stop sign over black mucosa.
-> - **Bedside aphorism banner:** *“Abscess → drain it. Thrombosed haemorrhoid → remove the clot. Never confuse them.”*
+> - **Bedside aphorism banner:** _“Abscess → drain it. Thrombosed haemorrhoid → remove the clot. Never confuse them.”_
 
 ## 1. The Master Symptom Matrix — Bleeding, Pain, Lump, or Fever?
 
 **Table 2.1 — Symptom matrix**
 
-| Condition | Bleed | Pain | Lump | Fever | Key clinical clue |
-|---|---|---|---|---|---|
-| Internal haemorrhoids | ++ | – | + | – | 🟢 Painless bright-red bleeding (on paper or dripping) ± reducible prolapse. Pain suggests thrombosis, strangulation, or another diagnosis (ASCRS 2024; AGA 2026). |
-| Thrombosed external haemorrhoid | + (if ulcerated) | ++ | ++ | – | 🟡 Sudden (hours), tense, bluish, exquisitely tender lump at the verge in a well, afebrile patient. |
-| Anal fissure | + (on paper) | ++ | ± (tag) | – | 🟢 Tearing pain with stool, then an after-ache lasting minutes to hours (ASCRS 2023). |
-| Perianal abscess | – | ++ | ++ (may be absent if deep) | ++ | 🔴 Constant, worsening, throbbing pain over days ± fever; **fluctuance may be absent** (ASCRS 2022). |
-| Fistula-in-ano | ± | ± | + (opening) | – | 🟡 Recurrent discharge from a small opening near the anus, often after a previous abscess. |
-| Full-thickness rectal prolapse | + | ± | ++ | – | 🟡 Concentric rings, mucus, soiling, lax sphincter. |
-| Anal squamous cell carcinoma | + | ± | ++ (indurated) | – | 🔴 Firm, ulcerated, or non-healing lesion; inguinal nodes (Chapter 07). |
-| Rectal or colorectal cancer | ++ (dark or mixed) | ± | ± (on DRE) | – | 🔴 Altered bowel habit, tenesmus, iron-deficiency anaemia, weight loss (Chapter 08). |
-| Infectious (STI) proctitis | + | + | – | ± | 🟡 Tenesmus, mucopurulent discharge, receptive anal sex (Chapter 11). |
+| Condition                       | Bleed              | Pain | Lump                       | Fever | Key clinical clue                                                                                                                                                  |
+| ------------------------------- | ------------------ | ---- | -------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Internal haemorrhoids           | ++                 | –    | +                          | –     | 🟢 Painless bright-red bleeding (on paper or dripping) ± reducible prolapse. Pain suggests thrombosis, strangulation, or another diagnosis (ASCRS 2024; AGA 2026). |
+| Thrombosed external haemorrhoid | + (if ulcerated)   | ++   | ++                         | –     | 🟡 Sudden (hours), tense, bluish, exquisitely tender lump at the verge in a well, afebrile patient.                                                                |
+| Anal fissure                    | + (on paper)       | ++   | ± (tag)                    | –     | 🟢 Tearing pain with stool, then an after-ache lasting minutes to hours (ASCRS 2023).                                                                              |
+| Perianal abscess                | –                  | ++   | ++ (may be absent if deep) | ++    | 🔴 Constant, worsening, throbbing pain over days ± fever; **fluctuance may be absent** (ASCRS 2022).                                                               |
+| Fistula-in-ano                  | ±                  | ±    | + (opening)                | –     | 🟡 Recurrent discharge from a small opening near the anus, often after a previous abscess.                                                                         |
+| Full-thickness rectal prolapse  | +                  | ±    | ++                         | –     | 🟡 Concentric rings, mucus, soiling, lax sphincter.                                                                                                                |
+| Anal squamous cell carcinoma    | +                  | ±    | ++ (indurated)             | –     | 🔴 Firm, ulcerated, or non-healing lesion; inguinal nodes (Chapter 07).                                                                                            |
+| Rectal or colorectal cancer     | ++ (dark or mixed) | ±    | ± (on DRE)                 | –     | 🔴 Altered bowel habit, tenesmus, iron-deficiency anaemia, weight loss (Chapter 08).                                                                               |
+| Infectious (STI) proctitis      | +                  | +    | –                          | ±     | 🟡 Tenesmus, mucopurulent discharge, receptive anal sex (Chapter 11).                                                                                              |
 
 <small>Legend: ++ typical · + sometimes · ± variable · – unusual (if present, rethink the diagnosis).</small>
 
@@ -33,12 +33,12 @@ Treating an abscess with sitz baths and ointment lets sepsis spread through the 
 
 **Table 2.2 — Thrombosed external haemorrhoid versus perianal abscess**
 
-| Feature | Thrombosed external haemorrhoid | Perianal abscess |
-|---|---|---|
-| Onset and course | Sudden (hours), often after straining, heavy lifting, or prolonged sitting; pain peaks at 24–48 h and usually eases after about 72 h. | Gradual over 2–5 days; constant, throbbing, steadily worsening pain. |
-| Inspection and palpation | Discrete, tense, bluish-purple nodule at the verge, covered by anoderm. | Ill-defined red, warm, indurated swelling. **Fluctuance is often absent** in deep ischioanal or intersphincteric sepsis. |
-| Systemic signs | 🟢 Afebrile, systemically well. | 🔴 Fever, rigors, malaise, tachycardia, raised white cell count. |
-| Definitive action | 🟡 **Early (< 72 h) with severe pain:** remove the thrombosed vessel and clot under local anaesthetic. ASCRS 2024 suggests early **excision** for selected patients; the AGA 2026 expert review advises **incision and drainage** — the guidelines differ [U]. Whichever is used, the whole clot must be removed.<br>🟢 **> 72 h or improving:** analgesia, stool softener, warm sitz baths. | 🔴 **Same-day incision and drainage** close to the anal verge (ASCRS 2022). **Never** discharge on antibiotics alone to “see if it points”. |
+| Feature                  | Thrombosed external haemorrhoid                                                                                                                                                                                                                                                                                                                                                              | Perianal abscess                                                                                                                            |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Onset and course         | Sudden (hours), often after straining, heavy lifting, or prolonged sitting; pain peaks at 24–48 h and usually eases after about 72 h.                                                                                                                                                                                                                                                        | Gradual over 2–5 days; constant, throbbing, steadily worsening pain.                                                                        |
+| Inspection and palpation | Discrete, tense, bluish-purple nodule at the verge, covered by anoderm.                                                                                                                                                                                                                                                                                                                      | Ill-defined red, warm, indurated swelling. **Fluctuance is often absent** in deep ischioanal or intersphincteric sepsis.                    |
+| Systemic signs           | 🟢 Afebrile, systemically well.                                                                                                                                                                                                                                                                                                                                                              | 🔴 Fever, rigors, malaise, tachycardia, raised white cell count.                                                                            |
+| Definitive action        | 🟡 **Early (< 72 h) with severe pain:** remove the thrombosed vessel and clot under local anaesthetic. ASCRS 2024 suggests early **excision** for selected patients; the AGA 2026 expert review advises **incision and drainage** — the guidelines differ [U]. Whichever is used, the whole clot must be removed.<br>🟢 **> 72 h or improving:** analgesia, stool softener, warm sitz baths. | 🔴 **Same-day incision and drainage** close to the anal verge (ASCRS 2022). **Never** discharge on antibiotics alone to “see if it points”. |
 
 ## 3. Look-Alike Showdown 2: Full-Thickness Rectal Prolapse Versus Prolapsed Internal Haemorrhoids
 
@@ -46,11 +46,11 @@ When a patient arrives with “a large red mass coming out of the bottom”, che
 
 **Table 2.3 — Rectal prolapse versus prolapsed haemorrhoids**
 
-| Feature | Full-thickness rectal prolapse | Prolapsed internal haemorrhoids (grade III–IV) |
-|---|---|---|
-| Fold pattern | 🎯 **Concentric rings** — circular folds stacked like a telescope. | 🌸 **Radial grooves** — clefts between discrete cushions, like flower petals. |
-| Shape and lumen | Tubular protrusion, often several centimetres long, with a central lumen at the apex. | Lobulated, often oedematous or violaceous cushions; slit-like lumen between them. |
-| Sphincter tone | Often lax or patulous; faecal incontinence common. | Normal or tight; spasm may strangulate grade IV haemorrhoids. |
+| Feature              | Full-thickness rectal prolapse                                                                                                                                                      | Prolapsed internal haemorrhoids (grade III–IV)                                                                                                            |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Fold pattern         | 🎯 **Concentric rings** — circular folds stacked like a telescope.                                                                                                                  | 🌸 **Radial grooves** — clefts between discrete cushions, like flower petals.                                                                             |
+| Shape and lumen      | Tubular protrusion, often several centimetres long, with a central lumen at the apex.                                                                                               | Lobulated, often oedematous or violaceous cushions; slit-like lumen between them.                                                                         |
+| Sphincter tone       | Often lax or patulous; faecal incontinence common.                                                                                                                                  | Normal or tight; spasm may strangulate grade IV haemorrhoids.                                                                                             |
 | Emergency management | 🟢 **Viable:** analgesia, osmotic (sugar) reduction if oedematous, gentle reduction, colorectal referral.<br>🔴 **Dusky, black, or perforated:** do not reduce — emergency surgery. | 🟢 **Reducible:** gentle reduction with lubricated gauze and lidocaine gel.<br>🔴 **Strangulated, gangrenous, or irreducible:** same-day surgical review. |
 
 ### The granulated-sugar technique for an oedematous, viable rectal prolapse [C]
@@ -68,16 +68,16 @@ Evidence: case reports and small series (Myers and Rothenberger 1991; Coburn et 
 
 **Table 2.4 — Dangerous mimics**
 
-| The patient says… | It could be… | Distinguishing clue | Action |
-|---|---|---|---|
-| “My piles are bleeding” | Colorectal cancer or polyp | Age, iron-deficiency anaemia, altered bowel habit, weight loss, mass | 🟡 Colon evaluation first (Chapter 08) |
-| “My pile is swollen and painful” | Perianal abscess | Fever, gradual onset, induration | 🔴 Same-day drainage |
-| “A dark pile that never goes away” | Anorectal melanoma (may be amelanotic) | Persistent pigmented or polypoid mass, bleeding | 🟡 Urgent biopsy (Chapters 07, 15) |
-| “My piles come out and I leak” | Full-thickness rectal prolapse | Concentric rings, lax tone | 🟡 Reduce; colorectal referral |
-| “Itchy piles that won’t heal” | HSIL, anal cancer, Paget disease | Plaque, induration, ulcer, persistence beyond 4–6 weeks | 🟡 Biopsy pathway (Chapter 07) |
-| “Piles” in a young adult with diarrhoea | Perianal Crohn’s disease | Oedematous bluish tags, lateral fissures, weight loss | 🟡 Gastroenterology referral (Chapter 09) |
-| “Piles” in cirrhosis | Rectal varices | Bluish, compressible veins above the dentate line | 🟡 Specialist assessment; do not band (AGA 2026) |
-| “Painful piles and discharge” | STI proctitis | Tenesmus, mucopus, sexual history | 🟡 Swabs and treatment (Chapter 11) |
+| The patient says…                       | It could be…                           | Distinguishing clue                                                  | Action                                           |
+| --------------------------------------- | -------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------ |
+| “My piles are bleeding”                 | Colorectal cancer or polyp             | Age, iron-deficiency anaemia, altered bowel habit, weight loss, mass | 🟡 Colon evaluation first (Chapter 08)           |
+| “My pile is swollen and painful”        | Perianal abscess                       | Fever, gradual onset, induration                                     | 🔴 Same-day drainage                             |
+| “A dark pile that never goes away”      | Anorectal melanoma (may be amelanotic) | Persistent pigmented or polypoid mass, bleeding                      | 🟡 Urgent biopsy (Chapters 07, 15)               |
+| “My piles come out and I leak”          | Full-thickness rectal prolapse         | Concentric rings, lax tone                                           | 🟡 Reduce; colorectal referral                   |
+| “Itchy piles that won’t heal”           | HSIL, anal cancer, Paget disease       | Plaque, induration, ulcer, persistence beyond 4–6 weeks              | 🟡 Biopsy pathway (Chapter 07)                   |
+| “Piles” in a young adult with diarrhoea | Perianal Crohn’s disease               | Oedematous bluish tags, lateral fissures, weight loss                | 🟡 Gastroenterology referral (Chapter 09)        |
+| “Piles” in cirrhosis                    | Rectal varices                         | Bluish, compressible veins above the dentate line                    | 🟡 Specialist assessment; do not band (AGA 2026) |
+| “Painful piles and discharge”           | STI proctitis                          | Tenesmus, mucopus, sexual history                                    | 🟡 Swabs and treatment (Chapter 11)              |
 
 **Algorithm 2.1 — Acute anal pain, lump, or “piles”**
 
@@ -149,12 +149,12 @@ Evidence: case reports and small series (Myers and Rothenberger 1991; Coburn et 
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 EMERGENCY | Gangrenous or perforated prolapse; strangulated haemorrhoids with sepsis | On-call surgeon now |
-| 🔴 SAME-DAY | Suspected perianal abscess; irreducible viable prolapse; strangulated haemorrhoids without sepsis | Surgical review before discharge |
-| 🟡 URGENT | Indurated, ulcerated, pigmented, or non-healing lesion; bleeding with alarm features; rectal prolapse after successful reduction | Biopsy or colonoscopy pathway (Chapters 07–08); colorectal clinic |
-| 🟢 ROUTINE | Settled thrombosed external haemorrhoid; asymptomatic skin tags | Primary care; surgical clinic if recurrent |
+| Urgency      | Clinical trigger                                                                                                                 | Who and how fast                                                  |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| 🔴 EMERGENCY | Gangrenous or perforated prolapse; strangulated haemorrhoids with sepsis                                                         | On-call surgeon now                                               |
+| 🔴 SAME-DAY  | Suspected perianal abscess; irreducible viable prolapse; strangulated haemorrhoids without sepsis                                | Surgical review before discharge                                  |
+| 🟡 URGENT    | Indurated, ulcerated, pigmented, or non-healing lesion; bleeding with alarm features; rectal prolapse after successful reduction | Biopsy or colonoscopy pathway (Chapters 07–08); colorectal clinic |
+| 🟢 ROUTINE   | Settled thrombosed external haemorrhoid; asymptomatic skin tags                                                                  | Primary care; surgical clinic if recurrent                        |
 
 ## The Patient in Front of You — Chapter 02 Mini-Case
 

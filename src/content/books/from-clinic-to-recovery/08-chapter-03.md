@@ -58,10 +58,10 @@ Writing at this level is not talking down to the reader. It means short sentence
 
 Each channel has strengths and limits (Table 3.1). Most patients need more than one.
 
-**Table 3.1.** *Choosing the channel for patient information.*
+**Table 3.1.** _Choosing the channel for patient information._
 
 | **Channel**                        | **Best used for**                                                            | **Limits**                                                                        |
-|------------------------------------|------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| ---------------------------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | **Spoken, with teach-back**        | Building trust, explaining why, checking understanding, answering questions  | Quickly forgotten; depends on the clinician’s time                                |
 | **Printed guide**                  | Step-by-step instructions; the personal instruction card; warning-sign lists | Can be lost; static; one language per version                                     |
 | **QR code to a web page**          | Longer explanations, pictures or video, several languages, updates           | Requires a smartphone and data; content must be checked for accuracy and currency |
@@ -73,10 +73,10 @@ A QR code is an effective bridge from the printed page to online material. It do
 
 Online health information varies widely in quality. Before recommending a website or app to patients, or placing a link in a handout, check it against the questions in Table 3.2.
 
-**Table 3.2.** *A checklist for evaluating digital patient education resources.*
+**Table 3.2.** _A checklist for evaluating digital patient education resources._
 
 | **Question**                             | **What to look for**                                                                                                                                               |
-|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Who wrote it?**                        | Named authors with clinical credentials, and an identified organization                                                                                            |
 | **When was it reviewed?**                | A visible date, and evidence that it is revised when guidelines change                                                                                             |
 | **What is it based on?**                 | References to guidelines or published evidence                                                                                                                     |
@@ -93,9 +93,9 @@ Digital platforms, including the AlfiSurgery platform founded by the author (see
 
 Every patient should leave the clinic or the ward with the same core package, whether it is on paper, on a phone, or both. Figure 3.1 shows how the pieces connect.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 3.1.** The clinic-to-home information loop.*
+_**Figure 3.1.** The clinic-to-home information loop._
 
 <table>
 <colgroup>
@@ -123,9 +123,9 @@ Most questions after an operation arise at home, often in the evening or at nigh
 
 Figure 3.2 shows a simple structure for a nurse-led telephone or message contact. The caller’s symptoms are matched to the green, amber, and red signs in the patient guide, red signs are asked about first, and every call ends with a clear plan.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 3.2.** Telephone follow-up using the green, amber, and red warning signs.*
+_**Figure 3.2.** Telephone follow-up using the green, amber, and red warning signs._
 
 <table>
 <colgroup>

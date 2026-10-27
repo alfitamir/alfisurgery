@@ -1,13 +1,13 @@
 # Chapter 05 — Suppurative Disease — Abscess, Fistula, and Fournier’s Gangrene
 
-*Purpose: drain pus the same day, protect the sphincter when a fistula follows, and recognise Fournier’s gangrene within the first hour.*
+_Purpose: drain pus the same day, protect the sphincter when a fistula follows, and recognise Fournier’s gangrene within the first hour._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 05**
 >
 > - **Chapter colour palette:** Flame Orange (#C2410C) header bar, Warm Peach (#FFF7ED) panels, Emergency Crimson (#DC2626) borders for Fournier’s gangrene alerts.
 > - **Hero graphic:** (1) Coronal map of the four abscess spaces and the four Parks fistula types, with a Goodsall’s rule compass; (2) a “first-hour clock” for Fournier’s gangrene: call surgeon → resuscitate → IV antibiotics → debridement → re-look at 24–48 h.
 > - **Icon set:** Scalpel with drop (drain), stopwatch (first hour), seton loop, MRI scanner, crossed-out gauze roll (no routine packing), SGLT2 pill with warning triangle.
-> - **Bedside aphorism banner:** *“Drainage cures the infection, not necessarily the disease. A seton is a strategy, not a delay.”*
+> - **Bedside aphorism banner:** _“Drainage cures the infection, not necessarily the disease. A seton is a strategy, not a delay.”_
 
 ## 1. The Cryptoglandular Rule: One Disease, Two Stages
 
@@ -23,12 +23,12 @@ Most anorectal abscesses and fistulas are the acute and chronic phases of the sa
 
 **Table 5.1 — Abscess spaces**
 
-| Space (approximate frequency) | Location | Presentation | Diagnostic trap |
-|---|---|---|---|
-| 1. Perianal (most common) | Superficial, at the anal verge | Localised, tender, red swelling at the anal margin | 🟢 Visible; drain close to the verge to keep any future fistula short. |
-| 2. Ischioanal | Fat-filled space lateral to the external sphincter | Diffuse, tender, indurated buttock swelling; fever | 🟡 Can hold a large volume before it fluctuates; may extend posteriorly as a **horseshoe** abscess. |
-| 3. Intersphincteric | Between internal and external sphincters | Severe deep rectal pain and fever; worse on sitting or coughing | 🔴 **External skin is normal.** Diagnosed by a tender bulge on DRE, imaging, or examination under anaesthesia. |
-| 4. Supralevator (rare) | Above the levator ani | Deep pelvic, gluteal, or back pain; fever; urinary retention; normal skin | 🔴 Drainage route depends on the source (intersphincteric, ischioanal, or pelvic such as diverticulitis or Crohn’s) — a specialist decision guided by imaging [C]. |
+| Space (approximate frequency) | Location                                           | Presentation                                                              | Diagnostic trap                                                                                                                                                    |
+| ----------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1. Perianal (most common)     | Superficial, at the anal verge                     | Localised, tender, red swelling at the anal margin                        | 🟢 Visible; drain close to the verge to keep any future fistula short.                                                                                             |
+| 2. Ischioanal                 | Fat-filled space lateral to the external sphincter | Diffuse, tender, indurated buttock swelling; fever                        | 🟡 Can hold a large volume before it fluctuates; may extend posteriorly as a **horseshoe** abscess.                                                                |
+| 3. Intersphincteric           | Between internal and external sphincters           | Severe deep rectal pain and fever; worse on sitting or coughing           | 🔴 **External skin is normal.** Diagnosed by a tender bulge on DRE, imaging, or examination under anaesthesia.                                                     |
+| 4. Supralevator (rare)        | Above the levator ani                              | Deep pelvic, gluteal, or back pain; fever; urinary retention; normal skin | 🔴 Drainage route depends on the source (intersphincteric, ischioanal, or pelvic such as diverticulitis or Crohn’s) — a specialist decision guided by imaging [C]. |
 
 ## 3. Abscess Management Rules (ASCRS 2022; PPAC2 2022)
 
@@ -52,12 +52,12 @@ Most anorectal abscesses and fistulas are the acute and chronic phases of the sa
 
 **Table 5.2 — Parks classification**
 
-| Type | Course | Sphincter risk and usual approach |
-|---|---|---|
-| Intersphincteric | Between internal and external sphincters | 🟢 Usually “simple”: fistulotomy is often curative when continence is normal. |
-| Trans-sphincteric | Crosses both sphincters into the ischioanal fat | 🟡 Depends on how much external sphincter is involved — low tracts may be laid open; high tracts need sphincter-sparing surgery. |
-| Suprasphincteric | Loops above the puborectalis | 🔴 High incontinence risk — never laid open. |
-| Extrasphincteric | From rectum through the levators, outside the sphincters | 🔴 Think pelvic sepsis, Crohn’s disease, trauma, or malignancy. |
+| Type              | Course                                                   | Sphincter risk and usual approach                                                                                                |
+| ----------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Intersphincteric  | Between internal and external sphincters                 | 🟢 Usually “simple”: fistulotomy is often curative when continence is normal.                                                    |
+| Trans-sphincteric | Crosses both sphincters into the ischioanal fat          | 🟡 Depends on how much external sphincter is involved — low tracts may be laid open; high tracts need sphincter-sparing surgery. |
+| Suprasphincteric  | Loops above the puborectalis                             | 🔴 High incontinence risk — never laid open.                                                                                     |
+| Extrasphincteric  | From rectum through the levators, outside the sphincters | 🔴 Think pelvic sepsis, Crohn’s disease, trauma, or malignancy.                                                                  |
 
 <small>Parks’ original 1976 series (a referral population) reported roughly 45% intersphincteric, 30% trans-sphincteric, 20% suprasphincteric, and 5% extrasphincteric; suprasphincteric tracts are less frequent in most contemporary series.</small>
 
@@ -91,12 +91,12 @@ Fournier’s gangrene is a polymicrobial necrotising fasciitis of the perineal, 
 
 **Table 5.3 — The first-hour Fournier’s bundle**
 
-| Step | Action | Critical rule |
-|---|---|---|
-| 1. Call at minute zero | Senior surgeon, theatre, anaesthesia, and critical care; urology or gynaecology as needed. | 🔴 Never delay theatre for CT, MRI, or a score. |
-| 2. Resuscitate | Two large-bore cannulas; blood cultures (without delaying antibiotics); lactate; blood gas; fluid resuscitation per sepsis guidance; urinary catheter. **Stop SGLT2 inhibitors** and check blood ketones and anion gap (euglycaemic DKA). Target glucose about 7.8–10.0 mmol/L (140–180 mg/dL) [C]. | Correct coagulopathy en route to theatre. |
+| Step                            | Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Critical rule                                                                                                                                                                                                 |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Call at minute zero          | Senior surgeon, theatre, anaesthesia, and critical care; urology or gynaecology as needed.                                                                                                                                                                                                                                                                                                                                                                                                                 | 🔴 Never delay theatre for CT, MRI, or a score.                                                                                                                                                               |
+| 2. Resuscitate                  | Two large-bore cannulas; blood cultures (without delaying antibiotics); lactate; blood gas; fluid resuscitation per sepsis guidance; urinary catheter. **Stop SGLT2 inhibitors** and check blood ketones and anion gap (euglycaemic DKA). Target glucose about 7.8–10.0 mmol/L (140–180 mg/dL) [C].                                                                                                                                                                                                        | Correct coagulopathy en route to theatre.                                                                                                                                                                     |
 | 3. IV antibiotics within 1 hour | Follow the local protocol and antibiogram [L]. A typical adult regimen combines: **(a)** broad-spectrum Gram-negative and anaerobic cover — meropenem 1 g IV 8-hourly **or** piperacillin–tazobactam 4.5 g IV 6–8-hourly; **(b)** MRSA cover where indicated — vancomycin loading dose 20–35 mg/kg then level-guided dosing (ASHP/IDSA 2020) **or** linezolid 600 mg IV 12-hourly; **(c)** toxin suppression — clindamycin 600–900 mg IV 8-hourly (IDSA 2014; WSES/SIS-E 2018). Adjust for renal function. | 💡 Clindamycin (and linezolid) inhibit bacterial protein synthesis and suppress toxin production by streptococci and clostridia; their effect is less blunted by high bacterial loads than that of β-lactams. |
-| 4. Radical debridement | Excise all necrotic skin, fat, and fascia back to bleeding, healthy tissue as soon as possible. | Planned re-look within 24–48 hours. Testes rarely need removal (separate blood supply from the aorta). |
+| 4. Radical debridement          | Excise all necrotic skin, fat, and fascia back to bleeding, healthy tissue as soon as possible.                                                                                                                                                                                                                                                                                                                                                                                                            | Planned re-look within 24–48 hours. Testes rarely need removal (separate blood supply from the aorta).                                                                                                        |
 
 **Algorithm 5.1 — Suppurative disease**
 
@@ -135,16 +135,16 @@ Fournier’s gangrene is a polymicrobial necrotising fasciitis of the perineal, 
 
 **Table 5.4 — Abscess and fistula mimics**
 
-| Mimic | Clue | Action |
-|---|---|---|
-| Thrombosed external haemorrhoid | Sudden, bluish, discrete, afebrile | Chapter 02 |
-| Pilonidal abscess | Natal cleft over the sacrum, midline pits, normal anal canal | Off-midline drainage (Chapter 06) |
-| Hidradenitis suppurativa | Multiple nodules, tracts, and scars; groin and axilla often affected | Dermatology and surgery (Chapter 15) |
-| Bartholin’s gland abscess | Labial swelling at the vestibule, not perianal | Gynaecology |
-| Infected epidermoid cyst | Punctum, well-circumscribed, away from the anal canal | Drain; excise later |
-| Crohn’s-related abscess or fistula | Multiple or complex tracts, diarrhoea, weight loss, oedematous tags | Drain, seton, gastroenterology (Chapter 09) |
-| Carcinoma presenting as abscess or chronic fistula | Induration, mass, mucinous discharge, long-standing fistula | Biopsy at examination under anaesthesia (Chapter 07) |
-| Necrotising soft-tissue infection | Pain out of proportion, crepitus, toxicity | 🔴 Emergency (section 5) |
+| Mimic                                              | Clue                                                                 | Action                                               |
+| -------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------- |
+| Thrombosed external haemorrhoid                    | Sudden, bluish, discrete, afebrile                                   | Chapter 02                                           |
+| Pilonidal abscess                                  | Natal cleft over the sacrum, midline pits, normal anal canal         | Off-midline drainage (Chapter 06)                    |
+| Hidradenitis suppurativa                           | Multiple nodules, tracts, and scars; groin and axilla often affected | Dermatology and surgery (Chapter 15)                 |
+| Bartholin’s gland abscess                          | Labial swelling at the vestibule, not perianal                       | Gynaecology                                          |
+| Infected epidermoid cyst                           | Punctum, well-circumscribed, away from the anal canal                | Drain; excise later                                  |
+| Crohn’s-related abscess or fistula                 | Multiple or complex tracts, diarrhoea, weight loss, oedematous tags  | Drain, seton, gastroenterology (Chapter 09)          |
+| Carcinoma presenting as abscess or chronic fistula | Induration, mass, mucinous discharge, long-standing fistula          | Biopsy at examination under anaesthesia (Chapter 07) |
+| Necrotising soft-tissue infection                  | Pain out of proportion, crepitus, toxicity                           | 🔴 Emergency (section 5)                             |
 
 ## 7. Role-Targeted Action Boxes
 
@@ -184,12 +184,12 @@ Fournier’s gangrene is a polymicrobial necrotising fasciitis of the perineal, 
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 EMERGENCY | Suspected Fournier’s gangrene; abscess with septic shock | Senior surgeon and theatre now |
-| 🔴 SAME-DAY | Perianal, ischioanal, intersphincteric, or supralevator abscess; any abscess in diabetes or immunosuppression | Surgical drainage the same day |
-| 🟡 URGENT | Recurrent abscess; suspected Crohn’s fistula; fistula with induration or mass | Colorectal surgery ± gastroenterology; MRI |
-| 🟢 ROUTINE | Simple fistula-in-ano; follow-up after drainage | Colorectal or general surgical clinic |
+| Urgency      | Clinical trigger                                                                                              | Who and how fast                           |
+| ------------ | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| 🔴 EMERGENCY | Suspected Fournier’s gangrene; abscess with septic shock                                                      | Senior surgeon and theatre now             |
+| 🔴 SAME-DAY  | Perianal, ischioanal, intersphincteric, or supralevator abscess; any abscess in diabetes or immunosuppression | Surgical drainage the same day             |
+| 🟡 URGENT    | Recurrent abscess; suspected Crohn’s fistula; fistula with induration or mass                                 | Colorectal surgery ± gastroenterology; MRI |
+| 🟢 ROUTINE   | Simple fistula-in-ano; follow-up after drainage                                                               | Colorectal or general surgical clinic      |
 
 ## The Patient in Front of You — Chapter 05 Mini-Case
 

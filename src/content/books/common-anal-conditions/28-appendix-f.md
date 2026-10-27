@@ -2,7 +2,7 @@
 
 <small>One page per topic. Short sentences, no jargon, and a clear “seek urgent care now” section. Photocopy, print, or publish on your website.</small>
 
-## F.1  Haemorrhoids (piles)
+## F.1 Haemorrhoids (piles)
 
 Haemorrhoids are swollen cushions inside or just outside the back passage. They are very common. They can bleed bright red blood, itch, or come out when you open your bowels.
 
@@ -18,7 +18,7 @@ Haemorrhoids are swollen cushions inside or just outside the back passage. They 
 
 **🚨 Seek urgent care now if:** Heavy bleeding or clots, or feeling faint; severe pain with a hard swollen lump; temperature above 38.0 °C.
 
-## F.2  Anal fissure
+## F.2 Anal fissure
 
 A fissure is a small tear in the skin of the back passage. It causes sharp pain when you open your bowels, sometimes a little bright red blood on the paper, and an ache afterwards.
 
@@ -34,7 +34,7 @@ See your doctor if the fissure has not healed after 6–8 weeks.
 
 **🚨 Seek urgent care now if:** Temperature above 38.0 °C, swelling, or throbbing pain that keeps getting worse; heavy bleeding.
 
-## F.3  Perianal abscess and fistula
+## F.3 Perianal abscess and fistula
 
 An abscess is a collection of pus next to the back passage. It causes constant throbbing pain, swelling, and sometimes fever. **It needs to be drained — antibiotics alone do not cure it.**
 
@@ -46,7 +46,7 @@ An abscess is a collection of pus next to the back passage. It causes constant t
 
 **🚨 Seek urgent care now if:** Temperature above 38.0 °C or shivering; pain or redness spreading; skin turning dark; you cannot pass urine; you have diabetes and feel very unwell.
 
-## F.4  Itching around the back passage (pruritus ani)
+## F.4 Itching around the back passage (pruritus ani)
 
 Itching around the back passage is common. It is usually caused by irritation, moisture, or small amounts of leakage — not by poor hygiene.
 
@@ -62,7 +62,7 @@ See your doctor if itching lasts more than 4–6 weeks, or if you notice a skin 
 
 **🚨 Seek urgent care now if:** Bleeding, a painful lump with fever, or a sore that does not heal.
 
-## F.5  Pilonidal disease
+## F.5 Pilonidal disease
 
 A pilonidal sinus is a small channel in the skin at the top of the buttock crease, often containing hairs. It can become infected and form an abscess.
 
@@ -76,7 +76,7 @@ A pilonidal sinus is a small channel in the skin at the top of the buttock creas
 
 **🚨 Seek urgent care now if:** Temperature above 38.0 °C, spreading redness, increasing pain or swelling, or foul-smelling discharge.
 
-## F.6  Constipation and faecal impaction
+## F.6 Constipation and faecal impaction
 
 Constipation means hard, infrequent, or difficult stools. When hard stool gets stuck (impaction), watery stool can leak around it and look like diarrhoea.
 
@@ -90,7 +90,7 @@ Constipation means hard, infrequent, or difficult stools. When hard stool gets s
 
 **🚨 Seek urgent care now if:** Severe tummy pain, a swollen tummy, vomiting, fever, blood in the stool, or no stool or wind for several days.
 
-## F.7  Rectal bleeding — when to seek urgent care
+## F.7 Rectal bleeding — when to seek urgent care
 
 Bleeding from the back passage is often caused by piles or a small tear, but it can also come from higher up in the bowel. **“It looks like piles” is not a full diagnosis.**
 
@@ -104,7 +104,7 @@ See your doctor soon (within days to weeks) if:
 
 **🚨 Seek urgent care now if:** You pass a lot of blood or clots; you feel faint, dizzy, short of breath, or your heart is racing; you have severe tummy pain; you take blood thinners and the bleeding will not stop.
 
-## F.8  Anal cancer warning signs
+## F.8 Anal cancer warning signs
 
 Anal cancer is uncommon and is often treatable when found early. It can look like piles or a tear. See a doctor promptly if you have:
 

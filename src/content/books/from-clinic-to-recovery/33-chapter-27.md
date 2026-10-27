@@ -60,10 +60,10 @@ Ask every patient about alcohol use before surgery, using a simple, non-judgment
 
 Medicine reconciliation means comparing the medicines a patient is actually taking against what is written in the chart, at every point where care changes: clinic to admission, admission to operating room, operating room to ward, and ward to discharge. Errors are common at each of these points, and many are preventable [3]. A complete medicine history includes prescription medicines, over-the-counter medicines, herbal and traditional remedies, vitamins, and injections such as weight-loss or diabetes medicines that patients may not think to mention.
 
-**Table 27.1.** *Medicine reconciliation at each transition of care.*
+**Table 27.1.** _Medicine reconciliation at each transition of care._
 
 | **Transition**           | **What to check**                                                                                                     |
-|--------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------- |
 | **Clinic to admission**  | Full medicine list, including herbal remedies, OTC medicines, and injections; allergies                               |
 | **Admission to surgery** | Which medicines were actually taken that morning, against the written plan                                            |
 | **Surgery to ward**      | Medicines given during surgery; resumption plan for home medicines                                                    |
@@ -141,7 +141,7 @@ We check your medicines at every step of your care to keep you safe. We will giv
 
 3\. National Institute for Health and Care Excellence. Medicines optimisation (QS120) and NG5: medicines reconciliation. London: NICE, updated.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
 
 ---
 
@@ -149,6 +149,6 @@ We check your medicines at every step of your care to keep you safe. We will giv
 
 **Returning to Normal Life**
 
-*Chapters 28 and 29*
+_Chapters 28 and 29_
 
-> *Patients judge an operation not only by the result but by how quickly and fully they return to their own life: intimacy, driving, exercise, travel, and work. These two chapters bring that question together across the whole book.*
+> _Patients judge an operation not only by the result but by how quickly and fully they return to their own life: intimacy, driving, exercise, travel, and work. These two chapters bring that question together across the whole book._

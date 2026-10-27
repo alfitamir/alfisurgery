@@ -23,10 +23,10 @@ The operation to remove the spleen is usually straightforward, often by keyhole 
 </tbody>
 </table>
 
-**Table 17.1.** *Splenectomy at a glance.*
+**Table 17.1.** _Splenectomy at a glance._
 
 | **At a glance**                     |                                                                                                                                                                              |
-|-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Operation**                       | Laparoscopic (keyhole) splenectomy for most planned cases; open surgery for very large spleens or emergencies                                                                |
 | **Hospital stay**                   | Usually 1 to 3 days after keyhole surgery                                                                                                                                    |
 | **Back to office work**             | About 2 weeks after keyhole surgery                                                                                                                                          |
@@ -39,9 +39,9 @@ The operation to remove the spleen is usually straightforward, often by keyhole 
 
 The reasons for splenectomy, and the alternatives, depend on the condition (Figure 17.1). In immune thrombocytopenia, newer platelet-stimulating medicines and rituximab are now alternatives to splenectomy, and guidelines suggest delaying splenectomy for at least a year after diagnosis because some patients recover [1]. In hereditary spherocytosis, thalassemia, and sickle cell disease, splenectomy may be considered for an enlarged or overactive spleen, and partial splenectomy may suit some children. After injury, most hemodynamically stable patients are managed without an operation, sometimes with embolization of the splenic artery [2].
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 17.1.** Reasons for splenectomy and the alternatives.*
+_**Figure 17.1.** Reasons for splenectomy and the alternatives._
 
 ## 17.2 The counseling script
 
@@ -82,9 +82,9 @@ For planned splenectomy, vaccines should be given at least two weeks before the 
 
 Figure 17.2 shows the five protections every patient should understand. Daily antibiotic prophylaxis is offered, at least for the first years after splenectomy and for life in patients at higher risk; all patients should also hold a supply of standby antibiotics to start immediately if fever or other signs of infection develop, and seek medical help at once [3]. Patients should carry an alert card, inform every clinician that they have no spleen, take malaria prevention seriously when traveling to endemic areas, and seek antibiotics after any animal bite [3].
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 17.2.** Five lifelong protections for people without a spleen, for use with patients.*
+_**Figure 17.2.** Five lifelong protections for people without a spleen, for use with patients._
 
 ## 17.5 Before and after the operation
 
@@ -98,10 +98,10 @@ Figure 17.2 shows the five protections every patient should understand. Daily an
 
 - **Platelet count.** The platelet count often rises after splenectomy; the team will check it and advise on any treatment.
 
-**Table 17.2.** *Typical recovery after splenectomy.*
+**Table 17.2.** _Typical recovery after splenectomy._
 
 | **Activity**          | **After keyhole surgery**                                             | **After open surgery**                             |
-|-----------------------|-----------------------------------------------------------------------|----------------------------------------------------|
+| --------------------- | --------------------------------------------------------------------- | -------------------------------------------------- |
 | **Walking**           | The same or next day                                                  | The next day                                       |
 | **Driving**           | About 1 to 2 weeks                                                    | About 3 to 4 weeks                                 |
 | **Office work**       | About 2 weeks                                                         | About 4 to 6 weeks                                 |
@@ -152,11 +152,11 @@ Children have a higher risk of infection without a spleen, so vaccines and antib
 
 ## 17.6 Material risks
 
-**Table 17.3.** *Material risks of splenectomy. Square brackets mark figures to replace with unit data.*
+**Table 17.3.** _Material risks of splenectomy. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                                              | **Typical frequency**                                                                 | **Example wording**                                                                        |
-|----------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| **Common**           | Pain in the left upper abdomen and shoulder                           | Many patients, for a few days                                                         | “Shoulder-tip pain is common and settles.”                                                 |
+| **Band**             | **Risk**                                                              | **Typical frequency**                                                               | **Example wording**                                                                        |
+| -------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **Common**           | Pain in the left upper abdomen and shoulder                           | Many patients, for a few days                                                       | “Shoulder-tip pain is common and settles.”                                                 |
 | **Less common**      | Bleeding needing transfusion or return to the operating room          | [unit data]                                                                         | “Rarely, bleeding needs another operation.”                                                |
 | **Less common**      | Collection of fluid or infection under the diaphragm; chest infection | [unit data]                                                                         | “A collection may need a drain.”                                                           |
 | **Less common**      | Leak from the tail of the pancreas                                    | [unit data]                                                                         | “The pancreas lies close by; a small leak usually settles with a drain.”                   |
@@ -186,7 +186,7 @@ Children have a higher risk of infection without a spleen, so vaccines and antib
 
 ## 17.8 Warning signs
 
-**Table 17.4.** *Green, amber, and red warning signs after splenectomy.*
+**Table 17.4.** _Green, amber, and red warning signs after splenectomy._
 
 <table>
 <colgroup>
@@ -246,7 +246,7 @@ Children have a higher risk of infection without a spleen, so vaccines and antib
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Complete the vaccine and antibiotic record, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Complete the vaccine and antibiotic record, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -265,12 +265,12 @@ Children have a higher risk of infection without a spleen, so vaccines and antib
 
 Your spleen helped fight some infections. Without it, these infections can become serious very fast. You can protect yourself with five simple steps, for the rest of your life.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
 **1. My vaccines**
 
 | **Vaccine**                             | **Date given** | **Next dose due** |
-|-----------------------------------------|----------------|-------------------|
+| --------------------------------------- | -------------- | ----------------- |
 | **Pneumococcal**                        |                |                   |
 | **Meningococcal ACWY**                  |                |                   |
 | **Meningococcal B**                     |                |                   |
@@ -312,7 +312,7 @@ Your spleen helped fight some infections. Without it, these infections can becom
 **6. After the operation**
 
 | **Activity**          | **Usually from**                         |
-|-----------------------|------------------------------------------|
+| --------------------- | ---------------------------------------- |
 | **Walking**           | The first day                            |
 | **Driving**           | About 1 to 2 weeks after keyhole surgery |
 | **Office work**       | About 2 weeks after keyhole surgery      |
@@ -322,7 +322,7 @@ Your spleen helped fight some infections. Without it, these infections can becom
 **7. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                 | **What to do**                                                                               |
-|-----------|-------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | **GREEN** | Mild wound or shoulder pain that improves; tiredness                                                                                | This is normal. Keep following this guide.                                                   |
 | **AMBER** | Redness or discharge from a wound; a cough with phlegm; an animal bite or scratch                                                   | Call your doctor today.                                                                      |
 | **RED**   | Fever, shivering, or feeling suddenly very unwell, at any time in life; severe tummy pain or vomiting after surgery; breathlessness | Take your standby antibiotic and go to the emergency department now. Say you have no spleen. |
@@ -349,7 +349,7 @@ Your spleen helped fight some infections. Without it, these infections can becom
 
 3\. Davies JM, Lewis MPN, Wimperis J, et al. Review of guidelines for the prevention and treatment of infection in patients with an absent or dysfunctional spleen: prepared on behalf of the British Committee for Standards in Haematology. Br J Haematol. 2011;155(3):308-317.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
 
 ---
 
@@ -357,6 +357,6 @@ Your spleen helped fight some infections. Without it, these infections can becom
 
 **Special Patient Populations, Chronic Conditions, and High-Risk Medicines**
 
-*Chapters 18 to 27*
+_Chapters 18 to 27_
 
-> *The procedure chapters assume a healthy adult. Many patients are not. Part III explains how counseling, preparation, and recovery change for people with diabetes, heart and lung disease, and other long-term conditions, for those taking medicines that affect surgery, and for older adults and children. These chapters are written to be used alongside the procedure chapters.*
+> _The procedure chapters assume a healthy adult. Many patients are not. Part III explains how counseling, preparation, and recovery change for people with diabetes, heart and lung disease, and other long-term conditions, for those taking medicines that affect surgery, and for older adults and children. These chapters are written to be used alongside the procedure chapters._

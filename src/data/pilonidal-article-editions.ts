@@ -1,10 +1,10 @@
-import type { ArticleEdition } from '@/data/article-editions';
-import type { SiteLanguage } from '@/lib/site-language';
+import type { ArticleEdition } from "@/data/article-editions";
+import type { SiteLanguage } from "@/lib/site-language";
 
 // Draft translations; qualified native-speaking clinical approval is pending.
 export const pilonidalArticleEditions: Partial<Record<SiteLanguage, ArticleEdition>> = {
   en: {
-    title: 'Pilonidal sinus: causes, symptoms, treatment and when surgery is needed',
+    title: "Pilonidal sinus: causes, symptoms, treatment and when surgery is needed",
     content: `<p><em>General educational information, not a substitute for medical assessment. Your doctor's and treating team's instructions always take priority.</em></p>
 <h2>What is a pilonidal sinus?</h2><p>A pilonidal sinus is a small tract under the skin near the top of the cleft between the buttocks. Hair and dead skin cells can collect there, causing recurrent inflammation or an abscess. It is common in young adults; dense hair, prolonged sitting, excess weight and sweating may contribute.</p>
 <h2>Symptoms</h2><ul><li>One or more small openings in the midline at the top of the buttock cleft.</li><li>Pain, swelling and redness when inflamed.</li><li>Repeated discharge of pus or blood.</li><li>A painful abscess, sometimes with fever.</li></ul>
@@ -15,7 +15,7 @@ export const pilonidalArticleEditions: Partial<Record<SiteLanguage, ArticleEditi
 <p>Read also: <a href="/guides/pilonidal-sinus?lang=en">Pilonidal sinus surgery guide</a> and <a href="/guides/pilonidal-abscess?lang=en">Pilonidal abscess guide</a>.</p>`,
   },
   ur: {
-    title: 'پائلونائیڈل سائنَس: اسباب، علامات، علاج اور آپریشن کی ضرورت',
+    title: "پائلونائیڈل سائنَس: اسباب، علامات، علاج اور آپریشن کی ضرورت",
     content: `<p><em>یہ عام تعلیمی معلومات ہیں، طبی معائنے کا متبادل نہیں۔ آپ کے ڈاکٹر اور معالج ٹیم کی ہدایات ہمیشہ مقدم ہیں۔</em></p>
 <h2>پائلونائیڈل سائنَس کیا ہے؟</h2><p>یہ کولہوں کے درمیان دراڑ کے اوپری حصے میں جلد کے نیچے ایک چھوٹی نالی ہے۔ اس میں بال اور جلد کے مردہ خلیے جمع ہو کر بار بار سوزش یا پھوڑا پیدا کر سکتے ہیں۔ یہ نوجوان بالغوں میں عام ہے؛ گھنے بال، دیر تک بیٹھنا، زائد وزن اور پسینہ اس میں کردار ادا کر سکتے ہیں۔</p>
 <h2>علامات</h2><ul><li>کولہوں کی دراڑ کے اوپر درمیانی لکیر میں ایک یا زیادہ چھوٹے سوراخ۔</li><li>سوزش کے وقت درد، سوجن اور سرخی۔</li><li>بار بار پیپ یا خون کا اخراج۔</li><li>دردناک پھوڑا، کبھی بخار کے ساتھ۔</li></ul>
@@ -26,7 +26,7 @@ export const pilonidalArticleEditions: Partial<Record<SiteLanguage, ArticleEditi
 <p>مزید پڑھیں: <a href="/guides/pilonidal-sinus?lang=ur">پائلونائیڈل سائنَس آپریشن کی رہنمائی</a> اور <a href="/guides/pilonidal-abscess?lang=ur">پائلونائیڈل پھوڑے کی رہنمائی</a>۔</p>`,
   },
   hi: {
-    title: 'पाइलोनाइडल साइनस: कारण, लक्षण, उपचार और सर्जरी की ज़रूरत',
+    title: "पाइलोनाइडल साइनस: कारण, लक्षण, उपचार और सर्जरी की ज़रूरत",
     content: `<p><em>यह सामान्य शैक्षिक जानकारी है, चिकित्सकीय जाँच का विकल्प नहीं। आपके डॉक्टर और उपचार टीम के निर्देश हमेशा प्राथमिक हैं।</em></p>
 <h2>पाइलोनाइडल साइनस क्या है?</h2><p>यह नितंबों के बीच की दरार के ऊपरी हिस्से में त्वचा के नीचे एक छोटी नली होती है। इसमें बाल और मृत त्वचा कोशिकाएँ जमा होकर बार-बार सूजन या फोड़ा पैदा कर सकती हैं। यह युवा वयस्कों में आम है; घने बाल, लंबे समय तक बैठना, अधिक वजन और पसीना इसमें योगदान दे सकते हैं।</p>
 <h2>लक्षण</h2><ul><li>नितंबों की दरार के ऊपर बीच की रेखा में एक या अधिक छोटे छेद।</li><li>सूजन के समय दर्द, सूजन और लालिमा।</li><li>बार-बार मवाद या खून निकलना।</li><li>दर्दनाक फोड़ा, कभी बुखार के साथ।</li></ul>
@@ -37,7 +37,7 @@ export const pilonidalArticleEditions: Partial<Record<SiteLanguage, ArticleEditi
 <p>यह भी पढ़ें: <a href="/guides/pilonidal-sinus?lang=hi">पाइलोनाइडल साइनस सर्जरी की मार्गदर्शिका</a> और <a href="/guides/pilonidal-abscess?lang=hi">पाइलोनाइडल फोड़े की मार्गदर्शिका</a>।</p>`,
   },
   bn: {
-    title: 'পাইলোনাইডাল সাইনাস: কারণ, লক্ষণ, চিকিৎসা ও কখন অস্ত্রোপচার দরকার',
+    title: "পাইলোনাইডাল সাইনাস: কারণ, লক্ষণ, চিকিৎসা ও কখন অস্ত্রোপচার দরকার",
     content: `<p><em>এটি সাধারণ শিক্ষামূলক তথ্য, চিকিৎসা পরীক্ষার বিকল্প নয়। আপনার ডাক্তার ও চিকিৎসা দলের নির্দেশ সবসময় অগ্রাধিকার পায়।</em></p>
 <h2>পাইলোনাইডাল সাইনাস কী?</h2><p>এটি নিতম্বের মাঝের খাঁজের ওপরের দিকে ত্বকের নিচে একটি ছোট নালি। সেখানে চুল ও মৃত ত্বকের কোষ জমে বারবার প্রদাহ বা ফোড়া হতে পারে। তরুণ প্রাপ্তবয়স্কদের মধ্যে এটি সাধারণ; ঘন চুল, দীর্ঘক্ষণ বসে থাকা, অতিরিক্ত ওজন ও ঘাম এতে ভূমিকা রাখতে পারে।</p>
 <h2>লক্ষণ</h2><ul><li>নিতম্বের খাঁজের ওপরের মধ্যরেখায় এক বা একাধিক ছোট ছিদ্র।</li><li>প্রদাহ হলে ব্যথা, ফোলা ও লালভাব।</li><li>বারবার পুঁজ বা রক্ত বের হওয়া।</li><li>ব্যথাযুক্ত ফোড়া, কখনও জ্বরসহ।</li></ul>
@@ -48,7 +48,7 @@ export const pilonidalArticleEditions: Partial<Record<SiteLanguage, ArticleEditi
 <p>আরও পড়ুন: <a href="/guides/pilonidal-sinus?lang=bn">পাইলোনাইডাল সাইনাস অস্ত্রোপচারের নির্দেশিকা</a> ও <a href="/guides/pilonidal-abscess?lang=bn">পাইলোনাইডাল ফোড়ার নির্দেশিকা</a>।</p>`,
   },
   tl: {
-    title: 'Pilonidal sinus: sanhi, sintomas, paggamot at kailan kailangan ang operasyon',
+    title: "Pilonidal sinus: sanhi, sintomas, paggamot at kailan kailangan ang operasyon",
     content: `<p><em>Pangkalahatang impormasyong pang-edukasyon ito, hindi kapalit ng medikal na pagsusuri. Laging unahin ang mga tagubilin ng iyong doktor at pangkat medikal.</em></p>
 <h2>Ano ang pilonidal sinus?</h2><p>Isa itong maliit na daanan sa ilalim ng balat malapit sa itaas ng siwang sa pagitan ng mga puwit. Maaaring maipon dito ang buhok at patay na selula ng balat, na nagdudulot ng paulit-ulit na pamamaga o abscess. Karaniwan ito sa mga batang nasa hustong gulang; maaaring makatulong sa pagbuo nito ang makapal na buhok, matagal na pag-upo, sobrang timbang at pagpapawis.</p>
 <h2>Mga sintomas</h2><ul><li>Isa o higit pang maliliit na butas sa gitnang linya sa itaas ng siwang ng puwit.</li><li>Pananakit, pamamaga at pamumula kapag namamaga.</li><li>Paulit-ulit na paglabas ng nana o dugo.</li><li>Masakit na abscess, kung minsan ay may lagnat.</li></ul>
@@ -59,7 +59,7 @@ export const pilonidalArticleEditions: Partial<Record<SiteLanguage, ArticleEditi
 <p>Basahin din: <a href="/guides/pilonidal-sinus?lang=tl">Gabay sa operasyon ng pilonidal sinus</a> at <a href="/guides/pilonidal-abscess?lang=tl">Gabay sa pilonidal abscess</a>.</p>`,
   },
   ta: {
-    title: 'பைலோனைடல் சைனஸ்: காரணங்கள், அறிகுறிகள், சிகிச்சை மற்றும் அறுவைச் சிகிச்சை எப்போது தேவை',
+    title: "பைலோனைடல் சைனஸ்: காரணங்கள், அறிகுறிகள், சிகிச்சை மற்றும் அறுவைச் சிகிச்சை எப்போது தேவை",
     content: `<p><em>இது பொதுவான கல்வித் தகவல்; மருத்துவப் பரிசோதனைக்கு மாற்றல்ல. உங்கள் மருத்துவர் மற்றும் சிகிச்சைக் குழுவின் அறிவுரைகளுக்கே எப்போதும் முன்னுரிமை.</em></p>
 <h2>பைலோனைடல் சைனஸ் என்றால் என்ன?</h2><p>பிட்டங்களுக்கு இடையிலுள்ள பிளவின் மேற்பகுதியில் தோலுக்கடியில் இருக்கும் சிறிய பாதை இது. முடியும் இறந்த தோல் செல்களும் அங்கு சேர்ந்து மீண்டும் மீண்டும் அழற்சி அல்லது சீழ்க்கட்டியை ஏற்படுத்தலாம். இளம் வயது பெரியவர்களிடம் இது பொதுவாக உள்ளது; அடர்ந்த முடி, நீண்ட நேரம் அமர்ந்திருத்தல், அதிக எடை மற்றும் வியர்வை பங்களிக்கலாம்.</p>
 <h2>அறிகுறிகள்</h2><ul><li>பிட்டப் பிளவின் மேற்பகுதியின் நடுக்கோட்டில் ஒன்று அல்லது பல சிறிய துளைகள்.</li><li>அழற்சியின்போது வலி, வீக்கம் மற்றும் சிவத்தல்.</li><li>மீண்டும் மீண்டும் சீழ் அல்லது இரத்தம் வெளியேறுதல்.</li><li>வலியுள்ள சீழ்க்கட்டி, சில நேரங்களில் காய்ச்சலுடன்.</li></ul>

@@ -1,27 +1,27 @@
 # Chapter 13 — Pregnancy, Postpartum, and Pelvic-Floor Anorectal Disease
 
-*Purpose: pregnancy multiplies anorectal symptoms; most respond to simple, safe measures — know which drugs and procedures to avoid, and never miss sphincter injury after childbirth.*
+_Purpose: pregnancy multiplies anorectal symptoms; most respond to simple, safe measures — know which drugs and procedures to avoid, and never miss sphincter injury after childbirth._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 13**
 >
 > - **Chapter colour palette:** Sea Green (#0F766E) header bar, Mint Foam (#F0FDFA) panels, Deep Teal (#134E4A) text.
 > - **Hero graphic:** A timeline ribbon across the trimesters, delivery, the 6-week postpartum check, and the first year — with the typical problem at each stage (constipation, haemorrhoids, thrombosed external haemorrhoid, fissure, OASIS-related incontinence) and a green/amber/red medication strip beneath.
 > - **Icon set:** Pregnant silhouette, fibre bowl, pill with tick and cross, feeding bottle (breastfeeding), pelvic-floor sling, left-lateral tilt arrow, stethoscope.
-> - **Bedside aphorism banner:** *“Treat the constipation and most pregnancy proctology treats itself.”*
+> - **Bedside aphorism banner:** _“Treat the constipation and most pregnancy proctology treats itself.”_
 
 ## 1. Common Problems in Pregnancy and After Delivery
 
 **Table 13.1 — Problems and first-line care**
 
-| Problem | Features | First-line care |
-|---|---|---|
-| Constipation | Progesterone, iron, reduced activity, pressure from the uterus | Fibre, fluids, activity; lactulose or macrogol (Table 13.2) |
-| Haemorrhoids | Up to two-thirds of pregnant women (AGA 2026); worse in the third trimester and after delivery | Conservative: fibre, treating constipation, topical agents; banding or IRC after delivery if still needed (AGA 2026) [C] |
-| Thrombosed external haemorrhoid | Late pregnancy or soon after delivery; sudden painful bluish lump | Conservative; excision under local anaesthetic is acceptable if pain is severe and onset under 72 hours [C] |
-| Anal fissure | Often anterior and postpartum | Fibre, softeners, warm sitz baths, topical lidocaine; defer other agents (Table 13.2) |
-| Pruritus and perianal dermatitis | Candida is common in pregnancy | Hygiene measures, barrier, topical azole |
-| Perianal abscess | Same features as outside pregnancy | **Drain promptly** — pregnancy is not a reason to delay; involve obstetrics |
-| Rectal bleeding with alarm features | Persistent bleeding, anaemia, weight loss, diarrhoea | Investigate as in Chapter 08 — IBD and cancer can occur in pregnancy |
+| Problem                             | Features                                                                                       | First-line care                                                                                                          |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Constipation                        | Progesterone, iron, reduced activity, pressure from the uterus                                 | Fibre, fluids, activity; lactulose or macrogol (Table 13.2)                                                              |
+| Haemorrhoids                        | Up to two-thirds of pregnant women (AGA 2026); worse in the third trimester and after delivery | Conservative: fibre, treating constipation, topical agents; banding or IRC after delivery if still needed (AGA 2026) [C] |
+| Thrombosed external haemorrhoid     | Late pregnancy or soon after delivery; sudden painful bluish lump                              | Conservative; excision under local anaesthetic is acceptable if pain is severe and onset under 72 hours [C]              |
+| Anal fissure                        | Often anterior and postpartum                                                                  | Fibre, softeners, warm sitz baths, topical lidocaine; defer other agents (Table 13.2)                                    |
+| Pruritus and perianal dermatitis    | Candida is common in pregnancy                                                                 | Hygiene measures, barrier, topical azole                                                                                 |
+| Perianal abscess                    | Same features as outside pregnancy                                                             | **Drain promptly** — pregnancy is not a reason to delay; involve obstetrics                                              |
+| Rectal bleeding with alarm features | Persistent bleeding, anaemia, weight loss, diarrhoea                                           | Investigate as in Chapter 08 — IBD and cancer can occur in pregnancy                                                     |
 
 ## 2. Pregnancy-Safe Prescribing Table
 
@@ -29,44 +29,44 @@ Classification reflects common international practice [C]. **Always confirm with
 
 **Table 13.2 — Medicines in pregnancy and breastfeeding**
 
-| Medicine | Pregnancy | Breastfeeding | Notes |
-|---|---|---|---|
-| Psyllium (ispaghula), lactulose | 🟢 Suitable | 🟢 Suitable | Not absorbed; first-line |
-| Macrogol (polyethylene glycol) | 🟢 Generally suitable | 🟢 Suitable | Minimal absorption |
-| Docusate, glycerol suppositories | 🟢 Suitable | 🟢 Suitable | — |
-| Senna, bisacodyl | 🟡 Short-term use | 🟢 Suitable | Use when osmotic agents fail |
-| Sodium phosphate enemas | 🔴 Avoid | 🔴 Avoid | Electrolyte disturbance |
-| Castor oil | 🔴 Avoid | 🔴 Avoid | May stimulate uterine contractions |
-| Oral liquid paraffin | 🔴 Avoid | 🔴 Avoid | Vitamin malabsorption; aspiration risk |
-| Topical lidocaine | 🟢 Short-term | 🟢 Suitable | Use small amounts |
-| Topical hydrocortisone (low potency) | 🟢 ≤ 2 weeks | 🟢 Suitable | AGA 2026 time limit applies |
-| Topical diltiazem or nifedipine | 🟡 Limited data | 🟡 Limited data | Usually deferred until after delivery; specialist advice [U] |
-| Topical GTN | 🟡 Limited data | 🟡 Limited data | Headache; generally avoided in pregnancy [U] |
-| Botulinum toxin | 🔴 Avoid | 🟡 Specialist advice | Insufficient safety data |
-| Oral flavonoids (MPFF) | 🟡 Limited data | 🟡 Limited data | Not routine [U] |
-| Paracetamol | 🟢 First-line | 🟢 First-line | — |
-| NSAIDs (for example ibuprofen) | 🔴 Avoid from 20 weeks (FDA 2020); avoid in the third trimester | 🟢 Ibuprofen preferred | Oligohydramnios and ductal closure risk |
-| Codeine and tramadol | 🟡 Shortest course if essential | 🔴 Avoid (FDA 2017) | Infant toxicity in ultra-rapid metabolisers; constipation |
-| Amoxicillin–clavulanate, cephalosporins | 🟢 Suitable | 🟢 Suitable | For cellulitis around an abscess |
-| Metronidazole | 🟢 Use when indicated | 🟡 Suitable at usual doses | Avoid single high doses while breastfeeding [L] |
-| Ciprofloxacin | 🔴 Generally avoid | 🟡 Specialist advice | Use alternatives |
-| Doxycycline and other tetracyclines | 🔴 Avoid | 🟡 Short courses per formulary | Use pregnancy-appropriate STI regimens (Chapter 11) |
-| Mebendazole | 🔴 Avoid in the first trimester | 🟡 Formulary advice | Hygiene measures first |
-| Loperamide | 🟡 Occasional use only | 🟢 Suitable | Exclude infection and impaction |
+| Medicine                                | Pregnancy                                                       | Breastfeeding                  | Notes                                                        |
+| --------------------------------------- | --------------------------------------------------------------- | ------------------------------ | ------------------------------------------------------------ |
+| Psyllium (ispaghula), lactulose         | 🟢 Suitable                                                     | 🟢 Suitable                    | Not absorbed; first-line                                     |
+| Macrogol (polyethylene glycol)          | 🟢 Generally suitable                                           | 🟢 Suitable                    | Minimal absorption                                           |
+| Docusate, glycerol suppositories        | 🟢 Suitable                                                     | 🟢 Suitable                    | —                                                            |
+| Senna, bisacodyl                        | 🟡 Short-term use                                               | 🟢 Suitable                    | Use when osmotic agents fail                                 |
+| Sodium phosphate enemas                 | 🔴 Avoid                                                        | 🔴 Avoid                       | Electrolyte disturbance                                      |
+| Castor oil                              | 🔴 Avoid                                                        | 🔴 Avoid                       | May stimulate uterine contractions                           |
+| Oral liquid paraffin                    | 🔴 Avoid                                                        | 🔴 Avoid                       | Vitamin malabsorption; aspiration risk                       |
+| Topical lidocaine                       | 🟢 Short-term                                                   | 🟢 Suitable                    | Use small amounts                                            |
+| Topical hydrocortisone (low potency)    | 🟢 ≤ 2 weeks                                                    | 🟢 Suitable                    | AGA 2026 time limit applies                                  |
+| Topical diltiazem or nifedipine         | 🟡 Limited data                                                 | 🟡 Limited data                | Usually deferred until after delivery; specialist advice [U] |
+| Topical GTN                             | 🟡 Limited data                                                 | 🟡 Limited data                | Headache; generally avoided in pregnancy [U]                 |
+| Botulinum toxin                         | 🔴 Avoid                                                        | 🟡 Specialist advice           | Insufficient safety data                                     |
+| Oral flavonoids (MPFF)                  | 🟡 Limited data                                                 | 🟡 Limited data                | Not routine [U]                                              |
+| Paracetamol                             | 🟢 First-line                                                   | 🟢 First-line                  | —                                                            |
+| NSAIDs (for example ibuprofen)          | 🔴 Avoid from 20 weeks (FDA 2020); avoid in the third trimester | 🟢 Ibuprofen preferred         | Oligohydramnios and ductal closure risk                      |
+| Codeine and tramadol                    | 🟡 Shortest course if essential                                 | 🔴 Avoid (FDA 2017)            | Infant toxicity in ultra-rapid metabolisers; constipation    |
+| Amoxicillin–clavulanate, cephalosporins | 🟢 Suitable                                                     | 🟢 Suitable                    | For cellulitis around an abscess                             |
+| Metronidazole                           | 🟢 Use when indicated                                           | 🟡 Suitable at usual doses     | Avoid single high doses while breastfeeding [L]              |
+| Ciprofloxacin                           | 🔴 Generally avoid                                              | 🟡 Specialist advice           | Use alternatives                                             |
+| Doxycycline and other tetracyclines     | 🔴 Avoid                                                        | 🟡 Short courses per formulary | Use pregnancy-appropriate STI regimens (Chapter 11)          |
+| Mebendazole                             | 🔴 Avoid in the first trimester                                 | 🟡 Formulary advice            | Hygiene measures first                                       |
+| Loperamide                              | 🟡 Occasional use only                                          | 🟢 Suitable                    | Exclude infection and impaction                              |
 
 ## 3. Procedures in Pregnancy
 
 **Table 13.3 — What is safe, and when**
 
-| Procedure | Guidance [C] |
-|---|---|
-| Incision and drainage of abscess | Do it promptly, as for non-pregnant patients; local or regional anaesthesia; inform obstetrics |
-| Excision of acute thrombosed external haemorrhoid | Acceptable under local anaesthetic if severe pain and onset under 72 hours |
-| Banding, IRC, sclerotherapy | Defer until after delivery unless bleeding is severe (AGA 2026) |
-| Haemorrhoidectomy | Only for complications (strangulation, uncontrolled bleeding), with obstetric input; the second trimester is preferred when timing allows |
-| Sphincterotomy, botulinum toxin | Defer until after delivery (and discuss during breastfeeding) |
-| Flexible sigmoidoscopy or colonoscopy | Only for strong indications (for example significant bleeding with alarm features); specialist and obstetric planning |
-| Positioning | Left lateral or left-tilted after 20 weeks to avoid supine hypotension |
+| Procedure                                         | Guidance [C]                                                                                                                              |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Incision and drainage of abscess                  | Do it promptly, as for non-pregnant patients; local or regional anaesthesia; inform obstetrics                                            |
+| Excision of acute thrombosed external haemorrhoid | Acceptable under local anaesthetic if severe pain and onset under 72 hours                                                                |
+| Banding, IRC, sclerotherapy                       | Defer until after delivery unless bleeding is severe (AGA 2026)                                                                           |
+| Haemorrhoidectomy                                 | Only for complications (strangulation, uncontrolled bleeding), with obstetric input; the second trimester is preferred when timing allows |
+| Sphincterotomy, botulinum toxin                   | Defer until after delivery (and discuss during breastfeeding)                                                                             |
+| Flexible sigmoidoscopy or colonoscopy             | Only for strong indications (for example significant bleeding with alarm features); specialist and obstetric planning                     |
+| Positioning                                       | Left lateral or left-tilted after 20 weeks to avoid supine hypotension                                                                    |
 
 ## 4. Postpartum Constipation, OASIS, and Faecal Incontinence
 
@@ -114,14 +114,14 @@ Classification reflects common international practice [C]. **Always confirm with
 
 **Table 13.4 — Pregnancy and postpartum mimics**
 
-| Presumed | Actual | Clue |
-|---|---|---|
-| Thrombosed haemorrhoid | Perianal abscess | Fever, induration, gradual onset |
-| Postpartum “leakage” | Rectovaginal fistula | Stool or wind from the vagina |
-| Postpartum “piles” | Full-thickness prolapse | Concentric folds |
-| Painful “fissure” | Herpes | Multiple ulcers or vesicles |
-| Pregnancy constipation | Bowel obstruction (for example volvulus) | Vomiting, distension, absolute constipation |
-| Bleeding “from piles” persisting postpartum | IBD or, rarely, cancer | Diarrhoea, anaemia, weight loss |
+| Presumed                                    | Actual                                   | Clue                                        |
+| ------------------------------------------- | ---------------------------------------- | ------------------------------------------- |
+| Thrombosed haemorrhoid                      | Perianal abscess                         | Fever, induration, gradual onset            |
+| Postpartum “leakage”                        | Rectovaginal fistula                     | Stool or wind from the vagina               |
+| Postpartum “piles”                          | Full-thickness prolapse                  | Concentric folds                            |
+| Painful “fissure”                           | Herpes                                   | Multiple ulcers or vesicles                 |
+| Pregnancy constipation                      | Bowel obstruction (for example volvulus) | Vomiting, distension, absolute constipation |
+| Bleeding “from piles” persisting postpartum | IBD or, rarely, cancer                   | Diarrhoea, anaemia, weight loss             |
 
 ## 6. Role-Targeted Action Boxes
 
@@ -159,12 +159,12 @@ Classification reflects common international practice [C]. **Always confirm with
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 EMERGENCY | Sepsis, heavy bleeding with instability, suspected bowel obstruction | Surgeon and obstetrician now |
-| 🔴 SAME-DAY | Perianal abscess; severe early thrombosed haemorrhoid; strangulated haemorrhoids | Surgical review with obstetric input |
-| 🟡 URGENT | Postpartum incontinence after OASIS; suspected rectovaginal fistula; bleeding with alarm features | Perineal, colorectal, or urogynaecology clinic |
-| 🟢 ROUTINE | Persistent haemorrhoids after delivery | Office-procedure clinic after the postpartum period |
+| Urgency      | Clinical trigger                                                                                  | Who and how fast                                    |
+| ------------ | ------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| 🔴 EMERGENCY | Sepsis, heavy bleeding with instability, suspected bowel obstruction                              | Surgeon and obstetrician now                        |
+| 🔴 SAME-DAY  | Perianal abscess; severe early thrombosed haemorrhoid; strangulated haemorrhoids                  | Surgical review with obstetric input                |
+| 🟡 URGENT    | Postpartum incontinence after OASIS; suspected rectovaginal fistula; bleeding with alarm features | Perineal, colorectal, or urogynaecology clinic      |
+| 🟢 ROUTINE   | Persistent haemorrhoids after delivery                                                            | Office-procedure clinic after the postpartum period |
 
 ## The Patient in Front of You — Chapter 13 Mini-Case
 

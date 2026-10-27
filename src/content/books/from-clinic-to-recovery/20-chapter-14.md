@@ -23,10 +23,10 @@ Bowel surgery is performed for cancer, diverticular disease, inflammatory bowel 
 </tbody>
 </table>
 
-**Table 14.1.** *Colorectal surgery and stomas at a glance.*
+**Table 14.1.** _Colorectal surgery and stomas at a glance._
 
 | **At a glance**                     |                                                                                                                                                          |
-|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Common operations**               | Right or left colectomy; anterior resection of the rectum; abdominoperineal resection; emergency resection (Hartmann’s procedure)                        |
 | **When a stoma is made**            | To protect a low join (temporary ileostomy); when a join is unsafe (temporary colostomy); when the anus is removed (permanent colostomy)                 |
 | **Hospital stay**                   | Usually 3 to 7 days with enhanced recovery                                                                                                               |
@@ -43,9 +43,9 @@ For bowel cancer, the operation is planned by the multidisciplinary team and may
 
 Explain what a stoma is, why it may be needed, which type is likely, and whether it is expected to be temporary or permanent (Figure 14.1). When a stoma is possible rather than certain, say so, and prepare the patient as though it will be made. Patients woken from an emergency operation with an unexpected stoma find adjustment much harder.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 14.1.** Ileostomy and colostomy compared, for use with patients.*
+_**Figure 14.1.** Ileostomy and colostomy compared, for use with patients._
 
 <table>
 <colgroup>
@@ -66,9 +66,9 @@ Explain what a stoma is, why it may be needed, which type is likely, and whether
 
 Adjustment to a stoma follows a recognizable path (Figure 14.2). Before surgery, patients fear disfigurement, smell, and rejection. The first sight of the stoma can cause shock, disgust, or grief, and some patients refuse to look at it or touch it for days. In the first weeks at home, leaks, noise, and fear of odor lead some people to withdraw from family, work, and the mosque. Most adapt over months, but a substantial minority remain anxious, low, or isolated. In a meta-analysis, depressive symptoms were present in almost half of patients after stoma surgery, more often than in comparable patients without a stoma [1].
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 14.2.** The emotional journey with a stoma, and what helps at each stage.*
+_**Figure 14.2.** The emotional journey with a stoma, and what helps at each stage._
 
 Several factors make adjustment harder: an unexpected or emergency stoma, a permanent stoma, a poorly sited stoma that leaks, lack of confidence in self-care, an unsupportive partner, and cultural or religious concern about cleanliness. Several things make it easier: preoperative counseling and site marking, early hands-on teaching, a peer who has lived with a stoma, and a partner or family member who is involved and accepting.
 
@@ -162,10 +162,10 @@ The stoma is swollen at first and shrinks over about six weeks, so the pouch siz
 
 A temporary stoma is usually closed after the join has healed, often after a few months or after chemotherapy. Not every temporary stoma is reversed, because of complications, further treatment, or the patient’s health, and patients should know this [unit data]. After reversal of a stoma that protected a low rectal join, bowel function often changes, with urgency, frequency, clustering, or incontinence, known as low anterior resection syndrome. Major symptoms affect about 41 in 100 patients [6]. They often improve over the first one to two years, and treatments are available. Some patients with severe symptoms prefer to keep or return to a stoma.
 
-**Table 14.2.** *Typical recovery after bowel surgery with a stoma.*
+**Table 14.2.** _Typical recovery after bowel surgery with a stoma._
 
 | **Activity**        | **Usually from**                                 | **Notes**                                                                             |
-|---------------------|--------------------------------------------------|---------------------------------------------------------------------------------------|
+| ------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------- |
 | **Walking**         | The first day                                    | Walk several times a day                                                              |
 | **Showering**       | Day 2                                            | You can shower with or without the pouch on                                           |
 | **Driving**         | About 3 to 4 weeks                               | When you can brake firmly without pain                                                |
@@ -226,10 +226,10 @@ Yes. Pregnancy is possible with a stoma. Tell your team early so that we can sup
 
 ## 14.10 Material risks
 
-**Table 14.3.** *Material risks of colorectal surgery and stomas. Square brackets mark figures to replace with unit data.*
+**Table 14.3.** _Material risks of colorectal surgery and stomas. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                                     | **Typical frequency**                   | **Example wording**                                                                  |
-|----------------------|--------------------------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------|
+| **Band**             | **Risk**                                                     | **Typical frequency**                 | **Example wording**                                                                  |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------- | ------------------------------------------------------------------------------------ |
 | **Common**           | Depressive symptoms after stoma surgery                      | Almost half of patients [1]           | “Many people feel low after a stoma. Please tell us, because help is available.”     |
 | **Common**           | Sore skin around the stoma; pouch leaks                      | [unit data]                           | “Sore skin is the most common stoma problem. The nurse can usually fix it quickly.”  |
 | **Common**           | Change in bowel function after reversal of a low join        | Major symptoms in about 41 in 100 [6] | “About 4 in 10 have major bowel symptoms after reversal, often improving with time.” |
@@ -263,7 +263,7 @@ Yes. Pregnancy is possible with a stoma. Tell your team early so that we can sup
 
 ## 14.12 Warning signs
 
-**Table 14.4.** *Green, amber, and red warning signs after bowel surgery and with a stoma.*
+**Table 14.4.** _Green, amber, and red warning signs after bowel surgery and with a stoma._
 
 <table>
 <colgroup>
@@ -327,7 +327,7 @@ Yes. Pregnancy is possible with a stoma. Tell your team early so that we can sup
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Tick the type of stoma, and add your unit’s name, the stoma nurse’s phone number, and the review date before use.*
+_The following pages may be photocopied and given to patients. Tick the type of stoma, and add your unit’s name, the stoma nurse’s phone number, and the review date before use._
 
 <table>
 <colgroup>
@@ -405,7 +405,7 @@ Yes. Pregnancy is possible with a stoma. Tell your team early so that we can sup
 **5. Getting back to normal**
 
 | **Activity**      | **Usually from**                                |
-|-------------------|-------------------------------------------------|
+| ----------------- | ----------------------------------------------- |
 | **Walking**       | The first day. Walk more each day.              |
 | **Driving**       | About 3 to 4 weeks                              |
 | **Office work**   | About 4 to 6 weeks                              |
@@ -424,7 +424,7 @@ Yes. Pregnancy is possible with a stoma. Tell your team early so that we can sup
 **7. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                                            | **What to do**                                               |
-|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | **GREEN** | Swollen stoma in the first weeks; small spots of blood when cleaning; feeling emotional                                                                        | This is normal. Talk to your stoma nurse.                    |
 | **AMBER** | Sore or broken skin; frequent leaks; very watery or high output; a bulge around the stoma; feeling low most days                                               | Call your stoma nurse today.                                 |
 | **RED**   | Stoma turns dark, purple, or black; no output for 24 hours with pain or vomiting; dizzy with little urine; fever with tummy pain; thoughts of harming yourself | Go to the emergency department now, or call for urgent help. |
@@ -458,4 +458,4 @@ Yes. Pregnancy is possible with a stoma. Tell your team early so that we can sup
 
 6\. Croese AD, Lonie JM, Trollope AF, Vangaveti VN, Ho YH. A meta-analysis of the prevalence of low anterior resection syndrome and systematic review of risk factors. Int J Surg. 2018;56:234-241.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._

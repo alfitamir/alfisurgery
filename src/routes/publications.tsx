@@ -80,15 +80,17 @@ function PublicationsSearchPage() {
         if (to && p.year > to) return false;
         if (authorQ && !lc(p.authors).includes(authorQ)) return false;
         if (journal !== "all" && p.journal !== journal) return false;
-        const hay = lc(`${p.title} ${p.abstract} ${p.authors} ${p.journal} ${translatedSearchText(p.title, dictionary)} ${translatedSearchText(p.abstract, dictionary)}`);
+        const hay = lc(
+          `${p.title} ${p.abstract} ${p.authors} ${p.journal} ${translatedSearchText(p.title, dictionary)} ${translatedSearchText(p.abstract, dictionary)}`,
+        );
         if (kws.length && !kws.every((k) => matchKeyword(hay, k))) return false;
         return true;
       })
       .map((p) => {
-        const hay = lc(`${p.title} ${p.abstract} ${p.authors} ${p.journal} ${translatedSearchText(p.title, dictionary)} ${translatedSearchText(p.abstract, dictionary)}`);
-        const score = terms.length
-          ? terms.reduce((s, t) => s + (hay.includes(t) ? 1 : 0), 0)
-          : 1;
+        const hay = lc(
+          `${p.title} ${p.abstract} ${p.authors} ${p.journal} ${translatedSearchText(p.title, dictionary)} ${translatedSearchText(p.abstract, dictionary)}`,
+        );
+        const score = terms.length ? terms.reduce((s, t) => s + (hay.includes(t) ? 1 : 0), 0) : 1;
         return { p, score };
       })
       .filter((r) => r.score > 0);
@@ -124,12 +126,10 @@ function PublicationsSearchPage() {
         </Link>
 
         <header className="mt-6">
-          <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
-            Search publications
-          </h1>
+          <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">Search publications</h1>
           <p className="mt-2 max-w-2xl text-muted-foreground">
-            Filter Dr. Tamer Elalfy's peer-reviewed work by free text, author, journal,
-            keywords and year range — with control over how keywords are matched.
+            Filter Dr. Tamer Elalfy's peer-reviewed work by free text, author, journal, keywords and
+            year range — with control over how keywords are matched.
           </p>
         </header>
 
@@ -269,8 +269,8 @@ function PublicationsSearchPage() {
         <section className="mt-8 space-y-4">
           {results.length === 0 ? (
             <div className="rounded-xl border border-dashed p-10 text-center text-muted-foreground">
-              No publications matched these filters. Try a looser keyword match mode or
-              widen the year range.
+              No publications matched these filters. Try a looser keyword match mode or widen the
+              year range.
             </div>
           ) : (
             results.map((p) => (
@@ -295,21 +295,31 @@ function PublicationsSearchPage() {
                     {p.titleAr}
                   </p>
                 )}
-                <p className="mt-2 text-sm text-muted-foreground" dir="ltr">{p.authors}</p>
-                {p.citation && <p className="mt-1 text-xs text-muted-foreground" dir="ltr">{p.citation}</p>}
-                <p className="mt-3 text-sm leading-relaxed" dir="auto">{p.abstract}</p>
+                <p className="mt-2 text-sm text-muted-foreground" dir="ltr">
+                  {p.authors}
+                </p>
+                {p.citation && (
+                  <p className="mt-1 text-xs text-muted-foreground" dir="ltr">
+                    {p.citation}
+                  </p>
+                )}
+                <p className="mt-3 text-sm leading-relaxed" dir="auto">
+                  {p.abstract}
+                </p>
                 <div className="mt-4 flex flex-wrap items-center gap-4 text-sm">
-                  {(p.links?.length ? p.links : [{ label: "View article", url: p.url }]).map((l) => (
-                    <a
-                      key={l.url}
-                      href={l.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 font-medium text-primary hover:underline"
-                    >
-                      {l.label} <ExternalLink className="h-3.5 w-3.5" />
-                    </a>
-                  ))}
+                  {(p.links?.length ? p.links : [{ label: "View article", url: p.url }]).map(
+                    (l) => (
+                      <a
+                        key={l.url}
+                        href={l.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 font-medium text-primary hover:underline"
+                      >
+                        {l.label} <ExternalLink className="h-3.5 w-3.5" />
+                      </a>
+                    ),
+                  )}
                 </div>
               </article>
             ))

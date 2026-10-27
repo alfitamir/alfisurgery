@@ -39,9 +39,9 @@ A consistent structure helps the clinician stay organized and helps the patient 
 
 **Check and document.** Confirm understanding with teach-back, invite questions, give written information, allow time to decide, and record the discussion (Sections 1.6 to 1.8).
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 1.1.** The five stages of a surgical consultation.*
+_**Figure 1.1.** The five stages of a surgical consultation._
 
 ## 1.2 Opening: let the patient speak first
 
@@ -69,10 +69,10 @@ Many patients fear something specific: cancer, a stoma, a long scar, time off wo
 
 Patients cannot judge a decision they cannot understand. Plain language is not simplification for its own sake. It means choosing words the patient will recognize and briefly explaining any term that cannot be avoided. Use everyday words, use the same word for the same thing throughout, and state the most important point first. Table 1.1 gives examples.
 
-**Table 1.1.** *Plain-language explanations of common surgical terms.*
+**Table 1.1.** _Plain-language explanations of common surgical terms._
 
 | **Medical term**        | **Plain-language explanation**                                                                                                           |
-|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | **Laparoscopy**         | Keyhole surgery. We make a few small cuts and use a camera and thin instruments to operate inside the abdomen.                           |
 | **Conversion**          | Changing from keyhole to open surgery during the operation, because it is safer to do so.                                                |
 | **Hernia**              | A weak spot in the muscle wall through which tissue bulges out.                                                                          |
@@ -89,7 +89,7 @@ Analogies are useful if they are accurate. Describing the gallbladder as a small
 
 ## 1.4 Informed consent as shared decision-making
 
-Valid consent requires that the patient has capacity, is given adequate information, and decides voluntarily. The standard for what counts as adequate information has moved from what a responsible body of doctors would disclose to what the patient would want to know. In *Montgomery v Lanarkshire Health Board* (2015), the UK Supreme Court held that a doctor must take reasonable care to ensure that the patient is aware of any material risks of the recommended treatment and of any reasonable alternatives. A risk is material if a reasonable person in the patient’s position would be likely to attach significance to it, or if the doctor is, or should reasonably be, aware that this particular patient would do so [2]. Professional guidance in the United Kingdom reflects this approach [3].
+Valid consent requires that the patient has capacity, is given adequate information, and decides voluntarily. The standard for what counts as adequate information has moved from what a responsible body of doctors would disclose to what the patient would want to know. In _Montgomery v Lanarkshire Health Board_ (2015), the UK Supreme Court held that a doctor must take reasonable care to ensure that the patient is aware of any material risks of the recommended treatment and of any reasonable alternatives. A risk is material if a reasonable person in the patient’s position would be likely to attach significance to it, or if the doctor is, or should reasonably be, aware that this particular patient would do so [2]. Professional guidance in the United Kingdom reflects this approach [3].
 
 <table>
 <colgroup>
@@ -103,11 +103,11 @@ Valid consent requires that the patient has capacity, is given adequate informat
 </tbody>
 </table>
 
-Shared decision-making turns this legal standard into a conversation. One practical model describes three steps (Figure 1.2): *team talk*, in which the clinician makes clear that there is a choice to be made together; *option talk*, in which the options, including doing nothing, are compared; and *decision talk*, in which the patient’s preferences are explored and a decision is reached [6].
+Shared decision-making turns this legal standard into a conversation. One practical model describes three steps (Figure 1.2): _team talk_, in which the clinician makes clear that there is a choice to be made together; _option talk_, in which the options, including doing nothing, are compared; and _decision talk_, in which the patient’s preferences are explored and a decision is reached [6].
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 1.2.** Shared decision-making in three steps, adapted from the three-talk model.*
+_**Figure 1.2.** Shared decision-making in three steps, adapted from the three-talk model._
 
 In practice, a consent discussion should cover:
 
@@ -133,10 +133,10 @@ Patients and clinicians interpret words such as “rare” and “small risk” 
 
 This book groups material risks into three bands to keep consent checklists consistent (Table 1.2). The bands are a teaching convention. They do not replace the formal frequency categories used in medicine information leaflets.
 
-**Table 1.2.** *Risk bands used in the consent checklists of this book. The figures are illustrative only.*
+**Table 1.2.** _Risk bands used in the consent checklists of this book. The figures are illustrative only._
 
 | **Band**             | **Frequency**       | **Example wording for the patient**                                                                             |
-|----------------------|---------------------|-----------------------------------------------------------------------------------------------------------------|
+| -------------------- | ------------------- | --------------------------------------------------------------------------------------------------------------- |
 | **Common**           | More than 5 in 100  | “About 8 out of every 100 patients have a small collection of fluid under the wound. Most settle on their own.” |
 | **Less common**      | 1 to 5 in 100       | “About 2 or 3 out of 100 develop a wound infection that needs antibiotics.”                                     |
 | **Rare but serious** | Fewer than 1 in 100 | “Fewer than 1 in 100 patients have an injury to a nearby structure that needs a further operation.”             |
@@ -147,9 +147,9 @@ Wherever possible, quote figures from your own unit’s audit data or from curre
 
 Teach-back checks whether the clinician has explained something clearly; it does not test the patient. The patient is asked to describe the plan in their own words. If the account is incomplete or wrong, the clinician explains again in a different way and checks again (Figure 1.3). In a study of patients with diabetes and limited health literacy, those whose physicians used this “closing the loop” approach were more likely to have good blood glucose control [8].
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 1.3.** The teach-back cycle.*
+_**Figure 1.3.** The teach-back cycle._
 
 The way the request is phrased matters. It should make clear that the clinician is checking their own explanation. Limit teach-back to the two or three things the patient must remember, such as the operation planned, the most important preparation instruction, and the warning signs that need urgent help. Testing every detail turns the method into an examination.
 
@@ -178,7 +178,7 @@ Some patients find it hard to ask. A short list of suggested questions, given in
 
 Some questions are difficult because they touch on fear, on the surgeon’s own experience, or on trust. They deserve calm, direct answers. Table 1.3 suggests an approach to the questions surgeons find hardest; the figures in square brackets must be replaced with real data.
 
-**Table 1.3.** *Answering difficult questions: suggested approach and example words.*
+**Table 1.3.** _Answering difficult questions: suggested approach and example words._
 
 <table>
 <colgroup>
@@ -241,10 +241,10 @@ When the answer is bad news, for example a malignant result at follow-up, use a 
 
 A consent form records that a discussion took place. It does not replace the discussion. Clinical notes should show what was actually said, so that another clinician can see what the patient was told and how they responded. Table 1.4 lists what to record.
 
-**Table 1.4.** *What to record after a consent discussion.*
+**Table 1.4.** _What to record after a consent discussion._
 
 | **Record**                         | **Detail**                                                                              |
-|------------------------------------|-----------------------------------------------------------------------------------------|
+| ---------------------------------- | --------------------------------------------------------------------------------------- |
 | Diagnosis and proposed operation   | In plain terms and with the formal name of the procedure                                |
 | Alternatives discussed             | Including non-operative treatment and doing nothing                                     |
 | Risks discussed                    | Common, less common, and rare but serious risks, and any risks specific to this patient |

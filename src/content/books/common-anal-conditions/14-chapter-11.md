@@ -1,43 +1,43 @@
 # Chapter 11 — Sexually Transmitted Infections, Proctitis, and Anorectal Sexual Health
 
-*Purpose: ask every patient with anorectal symptoms about sexual exposure — kindly and routinely — because gonorrhoea, chlamydia (including LGV), syphilis, herpes, mpox, and HIV all present as “piles”, “fissures”, or “proctitis”.*
+_Purpose: ask every patient with anorectal symptoms about sexual exposure — kindly and routinely — because gonorrhoea, chlamydia (including LGV), syphilis, herpes, mpox, and HIV all present as “piles”, “fissures”, or “proctitis”._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 11**
 >
 > - **Chapter colour palette:** Cobalt Violet (#5B21B6) header bar, Lavender (#F5F3FF) panels, Midnight Violet (#2E1065) text.
 > - **Hero graphic:** A private consultation scene (screen drawn, clinician seated at eye level) with a speech bubble containing a padlock; beside it a pathogen grid mapping each infection to its anorectal sign (discharge, ulcer, warts, rash, nodes), and a “treat before results” syringe-and-capsule icon for proctitis.
 > - **Icon set:** Speech bubble with padlock (confidentiality), rectal swab tube, syringe (ceftriaxone), capsule (doxycycline), red ribbon (HIV), shield (vaccines), envelope (partner notification).
-> - **Bedside aphorism banner:** *“Ask everyone, judge no one, test every exposed site — and treat proctitis before the results come back.”*
+> - **Bedside aphorism banner:** _“Ask everyone, judge no one, test every exposed site — and treat proctitis before the results come back.”_
 
 ## 1. The Non-Judgemental Sexual History
 
-Take the history in private, without relatives present, using neutral language and the patient’s own terms. Explain why you are asking: *“I ask everyone with these symptoms about sex, because some infections look exactly like piles or a fissure.”* Use a professional interpreter, never a family member. Documentation and reporting duties vary between countries — follow local law and professional confidentiality codes [L].
+Take the history in private, without relatives present, using neutral language and the patient’s own terms. Explain why you are asking: _“I ask everyone with these symptoms about sex, because some infections look exactly like piles or a fissure.”_ Use a professional interpreter, never a family member. Documentation and reporting duties vary between countries — follow local law and professional confidentiality codes [L].
 
 **Table 11.1 — The “5 Ps” (CDC 2021)**
 
-| Domain | Example question |
-|---|---|
-| Partners | “In the past 3 months, how many sexual partners have you had? Were they men, women, or both?” |
-| Practices | “Have you had receptive anal sex (a partner’s penis, fingers, or objects in your anus)? Oral sex? Vaginal sex?” |
-| Protection from STIs | “How often do you use condoms? Do you use HIV PrEP?” |
-| Past history of STIs | “Have you ever been diagnosed with an STI? When were you last tested for HIV?” |
-| Pregnancy intention | “Could you be pregnant? Are you trying to become pregnant?” |
+| Domain               | Example question                                                                                                |
+| -------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Partners             | “In the past 3 months, how many sexual partners have you had? Were they men, women, or both?”                   |
+| Practices            | “Have you had receptive anal sex (a partner’s penis, fingers, or objects in your anus)? Oral sex? Vaginal sex?” |
+| Protection from STIs | “How often do you use condoms? Do you use HIV PrEP?”                                                            |
+| Past history of STIs | “Have you ever been diagnosed with an STI? When were you last tested for HIV?”                                  |
+| Pregnancy intention  | “Could you be pregnant? Are you trying to become pregnant?”                                                     |
 
 ## 2. Pathogens, Presentations, and Tests
 
 **Table 11.2 — Infectious causes of anorectal symptoms**
 
-| Infection | Typical anorectal presentation | Key test |
-|---|---|---|
-| Gonorrhoea | Proctitis: mucopurulent discharge, tenesmus, pain; often asymptomatic | Rectal NAAT |
-| Chlamydia (non-LGV) | Mild proctitis or none | Rectal NAAT |
-| Lymphogranuloma venereum (LGV, serovars L1–L3) | Severe proctocolitis: bloody discharge, tenesmus, ulceration, fever, inguinal nodes — **can mimic Crohn’s disease** | Rectal NAAT; LGV typing where available |
-| Syphilis | Primary chancre (often painless, indurated ulcer — can mimic a fissure); secondary condylomata lata, rash on palms and soles | Treponemal and non-treponemal serology; lesion PCR where available |
-| Herpes simplex (HSV) | Very painful vesicles or ulcers, severe proctitis, fever; may cause urinary retention or sacral radiculopathy | HSV PCR from lesion |
-| Mpox | Painful anorectal lesions and proctitis, often with fever and lymphadenopathy | Mpox PCR from lesion |
-| HPV | Anogenital warts; HSIL and cancer (Chapter 07) | Clinical; biopsy if atypical |
-| HIV | Acute seroconversion (fever, rash, sore throat, nodes); co-infection with all of the above | Fourth-generation antigen/antibody test |
-| Enteric (*Shigella*, *Campylobacter*, amoebiasis, *C. difficile*) | Bloody diarrhoea, cramps, proctocolitis | Stool culture or PCR (with susceptibility testing) |
+| Infection                                                         | Typical anorectal presentation                                                                                               | Key test                                                           |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Gonorrhoea                                                        | Proctitis: mucopurulent discharge, tenesmus, pain; often asymptomatic                                                        | Rectal NAAT                                                        |
+| Chlamydia (non-LGV)                                               | Mild proctitis or none                                                                                                       | Rectal NAAT                                                        |
+| Lymphogranuloma venereum (LGV, serovars L1–L3)                    | Severe proctocolitis: bloody discharge, tenesmus, ulceration, fever, inguinal nodes — **can mimic Crohn’s disease**          | Rectal NAAT; LGV typing where available                            |
+| Syphilis                                                          | Primary chancre (often painless, indurated ulcer — can mimic a fissure); secondary condylomata lata, rash on palms and soles | Treponemal and non-treponemal serology; lesion PCR where available |
+| Herpes simplex (HSV)                                              | Very painful vesicles or ulcers, severe proctitis, fever; may cause urinary retention or sacral radiculopathy                | HSV PCR from lesion                                                |
+| Mpox                                                              | Painful anorectal lesions and proctitis, often with fever and lymphadenopathy                                                | Mpox PCR from lesion                                               |
+| HPV                                                               | Anogenital warts; HSIL and cancer (Chapter 07)                                                                               | Clinical; biopsy if atypical                                       |
+| HIV                                                               | Acute seroconversion (fever, rash, sore throat, nodes); co-infection with all of the above                                   | Fourth-generation antigen/antibody test                            |
+| Enteric (_Shigella_, _Campylobacter_, amoebiasis, _C. difficile_) | Bloody diarrhoea, cramps, proctocolitis                                                                                      | Stool culture or PCR (with susceptibility testing)                 |
 
 <small>Test every exposed site (rectum, pharynx, urethra or vagina). Also test for HIV, syphilis, hepatitis B and C, check hepatitis A and B immunity, and offer a pregnancy test where relevant.</small>
 
@@ -45,17 +45,17 @@ Take the history in private, without relatives present, using neutral language a
 
 **Table 11.3 — Adult treatment regimens (check national guidance [L])**
 
-| Situation | Recommended regimen | Notes |
-|---|---|---|
+| Situation                                       | Recommended regimen                                                                                           | Notes                                                                                                                                                                     |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Acute proctitis — empirical, before results** | Ceftriaxone 500 mg IM single dose (1 g if ≥ 150 kg) **plus** doxycycline 100 mg orally twice daily for 7 days | Extend doxycycline to **21 days** if LGV is suspected (bloody discharge, ulcers, or tenesmus with positive rectal chlamydia). Add HSV treatment if ulcers suggest herpes. |
-| Gonorrhoea (uncomplicated) | Ceftriaxone 500 mg IM single dose | Some national guidelines use 1 g [L]. Retest at 3 months. |
-| Rectal chlamydia | Doxycycline 100 mg orally twice daily for 7 days | Pregnancy: azithromycin 1 g orally single dose. |
-| LGV | Doxycycline 100 mg orally twice daily for 21 days | Pregnancy: specialist regimen. |
-| Primary, secondary, or early latent syphilis | Benzathine penicillin G 2.4 million units IM single dose | Penicillin allergy (not pregnant): doxycycline 100 mg twice daily for 14 days. Pregnancy: penicillin (desensitise if allergic). |
-| First-episode genital or anal herpes | Valaciclovir 1 g orally twice daily for 7–10 days (or aciclovir 400 mg three times daily) | Severe proctitis or immunosuppression: specialist; IV aciclovir if severe. |
-| Disseminated gonococcal infection | Admit; ceftriaxone 1 g IV daily | Fever, arthritis, tenosynovitis, pustular skin lesions. |
-| Mpox | Supportive care; analgesia; stool softeners | Antivirals only via specialist or public-health pathways [U]. |
-| *Shigella* and other enteric infections | Guided by culture and susceptibility | Antimicrobial resistance is common [L]. |
+| Gonorrhoea (uncomplicated)                      | Ceftriaxone 500 mg IM single dose                                                                             | Some national guidelines use 1 g [L]. Retest at 3 months.                                                                                                                 |
+| Rectal chlamydia                                | Doxycycline 100 mg orally twice daily for 7 days                                                              | Pregnancy: azithromycin 1 g orally single dose.                                                                                                                           |
+| LGV                                             | Doxycycline 100 mg orally twice daily for 21 days                                                             | Pregnancy: specialist regimen.                                                                                                                                            |
+| Primary, secondary, or early latent syphilis    | Benzathine penicillin G 2.4 million units IM single dose                                                      | Penicillin allergy (not pregnant): doxycycline 100 mg twice daily for 14 days. Pregnancy: penicillin (desensitise if allergic).                                           |
+| First-episode genital or anal herpes            | Valaciclovir 1 g orally twice daily for 7–10 days (or aciclovir 400 mg three times daily)                     | Severe proctitis or immunosuppression: specialist; IV aciclovir if severe.                                                                                                |
+| Disseminated gonococcal infection               | Admit; ceftriaxone 1 g IV daily                                                                               | Fever, arthritis, tenosynovitis, pustular skin lesions.                                                                                                                   |
+| Mpox                                            | Supportive care; analgesia; stool softeners                                                                   | Antivirals only via specialist or public-health pathways [U].                                                                                                             |
+| _Shigella_ and other enteric infections         | Guided by culture and susceptibility                                                                          | Antimicrobial resistance is common [L].                                                                                                                                   |
 
 > **ℹ️ AFTER EVERY DIAGNOSIS**
 >
@@ -119,14 +119,14 @@ Take the history in private, without relatives present, using neutral language a
 
 **Table 11.4 — STI mimics and look-alikes**
 
-| Looks like | Could be | Clue |
-|---|---|---|
-| Crohn’s proctitis | LGV | Sexual exposure, positive rectal chlamydia, inguinal nodes |
-| Chronic fissure or anal cancer | Syphilitic chancre | Indurated, often painless ulcer; positive serology |
-| Fissure or abscess | HSV or mpox | Multiple painful ulcers or vesicles; fever |
-| Haemorrhoids or warts | Condylomata lata (secondary syphilis) | Moist, flat plaques; rash; positive serology |
-| Simple warts | HSIL or anal cancer | Induration, ulceration, bleeding, HIV (Chapter 07) |
-| IBD flare | *Shigella* or other enteric infection | Acute onset, contacts, positive stool PCR |
+| Looks like                     | Could be                              | Clue                                                       |
+| ------------------------------ | ------------------------------------- | ---------------------------------------------------------- |
+| Crohn’s proctitis              | LGV                                   | Sexual exposure, positive rectal chlamydia, inguinal nodes |
+| Chronic fissure or anal cancer | Syphilitic chancre                    | Indurated, often painless ulcer; positive serology         |
+| Fissure or abscess             | HSV or mpox                           | Multiple painful ulcers or vesicles; fever                 |
+| Haemorrhoids or warts          | Condylomata lata (secondary syphilis) | Moist, flat plaques; rash; positive serology               |
+| Simple warts                   | HSIL or anal cancer                   | Induration, ulceration, bleeding, HIV (Chapter 07)         |
+| IBD flare                      | _Shigella_ or other enteric infection | Acute onset, contacts, positive stool PCR                  |
 
 ## 7. Role-Targeted Action Boxes
 
@@ -168,12 +168,12 @@ Take the history in private, without relatives present, using neutral language a
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 EMERGENCY | Sepsis; disseminated gonococcal infection with meningitis or endocarditis features | Resuscitate; admit; infectious diseases |
-| 🔴 SAME-DAY | Severe HSV with urinary retention; DGI; exposure within 72 hours needing HIV PEP; minor at immediate risk | ER or sexual-health service; safeguarding |
-| 🟡 URGENT | Confirmed or suspected STI; non-healing ulcer | Sexual-health clinic within days; biopsy pathway (Chapter 07) |
-| 🟢 ROUTINE | PrEP, vaccination, screening | Sexual-health or primary care |
+| Urgency      | Clinical trigger                                                                                          | Who and how fast                                              |
+| ------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| 🔴 EMERGENCY | Sepsis; disseminated gonococcal infection with meningitis or endocarditis features                        | Resuscitate; admit; infectious diseases                       |
+| 🔴 SAME-DAY  | Severe HSV with urinary retention; DGI; exposure within 72 hours needing HIV PEP; minor at immediate risk | ER or sexual-health service; safeguarding                     |
+| 🟡 URGENT    | Confirmed or suspected STI; non-healing ulcer                                                             | Sexual-health clinic within days; biopsy pathway (Chapter 07) |
+| 🟢 ROUTINE   | PrEP, vaccination, screening                                                                              | Sexual-health or primary care                                 |
 
 ## The Patient in Front of You — Chapter 11 Mini-Case
 

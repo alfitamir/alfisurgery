@@ -39,6 +39,7 @@
 - [x] Add homepage section and subsection dropdowns with translated navigation and verify links on desktop and phone.
 
 ## Retrospective seven-language medical article review
+
 - [x] Repair the article-editions syntax error and remove the Arabic heading from the Urdu diet edition.
 - [ ] Complete and cross-check six translations of the pilonidal, haemorrhoid and hernia articles (9001–9003).
 - [ ] Complete five missing translations of gallstone alternatives (9005); only English exists so far.
@@ -47,6 +48,7 @@
 - [ ] Publish only after explicit instruction; current translation work stays in preview.
 
 ## LinkedIn posts + patient comments (Oct 2026)
+
 - [x] /posts page (full posts, images, dates, "Updated weekly", translations) + homepage card
 - [x] Patient impressions on homepage (nickname + comment, public immediately)
 - [ ] Import old posts — waiting for user's LinkedIn data export file
@@ -57,6 +59,7 @@
 - [ ] Shared feed key (user skipped the form) + feed endpoint in Post Sequence Planner
 
 ## Gemini article admin (Oct 2026)
+
 - [x] Admin-only article page (/admin/articles) with Google sign-in; first account to sign in becomes the site admin.
 - [x] Draft, revise and translate articles into all seven languages with Gemini Pro through Lovable AI; publish/unpublish/delete; new articles appear in the library, reading pages and sitemap.
 - [ ] Doctor signs in once at /admin/articles to claim the admin account — waiting on the doctor.

@@ -14,24 +14,50 @@ export type SiteArticleRow = {
 
 export const siteLanguageCodes = siteLanguages.map((l) => l.code) as SiteLanguage[];
 export const languageNamesEnglish: Record<SiteLanguage, string> = {
-  ar: "Arabic", en: "English", ur: "Urdu", hi: "Hindi", bn: "Bengali", tl: "Filipino (Tagalog)", ta: "Tamil",
+  ar: "Arabic",
+  en: "English",
+  ur: "Urdu",
+  hi: "Hindi",
+  bn: "Bengali",
+  tl: "Filipino (Tagalog)",
+  ta: "Tamil",
 };
 export const isRtl = (language: SiteLanguage) => language === "ar" || language === "ur";
 
-export function normalizeEditions(value: unknown): Partial<Record<SiteLanguage, SiteArticleEdition>> {
+export function normalizeEditions(
+  value: unknown,
+): Partial<Record<SiteLanguage, SiteArticleEdition>> {
   const out: Partial<Record<SiteLanguage, SiteArticleEdition>> = {};
   if (!value || typeof value !== "object") return out;
   for (const code of siteLanguageCodes) {
-    const e = (value as Record<string, unknown>)[code] as { title?: unknown; content?: unknown } | undefined;
-    if (e && typeof e.title === "string" && typeof e.content === "string" && e.title.trim() && e.content.trim()) out[code] = { title: e.title, content: e.content };
+    const e = (value as Record<string, unknown>)[code] as
+      { title?: unknown; content?: unknown } | undefined;
+    if (
+      e &&
+      typeof e.title === "string" &&
+      typeof e.content === "string" &&
+      e.title.trim() &&
+      e.content.trim()
+    )
+      out[code] = { title: e.title, content: e.content };
   }
   return out;
 }
 
-export function toSiteArticleRow(row: { id: number; source_lang: string; category: string; status: string; editions: unknown; published_at: string | null; updated_at: string }): SiteArticleRow {
+export function toSiteArticleRow(row: {
+  id: number;
+  source_lang: string;
+  category: string;
+  status: string;
+  editions: unknown;
+  published_at: string | null;
+  updated_at: string;
+}): SiteArticleRow {
   return {
     id: row.id,
-    source_lang: (siteLanguageCodes.includes(row.source_lang as SiteLanguage) ? row.source_lang : "ar") as SiteLanguage,
+    source_lang: (siteLanguageCodes.includes(row.source_lang as SiteLanguage)
+      ? row.source_lang
+      : "ar") as SiteLanguage,
     category: row.category,
     status: row.status === "published" ? "published" : "draft",
     editions: normalizeEditions(row.editions),

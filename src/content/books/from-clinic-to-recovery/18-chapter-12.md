@@ -23,10 +23,10 @@ Salivary gland surgery brings one fear to the front of every consultation: “Wi
 </tbody>
 </table>
 
-**Table 12.1.** *Salivary gland surgery at a glance.*
+**Table 12.1.** _Salivary gland surgery at a glance._
 
 | **At a glance**                     |                                                                                                                                     |
-|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | **Main operations**                 | Parotidectomy (partial, superficial, or total); submandibular gland excision; stone removal by endoscopy or through the mouth       |
 | **Hospital stay**                   | Usually one night, often with a small drain                                                                                         |
 | **Back to office work**             | About 1 to 2 weeks                                                                                                                  |
@@ -39,9 +39,9 @@ Salivary gland surgery brings one fear to the front of every consultation: “Wi
 
 A salivary lump is assessed with ultrasound and a needle sample, with MRI when the lump is deep, fixed, or suspicious, or when the nerve may be involved [1]. Most parotid lumps are benign. A pleomorphic adenoma is usually removed, because it continues to grow and carries a small risk of becoming malignant over many years. A Warthin tumor, which is benign and common in older smokers, can be observed or removed according to the patient’s symptoms and preference [1]. Signs that suggest cancer, such as pain, rapid growth, facial weakness, or fixation, need multidisciplinary review. Figure 12.1 summarizes the pathway.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 12.1.** Assessment and treatment of a salivary gland lump.*
+_**Figure 12.1.** Assessment and treatment of a salivary gland lump._
 
 ## 12.2 The counseling script
 
@@ -86,16 +86,16 @@ Malignant salivary tumors are uncommon and varied, and are managed by a multidis
 
 A small drain is often left overnight. Facial movement is checked on waking and before discharge. If the eye does not close fully, the cornea must be protected with lubricating drops by day, ointment and a shield or tape at night, and review if the eye becomes red or painful. Numbness of the earlobe is expected after parotidectomy and usually improves over months. A soft swelling of saliva under the skin (sialocele) can occur in the first weeks and is usually managed with aspiration and pressure.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 12.2.** Five facial movements used to check the facial nerve before and after surgery.*
+_**Figure 12.2.** Five facial movements used to check the facial nerve before and after surgery._
 
 ## 12.7 Recovery
 
-**Table 12.2.** *Typical recovery after salivary gland surgery.*
+**Table 12.2.** _Typical recovery after salivary gland surgery._
 
 | **Activity**              | **Usually from**           | **Notes**                                                                        |
-|---------------------------|----------------------------|----------------------------------------------------------------------------------|
+| ------------------------- | -------------------------- | -------------------------------------------------------------------------------- |
 | **Eating**                | The same day               | Soft food at first; the first bite of a meal may cause a brief ache in the cheek |
 | **Showering**             | After the drain is removed | Keep the dressing dry for 1 to 2 days                                            |
 | **Driving**               | About 1 week               | When you can turn your head fully                                                |
@@ -152,11 +152,11 @@ Yes, from the first day. Keep the wound dry for 1 to 2 days, using a waterproof 
 
 Risks are higher with larger resections, inflammation, malignancy, and revision surgery; revision surgery is the main risk factor for permanent weakness [2, 3]. Replace figures marked “unit data” with your own audit figures.
 
-**Table 12.3.** *Material risks of salivary gland surgery. Square brackets mark figures to replace with unit data.*
+**Table 12.3.** _Material risks of salivary gland surgery. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                                                                    | **Typical frequency**                                                           | **Example wording**                                                                   |
-|----------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| **Common**           | Numbness of the earlobe and the skin around the scar                                        | Most patients after parotidectomy                                               | “Your earlobe will feel numb. This usually improves over months.”                     |
+| **Band**             | **Risk**                                                                                    | **Typical frequency**                                                         | **Example wording**                                                                   |
+| -------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Common**           | Numbness of the earlobe and the skin around the scar                                        | Most patients after parotidectomy                                             | “Your earlobe will feel numb. This usually improves over months.”                     |
 | **Common**           | Temporary facial weakness after parotidectomy                                               | About 18 to 24 in 100 for benign disease [2, 3]                               | “About 1 or 2 people in 10 have some weakness, which usually recovers within months.” |
 | **Less common**      | Permanent facial weakness after parotidectomy                                               | About 3 to 4 in 100 for benign disease [2, 3]; higher for cancer and revision | “About 3 or 4 people in 100 have some weakness that does not fully recover.”          |
 | **Less common**      | Troublesome gustatory sweating (Frey syndrome)                                              | About 4 in 100 severe [3]; milder forms more common                           | “Some people sweat on the cheek when eating. It can be treated.”                      |
@@ -188,7 +188,7 @@ Risks are higher with larger resections, inflammation, malignancy, and revision 
 
 ## 12.10 Warning signs
 
-**Table 12.4.** *Green, amber, and red warning signs after salivary gland surgery.*
+**Table 12.4.** _Green, amber, and red warning signs after salivary gland surgery._
 
 <table>
 <colgroup>
@@ -250,7 +250,7 @@ Risks are higher with larger resections, inflammation, malignancy, and revision 
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Tick the operation the patient had, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Tick the operation the patient had, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -304,7 +304,7 @@ Risks are higher with larger resections, inflammation, malignancy, and revision 
 **5. Getting back to normal**
 
 | **Activity**              | **Usually from**                                |
-|---------------------------|-------------------------------------------------|
+| ------------------------- | ----------------------------------------------- |
 | **Showering**             | After the drain is removed                      |
 | **Prayer**                | From the first day                              |
 | **Driving**               | About 1 week, when you can turn your head fully |
@@ -320,7 +320,7 @@ Risks are higher with larger resections, inflammation, malignancy, and revision 
 **7. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                      | **What to do**                                                |
-|-----------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| --------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- |
 | **GREEN** | Numb earlobe or cheek; mild face weakness that is improving; brief cheek ache when eating                                | This is normal. Keep following this guide.                    |
 | **AMBER** | A soft swelling that keeps growing; redness or discharge; an eye that does not close fully; temperature of 38 °C or more | Call us today. Protect your eye.                              |
 | **RED**   | Fast, tight swelling of the neck or face; difficulty breathing or swallowing; a red, painful eye with blurred vision     | Go to the emergency department now. Take this guide with you. |
@@ -348,4 +348,4 @@ Risks are higher with larger resections, inflammation, malignancy, and revision 
 
 3\. Guntinas-Lichius O, Gabriel B, Klussmann JP. Risk of facial palsy and severe Frey’s syndrome after conservative parotidectomy for benign disease: analysis of 610 operations. Acta Otolaryngol. 2006;126(10):1104-1109.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._

@@ -1,6 +1,8 @@
 const DAY_MS = 86_400_000;
 const RIYADH_OFFSET_MS = 3 * 60 * 60 * 1000;
-const FIRST_DAY = Math.floor(Date.parse("2026-10-17T00:00:00+03:00") / DAY_MS + RIYADH_OFFSET_MS / DAY_MS);
+const FIRST_DAY = Math.floor(
+  Date.parse("2026-10-17T00:00:00+03:00") / DAY_MS + RIYADH_OFFSET_MS / DAY_MS,
+);
 
 export function dailyArticleSelection<T>(articles: readonly T[], now: Date) {
   if (!articles.length || !Number.isFinite(now.getTime())) return undefined;

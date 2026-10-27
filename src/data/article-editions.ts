@@ -12,7 +12,8 @@ export interface ArticleEdition {
 export const articleEditions: Record<number, Partial<Record<SiteLanguage, ArticleEdition>>> = {
   9005: {
     en: {
-      title: "Treating gallstones without surgery: the alternatives, their success rates and their limits",
+      title:
+        "Treating gallstones without surgery: the alternatives, their success rates and their limits",
       content: `
 <p><strong>Can gallstones be treated without an operation?</strong> Sometimes observation alone is enough, or a medicine to dissolve certain types of stones may be considered — but there is no single non-surgical alternative that suits everyone. Stones that cause no symptoms are different from stones causing repeated colic, and different again from stones in the bile duct or situations with inflammation or jaundice. Laparoscopic removal of the gallbladder is the usual treatment for stones that cause symptoms, with structured observation possible in selected, uncomplicated cases.</p>
 <p><em>This article is general education, not a prescription or a decision to postpone surgery. Your doctor's and treating team's instructions always come first. The information was checked against the cited sources; this check is not a personal clinical endorsement by Dr. Tamer Elalfy.</em></p>
@@ -124,7 +125,8 @@ export const articleEditions: Record<number, Partial<Record<SiteLanguage, Articl
 <p>আরও পড়ুন: <a href="/guides/cholecystectomy?lang=bn">ল্যাপারোস্কোপিক পিত্তথলি অপারেশনের নির্দেশিকা</a>।</p>`,
     },
     tl: {
-      title: "Ano ang dapat kainin pagkatapos ng operasyon sa apdo? Gabay sa pagkain sa unang mga linggo",
+      title:
+        "Ano ang dapat kainin pagkatapos ng operasyon sa apdo? Gabay sa pagkain sa unang mga linggo",
       content: `
 <p><em>Pangkalahatang impormasyong pang-edukasyon, hindi kapalit ng medikal na pagsusuri. Ang payo ng doktor at pangkat medikal ang laging una.</em></p>
 <h2>Kailangan ko ba ng espesyal na diyeta habang buhay?</h2><p>Hindi. Pagkatapos tanggalin ang apdo, patuloy pa ring gumagawa ng bile ang atay, ngunit dumadaloy ito nang diretso sa bituka. Karamihan ng pasyente ay bumabalik sa normal na pagkain sa loob ng ilang linggo, at ang unti-unting pagbabago ay para mabawasan ang pansamantalang kabag at pagtatae.</p>
@@ -135,7 +137,8 @@ export const articleEditions: Record<number, Partial<Record<SiteLanguage, Articl
 <p>Basahin din: <a href="/guides/cholecystectomy?lang=tl">Gabay sa laparoscopic cholecystectomy</a>.</p>`,
     },
     ta: {
-      title: "பித்தப்பை அறுவைச் சிகிச்சைக்குப் பிறகு எதைச் சாப்பிட வேண்டும்? முதல் வாரங்களுக்கான உணவு வழிகாட்டி",
+      title:
+        "பித்தப்பை அறுவைச் சிகிச்சைக்குப் பிறகு எதைச் சாப்பிட வேண்டும்? முதல் வாரங்களுக்கான உணவு வழிகாட்டி",
       content: `
 <p><em>இது பொது தகவல்; மருத்துவ பரிசோதனைக்கு மாற்று அல்ல. உங்கள் மருத்துவர் மற்றும் சிகிச்சைக் குழுவின் அறிவுரையே எப்போதும் முன்னுரிமை.</em></p>
 <h2>வாழ்நாள் முழுவதும் சிறப்பு உணவு தேவையா?</h2><p>இல்லை. பித்தப்பை நீக்கப்பட்ட பிறகும் கல்லீரல் பித்தநீரைத் தயாரிக்கிறது, ஆனால் அது நேரடியாகக் குடலுக்குச் செல்கிறது. பெரும்பாலானோர் சில வாரங்களில் இயல்பான உணவுக்குத் திரும்புகிறார்கள்; படிப்படியான மாற்றத்தின் நோக்கம் தற்காலிக வயிற்று உப்புசம் மற்றும் வயிற்றுப்போக்கைக் குறைப்பது.</p>

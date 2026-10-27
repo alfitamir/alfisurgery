@@ -21,7 +21,7 @@ Part I teaches three foundation skills once: running a consultation that ends in
 Every procedure chapter in Parts II and III follows the same five steps, so that you can find what you need quickly.
 
 | **Step**   | **What it contains**                                                                                                                                                                                                   |
-|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Step 1** | **Explaining the disease and the operation.** A counseling script in plain language, with analogies, the reason for surgery, how the operation is done, and the alternatives.                                          |
 | **Step 2** | **Preparation, medicines, and recovery.** Fasting, medicines to stop and continue, smoking and alcohol, wound care, and a timeline for walking, swimming, driving, flying, work, sport, prayer postures, and intimacy. |
 | **Step 3** | **Questions patients ask.** Short, honest answers to the most frequent questions before and after surgery.                                                                                                             |
@@ -53,7 +53,7 @@ Each patient guide covers the same seven domains, which makes the guides easy to
 Warning signs are grouped into three levels in every chapter and every patient guide, and the same system is used for telephone follow-up (Chapter 3).
 
 | **Level** | **Meaning**                  | **What the patient should do**                           |
-|-----------|------------------------------|----------------------------------------------------------|
+| --------- | ---------------------------- | -------------------------------------------------------- |
 | **Green** | Expected after the operation | Nothing urgent. Follow the guide; reassurance only.      |
 | **Amber** | Needs assessment today       | Call the clinic or contact number the same day.          |
 | **Red**   | Possible emergency           | Go to the emergency department or call an ambulance now. |
@@ -64,4 +64,4 @@ Recovery timelines in this book are typical ranges for uncomplicated recovery. T
 
 ## Boxes and conventions
 
-Four kinds of box appear in the chapters. *Learning objectives* open each chapter. *Script* boxes give suggested words, which readers should adapt to their own style and language. *Caution* boxes, with an amber border, flag safety points that are easy to miss. *Key points* close each chapter and can be used for teaching. Risks are expressed as natural frequencies (for example, “3 out of 100”), and the risk bands used throughout are defined in Section 1.5.
+Four kinds of box appear in the chapters. _Learning objectives_ open each chapter. _Script_ boxes give suggested words, which readers should adapt to their own style and language. _Caution_ boxes, with an amber border, flag safety points that are easy to miss. _Key points_ close each chapter and can be used for teaching. Risks are expressed as natural frequencies (for example, “3 out of 100”), and the risk bands used throughout are defined in Section 1.5.

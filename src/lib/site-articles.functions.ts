@@ -8,7 +8,10 @@ import { sanitizeArticleHtml } from "@/lib/article-html";
 import { languageNamesEnglish, siteLanguageCodes, toSiteArticleRow } from "@/lib/site-articles";
 
 const languageSchema = z.enum(["ar", "en", "ur", "hi", "bn", "tl", "ta"]);
-const editionSchema = z.object({ title: z.string().trim().max(300), content: z.string().max(300_000) });
+const editionSchema = z.object({
+  title: z.string().trim().max(300),
+  content: z.string().max(300_000),
+});
 const columns = "id, source_lang, category, status, editions, published_at, updated_at";
 
 async function assertAdmin(supabase: SupabaseClient<Database>, userId: string) {
@@ -20,16 +23,31 @@ async function assertAdmin(supabase: SupabaseClient<Database>, userId: string) {
 
 export const listPublishedSiteArticles = createServerFn({ method: "GET" }).handler(async () => {
   const db = publicSupabase(process.env["SUPABASE_URL"]!, process.env["SUPABASE_PUBLISHABLE_KEY"]!);
-  const { data, error } = await db.from("site_articles").select(columns).eq("status", "published").order("published_at", { ascending: false });
-  if (error) { console.error(error); return []; }
+  const { data, error } = await db
+    .from("site_articles")
+    .select(columns)
+    .eq("status", "published")
+    .order("published_at", { ascending: false });
+  if (error) {
+    console.error(error);
+    return [];
+  }
   return data.map(toSiteArticleRow);
 });
 
 export const getPublishedSiteArticle = createServerFn({ method: "GET" })
-  .inputValidator((input: unknown) => z.object({ id: z.number().int().positive() }).parse(input))
+  .validator((input: unknown) => z.object({ id: z.number().int().positive() }).parse(input))
   .handler(async ({ data }) => {
-    const db = publicSupabase(process.env["SUPABASE_URL"]!, process.env["SUPABASE_PUBLISHABLE_KEY"]!);
-    const { data: row, error } = await db.from("site_articles").select(columns).eq("id", data.id).eq("status", "published").maybeSingle();
+    const db = publicSupabase(
+      process.env["SUPABASE_URL"]!,
+      process.env["SUPABASE_PUBLISHABLE_KEY"]!,
+    );
+    const { data: row, error } = await db
+      .from("site_articles")
+      .select(columns)
+      .eq("id", data.id)
+      .eq("status", "published")
+      .maybeSingle();
     if (error) console.error(error);
     return row ? toSiteArticleRow(row) : null;
   });
@@ -39,7 +57,10 @@ export const getPublishedSiteArticle = createServerFn({ method: "GET" })
 export const getAdminStatus = createServerFn({ method: "GET" })
   .middleware([requireSupabaseAuth])
   .handler(async ({ context }) => {
-    const { data } = await context.supabase.rpc("has_role", { _user_id: context.userId, _role: "admin" });
+    const { data } = await context.supabase.rpc("has_role", {
+      _user_id: context.userId,
+      _role: "admin",
+    });
     const email = typeof context.claims?.email === "string" ? context.claims.email : "";
     return { isAdmin: !!data, email };
   });
@@ -48,40 +69,66 @@ export const listAdminArticles = createServerFn({ method: "GET" })
   .middleware([requireSupabaseAuth])
   .handler(async ({ context }) => {
     await assertAdmin(context.supabase, context.userId);
-    const { data, error } = await context.supabase.from("site_articles").select(columns).order("updated_at", { ascending: false });
+    const { data, error } = await context.supabase
+      .from("site_articles")
+      .select(columns)
+      .order("updated_at", { ascending: false });
     if (error) throw new Error("تعذر تحميل المقالات.");
     return data.map(toSiteArticleRow);
   });
 
 export const saveSiteArticle = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
-  .inputValidator((input: unknown) => z.object({
-    id: z.number().int().positive().optional(),
-    source_lang: languageSchema,
-    category: z.string().trim().max(80),
-    status: z.enum(["draft", "published"]),
-    editions: z.record(z.string(), editionSchema),
-  }).parse(input))
+  .validator((input: unknown) =>
+    z
+      .object({
+        id: z.number().int().positive().optional(),
+        source_lang: languageSchema,
+        category: z.string().trim().max(80),
+        status: z.enum(["draft", "published"]),
+        editions: z.record(z.string(), editionSchema),
+      })
+      .parse(input),
+  )
   .handler(async ({ data, context }) => {
     await assertAdmin(context.supabase, context.userId);
     const editions: Record<string, { title: string; content: string }> = {};
     for (const code of siteLanguageCodes) {
       const e = data.editions[code];
-      if (e && e.title.trim() && e.content.trim()) editions[code] = { title: e.title.trim(), content: sanitizeArticleHtml(e.content.trim()) };
+      if (e && e.title.trim() && e.content.trim())
+        editions[code] = { title: e.title.trim(), content: sanitizeArticleHtml(e.content.trim()) };
     }
-    if (!editions[data.source_lang]) throw new Error("اكتب عنوان المقال ونصه بلغته الأصلية قبل الحفظ.");
-    const values = { source_lang: data.source_lang, category: data.category, status: data.status, editions };
+    if (!editions[data.source_lang])
+      throw new Error("اكتب عنوان المقال ونصه بلغته الأصلية قبل الحفظ.");
+    const values = {
+      source_lang: data.source_lang,
+      category: data.category,
+      status: data.status,
+      editions,
+    };
     const query = data.id
-      ? context.supabase.from("site_articles").update(values).eq("id", data.id).select(columns).single()
-      : context.supabase.from("site_articles").insert({ ...values, created_by: context.userId }).select(columns).single();
+      ? context.supabase
+          .from("site_articles")
+          .update(values)
+          .eq("id", data.id)
+          .select(columns)
+          .single()
+      : context.supabase
+          .from("site_articles")
+          .insert({ ...values, created_by: context.userId })
+          .select(columns)
+          .single();
     const { data: row, error } = await query;
-    if (error) { console.error(error); throw new Error("تعذر حفظ المقال."); }
+    if (error) {
+      console.error(error);
+      throw new Error("تعذر حفظ المقال.");
+    }
     return toSiteArticleRow(row);
   });
 
 export const deleteSiteArticle = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
-  .inputValidator((input: unknown) => z.object({ id: z.number().int().positive() }).parse(input))
+  .validator((input: unknown) => z.object({ id: z.number().int().positive() }).parse(input))
   .handler(async ({ data, context }) => {
     await assertAdmin(context.supabase, context.userId);
     const { error } = await context.supabase.from("site_articles").delete().eq("id", data.id);
@@ -91,16 +138,39 @@ export const deleteSiteArticle = createServerFn({ method: "POST" })
 
 /* ---------- Gemini Pro through Lovable AI ---------- */
 
-const htmlRules = "Return JSON with \"title\" (plain text) and \"content\" (HTML body only). Allowed tags: h2, h3, p, ul, ol, li, strong, em, a, blockquote, table, thead, tbody, tr, th, td. No scripts, styles, images, markdown or code fences. Never include phone numbers.";
-const medicalRules = "You write patient education for Dr. Tamer Elalfy, consultant general and laparoscopic surgeon (Al Khobar, Saudi Arabia). Be accurate and consistent with current international guidelines (e.g. NICE, ACS, SAGES, ASMBS, EASL, ERAS). Explain simply for patients. Never diagnose, never prescribe doses, never promise results; qualify success rates by patient selection, outcome and follow-up length. Always say the treating team's instructions take priority, and include a short section on warning signs that need urgent care. Do not invent studies, numbers or references: if you are not certain a source exists, leave it out.";
+const htmlRules =
+  'Return JSON with "title" (plain text) and "content" (HTML body only). Allowed tags: h2, h3, p, ul, ol, li, strong, em, a, blockquote, table, thead, tbody, tr, th, td. No scripts, styles, images, markdown or code fences. Never include phone numbers.';
+const medicalRules =
+  "You write patient education for Dr. Tamer Elalfy, consultant general and laparoscopic surgeon (Al Khobar, Saudi Arabia). Be accurate and consistent with current international guidelines (e.g. NICE, ACS, SAGES, ASMBS, EASL, ERAS). Explain simply for patients. Never diagnose, never prescribe doses, never promise results; qualify success rates by patient selection, outcome and follow-up length. Always say the treating team's instructions take priority, and include a short section on warning signs that need urgent care. Do not invent studies, numbers or references: if you are not certain a source exists, leave it out.";
 
 export const geminiWrite = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
-  .inputValidator((input: unknown) => z.discriminatedUnion("mode", [
-    z.object({ mode: z.literal("draft"), language: languageSchema, topic: z.string().trim().min(3).max(500), notes: z.string().max(20_000).default("") }),
-    z.object({ mode: z.literal("translate"), from: languageSchema, to: languageSchema, title: z.string().min(1).max(300), content: z.string().min(1).max(300_000) }),
-    z.object({ mode: z.literal("revise"), language: languageSchema, title: z.string().max(300), content: z.string().max(300_000), instruction: z.string().trim().min(3).max(2000) }),
-  ]).parse(input))
+  .validator((input: unknown) =>
+    z
+      .discriminatedUnion("mode", [
+        z.object({
+          mode: z.literal("draft"),
+          language: languageSchema,
+          topic: z.string().trim().min(3).max(500),
+          notes: z.string().max(20_000).default(""),
+        }),
+        z.object({
+          mode: z.literal("translate"),
+          from: languageSchema,
+          to: languageSchema,
+          title: z.string().min(1).max(300),
+          content: z.string().min(1).max(300_000),
+        }),
+        z.object({
+          mode: z.literal("revise"),
+          language: languageSchema,
+          title: z.string().max(300),
+          content: z.string().max(300_000),
+          instruction: z.string().trim().min(3).max(2000),
+        }),
+      ])
+      .parse(input),
+  )
   .handler(async ({ data, context }) => {
     await assertAdmin(context.supabase, context.userId);
     const apiKey = process.env["LOVABLE_API_KEY"];
@@ -118,5 +188,9 @@ export const geminiWrite = createServerFn({ method: "POST" })
       prompt = `Instruction from the doctor:\n${data.instruction}\n\nCurrent title:\n${data.title}\n\nCurrent HTML content:\n${data.content}`;
     }
     const result = await generateWithGemini(apiKey, system, prompt);
-    return { title: result.title, content: sanitizeArticleHtml(result.content), model: result.model };
+    return {
+      title: result.title,
+      content: sanitizeArticleHtml(result.content),
+      model: result.model,
+    };
   });

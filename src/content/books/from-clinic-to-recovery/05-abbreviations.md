@@ -1,7 +1,7 @@
 # Abbreviations
 
 | **Abbreviation** | **Meaning**                                                                |
-|------------------|----------------------------------------------------------------------------|
+| ---------------- | -------------------------------------------------------------------------- |
 | **ASA**          | American Society of Anesthesiologists                                      |
 | **ERAS**         | Enhanced Recovery After Surgery                                            |
 | **GIP**          | Glucose-dependent insulinotropic polypeptide                               |
@@ -19,6 +19,6 @@
 
 **Foundations of Surgical Counseling, Consent, and Enhanced Recovery**
 
-*Chapters 1 to 3*
+_Chapters 1 to 3_
 
-> *Every procedure chapter in this book rests on three skills: running a consultation that ends in genuine, informed consent; explaining enhanced recovery so that the patient becomes an active partner; and supporting spoken advice with clear printed and digital information. Part I teaches these skills once, so that the later chapters can apply them without repeating them.*
+> _Every procedure chapter in this book rests on three skills: running a consultation that ends in genuine, informed consent; explaining enhanced recovery so that the patient becomes an active partner; and supporting spoken advice with clear printed and digital information. Part I teaches these skills once, so that the later chapters can apply them without repeating them._

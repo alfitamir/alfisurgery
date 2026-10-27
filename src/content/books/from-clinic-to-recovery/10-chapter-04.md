@@ -25,10 +25,10 @@ Laparoscopic cholecystectomy is one of the most common operations in general sur
 </tbody>
 </table>
 
-**Table 4.1.** *Laparoscopic cholecystectomy at a glance.*
+**Table 4.1.** _Laparoscopic cholecystectomy at a glance._
 
 | **At a glance**                     |                                                                                                              |
-|-------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | **Operation**                       | Laparoscopic (keyhole) removal of the gallbladder under general anesthesia                                   |
 | **Usual reason**                    | Gallstones causing typical attacks of pain, or complications such as an inflamed gallbladder or pancreatitis |
 | **Time in the operating room**      | About 1 hour (often 45 to 90 minutes)                                                                        |
@@ -45,9 +45,9 @@ The decision to operate starts with the symptoms, not the scan. Gallstones are c
 
 The type of pain matters. Typical biliary pain comes in severe attacks, is felt in the upper abdomen or under the right ribs, lasts at least 15 to 30 minutes, often spreads to the back, and responds to simple painkillers. In a large trial of patients with gallstones and abdominal pain, only about 60 in 100 were pain-free a year after usual care, which included surgery for most; vague symptoms such as bloating and indigestion were the ones least likely to improve [2]. Figure 4.1 summarizes the decision.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 4.1.** Deciding with the patient whether cholecystectomy is likely to help.*
+_**Figure 4.1.** Deciding with the patient whether cholecystectomy is likely to help._
 
 Complications change the timing. For acute cholecystitis, early laparoscopic cholecystectomy, preferably within 7 days of admission and within 10 days of the onset of symptoms, is recommended over delayed surgery [3]. After mild gallstone pancreatitis, removing the gallbladder during the same admission reduces readmission for further gallstone complications [4]. Stones in the bile duct are cleared by endoscopy (ERCP) before, or by the surgeon during, the operation.
 
@@ -77,10 +77,10 @@ The last paragraph matters for consent. Safe cholecystectomy depends on positive
 
 Every consent discussion includes the reasonable alternatives (Table 4.2). For uncomplicated symptomatic gallstones, waiting is a genuine option. In a UK trial, quality of life over 18 months was no better with surgery than with conservative management, and about 1 in 4 patients who chose to wait needed an operation within that time [6]. Patients who prefer to wait need to know which symptoms mean they should seek help urgently.
 
-**Table 4.2.** *Options for gallstones and how to explain them.*
+**Table 4.2.** _Options for gallstones and how to explain them._
 
 | **Option**                          | **Who it suits**                                                                            | **What to tell the patient**                                                                                                                                                        |
-|-------------------------------------|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Planned keyhole cholecystectomy** | Typical attacks, or after a complication                                                    | “This is the usual treatment. It stops the attacks for most people and prevents complications.”                                                                                     |
 | **Watchful waiting**                | Mild or infrequent typical attacks, a patient who prefers to wait, or a high operative risk | “Waiting is reasonable. Some people never have another attack, but about 1 in 4 needed the operation within 18 months in one trial. Here are the signs that mean you must come in.” |
 | **Removing only the stones**        | Not recommended                                                                             | “The gallbladder usually makes new stones, so this does not solve the problem.”                                                                                                     |
@@ -127,10 +127,10 @@ Before discharge, the patient should be awake and steady on their feet, have pai
 
 Table 4.3 and Figure 4.2 give typical times after an uncomplicated keyhole operation. After open surgery, or if there were complications, most activities take longer and the plan is individualized. The RCS England patient guidance suggests that most people can return to work 10 to 14 days after the operation [7].
 
-**Table 4.3.** *Typical recovery times after uncomplicated laparoscopic cholecystectomy.*
+**Table 4.3.** _Typical recovery times after uncomplicated laparoscopic cholecystectomy._
 
 | **Activity**                   | **Usually from**               | **Notes for counseling**                                                                                                    |
-|--------------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------ | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
 | **Walking**                    | The same day                   | Short, frequent walks; increase each day                                                                                    |
 | **Eating**                     | The same day                   | Light meals first; no special diet is needed                                                                                |
 | **Showering**                  | Day 2                          | Pat wounds dry; no bath or swimming until healed                                                                            |
@@ -144,9 +144,9 @@ Table 4.3 and Figure 4.2 give typical times after an uncomplicated keyhole opera
 | **Ramadan fasting**            | About 1 to 2 weeks             | When eating normally and no longer needing regular medicines                                                                |
 | **Flying**                     | About 1 week for short flights | See below; discuss long-haul flights and clot prevention                                                                    |
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 4.2.** Recovery timeline after keyhole gallbladder removal, for use with patients.*
+_**Figure 4.2.** Recovery timeline after keyhole gallbladder removal, for use with patients._
 
 Air travel is a frequent question in the Gulf, where many patients travel soon after surgery. The UK Civil Aviation Authority advises avoiding flights for about 24 hours after keyhole surgery, because of residual gas, and for about 10 days after open abdominal surgery [8]. In practice, most patients are advised to wait until they are comfortable, walking well, and free of complications, which is usually about a week for a short flight. Long-haul travel in the first weeks needs a discussion about walking during the flight, fluids, and clot prevention, and travel insurers may set their own conditions.
 
@@ -212,14 +212,14 @@ You will have three or four small scars, the longest about 1 to 2 cm near the be
 
 Table 4.4 groups the risks into the three bands defined in Section 1.5. The figures are published ranges given for teaching; replace them with your own unit’s audit data wherever possible. Risks are higher when the gallbladder is acutely inflamed, after previous upper abdominal surgery, and in patients who are older, male, obese, or have liver disease [12].
 
-**Table 4.4.** *Material risks of laparoscopic cholecystectomy. Square brackets mark figures to replace with unit data.*
+**Table 4.4.** _Material risks of laparoscopic cholecystectomy. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                                                       | **Typical frequency**                                                                                                          | **Example wording**                                                                                                     |
-|----------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| **Common**           | Shoulder-tip and wound pain                                                    | Many patients, for 1 to 3 days                                                                                                 | “Most people have some shoulder or wound pain for a day or two. It settles on its own.”                                 |
+| **Band**             | **Risk**                                                                       | **Typical frequency**                                                                                                        | **Example wording**                                                                                                     |
+| -------------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Common**           | Shoulder-tip and wound pain                                                    | Many patients, for 1 to 3 days                                                                                               | “Most people have some shoulder or wound pain for a day or two. It settles on its own.”                                 |
 | **Common**           | Symptoms that continue after surgery                                           | About 4 in 10 had some pain at 1 year in one trial [2]; lower with typical attacks                                           | “The typical attacks usually stop, but bloating or indigestion may continue.”                                           |
-| **Common**           | Looser stools after fatty meals                                                | Common in the first weeks; persistent in a minority                                                                            | “Your stools may be looser for a few weeks. This usually settles.”                                                      |
-| **Less common**      | Conversion to open surgery                                                     | About 2 to 10 in 100; higher if inflamed [12]                                                                                | “About [X] in 100 of our patients need a larger cut to finish the operation safely.”                                  |
+| **Common**           | Looser stools after fatty meals                                                | Common in the first weeks; persistent in a minority                                                                          | “Your stools may be looser for a few weeks. This usually settles.”                                                      |
+| **Less common**      | Conversion to open surgery                                                     | About 2 to 10 in 100; higher if inflamed [12]                                                                                | “About [X] in 100 of our patients need a larger cut to finish the operation safely.”                                    |
 | **Less common**      | Bile leak or other bile duct problem                                           | About 1 to 2 in 100 overall [5]                                                                                              | “About 1 in 100 people have a small bile leak. Most are treated with a drain or an endoscopy.”                          |
 | **Less common**      | Wound infection; hernia at a wound                                             | About 1 to 2 in 100 [unit data]                                                                                              | “A small number of wounds become infected or later develop a bulge.”                                                    |
 | **Rare but serious** | Major bile duct injury                                                         | About 2 to 4 in 1,000 [5]                                                                                                    | “About 2 to 4 in 1,000 people have an injury to the main bile duct. It may need another operation and specialist care.” |
@@ -254,7 +254,7 @@ Table 4.4 groups the risks into the three bands defined in Section 1.5. The figu
 
 Table 4.5 gives the warning signs that appear in the patient guide. Bile leak and bile duct injury often present after discharge, typically with abdominal pain that worsens instead of improving after the first day or two, with fever, or with jaundice; a patient who returns with these symptoms needs prompt senior review and imaging.
 
-**Table 4.5.** *Green, amber, and red warning signs after cholecystectomy.*
+**Table 4.5.** _Green, amber, and red warning signs after cholecystectomy._
 
 <table>
 <colgroup>
@@ -320,7 +320,7 @@ Table 4.5 gives the warning signs that appear in the patient guide. Bile leak an
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -410,7 +410,7 @@ Taking out the gallbladder stops gallstone attacks. It also prevents problems su
 These are usual times. Your own plan is on your card.
 
 | **Activity**                    | **Usually from**                                                                                                     |
-|---------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | **Walking**                     | The same day. Walk a little more each day.                                                                           |
 | **Showering**                   | After 2 days                                                                                                         |
 | **Prayer**                      | From the first day. Pray sitting if bowing or kneeling hurts. Most people can bow and kneel within a week.           |
@@ -434,7 +434,7 @@ These are usual times. Your own plan is on your card.
 **7. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                                                                                | **What to do**                                                |
-|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | **GREEN** | Shoulder or wound pain that gets better each day; bloating; tiredness; small bruises; looser stools                                                                                                | This is normal. Keep following this guide.                    |
 | **AMBER** | A red, hot, or leaking wound; temperature of 38 °C or more; cannot keep drinks down; no bowel movement for 4 days                                                                                  | Call us today.                                                |
 | **RED**   | Tummy pain that gets worse, or a swollen tummy; yellow eyes or skin; dark urine; fever with shivering; vomiting again and again; chest pain or short of breath; a hot, swollen leg; heavy bleeding | Go to the emergency department now. Take this guide with you. |
@@ -480,4 +480,4 @@ These are usual times. Your own plan is on your card.
 
 12\. Livingston EH, Rege RV. A nationwide study of conversion from laparoscopic to open cholecystectomy. Am J Surg. 2004;188(3):205-211.
 
-*Note: references are numbered within this chapter for the pilot. Frequencies marked “unit data” should be replaced with the author’s own audit figures before publication.*
+_Note: references are numbered within this chapter for the pilot. Frequencies marked “unit data” should be replaced with the author’s own audit figures before publication._

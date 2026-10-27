@@ -1,47 +1,47 @@
 # Chapter 15 — Rare but Important Conditions Non-Surgeons Should Recognise
 
-*Purpose: ten uncommon conditions that hide behind common complaints — recognise the pattern, know the red flags, and send the patient down the right pathway the first time.*
+_Purpose: ten uncommon conditions that hide behind common complaints — recognise the pattern, know the red flags, and send the patient down the right pathway the first time._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 15**
 >
 > - **Chapter colour palette:** Graphite (#374151) header bar, Cloud Grey (#F3F4F6) panels, Ink (#111827) text, with a single red accent for emergencies.
 > - **Hero graphic:** A “field guide” grid of ten tiles, each with a small icon, the one clue that should make you think of the condition, and a coloured urgency dot.
 > - **Icon set:** Radiation trefoil, ulcer, concentric rings, nodule chain, white plaque, eczema patch, lightning bolt, stone (faecal mass), white-cell shield, red siren.
-> - **Bedside aphorism banner:** *“When the common diagnosis does not fit, the rare one is often hiding in plain sight.”*
+> - **Bedside aphorism banner:** _“When the common diagnosis does not fit, the rare one is often hiding in plain sight.”_
 
 ## 1. Presentation and Red Flags
 
 **Table 15.1 — Ten rare conditions: how they present**
 
-| Condition | Presentation | Red flags |
-|---|---|---|
-| Radiation proctitis | Months to years after pelvic radiotherapy: bleeding, urgency, mucus, tenesmus | Transfusion-dependent bleeding; fistula; stricture; recurrence of cancer |
-| Solitary rectal ulcer syndrome (SRUS) | Usually young adults: straining, mucus, bleeding, rectal pain, incomplete evacuation | Ulcer or polypoid lesion that looks like cancer — needs biopsy |
-| Rectal prolapse and mucosal prolapse | Protrusion with straining; mucus; soiling (Chapters 02, 10) | Incarceration, dusky or black mucosa |
-| Hidradenitis suppurativa (perineum, buttocks, groin) | Recurrent painful nodules, abscesses, sinus tracts, scarring | Extensive disease; squamous cell carcinoma in long-standing lesions; coexisting Crohn’s |
-| Lichen sclerosus, lichen planus, psoriasis, other dermatoses | Itch, soreness, fissuring; ivory-white atrophic skin (lichen sclerosus); sharply demarcated plaque (inverse psoriasis); erosions (lichen planus) | Non-healing erosion, thickening, or ulcer → biopsy (SCC risk in lichen sclerosus) |
-| Anal Paget disease and perianal HSIL (“Bowen disease”) | Persistent eczema-like, red, white, or pigmented plaque with itch | Paget disease may be associated with an underlying adenocarcinoma; HSIL can progress to SCC |
-| Levator ani syndrome and proctalgia fugax | Rome IV: fleeting severe pain ≤ 30 min (fugax) or ache ≥ 30 min with tender levator (levator ani) | Fever, constant pain, mass, weight loss → it is not functional |
-| Stercoral ulceration and perforation | Older, immobile, opioid-treated patients with impaction; abdominal pain, bleeding | Peritonism, fever, sepsis, free air |
-| Neutropenic enterocolitis (typhlitis) | Neutropenic patient with fever, abdominal pain (often right lower quadrant), diarrhoea | Peritonism, perforation, bleeding, shock |
-| Pelvic sepsis after anorectal procedures | Days after banding, haemorrhoidectomy, stapling, or sclerotherapy: worsening pain, fever, urinary difficulty | Any combination of the triad — **emergency** (Chapter 03) |
+| Condition                                                    | Presentation                                                                                                                                     | Red flags                                                                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| Radiation proctitis                                          | Months to years after pelvic radiotherapy: bleeding, urgency, mucus, tenesmus                                                                    | Transfusion-dependent bleeding; fistula; stricture; recurrence of cancer                    |
+| Solitary rectal ulcer syndrome (SRUS)                        | Usually young adults: straining, mucus, bleeding, rectal pain, incomplete evacuation                                                             | Ulcer or polypoid lesion that looks like cancer — needs biopsy                              |
+| Rectal prolapse and mucosal prolapse                         | Protrusion with straining; mucus; soiling (Chapters 02, 10)                                                                                      | Incarceration, dusky or black mucosa                                                        |
+| Hidradenitis suppurativa (perineum, buttocks, groin)         | Recurrent painful nodules, abscesses, sinus tracts, scarring                                                                                     | Extensive disease; squamous cell carcinoma in long-standing lesions; coexisting Crohn’s     |
+| Lichen sclerosus, lichen planus, psoriasis, other dermatoses | Itch, soreness, fissuring; ivory-white atrophic skin (lichen sclerosus); sharply demarcated plaque (inverse psoriasis); erosions (lichen planus) | Non-healing erosion, thickening, or ulcer → biopsy (SCC risk in lichen sclerosus)           |
+| Anal Paget disease and perianal HSIL (“Bowen disease”)       | Persistent eczema-like, red, white, or pigmented plaque with itch                                                                                | Paget disease may be associated with an underlying adenocarcinoma; HSIL can progress to SCC |
+| Levator ani syndrome and proctalgia fugax                    | Rome IV: fleeting severe pain ≤ 30 min (fugax) or ache ≥ 30 min with tender levator (levator ani)                                                | Fever, constant pain, mass, weight loss → it is not functional                              |
+| Stercoral ulceration and perforation                         | Older, immobile, opioid-treated patients with impaction; abdominal pain, bleeding                                                                | Peritonism, fever, sepsis, free air                                                         |
+| Neutropenic enterocolitis (typhlitis)                        | Neutropenic patient with fever, abdominal pain (often right lower quadrant), diarrhoea                                                           | Peritonism, perforation, bleeding, shock                                                    |
+| Pelvic sepsis after anorectal procedures                     | Days after banding, haemorrhoidectomy, stapling, or sclerotherapy: worsening pain, fever, urinary difficulty                                     | Any combination of the triad — **emergency** (Chapter 03)                                   |
 
 ## 2. Work-Up, Initial Management, and Referral Urgency
 
 **Table 15.2 — Ten rare conditions: what to do**
 
-| Condition | Work-up | Initial management | Urgency |
-|---|---|---|---|
-| Radiation proctitis | FBC, iron studies; flexible sigmoidoscopy (telangiectasia); exclude recurrence | Iron; stool softeners; specialist options include sucralfate enemas, endoscopic argon plasma coagulation, formalin, and hyperbaric oxygen [U] | 🟡 Urgent GI (🔴 if heavy bleeding) |
-| SRUS | Sigmoidoscopy with **biopsy**; defecography or manometry if obstructed defecation | Stop straining; fibre; biofeedback; avoid unnecessary surgery | 🟡 Urgent (biopsy) |
-| Rectal or mucosal prolapse | Examine on straining; colonoscopy if indicated | Reduce if out; treat constipation; colorectal referral | 🟢 Routine (🔴 if incarcerated) |
-| Hidradenitis suppurativa | Clinical; exclude Crohn’s and fistula-in-ano | Weight and smoking support; drain acute abscesses; dermatology (antibiotics, biologics); surgical excision for chronic tracts | 🟢 Routine (🔴 same-day if abscess) |
-| Lichen sclerosus and other dermatoses | Biopsy if atypical, non-healing, or thickened | Lichen sclerosus: potent topical corticosteroid under specialist guidance; long-term follow-up | 🟢 Routine (🟡 if suspicious lesion) |
-| Anal Paget disease, perianal HSIL | Biopsy; for Paget disease, colonoscopy and urological or gynaecological assessment | Specialist excision or ablation; HRA surveillance for HSIL | 🟡 Urgent |
-| Levator ani syndrome, proctalgia fugax | Exclude abscess, fissure, tumour, prostatitis | Reassurance; warm baths; biofeedback for levator ani syndrome (ACG 2021); inhaled salbutamol for prolonged fugax attacks [U] | 🟢 Routine |
-| Stercoral ulceration or perforation | CT abdomen and pelvis; bloods including lactate | Disimpaction if no perforation; **perforation needs emergency surgery** | 🔴 Emergency if perforated |
-| Neutropenic enterocolitis | CT; blood cultures; lactate | Febrile-neutropenia antibiotics within 1 hour (with anaerobic cover); bowel rest; haematology and surgery together; no rectal instrumentation | 🔴 Emergency |
-| Pelvic sepsis after anorectal procedures | Bloods, cultures, lactate; CT if it does not delay surgery | Sepsis bundle; broad-spectrum IV antibiotics; urgent EUA, band removal, drainage or debridement | 🔴 Emergency |
+| Condition                                | Work-up                                                                            | Initial management                                                                                                                            | Urgency                              |
+| ---------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| Radiation proctitis                      | FBC, iron studies; flexible sigmoidoscopy (telangiectasia); exclude recurrence     | Iron; stool softeners; specialist options include sucralfate enemas, endoscopic argon plasma coagulation, formalin, and hyperbaric oxygen [U] | 🟡 Urgent GI (🔴 if heavy bleeding)  |
+| SRUS                                     | Sigmoidoscopy with **biopsy**; defecography or manometry if obstructed defecation  | Stop straining; fibre; biofeedback; avoid unnecessary surgery                                                                                 | 🟡 Urgent (biopsy)                   |
+| Rectal or mucosal prolapse               | Examine on straining; colonoscopy if indicated                                     | Reduce if out; treat constipation; colorectal referral                                                                                        | 🟢 Routine (🔴 if incarcerated)      |
+| Hidradenitis suppurativa                 | Clinical; exclude Crohn’s and fistula-in-ano                                       | Weight and smoking support; drain acute abscesses; dermatology (antibiotics, biologics); surgical excision for chronic tracts                 | 🟢 Routine (🔴 same-day if abscess)  |
+| Lichen sclerosus and other dermatoses    | Biopsy if atypical, non-healing, or thickened                                      | Lichen sclerosus: potent topical corticosteroid under specialist guidance; long-term follow-up                                                | 🟢 Routine (🟡 if suspicious lesion) |
+| Anal Paget disease, perianal HSIL        | Biopsy; for Paget disease, colonoscopy and urological or gynaecological assessment | Specialist excision or ablation; HRA surveillance for HSIL                                                                                    | 🟡 Urgent                            |
+| Levator ani syndrome, proctalgia fugax   | Exclude abscess, fissure, tumour, prostatitis                                      | Reassurance; warm baths; biofeedback for levator ani syndrome (ACG 2021); inhaled salbutamol for prolonged fugax attacks [U]                  | 🟢 Routine                           |
+| Stercoral ulceration or perforation      | CT abdomen and pelvis; bloods including lactate                                    | Disimpaction if no perforation; **perforation needs emergency surgery**                                                                       | 🔴 Emergency if perforated           |
+| Neutropenic enterocolitis                | CT; blood cultures; lactate                                                        | Febrile-neutropenia antibiotics within 1 hour (with anaerobic cover); bowel rest; haematology and surgery together; no rectal instrumentation | 🔴 Emergency                         |
+| Pelvic sepsis after anorectal procedures | Bloods, cultures, lactate; CT if it does not delay surgery                         | Sepsis bundle; broad-spectrum IV antibiotics; urgent EUA, band removal, drainage or debridement                                               | 🔴 Emergency                         |
 
 **Algorithm 15.1 — When the common diagnosis does not fit**
 
@@ -72,14 +72,14 @@
 
 **Table 15.3 — Rare conditions and what they are mistaken for**
 
-| Mistaken for | Actually | Clue |
-|---|---|---|
-| Rectal cancer | SRUS (or vice versa) | Biopsy decides |
-| Haemorrhoidal bleeding | Radiation proctitis | History of pelvic radiotherapy |
-| Recurrent perianal abscess | Hidradenitis or Crohn’s disease | Multiple sites; groin and axillae |
-| Eczema or fungal infection | Paget disease or HSIL | Persistent, well-demarcated plaque |
-| Constipation | Stercoral perforation | Peritonism, fever, free air |
-| Post-banding discomfort | Pelvic sepsis | Fever and urinary difficulty |
+| Mistaken for               | Actually                        | Clue                               |
+| -------------------------- | ------------------------------- | ---------------------------------- |
+| Rectal cancer              | SRUS (or vice versa)            | Biopsy decides                     |
+| Haemorrhoidal bleeding     | Radiation proctitis             | History of pelvic radiotherapy     |
+| Recurrent perianal abscess | Hidradenitis or Crohn’s disease | Multiple sites; groin and axillae  |
+| Eczema or fungal infection | Paget disease or HSIL           | Persistent, well-demarcated plaque |
+| Constipation               | Stercoral perforation           | Peritonism, fever, free air        |
+| Post-banding discomfort    | Pelvic sepsis                   | Fever and urinary difficulty       |
 
 ## 4. Role-Targeted Action Boxes
 
@@ -118,12 +118,12 @@
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 EMERGENCY | Pelvic sepsis after a procedure; stercoral perforation; neutropenic enterocolitis; incarcerated prolapse with dusky mucosa | On-call surgeon; haematology for neutropenia |
-| 🔴 SAME-DAY | Hidradenitis or Crohn’s abscess; heavy radiation-proctitis bleeding | Surgical drainage; GI review |
-| 🟡 URGENT | Suspected SRUS, Paget disease, HSIL, or suspicious dermatosis | Biopsy pathway; colorectal, dermatology, or GI |
-| 🟢 ROUTINE | Functional anorectal pain; stable dermatoses; uncomplicated prolapse | Pelvic-floor, dermatology, or colorectal clinic |
+| Urgency      | Clinical trigger                                                                                                           | Who and how fast                                |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| 🔴 EMERGENCY | Pelvic sepsis after a procedure; stercoral perforation; neutropenic enterocolitis; incarcerated prolapse with dusky mucosa | On-call surgeon; haematology for neutropenia    |
+| 🔴 SAME-DAY  | Hidradenitis or Crohn’s abscess; heavy radiation-proctitis bleeding                                                        | Surgical drainage; GI review                    |
+| 🟡 URGENT    | Suspected SRUS, Paget disease, HSIL, or suspicious dermatosis                                                              | Biopsy pathway; colorectal, dermatology, or GI  |
+| 🟢 ROUTINE   | Functional anorectal pain; stable dermatoses; uncomplicated prolapse                                                       | Pelvic-floor, dermatology, or colorectal clinic |
 
 ## The Patient in Front of You — Chapter 15 Mini-Case
 

@@ -23,10 +23,10 @@ Operating on a child means caring for a family, not only a patient. Parents carr
 </tbody>
 </table>
 
-**Table 25.1.** *Children and young people having surgery, at a glance.*
+**Table 25.1.** _Children and young people having surgery, at a glance._
 
 | **At a glance**                |                                                                                                                                                  |
-|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Consent**                    | Given by a parent or legal guardian; the child’s own agreement (assent) is sought at a level suited to their age                                 |
 | **Fasting**                    | Shorter clear-fluid fasting than adults: most guidelines allow clear fluids until 1 hour before anesthesia in children                           |
 | **Pain relief**                | Weight-based paracetamol and ibuprofen; codeine and tramadol are contraindicated under 12, and tramadol under 18 after tonsil or adenoid surgery |
@@ -56,9 +56,9 @@ Consent for a child’s operation is given by a parent or legal guardian, follow
 
 Unmanaged preoperative anxiety is common in children and is linked to more distress during anesthesia induction and to difficult behaviors afterward, such as sleep problems and new fears [2]. Preparation reduces this. Honest, simple explanations; a chance to handle equipment or play with a mask; a comfort object from home; and a parent present during induction where the hospital allows it, all help. A calm parent helps create a calm child, so address parental anxiety directly as well (Figure 25.1).
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 25.1.** Five ways to reduce a child’s fear of the operation, for use with families.*
+_**Figure 25.1.** Five ways to reduce a child’s fear of the operation, for use with families._
 
 ## 25.3 Fasting in children
 
@@ -139,12 +139,12 @@ We involve young people in decisions about their own body as much as possible, a
 
 ## 25.7 Additional considerations
 
-**Table 25.2.** *Considerations specific to children having surgery.*
+**Table 25.2.** _Considerations specific to children having surgery._
 
-| **Band**             | **Issue**                                                            | **Notes**                                                                       |
-|----------------------|----------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| **Common**           | Short-lived confusion or agitation on waking                         | Usually settles within 20 to 30 minutes with a familiar adult present           |
-| **Common**           | Reluctance to eat or drink for a few hours                           | Offer small, frequent sips; most children recover their appetite within a day   |
+| **Band**             | **Issue**                                                            | **Notes**                                                                     |
+| -------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| **Common**           | Short-lived confusion or agitation on waking                         | Usually settles within 20 to 30 minutes with a familiar adult present         |
+| **Common**           | Reluctance to eat or drink for a few hours                           | Offer small, frequent sips; most children recover their appetite within a day |
 | **Less common**      | New sleep disturbance, clinginess, or fear of doctors for some weeks | More likely with high preoperative anxiety; usually settles [2]               |
 | **Rare but serious** | Breathing problems from an unsuitable pain medicine                  | Avoided by never using codeine or tramadol under the ages described above [5] |
 
@@ -170,7 +170,7 @@ We involve young people in decisions about their own body as much as possible, a
 
 ## 25.9 Warning signs for parents
 
-**Table 25.3.** *Green, amber, and red warning signs for children after surgery.*
+**Table 25.3.** _Green, amber, and red warning signs for children after surgery._
 
 <table>
 <colgroup>
@@ -230,7 +230,7 @@ We involve young people in decisions about their own body as much as possible, a
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to families. Complete the weight-based dose with the team, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to families. Complete the weight-based dose with the team, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -258,7 +258,7 @@ We involve young people in decisions about their own body as much as possible, a
 **My child’s pain medicine (ask your team to complete)**
 
 | **Medicine**           | **Dose (by weight)** | **How often** | **Maximum in 24 hours** |
-|------------------------|----------------------|---------------|-------------------------|
+| ---------------------- | -------------------- | ------------- | ----------------------- |
 | Paracetamol            |                      |               |                         |
 | Ibuprofen (if advised) |                      |               |                         |
 
@@ -287,7 +287,7 @@ We involve young people in decisions about their own body as much as possible, a
 **Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                            | **What to do**                      |
-|-----------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| --------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |
 | **GREEN** | Tearfulness, clinginess, or grogginess for a few hours; mild loss of appetite for a day                                        | This is normal. Comfort your child. |
 | **AMBER** | Not drinking at all for several hours; temperature of 38 °C or more; a red or leaking wound                                    | Call us or your doctor today.       |
 | **RED**   | Difficulty breathing, blue lips, or very hard to wake; repeated vomiting or signs of dehydration; severe pain despite medicine | Go to the emergency department now. |
@@ -318,4 +318,4 @@ We involve young people in decisions about their own body as much as possible, a
 
 5\. U.S. Food and Drug Administration. FDA restricts use of prescription codeine pain and cough medicines and tramadol pain medicines in children; recommends against use in breastfeeding women. Drug Safety Communication. April 20, 2017.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._

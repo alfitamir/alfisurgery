@@ -1,13 +1,13 @@
 # Chapter 04 — Anal Fissure — Break the Pain–Spasm–Ischaemia Cycle
 
-*Purpose: diagnose fissure by gentle inspection, relax the internal sphincter medically for 6–8 weeks, protect continence when medicine fails — and never miss the atypical fissure.*
+_Purpose: diagnose fissure by gentle inspection, relax the internal sphincter medically for 6–8 weeks, protect continence when medicine fails — and never miss the atypical fissure._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 04**
 >
 > - **Chapter colour palette:** Warm Amber (#B45309) header bar, Cream-Gold (#FFFBEB) panels, Deep Brown (#451A03) text.
 > - **Hero graphic:** Circular five-step cycle (hard stool → tear → pain → internal sphincter spasm → posterior midline ischaemia → non-healing) with arrows showing where each treatment acts (fibre, lidocaine, topical calcium-channel blockers or GTN, botulinum toxin, sphincterotomy), plus an “off-midline” warning badge listing Crohn’s, TB, HIV/herpes, syphilis/LGV, and cancer.
 > - **Icon set:** Broken-glass shard (pain), circular arrows (cycle), ointment tube, syringe (botulinum toxin), shield with crack (continence risk), red compass needle pointing off-midline.
-> - **Bedside aphorism banner:** *“Use anatomy, not the clock. And never let topical GTN meet a PDE5 inhibitor.”*
+> - **Bedside aphorism banner:** _“Use anatomy, not the clock. And never let topical GTN meet a PDE5 inhibitor.”_
 
 ## 1. Recognise It on Gentle Inspection
 
@@ -15,11 +15,11 @@ A classic fissure is diagnosed by gently parting the buttocks while the patient 
 
 **Table 4.1 — Acute versus chronic fissure**
 
-| Feature | Acute fissure (< 6 weeks) | Chronic fissure (≥ 6 weeks) |
-|---|---|---|
-| Appearance | Superficial linear tear with fresh, sharp edges | Rolled, fibrotic edges; external **sentinel tag**; internal **hypertrophied papilla**; transverse internal-sphincter fibres visible at the base |
-| Pain | Tearing pain during defecation (“passing broken glass”), bright-red blood on the paper | Pain during defecation followed by a deep ache lasting minutes to hours (sphincter spasm) |
-| Natural history | 🟢 Many heal with fibre, fluids, sitz baths, and topical analgesia | 🟡 Usually needs pharmacological sphincter relaxation for 6–8 weeks; if refractory → botulinum toxin or tailored lateral internal sphincterotomy (ASCRS 2023) |
+| Feature         | Acute fissure (< 6 weeks)                                                              | Chronic fissure (≥ 6 weeks)                                                                                                                                   |
+| --------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Appearance      | Superficial linear tear with fresh, sharp edges                                        | Rolled, fibrotic edges; external **sentinel tag**; internal **hypertrophied papilla**; transverse internal-sphincter fibres visible at the base               |
+| Pain            | Tearing pain during defecation (“passing broken glass”), bright-red blood on the paper | Pain during defecation followed by a deep ache lasting minutes to hours (sphincter spasm)                                                                     |
+| Natural history | 🟢 Many heal with fibre, fluids, sitz baths, and topical analgesia                     | 🟡 Usually needs pharmacological sphincter relaxation for 6–8 weeks; if refractory → botulinum toxin or tailored lateral internal sphincterotomy (ASCRS 2023) |
 
 ### The location rule: midline is typical — anything else must be investigated
 
@@ -35,13 +35,13 @@ Every chronic fissure persists through the same loop: hard stool → tear → pa
 
 **Table 4.2 — Treatment options**
 
-| Therapy | How to use | Safety profile | Verdict (ASCRS 2023) |
-|---|---|---|---|
-| Fibre, fluids, stool softener, warm sitz baths, topical lidocaine | Throughout treatment and afterwards | Very safe; lidocaine can cause contact dermatitis with prolonged use | 🟢 Foundation for every fissure [S] |
-| Topical calcium-channel blockers: **diltiazem 2%** or **nifedipine 0.2–0.3%** ointment | Pea-sized amount (about 1–2 cm of ointment) to the anal margin twice daily (some protocols three times) for 6–8 weeks | Occasional local itching or burning; headache uncommon. Often compounded or off-label [L] | 🟢 **Preferred first-line** — healing comparable to nitrates with fewer side effects [S] |
-| Topical **glyceryl trinitrate (GTN) 0.2–0.4%** ointment | Twice daily for 6–8 weeks (0.4% is licensed for this use in some countries) | Headache is common and causes many patients to stop. **Contraindicated with PDE5 inhibitors and riociguat**; avoid in severe aortic stenosis, hypertrophic obstructive cardiomyopathy, and raised intracranial pressure | 🟡 Effective alternative first-line agent [S] |
-| **Botulinum toxin** injection into the internal sphincter | Single injection; dose and site are **not standardised** (a wide range of doses has been reported) [U] | Temporary, usually minor incontinence to flatus that resolves as the effect wears off; recurrence possible | 🟡 Reasonable second-line, or first-line alternative when continence risk is high |
-| **Tailored lateral internal sphincterotomy (LIS)** | Division of the internal sphincter limited to the height of the fissure | Small but real risk of minor, mainly flatus, incontinence — rates vary between series; permanent if excessive | 🟡 **Most effective definitive treatment** for chronic fissure failing medical therapy; may be offered to selected patients without a medical trial after shared decision-making [S] |
+| Therapy                                                                                | How to use                                                                                                            | Safety profile                                                                                                                                                                                                          | Verdict (ASCRS 2023)                                                                                                                                                                 |
+| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Fibre, fluids, stool softener, warm sitz baths, topical lidocaine                      | Throughout treatment and afterwards                                                                                   | Very safe; lidocaine can cause contact dermatitis with prolonged use                                                                                                                                                    | 🟢 Foundation for every fissure [S]                                                                                                                                                  |
+| Topical calcium-channel blockers: **diltiazem 2%** or **nifedipine 0.2–0.3%** ointment | Pea-sized amount (about 1–2 cm of ointment) to the anal margin twice daily (some protocols three times) for 6–8 weeks | Occasional local itching or burning; headache uncommon. Often compounded or off-label [L]                                                                                                                               | 🟢 **Preferred first-line** — healing comparable to nitrates with fewer side effects [S]                                                                                             |
+| Topical **glyceryl trinitrate (GTN) 0.2–0.4%** ointment                                | Twice daily for 6–8 weeks (0.4% is licensed for this use in some countries)                                           | Headache is common and causes many patients to stop. **Contraindicated with PDE5 inhibitors and riociguat**; avoid in severe aortic stenosis, hypertrophic obstructive cardiomyopathy, and raised intracranial pressure | 🟡 Effective alternative first-line agent [S]                                                                                                                                        |
+| **Botulinum toxin** injection into the internal sphincter                              | Single injection; dose and site are **not standardised** (a wide range of doses has been reported) [U]                | Temporary, usually minor incontinence to flatus that resolves as the effect wears off; recurrence possible                                                                                                              | 🟡 Reasonable second-line, or first-line alternative when continence risk is high                                                                                                    |
+| **Tailored lateral internal sphincterotomy (LIS)**                                     | Division of the internal sphincter limited to the height of the fissure                                               | Small but real risk of minor, mainly flatus, incontinence — rates vary between series; permanent if excessive                                                                                                           | 🟡 **Most effective definitive treatment** for chronic fissure failing medical therapy; may be offered to selected patients without a medical trial after shared decision-making [S] |
 
 <small>Uncontrolled manual anal stretch (Lord’s procedure) is obsolete because of unpredictable sphincter injury. Low resting pressure, previous obstetric sphincter injury, prior anal surgery, or IBD favour sphincter-sparing options (botulinum toxin or anocutaneous advancement flap).</small>
 
@@ -82,14 +82,14 @@ Every chronic fissure persists through the same loop: hard stool → tear → pa
 
 **Table 4.3 — Fissure mimics**
 
-| Mimic | Clue | Action |
-|---|---|---|
-| Anal squamous cell carcinoma | Indurated, heaped, or ulcerated edges; mass; inguinal nodes; non-healing | 🟡 Urgent biopsy (Chapter 07) |
-| Perianal Crohn’s disease | Lateral, multiple, deep, relatively painless ulcers; oedematous tags; diarrhoea, weight loss | 🟡 Gastroenterology and colorectal referral (Chapter 09) |
-| Syphilitic chancre | Indurated, often painless ulcer; may be multiple or “kissing”; inguinal nodes | 🟡 Serology; sexual-health treatment (Chapter 11) |
-| Herpes simplex | Multiple shallow, very painful ulcers or vesicles; systemic symptoms | 🟡 HSV PCR; antiviral therapy (Chapter 11) |
-| Intersphincteric abscess | Fever, constant deep pain, tender bulge on DRE | 🔴 Same-day surgical review (Chapter 05) |
-| Tuberculosis | Chronic undermined ulcer; pulmonary or systemic TB features | 🟡 Biopsy, culture, specialist referral |
+| Mimic                        | Clue                                                                                         | Action                                                   |
+| ---------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| Anal squamous cell carcinoma | Indurated, heaped, or ulcerated edges; mass; inguinal nodes; non-healing                     | 🟡 Urgent biopsy (Chapter 07)                            |
+| Perianal Crohn’s disease     | Lateral, multiple, deep, relatively painless ulcers; oedematous tags; diarrhoea, weight loss | 🟡 Gastroenterology and colorectal referral (Chapter 09) |
+| Syphilitic chancre           | Indurated, often painless ulcer; may be multiple or “kissing”; inguinal nodes                | 🟡 Serology; sexual-health treatment (Chapter 11)        |
+| Herpes simplex               | Multiple shallow, very painful ulcers or vesicles; systemic symptoms                         | 🟡 HSV PCR; antiviral therapy (Chapter 11)               |
+| Intersphincteric abscess     | Fever, constant deep pain, tender bulge on DRE                                               | 🔴 Same-day surgical review (Chapter 05)                 |
+| Tuberculosis                 | Chronic undermined ulcer; pulmonary or systemic TB features                                  | 🟡 Biopsy, culture, specialist referral                  |
 
 ## 4. Role-Targeted Action Boxes
 
@@ -100,7 +100,7 @@ Every chronic fissure persists through the same loop: hard stool → tear → pa
 
 > **🩺 FAMILY MEDICINE / GP CLINIC BOX**
 >
-> - **Teach ointment use:** a pea-sized amount applied with a gloved fingertip to the anal margin twice daily for the full 6–8 weeks. *“The pain usually settles within 2 weeks, but the skin needs 6–8 weeks to heal — stopping early lets the tear reopen.”*
+> - **Teach ointment use:** a pea-sized amount applied with a gloved fingertip to the anal margin twice daily for the full 6–8 weeks. _“The pain usually settles within 2 weeks, but the skin needs 6–8 weeks to heal — stopping early lets the tear reopen.”_
 > - **Ask about PDE5 inhibitors (including “herbal” erection products, which may contain them) and riociguat before prescribing GTN.** Prefer diltiazem when in doubt.
 > - **Review at 6–8 weeks.** Refer if not healed, or earlier if atypical.
 > - **For a postpartum anterior fissure,** ask about continence and obstetric sphincter injury before any surgical referral.
@@ -129,11 +129,11 @@ Every chronic fissure persists through the same loop: hard stool → tear → pa
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 SAME-DAY | Fissure-type pain with fever, induration, or a tender bulge (possible abscess) | On-call surgeon; EUA |
-| 🟡 URGENT | Atypical fissure; fissure with a mass or induration; non-healing fissure in HIV, Crohn’s disease, or immunosuppression | Colorectal surgery ± gastroenterology / sexual health; biopsy |
-| 🟢 ROUTINE | Typical chronic fissure not healed after 6–8 weeks of medical therapy | Colorectal or general surgical clinic (botulinum toxin, LIS, or flap) |
+| Urgency     | Clinical trigger                                                                                                       | Who and how fast                                                      |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| 🔴 SAME-DAY | Fissure-type pain with fever, induration, or a tender bulge (possible abscess)                                         | On-call surgeon; EUA                                                  |
+| 🟡 URGENT   | Atypical fissure; fissure with a mass or induration; non-healing fissure in HIV, Crohn’s disease, or immunosuppression | Colorectal surgery ± gastroenterology / sexual health; biopsy         |
+| 🟢 ROUTINE  | Typical chronic fissure not healed after 6–8 weeks of medical therapy                                                  | Colorectal or general surgical clinic (botulinum toxin, LIS, or flap) |
 
 ## The Patient in Front of You — Chapter 04 Mini-Case
 
