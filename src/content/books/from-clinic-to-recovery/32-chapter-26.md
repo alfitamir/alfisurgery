@@ -26,12 +26,12 @@ Several other conditions change the counseling, preparation, and risk of surgery
 
 Cirrhosis substantially increases surgical risk, through impaired clotting, fluid shifts, infection risk, and poor wound healing. Risk is assessed with the Child-Pugh score (based on bilirubin, albumin, prothrombin time or INR, ascites, and encephalopathy) or the Model for End-Stage Liver Disease (MELD) score (based on bilirubin, creatinine, and INR) [1, 2]. Table 26.1 gives approximate mortality by class; these are illustrative figures from published series and vary by procedure and center.
 
-**Table 26.1.** *Perioperative risk in cirrhosis by Child-Pugh class or MELD score. Figures are approximate and vary by procedure; consult hepatology for individual patients.*
+**Table 26.1.** _Perioperative risk in cirrhosis by Child-Pugh class or MELD score. Figures are approximate and vary by procedure; consult hepatology for individual patients._
 
-| **Severity**                                                    | **Approximate 30-day mortality for elective surgery**                | **Usual advice**                                                                                                         |
-|-----------------------------------------------------------------|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **Child-Pugh A (score 5 to 6), or MELD below about 10**         | Low, often under 10 percent                                          | Elective surgery usually tolerated; optimize nutrition and clotting first                                                |
-| **Child-Pugh B (score 7 to 9), or MELD about 10 to 15**         | Substantially higher                                                 | Proceed with caution; involve hepatology; consider converting ascites or encephalopathy to better control first          |
+| **Severity**                                                    | **Approximate 30-day mortality for elective surgery**                | **Usual advice**                                                                                                       |
+| --------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Child-Pugh A (score 5 to 6), or MELD below about 10**         | Low, often under 10 percent                                          | Elective surgery usually tolerated; optimize nutrition and clotting first                                              |
+| **Child-Pugh B (score 7 to 9), or MELD about 10 to 15**         | Substantially higher                                                 | Proceed with caution; involve hepatology; consider converting ascites or encephalopathy to better control first        |
 | **Child-Pugh C (score 10 to 15), or MELD above about 15 to 20** | Very high, reported as high as 30 to 80 percent depending on surgery | Elective and non-urgent surgery is not advised; consider transplant evaluation and non-surgical alternatives first [2] |
 
 <table>
@@ -101,10 +101,10 @@ Patients taking biologic therapies (for example, for inflammatory bowel disease 
 
 **STEP 2 Preparation and the plan for each condition**
 
-**Table 26.2.** *Preoperative planning for each condition.*
+**Table 26.2.** _Preoperative planning for each condition._
 
 | **Condition**            | **Before surgery**                                                        | **Who to involve**                                 |
-|--------------------------|---------------------------------------------------------------------------|----------------------------------------------------|
+| ------------------------ | ------------------------------------------------------------------------- | -------------------------------------------------- |
 | **Cirrhosis**            | Child-Pugh or MELD score; correct nutrition, clotting, and ascites        | Hepatology, anesthesia                             |
 | **Dialysis**             | Schedule after a dialysis session; protect access; check potassium        | Nephrology, dialysis unit                          |
 | **Sickle cell disease**  | Consider transfusion per surgery risk; plan hydration, warmth, and oxygen | Hematology                                         |
@@ -130,10 +130,10 @@ Possibly, but this depends on the exact medicine and your surgery. We will plan 
 
 **STEP 4 Risks, warning signs, and consent**
 
-**Table 26.3.** *Additional risks by condition. Square brackets mark figures to replace with unit data.*
+**Table 26.3.** _Additional risks by condition. Square brackets mark figures to replace with unit data._
 
-| **Band**                                       | **Risk**                                                          | **Typical frequency**                     | **Example wording**                                                     |
-|------------------------------------------------|-------------------------------------------------------------------|-------------------------------------------|-------------------------------------------------------------------------|
+| **Band**                                       | **Risk**                                                          | **Typical frequency**                   | **Example wording**                                                     |
+| ---------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------- |
 | **Less common to common (varies by severity)** | Bleeding, infection, and fluid problems in cirrhosis              | Depends on Child-Pugh class [unit data] | “Your liver disease increases the risk of bleeding and fluid problems.” |
 | **Less common**                                | Electrolyte problems or access complications in dialysis patients | [unit data]                             | “We watch your salts and protect your dialysis access closely.”         |
 | **Less common**                                | Sickle cell crisis or acute chest syndrome around surgery         | [unit data]                             | “We take steps to reduce the risk of a sickle crisis.”                  |
@@ -188,4 +188,4 @@ Possibly, but this depends on the exact medicine and your surgery. We will plan 
 
 6\. Goodman SM, Cronstein BN, Bass AR. Preoperative evaluation and management of patients receiving biologics and DMARDs. Curr Opin Rheumatol. 2017;29(3):325-331.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
