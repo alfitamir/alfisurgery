@@ -23,10 +23,10 @@ Most people who come to a breast clinic do not have cancer, but almost all of th
 </tbody>
 </table>
 
-**Table 9.1.** *Common benign breast conditions at a glance.*
+**Table 9.1.** _Common benign breast conditions at a glance._
 
 | **Condition**        | **Usual plan**                                               | **When surgery is considered**                                            |
-|----------------------|--------------------------------------------------------------|---------------------------------------------------------------------------|
+| -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------- |
 | **Cyst**             | Aspirate if painful or large; otherwise reassure             | Rarely: recurrent bloody fluid or a residual lump                         |
 | **Fibroadenoma**     | Core biopsy, then reassurance                                | Symptomatic, large or growing, suspected phyllodes, or patient preference |
 | **Breast pain**      | Examination, reassurance, supportive bra, simple pain relief | Almost never                                                              |
@@ -42,9 +42,9 @@ Examine every patient with a chaperone, and offer a female clinician where possi
 
 Diagnosis rests on triple assessment: clinical examination, imaging, and, for any solid or uncertain lesion, core needle biopsy (Figure 9.1). Ultrasound is the main test in younger women, with mammography added in older women according to local protocol. When all three components agree that a lesion is benign, the patient can be reassured with confidence; when they disagree, further sampling or excision is needed even if the biopsy was benign. A lesion classified as probably benign on imaging (BI-RADS 3) carries a risk of cancer of 2 in 100 or less, and is usually followed with short-interval imaging rather than biopsy [2].
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 9.1.** Triple assessment of a new breast symptom.*
+_**Figure 9.1.** Triple assessment of a new breast symptom._
 
 <table>
 <colgroup>
@@ -61,9 +61,9 @@ Diagnosis rests on triple assessment: clinical examination, imaging, and, for an
 
 Waiting for results is often the hardest part. Give a date, say how the results will be given, and ask whether the patient wants a family member present. If a cancer is diagnosed, use the approach in Section 1.7 and the pathway in Chapter 10. Figure 9.2 summarizes the usual plan for the six most common benign problems, described in the sections that follow.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 9.2.** Six common benign breast problems and the usual plan.*
+_**Figure 9.2.** Six common benign breast problems and the usual plan._
 
 ## 9.2 Cysts and fibroadenomas
 
@@ -117,10 +117,10 @@ Gynecomastia is enlargement of breast tissue in men. It is common at puberty and
 
 ## 9.7 What to expect from each procedure
 
-**Table 9.2.** *Benign breast procedures: what patients should expect.*
+**Table 9.2.** _Benign breast procedures: what patients should expect._
 
 | **Procedure**                   | **What happens**                                                                       | **Afterward**                                                                     |
-|---------------------------------|----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| ------------------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | **Core needle biopsy**          | Local anesthetic; several samples through a small nick; a tiny marker clip may be left | Bruising is common; firm bra and simple pain relief; normal activity the next day |
 | **Cyst or abscess aspiration**  | A fine needle under ultrasound, often in clinic                                        | May need repeating; continue breastfeeding if lactating                           |
 | **Vacuum-assisted excision**    | Local anesthetic; lesion removed in pieces through a 3 to 5 mm cut                     | Bruising and a small dent are possible; back to work in a day or two              |
@@ -188,21 +188,21 @@ It is common and usually harmless, often due to hormones or medicines. We will c
 
 ## 9.9 Material risks
 
-**Table 9.3.** *Material risks of benign breast procedures. Square brackets mark figures to replace with unit data.*
+**Table 9.3.** _Material risks of benign breast procedures. Square brackets mark figures to replace with unit data._
 
-| **Procedure**                            | **Band**         | **Risk and typical frequency**                                                                     |
-|------------------------------------------|------------------|----------------------------------------------------------------------------------------------------|
-| **Core biopsy**                          | Common           | Bruising and tenderness for a few days                                                             |
+| **Procedure**                            | **Band**         | **Risk and typical frequency**                                                                   |
+| ---------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------ |
+| **Core biopsy**                          | Common           | Bruising and tenderness for a few days                                                           |
 |                                          | Less common      | A result that does not match the imaging, needing a repeat or wider biopsy [unit data]           |
 |                                          | Rare but serious | Bleeding needing treatment; infection [unit data]                                                |
-| **Vacuum-assisted or surgical excision** | Common           | Bruising, swelling, and a scar or small dent                                                       |
+| **Vacuum-assisted or surgical excision** | Common           | Bruising, swelling, and a scar or small dent                                                     |
 |                                          | Less common      | Hematoma or infection; altered sensation around the scar [unit data]                             |
-|                                          | Less common      | A new fibroadenoma elsewhere in the breast later                                                   |
-| **Duct excision**                        | Common           | Reduced nipple sensation                                                                           |
+|                                          | Less common      | A new fibroadenoma elsewhere in the breast later                                                 |
+| **Duct excision**                        | Common           | Reduced nipple sensation                                                                         |
 |                                          | Less common      | Nipple inversion; inability to breastfeed from that breast after total duct excision [unit data] |
-| **Abscess aspiration or drainage**       | Common           | Need for repeated aspiration                                                                       |
+| **Abscess aspiration or drainage**       | Common           | Need for repeated aspiration                                                                     |
 |                                          | Less common      | Recurrence; a persistent discharging track [unit data]                                           |
-| **Gynecomastia surgery**                 | Common           | Swelling and bruising for weeks                                                                    |
+| **Gynecomastia surgery**                 | Common           | Swelling and bruising for weeks                                                                  |
 |                                          | Less common      | Contour irregularity; fluid collection; altered nipple sensation [unit data]                     |
 
 ## 9.10 Consent checklist
@@ -228,7 +228,7 @@ It is common and usually harmless, often due to hormones or medicines. We will c
 
 ## 9.11 Warning signs
 
-**Table 9.4.** *Green, amber, and red warning signs after benign breast procedures.*
+**Table 9.4.** _Green, amber, and red warning signs after benign breast procedures._
 
 <table>
 <colgroup>
@@ -290,7 +290,7 @@ It is common and usually harmless, often due to hormones or medicines. We will c
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Tick the test or treatment the patient had, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Tick the test or treatment the patient had, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -362,7 +362,7 @@ We check breast problems in three ways: an examination, a scan, and sometimes a 
 **5. Getting back to normal**
 
 | **Activity**             | **After a needle test** | **After an operation**                   |
-|--------------------------|-------------------------|------------------------------------------|
+| ------------------------ | ----------------------- | ---------------------------------------- |
 | **Work or school**       | The next day            | After a few days                         |
 | **Driving**              | The next day            | When you can turn and brake without pain |
 | **Exercise and lifting** | After 2 to 3 days       | After about 1 week                       |
@@ -379,7 +379,7 @@ We check breast problems in three ways: an examination, a scan, and sometimes a 
 **7. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                                           | **What to do**                                                |
-|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | **GREEN** | Bruising and soreness that get better each day; a small firm area under the scar                                                                              | This is normal. Keep following this guide.                    |
 | **AMBER** | Redness, warmth, or discharge from the wound; temperature of 38 °C or more; a swelling that keeps growing; mastitis not better after 1 to 2 days of treatment | Call us today.                                                |
 | **RED**   | A fast-growing, tight, painful swelling; fever with shivering and spreading redness; feeling very unwell                                                      | Go to the emergency department now. Take this guide with you. |
@@ -409,4 +409,4 @@ We check breast problems in three ways: an examination, a scan, and sometimes a 
 
 4\. Mitchell KB, Johnson HM, Rodríguez JM, et al. Academy of Breastfeeding Medicine Clinical Protocol \#36: the mastitis spectrum, revised 2022. Breastfeed Med. 2022;17(5):360-376.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
