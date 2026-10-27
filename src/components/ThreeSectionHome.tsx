@@ -23,7 +23,7 @@ import { homeCopy } from "@/data/home-copy";
 import { preventionCopy } from "@/data/prevention";
 import { postsCommentsCopy } from "@/data/posts-comments-copy";
 import { showsVideos, translatedText } from "@/lib/site-language";
-import heroPortrait from "@/assets/dr-elalfy-hero.jpg";
+import heroPortrait from "@/assets/dr-elalfy-hero.webp";
 import { HomeSectionMenus, homeMenuLabels } from "@/components/HomeSectionMenus";
 import { PatientComments } from "@/components/PatientComments";
 import { DailyArticle } from "@/components/DailyArticle";
