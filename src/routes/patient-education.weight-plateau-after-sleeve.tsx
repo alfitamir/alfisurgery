@@ -9,8 +9,8 @@ import {
   ClipboardCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import hero from "@/assets/sleeve-plateau-guide.jpg";
-import habits from "@/assets/sleeve-plateau-habits.jpg";
+import hero from "@/assets/sleeve-plateau-guide.webp";
+import habits from "@/assets/sleeve-plateau-habits.webp";
 
 export const Route = createFileRoute("/patient-education/weight-plateau-after-sleeve")({
   component: WeightPlateauArticle,
