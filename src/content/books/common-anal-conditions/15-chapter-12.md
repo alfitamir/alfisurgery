@@ -1,26 +1,26 @@
 # Chapter 12 — Anorectal Trauma, Sexual Assault, and Foreign Bodies
 
-*Purpose: anorectal injury is often hidden by embarrassment, intoxication, or fear — assess it like trauma, treat the person with dignity, and never let an extraction or examination cause more harm than the injury.*
+_Purpose: anorectal injury is often hidden by embarrassment, intoxication, or fear — assess it like trauma, treat the person with dignity, and never let an extraction or examination cause more harm than the injury._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 12**
 >
 > - **Chapter colour palette:** Charcoal Red (#7F1D1D) header bar, Pale Rose (#FEF2F2) panels, Near-Black Red (#450A0A) text.
 > - **Hero graphic:** Three parallel lanes: (1) trauma — primary survey, CT, surgeon; (2) foreign body — X-ray, relax the sphincter, break the vacuum, remove, inspect; (3) sexual assault — consent, injuries, forensic referral, and a prophylaxis bundle with a 72-hour clock (HIV PEP) and a 120-hour clock (emergency contraception).
 > - **Icon set:** Shield, X-ray film, Foley balloon, evidence bag with chain-of-custody tag, emergency contraception packet, HIV PEP bottle, heart (psychological support), padlock (confidentiality).
-> - **Bedside aphorism banner:** *“Believe, protect, document — then treat. Relax the sphincter before you pull.”*
+> - **Bedside aphorism banner:** _“Believe, protect, document — then treat. Relax the sphincter before you pull.”_
 
 ## 1. Blunt and Penetrating Anorectal Trauma
 
 **Table 12.1 — Mechanisms, assessment, and principles**
 
-| Domain | Key points |
-|---|---|
-| Mechanisms | Blunt (pelvic fracture, crush, fall astride); penetrating (gunshot, stab, impalement); iatrogenic (enema tips, thermometers, endoscopy, obstetric); sexual (consensual or non-consensual); retained foreign bodies |
-| First steps | ATLS primary survey; look for peritonism, haemodynamic instability, perineal wounds, blood on DRE, and associated urethral, vaginal, and pelvic injuries |
-| Imaging | CT abdomen and pelvis (contrast protocol per local trauma practice) for suspected perforation; proctosigmoidoscopy when rectal injury is suspected — a normal DRE does not exclude injury [C] |
-| Intraperitoneal rectal injury | Managed like colonic injury — repair or resection ± diversion (surgeon) |
-| Extraperitoneal non-destructive injury | Proximal diversion is conditionally recommended; routine presacral drains and distal rectal washout are not recommended (EAST 2016) [C] |
-| Sphincter and perineal injury | Document sphincter integrity; specialist primary repair; tetanus; antibiotics per local protocol |
+| Domain                                 | Key points                                                                                                                                                                                                         |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Mechanisms                             | Blunt (pelvic fracture, crush, fall astride); penetrating (gunshot, stab, impalement); iatrogenic (enema tips, thermometers, endoscopy, obstetric); sexual (consensual or non-consensual); retained foreign bodies |
+| First steps                            | ATLS primary survey; look for peritonism, haemodynamic instability, perineal wounds, blood on DRE, and associated urethral, vaginal, and pelvic injuries                                                           |
+| Imaging                                | CT abdomen and pelvis (contrast protocol per local trauma practice) for suspected perforation; proctosigmoidoscopy when rectal injury is suspected — a normal DRE does not exclude injury [C]                      |
+| Intraperitoneal rectal injury          | Managed like colonic injury — repair or resection ± diversion (surgeon)                                                                                                                                            |
+| Extraperitoneal non-destructive injury | Proximal diversion is conditionally recommended; routine presacral drains and distal rectal washout are not recommended (EAST 2016) [C]                                                                            |
+| Sphincter and perineal injury          | Document sphincter integrity; specialist primary repair; tetanus; antibiotics per local protocol                                                                                                                   |
 
 ## 2. Rectal Foreign Bodies
 
@@ -28,15 +28,15 @@ Be non-judgemental: objects may have been inserted for sexual, therapeutic, or s
 
 **Table 12.2 — Foreign body assessment and removal**
 
-| Step | What to do |
-|---|---|
-| History | Object type, size, material (glass?), time of insertion, attempts at removal, pain, bleeding, fever, drug packets |
-| Examination | Abdomen for peritonism; perineum. **Do not put a finger in blindly if a sharp or broken object (glass) is possible** — image first |
-| Imaging | Abdominal (AP and lateral pelvis) and erect chest X-rays; CT if perforation is suspected or the object is radiolucent |
-| Theatre indications | Peritonitis or free air, sepsis, significant bleeding, sharp or breakable object, high object beyond reach, large object, failed bedside attempt (WSES-AAST 2021) [C] |
-| Bedside removal (low, smooth, intact, no perforation) | Analgesia and procedural sedation; perianal or pudendal block to relax the sphincter; lithotomy or left lateral position with gentle suprapubic pressure; lubricated fingers or instruments; a Foley catheter passed beyond the object and inflated to break the vacuum; never push the object higher |
-| After removal | Proctosigmoidoscopy to look for mucosal injury or perforation; observe if any concern; offer psychological or sexual-health support |
-| Drug packets (body-packing) | **Never grasp, cut, or puncture packets.** Asymptomatic patients are usually observed under a toxicology protocol; surgery for obstruction, perforation, or packet rupture with toxicity. Treat opioid toxicity with naloxone and stimulant toxicity per protocol; custody and legal duties per local law [L] |
+| Step                                                  | What to do                                                                                                                                                                                                                                                                                                    |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| History                                               | Object type, size, material (glass?), time of insertion, attempts at removal, pain, bleeding, fever, drug packets                                                                                                                                                                                             |
+| Examination                                           | Abdomen for peritonism; perineum. **Do not put a finger in blindly if a sharp or broken object (glass) is possible** — image first                                                                                                                                                                            |
+| Imaging                                               | Abdominal (AP and lateral pelvis) and erect chest X-rays; CT if perforation is suspected or the object is radiolucent                                                                                                                                                                                         |
+| Theatre indications                                   | Peritonitis or free air, sepsis, significant bleeding, sharp or breakable object, high object beyond reach, large object, failed bedside attempt (WSES-AAST 2021) [C]                                                                                                                                         |
+| Bedside removal (low, smooth, intact, no perforation) | Analgesia and procedural sedation; perianal or pudendal block to relax the sphincter; lithotomy or left lateral position with gentle suprapubic pressure; lubricated fingers or instruments; a Foley catheter passed beyond the object and inflated to break the vacuum; never push the object higher         |
+| After removal                                         | Proctosigmoidoscopy to look for mucosal injury or perforation; observe if any concern; offer psychological or sexual-health support                                                                                                                                                                           |
+| Drug packets (body-packing)                           | **Never grasp, cut, or puncture packets.** Asymptomatic patients are usually observed under a toxicology protocol; surgery for obstruction, perforation, or packet rupture with toxicity. Treat opioid toxicity with naloxone and stimulant toxicity per protocol; custody and legal duties per local law [L] |
 
 ## 3. Sexual Assault — Trauma-Informed Care
 
@@ -52,40 +52,40 @@ Be non-judgemental: objects may have been inserted for sexual, therapeutic, or s
 
 **Table 12.3 — The post-assault medical bundle**
 
-| Component | Adult regimen | Timing and source |
-|---|---|---|
-| HIV post-exposure prophylaxis | Preferred: bictegravir/emtricitabine/tenofovir alafenamide, or dolutegravir plus (tenofovir alafenamide or tenofovir disoproxil) plus (emtricitabine or lamivudine), for **28 days**; baseline HIV test | Start as soon as possible, **within 72 hours**; follow-up at 24 hours, 4–6 weeks, and 12 weeks (CDC 2025) [S] |
-| Emergency contraception (if vaginal exposure possible) | Copper IUD (most effective); ulipristal acetate 30 mg; or levonorgestrel 1.5 mg | Copper IUD and ulipristal up to **120 hours**; levonorgestrel within 72 hours (efficacy falls with time) [S] |
-| STI prophylaxis | Ceftriaxone 500 mg IM single dose **plus** doxycycline 100 mg twice daily for 7 days **plus**, for women, metronidazole 500 mg twice daily for 7 days | CDC 2021 [S]; adjust in pregnancy |
-| Hepatitis B | Vaccinate if not immune (± immunoglobulin if the source is known to be positive) | CDC 2021 [S] |
-| HPV vaccine | If eligible and not vaccinated | CDC 2021 [S] |
-| Tetanus | If wounds and incomplete immunisation | — |
-| Psychological support | Crisis support, safety planning, follow-up with mental-health and social-work services | Every patient [C] |
+| Component                                              | Adult regimen                                                                                                                                                                                           | Timing and source                                                                                             |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| HIV post-exposure prophylaxis                          | Preferred: bictegravir/emtricitabine/tenofovir alafenamide, or dolutegravir plus (tenofovir alafenamide or tenofovir disoproxil) plus (emtricitabine or lamivudine), for **28 days**; baseline HIV test | Start as soon as possible, **within 72 hours**; follow-up at 24 hours, 4–6 weeks, and 12 weeks (CDC 2025) [S] |
+| Emergency contraception (if vaginal exposure possible) | Copper IUD (most effective); ulipristal acetate 30 mg; or levonorgestrel 1.5 mg                                                                                                                         | Copper IUD and ulipristal up to **120 hours**; levonorgestrel within 72 hours (efficacy falls with time) [S]  |
+| STI prophylaxis                                        | Ceftriaxone 500 mg IM single dose **plus** doxycycline 100 mg twice daily for 7 days **plus**, for women, metronidazole 500 mg twice daily for 7 days                                                   | CDC 2021 [S]; adjust in pregnancy                                                                             |
+| Hepatitis B                                            | Vaccinate if not immune (± immunoglobulin if the source is known to be positive)                                                                                                                        | CDC 2021 [S]                                                                                                  |
+| HPV vaccine                                            | If eligible and not vaccinated                                                                                                                                                                          | CDC 2021 [S]                                                                                                  |
+| Tetanus                                                | If wounds and incomplete immunisation                                                                                                                                                                   | —                                                                                                             |
+| Psychological support                                  | Crisis support, safety planning, follow-up with mental-health and social-work services                                                                                                                  | Every patient [C]                                                                                             |
 
 ## 4. Documentation Principles
 
 **Table 12.4 — Documentation after assault, injury, or foreign body**
 
-| Do | Avoid |
-|---|---|
-| Record objective findings with measurements and a body diagram | Conclusions about whether an assault happened |
-| Quote the patient’s own words in quotation marks | Paraphrasing that changes meaning |
-| Time-stamp arrival, examination, samples, and treatments | Undated or retrospective entries without labelling |
-| Record consent for each step and any refusals | Assuming consent for forensic steps |
-| Photographs only with consent and per policy | Judgemental terms (“claims”, “alleges”, “admits”) |
-| Chain of custody for samples | Leaving samples unlabelled or unsealed |
+| Do                                                             | Avoid                                              |
+| -------------------------------------------------------------- | -------------------------------------------------- |
+| Record objective findings with measurements and a body diagram | Conclusions about whether an assault happened      |
+| Quote the patient’s own words in quotation marks               | Paraphrasing that changes meaning                  |
+| Time-stamp arrival, examination, samples, and treatments       | Undated or retrospective entries without labelling |
+| Record consent for each step and any refusals                  | Assuming consent for forensic steps                |
+| Photographs only with consent and per policy                   | Judgemental terms (“claims”, “alleges”, “admits”)  |
+| Chain of custody for samples                                   | Leaving samples unlabelled or unsealed             |
 
 ## 5. Who Else to Involve [L]
 
-| Service | When |
-|---|---|
-| Gynaecology | Vaginal injury, emergency contraception, pregnancy |
-| Urology | Urethral or bladder injury; pelvic fracture with blood at the meatus |
-| General or colorectal surgery | Rectal injury, perforation, foreign body needing theatre |
-| Psychiatry or psychology | Acute distress, self-harm risk, repeated self-insertion |
-| Social work and safeguarding | Minors, vulnerable adults, domestic or sexual violence |
-| Toxicology | Body-packing |
-| Forensic services and police | With the patient’s consent, or as required by law |
+| Service                       | When                                                                 |
+| ----------------------------- | -------------------------------------------------------------------- |
+| Gynaecology                   | Vaginal injury, emergency contraception, pregnancy                   |
+| Urology                       | Urethral or bladder injury; pelvic fracture with blood at the meatus |
+| General or colorectal surgery | Rectal injury, perforation, foreign body needing theatre             |
+| Psychiatry or psychology      | Acute distress, self-harm risk, repeated self-insertion              |
+| Social work and safeguarding  | Minors, vulnerable adults, domestic or sexual violence               |
+| Toxicology                    | Body-packing                                                         |
+| Forensic services and police  | With the patient’s consent, or as required by law                    |
 
 **Algorithm 12.1 — Injury, foreign body, or disclosed assault**
 
@@ -124,14 +124,14 @@ Be non-judgemental: objects may have been inserted for sexual, therapeutic, or s
 
 **Table 12.5 — Hidden injuries and disguised presentations**
 
-| Presentation | Hidden problem | Clue |
-|---|---|---|
-| “Constipation” in a traveller | Body-packing with obstruction | Travel history; packets on imaging |
-| “Bleeding piles” with distress | Undisclosed sexual assault | Fear, inconsistent history, injuries elsewhere |
-| Small perianal wound after impalement | Extraperitoneal rectal perforation | Blood on DRE; pain; CT findings |
-| Pelvic fracture with perineal bruising | Urethral or rectal injury | Blood at the meatus; blood on DRE |
-| Foreign body removed, patient still unwell | Perforation or mucosal tear | Fever, peritonism, rising lactate |
-| Repeated self-insertion | Mental-health crisis or self-harm | Pattern of presentations |
+| Presentation                               | Hidden problem                     | Clue                                           |
+| ------------------------------------------ | ---------------------------------- | ---------------------------------------------- |
+| “Constipation” in a traveller              | Body-packing with obstruction      | Travel history; packets on imaging             |
+| “Bleeding piles” with distress             | Undisclosed sexual assault         | Fear, inconsistent history, injuries elsewhere |
+| Small perianal wound after impalement      | Extraperitoneal rectal perforation | Blood on DRE; pain; CT findings                |
+| Pelvic fracture with perineal bruising     | Urethral or rectal injury          | Blood at the meatus; blood on DRE              |
+| Foreign body removed, patient still unwell | Perforation or mucosal tear        | Fever, peritonism, rising lactate              |
+| Repeated self-insertion                    | Mental-health crisis or self-harm  | Pattern of presentations                       |
 
 ## 7. Role-Targeted Action Boxes
 
@@ -173,12 +173,12 @@ Be non-judgemental: objects may have been inserted for sexual, therapeutic, or s
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 EMERGENCY | Perforation, peritonitis, haemodynamic instability, packet rupture or toxicity | Senior surgeon, theatre, toxicology, critical care |
-| 🔴 SAME-DAY | Sexual assault within 72 hours (PEP) or 120 hours (contraception); foreign body needing removal; suspected sphincter injury | ER, forensic or sexual-assault service, surgeon |
-| 🟡 URGENT | Follow-up after PEP or assault; sphincter injury for repair planning | Sexual health, colorectal, mental health |
-| 🟢 ROUTINE | Long-term continence or psychological follow-up | Primary care, pelvic-floor and mental-health services |
+| Urgency      | Clinical trigger                                                                                                            | Who and how fast                                      |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| 🔴 EMERGENCY | Perforation, peritonitis, haemodynamic instability, packet rupture or toxicity                                              | Senior surgeon, theatre, toxicology, critical care    |
+| 🔴 SAME-DAY  | Sexual assault within 72 hours (PEP) or 120 hours (contraception); foreign body needing removal; suspected sphincter injury | ER, forensic or sexual-assault service, surgeon       |
+| 🟡 URGENT    | Follow-up after PEP or assault; sphincter injury for repair planning                                                        | Sexual health, colorectal, mental health              |
+| 🟢 ROUTINE   | Long-term continence or psychological follow-up                                                                             | Primary care, pelvic-floor and mental-health services |
 
 ## The Patient in Front of You — Chapter 12 Mini-Case
 
