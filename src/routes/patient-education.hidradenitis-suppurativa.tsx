@@ -103,7 +103,9 @@ function HSArticle() {
         </Link>
 
         <header className="mt-8">
-          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">Patient Guide</div>
+          <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">
+            Patient Guide
+          </div>
           <h1 className="mt-3 font-serif text-4xl md:text-5xl leading-tight">
             Hidradenitis Suppurativa (HS)
           </h1>
@@ -114,17 +116,18 @@ function HSArticle() {
 
         <section className="mt-10 space-y-4 text-[15px] leading-relaxed text-foreground/90">
           <p>
-            Hidradenitis Suppurativa is a chronic inflammatory skin disease of the hair follicles and
-            apocrine sweat glands. It causes painful nodules, abscesses, and sinus tracts, most often
-            in the armpits, groin, inner thighs, under the breasts, and buttocks. HS is <strong>not
-            contagious</strong> and is <strong>not caused by poor hygiene</strong>. It is driven by a
-            mix of genetic predisposition, hormones, smoking, obesity, and friction.
+            Hidradenitis Suppurativa is a chronic inflammatory skin disease of the hair follicles
+            and apocrine sweat glands. It causes painful nodules, abscesses, and sinus tracts, most
+            often in the armpits, groin, inner thighs, under the breasts, and buttocks. HS is{" "}
+            <strong>not contagious</strong> and is <strong>not caused by poor hygiene</strong>. It
+            is driven by a mix of genetic predisposition, hormones, smoking, obesity, and friction.
           </p>
           <p dir="rtl" className="leading-loose">
             التهاب الغدد العرقية القيحي مرض جلدي التهابي مزمن يصيب بصيلات الشعر والغدد العرقية،
             ويسبب عقيدات مؤلمة وخراريج وقنوات ناسورية، غالباً تحت الإبطين ومنطقة العانة والفخذين
-            وتحت الثديين والأرداف. المرض <strong>غير معدٍ</strong> و<strong>ليس سببه قلة النظافة</strong>،
-            بل مزيج من الاستعداد الوراثي والهرمونات والتدخين والسمنة والاحتكاك.
+            وتحت الثديين والأرداف. المرض <strong>غير معدٍ</strong> و
+            <strong>ليس سببه قلة النظافة</strong>، بل مزيج من الاستعداد الوراثي والهرمونات والتدخين
+            والسمنة والاحتكاك.
           </p>
         </section>
 
@@ -155,7 +158,9 @@ function HSArticle() {
               <HelpCircle className="h-5 w-5" />
             </div>
             <div>
-              <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">FAQ</div>
+              <div className="text-xs uppercase tracking-[0.2em] text-accent font-semibold">
+                FAQ
+              </div>
               <h2 className="font-serif text-2xl md:text-3xl mt-1">
                 Frequently asked questions
                 <span className="block text-base text-muted-foreground mt-1" dir="rtl">
@@ -165,18 +170,26 @@ function HSArticle() {
             </div>
           </div>
 
-          <Accordion type="single" collapsible className="mt-6 rounded-2xl border border-border bg-card">
+          <Accordion
+            type="single"
+            collapsible
+            className="mt-6 rounded-2xl border border-border bg-card"
+          >
             {faqs.map((f, i) => (
               <AccordionItem key={i} value={`item-${i}`} className="px-5">
                 <AccordionTrigger className="text-left">
                   <div>
                     <div className="font-medium">{f.q}</div>
-                    <div className="text-xs text-muted-foreground mt-1" dir="rtl">{f.qAr}</div>
+                    <div className="text-xs text-muted-foreground mt-1" dir="rtl">
+                      {f.qAr}
+                    </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent>
                   <p className="text-sm leading-relaxed text-foreground/90">{f.a}</p>
-                  <p className="mt-3 text-sm leading-loose text-muted-foreground" dir="rtl">{f.aAr}</p>
+                  <p className="mt-3 text-sm leading-loose text-muted-foreground" dir="rtl">
+                    {f.aAr}
+                  </p>
                 </AccordionContent>
               </AccordionItem>
             ))}
