@@ -5,7 +5,7 @@
 To be completed by the surgical team, explained to the patient with teach-back, and given to the patient at discharge. The card records the individual plan where it differs from the general timelines in the patient guide. [Pilot template: the final version will match the layout of the patient guides.]
 
 |                                                          |     |
-|----------------------------------------------------------|-----|
+| -------------------------------------------------------- | --- |
 | **About my operation**                                   |     |
 | **My name**                                              |     |
 | **Operation done**                                       |     |
