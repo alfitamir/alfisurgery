@@ -1,5 +1,8 @@
 // Each chapter is its own lazy chunk so readers only download the chapter they open.
-const chapterFiles = import.meta.glob("/src/content/books/*/*.md", { query: "?raw", import: "default" }) as Record<string, () => Promise<string>>;
+const chapterFiles = import.meta.glob("/src/content/books/*/*.md", {
+  query: "?raw",
+  import: "default",
+}) as Record<string, () => Promise<string>>;
 
 /** Returns chapter markdown without its leading level-1 heading (the page renders the title itself). */
 export async function loadBookChapter(bookId: string, file: string): Promise<string | null> {
