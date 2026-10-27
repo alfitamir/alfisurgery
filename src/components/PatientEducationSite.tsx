@@ -27,6 +27,7 @@ import { VideosSection } from "@/components/VideosSection";
 import { PreventionEntry } from "@/components/PreventionContent";
 import { SurgicalJourneyFramework } from "@/components/SurgicalJourneyFramework";
 import { PatientFAQ } from "@/components/PatientFAQ";
+import { PatientReadinessChecklist } from "@/components/PatientReadinessChecklist";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { showsVideos, siteLanguages, translatedSearchText } from "@/lib/site-language";
 import {
@@ -169,7 +170,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
             <span className="hidden sm:inline">{ar ? "د. تامر الألفي" : "Dr. Tamer Elalfy"}</span>
           </Link>
           <nav aria-label={ar ? "أقسام دليل المريض" : "Patient guide sections"} className="hidden items-center gap-6 text-sm font-medium lg:flex">
-            <a href="#operations">{t.nav[0]}</a><a href="#prepare">{t.nav[1]}</a><a href="#recovery">{t.nav[2]}</a><a href="#urgent">{t.nav[3]}</a>
+            <a href="#operations">{t.nav[0]}</a><a href="#prepare">{t.nav[1]}</a><a href="#recovery">{t.nav[2]}</a><a href="#urgent">{t.nav[3]}</a><a href="#faq">{ar ? "الأسئلة الشائعة" : "FAQ"}</a>
           </nav>
           <div className="flex items-center gap-2">
             <Button asChild variant="link" size="sm"><Link to="/articles">{ar ? "المقالات" : "Articles"}</Link></Button>
@@ -189,6 +190,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
 
 
         <PreventionEntry />
+        <PatientReadinessChecklist />
         <SurgicalJourneyFramework />
         <section id="operations" className="border-y border-patient-mist bg-card py-20">
           <div className="mx-auto max-w-7xl px-4 md:px-8">
@@ -265,7 +267,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
         </section>
 
       </main>
-      <nav aria-label={ar ? "أقسام دليل المريض" : "Patient guide sections"} className="mx-auto grid max-w-7xl grid-cols-2 gap-3 border-t border-border px-5 py-5 sm:flex sm:items-center"><Button asChild variant="outline" className="h-auto min-h-11 w-full justify-center px-3 sm:w-auto sm:flex-1"><a href="#operations">{t.nav[0]}</a></Button><Button asChild variant="outline" className="h-auto min-h-11 w-full justify-center px-3 sm:w-auto sm:flex-1"><a href="#prepare">{t.nav[1]}</a></Button><Button asChild variant="outline" className="h-auto min-h-11 w-full justify-center px-3 sm:w-auto sm:flex-1"><a href="#recovery">{t.nav[2]}</a></Button><Button asChild variant="outline" className="h-auto min-h-11 w-full justify-center px-3 sm:w-auto sm:flex-1"><a href="#urgent">{t.nav[3]}</a></Button><div className="col-span-2 hidden justify-center sm:col-span-1 sm:flex sm:flex-1"><InstallAppButton ar={ar} /></div></nav>
+      <nav aria-label={ar ? "أقسام دليل المريض" : "Patient guide sections"} className="mx-auto grid max-w-7xl grid-cols-2 gap-3 border-t border-border px-5 py-5 sm:flex sm:items-center"><Button asChild variant="outline" className="h-auto min-h-11 w-full justify-center px-3 sm:w-auto sm:flex-1"><a href="#operations">{t.nav[0]}</a></Button><Button asChild variant="outline" className="h-auto min-h-11 w-full justify-center px-3 sm:w-auto sm:flex-1"><a href="#prepare">{t.nav[1]}</a></Button><Button asChild variant="outline" className="h-auto min-h-11 w-full justify-center px-3 sm:w-auto sm:flex-1"><a href="#recovery">{t.nav[2]}</a></Button><Button asChild variant="outline" className="h-auto min-h-11 w-full justify-center px-3 sm:w-auto sm:flex-1"><a href="#urgent">{t.nav[3]}</a></Button><Button asChild variant="outline" className="h-auto min-h-11 w-full justify-center px-3 sm:w-auto sm:flex-1"><a href="#faq">{ar ? "الأسئلة الشائعة" : "FAQ"}</a></Button><div className="col-span-2 hidden justify-center sm:col-span-1 sm:flex sm:flex-1"><InstallAppButton ar={ar} /></div></nav>
       <ArticlesSection ar={ar} />
       {showsVideos(language) && <VideosSection ar={ar} />}
 
