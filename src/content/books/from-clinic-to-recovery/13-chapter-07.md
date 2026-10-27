@@ -23,10 +23,10 @@ Anal conditions are among the most common reasons for a surgical clinic visit, a
 </tbody>
 </table>
 
-**Table 7.1.** *Common anal conditions at a glance.*
+**Table 7.1.** _Common anal conditions at a glance._
 
 | **Condition**           | **First step**                                             | **Procedure if needed**                               | **Consent priority**                          |
-|-------------------------|------------------------------------------------------------|-------------------------------------------------------|-----------------------------------------------|
+| ----------------------- | ---------------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------- |
 | **Hemorrhoids**         | Fiber, fluids, short and unstrained toilet visits          | Office banding; surgery for grade 4 or failed banding | Pain and bleeding after banding or surgery    |
 | **Anal fissure**        | Fiber, softeners, warm-water baths, then relaxing ointment | Botulinum toxin; lateral internal sphincterotomy      | Small risk of reduced control of gas or stool |
 | **Abscess and fistula** | Prompt drainage of an abscess                              | Fistulotomy, or seton then a sphincter-sparing repair | Recurrence balanced against continence        |
@@ -51,9 +51,9 @@ Begin by acknowledging that the subject is difficult to discuss, and give the pa
 
 Bleeding should not be attributed to hemorrhoids without an examination. Hemorrhoids are common and often coexist with other conditions, and bleeding from a bowel cancer can be mistaken for hemorrhoids. Anoscopy is advised for new patients whenever possible, and colonoscopy is arranged when the history or age suggests another cause, such as a change in bowel habit, anemia, weight loss, a family history of bowel cancer, or an age at which screening is due [1, 2].
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 7.1.** Stepped treatment of the three common anal conditions.*
+_**Figure 7.1.** Stepped treatment of the three common anal conditions._
 
 ## 7.2 Hemorrhoids
 
@@ -148,10 +148,10 @@ Open wounds after abscess drainage or fistulotomy heal from the base over severa
 
 Table 7.2 and Figure 7.2 give typical times. Returning to normal activity is limited mainly by pain on sitting and during bowel movements, not by the risk of damaging the repair.
 
-**Table 7.2.** *Typical recovery after anal procedures.*
+**Table 7.2.** _Typical recovery after anal procedures._
 
 | **Activity**          | **Banding**                                   | **Hemorrhoidectomy or fistula surgery**                                               | **Fissure treatment**                                    |
-|-----------------------|-----------------------------------------------|---------------------------------------------------------------------------------------|----------------------------------------------------------|
+| --------------------- | --------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | **Office work**       | The next day                                  | About 1 to 2 weeks                                                                    | Ointment: no time off; sphincterotomy: a few days        |
 | **Driving**           | The next day                                  | When sitting is comfortable and not taking strong pain medicine, often 1 week         | A few days                                               |
 | **Heavy work, sport** | After a few days                              | About 2 to 4 weeks                                                                    | About 1 to 2 weeks after sphincterotomy                  |
@@ -161,9 +161,9 @@ Table 7.2 and Figure 7.2 give typical times. Returning to normal activity is lim
 | **Ramadan fasting**   | Unchanged                                     | Wait until bowels are regular and comfortable; fasting raises the risk of hard stools | Drink well between iftar and suhoor and keep stools soft |
 | **Flying**            | Unchanged                                     | After about 1 week; a cushion helps on long flights                                   | Unchanged                                                |
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 7.2.** Typical healing times after anal procedures, for use with patients.*
+_**Figure 7.2.** Typical healing times after anal procedures, for use with patients._
 
 **STEP 3 Questions patients ask**
 
@@ -217,17 +217,17 @@ Piles are very common in pregnancy and usually improve after delivery. Fiber, fl
 
 Table 7.3 lists the risks of each procedure in the bands of Section 1.5. Replace figures marked “unit data” with your own audit figures.
 
-**Table 7.3.** *Material risks of anal procedures. Square brackets mark figures to replace with unit data.*
+**Table 7.3.** _Material risks of anal procedures. Square brackets mark figures to replace with unit data._
 
-| **Procedure**                           | **Band**         | **Outcome or risk, with typical frequency**                                                                                                |
-|-----------------------------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| **Rubber band ligation**                | Common           | Dull ache or pressure for 1 to 2 days; slight bleeding when the band falls off at 5 to 10 days                                             |
+| **Procedure**                           | **Band**         | **Outcome or risk, with typical frequency**                                                                                              |
+| --------------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Rubber band ligation**                | Common           | Dull ache or pressure for 1 to 2 days; slight bleeding when the band falls off at 5 to 10 days                                           |
 |                                         | Less common      | Heavier bleeding needing review; recurrence needing repeat banding [unit data]                                                           |
 |                                         | Rare but serious | Severe pain, fever, or difficulty passing urine after banding, which may signal pelvic infection and needs urgent assessment [unit data] |
-| **Hemorrhoidectomy**                    | Common           | Significant pain for 1 to 2 weeks; discharge and spotting while the wounds heal                                                            |
+| **Hemorrhoidectomy**                    | Common           | Significant pain for 1 to 2 weeks; discharge and spotting while the wounds heal                                                          |
 |                                         | Less common      | Difficulty passing urine; bleeding after the first week needing return to hospital [unit data]                                           |
 |                                         | Rare but serious | Narrowing of the anus; reduced control of gas or stool; heavy bleeding needing reoperation [unit data]                                   |
-| **Fissure ointment or botulinum toxin** | Common           | Headache with nitrate ointment; recurrence after healing                                                                                   |
+| **Fissure ointment or botulinum toxin** | Common           | Headache with nitrate ointment; recurrence after healing                                                                                 |
 |                                         | Less common      | Temporary leakage after botulinum toxin, about 5 in 100 [3]                                                                              |
 | **Lateral internal sphincterotomy**     | Common           | Healing in at least 88 in 100 [3]                                                                                                        |
 |                                         | Less common      | Reduced control of gas, or occasionally stool, usually mild [unit data]                                                                  |
@@ -258,7 +258,7 @@ Table 7.3 lists the risks of each procedure in the bands of Section 1.5. Replace
 
 ## 7.10 Warning signs
 
-**Table 7.4.** *Green, amber, and red warning signs after anal procedures.*
+**Table 7.4.** _Green, amber, and red warning signs after anal procedures._
 
 <table>
 <colgroup>
@@ -322,7 +322,7 @@ Table 7.3 lists the risks of each procedure in the bands of Section 1.5. Replace
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Tick the treatment the patient had, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Tick the treatment the patient had, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -400,7 +400,7 @@ Table 7.3 lists the risks of each procedure in the bands of Section 1.5. Replace
 These are usual times. Your own plan is on your card.
 
 | **Activity**                | **After banding** | **After an operation**                                                  |
-|-----------------------------|-------------------|-------------------------------------------------------------------------|
+| --------------------------- | ----------------- | ----------------------------------------------------------------------- |
 | **Work or school**          | The next day      | About 1 to 2 weeks                                                      |
 | **Driving**                 | The next day      | When sitting is comfortable and you are not taking strong pain medicine |
 | **Sport and heavy lifting** | After a few days  | About 2 to 4 weeks                                                      |
@@ -419,7 +419,7 @@ These are usual times. Your own plan is on your card.
 **7. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                 | **What to do**                                                |
-|-----------|-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | **GREEN** | Pain on opening your bowels that gets better each day; spotting of blood; some swelling; discharge from a seton                     | This is normal. Keep following this guide.                    |
 | **AMBER** | No bowel movement for 3 days; temperature of 38 °C or more; pain, redness, or swelling getting worse; passing urine with difficulty | Call us today.                                                |
 | **RED**   | Heavy bleeding or clots; cannot pass urine at all; severe pain with fever or shivering, especially after banding; feeling faint     | Go to the emergency department now. Take this guide with you. |
@@ -449,4 +449,4 @@ These are usual times. Your own plan is on your card.
 
 4\. Gaertner WB, Burgess PL, Davids JS, et al. The American Society of Colon and Rectal Surgeons clinical practice guidelines for the management of anorectal abscess, fistula-in-ano, and rectovaginal fistula. Dis Colon Rectum. 2022;65(8):964-985.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
