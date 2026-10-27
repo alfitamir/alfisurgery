@@ -1,25 +1,25 @@
 # Chapter 17 — Getting the Examination Right — Systematic and Tolerable
 
-*Purpose: a systematic, gentle examination finds what the history hides — and recognises when to stop and examine under anaesthesia instead.*
+_Purpose: a systematic, gentle examination finds what the history hides — and recognises when to stop and examine under anaesthesia instead._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 17**
 >
 > - **Chapter colour palette:** Bright Cyan (#0E7490) header bar, Aqua Mist (#ECFEFF) panels, Deep Navy (#164E63) text.
 > - **Hero graphic:** A five-step strip — 01 Prepare → 02 Inspect and strain → 03 Palpate → 04 Anoscopy → 05 Document anatomically — beside a “why clock faces fail” panel showing one posterior lesion acquiring different clock numbers in different positions, with a red slash over the clock and green ticks on anterior, posterior, left lateral, right lateral.
 > - **Icon set:** Chaperone figures, lubricant tube, gloved finger, slotted anoscope, crossed-out clock, compass rose.
-> - **Bedside aphorism banner:** *“Never force a painful examination. If the patient cannot tolerate your finger or the anoscope, stop and book an examination under anaesthesia.”*
+> - **Bedside aphorism banner:** _“Never force a painful examination. If the patient cannot tolerate your finger or the anoscope, stop and book an examination under anaesthesia.”_
 
 ## 1. The Five-Step Systematic Examination
 
 **Table 17.1 — Five steps**
 
-| Step | Technique | Looking or feeling for | Pearl |
-|---|---|---|---|
-| 01 Prepare | Explain each step; obtain consent; chaperone; left lateral (Sims) position with hips flexed, at the edge of the couch, under good light | A relaxed, informed patient | 🟢 Check Appendix C first (neutropenia, thrombocytopenia, sharp foreign body, child abuse concerns) |
-| 02 Inspect (rest and strain) | Part the buttocks gently; ask the patient to bear down | Tags, thrombosis, fissure, fistula openings, pilonidal pits, dermatitis, warts, ulcers, prolapse (rings or grooves) | 🟢 Most fissures and external thromboses are diagnosed here, without inserting a finger |
-| 03 Palpate (DRE) | Generous lubricant (lidocaine gel if tender, waiting 5–10 min); rest the finger pad on the verge, then enter slowly as the patient bears down; sweep 360°; assess prostate or cervix | Resting tone, squeeze, push manoeuvre, masses, induration, deep tenderness, stool, blood, mucus, pus on the glove | 🔴 Severe pain or spasm → stop; consider EUA |
-| 04 Anoscopy | Lubricated anoscope with obturator; withdraw the obturator; inspect the cushions and dentate line while the patient strains gently; remove before rotating | Internal haemorrhoids (not palpable), crypts, internal openings, proctitis, low polyps or tumours | 🟡 Every new “haemorrhoid” patient where available (AGA 2026) |
-| 05 Document | Position, chaperone, findings by anatomical quadrant and distance from the verge | Anterior, posterior, left lateral, right lateral (± anterolateral, posterolateral) | 🔴 Never use clock-face numbers alone |
+| Step                         | Technique                                                                                                                                                                            | Looking or feeling for                                                                                              | Pearl                                                                                               |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| 01 Prepare                   | Explain each step; obtain consent; chaperone; left lateral (Sims) position with hips flexed, at the edge of the couch, under good light                                              | A relaxed, informed patient                                                                                         | 🟢 Check Appendix C first (neutropenia, thrombocytopenia, sharp foreign body, child abuse concerns) |
+| 02 Inspect (rest and strain) | Part the buttocks gently; ask the patient to bear down                                                                                                                               | Tags, thrombosis, fissure, fistula openings, pilonidal pits, dermatitis, warts, ulcers, prolapse (rings or grooves) | 🟢 Most fissures and external thromboses are diagnosed here, without inserting a finger             |
+| 03 Palpate (DRE)             | Generous lubricant (lidocaine gel if tender, waiting 5–10 min); rest the finger pad on the verge, then enter slowly as the patient bears down; sweep 360°; assess prostate or cervix | Resting tone, squeeze, push manoeuvre, masses, induration, deep tenderness, stool, blood, mucus, pus on the glove   | 🔴 Severe pain or spasm → stop; consider EUA                                                        |
+| 04 Anoscopy                  | Lubricated anoscope with obturator; withdraw the obturator; inspect the cushions and dentate line while the patient strains gently; remove before rotating                           | Internal haemorrhoids (not palpable), crypts, internal openings, proctitis, low polyps or tumours                   | 🟡 Every new “haemorrhoid” patient where available (AGA 2026)                                       |
+| 05 Document                  | Position, chaperone, findings by anatomical quadrant and distance from the verge                                                                                                     | Anterior, posterior, left lateral, right lateral (± anterolateral, posterolateral)                                  | 🔴 Never use clock-face numbers alone                                                               |
 
 ## 2. When to Stop and Book an Examination Under Anaesthesia
 
@@ -32,12 +32,12 @@
 
 **Table 17.2 — The same posterior midline lesion in different positions**
 
-| Position | Common clock description | Problem |
-|---|---|---|
-| Lithotomy (supine, legs raised) | 6 o’clock | Assumes the examiner faces the perineum with 12 o’clock anterior |
-| Prone jack-knife | Often 12 o’clock | Many surgeons place 12 o’clock at the sacrum in this position — conventions vary |
-| Left lateral (Sims) | Variable (3 or 9 o’clock, or 6 o’clock by some) | No universal convention |
-| **Any position** | **“Posterior midline, 1 cm from the verge”** | **Unambiguous** — use anatomical terms |
+| Position                        | Common clock description                        | Problem                                                                          |
+| ------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------- |
+| Lithotomy (supine, legs raised) | 6 o’clock                                       | Assumes the examiner faces the perineum with 12 o’clock anterior                 |
+| Prone jack-knife                | Often 12 o’clock                                | Many surgeons place 12 o’clock at the sacrum in this position — conventions vary |
+| Left lateral (Sims)             | Variable (3 or 9 o’clock, or 6 o’clock by some) | No universal convention                                                          |
+| **Any position**                | **“Posterior midline, 1 cm from the verge”**    | **Unambiguous** — use anatomical terms                                           |
 
 **Algorithm 17.1 — The tolerable anorectal examination**
 
@@ -67,13 +67,13 @@
 
 **Table 17.3 — What a normal-looking examination can miss**
 
-| Trap | Why | Remedy |
-|---|---|---|
-| “DRE negative for haemorrhoids” | Internal haemorrhoids are soft and collapse under the finger | Anoscopy |
-| Normal skin, febrile patient | Intersphincteric or supralevator abscess | Feel for a tender bulge; EUA or imaging |
-| No prolapse on the couch | Prolapse may appear only on straining on the toilet | Examine seated on a commode or straining |
-| Fissure spasm prevents DRE | A low rectal tumour can hide behind it | Treat spasm and re-examine in 2–3 weeks, or EUA |
-| Groins not examined | Inguinal nodes signal anal cancer or infection | Examine both groins |
+| Trap                            | Why                                                          | Remedy                                          |
+| ------------------------------- | ------------------------------------------------------------ | ----------------------------------------------- |
+| “DRE negative for haemorrhoids” | Internal haemorrhoids are soft and collapse under the finger | Anoscopy                                        |
+| Normal skin, febrile patient    | Intersphincteric or supralevator abscess                     | Feel for a tender bulge; EUA or imaging         |
+| No prolapse on the couch        | Prolapse may appear only on straining on the toilet          | Examine seated on a commode or straining        |
+| Fissure spasm prevents DRE      | A low rectal tumour can hide behind it                       | Treat spasm and re-examine in 2–3 weeks, or EUA |
+| Groins not examined             | Inguinal nodes signal anal cancer or infection               | Examine both groins                             |
 
 ## 5. Role-Targeted Action Boxes
 
@@ -105,11 +105,11 @@
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 SAME-DAY | Examination impossible with fever or suspected abscess | Urgent EUA |
-| 🟡 URGENT | Mass, ulcer, induration, or nodes found | Biopsy pathway (Chapter 07) |
-| 🟢 ROUTINE | Incomplete examination due to fissure spasm, no red flags | Re-examine in 2–3 weeks |
+| Urgency     | Clinical trigger                                          | Who and how fast            |
+| ----------- | --------------------------------------------------------- | --------------------------- |
+| 🔴 SAME-DAY | Examination impossible with fever or suspected abscess    | Urgent EUA                  |
+| 🟡 URGENT   | Mass, ulcer, induration, or nodes found                   | Biopsy pathway (Chapter 07) |
+| 🟢 ROUTINE  | Incomplete examination due to fissure spasm, no red flags | Re-examine in 2–3 weeks     |
 
 ## The Patient in Front of You — Chapter 17 Mini-Case
 
