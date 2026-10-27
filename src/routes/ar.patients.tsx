@@ -25,6 +25,7 @@ export const Route = createFileRoute("/ar/patients")({
       { rel: "canonical", href: "https://alfisurgery.com/ar/patients" },
       { rel: "alternate", hrefLang: "ar", href: "https://alfisurgery.com/ar/patients" },
       { rel: "alternate", hrefLang: "en", href: "https://alfisurgery.com/patients" },
+      { rel: "alternate", hrefLang: "x-default", href: "https://alfisurgery.com/patients" },
     ],
   }),
 });
