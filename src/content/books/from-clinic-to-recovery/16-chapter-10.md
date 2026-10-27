@@ -23,10 +23,10 @@ A diagnosis of breast cancer changes a patient’s life in a single conversation
 </tbody>
 </table>
 
-**Table 10.1.** *Breast cancer surgery at a glance.*
+**Table 10.1.** _Breast cancer surgery at a glance._
 
 | **At a glance**                     |                                                                                                                                                     |
-|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Main operations**                 | Breast-conserving surgery (lumpectomy) with radiotherapy, or mastectomy with or without reconstruction                                              |
 | **The armpit**                      | No surgery in selected low-risk patients; sentinel node biopsy; axillary dissection in selected node-positive patients                              |
 | **Hospital stay**                   | Day surgery for most breast-conserving operations; 1 to 2 nights after mastectomy; longer after flap reconstruction                                 |
@@ -69,18 +69,18 @@ Give the result in person, in a private room, with enough time and a specialist 
 
 Every new breast cancer is discussed by a multidisciplinary team before treatment starts. Explain that the plan depends on the type of cancer (its hormone receptor and HER2 status), its size, and whether lymph nodes are involved. For most early cancers, surgery comes first. For some, particularly HER2-positive and triple-negative cancers, or larger cancers, drug treatment is given first; this can shrink the cancer, allow a smaller operation, and show how well the cancer responds. Figure 10.1 gives the pathway in a form that can be shown to patients.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 10.1.** The breast cancer treatment pathway, for use with patients.*
+_**Figure 10.1.** The breast cancer treatment pathway, for use with patients._
 
 ## 10.3 Keeping the breast or removing it
 
 Breast-conserving surgery followed by radiotherapy gives the same long-term survival as mastectomy for suitable early breast cancers, shown by randomized trials with 20 years of follow-up [1, 2]. Radiotherapy is part of breast-conserving treatment, not an optional extra. Mastectomy may be recommended when the cancer is large relative to the breast, involves several areas of the breast, or when radiotherapy is not possible; some patients choose it for personal reasons. A clear margin is defined as no cancer cells at the inked edge of the removed tissue, a standard that has reduced the need for re-operation [3]; patients should still be told that a second operation is sometimes needed.
 
-**Table 10.2.** *Breast-conserving surgery and mastectomy compared, for use with patients.*
+**Table 10.2.** _Breast-conserving surgery and mastectomy compared, for use with patients._
 
 |                        | **Breast-conserving surgery and radiotherapy**               | **Mastectomy**                                                                     |
-|------------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------|
+| ---------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
 | **Long-term survival** | The same                                                     | The same                                                                           |
 | **The breast**         | Kept; shape may change, and oncoplastic techniques can help  | Removed; reconstruction or an external prosthesis can restore shape                |
 | **Radiotherapy**       | Needed, usually for 1 to 3 weeks                             | Sometimes needed, depending on the cancer                                          |
@@ -111,9 +111,9 @@ Surgery to the armpit has become much less extensive. Patients with clinically a
 
 The main reason for this change is lymphedema, persistent swelling of the arm. In a pooled analysis, about 6 in 100 women developed lymphedema after sentinel node biopsy, compared with about 20 in 100 after axillary dissection [9]. Figure 10.2 shows these figures as icon arrays, which many patients find easier to understand (Section 1.5).
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 10.2.** Risk of arm lymphedema after sentinel node biopsy and axillary dissection, shown as icon arrays.*
+_**Figure 10.2.** Risk of arm lymphedema after sentinel node biopsy and axillary dissection, shown as icon arrays._
 
 ## 10.6 Genetics, fertility, and family
 
@@ -143,10 +143,10 @@ Breast-conserving surgery with sentinel node biopsy is usually a day case. After
 
 ## 10.9 Recovery
 
-**Table 10.3.** *Typical recovery after breast cancer surgery.*
+**Table 10.3.** _Typical recovery after breast cancer surgery._
 
 | **Activity**             | **Breast-conserving surgery and sentinel node biopsy** | **Mastectomy or axillary dissection**                                                     | **With reconstruction**             |
-|--------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------|
+| ------------------------ | ------------------------------------------------------ | ----------------------------------------------------------------------------------------- | ----------------------------------- |
 | **Showering**            | After 1 to 2 days                                      | As advised; protect drains                                                                | As advised by the plastic surgeon   |
 | **Arm exercises**        | From the next day                                      | Gentle from the next day; full range after drains are out                                 | As advised; avoid strain on flaps   |
 | **Driving**              | About 1 week                                           | About 2 to 3 weeks, when you can turn the wheel and brake without pain                    | Often 4 to 6 weeks                  |
@@ -205,18 +205,18 @@ We will try to arrange this where possible, and a female nurse will always be pr
 
 ## 10.10 Material risks
 
-**Table 10.4.** *Material risks of breast cancer surgery. Square brackets mark figures to replace with unit data.*
+**Table 10.4.** _Material risks of breast cancer surgery. Square brackets mark figures to replace with unit data._
 
-| **Procedure**                 | **Band**         | **Risk and typical frequency**                                                                                |
-|-------------------------------|------------------|---------------------------------------------------------------------------------------------------------------|
-| **Breast-conserving surgery** | Common           | Bruising, swelling, and a change in breast shape                                                              |
+| **Procedure**                 | **Band**         | **Risk and typical frequency**                                                                            |
+| ----------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------- |
+| **Breast-conserving surgery** | Common           | Bruising, swelling, and a change in breast shape                                                          |
 |                               | Less common      | A second operation to clear the margins [unit data]; infection or hematoma [unit data]                    |
-| **Sentinel node biopsy**      | Less common      | Arm lymphedema, about 6 in 100 [9]; numbness of the inner arm; seroma                                       |
-| **Axillary dissection**       | Common           | Arm lymphedema, about 20 in 100 [9]; numbness of the inner arm; seroma; shoulder stiffness                  |
-| **Mastectomy**                | Common           | Seroma needing aspiration; numbness of the chest wall                                                         |
+| **Sentinel node biopsy**      | Less common      | Arm lymphedema, about 6 in 100 [9]; numbness of the inner arm; seroma                                     |
+| **Axillary dissection**       | Common           | Arm lymphedema, about 20 in 100 [9]; numbness of the inner arm; seroma; shoulder stiffness                |
+| **Mastectomy**                | Common           | Seroma needing aspiration; numbness of the chest wall                                                     |
 |                               | Less common      | Wound infection or delayed healing; skin flap problems [unit data]; long-term chest wall pain [unit data] |
-| **Reconstruction**            | Less common      | Implant infection or loss; firm scar tissue around an implant; partial or total flap loss [unit data]       |
-| **All operations**            | Rare but serious | Blood clots; serious bleeding needing reoperation [unit data]                                               |
+| **Reconstruction**            | Less common      | Implant infection or loss; firm scar tissue around an implant; partial or total flap loss [unit data]     |
+| **All operations**            | Rare but serious | Blood clots; serious bleeding needing reoperation [unit data]                                             |
 
 ## 10.11 Consent checklist
 
@@ -242,7 +242,7 @@ We will try to arrange this where possible, and a female nurse will always be pr
 
 ## 10.12 Warning signs
 
-**Table 10.5.** *Green, amber, and red warning signs after breast cancer surgery.*
+**Table 10.5.** _Green, amber, and red warning signs after breast cancer surgery._
 
 <table>
 <colgroup>
@@ -305,7 +305,7 @@ We will try to arrange this where possible, and a female nurse will always be pr
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Tick the operation the patient had, and add your unit’s name, the breast nurse’s phone number, and the review date before use.*
+_The following pages may be photocopied and given to patients. Tick the operation the patient had, and add your unit’s name, the breast nurse’s phone number, and the review date before use._
 
 <table>
 <colgroup>
@@ -369,7 +369,7 @@ We will try to arrange this where possible, and a female nurse will always be pr
 **5. Getting back to normal**
 
 | **Activity**             | **After lumpectomy**                    | **After mastectomy or node removal**                            |
-|--------------------------|-----------------------------------------|-----------------------------------------------------------------|
+| ------------------------ | --------------------------------------- | --------------------------------------------------------------- |
 | **Driving**              | About 1 week                            | About 2 to 3 weeks                                              |
 | **Office work**          | About 1 to 2 weeks                      | About 3 to 4 weeks                                              |
 | **Lifting and exercise** | Light at once; full after about 2 weeks | Build up slowly over 4 to 6 weeks                               |
@@ -386,7 +386,7 @@ We will try to arrange this where possible, and a female nurse will always be pr
 **7. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                                                     | **What to do**                                                |
-|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | **GREEN** | Bruising and swelling; numbness of the chest or inner arm; a soft swelling after the drain is removed; tiredness                                                        | This is normal. Keep following this guide.                    |
 | **AMBER** | Redness, warmth, or discharge from a wound; temperature of 38 °C or more; a tight or fast-growing swelling; swelling or heaviness of the arm                            | Call your breast nurse today.                                 |
 | **RED**   | A fast-growing, tight, painful swelling; fever with shivering; chest pain or short of breath; a hot, swollen leg; a reconstructed breast that turns pale, blue, or cold | Go to the emergency department now. Take this guide with you. |
@@ -430,4 +430,4 @@ We will try to arrange this where possible, and a female nurse will always be pr
 
 11\. Oktay K, Harvey BE, Partridge AH, et al. Fertility preservation in patients with cancer: ASCO clinical practice guideline update. J Clin Oncol. 2018;36(19):1994-2001.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
