@@ -4,7 +4,7 @@
 
 > **🕊️ IN MEMORIAM**
 >
-> *“On 22 December 2019, Mohammad Fahim Siddiqui finally laid down his scalpel.”* — **Nasima Siddiqui**, his daughter
+> _“On 22 December 2019, Mohammad Fahim Siddiqui finally laid down his scalpel.”_ — **Nasima Siddiqui**, his daughter
 
 Dedicated to the memory of **Dr. Mohammad Fahim Siddiqui** (14 December 1941 – 22 December 2019), the **Father of Anal Surgery in Eastern Saudi Arabia** and Head of the Surgery Department at [Mohammad Dossary Hospital](https://mdh.com.sa/) for more than 40 years. Every patient we examine with gentleness and every sphincter we protect honours his legacy.
 
