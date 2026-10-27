@@ -48,8 +48,10 @@ import plastibellPdf from "@/assets/patient-education/plastibell_circumcision.pd
 import openInguinalPdf from "@/assets/patient-education/Surgical_Inguinal_Hernia_Repair_Open_Technique.pdf.asset.json";
 import thyroidectomyPdf from "@/assets/patient-education/thyroidectomy.pdf.asset.json";
 
-export type EducationCategory = "Abdominal" | "Breast" | "Anorectal" | "Hernia" | "Minor Procedures" | "Endocrine" | "Pediatric";
-export type EducationCategoryAr = "البطن" | "الثدي" | "الشرج والمستقيم" | "الفتق" | "إجراءات صغرى" | "الغدد الصماء" | "الأطفال";
+export type EducationCategory =
+  "Abdominal" | "Breast" | "Anorectal" | "Hernia" | "Minor Procedures" | "Endocrine" | "Pediatric";
+export type EducationCategoryAr =
+  "البطن" | "الثدي" | "الشرج والمستقيم" | "الفتق" | "إجراءات صغرى" | "الغدد الصماء" | "الأطفال";
 
 export interface PatientEducationEntry {
   id: string;
