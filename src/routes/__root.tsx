@@ -78,18 +78,31 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  validateSearch: (search: Record<string, unknown>): { lang?: string } => ({ lang: typeof search.lang === "string" && siteLanguages.some((l) => l.code === search.lang) ? search.lang : undefined }),
+  validateSearch: (search: Record<string, unknown>): { lang?: string } => ({
+    lang:
+      typeof search.lang === "string" && siteLanguages.some((l) => l.code === search.lang)
+        ? search.lang
+        : undefined,
+  }),
   search: { middlewares: [retainSearchParams(["lang"])] },
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Alfi Surgery — Dr. Tamer Elalfy" },
-      { name: "description", content: "Alfi Surgery provides expert general and laparoscopic surgical care, consultation, and patient education by Dr Tamer Elalfy consultant of surgery." },
+      {
+        name: "description",
+        content:
+          "Alfi Surgery provides expert general and laparoscopic surgical care, consultation, and patient education by Dr Tamer Elalfy consultant of surgery.",
+      },
       { name: "google-site-verification", content: "sp6Lc5241mHE-nEjfJOz0FS4r7Xpas4kcXLGETYuNXQ" },
       { name: "author", content: "Dr. Tamer Elalfy" },
       { property: "og:title", content: "Alfi Surgery — Dr. Tamer Elalfy" },
-      { property: "og:description", content: "Alfi Surgery provides expert general and laparoscopic surgical care, consultation, and patient education by Dr Tamer Elalfy consultant of surgery." },
+      {
+        property: "og:description",
+        content:
+          "Alfi Surgery provides expert general and laparoscopic surgical care, consultation, and patient education by Dr Tamer Elalfy consultant of surgery.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "theme-color", content: "#2A6F97" },
@@ -97,7 +110,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "apple-mobile-web-app-status-bar-style", content: "default" },
       { name: "apple-mobile-web-app-title", content: "دليل المريض" },
       { name: "twitter:title", content: "Alfi Surgery — Dr. Tamer Elalfy" },
-      { name: "twitter:description", content: "Alfi Surgery provides expert general and laparoscopic surgical care, consultation, and patient education by Dr Tamer Elalfy consultant of surgery." },
+      {
+        name: "twitter:description",
+        content:
+          "Alfi Surgery provides expert general and laparoscopic surgical care, consultation, and patient education by Dr Tamer Elalfy consultant of surgery.",
+      },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -151,11 +168,17 @@ function RootComponent() {
     return () => data.subscription.unsubscribe();
   }, [router, queryClient]);
 
-
-
   return (
     <QueryClientProvider client={queryClient}>
-      <SiteLanguageProvider><SiteNavigation /><SourceLanguageNotice /><div className="site-page-content"><Outlet /></div><SiteFooter /><PatientAssistant /></SiteLanguageProvider>
+      <SiteLanguageProvider>
+        <SiteNavigation />
+        <SourceLanguageNotice />
+        <div className="site-page-content">
+          <Outlet />
+        </div>
+        <SiteFooter />
+        <PatientAssistant />
+      </SiteLanguageProvider>
     </QueryClientProvider>
   );
 }
