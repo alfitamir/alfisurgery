@@ -1,30 +1,30 @@
 # Chapter 19 — Synthesis — Master Comparison Table, Capstone Case, and Rapid-Fire Rules
 
-*Purpose: everything you need at 03:00 on two pages — then test yourself before the next patient arrives.*
+_Purpose: everything you need at 03:00 on two pages — then test yourself before the next patient arrives._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 19**
 >
 > - **Chapter colour palette:** Burnished Gold (#A16207) header bar, Ivory (#FEFCE8) tables, High-Contrast Navy text.
 > - **Hero graphic:** A single pocket reference card combining the master comparison table, the rapid-fire rules, and a capstone self-test scorecard.
 > - **Icon set:** Pocket card, stopwatch, trophy, checklist.
-> - **Bedside aphorism banner:** *“Treat the clinical picture, not a single sign. Confirm before you treat, protect the internal sphincter, and never wait for fluctuance or crepitus to call surgery.”*
+> - **Bedside aphorism banner:** _“Treat the clinical picture, not a single sign. Confirm before you treat, protect the internal sphincter, and never wait for fluctuance or crepitus to call surgery.”_
 
 ## 1. Master Comparison Table
 
 **Table 19.1 — Ten core conditions**
 
-| Condition | Hallmark | Key finding | First-line management | Escalation / pitfall |
-|---|---|---|---|---|
-| Internal haemorrhoids | Painless bright-red bleeding ± prolapse | Seen on anoscopy, not felt on DRE | 🟢 Fibre 25–35 g/day total, toilet habits; RBL for refractory I–III (IRC in significant coagulopathy) | 🔴 Never band R2/T1; pelvic sepsis triad; colon first if red flags |
-| Thrombosed external haemorrhoid | Sudden severe pain and lump | Tense bluish nodule; afebrile | 🟡 < 72 h severe: remove clot and vessel (excision preferred); 🟢 > 72 h: conservative | ASCRS and AGA differ; never a tiny stab leaving clot |
-| Full-thickness rectal prolapse | Mass after straining; leakage | Concentric rings; lax tone | 🟢 Viable: analgesia, sugar if oedematous, reduce, refer | 🔴 Dusky or black: no reduction — emergency surgery |
-| Anal fissure | Tearing pain with stool | Midline tear; chronic tag and papilla | 🟢 6–8 weeks: fibre, sitz baths, topical diltiazem/nifedipine | Atypical → biopsy; no GTN with PDE5i; refractory → botulinum toxin or LIS |
-| Perianal abscess | Throbbing pain ± fever | Induration; may be no fluctuance | 🔴 Same-day drainage; no routine packing (PPAC2) | Never antibiotics alone; warn about fistula |
-| Fistula-in-ano | Recurrent discharge | External opening | 🟢 Simple: fistulotomy; 🟡 complex: MRI, seton, staged repair | Never lay open complex or Crohn’s tracts |
-| Fournier’s gangrene | Pain out of proportion | Crepitus, dusky skin, toxicity | 🔴 Surgeon at minute zero; antibiotics within 1 h; debridement | Never wait for CT or a score; stop SGLT2i |
-| Pilonidal abscess | Natal cleft swelling | Midline pits; normal anal canal | 🟡 Off-midline drainage | Never a deep midline incision |
-| Pruritus ani | Itch and burning | Excoriated moist skin or plaque | 🟢 Stop wipes and antiseptics; barrier; treat cause | Steroids ≤ 2 weeks; biopsy plaques at 4–6 weeks |
-| Impaction with overflow | Watery leakage in a frail patient | Hard faecal mass on DRE | 🟢 Lidocaine gel, disimpaction, enema, macrogol | Never loperamide; image if pain or fever |
+| Condition                       | Hallmark                                | Key finding                           | First-line management                                                                                 | Escalation / pitfall                                                      |
+| ------------------------------- | --------------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Internal haemorrhoids           | Painless bright-red bleeding ± prolapse | Seen on anoscopy, not felt on DRE     | 🟢 Fibre 25–35 g/day total, toilet habits; RBL for refractory I–III (IRC in significant coagulopathy) | 🔴 Never band R2/T1; pelvic sepsis triad; colon first if red flags        |
+| Thrombosed external haemorrhoid | Sudden severe pain and lump             | Tense bluish nodule; afebrile         | 🟡 < 72 h severe: remove clot and vessel (excision preferred); 🟢 > 72 h: conservative                | ASCRS and AGA differ; never a tiny stab leaving clot                      |
+| Full-thickness rectal prolapse  | Mass after straining; leakage           | Concentric rings; lax tone            | 🟢 Viable: analgesia, sugar if oedematous, reduce, refer                                              | 🔴 Dusky or black: no reduction — emergency surgery                       |
+| Anal fissure                    | Tearing pain with stool                 | Midline tear; chronic tag and papilla | 🟢 6–8 weeks: fibre, sitz baths, topical diltiazem/nifedipine                                         | Atypical → biopsy; no GTN with PDE5i; refractory → botulinum toxin or LIS |
+| Perianal abscess                | Throbbing pain ± fever                  | Induration; may be no fluctuance      | 🔴 Same-day drainage; no routine packing (PPAC2)                                                      | Never antibiotics alone; warn about fistula                               |
+| Fistula-in-ano                  | Recurrent discharge                     | External opening                      | 🟢 Simple: fistulotomy; 🟡 complex: MRI, seton, staged repair                                         | Never lay open complex or Crohn’s tracts                                  |
+| Fournier’s gangrene             | Pain out of proportion                  | Crepitus, dusky skin, toxicity        | 🔴 Surgeon at minute zero; antibiotics within 1 h; debridement                                        | Never wait for CT or a score; stop SGLT2i                                 |
+| Pilonidal abscess               | Natal cleft swelling                    | Midline pits; normal anal canal       | 🟡 Off-midline drainage                                                                               | Never a deep midline incision                                             |
+| Pruritus ani                    | Itch and burning                        | Excoriated moist skin or plaque       | 🟢 Stop wipes and antiseptics; barrier; treat cause                                                   | Steroids ≤ 2 weeks; biopsy plaques at 4–6 weeks                           |
+| Impaction with overflow         | Watery leakage in a frail patient       | Hard faecal mass on DRE               | 🟢 Lidocaine gel, disimpaction, enema, macrogol                                                       | Never loperamide; image if pain or fever                                  |
 
 ## 2. Ten Rapid-Fire Bedside Rules
 
@@ -69,12 +69,12 @@
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 EMERGENCY | Any “sick” feature in Algorithm 19.1 | Surgeon now |
-| 🔴 SAME-DAY | Abscess, irreducible prolapse, post-procedure retention | Surgical review today |
-| 🟡 URGENT | Cancer red flags, suspected Crohn’s disease | Specialist pathway |
-| 🟢 ROUTINE | Failure of first-line care | Clinic referral |
+| Urgency      | Clinical trigger                                        | Who and how fast      |
+| ------------ | ------------------------------------------------------- | --------------------- |
+| 🔴 EMERGENCY | Any “sick” feature in Algorithm 19.1                    | Surgeon now           |
+| 🔴 SAME-DAY  | Abscess, irreducible prolapse, post-procedure retention | Surgical review today |
+| 🟡 URGENT    | Cancer red flags, suspected Crohn’s disease             | Specialist pathway    |
+| 🟢 ROUTINE   | Failure of first-line care                              | Clinic referral       |
 
 ## The Patient in Front of You — Chapter 19 Mini-Case
 
