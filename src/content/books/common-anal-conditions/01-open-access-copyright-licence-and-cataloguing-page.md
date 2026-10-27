@@ -2,19 +2,19 @@
 
 > **📜 OPEN-ACCESS LICENCE AND COPYRIGHT NOTICE**
 >
-> - **Title:** *Common Anal Conditions: A Practical, Algorithmic Handbook for Non-Surgeons (Emergency Physicians, Family Medicine/GPs, Medical Specialists, and ER and Ward Nurses).*
+> - **Title:** _Common Anal Conditions: A Practical, Algorithmic Handbook for Non-Surgeons (Emergency Physicians, Family Medicine/GPs, Medical Specialists, and ER and Ward Nurses)._
 > - **Author:** Dr. Tamer Rushdy Elalfy, Consultant General Surgeon and Head of General Surgery and Operating Room Department, [Mohammad Dossary Hospital](https://mdh.com.sa/), Al Khobar, Kingdom of Saudi Arabia · Zagazig University, Zagazig, Egypt · Founder, [AlfiSurgery.com](https://alfisurgery.com) · ORCID [0000-0003-3769-2445](https://orcid.org/0000-0003-3769-2445) · Contact: **Alfitamir@yahoo.com**
 > - **Edition:** Version 2.0 — Second Open-Access Clinical Edition (2026). Supersedes Version 1.0 (First Open-Access Clinical Edition, 23 October 2026).
 > - **Copyright:** © 2026 Dr. Tamer Rushdy Elalfy. Some rights reserved.
 > - **Licence:** This work is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licence (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/). You may **share** (copy and redistribute in any medium or format) and **adapt** (remix, transform, and build upon) the material for any non-commercial clinical, hospital, or educational purpose, provided you credit **Dr. Tamer Rushdy Elalfy** ([alfisurgery.com](https://alfisurgery.com)), link to the licence, indicate if changes were made, and distribute adaptations under the same licence.
 
-| Cataloguing field | Identifier / status |
-|---|---|
-| Digital Object Identifier (DOI) | Zenodo (CERN / OpenAIRE): [10.5281/zenodo.23605089](https://doi.org/10.5281/zenodo.23605089) |
-| Open-access portal and updates | [AlfiSurgery Clinical Education Platform](https://alfisurgery.com) (https://alfisurgery.com) |
-| Author disclosures | The author declares **no commercial conflicts of interest** and no external industry funding. |
-| Off-label use | Several recommendations involve off-label or unlicensed use in some countries (for example topical diltiazem, compounded nifedipine, and botulinum toxin for anal fissure). They reflect current guideline recommendations (ASCRS 2023) and must be checked against national licensing and local formularies. |
-| Language and spelling | UK/international English. Drug names follow the International Non-proprietary Name (INN) where it differs (for example *glyceryl trinitrate*, *paracetamol*, *aciclovir*/*valaciclovir*). |
+| Cataloguing field               | Identifier / status                                                                                                                                                                                                                                                                                           |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Digital Object Identifier (DOI) | Zenodo (CERN / OpenAIRE): [10.5281/zenodo.23605089](https://doi.org/10.5281/zenodo.23605089)                                                                                                                                                                                                                  |
+| Open-access portal and updates  | [AlfiSurgery Clinical Education Platform](https://alfisurgery.com) (https://alfisurgery.com)                                                                                                                                                                                                                  |
+| Author disclosures              | The author declares **no commercial conflicts of interest** and no external industry funding.                                                                                                                                                                                                                 |
+| Off-label use                   | Several recommendations involve off-label or unlicensed use in some countries (for example topical diltiazem, compounded nifedipine, and botulinum toxin for anal fissure). They reflect current guideline recommendations (ASCRS 2023) and must be checked against national licensing and local formularies. |
+| Language and spelling           | UK/international English. Drug names follow the International Non-proprietary Name (INN) where it differs (for example _glyceryl trinitrate_, _paracetamol_, _aciclovir_/_valaciclovir_).                                                                                                                     |
 
 ## Table of Contents
 
