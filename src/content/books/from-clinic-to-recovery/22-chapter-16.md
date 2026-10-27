@@ -23,10 +23,10 @@ Varicose veins are common, especially in people who stand for long periods at wo
 </tbody>
 </table>
 
-**Table 16.1.** *Varicose veins at a glance.*
+**Table 16.1.** _Varicose veins at a glance._
 
 | **At a glance**                     |                                                                                                                     |
-|-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | **Main treatments**                 | Endothermal ablation (radiofrequency or laser); non-thermal ablation; ultrasound-guided foam sclerotherapy; surgery |
 | **Anesthesia**                      | Usually local anesthesia, as a walk-in, walk-out procedure                                                          |
 | **Back to work**                    | Usually within 1 to 3 days after endovenous treatment                                                               |
@@ -39,9 +39,9 @@ Varicose veins are common, especially in people who stand for long periods at wo
 
 Varicose veins are caused by faulty valves in the superficial veins of the leg, which allow blood to flow backward and pool. Treatment is recommended for people with symptoms that affect their quality of life, swelling, skin changes, superficial thrombophlebitis, healed or active venous ulcers, or bleeding [1, 2]. Spider and thread veins are cosmetic and carry no health risk. Varicose veins without symptoms or skin changes rarely cause harm, and many patients are reassured to learn this. Figure 16.1 summarizes the stages in a form that can be shown to patients.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 16.1.** Stages of venous disease and the usual plan, for use with patients.*
+_**Figure 16.1.** Stages of venous disease and the usual plan, for use with patients._
 
 Every patient considered for treatment needs a duplex ultrasound scan to map which veins are faulty and to check the deep veins [1]. Treatment is planned on the scan, not on the visible veins alone.
 
@@ -49,10 +49,10 @@ Every patient considered for treatment needs a duplex ultrasound scan to map whi
 
 Endothermal ablation, using radiofrequency or laser energy delivered through a catheter under local anesthesia, is recommended as the first treatment for incompetent truncal veins; foam sclerotherapy and surgery are alternatives when ablation is unsuitable [1, 2]. Non-thermal methods, such as cyanoacrylate glue, avoid the need for tumescent anesthesia and are increasingly used. In a randomized trial followed for 5 years, quality of life was better after laser ablation or surgery than after foam sclerotherapy, and laser ablation was the most cost-effective option [3]. Visible tributary veins can be removed at the same time through tiny incisions (phlebectomy) or treated with foam. Table 16.2 compares the options for patients.
 
-**Table 16.2.** *Treatments for varicose veins, for use with patients.*
+**Table 16.2.** _Treatments for varicose veins, for use with patients._
 
 | **Treatment**                                      | **What happens**                                                          | **Recovery**                            | **Points to discuss**                                       |
-|----------------------------------------------------|---------------------------------------------------------------------------|-----------------------------------------|-------------------------------------------------------------|
+| -------------------------------------------------- | ------------------------------------------------------------------------- | --------------------------------------- | ----------------------------------------------------------- |
 | **Endothermal ablation (radiofrequency or laser)** | A thin catheter seals the vein from inside, under local anesthesia        | Walk at once; light work in 1 to 2 days | Bruising and a tight cord along the thigh for a week or two |
 | **Non-thermal ablation (for example, glue)**       | The vein is sealed with medical glue; fewer injections                    | Very quick                              | Occasional skin reaction along the vein                     |
 | **Foam sclerotherapy**                             | A foam medicine is injected under ultrasound to close the vein            | Walk at once; may need repeat sessions  | Brown staining of the skin; more often needs repeating      |
@@ -97,14 +97,14 @@ Compression is the foundation of venous ulcer treatment. In addition, early endo
 
 Patients walk for about 30 minutes immediately after treatment and every day afterward. A tight, tender cord along the treated vein, with bruising, is common between about the third and the tenth day and is part of the vein closing. Compression stockings are often worn for a short period according to local practice. Long flights increase the risk of clots after treatment and are best avoided for some weeks; if unavoidable, the patient should discuss clot prevention with the team (Figure 16.2).
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 16.2.** What to expect after endovenous ablation, for use with patients.*
+_**Figure 16.2.** What to expect after endovenous ablation, for use with patients._
 
-**Table 16.3.** *Typical recovery after varicose vein treatment.*
+**Table 16.3.** _Typical recovery after varicose vein treatment._
 
 | **Activity**               | **After endovenous treatment**                     | **After surgery**                                      |
-|----------------------------|----------------------------------------------------|--------------------------------------------------------|
+| -------------------------- | -------------------------------------------------- | ------------------------------------------------------ |
 | **Walking**                | Immediately, and every day                         | The same day                                           |
 | **Showering**              | After removing the bandage, usually day 1 or 2     | Day 2                                                  |
 | **Driving**                | Usually the next day, if comfortable               | About 1 week                                           |
@@ -156,18 +156,18 @@ Lie down, raise the leg above your heart, and press firmly on the spot with a cl
 
 ## 16.6 Material risks
 
-**Table 16.4.** *Material risks of varicose vein treatment. Square brackets mark figures to replace with unit data.*
+**Table 16.4.** _Material risks of varicose vein treatment. Square brackets mark figures to replace with unit data._
 
 | **Band**             | **Risk**                                                                      | **Typical frequency**           | **Example wording**                                                |
-|----------------------|-------------------------------------------------------------------------------|---------------------------------|--------------------------------------------------------------------|
+| -------------------- | ----------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------ |
 | **Common**           | Bruising, tenderness, and a tight cord along the treated vein                 | Many patients, for 1 to 2 weeks | “A tender cord along the thigh is normal as the vein closes.”      |
-| **Common**           | New varicose veins over the years                                             | [unit data]                   | “New veins can appear in future years.”                            |
-| **Less common**      | Brown staining of the skin after foam                                         | [unit data]                   | “Some people have brown marks that fade slowly.”                   |
-| **Less common**      | Numbness or tingling from injury to a skin nerve                              | [unit data]                   | “A patch of numb skin can occur, usually improving.”               |
-| **Less common**      | Superficial thrombophlebitis (painful, red, hard vein)                        | [unit data]                   | “A treated vein can become inflamed for a while.”                  |
-| **Rare but serious** | Deep vein thrombosis or pulmonary embolism                                    | [unit data]                   | “Rarely, a clot forms in a deep vein. Walking helps prevent this.” |
-| **Rare but serious** | Temporary visual disturbance, or very rarely stroke-like symptoms, after foam | [unit data]                   | “Very rarely, foam causes brief visual changes.”                   |
-| **Rare but serious** | Skin burn after thermal ablation; infection                                   | [unit data]                   | “Burns and infection are rare.”                                    |
+| **Common**           | New varicose veins over the years                                             | [unit data]                     | “New veins can appear in future years.”                            |
+| **Less common**      | Brown staining of the skin after foam                                         | [unit data]                     | “Some people have brown marks that fade slowly.”                   |
+| **Less common**      | Numbness or tingling from injury to a skin nerve                              | [unit data]                     | “A patch of numb skin can occur, usually improving.”               |
+| **Less common**      | Superficial thrombophlebitis (painful, red, hard vein)                        | [unit data]                     | “A treated vein can become inflamed for a while.”                  |
+| **Rare but serious** | Deep vein thrombosis or pulmonary embolism                                    | [unit data]                     | “Rarely, a clot forms in a deep vein. Walking helps prevent this.” |
+| **Rare but serious** | Temporary visual disturbance, or very rarely stroke-like symptoms, after foam | [unit data]                     | “Very rarely, foam causes brief visual changes.”                   |
+| **Rare but serious** | Skin burn after thermal ablation; infection                                   | [unit data]                     | “Burns and infection are rare.”                                    |
 
 ## 16.7 Consent checklist
 
@@ -192,7 +192,7 @@ Lie down, raise the leg above your heart, and press firmly on the spot with a cl
 
 ## 16.8 Warning signs
 
-**Table 16.5.** *Green, amber, and red warning signs after varicose vein treatment.*
+**Table 16.5.** _Green, amber, and red warning signs after varicose vein treatment._
 
 <table>
 <colgroup>
@@ -254,7 +254,7 @@ Lie down, raise the leg above your heart, and press firmly on the spot with a cl
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Tick the treatment, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Tick the treatment, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -302,7 +302,7 @@ Lie down, raise the leg above your heart, and press firmly on the spot with a cl
 **3. Getting back to normal**
 
 | **Activity**               | **Usually from**                                              |
-|----------------------------|---------------------------------------------------------------|
+| -------------------------- | ------------------------------------------------------------- |
 | **Work**                   | Light work in 1 to 2 days                                     |
 | **Driving**                | Usually the next day, if comfortable                          |
 | **Exercise**               | Gentle walking at once; strenuous exercise after 1 to 2 weeks |
@@ -321,7 +321,7 @@ Lie down, raise the leg above your heart, and press firmly on the spot with a cl
 **5. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                          | **What to do**                                           |
-|-----------|------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | **GREEN** | Bruising; a tight, tender cord along the vein; mild aching; small lumps under the skin                                       | This is normal. Keep walking.                            |
 | **AMBER** | A red, hot, very painful lump; redness or discharge from a cut; numbness that is not improving                               | Call us today.                                           |
 | **RED**   | Calf pain and swelling; sudden breathlessness or chest pain; bleeding that will not stop; sudden weakness or vision problems | Go to the emergency department or call an ambulance now. |
@@ -350,4 +350,4 @@ Lie down, raise the leg above your heart, and press firmly on the spot with a cl
 
 4\. Gohel MS, Heatley F, Liu X, et al. A randomized trial of early endovenous ablation in venous ulceration. N Engl J Med. 2018;378(22):2105-2114.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
