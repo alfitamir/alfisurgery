@@ -33,7 +33,12 @@ const loaders = {
 export function SiteLanguageProvider({ children }: { children: React.ReactNode }) {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
   const searchLanguage = useRouterState({ select: (state) => state.location.search.lang });
-  const [language, setLanguage] = useState<SiteLanguage>("en");
+  const initialLanguage: SiteLanguage = searchLanguage && siteLanguages.some((item) => item.code === searchLanguage)
+    ? searchLanguage
+    : pathname.startsWith("/ar") || pathname.startsWith("/articles")
+      ? "ar"
+      : "en";
+  const [language, setLanguage] = useState<SiteLanguage>(initialLanguage);
   const [dictionary, setDictionary] = useState<TranslationDictionary>({});
   const [loading, setLoading] = useState(false);
   const [failed, setFailed] = useState(false);

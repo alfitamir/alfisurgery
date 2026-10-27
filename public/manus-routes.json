@@ -1,0 +1,29 @@
+{
+  "routes": [
+    { "path": "/", "title": "Alfi Surgery" },
+    { "path": "/ar", "title": "Alfi Surgery Arabic" },
+    { "path": "/patients", "title": "Patient education" },
+    { "path": "/ar/patients", "title": "تثقيف المرضى" },
+    { "path": "/guides/:guideId", "title": "Operation guide" },
+    { "path": "/articles", "title": "Articles" },
+    { "path": "/articles/:articleId", "title": "Article" },
+    { "path": "/books", "title": "Books" },
+    { "path": "/books/:bookId", "title": "Book" },
+    { "path": "/books/:bookId/:chapterId", "title": "Book chapter" },
+    { "path": "/profile", "title": "Profile" },
+    { "path": "/contact", "title": "Contact" },
+    { "path": "/prevention", "title": "Prevention" },
+    { "path": "/posts", "title": "Posts" },
+    { "path": "/publications", "title": "Publications" },
+    { "path": "/research", "title": "Research" },
+    { "path": "/teaching", "title": "Teaching" },
+    { "path": "/updates", "title": "Updates" },
+    { "path": "/videos", "title": "Videos" },
+    { "path": "/patient-education/hidradenitis-suppurativa", "title": "Hidradenitis suppurativa" },
+    {
+      "path": "/patient-education/weight-plateau-after-sleeve",
+      "title": "Weight plateau after sleeve"
+    },
+    { "path": "/ar/medical-questions", "title": "الأسئلة الطبية" }
+  ]
+}

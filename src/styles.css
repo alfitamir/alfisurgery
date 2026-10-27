@@ -242,6 +242,11 @@ html[data-site-language] body .font-mono { font-family: var(--font-mono) !import
 .patient-site #operations article p { flex-grow: 1; }
 .patient-site #operations article a { white-space: normal; height: auto; min-height: 2rem; }
 .guide-reading { overflow-wrap: anywhere; }
+.guide-reading-focus { max-width: 52rem; }
+.guide-reading-focus > img { opacity: 0.82; }
+.guide-reading-focus p,
+.guide-reading-focus li,
+.guide-reading-focus dd { line-height: 2; }
 @media print {
   .site-language-bar, .site-main-navigation, .guide-actions, .site-page-content + footer { display: none !important; }
   .guide-reading { max-width: none; padding: 0; }

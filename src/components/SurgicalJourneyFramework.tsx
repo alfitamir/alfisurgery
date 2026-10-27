@@ -192,7 +192,7 @@ const framework = {
             "الألم والأدوية",
             "استخدم الأدوية حسب الوصفة فقط، واسأل الفريق عما تفعله إذا لم يتحسن الألم.",
           ],
-          ["٠٢", "الجرح والدرنقة", "اتبع تعليمات تغيير الضماد والمصرف والاستحمام الخاصة بعمليتك."],
+          ["٠٢", "الجرح والدرنقة", "اتبع تعليمات تغيير الضماد والدرنقة والاستحمام الخاصة بعمليتك."],
           [
             "٠٣",
             "الطعام ووظيفة الأمعاء",
@@ -280,9 +280,9 @@ type FrameworkLanguage = keyof typeof framework;
 
 export function SurgicalJourneyFramework() {
   const { language } = useSiteLanguage();
+  const [active, setActive] = useState(0);
   if (language !== "ar" && language !== "en") return null;
   const content = framework[language as FrameworkLanguage];
-  const [active, setActive] = useState(0);
   const panel = content.panels[active];
   const PanelIcon = content.tabs[active].icon;
 
