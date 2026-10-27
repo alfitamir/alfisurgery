@@ -22,10 +22,10 @@ Weekly injections such as semaglutide and tirzepatide, and related daily injecti
 </tbody>
 </table>
 
-**Table 23.1.** *GLP-1 and GIP/GLP-1 receptor agonists and surgery at a glance.*
+**Table 23.1.** _GLP-1 and GIP/GLP-1 receptor agonists and surgery at a glance._
 
 | **At a glance**                |                                                                                                                          |
-|--------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
 | **Examples**                   | Semaglutide, tirzepatide, liraglutide, dulaglutide, and others; injections or tablets                                    |
 | **Main surgical concern**      | Slowed stomach emptying: food may remain in the stomach despite normal fasting                                           |
 | **Current guidance**           | Most patients continue the medicine; higher-risk patients may need a 24-hour liquid diet and an adapted anesthesia plan  |
@@ -42,17 +42,17 @@ GLP-1 receptor agonists and dual GIP/GLP-1 receptor agonists reduce appetite and
 
 Three major guidance documents agree that most patients can continue these medicines before elective surgery, but differ in how they manage the risk of retained stomach contents (Table 23.2). Each hospital should adopt one approach, agreed between anesthesia, surgery, and endocrinology, and apply it consistently.
 
-**Table 23.2.** *Current guidance on GLP-1 and GIP/GLP-1 receptor agonists before elective surgery.*
+**Table 23.2.** _Current guidance on GLP-1 and GIP/GLP-1 receptor agonists before elective surgery._
 
-| **Guidance**                                            | **Main recommendations**                                                                                                                                                                                            |
-|---------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Guidance**                                          | **Main recommendations**                                                                                                                                                                                            |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Multisociety clinical practice guidance, 2024 [2]** | Most patients continue the medicine. Patients at higher risk (dose escalation, higher doses, gastrointestinal symptoms) may follow a liquid diet for 24 hours before surgery, or have the anesthetic plan adjusted. |
 | **UK multidisciplinary consensus, 2025 [3]**          | Continue the medicine, with individual risk assessment and an anesthetic plan for patients at higher risk.                                                                                                          |
 | **SPAQI multidisciplinary consensus, 2025 [4]**       | Continue the medicine, but extend the preoperative fast, including 24 hours without solid food for patients without significant symptoms.                                                                           |
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 23.1.** Assessing patients taking GLP-1 or GIP/GLP-1 receptor agonists before surgery.*
+_**Figure 23.1.** Assessing patients taking GLP-1 or GIP/GLP-1 receptor agonists before surgery._
 
 ## 23.3 Asking the right questions
 
@@ -149,14 +149,14 @@ Tirzepatide can make the pill less reliable. Use an extra method, such as condom
 
 ## 23.7 Additional risks
 
-**Table 23.3.** *Additional risks for patients taking GLP-1 or GIP/GLP-1 receptor agonists. Square brackets mark figures to replace with unit data.*
+**Table 23.3.** _Additional risks for patients taking GLP-1 or GIP/GLP-1 receptor agonists. Square brackets mark figures to replace with unit data._
 
 | **Band**             | **Risk**                                           | **Typical frequency** | **Example wording**                                                                     |
-|----------------------|----------------------------------------------------|-----------------------|-----------------------------------------------------------------------------------------|
-| **Common**           | Nausea after surgery                               | [unit data]         | “Feeling sick may be more common after the operation.”                                  |
-| **Less common**      | Postponed operation because of food in the stomach | [unit data]         | “If your stomach is not empty, we may need to delay the operation for your safety.”     |
-| **Less common**      | Low blood glucose with insulin or sulfonylureas    | [unit data]         | “We will check your sugar often.”                                                       |
-| **Rare but serious** | Aspiration of stomach contents into the lungs      | [unit data]         | “Rarely, food from the stomach enters the lungs. Our plan is designed to prevent this.” |
+| -------------------- | -------------------------------------------------- | --------------------- | --------------------------------------------------------------------------------------- |
+| **Common**           | Nausea after surgery                               | [unit data]           | “Feeling sick may be more common after the operation.”                                  |
+| **Less common**      | Postponed operation because of food in the stomach | [unit data]           | “If your stomach is not empty, we may need to delay the operation for your safety.”     |
+| **Less common**      | Low blood glucose with insulin or sulfonylureas    | [unit data]           | “We will check your sugar often.”                                                       |
+| **Rare but serious** | Aspiration of stomach contents into the lungs      | [unit data]           | “Rarely, food from the stomach enters the lungs. Our plan is designed to prevent this.” |
 
 ## 23.8 Checklist
 
@@ -179,7 +179,7 @@ Tirzepatide can make the pill less reliable. Use an extra method, such as condom
 
 ## 23.9 Warning signs
 
-**Table 23.4.** *Green, amber, and red warning signs for patients taking GLP-1 or GIP/GLP-1 receptor agonists.*
+**Table 23.4.** _Green, amber, and red warning signs for patients taking GLP-1 or GIP/GLP-1 receptor agonists._
 
 <table>
 <colgroup>
@@ -237,7 +237,7 @@ Tirzepatide can make the pill less reliable. Use an extra method, such as condom
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Complete the plan with the patient, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Complete the plan with the patient, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -259,7 +259,7 @@ These medicines slow down how fast your stomach empties. Food can stay in your s
 **My plan**
 
 |                              | **Details**                                             |
-|------------------------------|---------------------------------------------------------|
+| ---------------------------- | ------------------------------------------------------- |
 | **My medicine and dose**     |                                                         |
 | **How often**                | ☐ Weekly ☐ Daily ☐ Tablet                               |
 | **Last dose before surgery** | Date: \_\_\_\_\_\_\_\_                                  |
@@ -287,7 +287,7 @@ These medicines slow down how fast your stomach empties. Food can stay in your s
 **Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                 | **What to do**                      |
-|-----------|---------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| --------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
 | **GREEN** | Mild nausea for a day or two                                                                                        | Eat small meals and drink often.    |
 | **AMBER** | Cannot drink for 12 hours because of nausea; pain in the upper right tummy after meals                              | Call your doctor or us today.       |
 | **RED**   | Repeated vomiting; dizzy with little urine; severe tummy pain; yellow eyes or skin; low sugar that will not come up | Go to the emergency department now. |
@@ -318,4 +318,4 @@ These medicines slow down how fast your stomach empties. Food can stay in your s
 
 5\. Hassanein M, Afandi B, Yakoob Ahmedani M, et al. Diabetes and Ramadan: practical guidelines 2021. Diabetes Res Clin Pract. 2022;185:109185.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
