@@ -23,10 +23,10 @@ Age alone is a poor guide to surgical risk. Two patients of the same age can hav
 </tbody>
 </table>
 
-**Table 24.1.** *Older adults and surgery at a glance.*
+**Table 24.1.** _Older adults and surgery at a glance._
 
 | **At a glance**                |                                                                                                                        |
-|--------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
 | **Key question**               | How frail is this patient, not just how old                                                                            |
 | **Frailty tool**               | Clinical Frailty Scale (1 fit to 9 terminally ill) or an equivalent validated tool                                     |
 | **Delirium**                   | A sudden, fluctuating change in attention and awareness; common, often missed, usually reversible                      |
@@ -73,9 +73,9 @@ Delirium is a sudden, fluctuating disturbance of attention and awareness, usuall
 
 Multicomponent, non-drug prevention programs, such as the Hospital Elder Life Program, reduce the incidence of delirium by about a third in trials and are recommended as first-line prevention [4, 5]. Figure 24.1 summarizes the bundle in a form that can be used on surgical wards. Sedating medicines, particularly benzodiazepines, and the use of bladder catheters and physical restraints should be minimized, because each increases the risk of delirium.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 24.1.** A non-drug delirium prevention bundle for surgical wards, adapted from the Hospital Elder Life Program.*
+_**Figure 24.1.** A non-drug delirium prevention bundle for surgical wards, adapted from the Hospital Elder Life Program._
 
 ## 24.4 Family involvement and autonomy
 
@@ -137,10 +137,10 @@ We will talk this through beforehand, so we know what matters most to you and ca
 
 ## 24.8 Additional risks
 
-**Table 24.2.** *Additional risks for frail older adults. Square brackets mark figures to replace with unit data.*
+**Table 24.2.** _Additional risks for frail older adults. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                                               | **Typical frequency**                                 | **Example wording**                                                          |
-|----------------------|------------------------------------------------------------------------|-------------------------------------------------------|------------------------------------------------------------------------------|
+| **Band**             | **Risk**                                                               | **Typical frequency**                               | **Example wording**                                                          |
+| -------------------- | ---------------------------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------- |
 | **Common**           | Delirium after major surgery in frail patients                         | Up to about 1 in 5, higher with greater frailty [3] | “Confusion after the operation is common in people of your age and fitness.” |
 | **Common**           | Slower recovery of strength and independence                           | [unit data]                                         | “It may take longer to get back to normal than for a younger person.”        |
 | **Less common**      | Falls, pressure injuries, and loss of independence after hospital stay | [unit data]                                         | “We work to keep you moving safely to prevent this.”                         |
@@ -167,7 +167,7 @@ We will talk this through beforehand, so we know what matters most to you and ca
 
 ## 24.10 Warning signs
 
-**Table 24.3.** *Green, amber, and red warning signs for older adults after surgery.*
+**Table 24.3.** _Green, amber, and red warning signs for older adults after surgery._
 
 <table>
 <colgroup>
@@ -225,7 +225,7 @@ We will talk this through beforehand, so we know what matters most to you and ca
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients and families. Add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients and families. Add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -281,7 +281,7 @@ Some older patients become confused for a while after an operation. This is call
 **Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                | **What to do**                            |
-|-----------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
+| --------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- |
 | **GREEN** | Mild tiredness or slower thinking for a few days, improving                                                        | This is normal. Keep up normal routines.  |
 | **AMBER** | New confusion, drowsiness, or agitation; not eating or drinking; a fall without injury                             | Tell the nurse or call us today.          |
 | **RED**   | Sudden severe confusion with safety concerns; a fall with injury; sudden weakness, facial droop, or slurred speech | Call for urgent help or an ambulance now. |
@@ -312,4 +312,4 @@ Some older patients become confused for a while after an operation. This is call
 
 5\. American Geriatrics Society Expert Panel on Postoperative Delirium in Older Adults. Postoperative delirium in older adults: best practice statement from the American Geriatrics Society. J Am Coll Surg. 2015;220(2):136-148.e1.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
