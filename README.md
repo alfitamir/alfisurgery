@@ -1,6 +1,6 @@
 # Alfi Surgery
 
-ABOUT ME 
+ABOUT ME
 I am a Consultant General & Laparoscopic Surgeon with broad experience in elective and emergency surgery, and a strong record in surgical leadership, education, and operating room management.
 Currently, I serve as Consultant & Head of the General Surgery and Operating Room Department at a tertiary hospital in Saudi Arabia, where I lead surgical teams, optimize OR workflows, and ensure high standards of patient safety and clinical governance.
 My clinical expertise includes:
@@ -9,7 +9,6 @@ My clinical expertise includes:
 • Thyroid and neck surgeries
 • Upper gastrointestinal surgery
 • Bariatric surgery, with special experience in patient selection, perioperative management, and complication prevention
-
 
 I am particularly interested in:
 • Minimally invasive and bariatric surgery
@@ -20,7 +19,7 @@ I am particularly interested in:
 
 📍 Open to professional collaboration, CME activities, academic exchange, and healthcare leadership initiatives.
 
-🔹 MY SKILLS 
+🔹 MY SKILLS
 Clinical & Surgical Skills
 
 General Surgery (Elective & Emergency)
@@ -78,7 +77,6 @@ Communication with Patients & Families
 Team Building & Staff Development
 
 Healthcare Systems Improvement
-
 
 I offer:
 ✔ Safe, evidence-based surgical care
