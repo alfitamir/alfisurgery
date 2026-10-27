@@ -8,8 +8,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 import { mcpPlugin } from "@lovable.dev/mcp-js/stacks/tanstack/vite";
 import { VitePWA } from "vite-plugin-pwa";
 
-// Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-// @cloudflare/vite-plugin builds from this — wrangler.jsonc main alone is insufficient.
+// Redirect TanStack Start's bundled server entry to the SSR error wrapper.
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
@@ -26,7 +25,8 @@ export default defineConfig({
         manifest: false,
         workbox: {
           navigateFallback: undefined,
-          globPatterns: ["**/*.{js,css,woff2,png,jpg,svg,ico}"],
+          // Runtime caching below is intentional; avoid an unmatched precache glob.
+          globPatterns: [],
           maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
           navigationPreload: true,
           runtimeCaching: [
