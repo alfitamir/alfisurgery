@@ -1,13 +1,13 @@
 # Chapter 07 — Anal Cancer, Anal Intraepithelial Neoplasia, and Non-Healing Anorectal Lesions
 
-*Purpose: any anorectal lesion that is indurated, ulcerated, bleeding, persistent, or recurrent is a possible cancer until a biopsy says otherwise — this chapter shows how to recognise it, whom to refer, and how fast.*
+_Purpose: any anorectal lesion that is indurated, ulcerated, bleeding, persistent, or recurrent is a possible cancer until a biopsy says otherwise — this chapter shows how to recognise it, whom to refer, and how fast._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 07**
 >
 > - **Chapter colour palette:** Deep Rose (#9D174D) header bar, Blush (#FDF2F8) panels, Graphite (#1F2937) text.
 > - **Hero graphic:** Anal canal map showing the anal margin, the anal canal, and the transformation zone at the dentate line, with tumour types placed where they arise (squamous cell carcinoma, adenocarcinoma, melanoma), plus a horizontal “LSIL → HSIL → cancer” ladder and a large “4–6-week review” clock.
 > - **Icon set:** Magnifier, biopsy punch, HPV virion, shield (HPV vaccine), red ribbon (HIV), crossed-out cigarette, lymph-node cluster (groin), calendar with review date.
-> - **Bedside aphorism banner:** *“If it is hard, ulcerated, or not healing, it is not “just piles” — biopsy it.”*
+> - **Bedside aphorism banner:** _“If it is hard, ulcerated, or not healing, it is not “just piles” — biopsy it.”_
 
 ## 1. Anal and Perianal Malignancies at a Glance
 
@@ -15,13 +15,13 @@ Anal cancer is uncommon in the general population, but its incidence is much hig
 
 **Table 7.1 — Anal and perianal malignancies**
 
-| Tumour | Who is at risk | Typical presentation | Key point for non-surgeons |
-|---|---|---|---|
-| Anal squamous cell carcinoma (SCC) — the commonest anal cancer | HPV infection (mostly HPV 16), HIV, men who have sex with men, transplant recipients and other immunosuppression, prior cervical/vulvar/vaginal HSIL or cancer, smoking, receptive anal intercourse | Bleeding, pain, mass, pruritus, discharge, ulcer, faecal incontinence; inguinal lymphadenopathy | **Most are treated with chemoradiotherapy, not surgery** (ESMO 2021; ASCRS 2018). An unplanned “haemorrhoidectomy” of a cancer can complicate curative treatment — **biopsy first**. |
-| Anal adenocarcinoma | Long-standing fistula, Crohn’s disease; rectal-type adenocarcinoma extending to the canal | Mass; mucinous discharge from a chronic fistula; induration around an old tract | Rare. Usually managed like rectal cancer; biopsy fistula tracts that change character. |
-| Anorectal melanoma | Older adults; no clear behavioural risk factor | Bleeding; a polypoid or pigmented mass that may look like a thrombosed haemorrhoid; may be **amelanotic** | Rare and aggressive. A “thrombosed pile” that does not resolve, or a polypoid lesion, needs biopsy. |
-| Perianal HSIL (formerly “Bowen disease”) and extramammary Paget disease | HPV (HSIL); older adults (Paget) | Persistent itchy, eczema-like, white, red, or pigmented plaque | Biopsy any plaque that persists 4–6 weeks despite treatment; Paget disease may signal an underlying adenocarcinoma (Chapter 15). |
-| Others | HIV and immunosuppression (lymphoma, Kaposi sarcoma); verrucous carcinoma (giant condyloma) | Rapidly growing mass, ulcer, or large warty lesion | Specialist biopsy and multidisciplinary management. |
+| Tumour                                                                  | Who is at risk                                                                                                                                                                                      | Typical presentation                                                                                      | Key point for non-surgeons                                                                                                                                                           |
+| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Anal squamous cell carcinoma (SCC) — the commonest anal cancer          | HPV infection (mostly HPV 16), HIV, men who have sex with men, transplant recipients and other immunosuppression, prior cervical/vulvar/vaginal HSIL or cancer, smoking, receptive anal intercourse | Bleeding, pain, mass, pruritus, discharge, ulcer, faecal incontinence; inguinal lymphadenopathy           | **Most are treated with chemoradiotherapy, not surgery** (ESMO 2021; ASCRS 2018). An unplanned “haemorrhoidectomy” of a cancer can complicate curative treatment — **biopsy first**. |
+| Anal adenocarcinoma                                                     | Long-standing fistula, Crohn’s disease; rectal-type adenocarcinoma extending to the canal                                                                                                           | Mass; mucinous discharge from a chronic fistula; induration around an old tract                           | Rare. Usually managed like rectal cancer; biopsy fistula tracts that change character.                                                                                               |
+| Anorectal melanoma                                                      | Older adults; no clear behavioural risk factor                                                                                                                                                      | Bleeding; a polypoid or pigmented mass that may look like a thrombosed haemorrhoid; may be **amelanotic** | Rare and aggressive. A “thrombosed pile” that does not resolve, or a polypoid lesion, needs biopsy.                                                                                  |
+| Perianal HSIL (formerly “Bowen disease”) and extramammary Paget disease | HPV (HSIL); older adults (Paget)                                                                                                                                                                    | Persistent itchy, eczema-like, white, red, or pigmented plaque                                            | Biopsy any plaque that persists 4–6 weeks despite treatment; Paget disease may signal an underlying adenocarcinoma (Chapter 15).                                                     |
+| Others                                                                  | HIV and immunosuppression (lymphoma, Kaposi sarcoma); verrucous carcinoma (giant condyloma)                                                                                                         | Rapidly growing mass, ulcer, or large warty lesion                                                        | Specialist biopsy and multidisciplinary management.                                                                                                                                  |
 
 ## 2. Anal Intraepithelial Neoplasia — the Modern Terminology
 
@@ -29,11 +29,11 @@ The Lower Anogenital Squamous Terminology (LAST) system uses two tiers for HPV-r
 
 **Table 7.2 — Squamous intraepithelial lesions**
 
-| Current term | Older terms | Meaning | What happens next |
-|---|---|---|---|
-| Low-grade squamous intraepithelial lesion (LSIL) | AIN 1, condyloma | Productive HPV infection; low malignant potential; often regresses | Treat symptomatic warts; surveillance per specialist |
-| High-grade squamous intraepithelial lesion (HSIL) | AIN 2–3, carcinoma in situ, “Bowen disease” (perianal) | True cancer precursor | Specialist high-resolution anoscopy (HRA)-guided treatment and surveillance |
-| Squamous cell carcinoma | — | Invasive cancer | Urgent staging and multidisciplinary team (MDT) |
+| Current term                                      | Older terms                                            | Meaning                                                            | What happens next                                                           |
+| ------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| Low-grade squamous intraepithelial lesion (LSIL)  | AIN 1, condyloma                                       | Productive HPV infection; low malignant potential; often regresses | Treat symptomatic warts; surveillance per specialist                        |
+| High-grade squamous intraepithelial lesion (HSIL) | AIN 2–3, carcinoma in situ, “Bowen disease” (perianal) | True cancer precursor                                              | Specialist high-resolution anoscopy (HRA)-guided treatment and surveillance |
+| Squamous cell carcinoma                           | —                                                      | Invasive cancer                                                    | Urgent staging and multidisciplinary team (MDT)                             |
 
 > **ℹ️ EVIDENCE HIGHLIGHT**
 >
@@ -45,13 +45,13 @@ The International Anal Neoplasia Society set screening start ages using anal can
 
 **Table 7.3 — Screening start points (IANS 2024)**
 
-| Group | Start screening | Note |
-|---|---|---|
-| Men who have sex with men (MSM) and transgender women living with HIV | Age 35 | Highest-risk group |
-| Other people living with HIV (women; men who have sex with women) | Age 45 | — |
-| MSM and transgender women without HIV | Age 45 | — |
-| Solid organ transplant recipients | 10 years after transplant | — |
-| History of vulvar HSIL or vulvar cancer | Within 1 year of diagnosis | — |
+| Group                                                                                                       | Start screening                       | Note                                       |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------ |
+| Men who have sex with men (MSM) and transgender women living with HIV                                       | Age 35                                | Highest-risk group                         |
+| Other people living with HIV (women; men who have sex with women)                                           | Age 45                                | —                                          |
+| MSM and transgender women without HIV                                                                       | Age 45                                | —                                          |
+| Solid organ transplant recipients                                                                           | 10 years after transplant             | —                                          |
+| History of vulvar HSIL or vulvar cancer                                                                     | Within 1 year of diagnosis            | —                                          |
 | Others with HPV-related disease or immunosuppression (for example prior cervical or vaginal HSIL or cancer) | Shared decision-making, from about 45 | Lower absolute risk; consider individually |
 
 <small>Where HRA is not available, many programmes rely on regular DARE to detect early cancers in high-risk groups [C][L]. Screening is for people **without** symptoms — any symptomatic patient follows the diagnostic pathway in section 5, not the screening pathway.</small>
@@ -60,18 +60,18 @@ The International Anal Neoplasia Society set screening start ages using anal can
 
 **Any single item below means an urgent specialist referral and a biopsy — not another cream.**
 
-| ☐ | Red flag |
-|---|---|
-| ☐ | Induration, a rolled or heaped edge, or a firm or fixed lesion |
-| ☐ | Ulcer or “fissure” that is lateral, painless, or not healed after 4–6 weeks of appropriate treatment — or that keeps recurring |
-| ☐ | A mass in the anal canal or at the margin, especially if friable or bleeding on contact |
-| ☐ | Pigmented lesion, or a polypoid lesion that does not behave like a haemorrhoid |
-| ☐ | A persistent plaque (white, red, or eczema-like) that does not respond within 4–6 weeks |
-| ☐ | Palpable inguinal lymph nodes |
-| ☐ | A chronic fistula with new pain, induration, a mass, bleeding, or mucinous discharge |
-| ☐ | Warts that are ulcerated, indurated, bleeding, pigmented, or rapidly growing — or warts in a person with HIV or immunosuppression |
-| ☐ | Any new anal symptom in a high-risk person (HIV, transplant, prior HPV-related cancer or HSIL) |
-| ☐ | Weight loss, anaemia, or a change in bowel habit |
+| ☐   | Red flag                                                                                                                          |
+| --- | --------------------------------------------------------------------------------------------------------------------------------- |
+| ☐   | Induration, a rolled or heaped edge, or a firm or fixed lesion                                                                    |
+| ☐   | Ulcer or “fissure” that is lateral, painless, or not healed after 4–6 weeks of appropriate treatment — or that keeps recurring    |
+| ☐   | A mass in the anal canal or at the margin, especially if friable or bleeding on contact                                           |
+| ☐   | Pigmented lesion, or a polypoid lesion that does not behave like a haemorrhoid                                                    |
+| ☐   | A persistent plaque (white, red, or eczema-like) that does not respond within 4–6 weeks                                           |
+| ☐   | Palpable inguinal lymph nodes                                                                                                     |
+| ☐   | A chronic fistula with new pain, induration, a mass, bleeding, or mucinous discharge                                              |
+| ☐   | Warts that are ulcerated, indurated, bleeding, pigmented, or rapidly growing — or warts in a person with HIV or immunosuppression |
+| ☐   | Any new anal symptom in a high-risk person (HIV, transplant, prior HPV-related cancer or HSIL)                                    |
+| ☐   | Weight loss, anaemia, or a change in bowel habit                                                                                  |
 
 ## 5. Why Persistent Lesions Must Not Be Labelled “Haemorrhoids”
 
@@ -85,16 +85,16 @@ The International Anal Neoplasia Society set screening start ages using anal can
 
 **Table 7.4 — From the first examination to the MDT**
 
-| Step | What to do | Who |
-|---|---|---|
-| Examine | Inspection; palpation of the lesion (size in cm, fixity, induration); DRE (distance from the verge, sphincter involvement); anoscopy if tolerated; **both groins**; chaperone; clinical photograph with consent where policy allows. | ER, GP, specialist |
-| Document | Anatomical quadrant, size, distance from the anal verge, appearance, nodes, and the red flags present. | Any clinician |
-| Do not | Band, inject, cauterise, or excise a suspicious lesion without histology; prescribe steroid creams for an undiagnosed ulcer. | — |
-| Biopsy | Perianal skin lesions: punch biopsy by a trained clinician (primary care, dermatology, or surgery). Anal canal lesions, painful lesions, and suspected cancer: specialist biopsy, often examination under anaesthesia. | Trained clinician / specialist |
-| Test | **HIV test for every person with anal SCC or HSIL**; full blood count; renal function. Women: ensure cervical screening is up to date. | Referrer or specialist |
-| Stage | MRI pelvis; CT chest/abdomen/pelvis or PET-CT (ESMO 2021). | Specialist |
-| Treat | MDT plan. Anal SCC: chemoradiotherapy is standard for most; surgery mainly for small margin tumours or salvage. Adenocarcinoma and melanoma: specialist pathways. | Colorectal and oncology MDT |
-| Follow up | Track the biopsy result and referral (“failsafe”); confirm the patient attended. | Referring clinician and nurse |
+| Step      | What to do                                                                                                                                                                                                                           | Who                            |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ |
+| Examine   | Inspection; palpation of the lesion (size in cm, fixity, induration); DRE (distance from the verge, sphincter involvement); anoscopy if tolerated; **both groins**; chaperone; clinical photograph with consent where policy allows. | ER, GP, specialist             |
+| Document  | Anatomical quadrant, size, distance from the anal verge, appearance, nodes, and the red flags present.                                                                                                                               | Any clinician                  |
+| Do not    | Band, inject, cauterise, or excise a suspicious lesion without histology; prescribe steroid creams for an undiagnosed ulcer.                                                                                                         | —                              |
+| Biopsy    | Perianal skin lesions: punch biopsy by a trained clinician (primary care, dermatology, or surgery). Anal canal lesions, painful lesions, and suspected cancer: specialist biopsy, often examination under anaesthesia.               | Trained clinician / specialist |
+| Test      | **HIV test for every person with anal SCC or HSIL**; full blood count; renal function. Women: ensure cervical screening is up to date.                                                                                               | Referrer or specialist         |
+| Stage     | MRI pelvis; CT chest/abdomen/pelvis or PET-CT (ESMO 2021).                                                                                                                                                                           | Specialist                     |
+| Treat     | MDT plan. Anal SCC: chemoradiotherapy is standard for most; surgery mainly for small margin tumours or salvage. Adenocarcinoma and melanoma: specialist pathways.                                                                    | Colorectal and oncology MDT    |
+| Follow up | Track the biopsy result and referral (“failsafe”); confirm the patient attended.                                                                                                                                                     | Referring clinician and nurse  |
 
 ## 7. HPV Vaccination and Prevention
 
@@ -139,15 +139,15 @@ The International Anal Neoplasia Society set screening start ages using anal can
 
 **Table 7.5 — Benign-looking lesions that may be malignant**
 
-| It looks like… | It may be… | Clue |
-|---|---|---|
-| A thrombosed haemorrhoid | Anorectal melanoma | Persists beyond 2–3 weeks; polypoid; pigment may be absent |
-| A chronic fissure | Anal SCC | Off-midline, indurated, heaped edges, not healing after 6–8 weeks |
-| A perianal abscess or fistula | SCC or adenocarcinoma | Hard mass, mucinous discharge, long-standing tract that changes |
-| Anal warts | HSIL, verrucous carcinoma, or SCC | Ulceration, induration, bleeding, rapid growth, immunosuppression |
-| Pruritus ani or eczema | Perianal HSIL or Paget disease | Well-demarcated plaque that does not respond to treatment |
-| A Crohn’s ulcer | Carcinoma (both can coexist) | New mass, new pain, or change in long-standing perianal Crohn’s disease |
-| A syphilitic chancre | SCC (or vice versa) | Indurated ulcer with groin nodes — test for syphilis **and** biopsy if it does not heal |
+| It looks like…                | It may be…                        | Clue                                                                                    |
+| ----------------------------- | --------------------------------- | --------------------------------------------------------------------------------------- |
+| A thrombosed haemorrhoid      | Anorectal melanoma                | Persists beyond 2–3 weeks; polypoid; pigment may be absent                              |
+| A chronic fissure             | Anal SCC                          | Off-midline, indurated, heaped edges, not healing after 6–8 weeks                       |
+| A perianal abscess or fistula | SCC or adenocarcinoma             | Hard mass, mucinous discharge, long-standing tract that changes                         |
+| Anal warts                    | HSIL, verrucous carcinoma, or SCC | Ulceration, induration, bleeding, rapid growth, immunosuppression                       |
+| Pruritus ani or eczema        | Perianal HSIL or Paget disease    | Well-demarcated plaque that does not respond to treatment                               |
+| A Crohn’s ulcer               | Carcinoma (both can coexist)      | New mass, new pain, or change in long-standing perianal Crohn’s disease                 |
+| A syphilitic chancre          | SCC (or vice versa)               | Indurated ulcer with groin nodes — test for syphilis **and** biopsy if it does not heal |
 
 ## 9. Role-Targeted Action Boxes
 
@@ -187,12 +187,12 @@ The International Anal Neoplasia Society set screening start ages using anal can
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 EMERGENCY | Anorectal tumour with heavy bleeding and instability, obstruction, or perforation | On-call surgeon now; resuscitate |
-| 🔴 SAME-DAY | Tumour with surrounding abscess or sepsis | Surgical drainage with biopsy |
-| 🟡 URGENT | Suspected anal cancer (mass, ulcer, induration, pigment, groin nodes); non-healing lesion after 4–6 weeks; suspected HSIL in a high-risk person | Suspected-cancer pathway (typically within 2 weeks); colorectal surgery; HRA service |
-| 🟢 ROUTINE | Asymptomatic high-risk person eligible for screening; uncomplicated warts in an immunocompetent person | Screening programme or sexual-health clinic |
+| Urgency      | Clinical trigger                                                                                                                                | Who and how fast                                                                     |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| 🔴 EMERGENCY | Anorectal tumour with heavy bleeding and instability, obstruction, or perforation                                                               | On-call surgeon now; resuscitate                                                     |
+| 🔴 SAME-DAY  | Tumour with surrounding abscess or sepsis                                                                                                       | Surgical drainage with biopsy                                                        |
+| 🟡 URGENT    | Suspected anal cancer (mass, ulcer, induration, pigment, groin nodes); non-healing lesion after 4–6 weeks; suspected HSIL in a high-risk person | Suspected-cancer pathway (typically within 2 weeks); colorectal surgery; HRA service |
+| 🟢 ROUTINE   | Asymptomatic high-risk person eligible for screening; uncomplicated warts in an immunocompetent person                                          | Screening programme or sexual-health clinic                                          |
 
 ## The Patient in Front of You — Chapter 07 Mini-Case
 
