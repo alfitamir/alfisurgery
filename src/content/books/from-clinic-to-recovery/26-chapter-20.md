@@ -23,10 +23,10 @@ Heart attacks, heart failure, and abnormal rhythms are leading causes of serious
 </tbody>
 </table>
 
-**Table 20.1.** *Heart disease and surgery at a glance.*
+**Table 20.1.** _Heart disease and surgery at a glance._
 
 | **At a glance**                   |                                                                                                                                                        |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Stepwise assessment**           | Urgency, active heart problems, combined risk, functional capacity, and whether tests would change the plan                                            |
 | **After a coronary stent**        | Delay elective surgery at least 30 days after any stent; ideally 6 months after a drug-eluting stent, or 12 months after one placed for a heart attack |
 | **Heart medicines**               | Continue beta-blockers and statins; do not start a beta-blocker on the day of surgery; plan blood pressure medicines and blood thinners individually   |
@@ -39,9 +39,9 @@ Heart attacks, heart failure, and abnormal rhythms are leading causes of serious
 
 Current guidelines recommend a stepwise approach (Figure 20.1) [1, 2]. Emergency surgery proceeds without delay. Active heart problems, such as unstable chest pain, decompensated heart failure, serious arrhythmias, or severe valve disease, are treated first when time allows. For other patients, the risk of the operation is combined with patient factors, such as those in the Revised Cardiac Risk Index: high-risk surgery, ischemic heart disease, heart failure, cerebrovascular disease, insulin-treated diabetes, and impaired kidney function [3]. Patients who can climb two flights of stairs without stopping usually need no further testing. Tests such as cardiac biomarkers, echocardiography, or stress testing are ordered only when the result would change management [1, 2].
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 20.1.** Five questions for cardiac assessment before non-cardiac surgery.*
+_**Figure 20.1.** Five questions for cardiac assessment before non-cardiac surgery._
 
 <table>
 <colgroup>
@@ -61,10 +61,10 @@ Current guidelines recommend a stepwise approach (Figure 20.1) [1, 2]. Emergency
 
 Surgery soon after coronary stenting carries a higher risk of stent thrombosis and heart attack, highest in the first weeks and months. The 2024 American guideline recommends delaying elective non-cardiac surgery for at least 14 days after balloon angioplasty and at least 30 days after any stent, ideally 6 months after a drug-eluting stent placed for stable disease, and 12 months after a stent placed for an acute coronary syndrome [1] (Table 20.2). Decisions about antiplatelet medicines must be made with the cardiologist (Chapter 22). Patients should never stop antiplatelet medicines on their own before surgery.
 
-**Table 20.2.** *Timing of elective surgery after coronary intervention, based on the 2024 ACC/AHA guideline.*
+**Table 20.2.** _Timing of elective surgery after coronary intervention, based on the 2024 ACC/AHA guideline._
 
 | **After**                                       | **Usual minimum before elective surgery** | **Notes**                                                              |
-|-------------------------------------------------|-------------------------------------------|------------------------------------------------------------------------|
+| ----------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------------------- |
 | **Balloon angioplasty without a stent**         | At least 14 days                          |                                                                        |
 | **Bare-metal stent**                            | At least 30 days                          |                                                                        |
 | **Drug-eluting stent for stable disease**       | Ideally 6 months; never within 30 days    | Time-sensitive surgery may be considered earlier with the cardiologist |
@@ -74,17 +74,17 @@ Surgery soon after coronary stenting carries a higher risk of stent thrombosis a
 
 Beta-blockers that patients already take should be continued; starting a high-dose beta-blocker shortly before surgery increased stroke and death in a large trial and should be avoided [4]. Statins are continued. For angiotensin-converting enzyme inhibitors and angiotensin receptor blockers, the 2024 ACC/AHA guideline rates omitting the dose 24 hours before surgery as reasonable to consider (may be beneficial) in selected patients with controlled blood pressure having higher-risk surgery, while continuing them is reasonable in patients with heart failure with reduced ejection fraction [1]; a 2024 trial found no difference in major complications between continuing and stopping these medicines 48 hours before major surgery, although continuing them was associated with more low blood pressure during anesthesia [5]. This is not a flat rule either way: follow the hospital protocol, and consider the patient’s heart failure status. Table 20.3 summarizes the usual approach.
 
-**Table 20.3.** *Usual approach to heart medicines before surgery. Always follow the hospital protocol.*
+**Table 20.3.** _Usual approach to heart medicines before surgery. Always follow the hospital protocol._
 
-| **Medicine**                                         | **Usual approach before surgery**                                                                                                                                                       | **Notes**                                                         |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| **Medicine**                                         | **Usual approach before surgery**                                                                                                                                                       | **Notes**                                                       |
+| ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | **Beta-blockers**                                    | Continue, including on the morning of surgery                                                                                                                                           | Do not start on the day of surgery [4]                          |
-| **Statins**                                          | Continue                                                                                                                                                                                |                                                                   |
+| **Statins**                                          | Continue                                                                                                                                                                                |                                                                 |
 | **ACE inhibitors and angiotensin receptor blockers** | May be omitted 24 hours before higher-risk surgery in selected patients with controlled blood pressure, according to protocol; continue in heart failure with reduced ejection fraction | Not a flat rule either way; watch for low blood pressure [1, 5] |
-| **Diuretics**                                        | Often omitted on the morning of surgery                                                                                                                                                 | Restart when drinking normally                                    |
-| **Nitrates and calcium channel blockers**            | Continue                                                                                                                                                                                |                                                                   |
-| **Antiplatelets and anticoagulants**                 | Individual plan with the cardiologist                                                                                                                                                   | See Chapter 22                                                    |
-| **SGLT2 inhibitors (for heart failure)**             | Stop before surgery                                                                                                                                                                     | See Chapter 18                                                    |
+| **Diuretics**                                        | Often omitted on the morning of surgery                                                                                                                                                 | Restart when drinking normally                                  |
+| **Nitrates and calcium channel blockers**            | Continue                                                                                                                                                                                |                                                                 |
+| **Antiplatelets and anticoagulants**                 | Individual plan with the cardiologist                                                                                                                                                   | See Chapter 22                                                  |
+| **SGLT2 inhibitors (for heart failure)**             | Stop before surgery                                                                                                                                                                     | See Chapter 18                                                  |
 
 ## 20.4 Blood pressure on the day of surgery
 
@@ -166,11 +166,11 @@ Yes. Shisha and cigarettes both strain the heart and blood vessels. Stopping hel
 
 ## 20.8 Additional risks
 
-**Table 20.4.** *Additional risks for patients with heart disease. Square brackets mark figures to replace with unit data.*
+**Table 20.4.** _Additional risks for patients with heart disease. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                                 | **Typical frequency**                               | **Example wording**                                                |
-|----------------------|----------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------------|
-| **Less common**      | Heart strain or heart attack after surgery, often silent | Depends on patient and operation risk [unit data] | “Your heart risk is [X] in 100. We will monitor you.”            |
+| **Band**             | **Risk**                                                 | **Typical frequency**                             | **Example wording**                                                |
+| -------------------- | -------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------ |
+| **Less common**      | Heart strain or heart attack after surgery, often silent | Depends on patient and operation risk [unit data] | “Your heart risk is [X] in 100. We will monitor you.”              |
 | **Less common**      | Irregular heartbeat (atrial fibrillation)                | [unit data]                                       | “An irregular heartbeat can start after surgery and is treatable.” |
 | **Less common**      | Worsening heart failure                                  | [unit data]                                       | “Fluid can build up; we watch your weight and breathing.”          |
 | **Rare but serious** | Stent thrombosis, stroke, or cardiac death               | [unit data]                                       | “Rarely, serious heart or brain problems occur.”                   |
@@ -196,7 +196,7 @@ Yes. Shisha and cigarettes both strain the heart and blood vessels. Stopping hel
 
 ## 20.10 Warning signs
 
-**Table 20.5.** *Green, amber, and red warning signs for heart problems after surgery.*
+**Table 20.5.** _Green, amber, and red warning signs for heart problems after surgery._
 
 <table>
 <colgroup>
@@ -257,7 +257,7 @@ Yes. Shisha and cigarettes both strain the heart and blood vessels. Stopping hel
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Complete the medicine plan with the patient, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Complete the medicine plan with the patient, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -279,7 +279,7 @@ Stent: date \_\_\_\_\_\_\_\_ type \_\_\_\_\_\_\_\_ Pacemaker or defibrillator: �
 **My medicine plan**
 
 | **Medicine** | **Before surgery** | **Morning of surgery** | **Restart** |
-|--------------|--------------------|------------------------|-------------|
+| ------------ | ------------------ | ---------------------- | ----------- |
 |              |                    |                        |             |
 |              |                    |                        |             |
 |              |                    |                        |             |
@@ -309,7 +309,7 @@ Stent: date \_\_\_\_\_\_\_\_ type \_\_\_\_\_\_\_\_ Pacemaker or defibrillator: �
 **Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                    | **What to do**                              |
-|-----------|----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
 | **GREEN** | Mild tiredness; slightly swollen ankles that are improving                                                                             | This is normal. Keep taking your medicines. |
 | **AMBER** | Palpitations; ankle swelling or weight gain of 2 kg in 2 days; breathless with less activity                                           | Call your doctor or us today.               |
 | **RED**   | Chest pain or pressure lasting more than a few minutes; breathless at rest or lying flat; fainting; sudden weakness or speech problems | Call an ambulance now.                      |
@@ -342,4 +342,4 @@ Stent: date \_\_\_\_\_\_\_\_ type \_\_\_\_\_\_\_\_ Pacemaker or defibrillator: �
 
 6\. Crossley GH, Poole JE, Rozner MA, et al. The Heart Rhythm Society (HRS)/American Society of Anesthesiologists (ASA) expert consensus statement on the perioperative management of patients with implantable defibrillators, pacemakers and arrhythmia monitors. Heart Rhythm. 2011;8(7):1114-1154.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
