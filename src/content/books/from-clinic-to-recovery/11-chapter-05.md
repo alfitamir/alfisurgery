@@ -23,10 +23,10 @@ Appendicitis is the most common reason for emergency abdominal surgery, and the 
 </tbody>
 </table>
 
-**Table 5.1.** *Appendicitis and appendicectomy at a glance.*
+**Table 5.1.** _Appendicitis and appendicectomy at a glance._
 
 | **At a glance**                     |                                                                                                                                         |
-|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | **Operation**                       | Laparoscopic (keyhole) appendicectomy under general anesthesia                                                                          |
 | **Alternative for some patients**   | Antibiotics first, for uncomplicated appendicitis confirmed on imaging                                                                  |
 | **Hospital stay**                   | Usually 1 day for uncomplicated appendicitis; often 3 to 5 days if the appendix has burst                                               |
@@ -54,9 +54,9 @@ Women of childbearing age are offered a pregnancy test before imaging and surger
 
 The decision depends on whether the appendicitis is uncomplicated or complicated, and on the patient’s preferences (Figure 5.1). Current guidelines support laparoscopic appendicectomy as the standard treatment, and an antibiotics-first strategy as a safe alternative for selected adults with uncomplicated appendicitis confirmed on imaging, provided they are told about the risk of recurrence [2].
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 5.1.** Choosing the treatment for acute appendicitis with the patient.*
+_**Figure 5.1.** Choosing the treatment for acute appendicitis with the patient._
 
 The antibiotics-first figures need to be stated plainly. In the largest trial, about 3 in 10 patients treated with antibiotics had an appendicectomy within 90 days, rising to about 4 in 10 when an appendicolith was present [3]. By 1 year, about 4 in 10 had had an appendicectomy, and by 3 to 4 years about 5 in 10 [4]. In a European trial, about 4 in 10 had had an appendicectomy by 5 years [5]. Patients treated with antibiotics missed fewer days of work at first, but a second illness and a second admission are a real burden for many.
 
@@ -121,10 +121,10 @@ After uncomplicated appendicitis, most patients eat and walk the same day and go
 
 Table 5.2 and Figure 5.2 give typical times. In the largest trial, patients who had an appendicectomy missed on average about 9 days of work [3]. Recovery after perforation or open surgery takes longer.
 
-**Table 5.2.** *Typical recovery times after appendicectomy.*
+**Table 5.2.** _Typical recovery times after appendicectomy._
 
 | **Activity**                   | **Uncomplicated, keyhole**                                     | **Perforated or complicated**                            |
-|--------------------------------|----------------------------------------------------------------|----------------------------------------------------------|
+| ------------------------------ | -------------------------------------------------------------- | -------------------------------------------------------- |
 | **Walking**                    | The same day                                                   | From the first day                                       |
 | **Eating normally**            | The same day                                                   | Within 2 to 3 days, as appetite returns                  |
 | **Showering**                  | Day 2                                                          | Day 2, unless a drain is in place                        |
@@ -137,9 +137,9 @@ Table 5.2 and Figure 5.2 give typical times. In the largest trial, patients who 
 | **Ramadan fasting**            | When eating normally, usually 1 to 2 weeks                     | After antibiotics are finished and appetite has returned |
 | **Flying**                     | Short flights after about 1 week                               | After about 2 weeks; ask before long flights             |
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 5.2.** Recovery after uncomplicated and complicated appendicitis, for use with patients.*
+_**Figure 5.2.** Recovery after uncomplicated and complicated appendicitis, for use with patients._
 
 **STEP 3 Questions patients ask**
 
@@ -197,18 +197,18 @@ You need to stop fasting for your treatment and recovery. Illness is a recognize
 
 Table 5.3 groups the risks into the bands of Section 1.5. Risks are higher after perforation, in older or frail patients, and with obesity. Replace figures marked “unit data” with your own audit figures.
 
-**Table 5.3.** *Material risks of appendicectomy. Square brackets mark figures to replace with unit data.*
+**Table 5.3.** _Material risks of appendicectomy. Square brackets mark figures to replace with unit data._
 
-| **Band**                    | **Risk**                                                                  | **Typical frequency**                                                                     | **Example wording**                                                                         |
-|-----------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Common**                  | Wound and shoulder-tip pain; nausea                                       | Many patients, for a few days                                                             | “Most people are sore for a few days. It settles with regular pain medicine.”               |
+| **Band**                    | **Risk**                                                                  | **Typical frequency**                                                                   | **Example wording**                                                                         |
+| --------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| **Common**                  | Wound and shoulder-tip pain; nausea                                       | Many patients, for a few days                                                           | “Most people are sore for a few days. It settles with regular pain medicine.”               |
 | **Common**                  | Infection or abscess after perforated appendicitis                        | About 1 in 10 within 90 days [8]                                                        | “About 1 in 10 people whose appendix had burst develop a collection of infection.”          |
 | **Common (in some groups)** | A normal appendix removed                                                 | About 12 in 100 men and 28 in 100 women in one UK study [7]                             | “Sometimes the appendix turns out to be normal. We will look for another cause.”            |
 | **Less common**             | Wound infection or abscess after uncomplicated appendicitis               | About 1 to 3 in 100 [unit data]                                                         | “A few people develop a wound infection or a collection that needs antibiotics or a drain.” |
-| **Less common**             | Conversion to open surgery                                                | About [X] in 100; higher after perforation [unit data]                                | “A few people need a larger cut to finish safely.”                                          |
+| **Less common**             | Conversion to open surgery                                                | About [X] in 100; higher after perforation [unit data]                                  | “A few people need a larger cut to finish safely.”                                          |
 | **Less common**             | Unexpected tumor in the appendix                                          | About 1 to 2 in 100; about 14 in 100 with an abscess [9]                                | “Rarely, the laboratory finds a small tumor. Most need no further treatment.”               |
 | **Rare but serious**        | Injury to bowel, bladder, or a blood vessel; bleeding needing reoperation | Fewer than 1 in 100 [unit data]                                                         | “Rarely, an injury or bleeding needs a further operation.”                                  |
-| **Rare but serious**        | Bowel blockage from adhesions, months or years later                      | About [X] in 100 [unit data]                                                          | “Scar tissue inside can rarely cause a blockage later.”                                     |
+| **Rare but serious**        | Bowel blockage from adhesions, months or years later                      | About [X] in 100 [unit data]                                                            | “Scar tissue inside can rarely cause a blockage later.”                                     |
 | **Rare but serious**        | Blood clots; death                                                        | Very rare in healthy adults; higher after perforation and in frail patients [unit data] | “For someone in your health, serious problems like this are very rare.”                     |
 
 <table>
@@ -254,7 +254,7 @@ Table 5.3 groups the risks into the bands of Section 1.5. Risks are higher after
 
 An abscess usually appears between the fifth and tenth day, often after discharge. It may show as fever, pain that returns after improving, or diarrhea and frequent urges to pass stool when the collection lies in the pelvis.
 
-**Table 5.4.** *Green, amber, and red warning signs after appendicectomy.*
+**Table 5.4.** _Green, amber, and red warning signs after appendicectomy._
 
 <table>
 <colgroup>
@@ -318,7 +318,7 @@ An abscess usually appears between the fifth and tenth day, often after discharg
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -400,7 +400,7 @@ Appendicitis means the appendix is blocked and swollen. It causes tummy pain, of
 These are usual times. If your appendix had burst, it may take longer. Your own plan is on your card.
 
 | **Activity**                      | **Usually from**                                                                               |
-|-----------------------------------|------------------------------------------------------------------------------------------------|
+| --------------------------------- | ---------------------------------------------------------------------------------------------- |
 | **Walking**                       | The same day. Walk a little more each day.                                                     |
 | **Showering**                     | After 2 days                                                                                   |
 | **Prayer**                        | From the first day. Pray sitting if bowing or kneeling hurts.                                  |
@@ -422,7 +422,7 @@ These are usual times. If your appendix had burst, it may take longer. Your own 
 **7. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                                                                      | **What to do**                                                |
-|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | **GREEN** | Wound or shoulder pain that gets better each day; tiredness; small bruises                                                                                                               | This is normal. Keep following this guide.                    |
 | **AMBER** | A red, hot, or leaking wound; temperature of 38 °C or more; diarrhea or needing to pass stool often in the second week; cannot keep drinks down                                          | Call us today.                                                |
 | **RED**   | Tummy pain that gets worse or comes back, with fever; a swollen tummy; vomiting again and again; fever with shivering; chest pain or short of breath; a hot, swollen leg; heavy bleeding | Go to the emergency department now. Take this guide with you. |
@@ -466,4 +466,4 @@ These are usual times. If your appendix had burst, it may take longer. Your own 
 
 11\. Pearl JP, Price RR, Tonkin AE, Richardson WS, Stefanidis D. SAGES guidelines for the use of laparoscopy during pregnancy. Surg Endosc. 2017;31(10):3767-3782.
 
-*Note: references are numbered within this chapter for the pilot. Frequencies marked “unit data” should be replaced with the author’s own audit figures before publication.*
+_Note: references are numbered within this chapter for the pilot. Frequencies marked “unit data” should be replaced with the author’s own audit figures before publication._
