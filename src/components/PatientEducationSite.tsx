@@ -26,6 +26,7 @@ import { ArticlesSection } from "@/components/ArticlesSection";
 import { VideosSection } from "@/components/VideosSection";
 import { PreventionEntry } from "@/components/PreventionContent";
 import { SurgicalJourneyFramework } from "@/components/SurgicalJourneyFramework";
+import { PatientFAQ } from "@/components/PatientFAQ";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { showsVideos, siteLanguages, translatedSearchText } from "@/lib/site-language";
 import {
@@ -233,6 +234,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
             ) : <div className="mx-auto mt-12 max-w-xl rounded-2xl border border-patient-mist bg-patient-canvas p-8 text-center text-patient-ink/70">{t.noResults}</div>}
           </div>
         </section>
+        <PatientFAQ />
         <section className="mx-auto max-w-7xl px-5 py-6 md:px-8">
             {language === "ar" && <div className="mb-14 grid items-center gap-6 border-b border-patient-mist pb-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
               <img src={plateauIllustration} alt={ar ? "مريضة تتحدث مع اختصاصية التغذية بعد جراحة التكميم" : "A patient talking with a dietitian after sleeve surgery"} loading="lazy" width={1408} height={912} className="aspect-[16/9] w-full rounded-md object-cover" />
