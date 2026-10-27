@@ -50,4 +50,4 @@
 
 25\. Institute of Medicine. Health literacy: a prescription to end confusion. Washington, DC: National Academies Press; 2004.
 
-*Note: in-text citations in this pilot are numbered in order of first citation within Part I and will be renumbered across the whole book at final assembly. Guidance that is changing quickly, particularly on GLP-1 receptor agonists and fasting, should be checked again before publication.*
+_Note: in-text citations in this pilot are numbered in order of first citation within Part I and will be renumbered across the whole book at final assembly. Guidance that is changing quickly, particularly on GLP-1 receptor agonists and fasting, should be checked again before publication._
