@@ -23,10 +23,10 @@ Thyroid and parathyroid operations are performed in the neck, close to the nerve
 </tbody>
 </table>
 
-**Table 11.1.** *Thyroid and parathyroid surgery at a glance.*
+**Table 11.1.** _Thyroid and parathyroid surgery at a glance._
 
 | **At a glance**                     |                                                                                                                                                      |
-|-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Main operations**                 | Thyroid lobectomy (one side), total thyroidectomy, neck dissection for some cancers, and parathyroidectomy                                           |
 | **Hospital stay**                   | Same day or one night for most operations                                                                                                            |
 | **Back to office work**             | About 1 to 2 weeks                                                                                                                                   |
@@ -39,9 +39,9 @@ Thyroid and parathyroid operations are performed in the neck, close to the nerve
 
 Thyroid surgery is considered for four broad reasons (Figure 11.1). Nodules that are benign on fine-needle aspiration are usually observed and removed only if they are large, growing, or causing symptoms. Indeterminate nodules may be assessed with molecular testing where available, or by a diagnostic lobectomy. Thyroid cancer is treated according to its risk, and the 2025 American Thyroid Association guidelines place greater emphasis on active surveillance for small low-risk cancers and on lobectomy as the recommended operation for low-risk disease [1]. For a large goiter causing pressure symptoms, or for an overactive thyroid, surgery is one of several options; for Graves’ disease it is weighed against antithyroid drugs and radioactive iodine, and is often preferred by women planning pregnancy soon, by patients with a large goiter or significant eye disease, or by patient choice [2].
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 11.1.** Reasons for thyroid surgery and the usual options.*
+_**Figure 11.1.** Reasons for thyroid surgery and the usual options._
 
 ## 11.2 The counseling script
 
@@ -112,9 +112,9 @@ In primary hyperparathyroidism, usually one enlarged parathyroid gland (an adeno
 
 Bleeding into the neck is rare but can compress the airway; it usually appears within the first hours after surgery. Nurses check the neck regularly, and the patient and family should know to call for help at once if the neck swells or breathing becomes difficult. After total thyroidectomy, calcium or parathyroid hormone is checked, and calcium supplements are given according to protocol; tingling of the lips, fingers, or toes, or muscle cramps, are the signs of low calcium. A hoarse, weak, or tired voice is common in the first weeks and usually improves; a voice change that persists should lead to examination of the vocal cords [6]. Figure 11.2 summarizes the three things patients should watch, and can be given to them.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 11.2.** Three things to watch after thyroid or parathyroid surgery, for use with patients.*
+_**Figure 11.2.** Three things to watch after thyroid or parathyroid surgery, for use with patients._
 
 ## 11.7 Thyroxine and Ramadan
 
@@ -122,10 +122,10 @@ Thyroxine is best taken at the same time each day on an empty stomach, apart fro
 
 ## 11.8 Recovery
 
-**Table 11.2.** *Typical recovery after thyroid or parathyroid surgery.*
+**Table 11.2.** _Typical recovery after thyroid or parathyroid surgery._
 
 | **Activity**            | **Usually from**           | **Notes**                                                                 |
-|-------------------------|----------------------------|---------------------------------------------------------------------------|
+| ----------------------- | -------------------------- | ------------------------------------------------------------------------- |
 | **Eating and drinking** | The same day               | Swallowing may feel tight or uncomfortable for a few days                 |
 | **Showering**           | Day 1 or 2                 | Pat the scar dry; most closures need no removal                           |
 | **Using the voice**     | At once                    | No need for silence; avoid shouting or singing for a few days             |
@@ -184,11 +184,11 @@ Bone strength usually improves after cure, and the risk of new kidney stones fal
 
 Table 11.3 groups the risks in the bands of Section 1.5. Risks are higher after total thyroidectomy, neck dissection, large or retrosternal goiters, and reoperations, and fall with surgeon experience [7]. Replace figures marked “unit data” with your own audit figures.
 
-**Table 11.3.** *Material risks of thyroid and parathyroid surgery. Square brackets mark figures to replace with unit data.*
+**Table 11.3.** _Material risks of thyroid and parathyroid surgery. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                                            | **Typical frequency**                                             | **Example wording**                                                                         |
-|----------------------|---------------------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Common**           | Temporary hoarse or tired voice; sore swallowing                    | Many patients, for days to weeks                                  | “Your voice may be weak or tired for a while. It usually recovers.”                         |
+| **Band**             | **Risk**                                                            | **Typical frequency**                                           | **Example wording**                                                                         |
+| -------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| **Common**           | Temporary hoarse or tired voice; sore swallowing                    | Many patients, for days to weeks                                | “Your voice may be weak or tired for a while. It usually recovers.”                         |
 | **Common**           | Temporary low calcium after total thyroidectomy                     | [unit data]                                                     | “Your calcium may be low for a few days or weeks. Tablets correct it.”                      |
 | **Common**           | Need for lifelong thyroxine                                         | All after total thyroidectomy; about 1 in 5 after lobectomy [3] | “After removal of one side, about 1 in 5 people need a daily tablet.”                       |
 | **Less common**      | Temporary vocal cord weakness from nerve injury                     | [unit data]                                                     | “A few people have weakness of a vocal cord that recovers over weeks or months.”            |
@@ -222,7 +222,7 @@ Table 11.3 groups the risks in the bands of Section 1.5. Risks are higher after 
 
 ## 11.11 Warning signs
 
-**Table 11.4.** *Green, amber, and red warning signs after thyroid and parathyroid surgery.*
+**Table 11.4.** _Green, amber, and red warning signs after thyroid and parathyroid surgery._
 
 <table>
 <colgroup>
@@ -285,7 +285,7 @@ Table 11.3 groups the risks in the bands of Section 1.5. Risks are higher after 
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Tick the operation the patient had, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Tick the operation the patient had, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -312,7 +312,7 @@ Table 11.3 groups the risks in the bands of Section 1.5. Risks are higher after 
 
 **Three things to watch**
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
 **1. Pain and pain medicines**
 
@@ -343,7 +343,7 @@ Table 11.3 groups the risks in the bands of Section 1.5. Risks are higher after 
 **5. Getting back to normal**
 
 | **Activity**              | **Usually from**                                         |
-|---------------------------|----------------------------------------------------------|
+| ------------------------- | -------------------------------------------------------- |
 | **Walking and eating**    | The same day                                             |
 | **Showering**             | After 1 to 2 days                                        |
 | **Prayer**                | From the first day. Bow and prostrate as comfort allows. |
@@ -361,7 +361,7 @@ Table 11.3 groups the risks in the bands of Section 1.5. Risks are higher after 
 **7. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                                        | **What to do**                                           |
-|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | **GREEN** | Sore neck; tight swallowing; hoarse or tired voice that is improving                                                                                       | This is normal. Keep following this guide.               |
 | **AMBER** | Tingling of the lips, fingers, or toes; muscle cramps; redness or discharge from the scar; voice not improving after 2 weeks; temperature of 38 °C or more | Take calcium if prescribed, and call us today.           |
 | **RED**   | Neck swelling getting bigger; tight throat; difficulty or noisy breathing; spasms of the hands; choking on drinks                                          | Call an ambulance or go to the emergency department now. |
@@ -397,4 +397,4 @@ Table 11.3 groups the risks in the bands of Section 1.5. Risks are higher after 
 
 7\. Patel KN, Yip L, Lubitz CC, et al. The American Association of Endocrine Surgeons guidelines for the definitive surgical management of thyroid disease in adults. Ann Surg. 2020;271(3):e21-e93.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
