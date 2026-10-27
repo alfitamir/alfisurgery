@@ -4,7 +4,7 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 import { ArrowLeft, ArrowRight, BookOpen, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { articleCategory, articlesForLanguage, articleText } from "@/lib/blog";
-import illustration from "@/assets/sleeve-plateau-habits.jpg";
+import illustration from "@/assets/sleeve-plateau-habits.webp";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { languageContentCopy, translatedSearchText, translatedText } from "@/lib/site-language";
 import { publishedSiteArticlesQuery } from "@/lib/site-articles.queries";
@@ -29,6 +29,12 @@ export const Route = createFileRoute("/articles/")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://alfisurgery.com/articles" },
+      { rel: "alternate", hrefLang: "en", href: "https://alfisurgery.com/articles" },
+      { rel: "alternate", hrefLang: "ar", href: "https://alfisurgery.com/articles?lang=ar" },
+      { rel: "alternate", hrefLang: "x-default", href: "https://alfisurgery.com/articles" },
     ],
   }),
 });
