@@ -6,9 +6,16 @@ export const Route = createFileRoute("/ar/patients")({
   head: () => ({
     meta: [
       { title: "أدلة العمليات الجراحية: المرارة والفتق والبواسير والناسور | د. تامر الألفي" },
-      { name: "description", content: "أدلة مبسطة لعملية المرارة، الفتق، البواسير، الناسور الشرجي والعصعصي، الغدة الدرقية وغيرها: الاستعداد، التعافي، وعلامات التحذير." },
+      {
+        name: "description",
+        content:
+          "أدلة مبسطة لعملية المرارة، الفتق، البواسير، الناسور الشرجي والعصعصي، الغدة الدرقية وغيرها: الاستعداد، التعافي، وعلامات التحذير.",
+      },
       { property: "og:title", content: "أدلة العمليات الجراحية | د. تامر الألفي" },
-      { property: "og:description", content: "رحلة واضحة من الاستعداد للعملية حتى التعافي مع دليل خاص لكل عملية." },
+      {
+        property: "og:description",
+        content: "رحلة واضحة من الاستعداد للعملية حتى التعافي مع دليل خاص لكل عملية.",
+      },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://alfisurgery.com/ar/patients" },
       { property: "og:locale", content: "ar_SA" },
