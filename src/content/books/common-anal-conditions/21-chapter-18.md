@@ -1,23 +1,23 @@
 # Chapter 18 — Nursing and Multidisciplinary Team Excellence
 
-*Purpose: much of the patient’s surgical experience is decided after they leave theatre — clear numerical thresholds mean escalation never depends on guesswork.*
+_Purpose: much of the patient’s surgical experience is decided after they leave theatre — clear numerical thresholds mean escalation never depends on guesswork._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 18**
 >
 > - **Chapter colour palette:** Emerald (#047857) header bar, Mint Cream (#ECFDF5) panels, Deep Forest (#064E3B) text.
 > - **Hero graphic:** A three-phase nursing ribbon (pre-operative verification → ward monitoring → discharge teach-back), a “plain warm-water sitz bath” badge, and four SBAR threshold cards (temperature above 38.0 °C; no void in 6–8 hours; bleeding > 1 pad/hour; escalating pain ≥ 7/10).
 > - **Icon set:** Clipboard, bladder scanner, sanitary pad with clock, thermometer, telephone (SBAR), water basin.
-> - **Bedside aphorism banner:** *“Antiseptics belong on the floor, not in a sitz bath. Clear numbers beat “monitor closely” every time.”*
+> - **Bedside aphorism banner:** _“Antiseptics belong on the floor, not in a sitz bath. Clear numbers beat “monitor closely” every time.”_
 
 ## 1. The Three-Phase Perioperative Nursing Journey
 
 **Table 18.1 — Nursing checklist by phase**
 
-| Phase | Checklist | Why it matters |
-|---|---|---|
-| Before surgery | • Consent, identity, and site verified<br>• Fasting and any bowel preparation<br>• Antibiotic prophylaxis if prescribed<br>• Antithrombotic hold confirmed<br>• **Void immediately before theatre** | A full bladder plus anaesthesia and perineal pain is the classic route to post-operative retention |
-| On the ward | • Pain scores; scheduled multimodal analgesia; minimal opioid<br>• Encourage oral fluids; avoid excessive IV fluids once drinking<br>• Voiding within 6–8 hours; bladder scan if not<br>• Check dressing and pad count regularly in the first hours<br>• Laxative and fibre from day 1 | Prevents retention, hidden haemorrhage, and a feared, painful first bowel movement |
-| Going home | • Fibre, fluids, and stool softener<br>• Plain warm-water sitz baths<br>• Written return triggers (Appendix D)<br>• **Teach-back** before the cannula is removed | Patients in pain forget verbal advice; teach-back confirms understanding |
+| Phase          | Checklist                                                                                                                                                                                                                                                                              | Why it matters                                                                                     |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Before surgery | • Consent, identity, and site verified<br>• Fasting and any bowel preparation<br>• Antibiotic prophylaxis if prescribed<br>• Antithrombotic hold confirmed<br>• **Void immediately before theatre**                                                                                    | A full bladder plus anaesthesia and perineal pain is the classic route to post-operative retention |
+| On the ward    | • Pain scores; scheduled multimodal analgesia; minimal opioid<br>• Encourage oral fluids; avoid excessive IV fluids once drinking<br>• Voiding within 6–8 hours; bladder scan if not<br>• Check dressing and pad count regularly in the first hours<br>• Laxative and fibre from day 1 | Prevents retention, hidden haemorrhage, and a feared, painful first bowel movement                 |
+| Going home     | • Fibre, fluids, and stool softener<br>• Plain warm-water sitz baths<br>• Written return triggers (Appendix D)<br>• **Teach-back** before the cannula is removed                                                                                                                       | Patients in pain forget verbal advice; teach-back confirms understanding                           |
 
 ## 2. The Plain Warm-Water Sitz Bath Rule
 
@@ -31,12 +31,12 @@
 
 **Table 18.2 — Four numerical triggers**
 
-| Parameter | Escalate when | Do before or during the call | What the team will consider |
-|---|---|---|---|
-| 🌡️ Fever | **Temperature above 38.0 °C**, or below 36.0 °C with rigors or tachycardia | Full observations; inspect perineum for spreading redness, crepitus, pus | Pelvic sepsis, undrained abscess, early Fournier’s gangrene |
-| 💧 Urinary retention | No void within 6–8 hours, or bladder scan > 400 mL with discomfort | Help to stand or use a warm shower; bladder scan; report volume | Catheterisation; review opioids |
-| 🩸 Bleeding | > 1 pad per hour, clots, heart rate > 110/min, or systolic BP < 100 mmHg | Direct pressure; observations; check IV access; hold antithrombotics | Reactionary or secondary haemorrhage; tamponade or theatre |
-| ⚡ Pain | ≥ 7/10 or escalating despite scheduled analgesia | Bladder scan first; inspect for haematoma or swelling | Retention, haematoma, misplaced band, sepsis |
+| Parameter            | Escalate when                                                              | Do before or during the call                                             | What the team will consider                                 |
+| -------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------- |
+| 🌡️ Fever             | **Temperature above 38.0 °C**, or below 36.0 °C with rigors or tachycardia | Full observations; inspect perineum for spreading redness, crepitus, pus | Pelvic sepsis, undrained abscess, early Fournier’s gangrene |
+| 💧 Urinary retention | No void within 6–8 hours, or bladder scan > 400 mL with discomfort         | Help to stand or use a warm shower; bladder scan; report volume          | Catheterisation; review opioids                             |
+| 🩸 Bleeding          | > 1 pad per hour, clots, heart rate > 110/min, or systolic BP < 100 mmHg   | Direct pressure; observations; check IV access; hold antithrombotics     | Reactionary or secondary haemorrhage; tamponade or theatre  |
+| ⚡ Pain              | ≥ 7/10 or escalating despite scheduled analgesia                           | Bladder scan first; inspect for haematoma or swelling                    | Retention, haematoma, misplaced band, sepsis                |
 
 > **📞 READY-TO-USE SBAR SCRIPT**
 >
@@ -47,14 +47,14 @@
 
 ## 4. Multidisciplinary Mini-Guide
 
-| Specialty | Key rule | Where in this book |
-|---|---|---|
-| Gastroenterology / IBD | Defer haemorrhoid procedures until IBD remission (AGA 2026); suspect Crohn’s in atypical perianal disease | Chapter 09 |
-| Obstetrics | Conservative haemorrhoid care in pregnancy; drain abscesses promptly; postpartum continence enquiry | Chapter 13 |
-| Paediatrics | Treat constipation; swab red rashes; sweat test for recurrent prolapse; safeguarding | Chapter 14 |
-| Haematology and oncology | No routine rectal instrumentation in neutropenia; early surgical review | Appendix C; Chapter 15 |
-| Sexual health | Treat proctitis empirically; partner notification | Chapter 11 |
-| Safeguarding and social work | Assault, minors, vulnerable adults | Chapters 12, 14 |
+| Specialty                    | Key rule                                                                                                  | Where in this book     |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------- | ---------------------- |
+| Gastroenterology / IBD       | Defer haemorrhoid procedures until IBD remission (AGA 2026); suspect Crohn’s in atypical perianal disease | Chapter 09             |
+| Obstetrics                   | Conservative haemorrhoid care in pregnancy; drain abscesses promptly; postpartum continence enquiry       | Chapter 13             |
+| Paediatrics                  | Treat constipation; swab red rashes; sweat test for recurrent prolapse; safeguarding                      | Chapter 14             |
+| Haematology and oncology     | No routine rectal instrumentation in neutropenia; early surgical review                                   | Appendix C; Chapter 15 |
+| Sexual health                | Treat proctitis empirically; partner notification                                                         | Chapter 11             |
+| Safeguarding and social work | Assault, minors, vulnerable adults                                                                        | Chapters 12, 14        |
 
 **Algorithm 18.1 — Post-operative ward escalation**
 
@@ -79,12 +79,12 @@
 
 ## 5. Ward Traps
 
-| Trap | Reality |
-|---|---|
-| “Anal pain” and restlessness after surgery | Often urinary retention — scan the bladder |
-| Small stain on the pad | Bleeding can pool under the patient or in the rectum — check observations and the bed |
-| Tachycardia with little visible blood | Concealed haemorrhage or sepsis |
-| Day-3 fever after banding | Pelvic sepsis until proven otherwise |
+| Trap                                       | Reality                                                                               |
+| ------------------------------------------ | ------------------------------------------------------------------------------------- |
+| “Anal pain” and restlessness after surgery | Often urinary retention — scan the bladder                                            |
+| Small stain on the pad                     | Bleeding can pool under the patient or in the rectum — check observations and the bed |
+| Tachycardia with little visible blood      | Concealed haemorrhage or sepsis                                                       |
+| Day-3 fever after banding                  | Pelvic sepsis until proven otherwise                                                  |
 
 ## 6. Role-Targeted Action Boxes
 
@@ -116,11 +116,11 @@
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 EMERGENCY | Bleeding with instability; fever with spreading cellulitis or crepitus | Surgeon at bedside now |
-| 🔴 SAME-DAY | Any SBAR threshold crossed | Surgical review within 15–30 minutes |
-| 🟢 ROUTINE | Expected recovery | Discharge with Appendix D sheet |
+| Urgency      | Clinical trigger                                                       | Who and how fast                     |
+| ------------ | ---------------------------------------------------------------------- | ------------------------------------ |
+| 🔴 EMERGENCY | Bleeding with instability; fever with spreading cellulitis or crepitus | Surgeon at bedside now               |
+| 🔴 SAME-DAY  | Any SBAR threshold crossed                                             | Surgical review within 15–30 minutes |
+| 🟢 ROUTINE   | Expected recovery                                                      | Discharge with Appendix D sheet      |
 
 ## The Patient in Front of You — Chapter 18 Mini-Case
 
