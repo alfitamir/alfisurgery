@@ -26,10 +26,10 @@ Patients and employers constantly ask for a single number: when can I drive, fly
 
 No single law covers every situation, and advice differs by country, license type, and insurer, so readers should also confirm local licensing-authority guidance. The functional test used throughout this book is a reasonable general standard: a patient can safely return to driving when they can perform an emergency stop without hesitation or significant pain, can turn fully to check mirrors and blind spots, are no longer taking opioids or other medicines that cause drowsiness, and feel confident in an emergency. For major abdominal or pelvic surgery, many units advise against driving for about 2 weeks at a minimum, and some patients need longer; after day-case or minor procedures, 24 to 48 hours is often enough once the above criteria are met. Patients should also check with their motor insurer, since some policies specify a minimum interval after surgery or anesthesia.
 
-**Table 29.1.** *Functional readiness criteria for driving after surgery.*
+**Table 29.1.** _Functional readiness criteria for driving after surgery._
 
 | **Readiness criterion**          | **What to check**                                                                     |
-|----------------------------------|---------------------------------------------------------------------------------------|
+| -------------------------------- | ------------------------------------------------------------------------------------- |
 | **Emergency stop**               | Can press the brake fully and quickly, without wincing or hesitation                  |
 | **Mirror and blind-spot checks** | Can turn the head and torso fully without pain                                        |
 | **Medicines**                    | Not taking opioids, sedating antihistamines, or other medicines that impair alertness |
@@ -40,12 +40,12 @@ No single law covers every situation, and advice differs by country, license typ
 
 The main aviation concern after abdominal surgery is that gas trapped in the bowel or abdomen expands at cabin altitude, which can cause pain or, rarely, threaten a fresh repair. UK Civil Aviation Authority guidance for health professionals advises avoiding air travel for about 10 days after open abdominal surgery and for about 24 hours after laparoscopic surgery, because of residual gas in each case [1]. Longer intervals of several weeks to a few months are advised after major open abdominal or pelvic operations such as hysterectomy or colectomy, allowing for full recovery and a satisfactory follow-up review; this is a general aviation guideline and individual surgical advice may differ. For any patient with a chest drain, recent pneumothorax, or significant anemia, seek specific advice before booking a flight. General anesthesia itself is not a reason to delay flying once the surgical criteria above are met.
 
-**Table 29.2.** *General flying guidance after surgery, based on UK Civil Aviation Authority advice for health professionals. Always confirm with the treating surgeon.*
+**Table 29.2.** _General flying guidance after surgery, based on UK Civil Aviation Authority advice for health professionals. Always confirm with the treating surgeon._
 
 | **After**                                                            | **General guideline**                  | **Notes**                                                                |
-|----------------------------------------------------------------------|----------------------------------------|--------------------------------------------------------------------------|
-| **Laparoscopic surgery**                                             | About 24 hours                         | Because of residual gas in the abdomen [1]                             |
-| **Open abdominal surgery**                                           | About 10 days minimum                  | Risk of gas expansion affecting a fresh wound or repair [1]            |
+| -------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------ |
+| **Laparoscopic surgery**                                             | About 24 hours                         | Because of residual gas in the abdomen [1]                               |
+| **Open abdominal surgery**                                           | About 10 days minimum                  | Risk of gas expansion affecting a fresh wound or repair [1]              |
 | **Major abdominal or pelvic surgery (e.g. hysterectomy, colectomy)** | Several weeks, sometimes 2 to 3 months | Depends on full recovery and follow-up; shorter after smaller operations |
 | **Minor procedures, no significant gas or bleeding risk**            | Often within days                      | Confirm with the surgical team                                           |
 
@@ -108,4 +108,4 @@ Light exercise is often fine by then, but heavy lifting and contact sport usuall
 
 1\. UK Civil Aviation Authority. Guidance for health professionals: surgical conditions. Accessed October 2026.
 
-*Note: references are numbered within this chapter for the pilot. Driving and insurance advice varies by country; confirm against local licensing-authority guidance before publication.*
+_Note: references are numbered within this chapter for the pilot. Driving and insurance advice varies by country; confirm against local licensing-authority guidance before publication._
