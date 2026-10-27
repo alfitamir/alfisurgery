@@ -1,6 +1,6 @@
 # Appendix B — Questions You May Want to Ask Your Surgeon
 
-*A patient prompt list. Photocopiable. Written at about a sixth-grade reading level.*
+_A patient prompt list. Photocopiable. Written at about a sixth-grade reading level._
 
 It is normal to have questions. Many people forget them once they are in the clinic. Tick the questions that matter to you and bring this sheet to your appointment. You can also bring a family member to help you remember the answers. No question is too small.
 
