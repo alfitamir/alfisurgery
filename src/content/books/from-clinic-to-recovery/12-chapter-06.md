@@ -23,10 +23,10 @@ Groin hernia repair is one of the most common operations in the world, and most 
 </tbody>
 </table>
 
-**Table 6.1.** *Groin hernia repair at a glance.*
+**Table 6.1.** _Groin hernia repair at a glance._
 
 | **At a glance**                     |                                                                                                                                                        |
-|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Operation**                       | Mesh repair of the groin hernia, by keyhole (laparoscopic) or open technique                                                                           |
 | **Anesthesia**                      | General for keyhole repair; local, regional, or general for open repair                                                                                |
 | **Hospital stay**                   | Day surgery for most patients                                                                                                                          |
@@ -42,9 +42,9 @@ Most groin hernias slowly enlarge and become more uncomfortable, but strangulati
 
 Women and patients with a femoral hernia are different. Femoral hernias carry a higher risk of strangulation and should be repaired promptly; in women, a femoral hernia is easily mistaken for an inguinal one, and a keyhole approach, which allows both openings to be inspected, is preferred [3, 4]. A hernia that is hard, painful, and cannot be pushed back needs emergency assessment. Figure 6.1 summarizes the decision.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 6.1.** Deciding with the patient whether and when to repair a groin hernia.*
+_**Figure 6.1.** Deciding with the patient whether and when to repair a groin hernia._
 
 ## 6.2 The counseling script
 
@@ -68,10 +68,10 @@ Women and patients with a femoral hernia are different. Femoral hernias carry a 
 
 Mesh repair is recommended for adult inguinal hernias, and both the open Lichtenstein operation and the keyhole operations (totally extraperitoneal or transabdominal preperitoneal repair) are supported by strong evidence [3]. When the surgeon has the expertise, keyhole repair causes less early pain and less chronic pain, and allows a faster return to activity; open repair can be done under local anesthesia and avoids general anesthesia [3, 4]. Table 6.2 helps patients compare the two. For patients who decline mesh, a tissue repair such as the Shouldice operation is an option in experienced hands.
 
-**Table 6.2.** *Keyhole and open groin hernia repair compared, for use with patients.*
+**Table 6.2.** _Keyhole and open groin hernia repair compared, for use with patients._
 
 |                             | **Keyhole repair**                                         | **Open repair**                                                                             |
-|-----------------------------|------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| --------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | **Cuts**                    | Three small cuts                                           | One cut of about 6 to 8 cm in the groin                                                     |
 | **Anesthesia**              | General                                                    | Local, regional, or general                                                                 |
 | **Early pain and recovery** | Usually less pain and a faster return                      | A little more pain in the first week                                                        |
@@ -121,10 +121,10 @@ Most patients go home the same day. Before discharge they should be walking, hav
 
 Advice about rest after hernia repair has traditionally been cautious, with weeks of lifting restrictions. The evidence does not support this. International guidelines advise patients to return to normal activities as soon as they feel comfortable, and no study has shown that early activity increases recurrence [3]. In a large study of patients advised to resume activity after one day, the median time off work was 7 days, and reoperation rates were no higher than in other patients [7]. Table 6.3 and Figure 6.2 give typical times, which patients can shorten or lengthen according to comfort.
 
-**Table 6.3.** *Typical return to activity after groin hernia repair.*
+**Table 6.3.** _Typical return to activity after groin hernia repair._
 
 | **Activity**                   | **Keyhole repair**                                                     | **Open repair**                                 |
-|--------------------------------|------------------------------------------------------------------------|-------------------------------------------------|
+| ------------------------------ | ---------------------------------------------------------------------- | ----------------------------------------------- |
 | **Walking**                    | The same day                                                           | The same day                                    |
 | **Showering**                  | Day 2                                                                  | Day 2                                           |
 | **Driving**                    | When you can do an emergency stop without pain, often 3 to 5 days      | Often about 1 week                              |
@@ -137,9 +137,9 @@ Advice about rest after hernia repair has traditionally been cautious, with week
 | **Ramadan fasting**            | When eating normally, usually within a few days                        | When eating normally, usually within a few days |
 | **Flying**                     | Short flights after a few days if comfortable                          | Short flights after about 1 week                |
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 6.2.** Return to activity after keyhole and open groin hernia repair, for use with patients.*
+_**Figure 6.2.** Return to activity after keyhole and open groin hernia repair, for use with patients._
 
 **STEP 3 Questions patients ask**
 
@@ -201,20 +201,20 @@ A pregnancy after repair raises the chance of the hernia coming back [6]. If you
 
 Table 6.4 groups the risks into the bands of Section 1.5. Replace figures marked “unit data” with your own audit figures.
 
-**Table 6.4.** *Material risks of groin hernia repair. Square brackets mark figures to replace with unit data.*
+**Table 6.4.** _Material risks of groin hernia repair. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                                                          | **Typical frequency**                                                              | **Example wording**                                                                          |
-|----------------------|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| **Common**           | Bruising and swelling of the groin, scrotum, or labia                             | Many patients, for 1 to 3 weeks                                                    | “Bruising often spreads downward. It looks worse than it is and settles.”                    |
-| **Common**           | Fluid swelling (seroma) at the hernia site                                        | Common after keyhole repair of large hernias [unit data]                         | “A soft swelling may appear where the hernia was. It is fluid and usually goes on its own.”  |
-| **Common**           | Groin pain lasting more than 3 months                                             | About 10 to 12 in 100, usually mild and lessening [3]                            | “About 1 in 10 people have some groin discomfort for months. For most it is mild and fades.” |
+| **Band**             | **Risk**                                                                          | **Typical frequency**                                                          | **Example wording**                                                                          |
+| -------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| **Common**           | Bruising and swelling of the groin, scrotum, or labia                             | Many patients, for 1 to 3 weeks                                                | “Bruising often spreads downward. It looks worse than it is and settles.”                    |
+| **Common**           | Fluid swelling (seroma) at the hernia site                                        | Common after keyhole repair of large hernias [unit data]                       | “A soft swelling may appear where the hernia was. It is fluid and usually goes on its own.”  |
+| **Common**           | Groin pain lasting more than 3 months                                             | About 10 to 12 in 100, usually mild and lessening [3]                          | “About 1 in 10 people have some groin discomfort for months. For most it is mild and fades.” |
 | **Less common**      | Difficulty passing urine after surgery                                            | About [X] in 100; higher in older men and after general anesthesia [unit data] | “A few people cannot pass urine at first and need a tube for a short time.”                  |
 | **Less common**      | Recurrence of the hernia                                                          | About [X] in 100 [unit data]                                                   | “A small number of hernias come back and may need another operation.”                        |
-| **Less common**      | Numbness near the scar                                                            | Common after open repair; usually improves                                         | “The skin near the scar may feel numb for months.”                                           |
-| **Rare but serious** | Severe chronic pain that limits daily life                                        | Much less common than mild pain [unit data]                                      | “Rarely, pain is severe enough to need specialist treatment.”                                |
-| **Rare but serious** | Testicular problems (reduced blood supply, shrinkage) or injury to the sperm tube | Fewer than 1 in 100 [unit data]                                                  | “Rarely, the testicle on that side is affected.”                                             |
-| **Rare but serious** | Mesh infection needing removal; injury to bowel, bladder, or blood vessel         | Fewer than 1 in 100 [unit data]                                                  | “Rarely, the mesh becomes infected, or a nearby organ is injured.”                           |
-| **Rare but serious** | Blood clots; death                                                                | Very rare in healthy adults [unit data]                                          | “For someone in your health, these are very rare.”                                           |
+| **Less common**      | Numbness near the scar                                                            | Common after open repair; usually improves                                     | “The skin near the scar may feel numb for months.”                                           |
+| **Rare but serious** | Severe chronic pain that limits daily life                                        | Much less common than mild pain [unit data]                                    | “Rarely, pain is severe enough to need specialist treatment.”                                |
+| **Rare but serious** | Testicular problems (reduced blood supply, shrinkage) or injury to the sperm tube | Fewer than 1 in 100 [unit data]                                                | “Rarely, the testicle on that side is affected.”                                             |
+| **Rare but serious** | Mesh infection needing removal; injury to bowel, bladder, or blood vessel         | Fewer than 1 in 100 [unit data]                                                | “Rarely, the mesh becomes infected, or a nearby organ is injured.”                           |
+| **Rare but serious** | Blood clots; death                                                                | Very rare in healthy adults [unit data]                                        | “For someone in your health, these are very rare.”                                           |
 
 <table>
 <colgroup>
@@ -257,7 +257,7 @@ Table 6.4 groups the risks into the bands of Section 1.5. Replace figures marked
 
 ## 6.10 Warning signs
 
-**Table 6.5.** *Green, amber, and red warning signs after groin hernia repair.*
+**Table 6.5.** _Green, amber, and red warning signs after groin hernia repair._
 
 <table>
 <colgroup>
@@ -322,7 +322,7 @@ Table 6.4 groups the risks into the bands of Section 1.5. Replace figures marked
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -404,7 +404,7 @@ A hernia does not heal on its own. It usually grows slowly and becomes more unco
 Let comfort guide you. Being active early does not make the hernia come back. Your own plan is on your card.
 
 | **Activity**                      | **Usually from**                                                                                      |
-|-----------------------------------|-------------------------------------------------------------------------------------------------------|
+| --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Walking**                       | The same day                                                                                          |
 | **Showering**                     | After 2 days                                                                                          |
 | **Prayer**                        | From the first day. Pray sitting if bowing or kneeling hurts.                                         |
@@ -425,7 +425,7 @@ Let comfort guide you. Being active early does not make the hernia come back. Yo
 **7. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                                                                     | **What to do**                                                |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | **GREEN** | Pain that gets better each day; bruising in the groin, scrotum, or labia; a soft swelling; numb skin near the scar                                                                      | This is normal. Keep following this guide.                    |
 | **AMBER** | A red, hot, or leaking wound; temperature of 38 °C or more; swelling that keeps growing; passing only small amounts of urine                                                            | Call us today.                                                |
 | **RED**   | Cannot pass urine at all for 8 hours; severe pain getting worse; vomiting with a swollen tummy; fever with shivering; chest pain or short of breath; a hot, swollen leg; heavy bleeding | Go to the emergency department now. Take this guide with you. |
@@ -461,4 +461,4 @@ Let comfort guide you. Being active early does not make the hernia come back. Yo
 
 7\. Bay-Nielsen M, Thomsen H, Andersen FH, et al. Convalescence after inguinal herniorrhaphy. Br J Surg. 2004;91(3):362-367.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
