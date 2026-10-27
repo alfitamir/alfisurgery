@@ -1,13 +1,13 @@
 # Chapter 01 — Anatomy and Physiology in Three Minutes
 
-*Purpose: four landmarks explain almost every anorectal symptom — learn them once and every examination, referral, and operation in this book makes sense.*
+_Purpose: four landmarks explain almost every anorectal symptom — learn them once and every examination, referral, and operation in this book makes sense._
 
 > **🎨 INFOGRAPHIC / VISUAL BLUEPRINT — CHAPTER 01**
 >
 > - **Chapter colour palette:** Deep Teal (#006D77) header bar, Mint-Teal (#E2F3F4) callout panels, Slate (#1E293B) body text.
 > - **Hero graphic:** Coronal and sagittal anorectal cross-sections with the dentate line drawn as a glowing horizontal divider (visceral innervation above, somatic below), the puborectalis sling shown pulling the anorectal junction forward, and a side gauge labelled “approximate contributions to resting anal pressure — estimates vary by method”.
 > - **Icon set:** Shield (internal sphincter), clenched hand (external sphincter), rubber washer (haemorrhoidal cushions), lightning bolt (somatic pain below the dentate line), feather (visceral sensation above it), red spine (cauda equina warning).
-> - **Bedside aphorism banner:** *“Most resting anal pressure comes from ONE involuntary muscle — the internal sphincter. Recurrence can be re-treated; incontinence is often permanent.”*
+> - **Bedside aphorism banner:** _“Most resting anal pressure comes from ONE involuntary muscle — the internal sphincter. Recurrence can be re-treated; incontinence is often permanent.”_
 
 ## 1. The Four Landmarks That Dictate Every Clinical Decision
 
@@ -15,12 +15,12 @@ You do not need a surgical textbook to understand the anal canal. You need four 
 
 **Table 1.1 — The four landmarks**
 
-| Landmark | Innervation and muscle type | Physiological role | Traffic-light clinical rule |
-|---|---|---|---|
-| 1. Dentate (pectinate) line | **Above:** visceral (autonomic) — senses stretch, not cutting.<br>**Below:** somatic (inferior rectal branches of the pudendal nerve) — pain, touch, temperature. | Junction of columnar rectal mucosa and squamous anoderm, about 1.5–2 cm above the anal verge. The anal glands open into the crypts here — the origin of most abscesses and fistulas. | 🟢 **Above:** banding, sclerotherapy, and infrared coagulation are usually painless.<br>🔴 **Below:** a band, injection, or suture on anoderm in an awake patient causes immediate severe pain. |
-| 2. Internal anal sphincter (IAS) | Involuntary smooth muscle; continuation of the circular rectal muscle; autonomic control. | Provides **most of the resting tone** (commonly quoted at about 70–85%). Keeps the canal closed at rest and during sleep. | 🔴 **Injury → passive soiling:** unnoticed leakage of mucus or liquid, often at night.<br>**Spasm/hypertonia** drives anal fissure. |
-| 3. External anal sphincter (EAS) and puborectalis | Voluntary striated muscle; pudendal nerve (EAS) and direct sacral branches (puborectalis). | Voluntary squeeze. The puborectalis sling maintains the anorectal angle (roughly 90° at rest). | 🟡 **Injury → urge incontinence:** feels the urge but cannot defer — typical after obstetric anal sphincter injury (OASIS) or high fistulotomy. |
-| 4. Haemorrhoidal cushions | Normal submucosal arteriovenous sinusoids, classically left lateral, right anterior, and right posterior. | Contribute roughly 15% of resting pressure and provide the fine seal for gas and liquid. | 🟢 **Normal anatomy.** They become “haemorrhoidal disease” only when they bleed, prolapse, or thrombose. |
+| Landmark                                          | Innervation and muscle type                                                                                                                                       | Physiological role                                                                                                                                                                   | Traffic-light clinical rule                                                                                                                                                                     |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Dentate (pectinate) line                       | **Above:** visceral (autonomic) — senses stretch, not cutting.<br>**Below:** somatic (inferior rectal branches of the pudendal nerve) — pain, touch, temperature. | Junction of columnar rectal mucosa and squamous anoderm, about 1.5–2 cm above the anal verge. The anal glands open into the crypts here — the origin of most abscesses and fistulas. | 🟢 **Above:** banding, sclerotherapy, and infrared coagulation are usually painless.<br>🔴 **Below:** a band, injection, or suture on anoderm in an awake patient causes immediate severe pain. |
+| 2. Internal anal sphincter (IAS)                  | Involuntary smooth muscle; continuation of the circular rectal muscle; autonomic control.                                                                         | Provides **most of the resting tone** (commonly quoted at about 70–85%). Keeps the canal closed at rest and during sleep.                                                            | 🔴 **Injury → passive soiling:** unnoticed leakage of mucus or liquid, often at night.<br>**Spasm/hypertonia** drives anal fissure.                                                             |
+| 3. External anal sphincter (EAS) and puborectalis | Voluntary striated muscle; pudendal nerve (EAS) and direct sacral branches (puborectalis).                                                                        | Voluntary squeeze. The puborectalis sling maintains the anorectal angle (roughly 90° at rest).                                                                                       | 🟡 **Injury → urge incontinence:** feels the urge but cannot defer — typical after obstetric anal sphincter injury (OASIS) or high fistulotomy.                                                 |
+| 4. Haemorrhoidal cushions                         | Normal submucosal arteriovenous sinusoids, classically left lateral, right anterior, and right posterior.                                                         | Contribute roughly 15% of resting pressure and provide the fine seal for gas and liquid.                                                                                             | 🟢 **Normal anatomy.** They become “haemorrhoidal disease” only when they bleed, prolapse, or thrombose.                                                                                        |
 
 <small>Evidence note: the percentage contributions to resting pressure come from physiological studies using different methods; treat them as approximate [U]. The clinical message — protect the internal sphincter — is not in doubt.</small>
 
@@ -36,15 +36,15 @@ Ask these questions before any referral for fissure, fistula, haemorrhoid, or pr
 
 **Table 1.2 — Continence questions and what they localise**
 
-| Ask | If yes, think | Next step |
-|---|---|---|
-| Does leakage happen **without warning**, often at night? | Passive incontinence → IAS defect or weakness (prior sphincterotomy, anal stretch, scarring) | Firm the stool, protect the skin, avoid further sphincter division, refer for anal physiology (Chapter 10) |
-| Do you get a sudden urge and **cannot reach the toilet in time**? | Urge incontinence → EAS/puborectalis injury or a reduced rectal reservoir (proctitis, radiation, tumour) | Check for proctitis or tumour; obstetric history; pelvic-floor referral |
-| Do you soil **after** opening your bowels despite wiping? | Post-defecation seepage → incomplete evacuation, prolapse, large tags, or haemorrhoids | Examine for prolapse and haemorrhoids; evacuation advice |
-| Watery leakage in an older, immobile, or opioid-treated patient? | Overflow from faecal impaction | **DRE before any antidiarrhoeal** (Chapter 06) |
-| Gas, liquid, or solid? How often? Pads? | Severity | Record a validated score (Wexner/Cleveland Clinic or St Mark’s) in the referral [C] |
-| Vaginal deliveries, forceps, third- or fourth-degree tear? Prior anal surgery? Pelvic radiation? Diabetes or neurological disease? | Hidden sphincter or nerve injury | Document in every surgical referral |
-| Back pain, saddle numbness, new urinary retention, leg weakness? | **Cauda equina syndrome** | 🔴 **Emergency MRI and spinal team** via the local pathway |
+| Ask                                                                                                                                | If yes, think                                                                                            | Next step                                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Does leakage happen **without warning**, often at night?                                                                           | Passive incontinence → IAS defect or weakness (prior sphincterotomy, anal stretch, scarring)             | Firm the stool, protect the skin, avoid further sphincter division, refer for anal physiology (Chapter 10) |
+| Do you get a sudden urge and **cannot reach the toilet in time**?                                                                  | Urge incontinence → EAS/puborectalis injury or a reduced rectal reservoir (proctitis, radiation, tumour) | Check for proctitis or tumour; obstetric history; pelvic-floor referral                                    |
+| Do you soil **after** opening your bowels despite wiping?                                                                          | Post-defecation seepage → incomplete evacuation, prolapse, large tags, or haemorrhoids                   | Examine for prolapse and haemorrhoids; evacuation advice                                                   |
+| Watery leakage in an older, immobile, or opioid-treated patient?                                                                   | Overflow from faecal impaction                                                                           | **DRE before any antidiarrhoeal** (Chapter 06)                                                             |
+| Gas, liquid, or solid? How often? Pads?                                                                                            | Severity                                                                                                 | Record a validated score (Wexner/Cleveland Clinic or St Mark’s) in the referral [C]                        |
+| Vaginal deliveries, forceps, third- or fourth-degree tear? Prior anal surgery? Pelvic radiation? Diabetes or neurological disease? | Hidden sphincter or nerve injury                                                                         | Document in every surgical referral                                                                        |
+| Back pain, saddle numbness, new urinary retention, leg weakness?                                                                   | **Cauda equina syndrome**                                                                                | 🔴 **Emergency MRI and spinal team** via the local pathway                                                 |
 
 **Algorithm 1.1 — Localising pain and leakage**
 
@@ -77,14 +77,14 @@ Ask these questions before any referral for fissure, fistula, haemorrhoid, or pr
 
 **Table 1.3 — Dangerous mimics**
 
-| Presentation | Dangerous mimic | Distinguishing clue | Action |
-|---|---|---|---|
-| Severe anal or rectal pain, fever, **normal-looking skin** | Intersphincteric or supralevator abscess | Cannot sit; exquisitely tender bulge on DRE | 🔴 Same-day surgical review; EUA |
-| New faecal incontinence in an adult | Cauda equina syndrome | Back pain, saddle anaesthesia, retention, reduced tone | 🔴 Emergency MRI |
-| “Anal pain” hours after anorectal surgery | Acute urinary retention | Restless, suprapubic fullness, bladder scan > 400 mL | 🔴 Catheterise; SBAR escalation |
-| Perineal pain out of proportion in a diabetic | Early Fournier’s gangrene | Tachycardia, dusky skin, crepitus, SGLT2 inhibitor | 🔴 Emergency (Chapter 05) |
-| Tenesmus, mucus, and blood | Rectal cancer or proctitis | Mass on DRE, altered bowel habit, sexual history | 🟡 Urgent endoscopy (Chapters 08, 11) |
-| Leakage in an older patient with constipation | Overflow from impaction | Hard stool on DRE, opioids, immobility | 🟢 Disimpact; stop culprit drugs |
+| Presentation                                               | Dangerous mimic                          | Distinguishing clue                                    | Action                                |
+| ---------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------ | ------------------------------------- |
+| Severe anal or rectal pain, fever, **normal-looking skin** | Intersphincteric or supralevator abscess | Cannot sit; exquisitely tender bulge on DRE            | 🔴 Same-day surgical review; EUA      |
+| New faecal incontinence in an adult                        | Cauda equina syndrome                    | Back pain, saddle anaesthesia, retention, reduced tone | 🔴 Emergency MRI                      |
+| “Anal pain” hours after anorectal surgery                  | Acute urinary retention                  | Restless, suprapubic fullness, bladder scan > 400 mL   | 🔴 Catheterise; SBAR escalation       |
+| Perineal pain out of proportion in a diabetic              | Early Fournier’s gangrene                | Tachycardia, dusky skin, crepitus, SGLT2 inhibitor     | 🔴 Emergency (Chapter 05)             |
+| Tenesmus, mucus, and blood                                 | Rectal cancer or proctitis               | Mass on DRE, altered bowel habit, sexual history       | 🟡 Urgent endoscopy (Chapters 08, 11) |
+| Leakage in an older patient with constipation              | Overflow from impaction                  | Hard stool on DRE, opioids, immobility                 | 🟢 Disimpact; stop culprit drugs      |
 
 ## 4. Role-Targeted Action Boxes
 
@@ -102,7 +102,7 @@ Ask these questions before any referral for fissure, fistula, haemorrhoid, or pr
 
 > **🏥 ER & WARD NURSE CARE AND SBAR BOX**
 >
-> - **Immediate severe pain after rubber band ligation** suggests the band sits on or below the dentate line. Escalate promptly for surgical review and possible band removal. SBAR example: *“Mr X had banding 30 minutes ago; pain is 9/10 despite paracetamol; please review within 30 minutes.”*
+> - **Immediate severe pain after rubber band ligation** suggests the band sits on or below the dentate line. Escalate promptly for surgical review and possible band removal. SBAR example: _“Mr X had banding 30 minutes ago; pain is 9/10 despite paracetamol; please review within 30 minutes.”_
 > - **Post-operative “anal pain” with restlessness:** scan the bladder before giving more opioid.
 
 > **💊 CROSS-SPECIALTY PRESCRIBING TRAP**
@@ -125,12 +125,12 @@ Ask these questions before any referral for fissure, fistula, haemorrhoid, or pr
 
 **📨 REFERRAL URGENCY BOX**
 
-| Urgency | Clinical trigger | Who and how fast |
-|---|---|---|
-| 🔴 EMERGENCY | New faecal incontinence or reduced anal tone with back pain, saddle anaesthesia, or urinary retention | Emergency MRI and spinal or neurosurgical team (local cauda equina pathway) |
-| 🔴 SAME-DAY | Severe anal pain with fever and normal-looking skin | On-call surgeon; EUA |
-| 🟡 URGENT | New incontinence with a rectal mass, bleeding, anaemia, or weight loss | Urgent colorectal or endoscopy pathway (Chapter 08) |
-| 🟢 ROUTINE | Stable faecal incontinence without red flags after a conservative trial | Colorectal or pelvic-floor clinic for anal physiology and endoanal ultrasound (Chapter 10) |
+| Urgency      | Clinical trigger                                                                                      | Who and how fast                                                                           |
+| ------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| 🔴 EMERGENCY | New faecal incontinence or reduced anal tone with back pain, saddle anaesthesia, or urinary retention | Emergency MRI and spinal or neurosurgical team (local cauda equina pathway)                |
+| 🔴 SAME-DAY  | Severe anal pain with fever and normal-looking skin                                                   | On-call surgeon; EUA                                                                       |
+| 🟡 URGENT    | New incontinence with a rectal mass, bleeding, anaemia, or weight loss                                | Urgent colorectal or endoscopy pathway (Chapter 08)                                        |
+| 🟢 ROUTINE   | Stable faecal incontinence without red flags after a conservative trial                               | Colorectal or pelvic-floor clinic for anal physiology and endoanal ultrasound (Chapter 10) |
 
 ## The Patient in Front of You — Chapter 01 Mini-Case
 
