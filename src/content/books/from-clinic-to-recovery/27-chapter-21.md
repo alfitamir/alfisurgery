@@ -23,10 +23,10 @@ Corticosteroids are among the most widely used medicines, for asthma, arthritis,
 </tbody>
 </table>
 
-**Table 21.1.** *Corticosteroids and surgery at a glance.*
+**Table 21.1.** _Corticosteroids and surgery at a glance._
 
 | **At a glance**                |                                                                                                                   |
-|--------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | **Patients at risk**           | Known adrenal insufficiency, or prednisolone 5 mg or more a day (or equivalent) for 4 weeks or more, by any route |
 | **Day of surgery**             | Take the usual morning dose; give extra hydrocortisone according to the type of surgery                           |
 | **After surgery**              | Continue cover while nil by mouth; then double the usual oral dose for a period before returning to normal        |
@@ -39,10 +39,10 @@ Corticosteroids are among the most widely used medicines, for asthma, arthritis,
 
 Patients with primary or secondary adrenal insufficiency are at high risk of adrenal crisis around surgery. In addition, a daily dose of prednisolone of 5 mg or more, or its equivalent, taken for 4 weeks or more, may suppress the body’s own cortisol production, whether taken by mouth or by inhaled, intranasal, intra-articular, or topical routes [1]. Patients who have recently stopped long-term steroids may still be at risk, and the 2024 European and Endocrine Society guideline gives detailed advice on assessment [2]. Table 21.2 shows approximate equivalent doses.
 
-**Table 21.2.** *Approximate equivalent glucocorticoid doses.*
+**Table 21.2.** _Approximate equivalent glucocorticoid doses._
 
 | **Steroid**            | **Dose approximately equal to prednisolone 5 mg** |
-|------------------------|---------------------------------------------------|
+| ---------------------- | ------------------------------------------------- |
 | **Prednisolone**       | 5 mg                                              |
 | **Hydrocortisone**     | 20 mg                                             |
 | **Methylprednisolone** | 4 mg                                              |
@@ -65,9 +65,9 @@ Patients with primary or secondary adrenal insufficiency are at high risk of adr
 
 Patients at risk should take their usual steroid dose on the morning of surgery and receive additional hydrocortisone according to the type of procedure (Figure 21.1). For major surgery, the 2020 UK guideline recommends hydrocortisone 100 mg intravenously at induction, followed by 200 mg over 24 hours by infusion, or 50 mg every 6 hours, while the patient is nil by mouth or vomiting, and then double the usual oral dose for 48 hours or up to a week before returning to the usual dose [1]. For body surface and intermediate surgery, the same induction dose is followed by double the usual oral dose for 48 hours [1]. Endocrinology advice should be sought for patients with primary adrenal insufficiency, very high doses, or complex courses.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 21.1.** Steroid cover for surgery in patients at risk of adrenal insufficiency.*
+_**Figure 21.1.** Steroid cover for surgery in patients at risk of adrenal insufficiency._
 
 Guidance differs for some groups. A 2022 rheumatology guideline for hip and knee replacement advises continuing the usual daily steroid dose, rather than giving extra stress doses, in patients taking steroids for rheumatic diseases who do not have known adrenal insufficiency [3]. Each hospital should agree one approach with its endocrinology and anesthesia teams.
 
@@ -146,10 +146,10 @@ Not while recovering from surgery. If you take steroid replacement for adrenal i
 
 ## 21.7 Additional risks
 
-**Table 21.3.** *Additional risks for patients taking steroids. Square brackets mark figures to replace with unit data.*
+**Table 21.3.** _Additional risks for patients taking steroids. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                              | **Typical frequency**                                     | **Example wording**                                                                      |
-|----------------------|---------------------------------------|-----------------------------------------------------------|------------------------------------------------------------------------------------------|
+| **Band**             | **Risk**                              | **Typical frequency**                                   | **Example wording**                                                                      |
+| -------------------- | ------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | **Less common**      | Wound infection or slow healing       | Higher than in patients not taking steroids [unit data] | “Steroids can slow healing.”                                                             |
 | **Less common**      | High blood glucose from extra steroid | [unit data]                                             | “Your sugar may rise for a few days.”                                                    |
 | **Rare but serious** | Adrenal crisis                        | [unit data]                                             | “Without extra steroid, blood pressure can fall dangerously. This is why we give cover.” |
@@ -174,7 +174,7 @@ Not while recovering from surgery. If you take steroid replacement for adrenal i
 
 ## 21.9 Warning signs
 
-**Table 21.4.** *Green, amber, and red warning signs for patients taking steroids.*
+**Table 21.4.** _Green, amber, and red warning signs for patients taking steroids._
 
 <table>
 <colgroup>
@@ -231,7 +231,7 @@ Not while recovering from surgery. If you take steroid replacement for adrenal i
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Complete the steroid plan with the patient, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Complete the steroid plan with the patient, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -253,7 +253,7 @@ If you have taken steroids for some time, your body may not make enough of its o
 **My steroid plan**
 
 |                               | **What to take**                                           |
-|-------------------------------|------------------------------------------------------------|
+| ----------------------------- | ---------------------------------------------------------- |
 | **My usual steroid and dose** |                                                            |
 | **Morning of surgery**        | Take your usual dose. Do not miss it.                      |
 | **In hospital**               | Extra steroid given by the team                            |
@@ -284,7 +284,7 @@ If you have taken steroids for some time, your body may not make enough of its o
 **Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                              | **What to do**                                              |
-|-----------|--------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
 | **GREEN** | Tiredness for a few days                                                                         | Take your steroids as planned.                              |
 | **AMBER** | Fever or infection; a red or leaking wound                                                       | Double your dose if advised, and call your doctor today.    |
 | **RED**   | Vomiting and cannot keep tablets down; dizzy or fainting; severe weakness; tummy pain; confusion | Go to the emergency department now. Show your steroid card. |
@@ -313,4 +313,4 @@ If you have taken steroids for some time, your body may not make enough of its o
 
 4\. NHS England and NHS Improvement. National Patient Safety Alert: Steroid Emergency Card to support early recognition and treatment of adrenal crisis in adults. NatPSA/2020/005/NHSPS. August 2020.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
