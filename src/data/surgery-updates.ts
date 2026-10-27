@@ -129,7 +129,10 @@ export const surgeryUpdates: SurgeryUpdate[] = [
       en: "Current multi-society guidance allows most patients to continue GLP-1 agonists before elective surgery, with individualised aspiration precautions such as a 24-hour liquid diet. The surgeon and anaesthetist must know beforehand, as fasting instructions vary and may be adjusted.",
       ar: "تسمح الإرشادات الحالية لمعظم المرضى بالاستمرار على أدوية GLP-1 قبل الجراحة المخططة، مع احتياطات فردية لتقليل خطر الشفط مثل الاكتفاء بالسوائل 24 ساعة. ويجب إبلاغ الجرّاح وطبيب التخدير مسبقًا، لأن تعليمات الصيام تختلف وقد تُعدَّل.",
     },
-    source: { en: "American Society of Anesthesiologists, 2024", ar: "الجمعية الأمريكية للتخدير 2024" },
+    source: {
+      en: "American Society of Anesthesiologists, 2024",
+      ar: "الجمعية الأمريكية للتخدير 2024",
+    },
     url: "https://www.asahq.org/",
   },
   {
@@ -176,7 +179,10 @@ export const surgeryUpdates: SurgeryUpdate[] = [
       en: "Medicines like Ozempic, Wegovy and Mounjaro can now be combined with surgery — sometimes to make surgery safer beforehand, sometimes to keep weight down afterwards. Discuss with your surgeon before stopping or starting them.",
       ar: "أدوية مثل أوزمبيك، ويجوفي، وماونجارو أصبحت تُستخدم مع الجراحة — أحيانًا قبلها لتقليل المخاطر، وأحيانًا بعدها للحفاظ على الوزن. تحدّث مع طبيبك قبل بدء أو إيقاف أي منها.",
     },
-    source: { en: "International bariatric societies, 2024", ar: "الجمعيات الدولية لجراحة السمنة 2024" },
+    source: {
+      en: "International bariatric societies, 2024",
+      ar: "الجمعيات الدولية لجراحة السمنة 2024",
+    },
     url: "https://asmbs.org/patients/",
   },
   {
@@ -191,7 +197,10 @@ export const surgeryUpdates: SurgeryUpdate[] = [
       en: "These medicines slow stomach emptying. Do not stop them on your own: most people can continue them. Tell your surgeon and anaesthetist before surgery, because your fasting instructions differ and may be adjusted, for example liquids only the day before.",
       ar: "هذه الأدوية تُبطئ إفراغ المعدة. لا توقفها من تلقاء نفسك، فمعظم المرضى يمكنهم الاستمرار عليها. أخبر طبيبك وطبيب التخدير قبل العملية، لأن تعليمات الصيام تختلف في حالتك وقد تُعدَّل، مثل الاكتفاء بالسوائل في اليوم السابق.",
     },
-    source: { en: "American Society of Anesthesiologists, 2024", ar: "الجمعية الأمريكية للتخدير 2024" },
+    source: {
+      en: "American Society of Anesthesiologists, 2024",
+      ar: "الجمعية الأمريكية للتخدير 2024",
+    },
     url: "https://www.asahq.org/madeforthismoment/preparing-for-surgery/prep/patients-taking-glp-1-medications",
   },
   {
@@ -219,9 +228,12 @@ export const surgeryUpdates: SurgeryUpdate[] = [
     },
     summary: {
       en: "If your rectal cancer completely disappears after chemotherapy and radiation, your team may offer a 'watch and wait' plan — very close scans instead of removing the rectum. It is only safe with strict follow-up.",
-      ar: "إذا اختفى ورم المستقيم تمامًا بعد العلاج الكيماوي والإشعاعي، قد يعرض عليك الفريق خطة \"المراقبة\" بدلًا من الاستئصال، مع فحوصات متقاربة جدًا. آمنة فقط بمتابعة صارمة.",
+      ar: 'إذا اختفى ورم المستقيم تمامًا بعد العلاج الكيماوي والإشعاعي، قد يعرض عليك الفريق خطة "المراقبة" بدلًا من الاستئصال، مع فحوصات متقاربة جدًا. آمنة فقط بمتابعة صارمة.',
     },
-    source: { en: "American Cancer Society update, 2024", ar: "تحديث الجمعية الأمريكية للسرطان 2024" },
+    source: {
+      en: "American Cancer Society update, 2024",
+      ar: "تحديث الجمعية الأمريكية للسرطان 2024",
+    },
     url: "https://www.cancer.org/cancer/types/colon-rectal-cancer.html",
   },
   {
@@ -236,7 +248,10 @@ export const surgeryUpdates: SurgeryUpdate[] = [
       en: "For benign thyroid nodules causing pressure or a visible swelling, radiofrequency ablation (RFA) shrinks the lump through a small needle in the clinic — no cut, no thyroid removal, and no lifelong hormone tablets.",
       ar: "للعقيدات الحميدة التي تسبّب ضغطًا أو تورّمًا ظاهرًا، يمكن تصغيرها بالتردد الحراري (RFA) عبر إبرة رفيعة في العيادة — بدون شقّ، وبدون استئصال الغدة، وبدون هرمون مدى الحياة.",
     },
-    source: { en: "European Thyroid Association, 2024", ar: "الجمعية الأوروبية للغدة الدرقية 2024" },
+    source: {
+      en: "European Thyroid Association, 2024",
+      ar: "الجمعية الأوروبية للغدة الدرقية 2024",
+    },
     url: "https://www.eurothyroid.com/patients.html",
   },
   {
@@ -251,7 +266,10 @@ export const surgeryUpdates: SurgeryUpdate[] = [
       en: "For most ventral, umbilical and inguinal hernias, minimally-invasive repair means smaller cuts, less wound infection, and return to office work in about 1–2 weeks. Heavy lifting still waits 4–6 weeks.",
       ar: "لمعظم فتوق البطن والسرّة والفخذ، الإصلاح قليل التوغّل يعني شقوقًا أصغر، والتهابات جرح أقل، وعودة للعمل المكتبي خلال 1–2 أسبوع. رفع الأثقال ينتظر 4–6 أسابيع.",
     },
-    source: { en: "European Hernia Society patients, 2024", ar: "الجمعية الأوروبية للفتق للمرضى 2024" },
+    source: {
+      en: "European Hernia Society patients, 2024",
+      ar: "الجمعية الأوروبية للفتق للمرضى 2024",
+    },
     url: "https://www.europeanherniasociety.eu/patients",
   },
   {
@@ -266,7 +284,10 @@ export const surgeryUpdates: SurgeryUpdate[] = [
       en: "For mild appendicitis without a stone inside the appendix, IV antibiotics can be tried first. About 4 out of 10 patients will still need surgery within 5 years, but many avoid it. Not suitable for complicated cases.",
       ar: "في التهاب الزائدة البسيط دون حصوة داخلها، يمكن تجربة المضادات أولًا. حوالي 4 من كل 10 مرضى سيحتاجون الجراحة خلال 5 سنوات، لكن كثيرين يتجنبونها. غير مناسبة للحالات المعقّدة.",
     },
-    source: { en: "CODA trial 5-year data, NEJM 2024", ar: "بيانات دراسة CODA 5 سنوات — NEJM 2024" },
+    source: {
+      en: "CODA trial 5-year data, NEJM 2024",
+      ar: "بيانات دراسة CODA 5 سنوات — NEJM 2024",
+    },
     url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2116018",
   },
   {
@@ -281,7 +302,10 @@ export const surgeryUpdates: SurgeryUpdate[] = [
       en: "Modern pit-picking and endoscopic (EPSiT) or laser techniques close the sinus through tiny openings. Most patients walk out the same day, shower after 48 hours, and go back to school or work within 3–7 days.",
       ar: "التقنيات الحديثة (pit-picking وEPSiT والليزر) تعالج الجيب عبر ثقوب صغيرة. معظم المرضى يخرجون في نفس اليوم، يستحمّون بعد 48 ساعة، ويعودون للدراسة أو العمل خلال 3–7 أيام.",
     },
-    source: { en: "European coloproctology guidelines, 2024", ar: "الإرشادات الأوروبية لجراحة القولون 2024" },
+    source: {
+      en: "European coloproctology guidelines, 2024",
+      ar: "الإرشادات الأوروبية لجراحة القولون 2024",
+    },
     url: "https://www.escp.eu.com/education/patient-information",
   },
   {
