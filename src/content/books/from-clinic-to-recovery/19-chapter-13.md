@@ -24,10 +24,10 @@ Obesity is a chronic, relapsing disease, not a failure of willpower. Most people
 </tbody>
 </table>
 
-**Table 13.1.** *Obesity treatment and bariatric surgery at a glance.*
+**Table 13.1.** _Obesity treatment and bariatric surgery at a glance._
 
 | **At a glance**                     |                                                                                                                                            |
-|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Treatments**                      | Lifestyle program; weight-loss medicines; endoscopic sleeve or balloon; sleeve gastrectomy; gastric bypass; other bypass procedures        |
 | **Surgery is considered for**       | Body mass index (BMI) of 35 or more, or 30 to 34.9 with metabolic disease such as type 2 diabetes                                          |
 | **Hospital stay**                   | Usually 1 to 2 nights                                                                                                                      |
@@ -59,9 +59,9 @@ Many patients have experienced judgment from health professionals, and this make
 
 Every patient should understand the full range of options and what each can realistically achieve (Figure 13.1). A structured lifestyle program typically achieves about 9 in 100 of body weight at one year [1], and remains the foundation of every other treatment. Among medicines, weekly tirzepatide led to an average loss of about 20 in 100 of body weight at 72 weeks, and semaglutide about 14 in 100, in a head-to-head trial [2]. These medicines work while they are taken; after semaglutide was stopped, about two-thirds of the lost weight returned within a year [3]. Endoscopic sleeve gastroplasty, performed through the mouth, achieved about 14 in 100 at one year [4]. Surgery produces the largest and most durable loss: in a large cohort, average loss at 5 years was about 19 in 100 after sleeve gastrectomy and about 26 in 100 after gastric bypass [5].
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 13.1.** Average weight loss with different obesity treatments, for use with patients.*
+_**Figure 13.1.** Average weight loss with different obesity treatments, for use with patients._
 
 <table>
 <colgroup>
@@ -97,14 +97,14 @@ Suitability depends on more than BMI. A multidisciplinary assessment, usually in
 
 Sleeve gastrectomy and Roux-en-Y gastric bypass are the two most common operations, and both give good, lasting results. In a randomized trial followed for 10 years, the loss of excess weight was 44 in 100 after sleeve and 51 in 100 after bypass, and reflux inflammation of the esophagus was seen in 31 in 100 after sleeve compared with 7 in 100 after bypass; Barrett esophagus was uncommon and similar after both, at about 4 in 100 [7]. In patients with type 2 diabetes, surgery achieved near-normal blood sugar without diabetes medicines far more often than intensive medical therapy at 5 years [8]. Figure 13.2 lists factors that may favor each operation; Table 13.2 compares the main procedures.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 13.2.** Factors that may favor sleeve gastrectomy or gastric bypass, for shared decision-making.*
+_**Figure 13.2.** Factors that may favor sleeve gastrectomy or gastric bypass, for shared decision-making._
 
-**Table 13.2.** *Main procedures for obesity compared.*
+**Table 13.2.** _Main procedures for obesity compared._
 
 | **Operation**                        | **How it works**                                                                  | **Main advantages**                                            | **Main disadvantages**                                                                            |
-|--------------------------------------|-----------------------------------------------------------------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| ------------------------------------ | --------------------------------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | **Sleeve gastrectomy**               | About three-quarters of the stomach is removed, leaving a narrow tube             | Simpler; no rerouting; fewer nutritional problems              | New or worse reflux; cannot be reversed                                                           |
 | **Roux-en-Y gastric bypass**         | A small stomach pouch is joined to the small bowel, bypassing most of the stomach | More weight loss; treats reflux; strong effect on diabetes     | Ulcers at the join; internal hernia; dumping; more supplements; avoid anti-inflammatory medicines |
 | **One-anastomosis gastric bypass**   | A longer pouch joined to the small bowel with a single join                       | Simpler than Roux-en-Y bypass; good weight loss                | Bile reflux; risk of malnutrition if the bypassed bowel is long                                   |
@@ -131,9 +131,9 @@ Sleeve gastrectomy and Roux-en-Y gastric bypass are the two most common operatio
 
 After surgery, food is reintroduced in stages over about six weeks (Figure 13.3). The rules are simple, and patients should hear them several times: eat protein first, aiming for at least 60 g a day; take small bites and chew well; stop at the first sign of fullness; sip water between meals rather than with them; and avoid sugary drinks and grazing [9]. Hair thinning in the first months is common and usually recovers.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 13.3.** The four stages of eating after weight-loss surgery, for use with patients.*
+_**Figure 13.3.** The four stages of eating after weight-loss surgery, for use with patients._
 
 ## 13.7 Lifelong supplements and follow-up
 
@@ -143,10 +143,10 @@ All patients need lifelong supplements, usually a complete multivitamin with min
 
 Fasting during the first months after surgery risks dehydration and inadequate protein. Most teams advise against fasting during the first 6 to 12 months; after that, many patients can fast with a plan for protein and fluids between iftar and suhoor and supplements taken at night, agreed with the dietitian. Pregnancy after surgery is usually safe once weight has stabilized, but needs early notification of the team, nutritional monitoring, and an alternative to the standard glucose tolerance test, which can cause dumping after bypass.
 
-**Table 13.3.** *Typical recovery and milestones after bariatric surgery.*
+**Table 13.3.** _Typical recovery and milestones after bariatric surgery._
 
 | **Activity**        | **Usually from**                                | **Notes**                                                         |
-|---------------------|-------------------------------------------------|-------------------------------------------------------------------|
+| ------------------- | ----------------------------------------------- | ----------------------------------------------------------------- |
 | **Walking**         | The same day                                    | Walk several times a day to prevent clots                         |
 | **Showering**       | Day 1 or 2                                      | Pat the small wounds dry                                          |
 | **Driving**         | About 1 to 2 weeks                              | When you can brake firmly and are not taking strong pain medicine |
@@ -212,13 +212,13 @@ Many people feel better, but some find the changes difficult. A small increase i
 
 Table 13.4 groups the risks into the bands of Section 1.5. Replace figures marked “unit data” with your own audit figures.
 
-**Table 13.4.** *Material risks of sleeve gastrectomy and gastric bypass. Square brackets mark figures to replace with unit data.*
+**Table 13.4.** _Material risks of sleeve gastrectomy and gastric bypass. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                               | **Typical frequency**                                                           | **Example wording**                                                                                              |
-|----------------------|--------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| **Band**             | **Risk**                                               | **Typical frequency**                                                         | **Example wording**                                                                                              |
+| -------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | **Common**           | Reflux and esophagitis after sleeve                    | Esophagitis in about 31 in 100 at 10 years, against 7 in 100 after bypass [7] | “Heartburn is more common after a sleeve. It is usually treated with medicine; some people need a bypass later.” |
 | **Common**           | Nutritional deficiency without supplements             | Common, especially after bypass [9]                                           | “Without vitamins, most people become deficient over time.”                                                      |
-| **Common**           | Temporary hair thinning; loose skin                    | Many patients                                                                   | “Hair often thins for a few months and then recovers.”                                                           |
+| **Common**           | Temporary hair thinning; loose skin                    | Many patients                                                                 | “Hair often thins for a few months and then recovers.”                                                           |
 | **Less common**      | Leak from a staple line or join                        | [unit data]                                                                   | “Rarely, a leak happens. It may need a drain, a stent, or another operation.”                                    |
 | **Less common**      | Ulcer at the join after bypass; narrowing; gallstones  | [unit data]                                                                   | “Ulcers are more likely if you smoke or take anti-inflammatory medicines.”                                       |
 | **Less common**      | Internal hernia after bypass, months or years later    | [unit data]                                                                   | “Bowel can twist through a gap inside. Severe tummy pain needs urgent review.”                                   |
@@ -253,7 +253,7 @@ Table 13.4 groups the risks into the bands of Section 1.5. Replace figures marke
 
 After bariatric surgery, the usual signs of a leak or internal hernia can be subtle. A fast heart rate may be the only early sign of a leak, and a patient who cannot keep fluids down needs urgent review because of the risk of dehydration and thiamine deficiency.
 
-**Table 13.5.** *Green, amber, and red warning signs after bariatric surgery.*
+**Table 13.5.** _Green, amber, and red warning signs after bariatric surgery._
 
 <table>
 <colgroup>
@@ -318,7 +318,7 @@ After bariatric surgery, the usual signs of a leak or internal hernia can be sub
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Tick the operation the patient had, and add your unit’s name, the bariatric team’s phone number, and the review date before use.*
+_The following pages may be photocopied and given to patients. Tick the operation the patient had, and add your unit’s name, the bariatric team’s phone number, and the review date before use._
 
 <table>
 <colgroup>
@@ -371,7 +371,7 @@ After bariatric surgery, the usual signs of a leak or internal hernia can be sub
 
 **3. Eating and drinking**
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
 - Follow your dietitian’s plan for each stage.
 
@@ -390,7 +390,7 @@ After bariatric surgery, the usual signs of a leak or internal hernia can be sub
 **5. Getting back to normal**
 
 | **Activity**              | **Usually from**                                             |
-|---------------------------|--------------------------------------------------------------|
+| ------------------------- | ------------------------------------------------------------ |
 | **Walking**               | The same day. Walk more each day.                            |
 | **Driving**               | About 1 to 2 weeks                                           |
 | **Office work or school** | About 2 to 3 weeks                                           |
@@ -410,7 +410,7 @@ After bariatric surgery, the usual signs of a leak or internal hernia can be sub
 **7. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                                                                                                                   | **What to do**                                                            |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | **GREEN** | Mild tummy or shoulder pain that improves; feeling full quickly; tiredness; hair thinning                                                                                                                             | This is normal. Keep following this guide.                                |
 | **AMBER** | Vomiting after most meals; food sticking; heartburn; feeling faint or sweaty after eating; low mood or drinking more                                                                                                  | Call the bariatric team today.                                            |
 | **RED**   | Fast heartbeat, fever, or worsening tummy or left shoulder pain; cannot keep any fluids down for 12 hours; severe tummy pain; black stools or vomiting blood; confusion or double vision; chest pain or a swollen leg | Go to the emergency department now. Say you have had weight-loss surgery. |
@@ -454,4 +454,4 @@ After bariatric surgery, the usual signs of a leak or internal hernia can be sub
 
 11\. Arterburn DE, Courcoulas AP. Bariatric surgery for obesity and metabolic conditions in adults. BMJ. 2014;349:g3961.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
