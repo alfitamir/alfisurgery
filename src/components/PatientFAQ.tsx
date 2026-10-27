@@ -116,9 +116,9 @@ type FaqLanguage = keyof typeof faq;
 
 export function PatientFAQ() {
   const { language } = useSiteLanguage();
+  const [open, setOpen] = useState<number | null>(0);
   if (language !== "ar" && language !== "en") return null;
   const content = faq[language as FaqLanguage];
-  const [open, setOpen] = useState<number | null>(0);
 
   return (
     <section
