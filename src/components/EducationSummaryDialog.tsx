@@ -1,5 +1,11 @@
 import { Sparkles } from "lucide-react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { educationSummaries } from "@/data/patient-education-summaries";
 import type { PatientEducationEntry } from "@/data/patient-education";
 import { Button } from "@/components/ui/button";
@@ -24,10 +30,7 @@ export function EducationSummaryDialog({ entry, image, lang = "en" }: Props) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button
-          variant="outline" size="sm"
-          aria-label={`${label} — ${title}`}
-        >
+        <Button variant="outline" size="sm" aria-label={`${label} — ${title}`}>
           <Sparkles className="h-4 w-4" />
           {label}
         </Button>
@@ -52,7 +55,7 @@ export function EducationSummaryDialog({ entry, image, lang = "en" }: Props) {
           </p>
         </DialogHeader>
         <div className="px-6 pb-6 pt-5 space-y-3">
-          <PatientGuideContent id={entry.id}/>
+          <PatientGuideContent id={entry.id} />
         </div>
       </DialogContent>
     </Dialog>
