@@ -23,10 +23,10 @@ Pilonidal disease mainly affects young adults, often students, soldiers, drivers
 </tbody>
 </table>
 
-**Table 8.1.** *Pilonidal disease at a glance.*
+**Table 8.1.** _Pilonidal disease at a glance._
 
 | **At a glance**                     |                                                                                                                                                                     |
-|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Who it affects**                  | Mostly young adults, more often men, with hair in the natal cleft and long periods of sitting                                                                       |
 | **Forms of disease**                | Asymptomatic pits, an acute abscess, or chronic discharging disease                                                                                                 |
 | **Main treatments**                 | Abscess drainage; minimally invasive procedures; excision with off-midline closure; excision left open                                                              |
@@ -40,9 +40,9 @@ Pilonidal disease mainly affects young adults, often students, soldiers, drivers
 
 Guidelines distinguish three presentations [1, 2]. Pits found by chance without symptoms do not need treatment. An acute abscess needs prompt drainage, and the incision is best placed to one side of the midline [3]; many patients need no further surgery, and a definitive procedure is offered if symptoms return. Chronic disease, with recurring discharge or pain, is treated with a definitive procedure chosen according to its extent: minimally invasive techniques for simple disease, and excision for extensive or recurrent disease [2]. Figure 8.1 summarizes the approach.
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 8.1.** Matching the treatment to the form of pilonidal disease.*
+_**Figure 8.1.** Matching the treatment to the form of pilonidal disease._
 
 ## 8.2 The counseling script
 
@@ -65,10 +65,10 @@ Guidelines distinguish three presentations [1, 2]. Pits found by chance without 
 
 Recurrence after pilonidal surgery depends strongly on the technique and on how long patients are followed. In a large meta-analysis, excision with closure in the midline had a recurrence of about 17 in 100 at 5 years, compared with about 2 in 100 after the Karydakis or Bascom cleft-lift operations, which close the wound to one side of the midline; recurrence after midline closure continued to rise over 20 years [4]. Midline closure should therefore be avoided [1]. Minimally invasive procedures cause less pain and allow a quicker return to work, and are suitable for simple disease, accepting a higher chance of recurrence [1, 2]. Table 8.2 compares the options for patients.
 
-**Table 8.2.** *Treatment options for chronic pilonidal disease, for use with patients.*
+**Table 8.2.** _Treatment options for chronic pilonidal disease, for use with patients._
 
-| **Option**                                                                   | **What it involves**                                                   | **Recovery**                                                         | **Recurrence**                                                 |
-|------------------------------------------------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------------|
+| **Option**                                                                   | **What it involves**                                                   | **Recovery**                                                         | **Recurrence**                                               |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Minimally invasive (pit picking, endoscopic, or laser)**                   | Pits removed through tiny cuts; tunnels cleaned                        | Back to study or work within days; small wounds heal in 3 to 4 weeks | Higher than after flaps [unit data]                          |
 | **Excision with off-midline closure (Karydakis, cleft lift, rhomboid flap)** | Diseased tissue removed; skin closed to one side, flattening the cleft | About 2 weeks off; may have a drain for a few days                   | Low: about 2 in 100 at 5 years after Karydakis or Bascom [4] |
 | **Excision left open**                                                       | Diseased tissue removed; wound heals from the base                     | Daily dressings; healing often takes 6 to 12 weeks or more           | [unit data]                                                  |
@@ -108,10 +108,10 @@ Wound care differs with the type of operation, and patients need clear, written 
 
 Table 8.3 and Figure 8.2 give typical times. Patients should be told that open wounds vary greatly in healing time with their size.
 
-**Table 8.3.** *Typical recovery after pilonidal surgery.*
+**Table 8.3.** _Typical recovery after pilonidal surgery._
 
 | **Activity**              | **Minimally invasive**     | **Off-midline flap**                                               | **Open wound**                                |
-|---------------------------|----------------------------|--------------------------------------------------------------------|-----------------------------------------------|
+| ------------------------- | -------------------------- | ------------------------------------------------------------------ | --------------------------------------------- |
 | **Showering**             | The next day               | After 1 to 2 days                                                  | The next day, daily                           |
 | **Sitting comfortably**   | Within a few days          | About 2 weeks; use a cushion and avoid long sitting                | Within about 1 week, with a cushion           |
 | **Driving**               | Within a few days          | About 2 weeks                                                      | When sitting is comfortable                   |
@@ -121,9 +121,9 @@ Table 8.3 and Figure 8.2 give typical times. Patients should be told that open w
 | **Prayer**                | Unchanged; a cushion helps | Pray seated on a chair if sitting on the floor stretches the wound | Pray seated if needed; protect the dressing   |
 | **Ramadan fasting**       | Unchanged                  | When eating normally                                               | Unchanged; keep up fluids for healing         |
 
-*[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]*
+_[Figure — diagram omitted in this text edition; see the figure caption below and the Word chapter file for the image]_
 
-***Figure 8.2.** Recovery after minimally invasive treatment, off-midline flap, and open healing, for use with patients.*
+_**Figure 8.2.** Recovery after minimally invasive treatment, off-midline flap, and open healing, for use with patients._
 
 **STEP 3 Questions patients ask**
 
@@ -173,11 +173,11 @@ This is extremely rare and happens only in disease left untreated for many years
 
 Table 8.4 groups the risks into the bands of Section 1.5. Replace figures marked “unit data” with your own audit figures.
 
-**Table 8.4.** *Material risks of pilonidal surgery. Square brackets mark figures to replace with unit data.*
+**Table 8.4.** _Material risks of pilonidal surgery. Square brackets mark figures to replace with unit data._
 
-| **Band**             | **Risk**                                                                        | **Typical frequency**                                     | **Example wording**                                                           |
-|----------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------------------------------|
-| **Common**           | Pain, discharge, and wound care for weeks                                       | Most patients; longest with open wounds                   | “You will need wound care for some weeks, longest if the wound is left open.” |
+| **Band**             | **Risk**                                                                        | **Typical frequency**                                   | **Example wording**                                                           |
+| -------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| **Common**           | Pain, discharge, and wound care for weeks                                       | Most patients; longest with open wounds                 | “You will need wound care for some weeks, longest if the wound is left open.” |
 | **Common**           | Recurrence after minimally invasive treatment                                   | [unit data]                                             | “Small procedures come back more often, but can be repeated.”                 |
 | **Less common**      | Wound infection or breakdown after closure                                      | [unit data]                                             | “Sometimes part of the wound opens and then heals with dressings.”            |
 | **Less common**      | Fluid collection under a flap                                                   | [unit data]                                             | “Fluid can collect under the skin and may need draining in clinic.”           |
@@ -207,7 +207,7 @@ Table 8.4 groups the risks into the bands of Section 1.5. Replace figures marked
 
 ## 8.9 Warning signs
 
-**Table 8.5.** *Green, amber, and red warning signs after pilonidal surgery.*
+**Table 8.5.** _Green, amber, and red warning signs after pilonidal surgery._
 
 <table>
 <colgroup>
@@ -269,7 +269,7 @@ Table 8.4 groups the risks into the bands of Section 1.5. Replace figures marked
 
 **STEP 5 Patient education guide**
 
-*The following pages may be photocopied and given to patients. Tick the treatment the patient had, and add your unit’s name, phone numbers, and review date before use.*
+_The following pages may be photocopied and given to patients. Tick the treatment the patient had, and add your unit’s name, phone numbers, and review date before use._
 
 <table>
 <colgroup>
@@ -337,7 +337,7 @@ Loose hairs collect in the groove between the buttocks. Sitting and sweating pus
 These are usual times. Your own plan is on your card.
 
 | **Activity**              | **Small procedure** | **Flap**                                      | **Open wound**              |
-|---------------------------|---------------------|-----------------------------------------------|-----------------------------|
+| ------------------------- | ------------------- | --------------------------------------------- | --------------------------- |
 | **School or office work** | Within a few days   | About 2 weeks                                 | Often 1 to 2 weeks          |
 | **Driving**               | Within a few days   | About 2 weeks                                 | When sitting is comfortable |
 | **Sport and gym**         | About 2 weeks       | About 4 weeks                                 | About 4 weeks               |
@@ -353,7 +353,7 @@ These are usual times. Your own plan is on your card.
 **7. Warning signs: when to get help**
 
 | **Level** | **What you notice**                                                                                                      | **What to do**                                                |
-|-----------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| --------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- |
 | **GREEN** | Soreness that improves each week; a little clear or pink discharge; itching as it heals                                  | This is normal. Keep following this guide.                    |
 | **AMBER** | More redness, swelling, or pain; thick or smelly discharge; temperature of 38 °C or more; part of a closed wound opening | Call us today.                                                |
 | **RED**   | Fever with shivering and spreading redness; heavy bleeding; feeling very unwell                                          | Go to the emergency department now. Take this guide with you. |
@@ -383,4 +383,4 @@ These are usual times. Your own plan is on your card.
 
 4\. Stauffer VK, Luedi MM, Kauf P, et al. Common surgical procedures in pilonidal sinus disease: a meta-analysis, merged data analysis, and comprehensive study on recurrence. Sci Rep. 2018;8(1):3058.
 
-*Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log.*
+_Note: references are numbered within this chapter for the pilot. Items marked in square brackets are collected in the Author Fill-in and Verification Log._
