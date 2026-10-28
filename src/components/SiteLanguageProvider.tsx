@@ -41,7 +41,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
   const searchLanguage = useRouterState({ select: (state) => state.location.search.lang });
   const initialLanguage: SiteLanguage =
     searchLanguage && siteLanguages.some((item) => item.code === searchLanguage)
-      ? searchLanguage
+      ? (searchLanguage as SiteLanguage)
       : pathname.startsWith("/ar") || pathname.startsWith("/articles")
         ? "ar"
         : "en";
