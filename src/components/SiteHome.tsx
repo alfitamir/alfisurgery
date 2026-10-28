@@ -153,7 +153,11 @@ export function SiteHome() {
               </span>
             </div>
           </Link>
-          <Link to={professional} className="home-audience-card home-audience-professional group">
+          <Link
+            to="/research"
+            search={isArabic ? { lang: "ar" } : {}}
+            className="home-audience-card home-audience-professional group"
+          >
             <img src={researchImage} alt="" aria-hidden loading="lazy" />
             <div className="home-audience-overlay" />
             <div className="relative z-10 flex min-h-72 flex-col justify-end p-6 text-white md:min-h-80 md:p-8">
