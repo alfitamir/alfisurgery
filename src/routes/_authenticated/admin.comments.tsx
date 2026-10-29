@@ -57,7 +57,6 @@ function AdminCommentsPage() {
       {isLoading && <Loader2 className="animate-spin" />}
       {error && <p className="text-destructive">تعذر التحميل.</p>}
       {data && data.length === 0 && <p className="text-muted-foreground">لا توجد تعليقات.</p>}
-      {data && data.length > 0 && !data.some(Boolean) ? null : null}
       <ul className="space-y-3">
         {data?.map((r) => (
           <li
