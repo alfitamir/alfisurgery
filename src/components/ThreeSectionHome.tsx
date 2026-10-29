@@ -3,9 +3,7 @@ import type { LucideIcon } from "lucide-react";
 import {
   BookOpen,
   ClipboardCheck,
-  GraduationCap,
   HeartPulse,
-  Megaphone,
   Microscope,
   Newspaper,
   Play,
@@ -24,11 +22,14 @@ import { preventionCopy } from "@/data/prevention";
 import { postsCommentsCopy } from "@/data/posts-comments-copy";
 import { showsVideos, translatedText } from "@/lib/site-language";
 import heroPortrait from "@/assets/dr-elalfy-hero.webp";
-import { HomeSectionMenus, homeMenuLabels } from "@/components/HomeSectionMenus";
 import { PatientComments } from "@/components/PatientComments";
 import { DailyArticle } from "@/components/DailyArticle";
 import { BooksShowcase } from "@/components/BooksShowcase";
 import { contactLinks } from "@/components/SiteNavigation";
+
+const homeContactLinks = contactLinks.filter((link) =>
+  /^(tel:|https:\/\/wa\.me|https:\/\/mdh|https:\/\/www\.google\.com\/maps)/.test(link.href),
+);
 
 type Destination =
   | "/patients"
@@ -80,16 +81,12 @@ export function ThreeSectionHome() {
   const t = navigationCopy[language];
   const s = sectionCopy[language];
   const h = homeCopy[language];
-  const l = homeMenuLabels[language];
   const pc = postsCommentsCopy[language];
   const patients = language === "ar" ? "/ar/patients" : "/patients";
 
   const doctorTiles: Tile[] = [
     { label: t.profile, to: "/profile", icon: UserRound },
     { label: t.research, to: "/research", icon: Microscope },
-    { label: l[6], to: "/publications", icon: BookOpen },
-    { label: t.teaching, to: "/teaching", icon: GraduationCap },
-    { label: t.updates, to: "/updates", icon: Megaphone },
     { label: pc.postsTitle, to: "/posts", icon: Newspaper },
   ];
   const patientTiles: Tile[] = [
@@ -104,43 +101,7 @@ export function ThreeSectionHome() {
 
   return (
     <main data-no-translate lang={language} className="home-refresh">
-      <DailyArticle />
-
       <div className="mx-auto grid max-w-6xl gap-6 px-5 py-8 md:grid-cols-2 md:px-8 md:py-10">
-        <section
-          aria-labelledby="home-doctor"
-          className="home-enter min-w-0 rounded-md border border-border border-t-4 border-t-gold bg-card p-5 md:p-6"
-        >
-          <h2
-            id="home-doctor"
-            className="flex items-center gap-2 text-2xl font-bold text-home-doctor md:text-3xl"
-          >
-            <Stethoscope className="size-6 shrink-0 text-gold" />
-            {s.doctor}
-          </h2>
-          <div className="mt-5 grid grid-cols-[96px_minmax(0,1fr)] items-center gap-4 sm:grid-cols-[120px_minmax(0,1fr)]">
-            <img
-              src={heroPortrait}
-              alt={t.name}
-              width={120}
-              height={140}
-              fetchPriority="high"
-              className="aspect-[6/7] w-full rounded-md object-cover object-[70%_top]"
-            />
-            <div className="min-w-0">
-              <p className="text-lg font-bold leading-snug">{t.name}</p>
-              <p className="mt-1 text-sm font-medium text-home-doctor">{t.role}</p>
-              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{t.location}</p>
-            </div>
-          </div>
-          <p className="mt-4 text-sm leading-loose text-muted-foreground">{s.doctorText}</p>
-          <nav aria-label={s.doctor} className="mt-5 grid gap-3 sm:grid-cols-2">
-            {doctorTiles.map((tile) => (
-              <TileLink key={tile.to} tile={tile} language={language} accent="doctor" />
-            ))}
-          </nav>
-        </section>
-
         <section
           aria-labelledby="home-patient"
           className="home-enter min-w-0 rounded-md border border-border border-t-4 border-t-home-patient bg-card p-5 md:p-6"
@@ -176,7 +137,43 @@ export function ThreeSectionHome() {
           </nav>
           <p className="mt-4 text-xs leading-relaxed text-muted-foreground">{t.warning}</p>
         </section>
+
+        <section
+          aria-labelledby="home-doctor"
+          className="home-enter min-w-0 rounded-md border border-border border-t-4 border-t-gold bg-card p-5 md:p-6"
+        >
+          <h2
+            id="home-doctor"
+            className="flex items-center gap-2 text-2xl font-bold text-home-doctor md:text-3xl"
+          >
+            <Stethoscope className="size-6 shrink-0 text-gold" />
+            {s.doctor}
+          </h2>
+          <div className="mt-5 grid grid-cols-[96px_minmax(0,1fr)] items-center gap-4 sm:grid-cols-[120px_minmax(0,1fr)]">
+            <img
+              src={heroPortrait}
+              alt={t.name}
+              width={120}
+              height={140}
+              fetchPriority="high"
+              className="aspect-[6/7] w-full rounded-md object-cover object-[70%_top]"
+            />
+            <div className="min-w-0">
+              <p className="text-lg font-bold leading-snug">{t.name}</p>
+              <p className="mt-1 text-sm font-medium text-home-doctor">{t.role}</p>
+              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{t.location}</p>
+            </div>
+          </div>
+          <p className="mt-4 text-sm leading-loose text-muted-foreground">{s.doctorText}</p>
+          <nav aria-label={s.doctor} className="mt-5 grid gap-3 sm:grid-cols-2">
+            {doctorTiles.map((tile) => (
+              <TileLink key={tile.to} tile={tile} language={language} accent="doctor" />
+            ))}
+          </nav>
+        </section>
       </div>
+
+      <DailyArticle />
 
       <BooksShowcase />
 
@@ -190,7 +187,7 @@ export function ThreeSectionHome() {
           </h2>
           <p className="mt-3 text-sm leading-loose text-muted-foreground">{s.contactText}</p>
           <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {contactLinks.map((link) => (
+            {homeContactLinks.map((link) => (
               <li key={link.href} className="min-w-0">
                 <a
                   href={link.href}
@@ -206,6 +203,13 @@ export function ThreeSectionHome() {
               </li>
             ))}
           </ul>
+          <Link
+            to="/contact"
+            search={{ lang: language } as never}
+            className="mt-4 inline-flex text-sm font-semibold text-primary underline underline-offset-4"
+          >
+            {t.contact}
+          </Link>
         </div>
       </section>
     </main>
