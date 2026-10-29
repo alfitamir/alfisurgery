@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { isRtl, siteLanguages } from "../src/lib/site-language.ts";
 import {
   isPatientCommentCooldownActive,
@@ -26,5 +27,23 @@ assert.equal(isPatientCommentCooldownActive(now - 30_000, now), true);
 assert.equal(isPatientCommentCooldownActive(now - PATIENT_COMMENT_COOLDOWN_MS, now), false);
 assert.equal(isPatientCommentCooldownActive("not-a-timestamp", now), false);
 assert.equal(isPatientCommentCooldownActive(null, now), false);
+
+const commentClient = readFileSync("src/components/PatientComments.tsx", "utf8");
+const commentEndpoint = readFileSync("src/routes/api/public/patient-comments.ts", "utf8");
+const limiterMigration = readFileSync("drizzle/migrations/0005_patient_comment_rate_limits.sql", "utf8");
+const policyMigration = readFileSync("drizzle/migrations/0006_restrict_direct_patient_comment_inserts.sql", "utf8");
+
+assert.match(commentClient, /fetch\("\/api\/public\/patient-comments"/);
+assert.doesNotMatch(commentClient, /from\("patient_comments"\)\.insert/);
+assert.match(commentEndpoint, /cf-connecting-ip/);
+assert.match(commentEndpoint, /HMAC/);
+assert.match(commentEndpoint, /consume_patient_comment_rate_limit/);
+assert.match(commentEndpoint, /status: 429/);
+assert.match(commentEndpoint, /Fail closed/);
+assert.match(limiterMigration, /SECURITY DEFINER/);
+assert.match(limiterMigration, /REVOKE ALL ON FUNCTION/);
+assert.doesNotMatch(limiterMigration, /REVOKE INSERT ON TABLE public\.patient_comments/);
+assert.match(policyMigration, /DROP POLICY IF EXISTS "Public add comments"/);
+assert.match(policyMigration, /REVOKE INSERT ON TABLE public\.patient_comments FROM anon, authenticated/);
 
 console.log("Foundation checks passed.");
