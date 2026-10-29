@@ -1,0 +1,610 @@
+path,title,section,audience,language,word_count,has_images,has_references,translation_status,issues
+/,Home,page,A,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/ar/,Home,page,A,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/,Home,page,A,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/,Home,page,A,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/,Home,page,A,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/,Home,page,A,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/,Home,page,A,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/patients,Patients hub,page,A,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/ar/patients,Patients hub,page,A,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/patients,Patients hub,page,A,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/patients,Patients hub,page,A,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/patients,Patients hub,page,A,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/patients,Patients hub,page,A,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/patients,Patients hub,page,A,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/prevention,Prevention,page,A,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/prevention,Prevention,page,A,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/prevention,Prevention,page,A,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/prevention,Prevention,page,A,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/prevention,Prevention,page,A,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/prevention,Prevention,page,A,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/prevention,Prevention,page,A,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/articles,Articles archive,page,A,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/articles,Articles archive,page,A,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/articles,Articles archive,page,A,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/articles,Articles archive,page,A,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/articles,Articles archive,page,A,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/articles,Articles archive,page,A,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/articles,Articles archive,page,A,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/videos,Videos,page,A,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/videos,Videos,page,A,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/videos,Videos,page,A,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/videos,Videos,page,A,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/videos,Videos,page,A,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/videos,Videos,page,A,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/videos,Videos,page,A,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/posts,Surgical updates,page,B,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/posts,Surgical updates,page,B,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/posts,Surgical updates,page,B,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/posts,Surgical updates,page,B,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/posts,Surgical updates,page,B,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/posts,Surgical updates,page,B,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/posts,Surgical updates,page,B,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/profile,Profile,page,B,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/profile,Profile,page,B,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/profile,Profile,page,B,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/profile,Profile,page,B,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/profile,Profile,page,B,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/profile,Profile,page,B,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/profile,Profile,page,B,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/research,Research,page,B,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/research,Research,page,B,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/research,Research,page,B,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/research,Research,page,B,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/research,Research,page,B,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/research,Research,page,B,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/research,Research,page,B,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/publications,Publications,page,B,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/publications,Publications,page,B,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/publications,Publications,page,B,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/publications,Publications,page,B,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/publications,Publications,page,B,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/publications,Publications,page,B,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/publications,Publications,page,B,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/teaching,Teaching,page,B,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/teaching,Teaching,page,B,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/teaching,Teaching,page,B,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/teaching,Teaching,page,B,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/teaching,Teaching,page,B,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/teaching,Teaching,page,B,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/teaching,Teaching,page,B,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/updates,Updates,page,B,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/updates,Updates,page,B,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/updates,Updates,page,B,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/updates,Updates,page,B,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/updates,Updates,page,B,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/updates,Updates,page,B,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/updates,Updates,page,B,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/books,Books,page,B,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/books,Books,page,B,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/books,Books,page,B,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/books,Books,page,B,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/books,Books,page,B,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/books,Books,page,B,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/books,Books,page,B,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/contact,Contact,page,A,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/contact,Contact,page,A,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/contact,Contact,page,A,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/contact,Contact,page,A,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/contact,Contact,page,A,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/contact,Contact,page,A,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/contact,Contact,page,A,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/medical-questions,Medical questions,page,A,en,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/ar/medical-questions,Medical questions,page,A,ar,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/medical-questions,Medical questions,page,A,ur,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/medical-questions,Medical questions,page,A,hi,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/medical-questions,Medical questions,page,A,bn,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/medical-questions,Medical questions,page,A,tl,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/medical-questions,Medical questions,page,A,ta,,unknown,unknown,unknown,Current route; query-string language or missing path edition may apply
+/guides/appendectomy,Appendectomy,operation guide,A,en,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/appendectomy,Appendectomy,operation guide,A,ar,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/appendectomy,Appendectomy,operation guide,A,ur,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/appendectomy,Appendectomy,operation guide,A,hi,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/appendectomy,Appendectomy,operation guide,A,bn,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/appendectomy,Appendectomy,operation guide,A,tl,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/appendectomy,Appendectomy,operation guide,A,ta,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/cholecystectomy,Laparoscopic Cholecystectomy,operation guide,A,en,22,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/cholecystectomy,Laparoscopic Cholecystectomy,operation guide,A,ar,22,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/cholecystectomy,Laparoscopic Cholecystectomy,operation guide,A,ur,22,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/cholecystectomy,Laparoscopic Cholecystectomy,operation guide,A,hi,22,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/cholecystectomy,Laparoscopic Cholecystectomy,operation guide,A,bn,22,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/cholecystectomy,Laparoscopic Cholecystectomy,operation guide,A,tl,22,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/cholecystectomy,Laparoscopic Cholecystectomy,operation guide,A,ta,22,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/inguinal-hernia,Laparoscopic Inguinal Hernia Repair,operation guide,A,en,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/inguinal-hernia,Laparoscopic Inguinal Hernia Repair,operation guide,A,ar,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/inguinal-hernia,Laparoscopic Inguinal Hernia Repair,operation guide,A,ur,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/inguinal-hernia,Laparoscopic Inguinal Hernia Repair,operation guide,A,hi,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/inguinal-hernia,Laparoscopic Inguinal Hernia Repair,operation guide,A,bn,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/inguinal-hernia,Laparoscopic Inguinal Hernia Repair,operation guide,A,tl,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/inguinal-hernia,Laparoscopic Inguinal Hernia Repair,operation guide,A,ta,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ventral-hernia,Laparoscopic Paraumbilical / Ventral Hernia Repair,operation guide,A,en,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ventral-hernia,Laparoscopic Paraumbilical / Ventral Hernia Repair,operation guide,A,ar,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ventral-hernia,Laparoscopic Paraumbilical / Ventral Hernia Repair,operation guide,A,ur,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ventral-hernia,Laparoscopic Paraumbilical / Ventral Hernia Repair,operation guide,A,hi,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ventral-hernia,Laparoscopic Paraumbilical / Ventral Hernia Repair,operation guide,A,bn,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ventral-hernia,Laparoscopic Paraumbilical / Ventral Hernia Repair,operation guide,A,tl,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ventral-hernia,Laparoscopic Paraumbilical / Ventral Hernia Repair,operation guide,A,ta,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/haemorrhoidectomy,Hemorrhoidectomy,operation guide,A,en,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/haemorrhoidectomy,Hemorrhoidectomy,operation guide,A,ar,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/haemorrhoidectomy,Hemorrhoidectomy,operation guide,A,ur,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/haemorrhoidectomy,Hemorrhoidectomy,operation guide,A,hi,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/haemorrhoidectomy,Hemorrhoidectomy,operation guide,A,bn,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/haemorrhoidectomy,Hemorrhoidectomy,operation guide,A,tl,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/haemorrhoidectomy,Hemorrhoidectomy,operation guide,A,ta,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/breast-lump,Breast Lump — Evaluation & Surgery,operation guide,A,en,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/breast-lump,Breast Lump — Evaluation & Surgery,operation guide,A,ar,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/breast-lump,Breast Lump — Evaluation & Surgery,operation guide,A,ur,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/breast-lump,Breast Lump — Evaluation & Surgery,operation guide,A,hi,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/breast-lump,Breast Lump — Evaluation & Surgery,operation guide,A,bn,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/breast-lump,Breast Lump — Evaluation & Surgery,operation guide,A,tl,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/breast-lump,Breast Lump — Evaluation & Surgery,operation guide,A,ta,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/fibroadenosis,Fibrocystic Breast Changes (Fibroadenosis),operation guide,A,en,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/fibroadenosis,Fibrocystic Breast Changes (Fibroadenosis),operation guide,A,ar,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/fibroadenosis,Fibrocystic Breast Changes (Fibroadenosis),operation guide,A,ur,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/fibroadenosis,Fibrocystic Breast Changes (Fibroadenosis),operation guide,A,hi,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/fibroadenosis,Fibrocystic Breast Changes (Fibroadenosis),operation guide,A,bn,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/fibroadenosis,Fibrocystic Breast Changes (Fibroadenosis),operation guide,A,tl,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/fibroadenosis,Fibrocystic Breast Changes (Fibroadenosis),operation guide,A,ta,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/abscess-drainage,Incision & Drainage of Abscess (Local Anesthesia),operation guide,A,en,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/abscess-drainage,Incision & Drainage of Abscess (Local Anesthesia),operation guide,A,ar,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/abscess-drainage,Incision & Drainage of Abscess (Local Anesthesia),operation guide,A,ur,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/abscess-drainage,Incision & Drainage of Abscess (Local Anesthesia),operation guide,A,hi,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/abscess-drainage,Incision & Drainage of Abscess (Local Anesthesia),operation guide,A,bn,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/abscess-drainage,Incision & Drainage of Abscess (Local Anesthesia),operation guide,A,tl,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/abscess-drainage,Incision & Drainage of Abscess (Local Anesthesia),operation guide,A,ta,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ingrowing-nail,Wedge Excision of Ingrowing Toenail (Local Anesthesia),operation guide,A,en,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ingrowing-nail,Wedge Excision of Ingrowing Toenail (Local Anesthesia),operation guide,A,ar,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ingrowing-nail,Wedge Excision of Ingrowing Toenail (Local Anesthesia),operation guide,A,ur,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ingrowing-nail,Wedge Excision of Ingrowing Toenail (Local Anesthesia),operation guide,A,hi,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ingrowing-nail,Wedge Excision of Ingrowing Toenail (Local Anesthesia),operation guide,A,bn,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ingrowing-nail,Wedge Excision of Ingrowing Toenail (Local Anesthesia),operation guide,A,tl,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/ingrowing-nail,Wedge Excision of Ingrowing Toenail (Local Anesthesia),operation guide,A,ta,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/wrist-ganglion,Dorsal Wrist Ganglion Excision,operation guide,A,en,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/wrist-ganglion,Dorsal Wrist Ganglion Excision,operation guide,A,ar,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/wrist-ganglion,Dorsal Wrist Ganglion Excision,operation guide,A,ur,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/wrist-ganglion,Dorsal Wrist Ganglion Excision,operation guide,A,hi,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/wrist-ganglion,Dorsal Wrist Ganglion Excision,operation guide,A,bn,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/wrist-ganglion,Dorsal Wrist Ganglion Excision,operation guide,A,tl,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/wrist-ganglion,Dorsal Wrist Ganglion Excision,operation guide,A,ta,16,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/stoma-reversal-pelvic-floor,Stoma Reversal — Pelvic Floor Preparation,operation guide,A,en,26,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/stoma-reversal-pelvic-floor,Stoma Reversal — Pelvic Floor Preparation,operation guide,A,ar,26,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/stoma-reversal-pelvic-floor,Stoma Reversal — Pelvic Floor Preparation,operation guide,A,ur,26,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/stoma-reversal-pelvic-floor,Stoma Reversal — Pelvic Floor Preparation,operation guide,A,hi,26,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/stoma-reversal-pelvic-floor,Stoma Reversal — Pelvic Floor Preparation,operation guide,A,bn,26,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/stoma-reversal-pelvic-floor,Stoma Reversal — Pelvic Floor Preparation,operation guide,A,tl,26,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/stoma-reversal-pelvic-floor,Stoma Reversal — Pelvic Floor Preparation,operation guide,A,ta,26,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-inguinal-hernia,Open Inguinal Hernia Repair (Lichtenstein),operation guide,A,en,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-inguinal-hernia,Open Inguinal Hernia Repair (Lichtenstein),operation guide,A,ar,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-inguinal-hernia,Open Inguinal Hernia Repair (Lichtenstein),operation guide,A,ur,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-inguinal-hernia,Open Inguinal Hernia Repair (Lichtenstein),operation guide,A,hi,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-inguinal-hernia,Open Inguinal Hernia Repair (Lichtenstein),operation guide,A,bn,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-inguinal-hernia,Open Inguinal Hernia Repair (Lichtenstein),operation guide,A,tl,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-inguinal-hernia,Open Inguinal Hernia Repair (Lichtenstein),operation guide,A,ta,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-ventral-hernia,Open Paraumbilical / Ventral Hernia Repair,operation guide,A,en,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-ventral-hernia,Open Paraumbilical / Ventral Hernia Repair,operation guide,A,ar,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-ventral-hernia,Open Paraumbilical / Ventral Hernia Repair,operation guide,A,ur,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-ventral-hernia,Open Paraumbilical / Ventral Hernia Repair,operation guide,A,hi,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-ventral-hernia,Open Paraumbilical / Ventral Hernia Repair,operation guide,A,bn,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-ventral-hernia,Open Paraumbilical / Ventral Hernia Repair,operation guide,A,tl,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/open-ventral-hernia,Open Paraumbilical / Ventral Hernia Repair,operation guide,A,ta,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pediatric-hernia,Pediatric Inguinal Hernia Repair,operation guide,A,en,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pediatric-hernia,Pediatric Inguinal Hernia Repair,operation guide,A,ar,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pediatric-hernia,Pediatric Inguinal Hernia Repair,operation guide,A,ur,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pediatric-hernia,Pediatric Inguinal Hernia Repair,operation guide,A,hi,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pediatric-hernia,Pediatric Inguinal Hernia Repair,operation guide,A,bn,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pediatric-hernia,Pediatric Inguinal Hernia Repair,operation guide,A,tl,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pediatric-hernia,Pediatric Inguinal Hernia Repair,operation guide,A,ta,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/plastibell-circumcision,Plastibell Circumcision,operation guide,A,en,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/plastibell-circumcision,Plastibell Circumcision,operation guide,A,ar,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/plastibell-circumcision,Plastibell Circumcision,operation guide,A,ur,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/plastibell-circumcision,Plastibell Circumcision,operation guide,A,hi,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/plastibell-circumcision,Plastibell Circumcision,operation guide,A,bn,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/plastibell-circumcision,Plastibell Circumcision,operation guide,A,tl,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/plastibell-circumcision,Plastibell Circumcision,operation guide,A,ta,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-abscess,Perianal Abscess — Incision & Drainage,operation guide,A,en,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-abscess,Perianal Abscess — Incision & Drainage,operation guide,A,ar,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-abscess,Perianal Abscess — Incision & Drainage,operation guide,A,ur,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-abscess,Perianal Abscess — Incision & Drainage,operation guide,A,hi,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-abscess,Perianal Abscess — Incision & Drainage,operation guide,A,bn,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-abscess,Perianal Abscess — Incision & Drainage,operation guide,A,tl,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-abscess,Perianal Abscess — Incision & Drainage,operation guide,A,ta,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-fistula,Perianal Fistula — Surgical Treatment,operation guide,A,en,14,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-fistula,Perianal Fistula — Surgical Treatment,operation guide,A,ar,14,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-fistula,Perianal Fistula — Surgical Treatment,operation guide,A,ur,14,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-fistula,Perianal Fistula — Surgical Treatment,operation guide,A,hi,14,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-fistula,Perianal Fistula — Surgical Treatment,operation guide,A,bn,14,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-fistula,Perianal Fistula — Surgical Treatment,operation guide,A,tl,14,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/perianal-fistula,Perianal Fistula — Surgical Treatment,operation guide,A,ta,14,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-abscess,Pilonidal Abscess — Incision & Drainage,operation guide,A,en,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-abscess,Pilonidal Abscess — Incision & Drainage,operation guide,A,ar,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-abscess,Pilonidal Abscess — Incision & Drainage,operation guide,A,ur,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-abscess,Pilonidal Abscess — Incision & Drainage,operation guide,A,hi,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-abscess,Pilonidal Abscess — Incision & Drainage,operation guide,A,bn,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-abscess,Pilonidal Abscess — Incision & Drainage,operation guide,A,tl,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-abscess,Pilonidal Abscess — Incision & Drainage,operation guide,A,ta,17,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-sinus,Pilonidal Sinus — Definitive Surgery,operation guide,A,en,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-sinus,Pilonidal Sinus — Definitive Surgery,operation guide,A,ar,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-sinus,Pilonidal Sinus — Definitive Surgery,operation guide,A,ur,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-sinus,Pilonidal Sinus — Definitive Surgery,operation guide,A,hi,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-sinus,Pilonidal Sinus — Definitive Surgery,operation guide,A,bn,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-sinus,Pilonidal Sinus — Definitive Surgery,operation guide,A,tl,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/pilonidal-sinus,Pilonidal Sinus — Definitive Surgery,operation guide,A,ta,18,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/lipoma-excision,Lipoma Excision (Local Anesthesia),operation guide,A,en,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/lipoma-excision,Lipoma Excision (Local Anesthesia),operation guide,A,ar,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/lipoma-excision,Lipoma Excision (Local Anesthesia),operation guide,A,ur,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/lipoma-excision,Lipoma Excision (Local Anesthesia),operation guide,A,hi,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/lipoma-excision,Lipoma Excision (Local Anesthesia),operation guide,A,bn,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/lipoma-excision,Lipoma Excision (Local Anesthesia),operation guide,A,tl,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/lipoma-excision,Lipoma Excision (Local Anesthesia),operation guide,A,ta,20,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/thyroidectomy,Thyroidectomy,operation guide,A,en,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/thyroidectomy,Thyroidectomy,operation guide,A,ar,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/thyroidectomy,Thyroidectomy,operation guide,A,ur,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/thyroidectomy,Thyroidectomy,operation guide,A,hi,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/thyroidectomy,Thyroidectomy,operation guide,A,bn,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/thyroidectomy,Thyroidectomy,operation guide,A,tl,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/thyroidectomy,Thyroidectomy,operation guide,A,ta,19,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/hidradenitis-suppurativa,Hidradenitis Suppurativa (HS) — Patient Guide,operation guide,A,en,39,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/hidradenitis-suppurativa,Hidradenitis Suppurativa (HS) — Patient Guide,operation guide,A,ar,39,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/hidradenitis-suppurativa,Hidradenitis Suppurativa (HS) — Patient Guide,operation guide,A,ur,39,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/hidradenitis-suppurativa,Hidradenitis Suppurativa (HS) — Patient Guide,operation guide,A,hi,39,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/hidradenitis-suppurativa,Hidradenitis Suppurativa (HS) — Patient Guide,operation guide,A,bn,39,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/hidradenitis-suppurativa,Hidradenitis Suppurativa (HS) — Patient Guide,operation guide,A,tl,39,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/guides/hidradenitis-suppurativa,Hidradenitis Suppurativa (HS) — Patient Guide,operation guide,A,ta,39,yes,no,yes,Source has Arabic/English fields; other editions are UI/fallback translations
+/articles/228,إستئصال المرارة بالمنظار ملف تعليمي للمرضي قبل و بعد إجراء الجراحة كل ما تريد معرفته عربي إنجليزي,patient article,A,en,1988,no,unknown,partial,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/228,إستئصال المرارة بالمنظار ملف تعليمي للمرضي قبل و بعد إجراء الجراحة كل ما تريد معرفته عربي إنجليزي,patient article,A,ar,1988,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/228,إستئصال المرارة بالمنظار ملف تعليمي للمرضي قبل و بعد إجراء الجراحة كل ما تريد معرفته عربي إنجليزي,patient article,A,ur,1988,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/228,إستئصال المرارة بالمنظار ملف تعليمي للمرضي قبل و بعد إجراء الجراحة كل ما تريد معرفته عربي إنجليزي,patient article,A,hi,1988,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/228,إستئصال المرارة بالمنظار ملف تعليمي للمرضي قبل و بعد إجراء الجراحة كل ما تريد معرفته عربي إنجليزي,patient article,A,bn,1988,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/228,إستئصال المرارة بالمنظار ملف تعليمي للمرضي قبل و بعد إجراء الجراحة كل ما تريد معرفته عربي إنجليزي,patient article,A,tl,1988,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/228,إستئصال المرارة بالمنظار ملف تعليمي للمرضي قبل و بعد إجراء الجراحة كل ما تريد معرفته عربي إنجليزي,patient article,A,ta,1988,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/216,الوزن المثالي كيف تحسبة بطريقة علمية,patient article,A,en,103,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/216,الوزن المثالي كيف تحسبة بطريقة علمية,patient article,A,ar,103,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/216,الوزن المثالي كيف تحسبة بطريقة علمية,patient article,A,ur,103,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/216,الوزن المثالي كيف تحسبة بطريقة علمية,patient article,A,hi,103,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/216,الوزن المثالي كيف تحسبة بطريقة علمية,patient article,A,bn,103,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/216,الوزن المثالي كيف تحسبة بطريقة علمية,patient article,A,tl,103,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/216,الوزن المثالي كيف تحسبة بطريقة علمية,patient article,A,ta,103,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/198,"🧠١٢ عادة قد تؤدي إلي فشل عملية تكميم المعدة ,, تحذييييير",patient article,A,en,778,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/198,"🧠١٢ عادة قد تؤدي إلي فشل عملية تكميم المعدة ,, تحذييييير",patient article,A,ar,778,yes,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/198,"🧠١٢ عادة قد تؤدي إلي فشل عملية تكميم المعدة ,, تحذييييير",patient article,A,ur,778,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/198,"🧠١٢ عادة قد تؤدي إلي فشل عملية تكميم المعدة ,, تحذييييير",patient article,A,hi,778,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/198,"🧠١٢ عادة قد تؤدي إلي فشل عملية تكميم المعدة ,, تحذييييير",patient article,A,bn,778,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/198,"🧠١٢ عادة قد تؤدي إلي فشل عملية تكميم المعدة ,, تحذييييير",patient article,A,tl,778,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/198,"🧠١٢ عادة قد تؤدي إلي فشل عملية تكميم المعدة ,, تحذييييير",patient article,A,ta,778,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/189,تعليمات متفرقه و إجابات,patient article,A,en,0,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/189,تعليمات متفرقه و إجابات,patient article,A,ar,0,yes,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/189,تعليمات متفرقه و إجابات,patient article,A,ur,0,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/189,تعليمات متفرقه و إجابات,patient article,A,hi,0,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/189,تعليمات متفرقه و إجابات,patient article,A,bn,0,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/189,تعليمات متفرقه و إجابات,patient article,A,tl,0,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/189,تعليمات متفرقه و إجابات,patient article,A,ta,0,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/182,ثبات الوزن أسباب و حلول,patient article,A,en,434,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/182,ثبات الوزن أسباب و حلول,patient article,A,ar,434,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/182,ثبات الوزن أسباب و حلول,patient article,A,ur,434,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/182,ثبات الوزن أسباب و حلول,patient article,A,hi,434,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/182,ثبات الوزن أسباب و حلول,patient article,A,bn,434,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/182,ثبات الوزن أسباب و حلول,patient article,A,tl,434,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/182,ثبات الوزن أسباب و حلول,patient article,A,ta,434,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/176,المهم كيف تأكل ليس ماذا تأكل,patient article,A,en,386,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/176,المهم كيف تأكل ليس ماذا تأكل,patient article,A,ar,386,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/176,المهم كيف تأكل ليس ماذا تأكل,patient article,A,ur,386,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/176,المهم كيف تأكل ليس ماذا تأكل,patient article,A,hi,386,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/176,المهم كيف تأكل ليس ماذا تأكل,patient article,A,bn,386,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/176,المهم كيف تأكل ليس ماذا تأكل,patient article,A,tl,386,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/176,المهم كيف تأكل ليس ماذا تأكل,patient article,A,ta,386,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/172,اشارات الخطر خلال الأسابيع الأولى,patient article,A,en,29,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/172,اشارات الخطر خلال الأسابيع الأولى,patient article,A,ar,29,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/172,اشارات الخطر خلال الأسابيع الأولى,patient article,A,ur,29,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/172,اشارات الخطر خلال الأسابيع الأولى,patient article,A,hi,29,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/172,اشارات الخطر خلال الأسابيع الأولى,patient article,A,bn,29,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/172,اشارات الخطر خلال الأسابيع الأولى,patient article,A,tl,29,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/172,اشارات الخطر خلال الأسابيع الأولى,patient article,A,ta,29,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/169,تعليمات هامه للشهر الاول بعد العمليه,patient article,A,en,82,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/169,تعليمات هامه للشهر الاول بعد العمليه,patient article,A,ar,82,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/169,تعليمات هامه للشهر الاول بعد العمليه,patient article,A,ur,82,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/169,تعليمات هامه للشهر الاول بعد العمليه,patient article,A,hi,82,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/169,تعليمات هامه للشهر الاول بعد العمليه,patient article,A,bn,82,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/169,تعليمات هامه للشهر الاول بعد العمليه,patient article,A,tl,82,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/169,تعليمات هامه للشهر الاول بعد العمليه,patient article,A,ta,82,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/165,أعراض نقص السوائل بعد التكميم,patient article,A,en,54,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/165,أعراض نقص السوائل بعد التكميم,patient article,A,ar,54,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/165,أعراض نقص السوائل بعد التكميم,patient article,A,ur,54,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/165,أعراض نقص السوائل بعد التكميم,patient article,A,hi,54,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/165,أعراض نقص السوائل بعد التكميم,patient article,A,bn,54,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/165,أعراض نقص السوائل بعد التكميم,patient article,A,tl,54,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/165,أعراض نقص السوائل بعد التكميم,patient article,A,ta,54,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/155,امسح الصوره بهاتفك لمتابعتنا علي وسائل التواصل,patient article,A,en,0,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/155,امسح الصوره بهاتفك لمتابعتنا علي وسائل التواصل,patient article,A,ar,0,yes,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/155,امسح الصوره بهاتفك لمتابعتنا علي وسائل التواصل,patient article,A,ur,0,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/155,امسح الصوره بهاتفك لمتابعتنا علي وسائل التواصل,patient article,A,hi,0,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/155,امسح الصوره بهاتفك لمتابعتنا علي وسائل التواصل,patient article,A,bn,0,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/155,امسح الصوره بهاتفك لمتابعتنا علي وسائل التواصل,patient article,A,tl,0,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/155,امسح الصوره بهاتفك لمتابعتنا علي وسائل التواصل,patient article,A,ta,0,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/149,اسباب السمنه,patient article,A,en,675,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/149,اسباب السمنه,patient article,A,ar,675,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/149,اسباب السمنه,patient article,A,ur,675,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/149,اسباب السمنه,patient article,A,hi,675,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/149,اسباب السمنه,patient article,A,bn,675,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/149,اسباب السمنه,patient article,A,tl,675,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/149,اسباب السمنه,patient article,A,ta,675,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/144,مكاسب متوقعه,patient article,A,en,107,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/144,مكاسب متوقعه,patient article,A,ar,107,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/144,مكاسب متوقعه,patient article,A,ur,107,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/144,مكاسب متوقعه,patient article,A,hi,107,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/144,مكاسب متوقعه,patient article,A,bn,107,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/144,مكاسب متوقعه,patient article,A,tl,107,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/144,مكاسب متوقعه,patient article,A,ta,107,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/141,تغييرات قد تقع مؤقتا في الشهور الاولي,patient article,A,en,44,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/141,تغييرات قد تقع مؤقتا في الشهور الاولي,patient article,A,ar,44,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/141,تغييرات قد تقع مؤقتا في الشهور الاولي,patient article,A,ur,44,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/141,تغييرات قد تقع مؤقتا في الشهور الاولي,patient article,A,hi,44,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/141,تغييرات قد تقع مؤقتا في الشهور الاولي,patient article,A,bn,44,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/141,تغييرات قد تقع مؤقتا في الشهور الاولي,patient article,A,tl,44,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/141,تغييرات قد تقع مؤقتا في الشهور الاولي,patient article,A,ta,44,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/138,المخاطر,patient article,A,en,87,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/138,المخاطر,patient article,A,ar,87,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/138,المخاطر,patient article,A,ur,87,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/138,المخاطر,patient article,A,hi,87,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/138,المخاطر,patient article,A,bn,87,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/138,المخاطر,patient article,A,tl,87,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/138,المخاطر,patient article,A,ta,87,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/133,متي أزور جراح السمنه,patient article,A,en,146,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/133,متي أزور جراح السمنه,patient article,A,ar,146,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/133,متي أزور جراح السمنه,patient article,A,ur,146,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/133,متي أزور جراح السمنه,patient article,A,hi,146,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/133,متي أزور جراح السمنه,patient article,A,bn,146,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/133,متي أزور جراح السمنه,patient article,A,tl,146,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/133,متي أزور جراح السمنه,patient article,A,ta,146,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/124,كيف احسب كتلة جسمي و ما هي الكتله المناسبه لعمليات السمنه,patient article,A,en,94,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/124,كيف احسب كتلة جسمي و ما هي الكتله المناسبه لعمليات السمنه,patient article,A,ar,94,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/124,كيف احسب كتلة جسمي و ما هي الكتله المناسبه لعمليات السمنه,patient article,A,ur,94,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/124,كيف احسب كتلة جسمي و ما هي الكتله المناسبه لعمليات السمنه,patient article,A,hi,94,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/124,كيف احسب كتلة جسمي و ما هي الكتله المناسبه لعمليات السمنه,patient article,A,bn,94,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/124,كيف احسب كتلة جسمي و ما هي الكتله المناسبه لعمليات السمنه,patient article,A,tl,94,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/124,كيف احسب كتلة جسمي و ما هي الكتله المناسبه لعمليات السمنه,patient article,A,ta,94,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/120,ما مصير الدبابيس بعد التكميم و ما خطورتها,patient article,A,en,38,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/120,ما مصير الدبابيس بعد التكميم و ما خطورتها,patient article,A,ar,38,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/120,ما مصير الدبابيس بعد التكميم و ما خطورتها,patient article,A,ur,38,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/120,ما مصير الدبابيس بعد التكميم و ما خطورتها,patient article,A,hi,38,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/120,ما مصير الدبابيس بعد التكميم و ما خطورتها,patient article,A,bn,38,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/120,ما مصير الدبابيس بعد التكميم و ما خطورتها,patient article,A,tl,38,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/120,ما مصير الدبابيس بعد التكميم و ما خطورتها,patient article,A,ta,38,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/115,الفيتامينات المطلوبه بعد العمليه,patient article,A,en,73,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/115,الفيتامينات المطلوبه بعد العمليه,patient article,A,ar,73,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/115,الفيتامينات المطلوبه بعد العمليه,patient article,A,ur,73,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/115,الفيتامينات المطلوبه بعد العمليه,patient article,A,hi,73,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/115,الفيتامينات المطلوبه بعد العمليه,patient article,A,bn,73,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/115,الفيتامينات المطلوبه بعد العمليه,patient article,A,tl,73,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/115,الفيتامينات المطلوبه بعد العمليه,patient article,A,ta,73,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/112,جدول المتابعه مع الجراح بعد العمليه,patient article,A,en,50,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/112,جدول المتابعه مع الجراح بعد العمليه,patient article,A,ar,50,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/112,جدول المتابعه مع الجراح بعد العمليه,patient article,A,ur,50,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/112,جدول المتابعه مع الجراح بعد العمليه,patient article,A,hi,50,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/112,جدول المتابعه مع الجراح بعد العمليه,patient article,A,bn,50,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/112,جدول المتابعه مع الجراح بعد العمليه,patient article,A,tl,50,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/112,جدول المتابعه مع الجراح بعد العمليه,patient article,A,ta,50,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/109,علاجات الاسبوع الاول بعد الخروج من المستشفي,patient article,A,en,38,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/109,علاجات الاسبوع الاول بعد الخروج من المستشفي,patient article,A,ar,38,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/109,علاجات الاسبوع الاول بعد الخروج من المستشفي,patient article,A,ur,38,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/109,علاجات الاسبوع الاول بعد الخروج من المستشفي,patient article,A,hi,38,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/109,علاجات الاسبوع الاول بعد الخروج من المستشفي,patient article,A,bn,38,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/109,علاجات الاسبوع الاول بعد الخروج من المستشفي,patient article,A,tl,38,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/109,علاجات الاسبوع الاول بعد الخروج من المستشفي,patient article,A,ta,38,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/106,الجوع سبب فشل التكميم,patient article,A,en,24,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/106,الجوع سبب فشل التكميم,patient article,A,ar,24,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/106,الجوع سبب فشل التكميم,patient article,A,ur,24,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/106,الجوع سبب فشل التكميم,patient article,A,hi,24,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/106,الجوع سبب فشل التكميم,patient article,A,bn,24,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/106,الجوع سبب فشل التكميم,patient article,A,tl,24,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/106,الجوع سبب فشل التكميم,patient article,A,ta,24,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/103,حبوب تنظيم الحمل و جراحة السمنه,patient article,A,en,33,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/103,حبوب تنظيم الحمل و جراحة السمنه,patient article,A,ar,33,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/103,حبوب تنظيم الحمل و جراحة السمنه,patient article,A,ur,33,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/103,حبوب تنظيم الحمل و جراحة السمنه,patient article,A,hi,33,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/103,حبوب تنظيم الحمل و جراحة السمنه,patient article,A,bn,33,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/103,حبوب تنظيم الحمل و جراحة السمنه,patient article,A,tl,33,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/103,حبوب تنظيم الحمل و جراحة السمنه,patient article,A,ta,33,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/100,التدخين و جراحة السمنه,patient article,A,en,64,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/100,التدخين و جراحة السمنه,patient article,A,ar,64,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/100,التدخين و جراحة السمنه,patient article,A,ur,64,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/100,التدخين و جراحة السمنه,patient article,A,hi,64,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/100,التدخين و جراحة السمنه,patient article,A,bn,64,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/100,التدخين و جراحة السمنه,patient article,A,tl,64,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/100,التدخين و جراحة السمنه,patient article,A,ta,64,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/94,الترجيع او التطريش  بعد التكميم او التحويل,patient article,A,en,70,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/94,الترجيع او التطريش  بعد التكميم او التحويل,patient article,A,ar,70,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/94,الترجيع او التطريش  بعد التكميم او التحويل,patient article,A,ur,70,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/94,الترجيع او التطريش  بعد التكميم او التحويل,patient article,A,hi,70,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/94,الترجيع او التطريش  بعد التكميم او التحويل,patient article,A,bn,70,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/94,الترجيع او التطريش  بعد التكميم او التحويل,patient article,A,tl,70,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/94,الترجيع او التطريش  بعد التكميم او التحويل,patient article,A,ta,70,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/91,نقص السوايل بعد التكميم اعراضه و الحلول,patient article,A,en,49,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/91,نقص السوايل بعد التكميم اعراضه و الحلول,patient article,A,ar,49,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/91,نقص السوايل بعد التكميم اعراضه و الحلول,patient article,A,ur,49,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/91,نقص السوايل بعد التكميم اعراضه و الحلول,patient article,A,hi,49,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/91,نقص السوايل بعد التكميم اعراضه و الحلول,patient article,A,bn,49,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/91,نقص السوايل بعد التكميم اعراضه و الحلول,patient article,A,tl,49,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/91,نقص السوايل بعد التكميم اعراضه و الحلول,patient article,A,ta,49,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/88,الثبات بعد عمليات السمنه أسباب و علاج,patient article,A,en,574,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/88,الثبات بعد عمليات السمنه أسباب و علاج,patient article,A,ar,574,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/88,الثبات بعد عمليات السمنه أسباب و علاج,patient article,A,ur,574,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/88,الثبات بعد عمليات السمنه أسباب و علاج,patient article,A,hi,574,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/88,الثبات بعد عمليات السمنه أسباب و علاج,patient article,A,bn,574,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/88,الثبات بعد عمليات السمنه أسباب و علاج,patient article,A,tl,574,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/88,الثبات بعد عمليات السمنه أسباب و علاج,patient article,A,ta,574,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/85,المصادر الطبيعيه للبروتين,patient article,A,en,89,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/85,المصادر الطبيعيه للبروتين,patient article,A,ar,89,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/85,المصادر الطبيعيه للبروتين,patient article,A,ur,89,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/85,المصادر الطبيعيه للبروتين,patient article,A,hi,89,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/85,المصادر الطبيعيه للبروتين,patient article,A,bn,89,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/85,المصادر الطبيعيه للبروتين,patient article,A,tl,89,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/85,المصادر الطبيعيه للبروتين,patient article,A,ta,89,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/82,نصائح عامه,patient article,A,en,37,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/82,نصائح عامه,patient article,A,ar,37,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/82,نصائح عامه,patient article,A,ur,37,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/82,نصائح عامه,patient article,A,hi,37,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/82,نصائح عامه,patient article,A,bn,37,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/82,نصائح عامه,patient article,A,tl,37,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/82,نصائح عامه,patient article,A,ta,37,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/79,حصوات مراره بعد عمليات السمنه,patient article,A,en,49,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/79,حصوات مراره بعد عمليات السمنه,patient article,A,ar,49,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/79,حصوات مراره بعد عمليات السمنه,patient article,A,ur,49,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/79,حصوات مراره بعد عمليات السمنه,patient article,A,hi,49,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/79,حصوات مراره بعد عمليات السمنه,patient article,A,bn,49,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/79,حصوات مراره بعد عمليات السمنه,patient article,A,tl,49,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/79,حصوات مراره بعد عمليات السمنه,patient article,A,ta,49,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/76,الجروح و اللصقات,patient article,A,en,19,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/76,الجروح و اللصقات,patient article,A,ar,19,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/76,الجروح و اللصقات,patient article,A,ur,19,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/76,الجروح و اللصقات,patient article,A,hi,19,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/76,الجروح و اللصقات,patient article,A,bn,19,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/76,الجروح و اللصقات,patient article,A,tl,19,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/76,الجروح و اللصقات,patient article,A,ta,19,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/73,الاقامه بالمستشفي,patient article,A,en,16,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/73,الاقامه بالمستشفي,patient article,A,ar,16,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/73,الاقامه بالمستشفي,patient article,A,ur,16,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/73,الاقامه بالمستشفي,patient article,A,hi,16,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/73,الاقامه بالمستشفي,patient article,A,bn,16,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/73,الاقامه بالمستشفي,patient article,A,tl,16,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/73,الاقامه بالمستشفي,patient article,A,ta,16,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/68,قيادة السياره و صعود الدرج بعد التكميم,patient article,A,en,22,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/68,قيادة السياره و صعود الدرج بعد التكميم,patient article,A,ar,22,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/68,قيادة السياره و صعود الدرج بعد التكميم,patient article,A,ur,22,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/68,قيادة السياره و صعود الدرج بعد التكميم,patient article,A,hi,22,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/68,قيادة السياره و صعود الدرج بعد التكميم,patient article,A,bn,22,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/68,قيادة السياره و صعود الدرج بعد التكميم,patient article,A,tl,22,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/68,قيادة السياره و صعود الدرج بعد التكميم,patient article,A,ta,22,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/61,التسريب,patient article,A,en,36,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/61,التسريب,patient article,A,ar,36,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/61,التسريب,patient article,A,ur,36,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/61,التسريب,patient article,A,hi,36,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/61,التسريب,patient article,A,bn,36,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/61,التسريب,patient article,A,tl,36,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/61,التسريب,patient article,A,ta,36,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/58,نظام غذائي تحضيري قبل التكميم هل يفيد؟,patient article,A,en,158,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/58,نظام غذائي تحضيري قبل التكميم هل يفيد؟,patient article,A,ar,158,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/58,نظام غذائي تحضيري قبل التكميم هل يفيد؟,patient article,A,ur,158,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/58,نظام غذائي تحضيري قبل التكميم هل يفيد؟,patient article,A,hi,158,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/58,نظام غذائي تحضيري قبل التكميم هل يفيد؟,patient article,A,bn,158,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/58,نظام غذائي تحضيري قبل التكميم هل يفيد؟,patient article,A,tl,158,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/58,نظام غذائي تحضيري قبل التكميم هل يفيد؟,patient article,A,ta,158,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/56,التكميم متاعب و مخاطر مسلسل الجزء 3 (حصوات المراره),patient article,A,en,119,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/56,التكميم متاعب و مخاطر مسلسل الجزء 3 (حصوات المراره),patient article,A,ar,119,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/56,التكميم متاعب و مخاطر مسلسل الجزء 3 (حصوات المراره),patient article,A,ur,119,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/56,التكميم متاعب و مخاطر مسلسل الجزء 3 (حصوات المراره),patient article,A,hi,119,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/56,التكميم متاعب و مخاطر مسلسل الجزء 3 (حصوات المراره),patient article,A,bn,119,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/56,التكميم متاعب و مخاطر مسلسل الجزء 3 (حصوات المراره),patient article,A,tl,119,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/56,التكميم متاعب و مخاطر مسلسل الجزء 3 (حصوات المراره),patient article,A,ta,119,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/45,التكميم متاعب و مخاطر مسلسل ج 2 (التسريب),patient article,A,en,349,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/45,التكميم متاعب و مخاطر مسلسل ج 2 (التسريب),patient article,A,ar,349,yes,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/45,التكميم متاعب و مخاطر مسلسل ج 2 (التسريب),patient article,A,ur,349,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/45,التكميم متاعب و مخاطر مسلسل ج 2 (التسريب),patient article,A,hi,349,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/45,التكميم متاعب و مخاطر مسلسل ج 2 (التسريب),patient article,A,bn,349,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/45,التكميم متاعب و مخاطر مسلسل ج 2 (التسريب),patient article,A,tl,349,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/45,التكميم متاعب و مخاطر مسلسل ج 2 (التسريب),patient article,A,ta,349,yes,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/43,هل يناسبني تكميم المعده؟,patient article,A,en,174,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/43,هل يناسبني تكميم المعده؟,patient article,A,ar,174,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/43,هل يناسبني تكميم المعده؟,patient article,A,ur,174,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/43,هل يناسبني تكميم المعده؟,patient article,A,hi,174,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/43,هل يناسبني تكميم المعده؟,patient article,A,bn,174,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/43,هل يناسبني تكميم المعده؟,patient article,A,tl,174,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/43,هل يناسبني تكميم المعده؟,patient article,A,ta,174,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/40,من هو الدكتور تامر رشدي الألفي,patient article,A,en,71,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/40,من هو الدكتور تامر رشدي الألفي,patient article,A,ar,71,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/40,من هو الدكتور تامر رشدي الألفي,patient article,A,ur,71,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/40,من هو الدكتور تامر رشدي الألفي,patient article,A,hi,71,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/40,من هو الدكتور تامر رشدي الألفي,patient article,A,bn,71,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/40,من هو الدكتور تامر رشدي الألفي,patient article,A,tl,71,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/40,من هو الدكتور تامر رشدي الألفي,patient article,A,ta,71,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/31,التكميم متاعب و مخاطر مسلسل ج١,patient article,A,en,93,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/31,التكميم متاعب و مخاطر مسلسل ج١,patient article,A,ar,93,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/31,التكميم متاعب و مخاطر مسلسل ج١,patient article,A,ur,93,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/31,التكميم متاعب و مخاطر مسلسل ج١,patient article,A,hi,93,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/31,التكميم متاعب و مخاطر مسلسل ج١,patient article,A,bn,93,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/31,التكميم متاعب و مخاطر مسلسل ج١,patient article,A,tl,93,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/31,التكميم متاعب و مخاطر مسلسل ج١,patient article,A,ta,93,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/25,جراحات السمنة علاج نهائي لمرضي السكر أين الحقيقه,patient article,A,en,251,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/25,جراحات السمنة علاج نهائي لمرضي السكر أين الحقيقه,patient article,A,ar,251,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/25,جراحات السمنة علاج نهائي لمرضي السكر أين الحقيقه,patient article,A,ur,251,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/25,جراحات السمنة علاج نهائي لمرضي السكر أين الحقيقه,patient article,A,hi,251,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/25,جراحات السمنة علاج نهائي لمرضي السكر أين الحقيقه,patient article,A,bn,251,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/25,جراحات السمنة علاج نهائي لمرضي السكر أين الحقيقه,patient article,A,tl,251,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/25,جراحات السمنة علاج نهائي لمرضي السكر أين الحقيقه,patient article,A,ta,251,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/23,جراحة السمنه بين الترويج و التخويف,patient article,A,en,44,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/23,جراحة السمنه بين الترويج و التخويف,patient article,A,ar,44,no,unknown,yes,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/23,جراحة السمنه بين الترويج و التخويف,patient article,A,ur,44,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/23,جراحة السمنه بين الترويج و التخويف,patient article,A,hi,44,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/23,جراحة السمنه بين الترويج و التخويف,patient article,A,bn,44,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/23,جراحة السمنه بين الترويج و التخويف,patient article,A,tl,44,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/articles/23,جراحة السمنه بين الترويج و التخويف,patient article,A,ta,44,no,unknown,no,Imported WordPress HTML; mixed-language/clinical-review assessment required
+/books/common-anal-conditions/01-open-access-copyright-licence-and-cataloguing-page,"OPEN-ACCESS COPYRIGHT, LICENCE AND CATALOGUING PAGE",book chapter,B,en,538,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/02-dedication-clinical-audit-and-how-to-use-this-handbook,"DEDICATION, CLINICAL AUDIT AND HOW TO USE THIS HANDBOOK",book chapter,B,en,233,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/03-whats-new-in-version-2,WHAT'S NEW IN VERSION 2,book chapter,B,en,1934,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/04-chapter-01,Chapter 01 — Anatomy and Physiology in Three Minutes,book chapter,B,en,2272,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/05-chapter-02,Chapter 02 — Before You Assume Haemorrhoids — The Differential and the Look-Alikes,book chapter,B,en,2261,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/06-chapter-03,"Chapter 03 — Haemorrhoids — Grading, BPRST, and Non-Surgical Mastery",book chapter,B,en,2693,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/07-chapter-04,Chapter 04 — Anal Fissure — Break the Pain–Spasm–Ischaemia Cycle,book chapter,B,en,1996,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/08-chapter-05,"Chapter 05 — Suppurative Disease — Abscess, Fistula, and Fournier’s Gangrene",book chapter,B,en,2674,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/09-chapter-06,Chapter 06 — High-Yield Gap-Fillers for the ER and Primary Care,book chapter,B,en,2728,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/10-chapter-07,"Chapter 07 — Anal Cancer, Anal Intraepithelial Neoplasia, and Non-Healing Anorectal Lesions",book chapter,B,en,2645,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/11-chapter-08,Chapter 08 — Rectal Bleeding and Colorectal Cancer Triage,book chapter,B,en,2786,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/12-chapter-09,Chapter 09 — Perianal Crohn’s Disease and Inflammatory Bowel Disease,book chapter,B,en,2252,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/13-chapter-10,"Chapter 10 — Faecal Incontinence, Constipation, and Pelvic-Floor Disorders",book chapter,B,en,2356,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/14-chapter-11,"Chapter 11 — Sexually Transmitted Infections, Proctitis, and Anorectal Sexual Health",book chapter,B,en,2019,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/15-chapter-12,"Chapter 12 — Anorectal Trauma, Sexual Assault, and Foreign Bodies",book chapter,B,en,2127,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/16-chapter-13,"Chapter 13 — Pregnancy, Postpartum, and Pelvic-Floor Anorectal Disease",book chapter,B,en,1711,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/17-chapter-14,Chapter 14 — Paediatric and Adolescent Anorectal Conditions,book chapter,B,en,1607,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/18-chapter-15,Chapter 15 — Rare but Important Conditions Non-Surgeons Should Recognise,book chapter,B,en,1652,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/19-chapter-16,"Chapter 16 — The Safety Net — Red Flags, Drug Pitfalls, and the Triage Matrix",book chapter,B,en,1420,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/20-chapter-17,Chapter 17 — Getting the Examination Right — Systematic and Tolerable,book chapter,B,en,1395,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/21-chapter-18,Chapter 18 — Nursing and Multidisciplinary Team Excellence,book chapter,B,en,1401,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/22-chapter-19,"Chapter 19 — Synthesis — Master Comparison Table, Capstone Case, and Rapid-Fire Rules",book chapter,B,en,1182,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/23-appendix-a,APPENDIX A — MASTER REFERRAL FORM,book chapter,B,en,271,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/24-appendix-b,APPENDIX B — MEDICATION SAFETY QUICK REFERENCE,book chapter,B,en,761,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/25-appendix-c,APPENDIX C — WHEN NOT TO DO A DRE OR RECTAL INSTRUMENTATION,book chapter,B,en,248,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/26-appendix-d,APPENDIX D — POST-PROCEDURE DISCHARGE INSTRUCTIONS,book chapter,B,en,991,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/27-appendix-e,APPENDIX E — SBAR HANDOVER TEMPLATES,book chapter,B,en,579,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/28-appendix-f,APPENDIX F — PATIENT EDUCATION PAGES,book chapter,B,en,1080,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/29-final-quick-reference-section,FINAL QUICK-REFERENCE SECTION,book chapter,B,en,713,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/30-consolidated-reference-list,CONSOLIDATED REFERENCE LIST,book chapter,B,en,2338,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/31-list-of-tables-and-algorithms,LIST OF TABLES AND ALGORITHMS,book chapter,B,en,785,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/32-list-of-recommended-medical-illustrations,LIST OF RECOMMENDED MEDICAL ILLUSTRATIONS,book chapter,B,en,777,unknown,yes,yes,Professional wording retained; UI translation only
+/books/common-anal-conditions/33-clinical-safety-review-and-final-quality-control-checklist,CLINICAL SAFETY REVIEW AND FINAL QUALITY-CONTROL CHECKLIST,book chapter,B,en,398,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/01-copyright-and-notices,Copyright and Notices,book chapter,B,en,194,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/02-preface,Preface,book chapter,B,en,424,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/03-about-the-author,About the Author,book chapter,B,en,82,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/04-how-to-use-this-book,How to Use This Book,book chapter,B,en,579,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/05-abbreviations,Abbreviations,book chapter,B,en,137,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/06-chapter-01,Chapter 01 — Conducting a Surgical Consultation and Obtaining Informed Consent,book chapter,B,en,3915,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/07-chapter-02,Chapter 02 — Enhanced Recovery After Surgery: Explaining the Pathway to Patients,book chapter,B,en,2522,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/08-chapter-03,Chapter 03 — Printed and Digital Patient Education: Closing the Gap Between Clinic and Home,book chapter,B,en,1856,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/09-references-part-1,References for Part I,book chapter,B,en,724,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/10-chapter-04,Chapter 04 — Gallbladder Removal: Laparoscopic Cholecystectomy,book chapter,B,en,5128,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/11-chapter-05,Chapter 05 — Appendicitis and Appendicectomy,book chapter,B,en,4459,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/12-chapter-06,Chapter 06 — Groin Hernia Repair: Inguinal and Femoral Hernias,book chapter,B,en,4357,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/13-chapter-07,"Chapter 07 — Common Anal Conditions: Hemorrhoids, Anal Fissure, and Perianal Abscess and Fistula",book chapter,B,en,4223,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/14-chapter-08,Chapter 08 — Pilonidal Disease,book chapter,B,en,3337,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/15-chapter-09,Chapter 09 — Benign Breast Disease,book chapter,B,en,3471,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/16-chapter-10,Chapter 10 — Breast Cancer Surgery,book chapter,B,en,4146,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/17-chapter-11,Chapter 11 — Thyroid and Parathyroid Surgery,book chapter,B,en,3551,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/18-chapter-12,Chapter 12 — Salivary Gland Surgery,book chapter,B,en,2949,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/19-chapter-13,Chapter 13 — Obesity and Metabolic and Bariatric Surgery: Choosing Treatment and Living Well Afterward,book chapter,B,en,4413,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/20-chapter-14,Chapter 14 — Colorectal Surgery and Living with a Stoma,book chapter,B,en,4288,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/21-chapter-15,Chapter 15 — Minor Outpatient Procedures under Local Anesthesia,book chapter,B,en,2986,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/22-chapter-16,Chapter 16 — Varicose Veins,book chapter,B,en,2888,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/23-chapter-17,Chapter 17 — Splenectomy and Living Without a Spleen,book chapter,B,en,2861,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/24-chapter-18,"Chapter 18 — Diabetes and Diabetes Medicines, Including SGLT2 Inhibitors",book chapter,B,en,3038,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/25-chapter-19,"Chapter 19 — Lung Disease, Sleep Apnea, and Surgery",book chapter,B,en,2735,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/26-chapter-20,"Chapter 20 — Heart Disease, High Blood Pressure, and Surgery",book chapter,B,en,2795,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/27-chapter-21,Chapter 21 — Corticosteroids and Other Immunosuppressive Medicines,book chapter,B,en,2417,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/28-chapter-22,Chapter 22 — Anticoagulants and Antiplatelet Medicines,book chapter,B,en,2527,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/29-chapter-23,Chapter 23 — GLP-1 and GIP/GLP-1 Receptor Agonists: Weight-Loss and Diabetes Injections,book chapter,B,en,2485,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/30-chapter-24,"Chapter 24 — Older Adults: Frailty, Delirium, and Goals of Care",book chapter,B,en,2471,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/31-chapter-25,Chapter 25 — Children and Young People,book chapter,B,en,2570,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/32-chapter-26,"Chapter 26 — Liver Disease, Kidney Disease, Sickle Cell Disease, and Biologic Therapy",book chapter,B,en,1794,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/33-chapter-27,"Chapter 27 — Smoking, Alcohol, and Medicine Reconciliation",book chapter,B,en,1327,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/34-chapter-28,Chapter 28 — Resuming Intimacy After Surgery,book chapter,B,en,717,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/35-chapter-29,"Chapter 29 — Driving, Flying, Exercise, and Return to Work: Evidence-Based Readiness Criteria",book chapter,B,en,1284,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/36-appendix-a,Appendix A — Personal Discharge Instruction Card,book chapter,B,en,233,unknown,yes,yes,Professional wording retained; UI translation only
+/books/from-clinic-to-recovery/37-appendix-b,Appendix B — Questions You May Want to Ask Your Surgeon,book chapter,B,en,255,unknown,yes,yes,Professional wording retained; UI translation only
