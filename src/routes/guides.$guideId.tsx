@@ -142,6 +142,16 @@ function GuidePage() {
           ? "هذه صفحة تثقيف عامة. اتبع دائماً تعليمات فريقك المعالج الخاصة بعمليتك وحالتك."
           : "This is general education. Always follow the instructions from your treating team for your operation and health."}
       </div>
+      <aside
+        role="alert"
+        aria-labelledby="guide-urgent-title"
+        className="mt-5 rounded-2xl border-2 border-destructive/40 bg-destructive/5 p-4 text-sm leading-7"
+      >
+        <h2 id="guide-urgent-title" className="font-bold text-destructive">
+          {language === "ar" ? "متى تطلب المساعدة العاجلة؟" : "When to seek urgent help"}
+        </h2>
+        <p className="mt-1">{t.urgent}</p>
+      </aside>
       <img
         src={educationCategoryImages[guide.category]}
         alt=""

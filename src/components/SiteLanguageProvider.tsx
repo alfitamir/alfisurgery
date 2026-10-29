@@ -42,7 +42,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
   const initialLanguage: SiteLanguage =
     searchLanguage && siteLanguages.some((item) => item.code === searchLanguage)
       ? (searchLanguage as SiteLanguage)
-      : pathname.startsWith("/ar") || pathname.startsWith("/articles")
+      : pathname.startsWith("/ar")
         ? "ar"
         : "en";
   const [language, setLanguage] = useState<SiteLanguage>(initialLanguage);
@@ -69,21 +69,9 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
       }
     }
     const found = siteLanguages.find((item) => item.code === stored);
-    setLanguage(
-      found?.code ?? (pathname.startsWith("/ar") || pathname.startsWith("/articles") ? "ar" : "en"),
-    );
+    setLanguage(found?.code ?? (pathname.startsWith("/ar") ? "ar" : "en"));
     setReady(true);
   }, [pathname, searchLanguage]);
-
-  // Every language is explicit in the URL and retained by root search middleware.
-  useEffect(() => {
-    if (!ready) return;
-    if (!searchLanguage) {
-      const url = new URL(window.location.href);
-      url.searchParams.set("lang", language);
-      window.history.replaceState(window.history.state, "", url.href);
-    }
-  }, [ready, language, searchLanguage]);
 
   const [copied, setCopied] = useState(false);
   const shareLink = async () => {

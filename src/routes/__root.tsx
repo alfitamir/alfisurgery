@@ -15,7 +15,7 @@ import {
 import { registerPatientAppServiceWorker } from "@/lib/pwa";
 import { SiteLanguageProvider } from "@/components/SiteLanguageProvider";
 import { SiteNavigation, SiteFooter } from "@/components/SiteNavigation";
-import { siteLanguages } from "@/lib/site-language";
+import { isRtl, siteLanguages } from "@/lib/site-language";
 import { SourceLanguageNotice } from "@/components/SourceLanguageNotice";
 import { supabase } from "@/integrations/supabase/client";
 import appCss from "../styles.css?url";
@@ -108,7 +108,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "theme-color", content: "#2A6F97" },
       { name: "apple-mobile-web-app-capable", content: "yes" },
       { name: "apple-mobile-web-app-status-bar-style", content: "default" },
-      { name: "apple-mobile-web-app-title", content: "دليل المريض" },
+      { name: "apple-mobile-web-app-title", content: "Alfi Surgery" },
       { name: "twitter:title", content: "Alfi Surgery — Dr. Tamer Elalfy" },
       {
         name: "twitter:description",
@@ -146,7 +146,10 @@ function RootShell({ children }: { children: React.ReactNode }) {
       ? "ar"
       : "en";
   return (
-    <html lang={language} dir={language === "ar" ? "rtl" : "ltr"}>
+    <html
+      lang={language}
+      dir={isRtl(language as (typeof siteLanguages)[number]["code"]) ? "rtl" : "ltr"}
+    >
       <head>
         <HeadContent />
       </head>

@@ -24,6 +24,7 @@ export function PatientComments() {
         await supabase
           .from("patient_comments")
           .select("id,nickname,body,created_at,source")
+          .eq("hidden", false)
           .order("created_at", { ascending: false })
           .limit(50)
       ).data ?? [],
@@ -68,6 +69,9 @@ export function PatientComments() {
         {c.commentsTitle}
       </h2>
       <p className="mt-2 text-sm text-muted-foreground">{c.commentsIntro}</p>
+      <p className="mt-2 rounded-md border border-border bg-muted/50 p-3 text-xs leading-6 text-muted-foreground">
+        {c.privacy}
+      </p>
       <aside
         className="mt-4 rounded-md border border-primary/30 bg-secondary/50 p-4 text-sm"
         dir="rtl"

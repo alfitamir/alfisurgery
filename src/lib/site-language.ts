@@ -9,6 +9,8 @@ export const siteLanguages = [
 ] as const;
 
 export type SiteLanguage = (typeof siteLanguages)[number]["code"];
+export const isRtl = (language: SiteLanguage) =>
+  siteLanguages.find((item) => item.code === language)?.dir === "rtl";
 // All editions offer Arabic originals with explicitly conditional YouTube caption support.
 export const showsVideos = (_language: SiteLanguage) => true;
 export type TranslationDictionary = Record<string, string>;
