@@ -33,7 +33,7 @@
 - [x] Add disease-by-disease diet and lifestyle risk-reduction guidance in all seven languages, linked from patient education, and verify reading and navigation.
 - [x] Point the printed QR codes, outreach list, and page address tags at alfisurgery.com instead of the Lovable address.
 
-- [x] Add a Gemini-powered patient Q&A assistant (one chat, no saved history) answering in the visitor's language from the 22 operation guides, with safety disclaimers; verified in English and Arabic.
+- [x] Patient AI assistant removed on request (29 Oct 2026).
 - [x] Refresh both homepages with one introduction, guide journey, subtle motion and language-sidebar clearance; verify all seven languages.
 - [x] Update all website images depicting women to modest hijab attire and verify the displayed images.
 - [x] Add homepage section and subsection dropdowns with translated navigation and verify links on desktop and phone.
@@ -63,8 +63,10 @@
 - [x] Admin-only article page (/admin/articles) with Google sign-in; first account to sign in becomes the site admin.
 - [x] Draft, revise and translate articles into all seven languages with Gemini Pro through Lovable AI; publish/unpublish/delete; new articles appear in the library, reading pages and sitemap.
 - [ ] Doctor signs in once at /admin/articles to claim the admin account — waiting on the doctor.
-- [x] Split the homepage vertically into "Meet the doctor" and "Know your disease & operation" columns (no arrows, distinct heading colours, contact below; keep language control, daily article, reviews and assistant).
+- [x] Split the homepage vertically into "Meet the doctor" and "Know your disease & operation" columns (no arrows, distinct heading colours, contact below; keep language control, daily article and reviews).
 - [x] Add a discreet lock icon in the footer that opens the admin article page.
 
 - [x] Add a "My books" homepage section (seven-language labels) with /books, a book contents page and chapter reading pages; start with "Common Anal Conditions" V2.
 - [ ] Translate "Common Anal Conditions" and "From Clinic to Recovery" into the six other site languages — waiting on the doctor to decide (very large professional text; needs specialist medical review per language).
+- [x] Simplify the homepage: patient column first, three doctor buttons, daily article below the columns, four key contact links plus a full contact link.
+- [x] Google SEO: English homepage doctor details and language alternates, AI summary file.

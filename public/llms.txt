@@ -6,7 +6,7 @@
 
 - [Patient guide (English)](https://alfisurgery.com/patients): Operation guides, preparation, recovery and warning signs.
 - [Patient guide (Arabic)](https://alfisurgery.com/ar/patients): The same guide in Arabic.
-- [Operation guide example](https://alfisurgery.com/guides/laparoscopic-cholecystectomy): Printable reading page for one operation.
+- [Operation guide example](https://alfisurgery.com/guides/cholecystectomy): Printable reading page for one operation.
 - [Prevention](https://alfisurgery.com/prevention): Disease-by-disease diet and lifestyle risk reduction.
 - [Articles](https://alfisurgery.com/articles): Searchable archive of patient articles.
 - [Books](https://alfisurgery.com/books): Dr. Elalfy's books with chapter reading pages.
