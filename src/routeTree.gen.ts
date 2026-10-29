@@ -40,6 +40,7 @@ import { Route as PatientEducationHidradenitisSuppurativaRouteImport } from './r
 import { Route as PatientEducationWeightPlateauAfterSleeveRouteImport } from './routes/patient-education.weight-plateau-after-sleeve'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 import { Route as AuthenticatedAdminArticlesRouteImport } from './routes/_authenticated/admin.articles'
+import { Route as AuthenticatedAdminCommentsRouteImport } from './routes/_authenticated/admin.comments'
 import { Route as ApiPublicSyncPostsRouteImport } from './routes/api/public/sync-posts'
 import { Route as BooksBookIdIndexRouteImport } from './routes/books.$bookId.index'
 import { Route as BooksBookIdChapterIdRouteImport } from './routes/books.$bookId.$chapterId'
@@ -205,6 +206,12 @@ const AuthenticatedAdminArticlesRoute =
     path: '/admin/articles',
     getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
+const AuthenticatedAdminCommentsRoute =
+  AuthenticatedAdminCommentsRouteImport.update({
+    id: '/admin/comments',
+    path: '/admin/comments',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 const ApiPublicSyncPostsRoute = ApiPublicSyncPostsRouteImport.update({
   id: '/api/public/sync-posts',
   path: '/api/public/sync-posts',
@@ -257,6 +264,7 @@ export interface FileRoutesByFullPath {
   '/books/': typeof BooksIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/admin/articles': typeof AuthenticatedAdminArticlesRoute
+  '/admin/comments': typeof AuthenticatedAdminCommentsRoute
   '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
   '/books/$bookId/$chapterId': typeof BooksBookIdChapterIdRoute
   '/books/$bookId/': typeof BooksBookIdIndexRoute
@@ -291,6 +299,7 @@ export interface FileRoutesByTo {
   '/books': typeof BooksIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/admin/articles': typeof AuthenticatedAdminArticlesRoute
+  '/admin/comments': typeof AuthenticatedAdminCommentsRoute
   '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
   '/books/$bookId/$chapterId': typeof BooksBookIdChapterIdRoute
   '/books/$bookId': typeof BooksBookIdIndexRoute
@@ -329,6 +338,7 @@ export interface FileRoutesById {
   '/books/': typeof BooksIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/_authenticated/admin/articles': typeof AuthenticatedAdminArticlesRoute
+  '/_authenticated/admin/comments': typeof AuthenticatedAdminCommentsRoute
   '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
   '/books/$bookId/$chapterId': typeof BooksBookIdChapterIdRoute
   '/books/$bookId/': typeof BooksBookIdIndexRoute
@@ -367,6 +377,7 @@ export interface FileRouteTypes {
     | '/books/'
     | '/.mcp/invoke-tool/$tool'
     | '/admin/articles'
+    | '/admin/comments'
     | '/api/public/sync-posts'
     | '/books/$bookId/$chapterId'
     | '/books/$bookId/'
@@ -401,6 +412,7 @@ export interface FileRouteTypes {
     | '/books'
     | '/.mcp/invoke-tool/$tool'
     | '/admin/articles'
+    | '/admin/comments'
     | '/api/public/sync-posts'
     | '/books/$bookId/$chapterId'
     | '/books/$bookId'
@@ -438,6 +450,7 @@ export interface FileRouteTypes {
     | '/books/'
     | '/.mcp/invoke-tool/$tool'
     | '/_authenticated/admin/articles'
+    | '/_authenticated/admin/comments'
     | '/api/public/sync-posts'
     | '/books/$bookId/$chapterId'
     | '/books/$bookId/'
@@ -695,6 +708,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedAdminArticlesRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/_authenticated/admin/comments': {
+      id: '/_authenticated/admin/comments'
+      path: '/admin/comments'
+      fullPath: '/admin/comments'
+      preLoaderRoute: typeof AuthenticatedAdminCommentsRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
     '/api/public/sync-posts': {
       id: '/api/public/sync-posts'
       path: '/api/public/sync-posts'
@@ -728,10 +748,12 @@ declare module '@tanstack/react-router' {
 
 interface AuthenticatedRouteRouteChildren {
   AuthenticatedAdminArticlesRoute: typeof AuthenticatedAdminArticlesRoute
+  AuthenticatedAdminCommentsRoute: typeof AuthenticatedAdminCommentsRoute
 }
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
   AuthenticatedAdminArticlesRoute: AuthenticatedAdminArticlesRoute,
+  AuthenticatedAdminCommentsRoute: AuthenticatedAdminCommentsRoute,
 }
 
 const AuthenticatedRouteRouteWithChildren =
