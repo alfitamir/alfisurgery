@@ -7,8 +7,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { postsCommentsCopy } from "@/data/posts-comments-copy";
-
-const contactPattern = /(\+?\d[\d\s-]{7,}\d)|(\S+@\S+\.\S+)/;
+import {
+  isPatientCommentCooldownActive,
+  isValidPatientComment,
+} from "@/lib/patient-comments-safety";
 
 export function PatientComments() {
   const { language } = useSiteLanguage();
@@ -34,21 +36,22 @@ export function PatientComments() {
     e.preventDefault();
     const n = nickname.trim(),
       b = body.trim();
-    if (
-      n.length < 2 ||
-      n.length > 40 ||
-      b.length < 3 ||
-      b.length > 1000 ||
-      contactPattern.test(b) ||
-      contactPattern.test(n)
-    )
-      return setStatus("error");
-    if (Date.now() - Number(localStorage.getItem("last-comment") ?? 0) < 60000)
-      return setStatus("error");
+    if (!isValidPatientComment(n, b)) return setStatus("error");
+    let lastCommentAt: string | null = null;
+    try {
+      lastCommentAt = localStorage.getItem("last-comment");
+    } catch {
+      // Storage is optional; server-side controls must enforce abuse prevention.
+    }
+    if (isPatientCommentCooldownActive(lastCommentAt)) return setStatus("error");
     setStatus("sending");
     const { error } = await supabase.from("patient_comments").insert({ nickname: n, body: b });
     if (error) return setStatus("error");
-    localStorage.setItem("last-comment", String(Date.now()));
+    try {
+      localStorage.setItem("last-comment", String(Date.now()));
+    } catch {
+      // Storage is optional and may be disabled by the browser.
+    }
     setNickname("");
     setBody("");
     setStatus("done");
