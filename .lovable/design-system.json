@@ -1,0 +1,1900 @@
+{
+  "meta": {
+    "name": "Alfi Surgery",
+    "package": "@ws-1ww6pxxmvjs0b1gva2zv/45896ead-421e-4d0e-b113-1f6152d194a2",
+    "version": "1.0.0",
+    "framework": "react",
+    "css_framework": "tailwind",
+    "starter_template": "custom_design_system_tailwind",
+    "theme_files": [
+      "src/styles.css"
+    ],
+    "source_type": "local",
+    "source_manifest": {
+      "#enrichment": "ecc106c680fe7710dc4a805acca44aa978619766ca5e0b8ffcc1a432a79bb97c",
+      ".github/workflows/quality.yml": "598822dda93121df7178443e4e95e308",
+      ".gitignore": "6d9e901a692b46a83707c245fb03bc91",
+      ".lovable/mcp/manifest.json": "cc52b8d9a007707725335e29c15e014b",
+      ".lovable/plan/dr-tamer-s-posts-patient-comments-on-the-homepage-2026-10-16.md": "53fdd067a92969e69d0e1d89a53e5c8e",
+      ".lovable/plan/finish-the-remaining-open-tasks-2026-10-29.md": "2f5f6ab58c7fd3f33fc3cd78e23548e6",
+      ".lovable/plan/standalone-bilingual-perioperative-education-site-2026-09-14.md": "92b34be5c1d033f87fbd41b9cbe79d3c",
+      ".lovable/project.json": "b60a4e3c0d4cde0e87e00b1d1b82a55b",
+      ".prettierignore": "7279a476f196a2da5f7edd18db568dc6",
+      ".prettierrc": "185ef0234746ab738ac1ab6cec5e2bd9",
+      "AGENTS.md": "06d80415e5301bce25a9b33229c7b1e6",
+      "CLINICAL_REVIEW_QUEUE.md": "dcbfff5ece6b519941e535c2dc16b6a9",
+      "README.md": "95a6e657977bf66bab4eb41193e572aa",
+      "REVAMP_REPORT.md": "d4ba2806231ed27f8624f4efff212bba",
+      "article-inventory.csv": "2a49d0ca9a9acbbf3840fdb7a9d329c8",
+      "bunfig.toml": "06df017e61bba1ddb38372a88b93a532",
+      "components.json": "30d3d035361ce807021f5c54620962e9",
+      "docs/FOUNDATION_HARDENING.md": "aa2e676091d484aa6663afd3f3010133",
+      "docs/patient-comment-rate-limit-rollout.md": "61a74626e0099a983f9906c1a9f337a3",
+      "drizzle.config.ts": "c2b6029fa56b49433380b7263b06e3f7",
+      "drizzle/migrations/0000_create_site_stats_visit_counter.sql": "cc02d27b7874ce585f0c152f47bb0705",
+      "drizzle/migrations/0001_add_get_site_visits_function.sql": "c9593420cfd459bcb4c8b60266018bd6",
+      "drizzle/migrations/0002_posts_and_comments.sql": "f4657b04430fa8f3a4288dee8938b11d",
+      "drizzle/migrations/0003_admin_roles_and_site_articles.sql": "479afdcc80ad9addd2a86b98a74c957c",
+      "drizzle/migrations/0004_migration.sql": "7ff648ae55f45970cf45d358416dc121",
+      "drizzle/migrations/0005_patient_comment_rate_limits.sql": "50f6241b7dfd83bd325f69352ab38c0a",
+      "drizzle/migrations/0006_restrict_direct_patient_comment_inserts.sql": "d6d2b306d848f0d1aa077c26b767728f",
+      "drizzle/migrations/meta/0000_snapshot.json": "9b49f02870640e0a5ea997956c16df51",
+      "drizzle/migrations/meta/0001_snapshot.json": "ea3997f4314c8e99a467fcd5f60e9109",
+      "drizzle/migrations/meta/0002_snapshot.json": "d14fb79256d7687d38b920a7beb5791b",
+      "drizzle/migrations/meta/0003_snapshot.json": "4d69529c3b38c333b8545bab87449412",
+      "drizzle/migrations/meta/0004_snapshot.json": "4f8412a07f0ed1bb33579fbf6cac4fd1",
+      "drizzle/migrations/meta/_journal.json": "258d24038ac1fd631d2ab04aada36a45",
+      "drizzle/schema.ts": "a60267d05d7dd11572f02686241f37c6",
+      "eslint.config.js": "a9da5ac1009934814f904882854e5390",
+      "package.json": "1de4f9343bedcc61ea59f86f1a4f4fff",
+      "public/Dr_Tamer_Elalfy_CV.pdf": "c58090c953a74f580b431fff63fc63ca",
+      "public/app-icon-192.png": "9c9f68164e955db8cf9674c1fff11353",
+      "public/app-icon-512.png": "b9a3eb7fb2ca9cd2336b3d22004aa395",
+      "public/downloads/illustrations-for-doctors.pdf": "32219a436eeabacfa5aa612f2aedd995",
+      "public/downloads/illustrations-for-patients.pdf": "13d2035c6bd0eacfc8f7e9472b869ce1",
+      "public/favicon.ico": "18e1098037533681852c3a9bd0570e89",
+      "public/llms.txt": "2c736515679f16b405f95a2433f2fa0e",
+      "public/manifest.webmanifest": "4d525fe35395204cf0a82ba2fec35c18",
+      "public/manus-routes.json": "3e99b4d3adacae406f7d94c2d1b04b20",
+      "public/robots.txt": "465b7adc5255101517c3253f057a1de0",
+      "public/site-qr-ar.svg": "c0d525a0a5daeffe7298df954771606f",
+      "public/site-qr.svg": "7c67838ad79af53e97cf19afb0690213",
+      "roadmap.md": "2a1880230555f20c11e4b9a026aef325",
+      "scripts/check-foundation.ts": "560f6b7a1cabd31ba6d3a0945d7f066c",
+      "src/assets/anal-conditions-ppt.asset.json": "881ce6232f2dc42a7f3d83cc4b73cb4c",
+      "src/assets/blog/image-0.jpg.asset.json": "7c35ebdfe05a83dfc92ca9d8e2cd5087",
+      "src/assets/blog/image-1.jpg.asset.json": "1bd66ea9f8eab8299eb24a4f847f4c88",
+      "src/assets/blog/image-2.jpg.asset.json": "953c9c60a3f5a3be8e44a8e31acbcebf",
+      "src/assets/blog/image-3.gif.asset.json": "4de2726c55d38f72cd8d451c5d49be84",
+      "src/assets/cognitive-framing-consent-illustration.asset.json": "2f22adb31e806061117330a572df538b",
+      "src/assets/dr-elalfy-hero.jpg": "e38901d1a3cb82bba43695df1c51ada7",
+      "src/assets/dr-elalfy-hero.webp": "924d618bfe9b8a3426ec7a52a959bd4e",
+      "src/assets/dr-elalfy-main.jpg.asset.json": "359af6468da4e9162b65957fa903feee",
+      "src/assets/dr-elalfy-main.webp": "e39775a9d3818d133a81ca7ba3a9bc09",
+      "src/assets/dr-elalfy.jpg": "67eebec4de5ced5654404f5ee15431f3",
+      "src/assets/herniaabdwalllecture-100618085852-phpapp02.pptx.asset.json": "386ecf412eb089c478fd899da3dbe11c",
+      "src/assets/managementofcbdstonesastudy-140511193239-phpapp02.ppt.asset.json": "7f3372699c6ffbb550d7f00eaf0ce697",
+      "src/assets/neckintro-140406192526-phpapp01.ppt.asset.json": "7726471ea9249686cfa5cc43dc43ab90",
+      "src/assets/newmicrosoftofficepowerpointpresentation-100618082020-phpapp01.pptx.asset.json": "e9bcba6293073836095470d36c12be4c",
+      "src/assets/parathyroid-exploration-illustration.asset.json": "05de35e898bec427a77f327ac732f659",
+      "src/assets/patient-education/Open_Paraumbilical_Ventral_Hernia_Repair.docx.asset.json": "c4a6c2236a52f2d33998cadbba921183",
+      "src/assets/patient-education/Open_Paraumbilical_Ventral_Hernia_Repair.pdf.asset.json": "de9c35290af8d8966b36c5d0f3c8f9f5",
+      "src/assets/patient-education/Surgical_Inguinal_Hernia_Repair_Open_Technique.docx.asset.json": "8b7b8eb9e5f8d9e565a760ee750299a4",
+      "src/assets/patient-education/Surgical_Inguinal_Hernia_Repair_Open_Technique.pdf.asset.json": "f961d26413db45ffc2cd6679abca65fd",
+      "src/assets/patient-education/abscess_drainaige_under_local_anathesia.docx.asset.json": "0be61c8deafdeae95da67d2009f7a6da",
+      "src/assets/patient-education/abscess_drainaige_under_local_anathesia.pdf.asset.json": "e6af1e855f8b396d4cd0df5a6436d700",
+      "src/assets/patient-education/appendectomy.docx.asset.json": "3881736a163a9477e746920601b74491",
+      "src/assets/patient-education/appendectomy.pdf.asset.json": "dfd8ebc6931d3290bd408ec474697d9b",
+      "src/assets/patient-education/breast_lump.docx.asset.json": "85fb0f577cb78bce85b30440ef6be072",
+      "src/assets/patient-education/breast_lump.pdf.asset.json": "94c1b7324d21ae1138bef7ebcd87bcb2",
+      "src/assets/patient-education/category-abdominal.jpg": "320cf54dd295f798a73baa576bbf7628",
+      "src/assets/patient-education/category-anorectal.jpg": "cc93572f4803e5026411a4f17c92f369",
+      "src/assets/patient-education/category-breast.jpg": "7cddf21de1cc6b99278391fb759f7bc2",
+      "src/assets/patient-education/category-endocrine.jpg": "279015bc93513ffd0ece3d41f20a04e4",
+      "src/assets/patient-education/category-hernia.jpg": "ec818a1b55ee56c9c80d73e4af71e228",
+      "src/assets/patient-education/category-minor.jpg": "a8a7ccb5801609e6445d21c66c69fe50",
+      "src/assets/patient-education/category-pediatric.jpg": "a67adda7fbe607f6189859c8e615be06",
+      "src/assets/patient-education/cholecystectomy.docx.asset.json": "98bf36e2da02d587b5ac7d1a3f58c2ae",
+      "src/assets/patient-education/cholecystectomy.pdf.asset.json": "7caba139cdd75d8632724e86c1e40713",
+      "src/assets/patient-education/dorsal_wrist_ganglion.docx.asset.json": "1d786a576ec60fe10660a9d87dd35247",
+      "src/assets/patient-education/dorsal_wrist_ganglion.pdf.asset.json": "5e0c61453c2e98ba148537fc04fcf5f1",
+      "src/assets/patient-education/fibroadenosis_breast_education.docx.asset.json": "5cce0abfbb7b36d4cb3b3678658e98d3",
+      "src/assets/patient-education/fibroadenosis_breast_education.pdf.asset.json": "ecba546bd04e9d049b4497a4f13e4258",
+      "src/assets/patient-education/haemorrohoids.docx.asset.json": "3fa8ee00d2e12aea01c969df89b0bf12",
+      "src/assets/patient-education/haemorrohoids.pdf.asset.json": "6460463843bd2206a05539dd74ef74cf",
+      "src/assets/patient-education/hidradenitis_suppurativa.docx.asset.json": "e6f600dfe15d86c8b7259ada4ad66e87",
+      "src/assets/patient-education/hidradenitis_suppurativa.pdf.asset.json": "4083135d54813ed487a105369cbc4d06",
+      "src/assets/patient-education/ingrowing_nail_wedge_excision_under_local_anathesia.docx.asset.json": "f7258a1a5c69157b608df6f10d3514ba",
+      "src/assets/patient-education/ingrowing_nail_wedge_excision_under_local_anathesia.pdf.asset.json": "a8c3d453bc62dba618ee0226c93d0226",
+      "src/assets/patient-education/laparoscopic_inguinal_hernia.docx.asset.json": "ea55f48532c41c21e6bc5857b7abe286",
+      "src/assets/patient-education/laparoscopic_inguinal_hernia.pdf.asset.json": "bf87ad39be81c0b26cd3c8bf9a111ffd",
+      "src/assets/patient-education/laparoscopic_umbilical_or_ventral_hernia.docx.asset.json": "00dc930ab213b3b3afcbf9f9ba08a670",
+      "src/assets/patient-education/laparoscopic_umbilical_or_ventral_hernia.pdf.asset.json": "0a04f1a9645dcbf09bed30b775b04efc",
+      "src/assets/patient-education/lipoma_local_anathesia.docx.asset.json": "df22ab2acf8268c52e120f10748345dd",
+      "src/assets/patient-education/lipoma_local_anathesia.pdf.asset.json": "9563298fd62c7337c4478f5e17f7c5b0",
+      "src/assets/patient-education/pediatric_hernia.docx.asset.json": "e09a2c77b5b2866b92da0fe15c1adbed",
+      "src/assets/patient-education/pediatric_hernia.pdf.asset.json": "1c5e75e26438218a87b2a6ea8487dfd6",
+      "src/assets/patient-education/perianal_abscess.docx.asset.json": "8b81f19011dd42693f84c1408757f801",
+      "src/assets/patient-education/perianal_abscess.pdf.asset.json": "a120df48e12976239bd5cc36948edc30",
+      "src/assets/patient-education/perianal_fistula.docx.asset.json": "f797ab65fab78904cf026da3e7f6f6a6",
+      "src/assets/patient-education/perianal_fistula.pdf.asset.json": "a8c9737ec3f00742390ff0547e22b3c3",
+      "src/assets/patient-education/pilonidal_abscess.docx.asset.json": "bdd5c8d8acbe70d0008d39ab62f43fcd",
+      "src/assets/patient-education/pilonidal_abscess.pdf.asset.json": "4e4f0f9749ee1db67fae1ad90011322d",
+      "src/assets/patient-education/pilonidal_sinus.docx.asset.json": "5f87345196c79982141f9f3c40ee1d57",
+      "src/assets/patient-education/pilonidal_sinus.pdf.asset.json": "6bd2846fefd8df5b2afed55d599180c8",
+      "src/assets/patient-education/plastibell_circumcision.docx.asset.json": "6e0bf18f218b548610f8e1cb18815936",
+      "src/assets/patient-education/plastibell_circumcision.pdf.asset.json": "0738bb1511593fa830056f6694f598c1",
+      "src/assets/patient-education/stoma_reversal_checklist.docx.asset.json": "c2c8404747a7745ad027404aa85d8f7c",
+      "src/assets/patient-education/stoma_reversal_checklist.pdf.asset.json": "071d2c05cfe597f6dbd2b27abcefb221",
+      "src/assets/patient-education/stoma_reversal_pelvic_floor.docx.asset.json": "2701564cb312137ee080efea1f8192cb",
+      "src/assets/patient-education/stoma_reversal_pelvic_floor.pdf.asset.json": "285b8c24a217eac7e5f83bdfa8784044",
+      "src/assets/patient-education/thyroidectomy.docx.asset.json": "7bd965908caf3d36c91e8c87212e872e",
+      "src/assets/patient-education/thyroidectomy.pdf.asset.json": "d457d0f2b7183942f0ae564b73e9507e",
+      "src/assets/patient-journey-hero.jpg": "ea238b6af333824f46d3dce7d975195a",
+      "src/assets/patient-journey-hero.webp": "644df0fbfca2f082e75e48ed18ff31a5",
+      "src/assets/patient-journey-prepare.jpg": "437fc3de7f32f7c64b7fa25b7f43bcc2",
+      "src/assets/patient-journey-prepare.webp": "23a6bfb8d9605f7a754d6a31730a50f5",
+      "src/assets/patient-journey-recover.jpg": "01d0c01e19902da5e89082b718066762",
+      "src/assets/patient-journey-recover.webp": "507eccc80114da10fc7b329bc07d41a8",
+      "src/assets/perforated-diverticulitis-algorithm.asset.json": "3f29dfaea81efec49a1e3ba9737f96b3",
+      "src/assets/pilonidal-treatment-shift-illustration.asset.json": "6f736821fcf4d09d75c66c5145cd6546",
+      "src/assets/puh-140513144027-phpapp01.pptx.asset.json": "cef56ee6ff762fb8710767dca6136064",
+      "src/assets/ramadan-diverticulitis-illustration.asset.json": "3e8f6304a8bf585c476270211e01b9f7",
+      "src/assets/retained-cbd-stone-illustration.asset.json": "9ef3db28872dee47efdbe1fe12e34e82",
+      "src/assets/sbo-decision-clock-illustration.asset.json": "98f9371876c3c2d46a28dabad6b48b77",
+      "src/assets/sections/beyond.jpg": "2e18c61080aa48b7c31effc40b44b878",
+      "src/assets/sections/contact.jpg": "832ce196f4bb9ee911a2dc981102acab",
+      "src/assets/sections/education.jpg": "daa88de53d6ce4e2999dcd1b94fbe528",
+      "src/assets/sections/education.webp": "ba8acbcbc093252fe52b5c6a445edf69",
+      "src/assets/sections/experience.jpg": "107f27d4aa0fd26be4c168e5b4631b15",
+      "src/assets/sections/expertise.jpg": "38fbacd56e07133eeb1ded660ff75950",
+      "src/assets/sections/orcid.jpg": "9171e5768948fb212ea17d330c5d51bd",
+      "src/assets/sections/presentations.jpg": "7472fa0917cce34d41146aa7103da4d8",
+      "src/assets/sections/research.jpg": "af3e7fd18f11c5ba80176a38468777f4",
+      "src/assets/sections/services.jpg": "2bf543057a62d3cdc533f00e0d871617",
+      "src/assets/sections/services.webp": "92fa7c58e9352b8deb0439b761c03455",
+      "src/assets/sections/teaching.jpg": "1e46135293b0d323480e82927a396543",
+      "src/assets/sections/updates.jpg": "dd90963f0358a73e98027a3cc1b22042",
+      "src/assets/sections/videos.jpg": "3ee358ba39daf083b8e11c7a9de36062",
+      "src/assets/sections/videos.webp": "fd17ef4986bb5c6340425351484288f8",
+      "src/assets/sections/web.jpg": "75df0748a8637c271c35476c74b7b7f9",
+      "src/assets/sleeve-190825155836.pptx.asset.json": "6df60a5087788f7f29fed2e4f1f0cdec",
+      "src/assets/sleeve-plateau-guide.jpg": "9ef3759eb78b0c6cde9f5b205dc97ccb",
+      "src/assets/sleeve-plateau-guide.webp": "ada20b52b79c0bce549e774c059078eb",
+      "src/assets/sleeve-plateau-habits.jpg": "f34c90fae6dccfe701747e04e8c8c725",
+      "src/assets/sleeve-plateau-habits.webp": "ffaec47ab37cf8cbf5c089c267e57222",
+      "src/assets/subtotal-cholecystectomy-illustration.asset.json": "f5e96b9620b4eda690b287b9e3d9e481",
+      "src/assets/tamer-100618082530-phpapp01.pptx.asset.json": "088034b9cc356abfb15e749ae34f59ee",
+      "src/assets/thyroid-presentation1aim-net-100618084512-phpapp02.ppt.asset.json": "6965c383620a0f79f0b5ff317b8a85c5",
+      "src/assets/thyroid-rfa-vs-lobectomy-illustration.asset.json": "4517dfdf9e95786d98d7b25348e356de",
+      "src/components/ArabicSiteSections.tsx": "0992cb9e68d1829b33fe78863618cfc2",
+      "src/components/ArticlesSection.tsx": "1743df9ca36e8f220e40e95bca011588",
+      "src/components/BookMarkdown.tsx": "a7ae265eb993948b6697e7e3010221a4",
+      "src/components/BooksShowcase.tsx": "9a070c1731a5299f97b55d1dd01a2a3b",
+      "src/components/DailyArticle.tsx": "538aa2689ca15052f02091c66f8659a5",
+      "src/components/EducationSummaryDialog.tsx": "da47a9b0de700a5b3a7e89c0f24ac3eb",
+      "src/components/EnglishSiteSections.tsx": "441deabce8163c9be4af5d8e84def245",
+      "src/components/HomeSectionMenus.tsx": "6dd0ea739a97073dde09b593ad9fe5a9",
+      "src/components/InstallAppButton.tsx": "5fc173141ab10c4fb75cb201a2af98ea",
+      "src/components/OrganizedPage.tsx": "c81ad8f50a318758dad97e6876f1defc",
+      "src/components/PatientComments.tsx": "f3920f70fe36ca67cc33c017ddb90e11",
+      "src/components/PatientEducationSite.tsx": "b163caa6fd42a38bf6a3874545bff993",
+      "src/components/PatientFAQ.tsx": "e8e578e993c48beebdfdeb77aeecfdad",
+      "src/components/PatientGuideContent.tsx": "1538831d1aee5a71399ddc4f685cf744",
+      "src/components/PatientGuideFramework.tsx": "13403700fe56163c1ad12d423402e4f8",
+      "src/components/PatientReadinessChecklist.tsx": "83ed60136a718ed1a7e72e1c0eb96136",
+      "src/components/PreventionContent.tsx": "2ea46feaa9ac32e81ad0b35d8de1cde0",
+      "src/components/SectionArt.tsx": "73547467c1b510c609726a86ccdef89a",
+      "src/components/SiteHome.tsx": "02a4224c9478d8a5d7a16f08dd980f6e",
+      "src/components/SiteLanguageProvider.tsx": "58d599fecc8a438843a3aff434929388",
+      "src/components/SiteNavigation.tsx": "3ca5e4c0e287aa7fd4b0c26bb70cb881",
+      "src/components/SourceLanguageNotice.tsx": "053567f5800f3f90ba3d09bd7ddd0672",
+      "src/components/SurgicalJourneyFramework.tsx": "ff262e3df4a4fca2061bf8ad46b5247c",
+      "src/components/ThreeSectionHome.tsx": "290a84636070497a7ff1ef7b3e4d8167",
+      "src/components/VideosSection.tsx": "bfb44bfc0802fb86cd5c643fc6c7db28",
+      "src/components/ai-elements/conversation.tsx": "48083a673c3eff6a19de5b8d02cb72e4",
+      "src/components/ai-elements/message.tsx": "a87c253d43874fb6093e150beaaa2739",
+      "src/components/ai-elements/prompt-input.tsx": "237aec636897e83b9ab2e099d543c877",
+      "src/components/ai-elements/shimmer.tsx": "a881ebb54b9fc290bbcada3980b6a0fe",
+      "src/components/ui/accordion.tsx": "55f9dda62b4e3913c9b23e5015a86aef",
+      "src/components/ui/alert-dialog.tsx": "96350e949e9b7b674545430a410ab89c",
+      "src/components/ui/alert.tsx": "f993d7e96b1e25ce50e68ed97e11d2a8",
+      "src/components/ui/aspect-ratio.tsx": "c5c364545e1b25a94e9e752cd67ad048",
+      "src/components/ui/avatar.tsx": "72989cd32f72c4122802540ef32525a5",
+      "src/components/ui/badge.tsx": "81cade001fc4260f9943e18dcd79449b",
+      "src/components/ui/breadcrumb.tsx": "bb9ac254f12662b20d5d50b84308bf3a",
+      "src/components/ui/button-group.tsx": "964036f9f529f5720fb805cf3b3ed0a8",
+      "src/components/ui/button.tsx": "f7a5102d0cde43e7b5892e91bc612c43",
+      "src/components/ui/calendar.tsx": "415d91d7006d4cc654e27620fca340f6",
+      "src/components/ui/card.tsx": "d6c48ea36221b9cdc3576d305d12d5d5",
+      "src/components/ui/carousel.tsx": "e324c68ae00cd5aed49317638abd429a",
+      "src/components/ui/chart.tsx": "6a3baf94f2e89f1f97d4d7a28f3622d2",
+      "src/components/ui/checkbox.tsx": "f78aac270ca482c8c2cb907ef6260462",
+      "src/components/ui/collapsible.tsx": "767631bbc344945c236f185f4078d71d",
+      "src/components/ui/command.tsx": "014782599cc838b021ec68b07ad4ea02",
+      "src/components/ui/context-menu.tsx": "e9d689beb53d9adb63165bfe64838bf6",
+      "src/components/ui/dialog.tsx": "ef4fe8e7de8675730afe3d633b260e09",
+      "src/components/ui/drawer.tsx": "8be333e8fd8e42576b1b5f72f07f4337",
+      "src/components/ui/dropdown-menu.tsx": "32156e221f3473280114c80fdb818829",
+      "src/components/ui/form.tsx": "1b0aa6302b9017ea2a1307c22a1d2983",
+      "src/components/ui/hover-card.tsx": "1442794c5ca2a78d69e4e613b315ed3d",
+      "src/components/ui/input-group.tsx": "9981d455c5aaa88a564bd59ddfaf8f26",
+      "src/components/ui/input-otp.tsx": "58cff10c8942cac8483c0bcd65d39d3c",
+      "src/components/ui/input.tsx": "1d4cc52a4cd8afb3e18e45bda942bb8a",
+      "src/components/ui/label.tsx": "7e35df4ca8edd0835efd97ca7937ef92",
+      "src/components/ui/menubar.tsx": "5870465653e12c3d0e35a2fad6f9faa9",
+      "src/components/ui/navigation-menu.tsx": "e85351147a02b29577ff83d188b63c24",
+      "src/components/ui/pagination.tsx": "fac6cdbb4bbf78b273d85cd36d6cbb49",
+      "src/components/ui/popover.tsx": "f18aa1da2144f25ee60795c539c51bcd",
+      "src/components/ui/progress.tsx": "55c462e5c9dd678dcf2c0c510b014ac4",
+      "src/components/ui/radio-group.tsx": "0e1ace237a5da3197e3eb1e6683faba9",
+      "src/components/ui/resizable.tsx": "d9fcb9203c749fcab4e125a99bb12a86",
+      "src/components/ui/scroll-area.tsx": "87b65d3eb26f2b02ff35a7acea585ba5",
+      "src/components/ui/select.tsx": "31ea1bbd6671833b010b2e852c8a55d0",
+      "src/components/ui/separator.tsx": "433d163c4ffa00b59398a0c293198b5e",
+      "src/components/ui/sheet.tsx": "0221fbf97b69611b47fcbc10bb27669a",
+      "src/components/ui/sidebar.tsx": "83c1623eb50ebc370d7b1b84a542e369",
+      "src/components/ui/skeleton.tsx": "41b182e6e2fc3805960d41e767d4a972",
+      "src/components/ui/slider.tsx": "4752f1bfa26426988d325599e01c335b",
+      "src/components/ui/sonner.tsx": "97f59f60be3413196d095fcbf7383216",
+      "src/components/ui/spinner.tsx": "4799669575bae50e8c2b5a1764cb8c89",
+      "src/components/ui/switch.tsx": "82f5d8b0c59bb7ff305caa9f502e79ff",
+      "src/components/ui/table.tsx": "7cc889989d53894b659903c73aded96e",
+      "src/components/ui/tabs.tsx": "56e725558c2ce72c18243bf51717f385",
+      "src/components/ui/textarea.tsx": "c7aad96fb9545210d53135a96c76ed6b",
+      "src/components/ui/toggle-group.tsx": "ac26383acf721d116ca8e3ab5c5355d5",
+      "src/components/ui/toggle.tsx": "ee8c5adac74e7242b85b544db1a8fbad",
+      "src/components/ui/tooltip.tsx": "67d71db5a1ab935695d1def497f5b8a6",
+      "src/content/books/common-anal-conditions/01-open-access-copyright-licence-and-cataloguing-page.md": "6bac6049f7f3696d8566bf4b89c0d3a0",
+      "src/content/books/common-anal-conditions/02-dedication-clinical-audit-and-how-to-use-this-handbook.md": "bf5c96edae0235a8b27853dd5701bfa6",
+      "src/content/books/common-anal-conditions/03-whats-new-in-version-2.md": "9f806fcd6ad893d603cf927d0eb22830",
+      "src/content/books/common-anal-conditions/04-chapter-01.md": "85a9df0d34d7c171b32ae4df806154de",
+      "src/content/books/common-anal-conditions/05-chapter-02.md": "1e4ceabfa6bdd4436bc6164b8e1ed264",
+      "src/content/books/common-anal-conditions/06-chapter-03.md": "76fc02b1e820ad4cadfcb54a0e1ad71d",
+      "src/content/books/common-anal-conditions/07-chapter-04.md": "75ca7f6df2872452f4c2ba4a9c0a9fc7",
+      "src/content/books/common-anal-conditions/08-chapter-05.md": "d4d70206cfcca058af2e66f89606d45d",
+      "src/content/books/common-anal-conditions/09-chapter-06.md": "0b6a98182be1dd48fde20a18daae15de",
+      "src/content/books/common-anal-conditions/10-chapter-07.md": "d3f912d28d05ba4918a21c3ce69b73c8",
+      "src/content/books/common-anal-conditions/11-chapter-08.md": "cf2c3d3554dcb2f0156a7abd430bc88a",
+      "src/content/books/common-anal-conditions/12-chapter-09.md": "33d62f6e4d9023f61755688371033087",
+      "src/content/books/common-anal-conditions/13-chapter-10.md": "cf164ab226f9f3498b3b5a2363f02815",
+      "src/content/books/common-anal-conditions/14-chapter-11.md": "793dbb50b7905c66bff069ff34b183a5",
+      "src/content/books/common-anal-conditions/15-chapter-12.md": "4d5e84fbf81f456bf721bbee7accc18a",
+      "src/content/books/common-anal-conditions/16-chapter-13.md": "5ffa319438afcae5d9bc108dc2723e9d",
+      "src/content/books/common-anal-conditions/17-chapter-14.md": "2edc698a6d9bbd47845bbb312357be38",
+      "src/content/books/common-anal-conditions/18-chapter-15.md": "3da332cf96b9ee2b0bf6b9918f7d5161",
+      "src/content/books/common-anal-conditions/19-chapter-16.md": "56312df404b212fbef38eba6c357f1f1",
+      "src/content/books/common-anal-conditions/20-chapter-17.md": "54d75c796e4546fc8458667228eb3eab",
+      "src/content/books/common-anal-conditions/21-chapter-18.md": "5c4b43207b359b851d18034bc49c419b",
+      "src/content/books/common-anal-conditions/22-chapter-19.md": "432cb8df0f6191f2af2137f7937c2da8",
+      "src/content/books/common-anal-conditions/23-appendix-a.md": "dcf91947430775efb73f044e40cdb86a",
+      "src/content/books/common-anal-conditions/24-appendix-b.md": "b955b4cad4fa6b16ee511c9e38bddd12",
+      "src/content/books/common-anal-conditions/25-appendix-c.md": "e062c8a74cf4aef4b4b31d88f8a67f64",
+      "src/content/books/common-anal-conditions/26-appendix-d.md": "8758205c4cde0b8ab6ae74a0643c4ccd",
+      "src/content/books/common-anal-conditions/27-appendix-e.md": "4f6bf4b80d7ab64163f212dd3079a682",
+      "src/content/books/common-anal-conditions/28-appendix-f.md": "cfc6409a1e992be2d6823f88fd22399e",
+      "src/content/books/common-anal-conditions/29-final-quick-reference-section.md": "c29309d143dd5f4fcd7204563d98f6e3",
+      "src/content/books/common-anal-conditions/30-consolidated-reference-list.md": "a5816583f42d316b5335f63f60270b57",
+      "src/content/books/common-anal-conditions/31-list-of-tables-and-algorithms.md": "f05045c8beda9b3aa6b1715579c3f2fb",
+      "src/content/books/common-anal-conditions/32-list-of-recommended-medical-illustrations.md": "ba81651c879568294577df32618fb66b",
+      "src/content/books/common-anal-conditions/33-clinical-safety-review-and-final-quality-control-checklist.md": "a82891b274f331c463daf270610df9c6",
+      "src/content/books/from-clinic-to-recovery/01-copyright-and-notices.md": "e34a7f3b5881a77cfd8e0a505c8f7c6d",
+      "src/content/books/from-clinic-to-recovery/02-preface.md": "24addf8c4ed67a62c2b606dc81021324",
+      "src/content/books/from-clinic-to-recovery/03-about-the-author.md": "53629fcf34593efca5ff0cf5a67735cc",
+      "src/content/books/from-clinic-to-recovery/04-how-to-use-this-book.md": "cc6e045624b2f8ea8fb9ef58d885bf16",
+      "src/content/books/from-clinic-to-recovery/05-abbreviations.md": "d9ba75b0968ca3c03aae7c7f18b7b96d",
+      "src/content/books/from-clinic-to-recovery/06-chapter-01.md": "37c52e2155a77fece2a0d598a98de53c",
+      "src/content/books/from-clinic-to-recovery/07-chapter-02.md": "ebbb23ca5ca98b62bbcebe185ee627de",
+      "src/content/books/from-clinic-to-recovery/08-chapter-03.md": "87d8abb079fb4a2a754d098bbb13a7ae",
+      "src/content/books/from-clinic-to-recovery/09-references-part-1.md": "40eaf2687044cdb014016c7a95a4bad6",
+      "src/content/books/from-clinic-to-recovery/10-chapter-04.md": "84dee681bf887eee323180437a96acda",
+      "src/content/books/from-clinic-to-recovery/11-chapter-05.md": "5bd4ad590d7a2d7946605119f82dc103",
+      "src/content/books/from-clinic-to-recovery/12-chapter-06.md": "8a873cfccdb3265437317a27b42651f4",
+      "src/content/books/from-clinic-to-recovery/13-chapter-07.md": "abfadac0e5948e7261f9123de36b6da2",
+      "src/content/books/from-clinic-to-recovery/14-chapter-08.md": "f824a88464a2053ce10febcc02bbf450",
+      "src/content/books/from-clinic-to-recovery/15-chapter-09.md": "1517975c5bdfdac5341852fe923a74fa",
+      "src/content/books/from-clinic-to-recovery/16-chapter-10.md": "a8240faba1427d570e60cb5d6a578fdf",
+      "src/content/books/from-clinic-to-recovery/17-chapter-11.md": "ff5e87f4638510a8bff389b3ff4dc68e",
+      "src/content/books/from-clinic-to-recovery/18-chapter-12.md": "04fde87728b6c24d431464d8faa8f068",
+      "src/content/books/from-clinic-to-recovery/19-chapter-13.md": "7c142196fb9038100f605c0ab348e345",
+      "src/content/books/from-clinic-to-recovery/20-chapter-14.md": "821b256f98db34ecb703f648b5954a9b",
+      "src/content/books/from-clinic-to-recovery/21-chapter-15.md": "57ea8a322ab13db587d22250bd01732e",
+      "src/content/books/from-clinic-to-recovery/22-chapter-16.md": "76e3d81868c850db27c24a7b68a1ecb7",
+      "src/content/books/from-clinic-to-recovery/23-chapter-17.md": "9fdc3c2e6027e06ac2720e7da3989ab1",
+      "src/content/books/from-clinic-to-recovery/24-chapter-18.md": "a0129844672cb4744a71acfac519cf5f",
+      "src/content/books/from-clinic-to-recovery/25-chapter-19.md": "a64d6d8e4ceba19b9352037814961be9",
+      "src/content/books/from-clinic-to-recovery/26-chapter-20.md": "e68030a34de257645c23bd9142f7d5e8",
+      "src/content/books/from-clinic-to-recovery/27-chapter-21.md": "436209a6812ecf226a58b96263c34419",
+      "src/content/books/from-clinic-to-recovery/28-chapter-22.md": "71630730b6590916b2f8364d529715be",
+      "src/content/books/from-clinic-to-recovery/29-chapter-23.md": "789040a29fb0393caa800f8b7b45410d",
+      "src/content/books/from-clinic-to-recovery/30-chapter-24.md": "a5563b28a2bc74b8967ffa78a577e299",
+      "src/content/books/from-clinic-to-recovery/31-chapter-25.md": "c7ced2a618abc8c650e29819767efb1a",
+      "src/content/books/from-clinic-to-recovery/32-chapter-26.md": "57f852ccc5f5dbaa8405d01573338bd6",
+      "src/content/books/from-clinic-to-recovery/33-chapter-27.md": "d903577f40883a43e416943f2154d7c9",
+      "src/content/books/from-clinic-to-recovery/34-chapter-28.md": "703087b49b847787d2e50a3e61f830c7",
+      "src/content/books/from-clinic-to-recovery/35-chapter-29.md": "b781cf02469818c9f663d3bd11aad486",
+      "src/content/books/from-clinic-to-recovery/36-appendix-a.md": "ec7f36b89d385bb00a3e7a6cb4aab591",
+      "src/content/books/from-clinic-to-recovery/37-appendix-b.md": "aed7b6cb2b1baf1c667601090b3fe69d",
+      "src/data/article-editions.ts": "53f6bf7b68e2e3a2ef8909029ce9f70d",
+      "src/data/blog-articles.ts": "60e87397b9a3501ec544466d870edcd9",
+      "src/data/books-copy.ts": "cdd895237478634c0de07b2bd6bc92e1",
+      "src/data/books/index.ts": "cd9216cee48482a72cef89e73661b323",
+      "src/data/gallstone-alternatives-article.ts": "ec71c41714b8f9d256fae58fcf60de4e",
+      "src/data/guide-seo.ts": "6c32ae5368034f59d3293dfc9cd53059",
+      "src/data/home-copy.ts": "5c2c8da4bb440d3fd850a5b7e5b6b3b7",
+      "src/data/locales/ar-ui.json": "09298cc1a4eea595a5b44864f13b40d4",
+      "src/data/locales/bn.json": "8191956cb204b005628096f15710945c",
+      "src/data/locales/hi.json": "ba7bf3760907e03dd07b559dfc43a912",
+      "src/data/locales/ta.json": "cd6e9095b56c3612e19ddb4fd7ad2330",
+      "src/data/locales/tl.json": "15c50acfd19ac8076dd41f3a90afabc7",
+      "src/data/locales/ur.json": "3df6acd5691c1236d7a54b4c12248352",
+      "src/data/new-arabic-articles.ts": "aa016314d4d08dce1c35ac57b674bbfd",
+      "src/data/patient-education-summaries.ts": "4293ddb33aba45750fb2adb61fd45fe8",
+      "src/data/patient-education.ts": "b2269d16f815bc57583e7184a87aa93a",
+      "src/data/patient-guide-copy.ts": "b9160f617c09e5dc985f8deb7498bc19",
+      "src/data/pilonidal-article-editions.ts": "da2d6c2a385228f4fe580870d2c8d398",
+      "src/data/posts-comments-copy.ts": "aa1ca7a9442337afe9510d85807a7d1e",
+      "src/data/prevention.ts": "df3f90b05cee60a2b6a03c15acc5c0ac",
+      "src/data/publications.ts": "e6db886a9ce715b2a9c29d6166f6e923",
+      "src/data/section-copy.ts": "d83f3bfa889c0ad2644beb17fef861a4",
+      "src/data/site-navigation.ts": "238da6334556b980c3fa12cf29ece7d9",
+      "src/data/surgery-updates.ts": "4467ebcfdab420fa12618ed141cbdfeb",
+      "src/data/translated-articles.ts": "8b8619e466e3bc62df9640ee66ce220e",
+      "src/hooks/use-mobile.tsx": "c0a0bdd4638c391a1dd06ac82074e60b",
+      "src/integrations/lovable/index.ts": "e9cf6e6968dd0392b2222ee0745ecece",
+      "src/integrations/supabase/auth-attacher.ts": "a1347245a102b51d9e2f2796ab806dc5",
+      "src/integrations/supabase/auth-middleware.ts": "9877e7a04523e50505df8c4b1eb8dbf9",
+      "src/integrations/supabase/client.server.ts": "6f3a33a5b0a7884940926c338ae7b4af",
+      "src/integrations/supabase/client.ts": "a813c2b4fda29c2af71e9c6476af4200",
+      "src/integrations/supabase/cron-auth.ts": "d05be20476d3287ad487690a4cf98029",
+      "src/integrations/supabase/previewAuthStorage.ts": "315e4ae3473d92766e0d6d4d83945aef",
+      "src/integrations/supabase/types.ts": "7f7cca3d647f11584269db4c53649351",
+      "src/lib/ai-gateway.server.ts": "53f84526328bb82f94ba04e4180f7693",
+      "src/lib/article-html.ts": "005e01dbf40d41eab710e1d6f2c03e87",
+      "src/lib/blog.ts": "174555ee49044e89c7cf5102d203b59b",
+      "src/lib/book-content.ts": "114666e90372a09329be4f10bd7f6153",
+      "src/lib/daily-article.test.ts": "a33bc4f0b95b0be13525eb5da764fbcb",
+      "src/lib/daily-article.ts": "a6cb00b0ce847f8ed23ef1e4591d5cf5",
+      "src/lib/error-capture.ts": "00e77bfacfb2d79c0816361e678f1b65",
+      "src/lib/error-page.ts": "8da0ddd7569bac2676b9a5c8edff8a36",
+      "src/lib/gemini.server.ts": "f92f949d1061681dcd6dda89fb129e18",
+      "src/lib/mcp/index.ts": "d938a070af8e2db4ad0e8a7cb1dbbfa2",
+      "src/lib/mcp/tools/get-patient-education.ts": "ddbbd1300e9b95ab63147b11a7810502",
+      "src/lib/mcp/tools/list-patient-education.ts": "191948e765f30bd74458c3ed2ed6326b",
+      "src/lib/mcp/tools/list-surgery-updates.ts": "4cb0a2e9ca152296d07e3cb89629ae16",
+      "src/lib/mcp/tools/search-publications.ts": "ad2e8432bcc88183ef3efcd86ec42437",
+      "src/lib/patient-comments-safety.ts": "9e82abf98e9f348df753bf4f69252143",
+      "src/lib/pwa.ts": "29a656e5495fe30e605418ce892d4289",
+      "src/lib/site-articles.functions.ts": "ce3b88783a8007415e1925b74394f5e5",
+      "src/lib/site-articles.queries.ts": "2f354f957ccdabc81cbffc66d8a85833",
+      "src/lib/site-articles.ts": "c2216db88b51f3db601ba108706f4a48",
+      "src/lib/site-language.ts": "91a10acf70bf59d3447828cd7556e20f",
+      "src/lib/utils.ts": "d9837f38cc05303254571985e3164050",
+      "src/patient education": "399798b2b7b25002a05616ad80e51665",
+      "src/routeTree.gen.ts": "18108044a4a82eb91ca50ccc05212ec6",
+      "src/router.tsx": "8f905e713b0eba7fa8148b7995a708c9",
+      "src/routes/[.mcp]/invoke-tool/$tool.ts": "2cc296128352d61d70726e7428ef5ca5",
+      "src/routes/[.mcp]/list-tools.ts": "bc1d258eb3237605d066b9a536a63d5d",
+      "src/routes/[.well-known]/oauth-protected-resource.ts": "2dbcc907a7d3ab43955e6dbbb99e7a1d",
+      "src/routes/__root.tsx": "e26c61031b4138a2dd2e5bbad0fb6729",
+      "src/routes/_authenticated/admin.articles.tsx": "7066a223195639d6f2f64143488f1f31",
+      "src/routes/_authenticated/admin.comments.tsx": "0d93fdc1391d671c345fc17e14f7af13",
+      "src/routes/_authenticated/route.tsx": "0b2c3a74784f99e1280877078ccd739c",
+      "src/routes/api/public/patient-comments.ts": "6d71f91937580c70712b66a0ae02bcfc",
+      "src/routes/api/public/post-image.$id.ts": "e3598b5315bc374a2987bd17da793980",
+      "src/routes/api/public/sync-posts.ts": "88510bebcdad10011ef2bd4f941d9493",
+      "src/routes/ar.index.tsx": "342d82b901eb734ffb0abb1ff3380d1c",
+      "src/routes/ar.medical-questions.tsx": "2d24791636a4019d02c69a3ff218f624",
+      "src/routes/ar.patients.tsx": "b42627e6b08427db7b67ad11c0bfa272",
+      "src/routes/ar.tsx": "277a8268a5b18610bc3775094d0d203d",
+      "src/routes/articles.$articleId.tsx": "328f693412a1fbf85f1fcdf1eeb467cb",
+      "src/routes/articles.index.tsx": "188b43d4fcc5e48854e4f97516e6ffbb",
+      "src/routes/articles.tsx": "a3b02cbac35a1db182bcb11c12508faf",
+      "src/routes/auth.tsx": "aa9c8ae04e0af604396a199d9c5aa0cb",
+      "src/routes/books.$bookId.$chapterId.tsx": "3946ca1eb4243099e7934eceaec1e5f8",
+      "src/routes/books.$bookId.index.tsx": "db9a7629a73236e260337ee12878d628",
+      "src/routes/books.index.tsx": "f157a256c197648076dafc07c6abef90",
+      "src/routes/contact.tsx": "f665109f7a12c76f7c16eb93c4a580ec",
+      "src/routes/guides.$guideId.tsx": "30e3a875265885157ce034ca1d818b0e",
+      "src/routes/index.tsx": "5e419b7fc145d62129e054247d751c9a",
+      "src/routes/mcp.ts": "300ada44271329e833b338d197b2395b",
+      "src/routes/patient-education.hidradenitis-suppurativa.tsx": "9e064084ca4f97225a848ee508b465e4",
+      "src/routes/patient-education.weight-plateau-after-sleeve.tsx": "fa76806404b3006ffbab04c1a63e8fda",
+      "src/routes/patients.tsx": "756faa04365ca470dc8c888af69700d7",
+      "src/routes/posts.tsx": "2bb1340316d9ac91a03006fd313a6737",
+      "src/routes/prevention.tsx": "0798ca2c94acbe26b0cd90da11fa32ae",
+      "src/routes/profile.tsx": "e43a0b86b728b926c56449faf38bb71f",
+      "src/routes/publications.tsx": "8a2d5d2915b89bc10aea0b104bb59cd7",
+      "src/routes/research.tsx": "3d592cd7eddf22f2db84b5918ffec710",
+      "src/routes/sitemap[.]xml.ts": "c248986f1efa05b88017f4c8211a9fb2",
+      "src/routes/teaching.tsx": "bd2807895e9f75d5ea1243caac8a6051",
+      "src/routes/updates.tsx": "baa5d263772893d03dca8b3a3d8d51a5",
+      "src/routes/videos.tsx": "375820035182bd500b0dfc9e50ef447b",
+      "src/server.ts": "3ae699f63a20f3f4772ee55248c2eb59",
+      "src/start.ts": "5f68ed421b064a9844dbb117e08f614b",
+      "src/styles.css": "b43e443184007ef29901a1c75a68e47e",
+      "supabase/config.toml": "3243ffd7b3bf074202d86bb22fb536f4",
+      "tsconfig.json": "994abf64c2b9f78b568879f80ed0170e",
+      "vite.config.ts": "d9f078b2b2efd3e647214c111ed73fde",
+      "wrangler.jsonc": "500291ca77ecfc2f5027d2e494bbcab9"
+    },
+    "pipeline_version": 8
+  },
+  "tokens": {
+    "color": [
+      {
+        "name": "--background",
+        "raw": "oklch(0.985 0.002 240)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--foreground",
+        "raw": "oklch(0.27 0.015 240)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--card",
+        "raw": "oklch(1 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--card-foreground",
+        "raw": "oklch(0.24 0.06 255)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--popover",
+        "raw": "oklch(1 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--popover-foreground",
+        "raw": "oklch(0.24 0.06 255)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--primary",
+        "raw": "oklch(0.42 0.14 258)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--primary-foreground",
+        "raw": "oklch(0.99 0.005 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--secondary",
+        "raw": "oklch(0.955 0.02 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--secondary-foreground",
+        "raw": "oklch(0.32 0.1 258)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--muted",
+        "raw": "oklch(0.965 0.01 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--muted-foreground",
+        "raw": "oklch(0.47 0.016 240)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--accent",
+        "raw": "oklch(0.55 0.15 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--accent-foreground",
+        "raw": "oklch(0.985 0.01 110)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--destructive",
+        "raw": "oklch(0.577 0.245 27.325)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--destructive-foreground",
+        "raw": "oklch(0.984 0.003 247.858)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--border",
+        "raw": "oklch(0.91 0.02 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--input",
+        "raw": "oklch(0.92 0.02 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--ring",
+        "raw": "oklch(0.55 0.15 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--teal",
+        "raw": "oklch(0.55 0.15 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--ivory",
+        "raw": "oklch(0.97 0.018 95)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--gold",
+        "raw": "oklch(0.75 0.11 86)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--gold-foreground",
+        "raw": "oklch(0.26 0.05 90)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--gradient-accent",
+        "raw": "linear-gradient(135deg, oklch(0.45 0.15 258), oklch(0.6 0.14 245))",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--patient-deep",
+        "raw": "oklch(0.32 0.11 258)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--patient-blue",
+        "raw": "oklch(0.49 0.07 240)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--patient-mist",
+        "raw": "oklch(0.93 0.025 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--patient-apricot",
+        "raw": "oklch(0.82 0.08 80)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--patient-canvas",
+        "raw": "oklch(0.985 0.002 240)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--patient-ink",
+        "raw": "oklch(0.31 0.04 245)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--daily-mint-surface",
+        "raw": "oklch(0.96 0.035 165)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--daily-mint-ink",
+        "raw": "oklch(0.36 0.085 165)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--daily-rose-surface",
+        "raw": "oklch(0.96 0.025 10)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--daily-rose-ink",
+        "raw": "oklch(0.4 0.12 10)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--daily-sky-surface",
+        "raw": "oklch(0.96 0.03 235)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--daily-sky-ink",
+        "raw": "oklch(0.38 0.09 235)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--daily-gold-surface",
+        "raw": "oklch(0.96 0.045 90)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--daily-gold-ink",
+        "raw": "oklch(0.39 0.075 80)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--home-doctor",
+        "raw": "oklch(0.3 0.11 260)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--home-doctor-surface",
+        "raw": "oklch(0.965 0.03 88)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--home-patient",
+        "raw": "oklch(0.42 0.09 180)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--home-patient-surface",
+        "raw": "oklch(0.965 0.03 180)",
+        "source": "src/styles.css"
+      }
+    ],
+    "typography": [
+      {
+        "name": "--font-serif",
+        "raw": "\"Libre Baskerville\", Georgia, serif",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--font-sans",
+        "raw": "\"IBM Plex Sans\", \"Noto Naskh Arabic\", system-ui, sans-serif",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--font-localized",
+        "raw": "\"IBM Plex Sans\", system-ui, sans-serif",
+        "source": "src/styles.css"
+      }
+    ],
+    "radius": [
+      {
+        "name": "--radius-sm",
+        "raw": "calc(var(--radius) - 4px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-md",
+        "raw": "calc(var(--radius) - 2px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-xl",
+        "raw": "calc(var(--radius) + 4px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius",
+        "raw": "0.5rem",
+        "source": "src/styles.css"
+      }
+    ],
+    "shadow": [
+      {
+        "name": "--shadow-elegant",
+        "raw": "0 24px 70px -24px oklch(0.3 0.1 258 / 0.35)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--shadow-soft",
+        "raw": "0 10px 34px -14px oklch(0.3 0.1 258 / 0.18)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--shadow-patient",
+        "raw": "0 18px 45px -24px color-mix(in oklab, var(--patient-deep) 45%, transparent)",
+        "source": "src/styles.css"
+      }
+    ],
+    "other": [
+      {
+        "name": "--gradient-hero",
+        "raw": "linear-gradient(\n    135deg,\n    oklch(0.22 0.08 262) 0%,\n    oklch(0.3 0.12 258) 55%,\n    oklch(0.4 0.14 252) 100%\n  )",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--gradient-gold",
+        "raw": "linear-gradient(135deg, oklch(0.8 0.11 88), oklch(0.7 0.12 80))",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--home-veil",
+        "raw": "linear-gradient(\n    90deg,\n    var(--background) 0%,\n    color-mix(in oklab, var(--background) 97%, transparent) 30%,\n    color-mix(in oklab, var(--background) 85%, transparent) 48%,\n    transparent 78%\n  )",
+        "source": "src/styles.css"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "ArabicSiteSections",
+      "file": "src/components/ArabicSiteSections",
+      "import_path": ""
+    },
+    {
+      "name": "ArticlesSection",
+      "file": "src/components/ArticlesSection",
+      "import_path": ""
+    },
+    {
+      "name": "BookMarkdown",
+      "file": "src/components/BookMarkdown",
+      "import_path": ""
+    },
+    {
+      "name": "BookCover",
+      "file": "src/components/BooksShowcase",
+      "import_path": ""
+    },
+    {
+      "name": "BookCard",
+      "file": "src/components/BooksShowcase",
+      "import_path": ""
+    },
+    {
+      "name": "BooksShowcase",
+      "file": "src/components/BooksShowcase",
+      "import_path": ""
+    },
+    {
+      "name": "DailyArticle",
+      "file": "src/components/DailyArticle",
+      "import_path": ""
+    },
+    {
+      "name": "EducationSummaryDialog",
+      "file": "src/components/EducationSummaryDialog",
+      "import_path": "",
+      "props": [
+        {
+          "name": "entry",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "image",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "lang",
+          "type": "enum",
+          "values": [
+            "en",
+            "ar"
+          ],
+          "default": "en"
+        }
+      ]
+    },
+    {
+      "name": "EnglishSiteSections",
+      "file": "src/components/EnglishSiteSections",
+      "import_path": ""
+    },
+    {
+      "name": "HomeSectionMenus",
+      "file": "src/components/HomeSectionMenus",
+      "import_path": ""
+    },
+    {
+      "name": "InstallAppButton",
+      "file": "src/components/InstallAppButton",
+      "import_path": ""
+    },
+    {
+      "name": "OrganizedPage",
+      "file": "src/components/OrganizedPage",
+      "import_path": ""
+    },
+    {
+      "name": "PatientComments",
+      "file": "src/components/PatientComments",
+      "import_path": ""
+    },
+    {
+      "name": "PatientEducationSite",
+      "file": "src/components/PatientEducationSite",
+      "import_path": ""
+    },
+    {
+      "name": "PatientFAQ",
+      "file": "src/components/PatientFAQ",
+      "import_path": ""
+    },
+    {
+      "name": "PatientGuideContent",
+      "file": "src/components/PatientGuideContent",
+      "import_path": ""
+    },
+    {
+      "name": "PatientGuideFramework",
+      "file": "src/components/PatientGuideFramework",
+      "import_path": ""
+    },
+    {
+      "name": "PatientReadinessChecklist",
+      "file": "src/components/PatientReadinessChecklist",
+      "import_path": ""
+    },
+    {
+      "name": "PreventionEntry",
+      "file": "src/components/PreventionContent",
+      "import_path": ""
+    },
+    {
+      "name": "PreventionContent",
+      "file": "src/components/PreventionContent",
+      "import_path": ""
+    },
+    {
+      "name": "SectionArt",
+      "file": "src/components/SectionArt",
+      "import_path": ""
+    },
+    {
+      "name": "SiteHome",
+      "file": "src/components/SiteHome",
+      "import_path": ""
+    },
+    {
+      "name": "SiteLanguageProvider",
+      "file": "src/components/SiteLanguageProvider",
+      "import_path": ""
+    },
+    {
+      "name": "SiteNavigation",
+      "file": "src/components/SiteNavigation",
+      "import_path": ""
+    },
+    {
+      "name": "SiteFooter",
+      "file": "src/components/SiteNavigation",
+      "import_path": ""
+    },
+    {
+      "name": "SourceLanguageNotice",
+      "file": "src/components/SourceLanguageNotice",
+      "import_path": ""
+    },
+    {
+      "name": "SurgicalJourneyFramework",
+      "file": "src/components/SurgicalJourneyFramework",
+      "import_path": ""
+    },
+    {
+      "name": "ThreeSectionHome",
+      "file": "src/components/ThreeSectionHome",
+      "import_path": ""
+    },
+    {
+      "name": "VideosSection",
+      "file": "src/components/VideosSection",
+      "import_path": ""
+    },
+    {
+      "name": "Conversation",
+      "file": "src/components/ai-elements/conversation",
+      "import_path": ""
+    },
+    {
+      "name": "ConversationContent",
+      "file": "src/components/ai-elements/conversation",
+      "import_path": ""
+    },
+    {
+      "name": "ConversationEmptyState",
+      "file": "src/components/ai-elements/conversation",
+      "import_path": "",
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "No messages yet"
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "default": "Start a conversation to see messages here"
+        },
+        {
+          "name": "icon",
+          "type": "any"
+        }
+      ]
+    },
+    {
+      "name": "ConversationScrollButton",
+      "file": "src/components/ai-elements/conversation",
+      "import_path": ""
+    },
+    {
+      "name": "ConversationDownload",
+      "file": "src/components/ai-elements/conversation",
+      "import_path": "",
+      "props": [
+        {
+          "name": "messages",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "filename",
+          "type": "string",
+          "default": "conversation.md"
+        },
+        {
+          "name": "formatMessage",
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "name": "Message",
+      "file": "src/components/ai-elements/message",
+      "import_path": "",
+      "props": [
+        {
+          "name": "from",
+          "type": "any",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "MessageContent",
+      "file": "src/components/ai-elements/message",
+      "import_path": ""
+    },
+    {
+      "name": "MessageActions",
+      "file": "src/components/ai-elements/message",
+      "import_path": ""
+    },
+    {
+      "name": "MessageAction",
+      "file": "src/components/ai-elements/message",
+      "import_path": "",
+      "props": [
+        {
+          "name": "tooltip",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "Previous branch"
+        }
+      ]
+    },
+    {
+      "name": "MessageBranch",
+      "file": "src/components/ai-elements/message",
+      "import_path": "",
+      "props": [
+        {
+          "name": "defaultBranch",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "onBranchChange",
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "name": "MessageBranchContent",
+      "file": "src/components/ai-elements/message",
+      "import_path": ""
+    },
+    {
+      "name": "MessageBranchSelector",
+      "file": "src/components/ai-elements/message",
+      "import_path": ""
+    },
+    {
+      "name": "MessageBranchPrevious",
+      "file": "src/components/ai-elements/message",
+      "import_path": ""
+    },
+    {
+      "name": "MessageBranchNext",
+      "file": "src/components/ai-elements/message",
+      "import_path": ""
+    },
+    {
+      "name": "MessageBranchPage",
+      "file": "src/components/ai-elements/message",
+      "import_path": ""
+    },
+    {
+      "name": "MessageToolbar",
+      "file": "src/components/ai-elements/message",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputProvider",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "LocalReferencedSourcesContext",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputActionAddAttachments",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "default": "Add photos or files"
+        }
+      ]
+    },
+    {
+      "name": "PromptInputActionAddScreenshot",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "default": "Add photos or files"
+        }
+      ]
+    },
+    {
+      "name": "PromptInput",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": "",
+      "props": [
+        {
+          "name": "accept",
+          "type": "string"
+        },
+        {
+          "name": "multiple",
+          "type": "boolean"
+        },
+        {
+          "name": "globalDrop",
+          "type": "boolean"
+        },
+        {
+          "name": "syncHiddenInput",
+          "type": "boolean"
+        },
+        {
+          "name": "maxFiles",
+          "type": "number"
+        },
+        {
+          "name": "maxFileSize",
+          "type": "number"
+        },
+        {
+          "name": "onError",
+          "type": "function"
+        },
+        {
+          "name": "onSubmit",
+          "type": "function",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "PromptInputBody",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputTextarea",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputHeader",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputFooter",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputTools",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputButton",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": "",
+      "props": [
+        {
+          "name": "tooltip",
+          "type": "any"
+        }
+      ]
+    },
+    {
+      "name": "PromptInputActionMenu",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputActionMenuTrigger",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputActionMenuContent",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputActionMenuItem",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputSubmit",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": "",
+      "props": [
+        {
+          "name": "status",
+          "type": "any"
+        },
+        {
+          "name": "onStop",
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "name": "PromptInputSelect",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputSelectTrigger",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputSelectContent",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputSelectItem",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputSelectValue",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputHoverCard",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputHoverCardTrigger",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputHoverCardContent",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputTabsList",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputTab",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputTabLabel",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputTabBody",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputTabItem",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputCommand",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputCommandInput",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputCommandList",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputCommandEmpty",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputCommandGroup",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputCommandItem",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "PromptInputCommandSeparator",
+      "file": "src/components/ai-elements/prompt-input",
+      "import_path": ""
+    },
+    {
+      "name": "Shimmer",
+      "file": "src/components/ai-elements/shimmer",
+      "import_path": ""
+    },
+    {
+      "name": "ButtonGroup",
+      "file": "src/components/ui/button-group",
+      "import_path": "",
+      "props": [
+        {
+          "name": "orientation",
+          "type": "enum",
+          "values": [
+            "horizontal",
+            "vertical"
+          ],
+          "default": "horizontal"
+        }
+      ]
+    },
+    {
+      "name": "ButtonGroupSeparator",
+      "file": "src/components/ui/button-group",
+      "import_path": ""
+    },
+    {
+      "name": "ButtonGroupText",
+      "file": "src/components/ui/button-group",
+      "import_path": ""
+    },
+    {
+      "name": "Button",
+      "file": "src/components/ui/button",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "default",
+            "destructive",
+            "outline",
+            "secondary",
+            "ghost",
+            "link"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "default",
+            "sm",
+            "lg",
+            "icon",
+            "icon-sm"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "Collapsible",
+      "file": "src/components/ui/collapsible",
+      "import_path": ""
+    },
+    {
+      "name": "CollapsibleTrigger",
+      "file": "src/components/ui/collapsible",
+      "import_path": ""
+    },
+    {
+      "name": "CollapsibleContent",
+      "file": "src/components/ui/collapsible",
+      "import_path": ""
+    },
+    {
+      "name": "Command",
+      "file": "src/components/ui/command",
+      "import_path": ""
+    },
+    {
+      "name": "CommandDialog",
+      "file": "src/components/ui/command",
+      "import_path": ""
+    },
+    {
+      "name": "CommandInput",
+      "file": "src/components/ui/command",
+      "import_path": ""
+    },
+    {
+      "name": "CommandList",
+      "file": "src/components/ui/command",
+      "import_path": ""
+    },
+    {
+      "name": "CommandEmpty",
+      "file": "src/components/ui/command",
+      "import_path": ""
+    },
+    {
+      "name": "CommandGroup",
+      "file": "src/components/ui/command",
+      "import_path": ""
+    },
+    {
+      "name": "CommandItem",
+      "file": "src/components/ui/command",
+      "import_path": ""
+    },
+    {
+      "name": "CommandShortcut",
+      "file": "src/components/ui/command",
+      "import_path": ""
+    },
+    {
+      "name": "CommandSeparator",
+      "file": "src/components/ui/command",
+      "import_path": ""
+    },
+    {
+      "name": "Dialog",
+      "file": "src/components/ui/dialog",
+      "import_path": ""
+    },
+    {
+      "name": "DialogPortal",
+      "file": "src/components/ui/dialog",
+      "import_path": ""
+    },
+    {
+      "name": "DialogOverlay",
+      "file": "src/components/ui/dialog",
+      "import_path": ""
+    },
+    {
+      "name": "DialogTrigger",
+      "file": "src/components/ui/dialog",
+      "import_path": ""
+    },
+    {
+      "name": "DialogClose",
+      "file": "src/components/ui/dialog",
+      "import_path": ""
+    },
+    {
+      "name": "DialogContent",
+      "file": "src/components/ui/dialog",
+      "import_path": ""
+    },
+    {
+      "name": "DialogHeader",
+      "file": "src/components/ui/dialog",
+      "import_path": ""
+    },
+    {
+      "name": "DialogFooter",
+      "file": "src/components/ui/dialog",
+      "import_path": ""
+    },
+    {
+      "name": "DialogTitle",
+      "file": "src/components/ui/dialog",
+      "import_path": ""
+    },
+    {
+      "name": "DialogDescription",
+      "file": "src/components/ui/dialog",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenu",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuTrigger",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuContent",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuItem",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuCheckboxItem",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuRadioItem",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuLabel",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuSeparator",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuShortcut",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuGroup",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuPortal",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuSub",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuSubContent",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuSubTrigger",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "DropdownMenuRadioGroup",
+      "file": "src/components/ui/dropdown-menu",
+      "import_path": ""
+    },
+    {
+      "name": "HoverCard",
+      "file": "src/components/ui/hover-card",
+      "import_path": ""
+    },
+    {
+      "name": "HoverCardTrigger",
+      "file": "src/components/ui/hover-card",
+      "import_path": ""
+    },
+    {
+      "name": "HoverCardContent",
+      "file": "src/components/ui/hover-card",
+      "import_path": ""
+    },
+    {
+      "name": "InputGroup",
+      "file": "src/components/ui/input-group",
+      "import_path": ""
+    },
+    {
+      "name": "InputGroupAddon",
+      "file": "src/components/ui/input-group",
+      "import_path": "",
+      "props": [
+        {
+          "name": "align",
+          "type": "enum",
+          "values": [
+            "inline-start",
+            "inline-end",
+            "block-start",
+            "block-end"
+          ],
+          "default": "inline-start"
+        }
+      ]
+    },
+    {
+      "name": "InputGroupButton",
+      "file": "src/components/ui/input-group",
+      "import_path": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "xs",
+            "sm",
+            "icon-xs",
+            "icon-sm"
+          ],
+          "default": "xs"
+        }
+      ]
+    },
+    {
+      "name": "InputGroupText",
+      "file": "src/components/ui/input-group",
+      "import_path": ""
+    },
+    {
+      "name": "InputGroupInput",
+      "file": "src/components/ui/input-group",
+      "import_path": ""
+    },
+    {
+      "name": "InputGroupTextarea",
+      "file": "src/components/ui/input-group",
+      "import_path": ""
+    },
+    {
+      "name": "Input",
+      "file": "src/components/ui/input",
+      "import_path": ""
+    },
+    {
+      "name": "Select",
+      "file": "src/components/ui/select",
+      "import_path": ""
+    },
+    {
+      "name": "SelectGroup",
+      "file": "src/components/ui/select",
+      "import_path": ""
+    },
+    {
+      "name": "SelectValue",
+      "file": "src/components/ui/select",
+      "import_path": ""
+    },
+    {
+      "name": "SelectTrigger",
+      "file": "src/components/ui/select",
+      "import_path": ""
+    },
+    {
+      "name": "SelectContent",
+      "file": "src/components/ui/select",
+      "import_path": ""
+    },
+    {
+      "name": "SelectLabel",
+      "file": "src/components/ui/select",
+      "import_path": ""
+    },
+    {
+      "name": "SelectItem",
+      "file": "src/components/ui/select",
+      "import_path": ""
+    },
+    {
+      "name": "SelectSeparator",
+      "file": "src/components/ui/select",
+      "import_path": ""
+    },
+    {
+      "name": "SelectScrollUpButton",
+      "file": "src/components/ui/select",
+      "import_path": ""
+    },
+    {
+      "name": "SelectScrollDownButton",
+      "file": "src/components/ui/select",
+      "import_path": ""
+    },
+    {
+      "name": "Separator",
+      "file": "src/components/ui/separator",
+      "import_path": ""
+    },
+    {
+      "name": "Spinner",
+      "file": "src/components/ui/spinner",
+      "import_path": ""
+    },
+    {
+      "name": "Textarea",
+      "file": "src/components/ui/textarea",
+      "import_path": ""
+    },
+    {
+      "name": "Tooltip",
+      "file": "src/components/ui/tooltip",
+      "import_path": ""
+    },
+    {
+      "name": "TooltipTrigger",
+      "file": "src/components/ui/tooltip",
+      "import_path": ""
+    },
+    {
+      "name": "TooltipContent",
+      "file": "src/components/ui/tooltip",
+      "import_path": ""
+    },
+    {
+      "name": "TooltipProvider",
+      "file": "src/components/ui/tooltip",
+      "import_path": ""
+    },
+    {
+      "name": "Constants",
+      "file": "src/integrations/supabase/types",
+      "import_path": ""
+    }
+  ],
+  "assets": [
+    {
+      "file": "src/assets/blog/image-0.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/blog/image-1.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/blog/image-2.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/blog/image-3.gif.asset.json",
+      "kind": "image",
+      "format": "gif",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/dr-elalfy-hero.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/dr-elalfy-hero.webp",
+      "kind": "image",
+      "format": "webp"
+    },
+    {
+      "file": "src/assets/dr-elalfy-main.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/dr-elalfy-main.webp",
+      "kind": "image",
+      "format": "webp"
+    },
+    {
+      "file": "src/assets/dr-elalfy.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/patient-education/category-abdominal.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/patient-education/category-anorectal.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/patient-education/category-breast.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/patient-education/category-endocrine.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/patient-education/category-hernia.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/patient-education/category-minor.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/patient-education/category-pediatric.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/patient-journey-hero.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/patient-journey-hero.webp",
+      "kind": "image",
+      "format": "webp"
+    },
+    {
+      "file": "src/assets/patient-journey-prepare.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/patient-journey-prepare.webp",
+      "kind": "image",
+      "format": "webp"
+    },
+    {
+      "file": "src/assets/patient-journey-recover.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/patient-journey-recover.webp",
+      "kind": "image",
+      "format": "webp"
+    },
+    {
+      "file": "src/assets/sections/beyond.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sections/contact.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sections/education.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sections/education.webp",
+      "kind": "image",
+      "format": "webp"
+    },
+    {
+      "file": "src/assets/sections/experience.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sections/expertise.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sections/orcid.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sections/presentations.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sections/research.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sections/services.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sections/services.webp",
+      "kind": "image",
+      "format": "webp"
+    },
+    {
+      "file": "src/assets/sections/teaching.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sections/updates.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sections/videos.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sections/videos.webp",
+      "kind": "image",
+      "format": "webp"
+    },
+    {
+      "file": "src/assets/sections/web.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sleeve-plateau-guide.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sleeve-plateau-guide.webp",
+      "kind": "image",
+      "format": "webp"
+    },
+    {
+      "file": "src/assets/sleeve-plateau-habits.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/sleeve-plateau-habits.webp",
+      "kind": "image",
+      "format": "webp"
+    }
+  ]
+}
