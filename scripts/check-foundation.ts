@@ -38,7 +38,7 @@ assert.doesNotMatch(commentClient, /from\("patient_comments"\)\.insert/);
 assert.match(commentEndpoint, /cf-connecting-ip/);
 assert.match(commentEndpoint, /HMAC/);
 assert.match(commentEndpoint, /consume_patient_comment_rate_limit/);
-assert.match(commentEndpoint, /status: 429/);
+assert.match(commentEndpoint, /jsonError\(429/);
 assert.match(commentEndpoint, /Fail closed/);
 assert.match(limiterMigration, /SECURITY DEFINER/);
 assert.match(limiterMigration, /REVOKE ALL ON FUNCTION/);
