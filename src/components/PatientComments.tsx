@@ -12,7 +12,6 @@ import {
   isValidPatientComment,
 } from "@/lib/patient-comments-safety";
 
-
 export function PatientComments() {
   const { language } = useSiteLanguage();
   const c = postsCommentsCopy[language];
