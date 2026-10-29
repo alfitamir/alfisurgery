@@ -310,6 +310,9 @@ function AdminArticlesPage() {
             <FilePlus2 />
             مقال جديد
           </Button>
+          <Button variant="outline" asChild>
+            <Link to="/admin/comments">تعليقات المرضى</Link>
+          </Button>
           <Button variant="outline" onClick={signOut}>
             <LogOut />
             خروج
