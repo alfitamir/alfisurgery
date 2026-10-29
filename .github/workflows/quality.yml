@@ -19,3 +19,4 @@ jobs:
           bun-version: latest
       - run: bun install --frozen-lockfile
       - run: bun run check:foundation
+      - run: bun run build
