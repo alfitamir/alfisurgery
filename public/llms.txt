@@ -1,0 +1,19 @@
+# Alfi Surgery — Dr. Tamer Elalfy
+
+> Patient education and professional profile of Dr. Tamer Elalfy, consultant of general and laparoscopic surgery at Mohammad Dossary Hospital, Al Khobar, Saudi Arabia. Content is available in Arabic, English, Urdu, Hindi, Bengali, Filipino and Tamil. Guidance is general education and never replaces the treating clinical team's instructions.
+
+## Patients
+
+- [Patient guide (English)](https://alfisurgery.com/patients): Operation guides, preparation, recovery and warning signs.
+- [Patient guide (Arabic)](https://alfisurgery.com/ar/patients): The same guide in Arabic.
+- [Operation guide example](https://alfisurgery.com/guides/laparoscopic-cholecystectomy): Printable reading page for one operation.
+- [Prevention](https://alfisurgery.com/prevention): Disease-by-disease diet and lifestyle risk reduction.
+- [Articles](https://alfisurgery.com/articles): Searchable archive of patient articles.
+- [Books](https://alfisurgery.com/books): Dr. Elalfy's books with chapter reading pages.
+
+## Doctor
+
+- [Profile](https://alfisurgery.com/profile): Training, experience and hospital affiliation.
+- [Research](https://alfisurgery.com/research): Research and publications.
+- [Posts](https://alfisurgery.com/posts): Weekly professional posts.
+- [Contact](https://alfisurgery.com/contact): Hospital phone, WhatsApp and address.
