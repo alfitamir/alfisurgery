@@ -45,11 +45,16 @@ export function PatientComments() {
     }
     if (isPatientCommentCooldownActive(lastCommentAt)) return setStatus("error");
     setStatus("sending");
-    const response = await fetch("/api/public/patient-comments", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ nickname: n, body: b }),
-    });
+    let response: Response;
+    try {
+      response = await fetch("/api/public/patient-comments", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nickname: n, body: b }),
+      });
+    } catch {
+      return setStatus("error");
+    }
     if (!response.ok) return setStatus("error");
     try {
       localStorage.setItem("last-comment", String(Date.now()));
