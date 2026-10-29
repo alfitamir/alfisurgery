@@ -45,8 +45,12 @@ export function PatientComments() {
     }
     if (isPatientCommentCooldownActive(lastCommentAt)) return setStatus("error");
     setStatus("sending");
-    const { error } = await supabase.from("patient_comments").insert({ nickname: n, body: b });
-    if (error) return setStatus("error");
+    const response = await fetch("/api/public/patient-comments", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ nickname: n, body: b }),
+    });
+    if (!response.ok) return setStatus("error");
     try {
       localStorage.setItem("last-comment", String(Date.now()));
     } catch {
