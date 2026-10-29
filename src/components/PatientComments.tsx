@@ -43,8 +43,7 @@ export function PatientComments() {
     } catch {
       // Storage is optional; server-side controls must enforce abuse prevention.
     }
-    if (isPatientCommentCooldownActive(lastCommentAt))
-      return setStatus("error");
+    if (isPatientCommentCooldownActive(lastCommentAt)) return setStatus("error");
     setStatus("sending");
     const { error } = await supabase.from("patient_comments").insert({ nickname: n, body: b });
     if (error) return setStatus("error");
