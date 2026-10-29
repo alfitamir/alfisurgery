@@ -166,6 +166,10 @@ export type Database = {
         Returns: boolean
       }
       increment_site_visits: { Args: never; Returns: number }
+      consume_patient_comment_rate_limit: {
+        Args: { p_key_hash: string; p_window_seconds: number; p_max_requests: number }
+        Returns: boolean
+      }
     }
     Enums: {
       app_role: "admin" | "moderator" | "user"
