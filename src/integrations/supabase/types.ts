@@ -50,6 +50,27 @@ export type Database = {
         }
         Relationships: []
       }
+      patient_comment_rate_limits: {
+        Row: {
+          key_hash: string
+          request_count: number
+          updated_at: string
+          window_started_at: string
+        }
+        Insert: {
+          key_hash: string
+          request_count?: number
+          updated_at?: string
+          window_started_at?: string
+        }
+        Update: {
+          key_hash?: string
+          request_count?: number
+          updated_at?: string
+          window_started_at?: string
+        }
+        Relationships: []
+      }
       patient_comments: {
         Row: {
           body: string
@@ -157,6 +178,14 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      consume_patient_comment_rate_limit: {
+        Args: {
+          p_key_hash: string
+          p_max_requests: number
+          p_window_seconds: number
+        }
+        Returns: boolean
+      }
       get_site_visits: { Args: never; Returns: number }
       has_role: {
         Args: {
@@ -166,10 +195,6 @@ export type Database = {
         Returns: boolean
       }
       increment_site_visits: { Args: never; Returns: number }
-      consume_patient_comment_rate_limit: {
-        Args: { p_key_hash: string; p_window_seconds: number; p_max_requests: number }
-        Returns: boolean
-      }
     }
     Enums: {
       app_role: "admin" | "moderator" | "user"

@@ -70,3 +70,9 @@
 - [ ] Translate "Common Anal Conditions" and "From Clinic to Recovery" into the six other site languages — waiting on the doctor to decide (very large professional text; needs specialist medical review per language).
 - [x] Simplify the homepage: patient column first, three doctor buttons, daily article below the columns, four key contact links plus a full contact link.
 - [x] Google SEO: English homepage doctor details and language alternates, AI summary file.
+
+## Unified execution plan (30 Oct 2026)
+- [x] Wave 0: comment rate-limit storage applied; protected submission verified (accepted, then 429).
+- [ ] Wave 0: close direct comment inserts (0006) — waits for publishing the new comment form live.
+- [x] Wave 1 Finding 1: gallbladder triage separates clinic vs emergency.
+- [ ] Wave 1 Findings 2–16, Waves 2–5 — continue next sessions.
