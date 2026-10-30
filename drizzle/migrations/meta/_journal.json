@@ -36,6 +36,13 @@
       "when": 1793252285747,
       "tag": "0004_migration",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1793332806720,
+      "tag": "0005_patient_comment_rate_limits",
+      "breakpoints": true
     }
   ]
 }
