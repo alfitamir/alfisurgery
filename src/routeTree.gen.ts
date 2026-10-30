@@ -40,6 +40,7 @@ import { Route as PatientEducationWeightPlateauAfterSleeveRouteImport } from './
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 import { Route as AuthenticatedAdminArticlesRouteImport } from './routes/_authenticated/admin.articles'
 import { Route as AuthenticatedAdminCommentsRouteImport } from './routes/_authenticated/admin.comments'
+import { Route as ApiPublicPatientCommentsRouteImport } from './routes/api/public/patient-comments'
 import { Route as ApiPublicSyncPostsRouteImport } from './routes/api/public/sync-posts'
 import { Route as BooksBookIdIndexRouteImport } from './routes/books.$bookId.index'
 import { Route as BooksBookIdChapterIdRouteImport } from './routes/books.$bookId.$chapterId'
@@ -206,6 +207,12 @@ const AuthenticatedAdminCommentsRoute =
     path: '/admin/comments',
     getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
+const ApiPublicPatientCommentsRoute =
+  ApiPublicPatientCommentsRouteImport.update({
+    id: '/api/public/patient-comments',
+    path: '/api/public/patient-comments',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ApiPublicSyncPostsRoute = ApiPublicSyncPostsRouteImport.update({
   id: '/api/public/sync-posts',
   path: '/api/public/sync-posts',
@@ -258,6 +265,7 @@ export interface FileRoutesByFullPath {
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/admin/articles': typeof AuthenticatedAdminArticlesRoute
   '/admin/comments': typeof AuthenticatedAdminCommentsRoute
+  '/api/public/patient-comments': typeof ApiPublicPatientCommentsRoute
   '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
   '/books/$bookId/$chapterId': typeof BooksBookIdChapterIdRoute
   '/books/$bookId/': typeof BooksBookIdIndexRoute
@@ -292,6 +300,7 @@ export interface FileRoutesByTo {
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/admin/articles': typeof AuthenticatedAdminArticlesRoute
   '/admin/comments': typeof AuthenticatedAdminCommentsRoute
+  '/api/public/patient-comments': typeof ApiPublicPatientCommentsRoute
   '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
   '/books/$bookId/$chapterId': typeof BooksBookIdChapterIdRoute
   '/books/$bookId': typeof BooksBookIdIndexRoute
@@ -330,6 +339,7 @@ export interface FileRoutesById {
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/_authenticated/admin/articles': typeof AuthenticatedAdminArticlesRoute
   '/_authenticated/admin/comments': typeof AuthenticatedAdminCommentsRoute
+  '/api/public/patient-comments': typeof ApiPublicPatientCommentsRoute
   '/api/public/sync-posts': typeof ApiPublicSyncPostsRoute
   '/books/$bookId/$chapterId': typeof BooksBookIdChapterIdRoute
   '/books/$bookId/': typeof BooksBookIdIndexRoute
@@ -368,6 +378,7 @@ export interface FileRouteTypes {
     | '/.mcp/invoke-tool/$tool'
     | '/admin/articles'
     | '/admin/comments'
+    | '/api/public/patient-comments'
     | '/api/public/sync-posts'
     | '/books/$bookId/$chapterId'
     | '/books/$bookId/'
@@ -402,6 +413,7 @@ export interface FileRouteTypes {
     | '/.mcp/invoke-tool/$tool'
     | '/admin/articles'
     | '/admin/comments'
+    | '/api/public/patient-comments'
     | '/api/public/sync-posts'
     | '/books/$bookId/$chapterId'
     | '/books/$bookId'
@@ -439,6 +451,7 @@ export interface FileRouteTypes {
     | '/.mcp/invoke-tool/$tool'
     | '/_authenticated/admin/articles'
     | '/_authenticated/admin/comments'
+    | '/api/public/patient-comments'
     | '/api/public/sync-posts'
     | '/books/$bookId/$chapterId'
     | '/books/$bookId/'
@@ -470,6 +483,7 @@ export interface RootRouteChildren {
   PatientEducationWeightPlateauAfterSleeveRoute: typeof PatientEducationWeightPlateauAfterSleeveRoute
   BooksIndexRoute: typeof BooksIndexRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
+  ApiPublicPatientCommentsRoute: typeof ApiPublicPatientCommentsRoute
   ApiPublicSyncPostsRoute: typeof ApiPublicSyncPostsRoute
   BooksBookIdChapterIdRoute: typeof BooksBookIdChapterIdRoute
   BooksBookIdIndexRoute: typeof BooksBookIdIndexRoute
@@ -695,6 +709,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedAdminCommentsRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/api/public/patient-comments': {
+      id: '/api/public/patient-comments'
+      path: '/api/public/patient-comments'
+      fullPath: '/api/public/patient-comments'
+      preLoaderRoute: typeof ApiPublicPatientCommentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/sync-posts': {
       id: '/api/public/sync-posts'
       path: '/api/public/sync-posts'
@@ -795,6 +816,7 @@ const rootRouteChildren: RootRouteChildren = {
     PatientEducationWeightPlateauAfterSleeveRoute,
   BooksIndexRoute: BooksIndexRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
+  ApiPublicPatientCommentsRoute: ApiPublicPatientCommentsRoute,
   ApiPublicSyncPostsRoute: ApiPublicSyncPostsRoute,
   BooksBookIdChapterIdRoute: BooksBookIdChapterIdRoute,
   BooksBookIdIndexRoute: BooksBookIdIndexRoute,
