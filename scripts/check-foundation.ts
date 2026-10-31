@@ -58,4 +58,13 @@ assert.doesNotMatch(limiterMigration, /REVOKE INSERT ON TABLE public\.patient_co
 assert.match(policyMigration, /DROP POLICY IF EXISTS "Public add comments"/);
 assert.match(policyMigration, /REVOKE INSERT ON TABLE public\.patient_comments FROM anon, authenticated/);
 
+const adminMigration = readFileSync(
+  "drizzle/migrations/0007_restrict_admin_to_site_owner.sql",
+  "utf8",
+);
+assert.match(adminMigration, /is_site_owner_email\(NEW\.email\)/);
+assert.match(adminMigration, /_role <> 'admin'/);
+assert.match(adminMigration, /DELETE FROM public\.user_roles/);
+assert.doesNotMatch(adminMigration, /@gmail\.com/i, "owner email must stay hashed");
+
 console.log("Foundation checks passed.");
