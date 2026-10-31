@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { careClasses, educationCare } from "@/lib/care-colors";
 import { Link } from "@tanstack/react-router";
 import {
   Activity,
@@ -321,11 +322,15 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
               {educationCategories.map((cat) => (
                 <Button
                   key={cat}
-                  variant={category === cat ? "default" : "outline"}
+                  variant="outline"
                   onClick={() => setCategory(cat)}
-                  className="rounded-full border-patient-mist"
+                  className={`rounded-full border-2 ${careClasses[educationCare(cat)].border} ${category === cat ? careClasses[educationCare(cat)].solid : careClasses[educationCare(cat)].text}`}
                   aria-pressed={category === cat}
                 >
+                  <span
+                    aria-hidden
+                    className={`size-2 rounded-full ${category === cat ? "bg-primary-foreground" : careClasses[educationCare(cat)].dot}`}
+                  />
                   {ar ? educationCategoriesAr[cat] : cat}
                 </Button>
               ))}
@@ -336,7 +341,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
                 {filtered.map((item) => (
                   <article
                     key={item.id}
-                    className="group flex flex-col overflow-hidden rounded-2xl border-2 border-patient-mist bg-patient-canvas transition hover:-translate-y-1 hover:shadow-[var(--shadow-patient)]"
+                    className={`group flex flex-col overflow-hidden rounded-2xl border-2 border-t-4 border-patient-mist bg-patient-canvas transition hover:-translate-y-1 hover:shadow-[var(--shadow-patient)] ${careClasses[educationCare(item.category)].border.replace("border-", "border-t-")}`}
                   >
                     <img
                       src={educationCategoryImages[item.category]}
@@ -347,7 +352,7 @@ export function PatientEducationSite({ lang: routeLanguage }: { lang: Language }
                       className="h-36 w-full object-cover"
                     />
                     <div className="flex flex-1 flex-col p-5">
-                      <div className="text-xs font-bold uppercase text-patient-blue">
+                      <div className={`text-xs font-bold uppercase ${careClasses[educationCare(item.category)].text}`}>
                         {ar ? item.categoryAr : item.category}
                       </div>
                       <h3 className="mt-2 text-xl leading-snug text-patient-deep">

@@ -9,6 +9,7 @@ import { useSiteLanguage } from "@/components/SiteLanguageProvider";
 import { languageContentCopy, translatedSearchText, translatedText } from "@/lib/site-language";
 import { publishedSiteArticlesQuery } from "@/lib/site-articles.queries";
 import { siteArticleEdition } from "@/lib/site-articles";
+import { articleCare, careClasses } from "@/lib/care-colors";
 
 export const Route = createFileRoute("/articles/")({
   loader: ({ context }) => context.queryClient.ensureQueryData(publishedSiteArticlesQuery()),
@@ -39,7 +40,7 @@ export const Route = createFileRoute("/articles/")({
   }),
 });
 
-const categories = ["الكل", "المرارة والجراحة", "التغذية والوزن", "التكميم والمتابعة"];
+const categories = ["الكل", "الجراحة العامة", "المرارة والجراحة", "التغذية والوزن", "التكميم والمتابعة"];
 const normalize = (text: string) =>
   text
     .toLocaleLowerCase()
@@ -200,10 +201,21 @@ function ArticlesPage() {
             {categories.map((c) => (
               <Button
                 key={c}
-                variant={category === c ? "default" : "outline"}
+                variant={c === "الكل" && category === c ? "default" : "outline"}
                 onClick={() => setCategory(c)}
                 aria-pressed={category === c}
+                className={
+                  c === "الكل"
+                    ? "rounded-full"
+                    : `rounded-full border-2 ${careClasses[articleCare(c)].border} ${category === c ? careClasses[articleCare(c)].solid : careClasses[articleCare(c)].text}`
+                }
               >
+                {c !== "الكل" && (
+                  <span
+                    aria-hidden
+                    className={`size-2 rounded-full ${category === c ? "bg-primary-foreground" : careClasses[articleCare(c)].dot}`}
+                  />
+                )}
                 {c}
               </Button>
             ))}
@@ -228,7 +240,12 @@ function ArticlesPage() {
                   />
                 )}
                 <div className="flex flex-1 flex-col p-5">
-                  <p className="text-xs font-semibold text-patient-deep">{a.category}</p>
+                  <p
+                    className={`inline-flex w-fit items-center gap-2 rounded-full px-2.5 py-1 text-xs font-semibold ${careClasses[articleCare(a.category)].surface} ${careClasses[articleCare(a.category)].text}`}
+                  >
+                    <span aria-hidden className={`size-2 rounded-full ${careClasses[articleCare(a.category)].dot}`} />
+                    {a.category}
+                  </p>
                   <h2 className="mt-3 text-xl font-bold leading-relaxed text-patient-deep">
                     <Link
                       to="/articles/$articleId"
