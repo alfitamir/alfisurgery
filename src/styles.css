@@ -44,6 +44,14 @@
   --color-home-doctor-surface: var(--home-doctor-surface);
   --color-home-patient: var(--home-patient);
   --color-home-patient-surface: var(--home-patient-surface);
+  --color-care-surgery: var(--care-surgery);
+  --color-care-surgery-surface: var(--care-surgery-surface);
+  --color-care-recovery: var(--care-recovery);
+  --color-care-recovery-surface: var(--care-recovery-surface);
+  --color-care-disease: var(--care-disease);
+  --color-care-disease-surface: var(--care-disease-surface);
+  --color-care-alert: var(--care-alert);
+  --color-care-alert-surface: var(--care-alert-surface);
 }
 
 :root {
@@ -108,6 +116,16 @@
   --home-doctor-surface: oklch(0.965 0.03 88);
   --home-patient: oklch(0.42 0.09 180);
   --home-patient-surface: oklch(0.965 0.03 180);
+  /* Semantic care categories (navy/gold surgery, teal recovery, blue disease guides, amber alerts).
+     Ink shades are darkened from the brief's hues to keep text contrast at AA or better. */
+  --care-surgery: #0f2537;
+  --care-surgery-surface: oklch(0.96 0.035 88);
+  --care-recovery: #0e7a64;
+  --care-recovery-surface: oklch(0.96 0.035 170);
+  --care-disease: #1f6a9a;
+  --care-disease-surface: oklch(0.955 0.03 240);
+  --care-alert: #a8520c;
+  --care-alert-surface: oklch(0.96 0.045 65);
 }
 
 .patient-site h1,
