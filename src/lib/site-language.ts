@@ -9,6 +9,8 @@ export const siteLanguages = [
 ] as const;
 
 export type SiteLanguage = (typeof siteLanguages)[number]["code"];
+// "/ar" and "/ar/..." are the Arabic edition; a plain prefix check would also match "/articles".
+export const isArabicPath = (pathname: string) => pathname === "/ar" || pathname.startsWith("/ar/");
 export const isRtl = (language: SiteLanguage) =>
   siteLanguages.find((item) => item.code === language)?.dir === "rtl";
 // All editions offer Arabic originals with explicitly conditional YouTube caption support.

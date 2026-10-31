@@ -15,7 +15,7 @@ import {
 import { registerPatientAppServiceWorker } from "@/lib/pwa";
 import { SiteLanguageProvider } from "@/components/SiteLanguageProvider";
 import { SiteNavigation, SiteFooter } from "@/components/SiteNavigation";
-import { isRtl, siteLanguages } from "@/lib/site-language";
+import { isArabicPath, isRtl, siteLanguages } from "@/lib/site-language";
 import { SourceLanguageNotice } from "@/components/SourceLanguageNotice";
 import { supabase } from "@/integrations/supabase/client";
 import appCss from "../styles.css?url";
@@ -142,7 +142,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
   const searchLanguage = useRouterState({ select: (state) => state.location.search.lang });
   const language = siteLanguages.some((item) => item.code === searchLanguage)
     ? searchLanguage!
-    : pathname.startsWith("/ar")
+    : isArabicPath(pathname)
       ? "ar"
       : "en";
   return (

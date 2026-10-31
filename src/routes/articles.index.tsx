@@ -6,7 +6,12 @@ import { Button } from "@/components/ui/button";
 import { articleCategory, articlesForLanguage, articleText } from "@/lib/blog";
 import illustration from "@/assets/sleeve-plateau-habits.webp";
 import { useSiteLanguage } from "@/components/SiteLanguageProvider";
-import { languageContentCopy, translatedSearchText, translatedText } from "@/lib/site-language";
+import {
+  languageContentCopy,
+  siteLanguages,
+  translatedSearchText,
+  translatedText,
+} from "@/lib/site-language";
 import { publishedSiteArticlesQuery } from "@/lib/site-articles.queries";
 import { siteArticleEdition } from "@/lib/site-articles";
 import { articleCare, careClasses } from "@/lib/care-colors";
@@ -14,33 +19,41 @@ import { articleCare, careClasses } from "@/lib/care-colors";
 export const Route = createFileRoute("/articles/")({
   loader: ({ context }) => context.queryClient.ensureQueryData(publishedSiteArticlesQuery()),
   component: ArticlesPage,
-  head: () => ({
-    meta: [
-      { title: "مقالات طبية مبسطة | د. تامر الألفي" },
-      {
-        name: "description",
-        content:
-          "مكتبة مقالات د. تامر الألفي الكاملة عن الجراحة والتكميم والتغذية والتعافي، مع البحث والقراءة المباشرة.",
-      },
-      { property: "og:title", content: "مقالات طبية مبسطة | د. تامر الألفي" },
-      {
-        property: "og:description",
-        content:
-          "مقالات د. تامر الألفي التثقيفية وأرشيف مدونته بنصوصها الكاملة، مع البحث والقراءة المباشرة.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-    ],
-    links: [
-      { rel: "canonical", href: "https://alfisurgery.com/articles" },
-      { rel: "alternate", hrefLang: "en", href: "https://alfisurgery.com/articles" },
-      { rel: "alternate", hrefLang: "ar", href: "https://alfisurgery.com/articles?lang=ar" },
-      { rel: "alternate", hrefLang: "x-default", href: "https://alfisurgery.com/articles" },
-    ],
-  }),
+  head: ({ match }) => {
+    const language = siteLanguages.find((l) => l.code === match.search.lang)?.code ?? "en";
+    const isArabic = language === "ar";
+    const title = `${languageContentCopy[language].articles} | ${
+      isArabic ? "د. تامر الألفي" : "Dr. Tamer Elalfy"
+    }`;
+    const description = isArabic
+      ? "مكتبة مقالات د. تامر الألفي الكاملة عن الجراحة والتكميم والتغذية والتعافي، مع البحث والقراءة المباشرة."
+      : "Dr. Tamer Elalfy's patient articles on surgery, sleeve gastrectomy, nutrition and recovery, with search and full reading pages.";
+    return {
+      meta: [
+        { title },
+        { name: "description", content: description },
+        { property: "og:title", content: title },
+        { property: "og:description", content: description },
+        { property: "og:type", content: "website" },
+        { name: "twitter:card", content: "summary" },
+      ],
+      links: [
+        { rel: "canonical", href: "https://alfisurgery.com/articles" },
+        { rel: "alternate", hrefLang: "en", href: "https://alfisurgery.com/articles" },
+        { rel: "alternate", hrefLang: "ar", href: "https://alfisurgery.com/articles?lang=ar" },
+        { rel: "alternate", hrefLang: "x-default", href: "https://alfisurgery.com/articles" },
+      ],
+    };
+  },
 });
 
-const categories = ["الكل", "الجراحة العامة", "المرارة والجراحة", "التغذية والوزن", "التكميم والمتابعة"];
+const categories = [
+  "الكل",
+  "الجراحة العامة",
+  "المرارة والجراحة",
+  "التغذية والوزن",
+  "التكميم والمتابعة",
+];
 const normalize = (text: string) =>
   text
     .toLocaleLowerCase()
@@ -243,7 +256,10 @@ function ArticlesPage() {
                   <p
                     className={`inline-flex w-fit items-center gap-2 rounded-full px-2.5 py-1 text-xs font-semibold ${careClasses[articleCare(a.category)].surface} ${careClasses[articleCare(a.category)].text}`}
                   >
-                    <span aria-hidden className={`size-2 rounded-full ${careClasses[articleCare(a.category)].dot}`} />
+                    <span
+                      aria-hidden
+                      className={`size-2 rounded-full ${careClasses[articleCare(a.category)].dot}`}
+                    />
                     {a.category}
                   </p>
                   <h2 className="mt-3 text-xl font-bold leading-relaxed text-patient-deep">

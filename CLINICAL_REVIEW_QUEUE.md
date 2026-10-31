@@ -35,6 +35,7 @@ This queue records items found during discovery. Nothing below has been silently
 - **File/location:** `src/routes/__root.tsx` and language provider/dictionaries.
   **Concern:** The root metadata includes the Arabic app title `دليل المريض` in the global shell, including the English edition. Urdu is configured RTL but the root shell only switches direction for Arabic. Some content uses source-language fallback behavior, so “100% in the selected edition” is not yet established.
   **Suggested action:** Fix the language architecture in code, then have native-language reviewers spot-check each edition.
+  **Status (31 Oct 2026):** Code part resolved. The global title is English and Urdu switches the page to RTL. A remaining bug sent `/articles` and every article page to the Arabic edition when no language was chosen, because `"/articles".startsWith("/ar")` is true; editions are now detected with `isArabicPath`, and the articles archive title follows the selected language. Native-language spot-checks are still outstanding.
 
 - **File/location:** All future AI-translated patient content.
   **Concern:** Natural patient vocabulary, culturally appropriate examples, script direction, and clinical terminology require native-language review. Do not present AI translations as clinically approved.

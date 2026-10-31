@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { useRouterState } from "@tanstack/react-router";
 import { Check, Share2 } from "lucide-react";
 import {
+  isArabicPath,
   normalizeText,
   siteLanguages,
   translatedText,
@@ -42,7 +43,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
   const initialLanguage: SiteLanguage =
     searchLanguage && siteLanguages.some((item) => item.code === searchLanguage)
       ? (searchLanguage as SiteLanguage)
-      : pathname.startsWith("/ar")
+      : isArabicPath(pathname)
         ? "ar"
         : "en";
   const [language, setLanguage] = useState<SiteLanguage>(initialLanguage);
@@ -69,7 +70,7 @@ export function SiteLanguageProvider({ children }: { children: React.ReactNode }
       }
     }
     const found = siteLanguages.find((item) => item.code === stored);
-    setLanguage(found?.code ?? (pathname.startsWith("/ar") ? "ar" : "en"));
+    setLanguage(found?.code ?? (isArabicPath(pathname) ? "ar" : "en"));
     setReady(true);
   }, [pathname, searchLanguage]);
 

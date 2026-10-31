@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { isRtl, siteLanguages } from "../src/lib/site-language.ts";
+import { isArabicPath, isRtl, siteLanguages } from "../src/lib/site-language.ts";
 import {
   isPatientCommentCooldownActive,
   isValidPatientComment,
@@ -10,6 +10,18 @@ import {
 assert.equal(isRtl("ar"), true);
 assert.equal(isRtl("ur"), true);
 assert.equal(isRtl("en"), false);
+assert.equal(isArabicPath("/ar"), true);
+assert.equal(isArabicPath("/ar/patients"), true);
+assert.equal(isArabicPath("/articles"), false);
+assert.equal(isArabicPath("/articles/9005"), false);
+assert.equal(isArabicPath("/"), false);
+for (const file of ["src/routes/__root.tsx", "src/components/SiteLanguageProvider.tsx"]) {
+  assert.doesNotMatch(
+    readFileSync(file, "utf8"),
+    /startsWith\("\/ar"\)/,
+    `${file} must use isArabicPath`,
+  );
+}
 assert.deepEqual(
   siteLanguages.map((language) => language.code).sort(),
   ["ar", "bn", "en", "hi", "ta", "tl", "ur"],
