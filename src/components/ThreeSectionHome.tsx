@@ -26,6 +26,7 @@ import { PatientComments } from "@/components/PatientComments";
 import { DailyArticle } from "@/components/DailyArticle";
 import { BooksShowcase } from "@/components/BooksShowcase";
 import { contactLinks } from "@/components/SiteNavigation";
+import { CareColorLegend, HeritageBanner } from "@/components/HeritageBanner";
 
 const homeContactLinks = contactLinks.filter((link) =>
   /^(tel:|https:\/\/wa\.me|https:\/\/mdh|https:\/\/www\.google\.com\/maps)/.test(link.href),
@@ -44,7 +45,21 @@ type Destination =
   | "/updates"
   | "/posts"
   | "/contact";
-type Tile = { label: string; to: Destination; hash?: string; icon: LucideIcon; tone?: "warning" };
+type Care = "surgery" | "recovery" | "disease" | "alert";
+type Tile = { label: string; to: Destination; hash?: string; icon: LucideIcon; care?: Care };
+
+const careTone: Record<Care, string> = {
+  surgery: "bg-care-surgery-surface text-care-surgery",
+  recovery: "bg-care-recovery-surface text-care-recovery",
+  disease: "bg-care-disease-surface text-care-disease",
+  alert: "bg-care-alert-surface text-care-alert",
+};
+const careBorder: Record<Care, string> = {
+  surgery: "border-s-care-surgery",
+  recovery: "border-s-care-recovery",
+  disease: "border-s-care-disease",
+  alert: "border-s-care-alert",
+};
 
 function TileLink({
   tile,
@@ -55,18 +70,14 @@ function TileLink({
   language: string;
   accent: "doctor" | "patient";
 }) {
-  const iconTone =
-    tile.tone === "warning"
-      ? "bg-destructive/10 text-destructive"
-      : accent === "doctor"
-        ? "bg-home-doctor-surface text-home-doctor"
-        : "bg-home-patient-surface text-home-patient";
+  const care: Care = tile.care ?? (accent === "doctor" ? "surgery" : "disease");
+  const iconTone = careTone[care];
   return (
     <Link
       to={tile.to}
       hash={tile.hash}
       search={{ lang: language } as never}
-      className="home-tile flex min-h-16 items-center gap-3 rounded-md border border-border bg-card p-3"
+      className={`home-tile flex min-h-16 items-center gap-3 rounded-md border border-border border-s-4 bg-card p-3 ${careBorder[care]}`}
     >
       <span className={`grid size-10 shrink-0 place-items-center rounded-full ${iconTone}`}>
         <tile.icon className="size-5" />
@@ -90,17 +101,18 @@ export function ThreeSectionHome() {
     { label: pc.postsTitle, to: "/posts", icon: Newspaper },
   ];
   const patientTiles: Tile[] = [
-    { label: t.prepare, to: patients, hash: "prepare", icon: ClipboardCheck },
-    { label: t.recover, to: patients, hash: "recovery", icon: HeartPulse },
-    { label: h.urgent, to: patients, hash: "urgent", icon: ShieldAlert, tone: "warning" },
-    { label: preventionCopy[language].title, to: "/prevention", icon: ShieldCheck },
-    { label: t.articles, to: "/articles", icon: BookOpen },
+    { label: t.prepare, to: patients, hash: "prepare", icon: ClipboardCheck, care: "recovery" },
+    { label: t.recover, to: patients, hash: "recovery", icon: HeartPulse, care: "recovery" },
+    { label: h.urgent, to: patients, hash: "urgent", icon: ShieldAlert, care: "alert" },
+    { label: preventionCopy[language].title, to: "/prevention", icon: ShieldCheck, care: "recovery" },
+    { label: t.articles, to: "/articles", icon: BookOpen, care: "disease" },
     ...(showsVideos(language) ? [{ label: t.videos, to: "/videos" as const, icon: Play }] : []),
   ];
   const label = (text: string) => (language === "ta" ? translatedText(text, dictionary) : text);
 
   return (
     <main data-no-translate lang={language} className="home-refresh">
+      <CareColorLegend />
       <div className="mx-auto grid max-w-6xl gap-6 px-5 py-8 md:grid-cols-2 md:px-8 md:py-10">
         <section
           aria-labelledby="home-patient"
@@ -118,7 +130,7 @@ export function ThreeSectionHome() {
             to={patients}
             hash="operations"
             search={{ lang: language } as never}
-            className="home-tile mt-5 flex items-center gap-4 rounded-md bg-home-patient p-4 text-primary-foreground"
+            className="home-tile mt-5 flex items-center gap-4 rounded-md bg-care-disease p-4 text-primary-foreground"
           >
             <span className="grid size-12 shrink-0 place-items-center rounded-full bg-primary-foreground/15">
               <Search className="size-6" />
@@ -172,6 +184,8 @@ export function ThreeSectionHome() {
           </nav>
         </section>
       </div>
+
+      <HeritageBanner />
 
       <DailyArticle />
 
