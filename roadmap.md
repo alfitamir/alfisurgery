@@ -76,3 +76,5 @@
 - [ ] Wave 0: close direct comment inserts (0006) — waits for publishing the new comment form live.
 - [x] Wave 1 Finding 1: gallbladder triage separates clinic vs emergency.
 - [ ] Wave 1 Findings 2–16, Waves 2–5 — continue next sessions.
+- [x] Design wave: four care colours (navy/gold surgery, teal recovery, blue disease guides, amber alerts) on homepage buttons with a colour key, and a seven-language "Two nations, one standard" Saudi/Egypt photo banner.
+- [ ] Design wave next: colour-coded filter pills on the patient guide and articles pages; sticky quick-action buttons on phones.
