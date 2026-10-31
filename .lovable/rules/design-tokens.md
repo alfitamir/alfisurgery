@@ -50,6 +50,14 @@ Apply with any color utility: `bg-<name>`, `text-<name>`, `border-<name>`, `ring
 | `home-doctor-surface` | `--home-doctor-surface` |
 | `home-patient` | `--home-patient` |
 | `home-patient-surface` | `--home-patient-surface` |
+| `care-surgery` | `--care-surgery` |
+| `care-surgery-surface` | `--care-surgery-surface` |
+| `care-recovery` | `--care-recovery` |
+| `care-recovery-surface` | `--care-recovery-surface` |
+| `care-disease` | `--care-disease` |
+| `care-disease-surface` | `--care-disease-surface` |
+| `care-alert` | `--care-alert` |
+| `care-alert-surface` | `--care-alert-surface` |
 
 ## Typography
 

@@ -21,6 +21,8 @@ The full machine-readable catalog lives in this library's `design-system.json` (
 - `@/design-system/{slug}/assets/dr-elalfy-main.jpg.asset.json` (jpg, R2 pointer)
 - `@/design-system/{slug}/assets/dr-elalfy-main.webp` (webp)
 - `@/design-system/{slug}/assets/dr-elalfy.jpg` (jpg)
+- `@/design-system/{slug}/assets/heritage-egypt.webp` (webp)
+- `@/design-system/{slug}/assets/heritage-khobar.webp` (webp)
 - `@/design-system/{slug}/assets/patient-education/category-abdominal.jpg` (jpg)
 - `@/design-system/{slug}/assets/patient-education/category-anorectal.jpg` (jpg)
 - `@/design-system/{slug}/assets/patient-education/category-breast.jpg` (jpg)

@@ -76,6 +76,12 @@ import { ButtonGroupSeparator } from "@ws-1ww6pxxmvjs0b1gva2zv/45896ead-421e-4d0
 import { ButtonGroupText } from "@ws-1ww6pxxmvjs0b1gva2zv/45896ead-421e-4d0e-b113-1f6152d194a2"
 ```
 
+### CareColorLegend
+
+```ts
+import { CareColorLegend } from "@ws-1ww6pxxmvjs0b1gva2zv/45896ead-421e-4d0e-b113-1f6152d194a2"
+```
+
 ### Collapsible
 
 ```ts
@@ -374,6 +380,12 @@ import { EducationSummaryDialog } from "@ws-1ww6pxxmvjs0b1gva2zv/45896ead-421e-4
 
 ```ts
 import { EnglishSiteSections } from "@ws-1ww6pxxmvjs0b1gva2zv/45896ead-421e-4d0e-b113-1f6152d194a2"
+```
+
+### HeritageBanner
+
+```ts
+import { HeritageBanner } from "@ws-1ww6pxxmvjs0b1gva2zv/45896ead-421e-4d0e-b113-1f6152d194a2"
 ```
 
 ### HomeSectionMenus

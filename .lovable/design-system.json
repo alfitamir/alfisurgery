@@ -2,7 +2,7 @@
   "meta": {
     "name": "Alfi Surgery",
     "package": "@ws-1ww6pxxmvjs0b1gva2zv/45896ead-421e-4d0e-b113-1f6152d194a2",
-    "version": "1.1.0",
+    "version": "2.0.0",
     "framework": "react",
     "css_framework": "tailwind",
     "starter_template": "custom_design_system_tailwind",
@@ -11,7 +11,7 @@
     ],
     "source_type": "local",
     "source_manifest": {
-      "#enrichment": "ecc106c680fe7710dc4a805acca44aa978619766ca5e0b8ffcc1a432a79bb97c",
+      "#enrichment": "08b3d547a715e5bc32790b3ea588e2df8ed4a897d8c4f150a4d1556fd9207473",
       ".github/workflows/quality.yml": "598822dda93121df7178443e4e95e308",
       ".gitignore": "6d9e901a692b46a83707c245fb03bc91",
       ".lovable/mcp/manifest.json": "cc52b8d9a007707725335e29c15e014b",
@@ -62,7 +62,7 @@
       "public/robots.txt": "465b7adc5255101517c3253f057a1de0",
       "public/site-qr-ar.svg": "c0d525a0a5daeffe7298df954771606f",
       "public/site-qr.svg": "7c67838ad79af53e97cf19afb0690213",
-      "roadmap.md": "74ad22ac4693732cd7325a750863d2f3",
+      "roadmap.md": "14c396f28534ccfa42fcfc0f1ec9653f",
       "scripts/check-foundation.ts": "560f6b7a1cabd31ba6d3a0945d7f066c",
       "src/assets/anal-conditions-ppt.asset.json": "881ce6232f2dc42a7f3d83cc4b73cb4c",
       "src/assets/blog/image-0.jpg.asset.json": "7c35ebdfe05a83dfc92ca9d8e2cd5087",
@@ -75,6 +75,8 @@
       "src/assets/dr-elalfy-main.jpg.asset.json": "359af6468da4e9162b65957fa903feee",
       "src/assets/dr-elalfy-main.webp": "e39775a9d3818d133a81ca7ba3a9bc09",
       "src/assets/dr-elalfy.jpg": "67eebec4de5ced5654404f5ee15431f3",
+      "src/assets/heritage-egypt.webp": "2945effefbbcd7f192a5a2d7aa49df82",
+      "src/assets/heritage-khobar.webp": "02c9a93629a09618a9bcf1ffa855e904",
       "src/assets/herniaabdwalllecture-100618085852-phpapp02.pptx.asset.json": "386ecf412eb089c478fd899da3dbe11c",
       "src/assets/managementofcbdstonesastudy-140511193239-phpapp02.ppt.asset.json": "7f3372699c6ffbb550d7f00eaf0ce697",
       "src/assets/neckintro-140406192526-phpapp01.ppt.asset.json": "7726471ea9249686cfa5cc43dc43ab90",
@@ -177,11 +179,12 @@
       "src/components/DailyArticle.tsx": "538aa2689ca15052f02091c66f8659a5",
       "src/components/EducationSummaryDialog.tsx": "da47a9b0de700a5b3a7e89c0f24ac3eb",
       "src/components/EnglishSiteSections.tsx": "441deabce8163c9be4af5d8e84def245",
+      "src/components/HeritageBanner.tsx": "44a3058e389cd8bdee6c66d3ca0ae41c",
       "src/components/HomeSectionMenus.tsx": "6dd0ea739a97073dde09b593ad9fe5a9",
       "src/components/InstallAppButton.tsx": "5fc173141ab10c4fb75cb201a2af98ea",
       "src/components/OrganizedPage.tsx": "c81ad8f50a318758dad97e6876f1defc",
       "src/components/PatientComments.tsx": "f3920f70fe36ca67cc33c017ddb90e11",
-      "src/components/PatientEducationSite.tsx": "b163caa6fd42a38bf6a3874545bff993",
+      "src/components/PatientEducationSite.tsx": "547c2a0a7a90377935221d00ef6ef3d2",
       "src/components/PatientFAQ.tsx": "e8e578e993c48beebdfdeb77aeecfdad",
       "src/components/PatientGuideContent.tsx": "1538831d1aee5a71399ddc4f685cf744",
       "src/components/PatientGuideFramework.tsx": "13403700fe56163c1ad12d423402e4f8",
@@ -193,7 +196,7 @@
       "src/components/SiteNavigation.tsx": "3ca5e4c0e287aa7fd4b0c26bb70cb881",
       "src/components/SourceLanguageNotice.tsx": "053567f5800f3f90ba3d09bd7ddd0672",
       "src/components/SurgicalJourneyFramework.tsx": "ff262e3df4a4fca2061bf8ad46b5247c",
-      "src/components/ThreeSectionHome.tsx": "290a84636070497a7ff1ef7b3e4d8167",
+      "src/components/ThreeSectionHome.tsx": "67f92167fb8fc01aedba0a2bcbae1ef1",
       "src/components/VideosSection.tsx": "bfb44bfc0802fb86cd5c643fc6c7db28",
       "src/components/ai-elements/conversation.tsx": "48083a673c3eff6a19de5b8d02cb72e4",
       "src/components/ai-elements/message.tsx": "a87c253d43874fb6093e150beaaa2739",
@@ -324,6 +327,7 @@
       "src/data/books/index.ts": "cd9216cee48482a72cef89e73661b323",
       "src/data/gallstone-alternatives-article.ts": "ec71c41714b8f9d256fae58fcf60de4e",
       "src/data/guide-seo.ts": "6c32ae5368034f59d3293dfc9cd53059",
+      "src/data/heritage-copy.ts": "ccbc8d1e31d69e33231cc98915a14bf9",
       "src/data/home-copy.ts": "5c2c8da4bb440d3fd850a5b7e5b6b3b7",
       "src/data/locales/ar-ui.json": "09298cc1a4eea595a5b44864f13b40d4",
       "src/data/locales/bn.json": "8191956cb204b005628096f15710945c",
@@ -357,6 +361,7 @@
       "src/lib/article-html.ts": "005e01dbf40d41eab710e1d6f2c03e87",
       "src/lib/blog.ts": "174555ee49044e89c7cf5102d203b59b",
       "src/lib/book-content.ts": "114666e90372a09329be4f10bd7f6153",
+      "src/lib/care-colors.ts": "13e5bf8e6f769f0b34ef2bdaef54646d",
       "src/lib/daily-article.test.ts": "a33bc4f0b95b0be13525eb5da764fbcb",
       "src/lib/daily-article.ts": "a6cb00b0ce847f8ed23ef1e4591d5cf5",
       "src/lib/error-capture.ts": "00e77bfacfb2d79c0816361e678f1b65",
@@ -392,7 +397,7 @@
       "src/routes/ar.patients.tsx": "b42627e6b08427db7b67ad11c0bfa272",
       "src/routes/ar.tsx": "277a8268a5b18610bc3775094d0d203d",
       "src/routes/articles.$articleId.tsx": "328f693412a1fbf85f1fcdf1eeb467cb",
-      "src/routes/articles.index.tsx": "188b43d4fcc5e48854e4f97516e6ffbb",
+      "src/routes/articles.index.tsx": "621d0f377ede32c3dde35844a5949472",
       "src/routes/articles.tsx": "a3b02cbac35a1db182bcb11c12508faf",
       "src/routes/auth.tsx": "aa9c8ae04e0af604396a199d9c5aa0cb",
       "src/routes/books.$bookId.$chapterId.tsx": "3946ca1eb4243099e7934eceaec1e5f8",
@@ -416,7 +421,7 @@
       "src/routes/videos.tsx": "375820035182bd500b0dfc9e50ef447b",
       "src/server.ts": "3ae699f63a20f3f4772ee55248c2eb59",
       "src/start.ts": "5f68ed421b064a9844dbb117e08f614b",
-      "src/styles.css": "b43e443184007ef29901a1c75a68e47e",
+      "src/styles.css": "90021aec8990ef21a288fa9458701c21",
       "supabase/config.toml": "3243ffd7b3bf074202d86bb22fb536f4",
       "tsconfig.json": "994abf64c2b9f78b568879f80ed0170e",
       "vite.config.ts": "d9f078b2b2efd3e647214c111ed73fde",
@@ -635,6 +640,46 @@
         "name": "--home-patient-surface",
         "raw": "oklch(0.965 0.03 180)",
         "source": "src/styles.css"
+      },
+      {
+        "name": "--care-surgery",
+        "raw": "#0f2537",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--care-surgery-surface",
+        "raw": "oklch(0.96 0.035 88)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--care-recovery",
+        "raw": "#0e7a64",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--care-recovery-surface",
+        "raw": "oklch(0.96 0.035 170)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--care-disease",
+        "raw": "#1f6a9a",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--care-disease-surface",
+        "raw": "oklch(0.955 0.03 240)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--care-alert",
+        "raw": "#a8520c",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--care-alert-surface",
+        "raw": "oklch(0.96 0.045 65)",
+        "source": "src/styles.css"
       }
     ],
     "typography": [
@@ -776,6 +821,16 @@
     {
       "name": "EnglishSiteSections",
       "file": "src/components/EnglishSiteSections",
+      "import_path": ""
+    },
+    {
+      "name": "HeritageBanner",
+      "file": "src/components/HeritageBanner",
+      "import_path": ""
+    },
+    {
+      "name": "CareColorLegend",
+      "file": "src/components/HeritageBanner",
       "import_path": ""
     },
     {
@@ -1734,6 +1789,16 @@
       "file": "src/assets/dr-elalfy.jpg",
       "kind": "image",
       "format": "jpg"
+    },
+    {
+      "file": "src/assets/heritage-egypt.webp",
+      "kind": "image",
+      "format": "webp"
+    },
+    {
+      "file": "src/assets/heritage-khobar.webp",
+      "kind": "image",
+      "format": "webp"
     },
     {
       "file": "src/assets/patient-education/category-abdominal.jpg",
