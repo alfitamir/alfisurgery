@@ -60,7 +60,7 @@
 
 ## Gemini article admin (Oct 2026)
 
-- [x] Admin-only article page (/admin/articles) with Google sign-in; first account to sign in becomes the site admin.
+- [x] Admin-only article page (/admin/articles) with Google sign-in; only the doctor's own Google account can be admin (migration 0007, email stored as a fingerprint).
 - [x] Draft, revise and translate articles into all seven languages with Gemini Pro through Lovable AI; publish/unpublish/delete; new articles appear in the library, reading pages and sitemap.
 - [ ] Doctor signs in once at /admin/articles to claim the admin account — waiting on the doctor.
 - [x] Split the homepage vertically into "Meet the doctor" and "Know your disease & operation" columns (no arrows, distinct heading colours, contact below; keep language control, daily article and reviews).
@@ -76,5 +76,6 @@
 - [ ] Wave 0: close direct comment inserts (0006) — waits for publishing the new comment form live.
 - [x] Wave 1 Finding 1: gallbladder triage separates clinic vs emergency.
 - [ ] Wave 1 Findings 2–16, Waves 2–5 — continue next sessions.
+- [x] Wave 2: admin restricted to the doctor's Google account; anyone else who signed in first loses admin (0007, tested on Postgres 16).
 - [x] Design wave: four care colours (navy/gold surgery, teal recovery, blue disease guides, amber alerts) on homepage buttons with a colour key, and a seven-language "Two nations, one standard" Saudi/Egypt photo banner.
 - [ ] Design wave next: colour-coded filter pills on the patient guide and articles pages; sticky quick-action buttons on phones.
